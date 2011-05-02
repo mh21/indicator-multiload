@@ -23,5 +23,6 @@ po/Makefile.in
 po/POTFILES
 po/indicator-multiload.pot
 po/stamp-it
+m4/
 src/*.c
 stamp-h1

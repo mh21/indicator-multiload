@@ -268,7 +268,10 @@ multiloaddoc_DATA = \
 	AUTHORS \
 	TODO
 
-EXTRA_DIST = $(multiloaddoc_DATA)
+EXTRA_DIST = \
+	$(multiloaddoc_DATA) \
+	autogen.sh
+
 all: config.h
 	$(MAKE) $(AM_MAKEFLAGS) all-recursive
 

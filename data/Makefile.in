@@ -77,7 +77,7 @@ am__base_list = \
   sed '$$!N;$$!N;$$!N;$$!N;$$!N;$$!N;$$!N;s/\n/ /g' | \
   sed '$$!N;$$!N;$$!N;$$!N;s/\n/ /g'
 am__installdirs = "$(DESTDIR)$(desktopdir)" "$(DESTDIR)$(uidir)"
-DATA = $(desktop_DATA) $(ui_DATA)
+DATA = $(desktop_DATA) $(nodist_ui_DATA)
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
 ACLOCAL = @ACLOCAL@
 ALL_LINGUAS = @ALL_LINGUAS@
@@ -213,10 +213,10 @@ desktop_in_files = indicator-multiload.desktop.in
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 gsettings_SCHEMAS = de.mh21.indicator.multiload.gschema.xml
 uidir = $(pkgdatadir)
-ui_DATA = preferences.ui
+nodist_ui_DATA = preferences.ui
 EXTRA_DIST = \
 	$(desktop_in_files) \
-	$(ui_DATA) \
+	preferences.ui.in \
 	de.mh21.indicator.multiload.gschema.xml.in.in
 
 CLEANFILES = \
@@ -280,10 +280,10 @@ uninstall-desktopDATA:
 	test -n "$$files" || exit 0; \
 	echo " ( cd '$(DESTDIR)$(desktopdir)' && rm -f" $$files ")"; \
 	cd "$(DESTDIR)$(desktopdir)" && rm -f $$files
-install-uiDATA: $(ui_DATA)
+install-nodist_uiDATA: $(nodist_ui_DATA)
 	@$(NORMAL_INSTALL)
 	test -z "$(uidir)" || $(MKDIR_P) "$(DESTDIR)$(uidir)"
-	@list='$(ui_DATA)'; test -n "$(uidir)" || list=; \
+	@list='$(nodist_ui_DATA)'; test -n "$(uidir)" || list=; \
 	for p in $$list; do \
 	  if test -f "$$p"; then d=; else d="$(srcdir)/"; fi; \
 	  echo "$$d$$p"; \
@@ -293,9 +293,9 @@ install-uiDATA: $(ui_DATA)
 	  $(INSTALL_DATA) $$files "$(DESTDIR)$(uidir)" || exit $$?; \
 	done
 
-uninstall-uiDATA:
+uninstall-nodist_uiDATA:
 	@$(NORMAL_UNINSTALL)
-	@list='$(ui_DATA)'; test -n "$(uidir)" || list=; \
+	@list='$(nodist_ui_DATA)'; test -n "$(uidir)" || list=; \
 	files=`for p in $$list; do echo $$p; done | sed -e 's|^.*/||'`; \
 	test -n "$$files" || exit 0; \
 	echo " ( cd '$(DESTDIR)$(uidir)' && rm -f" $$files ")"; \
@@ -390,7 +390,7 @@ info: info-am
 
 info-am:
 
-install-data-am: install-desktopDATA install-uiDATA
+install-data-am: install-desktopDATA install-nodist_uiDATA
 
 install-dvi: install-dvi-am
 
@@ -434,7 +434,7 @@ ps: ps-am
 
 ps-am:
 
-uninstall-am: uninstall-desktopDATA uninstall-uiDATA
+uninstall-am: uninstall-desktopDATA uninstall-nodist_uiDATA
 	@$(NORMAL_INSTALL)
 	$(MAKE) $(AM_MAKEFLAGS) uninstall-hook
 .MAKE: install-am install-strip uninstall-am
@@ -444,12 +444,12 @@ uninstall-am: uninstall-desktopDATA uninstall-uiDATA
 	install install-am install-data install-data-am \
 	install-desktopDATA install-dvi install-dvi-am install-exec \
 	install-exec-am install-html install-html-am install-info \
-	install-info-am install-man install-pdf install-pdf-am \
-	install-ps install-ps-am install-strip install-uiDATA \
+	install-info-am install-man install-nodist_uiDATA install-pdf \
+	install-pdf-am install-ps install-ps-am install-strip \
 	installcheck installcheck-am installdirs maintainer-clean \
 	maintainer-clean-generic mostlyclean mostlyclean-generic pdf \
 	pdf-am ps ps-am uninstall uninstall-am uninstall-desktopDATA \
-	uninstall-hook uninstall-uiDATA
+	uninstall-hook uninstall-nodist_uiDATA
 
 @INTLTOOL_DESKTOP_RULE@
 
