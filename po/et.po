@@ -1,0 +1,374 @@
+# GNOME rakendite eesti keele tõlge.
+# Estonian translation of GNOME applets.
+#
+# Copyright (C) 1999, 2001, 2002, 2005, 2006 Free Software Foundation, Inc.
+# Copyright (C) 2007-2010 The GNOME Project
+# This file is distributed under the same license as the gnome-applets package.
+#
+# Lauris Kaplinski <lauris ariman ee>, 1999.
+# Ilmar Kerm <ikerm hot ee>, 2001, 2002.
+# Tõivo Leedjärv <toivo linux ee>, 2002.
+# Priit Laes <amd store20 com>, 2004-2006.
+# Ivar Smolin <okul linux ee>, 2005-2010.
+# Mattias Põldaru <mahfiaz gmail com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-applets 2.32\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-05-02 00:01+0200\n"
+"PO-Revision-Date: 2010-10-22 16:24+0300\n"
+"Last-Translator: Mattias Põldaru <mahfiaz gmail com>\n"
+"Language-Team: Estonian <gnome-et@linux.ee>\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
+msgid ""
+"A system load monitor capable of displaying graphs for CPU, ram, and swap "
+"space use, plus network traffic."
+msgstr ""
+"Süsteemi koormusmonitor on suuteline kuvama graafikuid protsessori koormuse, "
+"mälu- ja saaleruumi kasutuse ning võrguliikluse kohta."
+
+#: ../data/preferences.ui.in.h:2
+msgid "Cach_ed"
+msgstr "_Puhverdatud"
+
+#: ../data/preferences.ui.in.h:3
+msgid "Colors"
+msgstr "Värvid"
+
+#: ../data/preferences.ui.in.h:4
+msgid "F_ree"
+msgstr "_Vaba"
+
+#: ../data/preferences.ui.in.h:5
+msgid "Harddisk"
+msgstr "Kõvaketas"
+
+#: ../data/preferences.ui.in.h:6
+msgid "I_OWait"
+msgstr "I_OWait"
+
+#: ../data/preferences.ui.in.h:7
+msgid "I_dle"
+msgstr "_Jõude"
+
+#: ../data/preferences.ui.in.h:8
+msgid "Load"
+msgstr "Koormus"
+
+#: ../data/preferences.ui.in.h:9
+msgid "Memory"
+msgstr "Mälu"
+
+#: ../data/preferences.ui.in.h:10
+msgid "Monitored Resources"
+msgstr "Jälgitavad ressursid"
+
+#: ../data/preferences.ui.in.h:11
+msgid "N_ice"
+msgstr "_Tähtsus (nice)"
+
+#: ../data/preferences.ui.in.h:12
+msgid "Network"
+msgstr "Võrk"
+
+#: ../data/preferences.ui.in.h:13
+msgid "Options"
+msgstr "Valikud"
+
+#: ../data/preferences.ui.in.h:14
+msgid "Processor"
+msgstr "Protsessor"
+
+#: ../data/preferences.ui.in.h:15
+msgid "S_wap Space"
+msgstr "_Saaleruum"
+
+#: ../data/preferences.ui.in.h:16
+msgid "S_ystem"
+msgstr "_Süsteem"
+
+#: ../data/preferences.ui.in.h:17
+msgid "Sh_ared"
+msgstr "_Jagatud"
+
+#: ../data/preferences.ui.in.h:18
+msgid "Swap Space"
+msgstr "Saaleruum"
+
+#: ../data/preferences.ui.in.h:19
+msgid "Sys_tem monitor update interval: "
+msgstr "Süs_teemijälgija uuendamise vahemik: "
+
+#: ../data/preferences.ui.in.h:20
+msgid "System m_onitor width: "
+msgstr "Süsteemi _jälgija laius: "
+
+#: ../data/preferences.ui.in.h:21
+msgid "_About"
+msgstr "_Rakendist lähemalt"
+
+#: ../data/preferences.ui.in.h:22
+msgid "_Autostart: "
+msgstr ""
+
+#: ../data/preferences.ui.in.h:23
+msgid "_Average"
+msgstr "_Keskmine"
+
+#: ../data/preferences.ui.in.h:24
+msgid "_Background"
+msgstr "_Taust"
+
+#: ../data/preferences.ui.in.h:25
+msgid "_Buffers"
+msgstr "_Puhvrid"
+
+#: ../data/preferences.ui.in.h:26
+msgid "_Free"
+msgstr "_Vaba"
+
+#: ../data/preferences.ui.in.h:27
+msgid "_Harddisk"
+msgstr "_Kõvaketas"
+
+#: ../data/preferences.ui.in.h:28
+msgid "_In"
+msgstr "_Sisse"
+
+#: ../data/preferences.ui.in.h:29
+msgid "_Load"
+msgstr "_Koormus"
+
+#: ../data/preferences.ui.in.h:30
+msgid "_Local"
+msgstr "_Kohalik"
+
+#: ../data/preferences.ui.in.h:31
+msgid "_Memory"
+msgstr "_Mälu"
+
+#: ../data/preferences.ui.in.h:32
+msgid "_Network"
+msgstr "_Võrk"
+
+#: ../data/preferences.ui.in.h:33
+msgid "_Open System Monitor"
+msgstr "Ava _süsteemi jälgija"
+
+#: ../data/preferences.ui.in.h:34
+msgid "_Out"
+msgstr "_Välja"
+
+#: ../data/preferences.ui.in.h:35
+msgid "_Preferences"
+msgstr "_Eelistused"
+
+#: ../data/preferences.ui.in.h:36
+msgid "_Processor"
+msgstr "_Protsessor"
+
+#: ../data/preferences.ui.in.h:37
+msgid "_Quit"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:38
+msgid "_Read"
+msgstr "_Lugemine"
+
+#: ../data/preferences.ui.in.h:39
+msgid "_Used"
+msgstr "_Kasutatud"
+
+#: ../data/preferences.ui.in.h:40
+msgid "_User"
+msgstr "_Kasutaja"
+
+#: ../data/preferences.ui.in.h:41
+msgid "_Write"
+msgstr "_Kirjutamine"
+
+#: ../data/preferences.ui.in.h:42
+msgid "milliseconds"
+msgstr "millisekundit"
+
+#: ../data/preferences.ui.in.h:43
+msgid "pixels"
+msgstr "pikslit"
+
+#: ../data/preferences.ui.in.h:44
+msgid "translator-credits"
+msgstr ""
+"Lauris Kaplinski <lauris ariman ee>, 1999.\n"
+"Ilmar Kerm <ikerm hot ee>, 2001, 2002.\n"
+"Tõivo Leedjärv <toivo linux ee>, 2002.\n"
+"Priit Laes <amd tt ee>, 2004-2006.\n"
+"Ivar Smolin <okul linux ee>, 2005-2010."
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
+msgid "Applet refresh rate in milliseconds"
+msgstr "Rakendi värskendamissagedus millisekundites"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+msgid "Automatically start on session startup"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+msgid "Background color for disk load graph"
+msgstr "Kettakoormuse graafiku taustavärv"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
+msgid "CPU graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
+msgid "CPU graph background color"
+msgstr "Protsessorigraafiku taustavärv"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
+#, fuzzy
+msgid "Disk load graph alpha"
+msgstr "Kettakoormuse graafiku lubamine"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
+msgid "Enable CPU load graph"
+msgstr "Protsessorikoormuse graafiku lubamine"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+msgid "Enable disk load graph"
+msgstr "Kettakoormuse graafiku lubamine"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+msgid "Enable load average graph"
+msgstr "Keskmise koormuse graafiku lubamine"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+msgid "Enable memory load graph"
+msgstr "Mälukoormise graafiku lubamine"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+msgid "Enable network load graph"
+msgstr "Võrgukoormuse graafiku lubamine"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
+msgid "Enable swap load graph"
+msgstr "Saalekoormuse graafiku lubamine"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+msgid ""
+"For horizontal panels, the width of the graphs in pixels. For vertical "
+"panels, this is the height of the graphs."
+msgstr ""
+"Rõhtpaneelidele tähendab see graafikute laiust pikslites, püstpaneelidele "
+"aga graafikute kõrgust."
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+msgid "Graph color for buffer memory"
+msgstr "Graafiku värvus puhverdatud mälu jaoks"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+msgid "Graph color for cached memory"
+msgstr "Graafiku värvus vahemälu jaoks"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+msgid "Graph color for disk read"
+msgstr "Graafiku värv kettalt lugemiste jaoks"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+msgid "Graph color for disk write"
+msgstr "Graafiku värv kettale kirjutamiste jaoks"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+msgid "Graph color for input network activity"
+msgstr "Graafiku värv võrgusisendi aktiivsuse jaoks"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+msgid "Graph color for iowait related CPU activity"
+msgstr "Graafiku värv protsessori iowait-kasutuse jaoks"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+msgid "Graph color for load average"
+msgstr "Graafiku värv keskmise koormuse jaoks"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+msgid "Graph color for loopback network usage"
+msgstr "Graafiku värv loopback võrgu kasutuse jaoks"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
+msgid "Graph color for nice-related CPU activity"
+msgstr "Graafiku värv madala prioriteediga protsessorikasutuse jaoks"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
+msgid "Graph color for output network activity"
+msgstr "Graafiku värv võrguväljundi aktiivsuse jaoks"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
+msgid "Graph color for shared memory"
+msgstr "Graafiku värv jagatud mälu jaoks"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
+msgid "Graph color for system-related CPU activity"
+msgstr "Graafiku värv süsteemse protsessorikasutuse jaoks"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
+msgid "Graph color for user-related CPU activity"
+msgstr "Graafiku värv kasutajaga seotud protsessorikasutuse jaoks"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
+msgid "Graph color for user-related memory usage"
+msgstr "Graafiku värv kasutajaga seotud mälukasutuse jaoks"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:28
+msgid "Graph color for user-related swap usage"
+msgstr "Graafiku värv kasutajaga seotud saalekasutuse jaoks"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:29
+#, fuzzy
+msgid "Load graph alpha"
+msgstr "Koormusegraafiku taustavärv"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:30
+msgid "Load graph background color"
+msgstr "Koormusegraafiku taustavärv"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:31
+#, fuzzy
+msgid "Memory graph alpha"
+msgstr "Mälugraafiku taustavärv"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:32
+msgid "Memory graph background color"
+msgstr "Mälugraafiku taustavärv"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:33
+#, fuzzy
+msgid "Network graph alpha"
+msgstr "Võrgugraafiku taustavärv"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:34
+msgid "Network graph background color"
+msgstr "Võrgugraafiku taustavärv"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:35
+#, fuzzy
+msgid "Swap graph alpha"
+msgstr "Saalegraafiku taustavärv"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:36
+msgid "Swap graph background color"
+msgstr "Saalegraafiku taustavärv"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:37
+msgid "The desktop description file to execute as the system monitor"
+msgstr "Töölaua kirjeldusfail süsteemijälgija käivitamiseks"
+
+#: ../data/indicator-multiload.desktop.in.h:2
+#, fuzzy
+msgid "System Load Indicator"
+msgstr "Süsteemi koormuse näidik"

@@ -1,0 +1,361 @@
+# translation of gnome-applets.master.kn.po to Kannada
+# translation of gnome-applets.HEAD.po to
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Shankar Prasad <svenkate@redhat.com>, 2008, 2009, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-applets.master.kn\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-05-02 00:01+0200\n"
+"PO-Revision-Date: 2010-04-22 14:34+0530\n"
+"Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
+"Language-Team: kn-IN <>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 1.0\n"
+
+#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
+msgid ""
+"A system load monitor capable of displaying graphs for CPU, ram, and swap "
+"space use, plus network traffic."
+msgstr ""
+"ಒಂದು ಗಣಕದ ಲೋಡ್‌ ಮೇಲ್ವಿಚಾರಕವು CPU ram, ಹಾಗು ಸ್ವಾಪ್‌ ಬಳಕೆ ಜಾಗ, ಹಾಗು ಜಾಲಬಂಧದ "
+"ಟ್ರಾಫಿಕ್‌ಗಾಗಿನ ನಕ್ಷೆಗಳನ್ನು ತೋರಿಸಲು ಶಕ್ತವಾಗಿರುತ್ತದೆ."
+
+#: ../data/preferences.ui.in.h:2
+msgid "Cach_ed"
+msgstr "ಕ್ಯಾಚ್ ಆದ(_e)"
+
+#: ../data/preferences.ui.in.h:3
+msgid "Colors"
+msgstr "ಬಣ್ಣಗಳು"
+
+#: ../data/preferences.ui.in.h:4
+msgid "F_ree"
+msgstr "ಮುಕ್ತ(_r)"
+
+#: ../data/preferences.ui.in.h:5
+msgid "Harddisk"
+msgstr "ಹಾರ್ಡ್-ಡಿಸ್ಕ್‍"
+
+#: ../data/preferences.ui.in.h:6
+msgid "I_OWait"
+msgstr "I_OWait"
+
+#: ../data/preferences.ui.in.h:7
+msgid "I_dle"
+msgstr "ಜಡ(_d)"
+
+#: ../data/preferences.ui.in.h:8
+msgid "Load"
+msgstr "ಲೋಡ್"
+
+#: ../data/preferences.ui.in.h:9
+msgid "Memory"
+msgstr "ಮೆಮೊರಿ"
+
+#: ../data/preferences.ui.in.h:10
+msgid "Monitored Resources"
+msgstr "ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಲಾದ ಸಂಪನ್ಮೂಲಗಳು"
+
+#: ../data/preferences.ui.in.h:11
+msgid "N_ice"
+msgstr "ನೈಸ್(_i)"
+
+#: ../data/preferences.ui.in.h:12
+msgid "Network"
+msgstr "ಜಾಲಬಂಧ"
+
+#: ../data/preferences.ui.in.h:13
+msgid "Options"
+msgstr "ಆಯ್ಕೆಗಳು"
+
+#: ../data/preferences.ui.in.h:14
+msgid "Processor"
+msgstr "ಸಂಸ್ಕಾರಕ"
+
+#: ../data/preferences.ui.in.h:15
+msgid "S_wap Space"
+msgstr "ಸ್ವಾಪ್ ಜಾಗ(_w)"
+
+#: ../data/preferences.ui.in.h:16
+msgid "S_ystem"
+msgstr "ಗಣಕ(_y)"
+
+#: ../data/preferences.ui.in.h:17
+msgid "Sh_ared"
+msgstr "ಹಂಚಲಾದ(_a)"
+
+#: ../data/preferences.ui.in.h:18
+msgid "Swap Space"
+msgstr "ಸ್ವಾಪ್ ಜಾಗ"
+
+#: ../data/preferences.ui.in.h:19
+msgid "Sys_tem monitor update interval: "
+msgstr "ಗಣಕದ ಮೇಲ್ವಿಚಾರಣೆಯ ಅಪ್‌ಡೇಟ್ ಕಾಲಾವಧಿ(_t): "
+
+#: ../data/preferences.ui.in.h:20
+msgid "System m_onitor width: "
+msgstr "ಗಣಕ ಗಣಕ ಮೇಲ್ವಿಚಾರಕದ ಅಗಲ(_o): "
+
+#: ../data/preferences.ui.in.h:21
+msgid "_About"
+msgstr "ಇದರ ಬಗ್ಗೆ(_A)"
+
+#: ../data/preferences.ui.in.h:22
+msgid "_Autostart: "
+msgstr ""
+
+#: ../data/preferences.ui.in.h:23
+msgid "_Average"
+msgstr "ಸಾಧಾರಣ(_A)"
+
+#: ../data/preferences.ui.in.h:24
+msgid "_Background"
+msgstr "ಹಿನ್ನಲೆ(_B)"
+
+#: ../data/preferences.ui.in.h:25
+msgid "_Buffers"
+msgstr "ಬಫರ್ಸ್(_B)"
+
+#: ../data/preferences.ui.in.h:26
+msgid "_Free"
+msgstr "ಮುಕ್ತ(_F)"
+
+#: ../data/preferences.ui.in.h:27
+msgid "_Harddisk"
+msgstr "ಹಾರ್ಡ್-ಡಿಸ್ಕ್‍(_H)"
+
+#: ../data/preferences.ui.in.h:28
+msgid "_In"
+msgstr "ಒಳಗೆ(_I)"
+
+#: ../data/preferences.ui.in.h:29
+msgid "_Load"
+msgstr "ಲೋಡ್(_L)"
+
+#: ../data/preferences.ui.in.h:30
+msgid "_Local"
+msgstr "ಸ್ಥಳೀಯ(_L)"
+
+#: ../data/preferences.ui.in.h:31
+msgid "_Memory"
+msgstr "ಮೆಮೊರಿ(_M)"
+
+#: ../data/preferences.ui.in.h:32
+msgid "_Network"
+msgstr "ಜಾಲಬಂಧ(_N)"
+
+#: ../data/preferences.ui.in.h:33
+msgid "_Open System Monitor"
+msgstr "ತೆಗೆ ಗಣಕ ಮೇಲ್ವಿಚಾರಕವನ್ನು ತೆರೆ(_O)"
+
+#: ../data/preferences.ui.in.h:34
+msgid "_Out"
+msgstr "ಹೊರಗೆ(_O)"
+
+#: ../data/preferences.ui.in.h:35
+msgid "_Preferences"
+msgstr "ಆದ್ಯತೆಗಳು(_P)"
+
+#: ../data/preferences.ui.in.h:36
+msgid "_Processor"
+msgstr "ಸಂಸ್ಕಾರಕ(_P)"
+
+#: ../data/preferences.ui.in.h:37
+msgid "_Quit"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:38
+msgid "_Read"
+msgstr "ಓದು(_R)"
+
+#: ../data/preferences.ui.in.h:39
+msgid "_Used"
+msgstr "ಬಳಕೆಯಾದ(_U)"
+
+#: ../data/preferences.ui.in.h:40
+msgid "_User"
+msgstr "ಬಳಕೆದಾರ(_U)"
+
+#: ../data/preferences.ui.in.h:41
+msgid "_Write"
+msgstr "ಬರೆ(_W)"
+
+#: ../data/preferences.ui.in.h:42
+msgid "milliseconds"
+msgstr "ಮಿಲಿಸೆಕೆಂಡುಗಳು"
+
+#: ../data/preferences.ui.in.h:43
+msgid "pixels"
+msgstr "ಪಿಕ್ಸೆಲ್‍ಗಳು"
+
+#: ../data/preferences.ui.in.h:44
+msgid "translator-credits"
+msgstr "ಶಂಕರ್ ಪ್ರಸಾದ್ ಎಂ. ವಿ.<svenkate@redhat.com>"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
+msgid "Applet refresh rate in milliseconds"
+msgstr "ಮಿಲಿಸೆಕೆಂಡುಗಳಲ್ಲಿ ಆಪ್ಲೆಟ್‍ನ ಪುನಶ್ಚೇತನ ದರ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+msgid "Automatically start on session startup"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+msgid "Background color for disk load graph"
+msgstr "ಡಿಸ್ಕ್‍ ಲೋಡ್ ರೇಖಾಚಿತ್ರದ ಹಿನ್ನಲೆಯ ಬಣ್ಣ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
+msgid "CPU graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
+msgid "CPU graph background color"
+msgstr "CPU ರೇಖಾಚಿತ್ರದ ಹಿನ್ನಲೆಯ ಬಣ್ಣ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
+#, fuzzy
+msgid "Disk load graph alpha"
+msgstr "ಡಿಸ್ಕಿನ ಲೋಡ್ ನಕ್ಷೆಯನ್ನು ಶಕ್ತಗೊಳಿಸು"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
+msgid "Enable CPU load graph"
+msgstr "CPU ಲೋಡ್ ನಕ್ಷೆಯನ್ನು ಶಕ್ತಗೊಳಿಸು"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+msgid "Enable disk load graph"
+msgstr "ಡಿಸ್ಕಿನ ಲೋಡ್ ನಕ್ಷೆಯನ್ನು ಶಕ್ತಗೊಳಿಸು"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+msgid "Enable load average graph"
+msgstr "ಲೋಡ್‌ ಸರಾಸರಿ ನಕ್ಷೆಯನ್ನು ಶಕ್ತಗೊಳಿಸು"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+msgid "Enable memory load graph"
+msgstr "ಮೆಮೊರಿ ಲೋಡ್‌ ನಕ್ಷೆಯನ್ನು ಶಕ್ತಗೊಳಿಸು"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+msgid "Enable network load graph"
+msgstr "ಜಾಲಬಂಧ ಲೋಡ್‌ ನಕ್ಷೆಯನ್ನು ಶಕ್ತಗೊಳಿಸು"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
+msgid "Enable swap load graph"
+msgstr "ಸ್ವಾಪ್ ಲೋಡ್‌ ನಕ್ಷೆಯನ್ನು ಶಕ್ತಗೊಳಿಸು"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+msgid ""
+"For horizontal panels, the width of the graphs in pixels. For vertical "
+"panels, this is the height of the graphs."
+msgstr ""
+"ಅಡ್ಡ ಫಲಕಗಳಿಗೆ, ನಕ್ಷೆಯ ಅಗಲವು ಪಿಕ್ಸೆಲ್‌ಗಳಲ್ಲಿ ಸೂಚಿಸಲಾಗುವುದು. ಲಂಬ ಫಲಕಗಳಿಗೆ, ಇದು ನಕ್ಷೆಯ "
+"ಎತ್ತರವಾಗಿರುತ್ತದೆ."
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+msgid "Graph color for buffer memory"
+msgstr "ಬಫರ್ ಮೆಮೊರಿಯ ನಕ್ಷೆಯ ಬಣ್ಣ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+msgid "Graph color for cached memory"
+msgstr "ಕ್ಯಾಶ್ ಮಾಡಲಾದ ಮೆಮೊರಿಯ ನಕ್ಷೆಯ ಬಣ್ಣ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+msgid "Graph color for disk read"
+msgstr "ಡಿಸ್ಕಿನ ಓದಿನ ನಕ್ಷೆಯ ಬಣ್ಣ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+msgid "Graph color for disk write"
+msgstr "ಡಿಸ್ಕಿಗೆ ಬರೆಯಲಾದುದರ ನಕ್ಷೆಯ ಬಣ್ಣ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+msgid "Graph color for input network activity"
+msgstr "ಇನ್‌ಪುಟ್ ಜಾಲಬಂಧ ಚಟುವಟಿಕೆ ನಕ್ಷೆಯ ಬಣ್ಣ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+msgid "Graph color for iowait related CPU activity"
+msgstr "iowait ಸಂಬಂಧಿತ CPU ಕಾರ್ಯಗಳಿಗಾಗಿನ ನಕ್ಷೆಯ ಬಣ್ಣ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+msgid "Graph color for load average"
+msgstr "ಲೋಡ್‌ ಸರಾಸರಿಯ ನಕ್ಷೆಯ ಬಣ್ಣ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+msgid "Graph color for loopback network usage"
+msgstr "ಲೂಪ್‌ಬ್ಯಾಕ್ ಜಾಲಬಂಧ ಬಳಕೆಗಾಗಿನ ನಕ್ಷೆಯ ಬಣ್ಣ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
+msgid "Graph color for nice-related CPU activity"
+msgstr "ನೈಸ್-ಸಂಬಂಧಿತವಾದ CPU ಚಟುವಟಿಕೆಯ ನಕ್ಷೆಯ ಬಣ್ಣ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
+msgid "Graph color for output network activity"
+msgstr "ಔಟ್‌ಪುಟ್ ಜಾಲಬಂಧ ಚಟುವಟಿಕೆ ನಕ್ಷೆಯ ಬಣ್ಣ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
+msgid "Graph color for shared memory"
+msgstr "ಹಂಚಲಾದ ಮೆಮೊರಿಗಾಗಿನ ನಕ್ಷೆಯ ಬಣ್ಣ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
+msgid "Graph color for system-related CPU activity"
+msgstr "ಗಣಕ ಸಂಬಂಧಿತ CPU ಕಾರ್ಯಗಳಿಗಾಗಿನ ನಕ್ಷೆಯ ಬಣ್ಣ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
+msgid "Graph color for user-related CPU activity"
+msgstr "ಬಳಕೆದಾರರ ಸಂಬಂಧಿತ CPU ಕಾರ್ಯಗಳಿಗಾಗಿನ ನಕ್ಷೆಯ ಬಣ್ಣ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
+msgid "Graph color for user-related memory usage"
+msgstr "ಬಳಕೆದಾರರ ಸಂಬಂಧಿತ ಮೆಮೊರಿಯ ಬಳಕೆಗಾಗಿ ನಕ್ಷೆಯ ಬಣ್ಣ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:28
+msgid "Graph color for user-related swap usage"
+msgstr "ಬಳಕೆದಾರರ ಸಂಬಂಧಿತ ಸ್ವಾಪ್ ಬಳಕೆಗಾಗಿ ನಕ್ಷೆಯ ಬಣ್ಣ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:29
+#, fuzzy
+msgid "Load graph alpha"
+msgstr "ಲೋಡ್ ನಕ್ಷೆ ಹಿನ್ನಲೆ ಬಣ್ಣ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:30
+msgid "Load graph background color"
+msgstr "ಲೋಡ್ ನಕ್ಷೆ ಹಿನ್ನಲೆ ಬಣ್ಣ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:31
+#, fuzzy
+msgid "Memory graph alpha"
+msgstr "ಮೆಮೊರಿ ನಕ್ಷೆ ಹಿನ್ನಲೆ ಬಣ್ಣ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:32
+msgid "Memory graph background color"
+msgstr "ಮೆಮೊರಿ ನಕ್ಷೆ ಹಿನ್ನಲೆ ಬಣ್ಣ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:33
+#, fuzzy
+msgid "Network graph alpha"
+msgstr "ಜಾಲಬಂಧ ನಕ್ಷೆ ಹಿನ್ನಲೆ ಬಣ್ಣ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:34
+msgid "Network graph background color"
+msgstr "ಜಾಲಬಂಧ ನಕ್ಷೆ ಹಿನ್ನಲೆ ಬಣ್ಣ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:35
+#, fuzzy
+msgid "Swap graph alpha"
+msgstr "ಸ್ವಾಪ್ ನಕ್ಷೆ ಹಿನ್ನಲೆ ಬಣ್ಣ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:36
+msgid "Swap graph background color"
+msgstr "ಸ್ವಾಪ್ ನಕ್ಷೆ ಹಿನ್ನಲೆ ಬಣ್ಣ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:37
+msgid "The desktop description file to execute as the system monitor"
+msgstr "ಗಣಕದ ಮೇಲ್ವಿಚಾರಕವಾಗಿ ಕಾರ್ಯಗತಗೊಳಿಸಬೇಕಿರುವ ಗಣಕತೆರೆ ವಿವರಣೆಗಾರ ಕಡತ"
+
+#: ../data/indicator-multiload.desktop.in.h:2
+#, fuzzy
+msgid "System Load Indicator"
+msgstr "ಒಂದು ಗಣಕದ ಲೋಡ್ ಸೂಚಕ"

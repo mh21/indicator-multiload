@@ -1,0 +1,3 @@
+Reimplementation of the gnome-applets multiload applet in vala and for Canonicals appindicators.
+
+Strings have been kept the same as in gnome-applets where possible to reduce translation work.

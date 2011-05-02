@@ -1,0 +1,380 @@
+# German gnome-applets translation
+# Copyright (C) 1999-2004 Free Software Foundation, Inc.
+# Carsten Schaar <nhadcasc@fs-maphy.uni-hannover.de>, 1998.
+# Matthias Warkus <mawa@iname.com>, 1999, 2000.
+# Karl Eichwalder <ke@suse.de>, 2000.
+# Benedikt Roth <Benedikt.Roth@gmx.net>, 2000.
+# Christian Neumair <chris@gnome-de.org>, 2002-2004.
+# Hendrik Richter <hendrikr@gnome.org>, 2004-2009.
+# Hendrik Brandt <heb@gnome-de.org>, 2004-2005.
+# Jochen Skulj <jochen@jochenskulj.de>, 2006.
+# Mario Blättermann <mariobl@gnome.org>, 2009, 2010.
+# Mario Klug <klug_mario@inode.at>, 2009, 2010.
+# Christian Kirbach <Christian.Kirbach@googlemail.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-applets master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-05-02 00:01+0200\n"
+"PO-Revision-Date: 2010-07-27 23:07+0100\n"
+"Last-Translator: Mario Blättermann <mariobl@gnome.org>\n"
+"Language-Team: Deutsch <gnome-de@gnome.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
+msgid ""
+"A system load monitor capable of displaying graphs for CPU, ram, and swap "
+"space use, plus network traffic."
+msgstr ""
+"Eine Systemlastanzeige, die Graphen für Prozessor-, Arbeitsspeicher- und "
+"Auslagerungsspeicherlast sowie den Netzwerkverkehr anzeigen kann."
+
+#: ../data/preferences.ui.in.h:2
+msgid "Cach_ed"
+msgstr "_Zwischengespeichert"
+
+#: ../data/preferences.ui.in.h:3
+msgid "Colors"
+msgstr "Farben"
+
+#: ../data/preferences.ui.in.h:4
+msgid "F_ree"
+msgstr "_Frei"
+
+#: ../data/preferences.ui.in.h:5
+msgid "Harddisk"
+msgstr "Festplatte"
+
+#: ../data/preferences.ui.in.h:6
+msgid "I_OWait"
+msgstr "E_AWarten"
+
+#: ../data/preferences.ui.in.h:7
+msgid "I_dle"
+msgstr "_Leerlauf"
+
+#: ../data/preferences.ui.in.h:8
+msgid "Load"
+msgstr "Last"
+
+#: ../data/preferences.ui.in.h:9
+msgid "Memory"
+msgstr "Speicher"
+
+#: ../data/preferences.ui.in.h:10
+msgid "Monitored Resources"
+msgstr "Überwachte Ressourcen"
+
+#: ../data/preferences.ui.in.h:11
+msgid "N_ice"
+msgstr "P_riorität"
+
+#: ../data/preferences.ui.in.h:12
+msgid "Network"
+msgstr "Netzwerk"
+
+#: ../data/preferences.ui.in.h:13
+msgid "Options"
+msgstr "Einstellungen"
+
+#: ../data/preferences.ui.in.h:14
+msgid "Processor"
+msgstr "Prozessor"
+
+#: ../data/preferences.ui.in.h:15
+msgid "S_wap Space"
+msgstr "_Auslagerungsspeicher"
+
+#: ../data/preferences.ui.in.h:16
+msgid "S_ystem"
+msgstr "S_ystem"
+
+#: ../data/preferences.ui.in.h:17
+msgid "Sh_ared"
+msgstr "_Gemeinsam"
+
+#: ../data/preferences.ui.in.h:18
+msgid "Swap Space"
+msgstr "Auslagerungsspeicher"
+
+#: ../data/preferences.ui.in.h:19
+msgid "Sys_tem monitor update interval: "
+msgstr "_Aktualisierungsintervall des Systemmonitors: "
+
+#: ../data/preferences.ui.in.h:20
+msgid "System m_onitor width: "
+msgstr "B_reite des Systemmonitors: "
+
+#: ../data/preferences.ui.in.h:21
+msgid "_About"
+msgstr "_Info"
+
+#: ../data/preferences.ui.in.h:22
+msgid "_Autostart: "
+msgstr ""
+
+#: ../data/preferences.ui.in.h:23
+msgid "_Average"
+msgstr "Last_mittel"
+
+#: ../data/preferences.ui.in.h:24
+msgid "_Background"
+msgstr "_Hintergrund"
+
+#: ../data/preferences.ui.in.h:25
+msgid "_Buffers"
+msgstr "P_uffer"
+
+#: ../data/preferences.ui.in.h:26
+msgid "_Free"
+msgstr "_Frei"
+
+#: ../data/preferences.ui.in.h:27
+msgid "_Harddisk"
+msgstr "_Festplatte"
+
+#: ../data/preferences.ui.in.h:28
+msgid "_In"
+msgstr "_Ein"
+
+#: ../data/preferences.ui.in.h:29
+msgid "_Load"
+msgstr "_Last"
+
+#: ../data/preferences.ui.in.h:30
+msgid "_Local"
+msgstr "_Lokal"
+
+#: ../data/preferences.ui.in.h:31
+msgid "_Memory"
+msgstr "_Speicher"
+
+#: ../data/preferences.ui.in.h:32
+msgid "_Network"
+msgstr "_Netzwerk"
+
+#: ../data/preferences.ui.in.h:33
+msgid "_Open System Monitor"
+msgstr "Systemmonitor ö_ffnen"
+
+#: ../data/preferences.ui.in.h:34
+msgid "_Out"
+msgstr "_Aus"
+
+#: ../data/preferences.ui.in.h:35
+msgid "_Preferences"
+msgstr "_Einstellungen"
+
+#: ../data/preferences.ui.in.h:36
+msgid "_Processor"
+msgstr "_Prozessor"
+
+#: ../data/preferences.ui.in.h:37
+msgid "_Quit"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:38
+msgid "_Read"
+msgstr "_Lesen"
+
+#: ../data/preferences.ui.in.h:39
+msgid "_Used"
+msgstr "_Belegt"
+
+#: ../data/preferences.ui.in.h:40
+msgid "_User"
+msgstr "_Benutzer"
+
+#: ../data/preferences.ui.in.h:41
+msgid "_Write"
+msgstr "_Schreiben"
+
+#: ../data/preferences.ui.in.h:42
+msgid "milliseconds"
+msgstr "Millisekunden"
+
+#: ../data/preferences.ui.in.h:43
+msgid "pixels"
+msgstr "Pixel"
+
+#: ../data/preferences.ui.in.h:44
+msgid "translator-credits"
+msgstr ""
+"Karl Eichwalder <ke@suse.de>\n"
+"Christian Meyer <chrisime@gnome.org>\n"
+"Christian Neumair <chris@gnome-de.org>\n"
+"Benedikt Roth <Benedikt.Roth@gmx.net>\n"
+"Carsten Schaar <nhadcasc@fs-maphy.uni-hannover.de>\n"
+"Jörgen Scheibengruber <mfcn@gmx.de>\n"
+"Matthias Warkus <mawa@iname.com>\n"
+"Hendrik Brandt <heb@gnome-de.org>\n"
+"Mario Blättermann <mariobl@gnome.org>\n"
+"Mario Klug <klug_mario@inode.at>\n"
+"Christian Kirbach <Christian.Kirbach@googlemail.com>"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
+msgid "Applet refresh rate in milliseconds"
+msgstr "Aktualisierungsintervall des Applets in Millisekunden"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+msgid "Automatically start on session startup"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+msgid "Background color for disk load graph"
+msgstr "Hintergrundfarbe für den Plattenlastgraphen"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
+msgid "CPU graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
+msgid "CPU graph background color"
+msgstr "Hintergrundfarbe des Prozessorgraphen"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
+#, fuzzy
+msgid "Disk load graph alpha"
+msgstr "Plattenlastgraph aktivieren"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
+msgid "Enable CPU load graph"
+msgstr "Prozessorlastgraph aktivieren"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+msgid "Enable disk load graph"
+msgstr "Plattenlastgraph aktivieren"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+msgid "Enable load average graph"
+msgstr "Lastmittelgraph aktivieren"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+msgid "Enable memory load graph"
+msgstr "Speicherlastgraph aktivieren"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+msgid "Enable network load graph"
+msgstr "Netzwerklastgraph aktivieren"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
+msgid "Enable swap load graph"
+msgstr "Auslagerungslastgraph aktivieren"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+msgid ""
+"For horizontal panels, the width of the graphs in pixels. For vertical "
+"panels, this is the height of the graphs."
+msgstr ""
+"Die Breite des Graphen in Pixel, falls das Panel horizontal ist. Falls es "
+"vertikal ist, ist dies die Höhe des Graphen."
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+msgid "Graph color for buffer memory"
+msgstr "Graphfarbe für Pufferspeicher"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+msgid "Graph color for cached memory"
+msgstr "Graphfarbe für Cache-Speicher"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+msgid "Graph color for disk read"
+msgstr "Graphfarbe für das Lesen von Platte"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+msgid "Graph color for disk write"
+msgstr "Graphfarbe für das Schreiben auf Platte"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+msgid "Graph color for input network activity"
+msgstr "Graphfarbe für eingehende Netzwerkaktivität"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+msgid "Graph color for iowait related CPU activity"
+msgstr "Graphfarbe für E/A-bezogene Prozessoraktivität"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+msgid "Graph color for load average"
+msgstr "Graphfarbe für Lastmittel"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+msgid "Graph color for loopback network usage"
+msgstr "Graphfarbe für Loopback-Schleifen-Netzwerkaktivität"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
+msgid "Graph color for nice-related CPU activity"
+msgstr "Graphfarbe für »nice«-seitige Prozessoraktivität"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
+msgid "Graph color for output network activity"
+msgstr "Graphfarbe für ausgehende Netzwerkaktivität"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
+msgid "Graph color for shared memory"
+msgstr "Graphfarbe für gemeinsamen Speicher"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
+msgid "Graph color for system-related CPU activity"
+msgstr "Graphfarbe für systemseitige Prozessoraktivität"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
+msgid "Graph color for user-related CPU activity"
+msgstr "Graphfarbe für benutzerseitige Prozessoraktivität"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
+msgid "Graph color for user-related memory usage"
+msgstr "Graphfarbe für benutzerseitige Speicherlast"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:28
+msgid "Graph color for user-related swap usage"
+msgstr "Graphfarbe für benutzerseitige Auslagerungslast"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:29
+#, fuzzy
+msgid "Load graph alpha"
+msgstr "Hintergrundfarbe des Auslastungsgraphen"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:30
+msgid "Load graph background color"
+msgstr "Hintergrundfarbe des Auslastungsgraphen"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:31
+#, fuzzy
+msgid "Memory graph alpha"
+msgstr "Hintergrundfarbe des Speichergraphen"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:32
+msgid "Memory graph background color"
+msgstr "Hintergrundfarbe des Speichergraphen"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:33
+#, fuzzy
+msgid "Network graph alpha"
+msgstr "Hintergrundfarbe des Netzwerkgraphen"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:34
+msgid "Network graph background color"
+msgstr "Hintergrundfarbe des Netzwerkgraphen"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:35
+#, fuzzy
+msgid "Swap graph alpha"
+msgstr "Die Hintergrundfarbe des Auslagerungsgraphen"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:36
+msgid "Swap graph background color"
+msgstr "Die Hintergrundfarbe des Auslagerungsgraphen"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:37
+msgid "The desktop description file to execute as the system monitor"
+msgstr "Die beim Anklicken zu startende .desktop-Datei"
+
+#: ../data/indicator-multiload.desktop.in.h:2
+#, fuzzy
+msgid "System Load Indicator"
+msgstr "Eine Systemlastanzeige"

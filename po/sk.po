@@ -1,0 +1,366 @@
+# gnome-applets Slovak translation.
+# Copyright (C) 2000-2007 Free Software Foundation, Inc.
+#
+# Stanislav Visnovsky <visnovsky@nenya.ms.mff.cuni.cz>, 2000-2004.
+# Marcel Telka <marcel@telka.sk>, 2005.
+# Peter Tuharsky <tuharsky@misbb.sk>, 2007, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-applets HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-05-02 00:01+0200\n"
+"PO-Revision-Date: 2008-11-04 15:50+0100\n"
+"Last-Translator: Peter Tuhársky <tuharsky@misbb.sk>\n"
+"Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural= (n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
+"X-Generator: KBabel 1.11.4\n"
+"X-Poedit-Language: Slovak\n"
+"X-Poedit-Country: SLOVAKIA\n"
+
+#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
+msgid ""
+"A system load monitor capable of displaying graphs for CPU, ram, and swap "
+"space use, plus network traffic."
+msgstr ""
+"Sledovač zaťaženia systému, ktorý zobrazuje grafy pre procesor, pamäť, "
+"odkladací súbor a sieťový prenos."
+
+#: ../data/preferences.ui.in.h:2
+msgid "Cach_ed"
+msgstr "_Vo vyrovnávacej pamäti"
+
+#: ../data/preferences.ui.in.h:3
+msgid "Colors"
+msgstr "Farby"
+
+#: ../data/preferences.ui.in.h:4
+msgid "F_ree"
+msgstr "V_oľná"
+
+#: ../data/preferences.ui.in.h:5
+msgid "Harddisk"
+msgstr "Pevný disk"
+
+#: ../data/preferences.ui.in.h:6
+msgid "I_OWait"
+msgstr "Čakanie na I_O"
+
+#: ../data/preferences.ui.in.h:7
+msgid "I_dle"
+msgstr "N_ečinný"
+
+#: ../data/preferences.ui.in.h:8
+msgid "Load"
+msgstr "Zaťaženie"
+
+#: ../data/preferences.ui.in.h:9
+msgid "Memory"
+msgstr "Pamäť"
+
+#: ../data/preferences.ui.in.h:10
+msgid "Monitored Resources"
+msgstr "Sledované zdroje"
+
+#: ../data/preferences.ui.in.h:11
+msgid "N_ice"
+msgstr "_Nice"
+
+#: ../data/preferences.ui.in.h:12
+msgid "Network"
+msgstr "Sieť"
+
+#: ../data/preferences.ui.in.h:13
+msgid "Options"
+msgstr "Možnosti"
+
+#: ../data/preferences.ui.in.h:14
+msgid "Processor"
+msgstr "Procesor"
+
+#: ../data/preferences.ui.in.h:15
+msgid "S_wap Space"
+msgstr "_Odkladací súbor"
+
+#: ../data/preferences.ui.in.h:16
+msgid "S_ystem"
+msgstr "_Systém"
+
+#: ../data/preferences.ui.in.h:17
+msgid "Sh_ared"
+msgstr "_Zdieľaná"
+
+#: ../data/preferences.ui.in.h:18
+msgid "Swap Space"
+msgstr "Odkladací súbor"
+
+#: ../data/preferences.ui.in.h:19
+msgid "Sys_tem monitor update interval: "
+msgstr "_Rýchlosť sledovača:"
+
+#: ../data/preferences.ui.in.h:20
+msgid "System m_onitor width: "
+msgstr "Ší_rka sledovača:"
+
+#: ../data/preferences.ui.in.h:21
+msgid "_About"
+msgstr "_O programe"
+
+#: ../data/preferences.ui.in.h:22
+msgid "_Autostart: "
+msgstr ""
+
+#: ../data/preferences.ui.in.h:23
+msgid "_Average"
+msgstr "_Priemer"
+
+#: ../data/preferences.ui.in.h:24
+msgid "_Background"
+msgstr "Po_zadie"
+
+#: ../data/preferences.ui.in.h:25
+msgid "_Buffers"
+msgstr "_Buffery"
+
+#: ../data/preferences.ui.in.h:26
+msgid "_Free"
+msgstr "_Voľná"
+
+#: ../data/preferences.ui.in.h:27
+msgid "_Harddisk"
+msgstr "_Pevný disk"
+
+#: ../data/preferences.ui.in.h:28
+msgid "_In"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:29
+msgid "_Load"
+msgstr "_Zaťaženie"
+
+#: ../data/preferences.ui.in.h:30
+msgid "_Local"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:31
+msgid "_Memory"
+msgstr "Pa_mäť"
+
+#: ../data/preferences.ui.in.h:32
+msgid "_Network"
+msgstr "_Sieť"
+
+#: ../data/preferences.ui.in.h:33
+msgid "_Open System Monitor"
+msgstr "_Otvoriť sledovanie systému"
+
+#: ../data/preferences.ui.in.h:34
+msgid "_Out"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:35
+msgid "_Preferences"
+msgstr "_Predvoľby"
+
+#: ../data/preferences.ui.in.h:36
+msgid "_Processor"
+msgstr "_Procesor"
+
+#: ../data/preferences.ui.in.h:37
+msgid "_Quit"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:38
+msgid "_Read"
+msgstr "Čí_tanie"
+
+#: ../data/preferences.ui.in.h:39
+msgid "_Used"
+msgstr "_Použitá"
+
+#: ../data/preferences.ui.in.h:40
+msgid "_User"
+msgstr "Po_užívateľ"
+
+#: ../data/preferences.ui.in.h:41
+msgid "_Write"
+msgstr "_Zápis"
+
+#: ../data/preferences.ui.in.h:42
+msgid "milliseconds"
+msgstr "millisekúnd"
+
+#: ../data/preferences.ui.in.h:43
+msgid "pixels"
+msgstr "bodov"
+
+#: ../data/preferences.ui.in.h:44
+msgid "translator-credits"
+msgstr ""
+"Stanislav Višňovský\n"
+"Marcel Telka <marcel@telka.sk>\n"
+"Peter Tuhársky <tuharsky@misbb.sk>"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
+msgid "Applet refresh rate in milliseconds"
+msgstr "Rýchlosť aktualizácie apletu v milisekundách"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+msgid "Automatically start on session startup"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+msgid "Background color for disk load graph"
+msgstr "Farba pozadia pre graf zaťaženia disku"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
+msgid "CPU graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
+msgid "CPU graph background color"
+msgstr "Farba pozadia grafu procesora"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
+#, fuzzy
+msgid "Disk load graph alpha"
+msgstr "Povoliť graf zaťaženia disku"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
+msgid "Enable CPU load graph"
+msgstr "Povoliť graf zaťaženia procesora"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+msgid "Enable disk load graph"
+msgstr "Povoliť graf zaťaženia disku"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+msgid "Enable load average graph"
+msgstr "Povoliť graf priemerného zaťaženia"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+msgid "Enable memory load graph"
+msgstr "Povoliť graf zaťaženia pamäte"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+msgid "Enable network load graph"
+msgstr "Povoliť graf zaťaženia siete"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
+msgid "Enable swap load graph"
+msgstr "Povoliť graf zaťaženia odkladacieho priestoru"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+msgid ""
+"For horizontal panels, the width of the graphs in pixels. For vertical "
+"panels, this is the height of the graphs."
+msgstr ""
+"Pre horizontálne panely šírka grafu v bodoch. Pre vertikálne výška grafov."
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+msgid "Graph color for buffer memory"
+msgstr "Farba grafu pre bufferovanú pamäť"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+msgid "Graph color for cached memory"
+msgstr "Farba grafu pre vyrovnávaciu pamäť"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+msgid "Graph color for disk read"
+msgstr "Farba grafu pre čítanie z disku"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+msgid "Graph color for disk write"
+msgstr "Farba grafu pre zápis na disk"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+msgid "Graph color for input network activity"
+msgstr "Farba grafu pre vstupnú aktivitu siete"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+msgid "Graph color for iowait related CPU activity"
+msgstr "Farba grafu pre aktivitu procesora súvisiacu s čakaním na IO"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+msgid "Graph color for load average"
+msgstr "Farba grafu pre priemerné zaťaženie"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+msgid "Graph color for loopback network usage"
+msgstr "Farba grafu pre využitie sieťovej spätnej väzby"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
+msgid "Graph color for nice-related CPU activity"
+msgstr "Farba grafu pre aktivitu procesora s nice"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
+msgid "Graph color for output network activity"
+msgstr "Farba grafu pre výstupnú aktivitu siete"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
+msgid "Graph color for shared memory"
+msgstr "Farba grafu pre zdieľanú pamäť"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
+msgid "Graph color for system-related CPU activity"
+msgstr "Farba grafu pre aktivitu procesora v jadre"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
+msgid "Graph color for user-related CPU activity"
+msgstr "Farba grafu pre aktivitu procesora mimo jadro"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
+msgid "Graph color for user-related memory usage"
+msgstr "Farba grafu pre využitie pamäte mimo jadro"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:28
+msgid "Graph color for user-related swap usage"
+msgstr "Farba grafu pre využitie odkladacieho priestoru mimo jadro"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:29
+#, fuzzy
+msgid "Load graph alpha"
+msgstr "Farba pozadia grafu zaťaženia"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:30
+msgid "Load graph background color"
+msgstr "Farba pozadia grafu zaťaženia"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:31
+#, fuzzy
+msgid "Memory graph alpha"
+msgstr "Farba pozadia grafu pamäte"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:32
+msgid "Memory graph background color"
+msgstr "Farba pozadia grafu pamäte"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:33
+#, fuzzy
+msgid "Network graph alpha"
+msgstr "Farba pozadia grafu siete"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:34
+msgid "Network graph background color"
+msgstr "Farba pozadia grafu siete"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:35
+#, fuzzy
+msgid "Swap graph alpha"
+msgstr "Farba pozadia grafu odkladacej pamäte"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:36
+msgid "Swap graph background color"
+msgstr "Farba pozadia grafu odkladacej pamäte"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:37
+msgid "The desktop description file to execute as the system monitor"
+msgstr "Opisný súbor na ploche, ktorý sa má vykonať ako systémový monitor"
+
+#: ../data/indicator-multiload.desktop.in.h:2
+#, fuzzy
+msgid "System Load Indicator"
+msgstr "Indikátor zaťaženie systému"

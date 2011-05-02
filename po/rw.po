@@ -1,0 +1,431 @@
+# translation of gnome-applets to Kinyarwanda.
+# Copyright (C) 2005 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-applets package.
+# Steve Murphy <murf@e-tools.com>, 2005
+# Steve performed initial rough translation from compendium built from translations provided by the following translators:
+# Philibert Ndandali  <ndandali@yahoo.fr>, 2005.
+# Viateur MUGENZI <muvia1@yahoo.fr>, 2005.
+# Noëlla Mupole <s24211045@tuks.co.za>, 2005.
+# Carole Karema <karemacarole@hotmail.com>, 2005.
+# JEAN BAPTISTE NGENDAHAYO <ngenda_denis@yahoo.co.uk>, 2005.
+# Augustin KIBERWA  <akiberwa@yahoo.co.uk>, 2005.
+# Donatien NSENGIYUMVA <ndonatienuk@yahoo.co.uk>, 2005..
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-applets 2.12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-05-02 00:01+0200\n"
+"PO-Revision-Date: 2005-03-28 19:34-0700\n"
+"Last-Translator: Steve Murphy <murf@e-tools.com>\n"
+"Language-Team: Kinyarwanda <translation-team-rw@lists.sourceforge.net>\n"
+"Language: rw\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
+#, fuzzy
+msgid ""
+"A system load monitor capable of displaying graphs for CPU, ram, and swap "
+"space use, plus network traffic."
+msgstr ""
+"A Sisitemu Ibirimo Bya kugirango RAM Na Umwanya Gukoresha Guteranya urusobe"
+
+#: ../data/preferences.ui.in.h:2
+msgid "Cach_ed"
+msgstr ""
+
+# offmgr/source\offapp\dialog\treeopt.src:RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.9.text
+#: ../data/preferences.ui.in.h:3
+msgid "Colors"
+msgstr "Amabara"
+
+# svx/source\dialog\labdlg.src:RID_SVXPAGE_CAPTION.LB_WINKEL.1.text
+#: ../data/preferences.ui.in.h:4
+#, fuzzy
+msgid "F_ree"
+msgstr "Kigenga"
+
+#: ../data/preferences.ui.in.h:5
+msgid "Harddisk"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:6
+msgid "I_OWait"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:7
+msgid "I_dle"
+msgstr ""
+
+# basctl/source\basicide\basidesh.src:RID_STR_OPEN.text
+#: ../data/preferences.ui.in.h:8
+msgid "Load"
+msgstr "Ibirimo"
+
+# offmgr/source\offapp\dialog\treeopt.src:RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.4.text
+#: ../data/preferences.ui.in.h:9
+msgid "Memory"
+msgstr "Ububiko"
+
+#: ../data/preferences.ui.in.h:10
+msgid "Monitored Resources"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:11
+msgid "N_ice"
+msgstr ""
+
+# 4032
+#: ../data/preferences.ui.in.h:12
+msgid "Network"
+msgstr "urusobe"
+
+# basctl/source\basicide\moduldlg.src:RID_DLG_LIBS.RID_FL_OPTIONS.text
+#: ../data/preferences.ui.in.h:13
+msgid "Options"
+msgstr "Amahitamo"
+
+#: ../data/preferences.ui.in.h:14
+msgid "Processor"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:15
+msgid "S_wap Space"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:16
+#, fuzzy
+msgid "S_ystem"
+msgstr "Sisitemu"
+
+#: ../data/preferences.ui.in.h:17
+msgid "Sh_ared"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:18
+msgid "Swap Space"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:19
+#, fuzzy
+msgid "Sys_tem monitor update interval: "
+msgstr "Kuvugurura Intera"
+
+#: ../data/preferences.ui.in.h:20
+#, fuzzy
+msgid "System m_onitor width: "
+msgstr "Ubugari"
+
+#: ../data/preferences.ui.in.h:21
+#, fuzzy
+msgid "_About"
+msgstr "Bigyanye"
+
+#: ../data/preferences.ui.in.h:22
+msgid "_Autostart: "
+msgstr ""
+
+# officecfg/registry\schema\org\openoffice\Office\Calc.xcs:....Layout.Other.StatusbarFunction..1.text
+#: ../data/preferences.ui.in.h:23
+#, fuzzy
+msgid "_Average"
+msgstr "Impuzandengo"
+
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\WriterWeb.xcs:....Print.Content.Background.text
+# #-#-#-#-#  officecfg.pot (Gnome 2.12)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Writer.xcs:....Print.Content.Background.text
+#: ../data/preferences.ui.in.h:24
+#, fuzzy
+msgid "_Background"
+msgstr "Mbuganyuma"
+
+#: ../data/preferences.ui.in.h:25
+msgid "_Buffers"
+msgstr ""
+
+# svx/source\dialog\labdlg.src:RID_SVXPAGE_CAPTION.LB_WINKEL.1.text
+#: ../data/preferences.ui.in.h:26
+#, fuzzy
+msgid "_Free"
+msgstr "Kigenga"
+
+#: ../data/preferences.ui.in.h:27
+msgid "_Harddisk"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:28
+msgid "_In"
+msgstr ""
+
+# basctl/source\basicide\basidesh.src:RID_STR_OPEN.text
+#: ../data/preferences.ui.in.h:29
+#, fuzzy
+msgid "_Load"
+msgstr "Ibirimo"
+
+#: ../data/preferences.ui.in.h:30
+msgid "_Local"
+msgstr ""
+
+# offmgr/source\offapp\dialog\treeopt.src:RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.4.text
+#: ../data/preferences.ui.in.h:31
+#, fuzzy
+msgid "_Memory"
+msgstr "Ububiko"
+
+# 4032
+#: ../data/preferences.ui.in.h:32
+#, fuzzy
+msgid "_Network"
+msgstr "urusobe"
+
+#: ../data/preferences.ui.in.h:33
+msgid "_Open System Monitor"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:34
+msgid "_Out"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:35
+#, fuzzy
+msgid "_Preferences"
+msgstr "Ibyahiswemo"
+
+#: ../data/preferences.ui.in.h:36
+msgid "_Processor"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:37
+msgid "_Quit"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:38
+#, fuzzy
+msgid "_Read"
+msgstr "Soma"
+
+#: ../data/preferences.ui.in.h:39
+msgid "_Used"
+msgstr ""
+
+# sc/source\ui\dbgui\dapitype.src:RID_SCDLG_DAPISERVICE.FT_USER.text
+#: ../data/preferences.ui.in.h:40
+#, fuzzy
+msgid "_User"
+msgstr "Umukoresha"
+
+# #-#-#-#-#  officecfg.pot (PACKAGE VERSION)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Common.xcs:....Filter.HTML.Export.Browser..3.text
+# #-#-#-#-#  officecfg.pot (PACKAGE VERSION)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Writer.xcs:....FormLetter.MailingOutput.Format..8.text
+#: ../data/preferences.ui.in.h:41
+#, fuzzy
+msgid "_Write"
+msgstr "Kwandika"
+
+#: ../data/preferences.ui.in.h:42
+msgid "milliseconds"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:43
+msgid "pixels"
+msgstr "pigiseli"
+
+#: ../data/preferences.ui.in.h:44
+#, fuzzy
+msgid "translator-credits"
+msgstr "Umusemuzi"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
+#, fuzzy
+msgid "Applet refresh rate in milliseconds"
+msgstr "Kugira gishya Igipimo in"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+msgid "Automatically start on session startup"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+#, fuzzy
+msgid "Background color for disk load graph"
+msgstr "Ibara kugirango Ibirimo"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
+msgid "CPU graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
+#, fuzzy
+msgid "CPU graph background color"
+msgstr "Mbuganyuma Ibara"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
+#, fuzzy
+msgid "Disk load graph alpha"
+msgstr "Ibirimo"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
+#, fuzzy
+msgid "Enable CPU load graph"
+msgstr "Ibirimo"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+#, fuzzy
+msgid "Enable disk load graph"
+msgstr "Ibirimo"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+#, fuzzy
+msgid "Enable load average graph"
+msgstr "Ibirimo Impuzandengo"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+#, fuzzy
+msgid "Enable memory load graph"
+msgstr "Ububiko Ibirimo"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+#, fuzzy
+msgid "Enable network load graph"
+msgstr "urusobe Ibirimo"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
+#, fuzzy
+msgid "Enable swap load graph"
+msgstr "Ibirimo"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+#, fuzzy
+msgid ""
+"For horizontal panels, the width of the graphs in pixels. For vertical "
+"panels, this is the height of the graphs."
+msgstr "Gitambitse Ubugari Bya in Pigiseli Bihagaritse iyi ni Ubuhagarike Bya"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+#, fuzzy
+msgid "Graph color for buffer memory"
+msgstr "Ibara kugirango Ububiko"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+#, fuzzy
+msgid "Graph color for cached memory"
+msgstr "Ibara kugirango Ububiko"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+#, fuzzy
+msgid "Graph color for disk read"
+msgstr "Ibara kugirango Gusoma"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+#, fuzzy
+msgid "Graph color for disk write"
+msgstr "Ibara kugirango"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+#, fuzzy
+msgid "Graph color for input network activity"
+msgstr "Ibara kugirango urusobe Umurimo"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+#, fuzzy
+msgid "Graph color for iowait related CPU activity"
+msgstr "Ibara kugirango Umurimo"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+#, fuzzy
+msgid "Graph color for load average"
+msgstr "Ibara kugirango Ibirimo Impuzandengo"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+#, fuzzy
+msgid "Graph color for loopback network usage"
+msgstr "Ibara kugirango Ikindi urusobe Ikoresha:"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
+#, fuzzy
+msgid "Graph color for nice-related CPU activity"
+msgstr "Ibara kugirango Umurimo"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
+#, fuzzy
+msgid "Graph color for output network activity"
+msgstr "Ibara kugirango urusobe Umurimo"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
+#, fuzzy
+msgid "Graph color for shared memory"
+msgstr "Ibara kugirango Ububiko"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
+#, fuzzy
+msgid "Graph color for system-related CPU activity"
+msgstr "Ibara kugirango Sisitemu Umurimo"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
+#, fuzzy
+msgid "Graph color for user-related CPU activity"
+msgstr "Ibara kugirango Ukoresha: Umurimo"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
+#, fuzzy
+msgid "Graph color for user-related memory usage"
+msgstr "Ibara kugirango Ukoresha: Ububiko Ikoresha:"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:28
+#, fuzzy
+msgid "Graph color for user-related swap usage"
+msgstr "Ibara kugirango Ukoresha: Ikoresha:"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:29
+#, fuzzy
+msgid "Load graph alpha"
+msgstr "Mbuganyuma Ibara"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:30
+#, fuzzy
+msgid "Load graph background color"
+msgstr "Mbuganyuma Ibara"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:31
+#, fuzzy
+msgid "Memory graph alpha"
+msgstr "Mbuganyuma Ibara"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:32
+#, fuzzy
+msgid "Memory graph background color"
+msgstr "Mbuganyuma Ibara"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:33
+#, fuzzy
+msgid "Network graph alpha"
+msgstr "Mbuganyuma Ibara"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:34
+#, fuzzy
+msgid "Network graph background color"
+msgstr "Mbuganyuma Ibara"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:35
+#, fuzzy
+msgid "Swap graph alpha"
+msgstr "Mbuganyuma Ibara"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:36
+#, fuzzy
+msgid "Swap graph background color"
+msgstr "Mbuganyuma Ibara"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:37
+msgid "The desktop description file to execute as the system monitor"
+msgstr ""
+
+#: ../data/indicator-multiload.desktop.in.h:2
+#, fuzzy
+msgid "System Load Indicator"
+msgstr "A Sisitemu Ibirimo"

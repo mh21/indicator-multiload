@@ -1,0 +1,383 @@
+# translation of gnome-applets.HEAD.po to Azerbaijani
+# translation of gnome-applets.HEAD.az.po to Azerbaijani Turkish
+# Copyright (C) 2000,2003, 2004 Free Software Foundation, Inc.
+# Vasif Ismailoglu <azerb_linux@hotmail.com>, 2001.
+# Mətin Əmirov <metin@karegen.com>, 2003, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-applets.HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-05-02 00:01+0200\n"
+"PO-Revision-Date: 2004-09-13 21:13+0300\n"
+"Last-Translator: Mətin Əmirov <metin@karegen.com>\n"
+"Language-Team: Azerbaijani <translation-team-az@lists.sourceforge.net>\n"
+"Language: az\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"net>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.3.1\n"
+
+#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
+#, fuzzy
+msgid ""
+"A system load monitor capable of displaying graphs for CPU, ram, and swap "
+"space use, plus network traffic."
+msgstr ""
+"GNU Generel Public License'ı altında nəşr edilmişdir.\n"
+"\n"
+"Sistem izləyicisi istifadədə olan CPU, yaddaş, dayiş-toqquş faylı və şəbəkə "
+"yükünü da qrafiki olaraq göstərir."
+
+#: ../data/preferences.ui.in.h:2
+msgid "Cach_ed"
+msgstr "Ara _yaddaşa alınmış"
+
+#: ../data/preferences.ui.in.h:3
+msgid "Colors"
+msgstr "Rənglər"
+
+#: ../data/preferences.ui.in.h:4
+msgid "F_ree"
+msgstr "B_oş"
+
+#: ../data/preferences.ui.in.h:5
+#, fuzzy
+msgid "Harddisk"
+msgstr "Sabit Disk"
+
+#: ../data/preferences.ui.in.h:6
+msgid "I_OWait"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:7
+msgid "I_dle"
+msgstr "İş_siz"
+
+#: ../data/preferences.ui.in.h:8
+msgid "Load"
+msgstr "Yük"
+
+#: ../data/preferences.ui.in.h:9
+msgid "Memory"
+msgstr "Yaddaş"
+
+#: ../data/preferences.ui.in.h:10
+msgid "Monitored Resources"
+msgstr "İzlənən Mənbələr"
+
+#: ../data/preferences.ui.in.h:11
+msgid "N_ice"
+msgstr "Ə_la"
+
+#: ../data/preferences.ui.in.h:12
+msgid "Network"
+msgstr "Şəbəkə"
+
+#: ../data/preferences.ui.in.h:13
+msgid "Options"
+msgstr "Seçimlər"
+
+#: ../data/preferences.ui.in.h:14
+msgid "Processor"
+msgstr "İşlədici"
+
+#: ../data/preferences.ui.in.h:15
+msgid "S_wap Space"
+msgstr "Dəyiş-toqquş _Sahəsi"
+
+#: ../data/preferences.ui.in.h:16
+msgid "S_ystem"
+msgstr "S_istem"
+
+#: ../data/preferences.ui.in.h:17
+msgid "Sh_ared"
+msgstr "Bö_lüşülmüş"
+
+#: ../data/preferences.ui.in.h:18
+msgid "Swap Space"
+msgstr "Dəyiş-toqquş Sahəsi"
+
+#: ../data/preferences.ui.in.h:19
+msgid "Sys_tem monitor update interval: "
+msgstr "Sis_tem izləyicisi güncəllənmə vaxtı:"
+
+#: ../data/preferences.ui.in.h:20
+msgid "System m_onitor width: "
+msgstr "Sistem izləyicisi _eni:"
+
+#: ../data/preferences.ui.in.h:21
+msgid "_About"
+msgstr "_Haqqında"
+
+#: ../data/preferences.ui.in.h:22
+msgid "_Autostart: "
+msgstr ""
+
+#: ../data/preferences.ui.in.h:23
+msgid "_Average"
+msgstr "_Orta"
+
+#: ../data/preferences.ui.in.h:24
+msgid "_Background"
+msgstr "_Arxa plan"
+
+#: ../data/preferences.ui.in.h:25
+msgid "_Buffers"
+msgstr "_Bufferlər"
+
+#: ../data/preferences.ui.in.h:26
+msgid "_Free"
+msgstr "B_oş"
+
+#: ../data/preferences.ui.in.h:27
+#, fuzzy
+msgid "_Harddisk"
+msgstr "Sabit Disk"
+
+#: ../data/preferences.ui.in.h:28
+#, fuzzy
+msgid "_In"
+msgstr "_Timsal:"
+
+#: ../data/preferences.ui.in.h:29
+msgid "_Load"
+msgstr "_Yük"
+
+#: ../data/preferences.ui.in.h:30
+msgid "_Local"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:31
+msgid "_Memory"
+msgstr "_Yaddaş"
+
+#: ../data/preferences.ui.in.h:32
+msgid "_Network"
+msgstr "Şə_bəkə"
+
+#: ../data/preferences.ui.in.h:33
+msgid "_Open System Monitor"
+msgstr "_Sistem İzləyicisini Aç"
+
+#: ../data/preferences.ui.in.h:34
+msgid "_Out"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:35
+msgid "_Preferences"
+msgstr "_Seçimlər"
+
+#: ../data/preferences.ui.in.h:36
+msgid "_Processor"
+msgstr "_İşlədici"
+
+#: ../data/preferences.ui.in.h:37
+msgid "_Quit"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:38
+msgid "_Read"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:39
+msgid "_Used"
+msgstr "_İstifadədə"
+
+#: ../data/preferences.ui.in.h:40
+msgid "_User"
+msgstr "_İstifadəçi"
+
+#: ../data/preferences.ui.in.h:41
+msgid "_Write"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:42
+msgid "milliseconds"
+msgstr "millisaniyə"
+
+#: ../data/preferences.ui.in.h:43
+msgid "pixels"
+msgstr "piksel"
+
+#: ../data/preferences.ui.in.h:44
+#, fuzzy
+msgid "translator-credits"
+msgstr ""
+"Vasif İsmailoğlu <linuxaz@azerimail.net>\n"
+"Mətin Əmirov <metin@karegen.com>\n"
+"\n"
+"Tərcümə işləri üzrə yazışma siyahısı ünvanımız:\n"
+"<translation-team-az@lists.sourceforge.net>"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
+msgid "Applet refresh rate in milliseconds"
+msgstr "Appletin millisaniyə olaraq yeniləmə aralığı"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+msgid "Automatically start on session startup"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+#, fuzzy
+msgid "Background color for disk load graph"
+msgstr "Arxa plan rəngi, qırmızı tərkib hissəsi"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
+msgid "CPU graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
+msgid "CPU graph background color"
+msgstr "CPU qrafikası arxa plan rəngi"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
+msgid "Disk load graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
+msgid "Enable CPU load graph"
+msgstr "CPU yük göstəricisini fəallaşdır"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+#, fuzzy
+msgid "Enable disk load graph"
+msgstr "Dəyiş-toqquş sahəsi göstərici qrafikasını fəallaşdır"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+msgid "Enable load average graph"
+msgstr "Yük göstərici qrafikasını fəallaşdır"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+msgid "Enable memory load graph"
+msgstr "Yaddaş göstərici qrafikasını fəallaşdır"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+msgid "Enable network load graph"
+msgstr "Şəbəkə göstərici qrafikasını fəallaşdır"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
+msgid "Enable swap load graph"
+msgstr "Dəyiş-toqquş sahəsi göstərici qrafikasını fəallaşdır"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+msgid ""
+"For horizontal panels, the width of the graphs in pixels. For vertical "
+"panels, this is the height of the graphs."
+msgstr ""
+"Üfüqi panellər üçün, qrafikaların piksel olaraq eni. Şaquli panellər üçün, "
+"bu qrafikaların hündürlüyüdür."
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+msgid "Graph color for buffer memory"
+msgstr "Buffer yaddaşı üçün qrafika rəngi"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+msgid "Graph color for cached memory"
+msgstr "Ara yaddaşa alınmış yaddaş üçün qrafika rəngi"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+#, fuzzy
+msgid "Graph color for disk read"
+msgstr "Yük göstəricisi üçün qrafika rəngi"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+#, fuzzy
+msgid "Graph color for disk write"
+msgstr "Yük göstəricisi üçün qrafika rəngi"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+#, fuzzy
+msgid "Graph color for input network activity"
+msgstr "Eternet fəallığı üçün qrafika rəngi"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+#, fuzzy
+msgid "Graph color for iowait related CPU activity"
+msgstr "Nice ilə əlaqəli CPU fəallığı üçün qrafika rəngi"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+msgid "Graph color for load average"
+msgstr "Yük göstəricisi üçün qrafika rəngi"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+#, fuzzy
+msgid "Graph color for loopback network usage"
+msgstr "Digər şəbəkə istifadəsi üçün qrafika rəngi"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
+msgid "Graph color for nice-related CPU activity"
+msgstr "Nice ilə əlaqəli CPU fəallığı üçün qrafika rəngi"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
+#, fuzzy
+msgid "Graph color for output network activity"
+msgstr "Eternet fəallığı üçün qrafika rəngi"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
+msgid "Graph color for shared memory"
+msgstr "Bölüşülmüş yaddaş üçün qrafika rəngi"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
+msgid "Graph color for system-related CPU activity"
+msgstr "Sistem ilə əlaqəli CPU fəallığı üçün qrafika rəngi"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
+msgid "Graph color for user-related CPU activity"
+msgstr "İstifadəçi ilə əlaqəli CPU fəallığı üçün qrafika rəngi"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
+msgid "Graph color for user-related memory usage"
+msgstr "İstifadəçi ilə əlaqəli yaddaş istifadəsi üçün qrafika rəngi"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:28
+msgid "Graph color for user-related swap usage"
+msgstr ""
+"İstifadəçi ilə əlaqəli dəyiş-toqquş sahəsi istifadəsi üçün qrafika rəngi"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:29
+#, fuzzy
+msgid "Load graph alpha"
+msgstr "Yük göstəricisi arxa plan rəngi"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:30
+msgid "Load graph background color"
+msgstr "Yük göstəricisi arxa plan rəngi"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:31
+#, fuzzy
+msgid "Memory graph alpha"
+msgstr "Yaddaş göstəricisi arxa plan rəngi"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:32
+msgid "Memory graph background color"
+msgstr "Yaddaş göstəricisi arxa plan rəngi"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:33
+#, fuzzy
+msgid "Network graph alpha"
+msgstr "Şəbəkə göstəricisi arxa plan rəngi"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:34
+msgid "Network graph background color"
+msgstr "Şəbəkə göstəricisi arxa plan rəngi"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:35
+#, fuzzy
+msgid "Swap graph alpha"
+msgstr "Dəyiş-toqquş göstəricisi arxa plan rəngi"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:36
+msgid "Swap graph background color"
+msgstr "Dəyiş-toqquş göstəricisi arxa plan rəngi"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:37
+msgid "The desktop description file to execute as the system monitor"
+msgstr ""
+
+#: ../data/indicator-multiload.desktop.in.h:2
+#, fuzzy
+msgid "System Load Indicator"
+msgstr "Sistemin yük səviyyəsi göstəricisi"

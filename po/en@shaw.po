@@ -1,0 +1,365 @@
+# Shavian translation for gnome-applets.
+# Copyright (C) 2009-2010 The Gnome Foundation.
+# Thomas Thurman <tthurman@gnome.org>, 2010.
+# Transliterate AccessX as ·𐑨𐑒𐑕𐑧𐑕X
+# Transliterate Tomboy as ·𐑑𐑪𐑥𐑚𐑶
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-applets\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-05-02 00:01+0200\n"
+"PO-Revision-Date: 2010-05-16 16:05 -0400\n"
+"Last-Translator: Thomas Thurman <tthurman@gnome.org>\n"
+"Language-Team: Shavian <ubuntu-l10n-en-shaw@launchpad.net>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n!=1;\n"
+
+#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
+msgid ""
+"A system load monitor capable of displaying graphs for CPU, ram, and swap "
+"space use, plus network traffic."
+msgstr ""
+"𐑩 𐑕𐑦𐑕𐑑𐑩𐑥 𐑤𐑴𐑛 𐑥𐑪𐑯𐑦𐑑𐑼 𐑒𐑱𐑐𐑩𐑚𐑩𐑤 𐑝 𐑛𐑦𐑕𐑐𐑤𐑱𐑦𐑙 𐑜𐑮𐑭𐑓𐑕 𐑓𐑹 CPU, 𐑮𐑨𐑥, 𐑯 𐑕𐑢𐑪𐑐 𐑕𐑐𐑱𐑕 𐑿𐑟, "
+"𐑐𐑤𐑳𐑕 𐑯𐑧𐑑𐑢𐑻𐑒 𐑑𐑮𐑨𐑓𐑦𐑒."
+
+#: ../data/preferences.ui.in.h:2
+msgid "Cach_ed"
+msgstr "_𐑒𐑨𐑖𐑑"
+
+#: ../data/preferences.ui.in.h:3
+msgid "Colors"
+msgstr "𐑒𐑳𐑤𐑼𐑟"
+
+#: ../data/preferences.ui.in.h:4
+msgid "F_ree"
+msgstr "_𐑓𐑮𐑰"
+
+#: ../data/preferences.ui.in.h:5
+#, fuzzy
+msgid "Harddisk"
+msgstr "Harddisk"
+
+#: ../data/preferences.ui.in.h:6
+#, fuzzy
+msgid "I_OWait"
+msgstr "_IOWait"
+
+#: ../data/preferences.ui.in.h:7
+msgid "I_dle"
+msgstr "_𐑲𐑛𐑩𐑤"
+
+#: ../data/preferences.ui.in.h:8
+msgid "Load"
+msgstr "𐑤𐑴𐑛"
+
+#: ../data/preferences.ui.in.h:9
+msgid "Memory"
+msgstr "𐑥𐑧𐑥𐑼𐑦"
+
+#: ../data/preferences.ui.in.h:10
+msgid "Monitored Resources"
+msgstr "𐑥𐑭𐑯𐑩𐑑𐑻𐑛 𐑮𐑦𐑟𐑹𐑕𐑩𐑟"
+
+#: ../data/preferences.ui.in.h:11
+msgid "N_ice"
+msgstr "_𐑯𐑲𐑕"
+
+#: ../data/preferences.ui.in.h:12
+msgid "Network"
+msgstr "𐑯𐑧𐑑𐑢𐑻𐑒"
+
+#: ../data/preferences.ui.in.h:13
+msgid "Options"
+msgstr "𐑪𐑐𐑖𐑩𐑯𐑟"
+
+#: ../data/preferences.ui.in.h:14
+msgid "Processor"
+msgstr "𐑐𐑮𐑪𐑕𐑧𐑕𐑼"
+
+#: ../data/preferences.ui.in.h:15
+msgid "S_wap Space"
+msgstr "_𐑕𐑢𐑪𐑐 𐑕𐑐𐑱𐑕"
+
+#: ../data/preferences.ui.in.h:16
+msgid "S_ystem"
+msgstr "_𐑕𐑦𐑕𐑑𐑩𐑥"
+
+#: ../data/preferences.ui.in.h:17
+msgid "Sh_ared"
+msgstr "_𐑖𐑺𐑛"
+
+#: ../data/preferences.ui.in.h:18
+msgid "Swap Space"
+msgstr "𐑕𐑢𐑪𐑐 𐑕𐑐𐑱𐑕"
+
+#: ../data/preferences.ui.in.h:19
+msgid "Sys_tem monitor update interval: "
+msgstr "_𐑕𐑦𐑕𐑑𐑩𐑥 𐑥𐑪𐑯𐑦𐑑𐑼 𐑳𐑐𐑛𐑱𐑑 𐑦𐑯𐑑𐑼𐑝𐑩𐑤: "
+
+#: ../data/preferences.ui.in.h:20
+msgid "System m_onitor width: "
+msgstr "𐑕𐑦𐑕𐑑𐑩𐑥 _𐑥𐑪𐑯𐑦𐑑𐑼 𐑢𐑦𐑛𐑔: "
+
+#: ../data/preferences.ui.in.h:21
+msgid "_About"
+msgstr "_𐑩𐑚𐑬𐑑"
+
+#: ../data/preferences.ui.in.h:22
+msgid "_Autostart: "
+msgstr ""
+
+#: ../data/preferences.ui.in.h:23
+msgid "_Average"
+msgstr "_𐑨𐑝𐑼𐑦𐑡"
+
+#: ../data/preferences.ui.in.h:24
+msgid "_Background"
+msgstr "_𐑚𐑨𐑒𐑜𐑮𐑬𐑯𐑛"
+
+#: ../data/preferences.ui.in.h:25
+msgid "_Buffers"
+msgstr "_𐑚𐑳𐑓𐑼𐑟"
+
+#: ../data/preferences.ui.in.h:26
+msgid "_Free"
+msgstr "_𐑓𐑮𐑰"
+
+#: ../data/preferences.ui.in.h:27
+#, fuzzy
+msgid "_Harddisk"
+msgstr "_Harddisk"
+
+#: ../data/preferences.ui.in.h:28
+msgid "_In"
+msgstr "_𐑦𐑯"
+
+#: ../data/preferences.ui.in.h:29
+msgid "_Load"
+msgstr "_𐑤𐑴𐑛"
+
+#: ../data/preferences.ui.in.h:30
+msgid "_Local"
+msgstr "_𐑤𐑴𐑒𐑩𐑤"
+
+#: ../data/preferences.ui.in.h:31
+msgid "_Memory"
+msgstr "_𐑥𐑧𐑥𐑼𐑦"
+
+#: ../data/preferences.ui.in.h:32
+msgid "_Network"
+msgstr "_𐑯𐑧𐑑𐑢𐑻𐑒"
+
+#: ../data/preferences.ui.in.h:33
+msgid "_Open System Monitor"
+msgstr "_𐑴𐑐𐑩𐑯 𐑕𐑦𐑕𐑑𐑩𐑥 𐑥𐑪𐑯𐑦𐑑𐑼"
+
+#: ../data/preferences.ui.in.h:34
+msgid "_Out"
+msgstr "_𐑬𐑑"
+
+#: ../data/preferences.ui.in.h:35
+msgid "_Preferences"
+msgstr "_𐑐𐑮𐑧𐑓𐑼𐑩𐑯𐑕𐑩𐑟"
+
+#: ../data/preferences.ui.in.h:36
+msgid "_Processor"
+msgstr "_𐑐𐑮𐑭𐑕𐑧𐑕𐑻"
+
+#: ../data/preferences.ui.in.h:37
+msgid "_Quit"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:38
+msgid "_Read"
+msgstr "_𐑮𐑧𐑛"
+
+#: ../data/preferences.ui.in.h:39
+msgid "_Used"
+msgstr "_𐑿𐑕𐑑"
+
+#: ../data/preferences.ui.in.h:40
+msgid "_User"
+msgstr "_𐑿𐑟𐑼"
+
+#: ../data/preferences.ui.in.h:41
+msgid "_Write"
+msgstr "_𐑮𐑲𐑑"
+
+#: ../data/preferences.ui.in.h:42
+msgid "milliseconds"
+msgstr "𐑥𐑦𐑤𐑦𐑕𐑧𐑒𐑩𐑯𐑛𐑟"
+
+#: ../data/preferences.ui.in.h:43
+msgid "pixels"
+msgstr "𐑐𐑦𐑒𐑕𐑩𐑤𐑟"
+
+#: ../data/preferences.ui.in.h:44
+msgid "translator-credits"
+msgstr "·𐑑𐑪𐑥𐑩𐑕 ·𐑔𐑻𐑥𐑩𐑯"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
+msgid "Applet refresh rate in milliseconds"
+msgstr "𐑨𐑐𐑤𐑩𐑑 𐑮𐑰𐑓𐑮𐑧𐑖 𐑮𐑱𐑑 𐑦𐑯 𐑥𐑦𐑤𐑦𐑕𐑧𐑒𐑩𐑯𐑛𐑟"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+msgid "Automatically start on session startup"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+msgid "Background color for disk load graph"
+msgstr "𐑚𐑨𐑒𐑜𐑮𐑬𐑯𐑛 𐑒𐑳𐑤𐑼 𐑓𐑹 𐑛𐑦𐑕𐑒 𐑤𐑴𐑛 𐑜𐑮𐑭𐑓"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
+msgid "CPU graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
+msgid "CPU graph background color"
+msgstr "CPU 𐑜𐑮𐑭𐑓 𐑚𐑨𐑒𐑜𐑮𐑬𐑯𐑛 𐑒𐑳𐑤𐑼"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
+#, fuzzy
+msgid "Disk load graph alpha"
+msgstr "𐑦𐑯𐑱𐑚𐑩𐑤 𐑛𐑦𐑕𐑒 𐑤𐑴𐑛 𐑜𐑮𐑭𐑓"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
+msgid "Enable CPU load graph"
+msgstr "𐑦𐑯𐑱𐑚𐑩𐑤 CPU 𐑤𐑴𐑛 𐑜𐑮𐑭𐑓"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+msgid "Enable disk load graph"
+msgstr "𐑦𐑯𐑱𐑚𐑩𐑤 𐑛𐑦𐑕𐑒 𐑤𐑴𐑛 𐑜𐑮𐑭𐑓"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+msgid "Enable load average graph"
+msgstr "𐑦𐑯𐑱𐑚𐑩𐑤 𐑤𐑴𐑛 𐑨𐑝𐑼𐑦𐑡 𐑜𐑮𐑭𐑓"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+msgid "Enable memory load graph"
+msgstr "𐑦𐑯𐑱𐑚𐑩𐑤 𐑥𐑧𐑥𐑼𐑦 𐑤𐑴𐑛 𐑜𐑮𐑭𐑓"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+msgid "Enable network load graph"
+msgstr "𐑦𐑯𐑱𐑚𐑩𐑤 𐑯𐑧𐑑𐑢𐑻𐑒 𐑤𐑴𐑛 𐑜𐑮𐑭𐑓"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
+msgid "Enable swap load graph"
+msgstr "𐑦𐑯𐑱𐑚𐑩𐑤 𐑕𐑢𐑪𐑐 𐑤𐑴𐑛 𐑜𐑮𐑭𐑓"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+msgid ""
+"For horizontal panels, the width of the graphs in pixels. For vertical "
+"panels, this is the height of the graphs."
+msgstr ""
+"𐑓𐑹 𐑣𐑪𐑮𐑦𐑟𐑪𐑯𐑑𐑩𐑤 𐑐𐑨𐑯𐑩𐑤𐑟, 𐑞 𐑢𐑦𐑛𐑔 𐑝 𐑞 𐑜𐑮𐑭𐑓𐑕 𐑦𐑯 𐑐𐑦𐑒𐑕𐑩𐑤𐑟. 𐑓𐑹 𐑝𐑻𐑑𐑦𐑒𐑩𐑤 𐑐𐑨𐑯𐑩𐑤𐑟, 𐑞𐑦𐑕 𐑦𐑟 "
+"𐑞 𐑣𐑲𐑑 𐑝 𐑞 𐑜𐑮𐑭𐑓𐑕."
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+msgid "Graph color for buffer memory"
+msgstr "𐑜𐑮𐑭𐑓 𐑒𐑳𐑤𐑼 𐑓𐑹 𐑚𐑳𐑓𐑼 𐑥𐑧𐑥𐑼𐑦"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+msgid "Graph color for cached memory"
+msgstr "𐑜𐑮𐑭𐑓 𐑒𐑳𐑤𐑼 𐑓𐑹 𐑒𐑨𐑖𐑑 𐑥𐑧𐑥𐑼𐑦"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+msgid "Graph color for disk read"
+msgstr "𐑜𐑮𐑭𐑓 𐑒𐑳𐑤𐑼 𐑓𐑹 𐑛𐑦𐑕𐑒 𐑮𐑧𐑛"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+msgid "Graph color for disk write"
+msgstr "𐑜𐑮𐑭𐑓 𐑒𐑳𐑤𐑼 𐑓𐑹 𐑛𐑦𐑕𐑒 𐑮𐑲𐑑"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+msgid "Graph color for input network activity"
+msgstr "𐑜𐑮𐑭𐑓 𐑒𐑳𐑤𐑼 𐑓𐑹 𐑦𐑯𐑐𐑫𐑑 𐑯𐑧𐑑𐑢𐑻𐑒 𐑨𐑒𐑑𐑦𐑝𐑦𐑑𐑦"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+#, fuzzy
+msgid "Graph color for iowait related CPU activity"
+msgstr "𐑜𐑮𐑭𐑓 𐑒𐑳𐑤𐑼 𐑓𐑹 iowait 𐑮𐑦𐑤𐑱𐑑𐑩𐑛 CPU 𐑨𐑒𐑑𐑦𐑝𐑦𐑑𐑦"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+msgid "Graph color for load average"
+msgstr "𐑜𐑮𐑭𐑓 𐑒𐑳𐑤𐑼 𐑓𐑹 𐑤𐑴𐑛 𐑨𐑝𐑼𐑦𐑡"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+#, fuzzy
+msgid "Graph color for loopback network usage"
+msgstr "𐑜𐑮𐑭𐑓 𐑒𐑳𐑤𐑼 𐑓𐑹 loopback 𐑯𐑧𐑑𐑢𐑻𐑒 𐑿𐑕𐑦𐑡"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
+msgid "Graph color for nice-related CPU activity"
+msgstr "𐑜𐑮𐑭𐑓 𐑒𐑳𐑤𐑼 𐑓𐑹 𐑯𐑲𐑕-𐑮𐑦𐑤𐑱𐑑𐑩𐑛 CPU 𐑨𐑒𐑑𐑦𐑝𐑦𐑑𐑦"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
+msgid "Graph color for output network activity"
+msgstr "𐑜𐑮𐑭𐑓 𐑒𐑳𐑤𐑼 𐑓𐑹 𐑬𐑑𐑐𐑫𐑑 𐑯𐑧𐑑𐑢𐑻𐑒 𐑨𐑒𐑑𐑦𐑝𐑦𐑑𐑦"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
+msgid "Graph color for shared memory"
+msgstr "𐑜𐑮𐑭𐑓 𐑒𐑳𐑤𐑼 𐑓𐑹 𐑖𐑺𐑛 𐑥𐑧𐑥𐑼𐑦"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
+msgid "Graph color for system-related CPU activity"
+msgstr "𐑜𐑮𐑭𐑓 𐑒𐑳𐑤𐑼 𐑓𐑹 𐑕𐑦𐑕𐑑𐑩𐑥-𐑮𐑦𐑤𐑱𐑑𐑩𐑛 CPU 𐑨𐑒𐑑𐑦𐑝𐑦𐑑𐑦"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
+msgid "Graph color for user-related CPU activity"
+msgstr "𐑜𐑮𐑭𐑓 𐑒𐑳𐑤𐑼 𐑓𐑹 𐑿𐑟𐑼-𐑮𐑦𐑤𐑱𐑑𐑩𐑛 CPU 𐑨𐑒𐑑𐑦𐑝𐑦𐑑𐑦"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
+msgid "Graph color for user-related memory usage"
+msgstr "𐑜𐑮𐑭𐑓 𐑒𐑳𐑤𐑼 𐑓𐑹 𐑿𐑟𐑼-𐑮𐑦𐑤𐑱𐑑𐑩𐑛 𐑥𐑧𐑥𐑼𐑦 𐑿𐑕𐑦𐑡"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:28
+msgid "Graph color for user-related swap usage"
+msgstr "𐑜𐑮𐑭𐑓 𐑒𐑳𐑤𐑼 𐑓𐑹 𐑿𐑟𐑼-𐑮𐑦𐑤𐑱𐑑𐑩𐑛 𐑕𐑢𐑪𐑐 𐑿𐑕𐑦𐑡"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:29
+#, fuzzy
+msgid "Load graph alpha"
+msgstr "𐑤𐑴𐑛 𐑜𐑮𐑭𐑓 𐑚𐑨𐑒𐑜𐑮𐑬𐑯𐑛 𐑒𐑳𐑤𐑼"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:30
+msgid "Load graph background color"
+msgstr "𐑤𐑴𐑛 𐑜𐑮𐑭𐑓 𐑚𐑨𐑒𐑜𐑮𐑬𐑯𐑛 𐑒𐑳𐑤𐑼"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:31
+#, fuzzy
+msgid "Memory graph alpha"
+msgstr "𐑥𐑧𐑥𐑼𐑦 𐑜𐑮𐑭𐑓 𐑚𐑨𐑒𐑜𐑮𐑬𐑯𐑛 𐑒𐑳𐑤𐑼"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:32
+msgid "Memory graph background color"
+msgstr "𐑥𐑧𐑥𐑼𐑦 𐑜𐑮𐑭𐑓 𐑚𐑨𐑒𐑜𐑮𐑬𐑯𐑛 𐑒𐑳𐑤𐑼"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:33
+#, fuzzy
+msgid "Network graph alpha"
+msgstr "𐑯𐑧𐑑𐑢𐑻𐑒 𐑜𐑮𐑭𐑓 𐑚𐑨𐑒𐑜𐑮𐑬𐑯𐑛 𐑒𐑳𐑤𐑼"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:34
+msgid "Network graph background color"
+msgstr "𐑯𐑧𐑑𐑢𐑻𐑒 𐑜𐑮𐑭𐑓 𐑚𐑨𐑒𐑜𐑮𐑬𐑯𐑛 𐑒𐑳𐑤𐑼"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:35
+#, fuzzy
+msgid "Swap graph alpha"
+msgstr "𐑕𐑢𐑪𐑐 𐑜𐑮𐑭𐑓 𐑚𐑨𐑒𐑜𐑮𐑬𐑯𐑛 𐑒𐑳𐑤𐑼"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:36
+msgid "Swap graph background color"
+msgstr "𐑕𐑢𐑪𐑐 𐑜𐑮𐑭𐑓 𐑚𐑨𐑒𐑜𐑮𐑬𐑯𐑛 𐑒𐑳𐑤𐑼"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:37
+msgid "The desktop description file to execute as the system monitor"
+msgstr "𐑞 𐑛𐑧𐑕𐑒𐑑𐑪𐑐 𐑛𐑦𐑕𐑒𐑮𐑦𐑐𐑖𐑩𐑯 𐑓𐑲𐑤 𐑑 𐑧𐑒𐑕𐑩𐑒𐑿𐑑 𐑨𐑟 𐑞 𐑕𐑦𐑕𐑑𐑩𐑥 𐑥𐑪𐑯𐑦𐑑𐑼"
+
+#: ../data/indicator-multiload.desktop.in.h:2
+#, fuzzy
+msgid "System Load Indicator"
+msgstr "𐑩 𐑕𐑦𐑕𐑑𐑩𐑥 𐑤𐑴𐑛 𐑦𐑯𐑛𐑦𐑒𐑱𐑑𐑼"

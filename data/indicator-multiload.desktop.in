@@ -1,0 +1,9 @@
+[Desktop Entry]
+_Name=System Load Indicator
+_Comment=A system load monitor capable of displaying graphs for CPU, ram, and swap space use, plus network traffic.
+Exec=indicator-multiload
+Terminal=false
+Type=Application
+StartupNotify=true
+Icon=utilities-system-monitor
+Categories=GNOME;System;

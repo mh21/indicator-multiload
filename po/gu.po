@@ -1,0 +1,385 @@
+# translation of gnome-applets.master.gu.po to Gujarati
+# Ankit Patel <ankit644@yahoo.com>, 2005, 2006.
+# Ankit Patel <ankit@redhat.com>, 2005, 2007, 2008, 2009.
+# Sweta Kothari <swkothar@redhat.com>, 2008, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-applets.master.gu\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-05-02 00:01+0200\n"
+"PO-Revision-Date: 2009-08-31 14:07+0530\n"
+"Last-Translator: Sweta Kothari <swkothar@redhat.com>\n"
+"Language-Team: Gujarati\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+
+#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
+msgid ""
+"A system load monitor capable of displaying graphs for CPU, ram, and swap "
+"space use, plus network traffic."
+msgstr ""
+"સિસ્ટમ લોડ મોનિટર CPU, ram, અને વપરાયેલ સ્વેપ જગ્યા, વત્તા નેટવર્કનો ટ્રાફિક માટે આલેખો "
+"બતાવવા માટે સક્ષમ હોય છે."
+
+#: ../data/preferences.ui.in.h:2
+msgid "Cach_ed"
+msgstr "કેશવાળી (_e)"
+
+#: ../data/preferences.ui.in.h:3
+msgid "Colors"
+msgstr "રંગો"
+
+#: ../data/preferences.ui.in.h:4
+msgid "F_ree"
+msgstr "મુક્ત (_r)"
+
+#: ../data/preferences.ui.in.h:5
+msgid "Harddisk"
+msgstr "હાર્ડ ડિસ્ક"
+
+#: ../data/preferences.ui.in.h:6
+msgid "I_OWait"
+msgstr "IOWait (_O)"
+
+#: ../data/preferences.ui.in.h:7
+msgid "I_dle"
+msgstr "નિષ્ક્રિય (_d)"
+
+#: ../data/preferences.ui.in.h:8
+msgid "Load"
+msgstr "લાવો"
+
+#: ../data/preferences.ui.in.h:9
+msgid "Memory"
+msgstr "મેમરી"
+
+#: ../data/preferences.ui.in.h:10
+msgid "Monitored Resources"
+msgstr "જોવાઈ ગયેલા સ્રોતો"
+
+#: ../data/preferences.ui.in.h:11
+msgid "N_ice"
+msgstr "સરસ (_i)"
+
+#: ../data/preferences.ui.in.h:12
+msgid "Network"
+msgstr "નેટવર્ક"
+
+# gnome-session/session-properties-capplet.c:217
+#: ../data/preferences.ui.in.h:13
+msgid "Options"
+msgstr "વિકલ્પો"
+
+#: ../data/preferences.ui.in.h:14
+msgid "Processor"
+msgstr "પ્રોસેસર"
+
+#: ../data/preferences.ui.in.h:15
+msgid "S_wap Space"
+msgstr "અદલબદલની જગ્યા (_w)"
+
+#: ../data/preferences.ui.in.h:16
+msgid "S_ystem"
+msgstr "સિસ્ટમ (_y)"
+
+#: ../data/preferences.ui.in.h:17
+msgid "Sh_ared"
+msgstr "સહભાગી (_a)"
+
+#: ../data/preferences.ui.in.h:18
+msgid "Swap Space"
+msgstr "અદલબદલની જગ્યા"
+
+#: ../data/preferences.ui.in.h:19
+msgid "Sys_tem monitor update interval: "
+msgstr "સિસ્ટમ મોનીટર બદલવાનો અંતરાલ: (_t)"
+
+#: ../data/preferences.ui.in.h:20
+msgid "System m_onitor width: "
+msgstr "સિસ્ટમ મોનીટરની પહોળાઈ: (_o)"
+
+#: ../data/preferences.ui.in.h:21
+msgid "_About"
+msgstr "વિશે (_A)"
+
+#: ../data/preferences.ui.in.h:22
+msgid "_Autostart: "
+msgstr ""
+
+#: ../data/preferences.ui.in.h:23
+msgid "_Average"
+msgstr "સરેરાશ (_A)"
+
+#: ../data/preferences.ui.in.h:24
+msgid "_Background"
+msgstr "પાશ્વ ભાગ (_B)"
+
+#: ../data/preferences.ui.in.h:25
+msgid "_Buffers"
+msgstr "બફરો (_B)"
+
+#: ../data/preferences.ui.in.h:26
+msgid "_Free"
+msgstr "મુક્ત (_F)"
+
+#: ../data/preferences.ui.in.h:27
+msgid "_Harddisk"
+msgstr "હાર્ડ ડિસ્ક (_H)"
+
+#: ../data/preferences.ui.in.h:28
+msgid "_In"
+msgstr "માં (_I)"
+
+#: ../data/preferences.ui.in.h:29
+msgid "_Load"
+msgstr "બોજો (_L)"
+
+#: ../data/preferences.ui.in.h:30
+msgid "_Local"
+msgstr "સ્થાનિય (_L)"
+
+#: ../data/preferences.ui.in.h:31
+msgid "_Memory"
+msgstr "મેમરી (_M)"
+
+#: ../data/preferences.ui.in.h:32
+msgid "_Network"
+msgstr "નેટવર્ક (_N)"
+
+#: ../data/preferences.ui.in.h:33
+msgid "_Open System Monitor"
+msgstr "સિસ્ટમ મોનીટર ખોલો (_O)"
+
+#: ../data/preferences.ui.in.h:34
+msgid "_Out"
+msgstr "બહાર (_O)"
+
+#: ../data/preferences.ui.in.h:35
+msgid "_Preferences"
+msgstr "પસંદગીઓ (_P)"
+
+#: ../data/preferences.ui.in.h:36
+msgid "_Processor"
+msgstr "પ્રોસેસર (_P)"
+
+#: ../data/preferences.ui.in.h:37
+msgid "_Quit"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:38
+msgid "_Read"
+msgstr "વાંચો (_R)"
+
+#: ../data/preferences.ui.in.h:39
+msgid "_Used"
+msgstr "વપરાયેલ (_U)"
+
+#: ../data/preferences.ui.in.h:40
+msgid "_User"
+msgstr "વપરાશકર્તા (_U)"
+
+#: ../data/preferences.ui.in.h:41
+msgid "_Write"
+msgstr "લખો (_W)"
+
+#: ../data/preferences.ui.in.h:42
+msgid "milliseconds"
+msgstr "મિલિસેકન્ડો"
+
+#: ../data/preferences.ui.in.h:43
+msgid "pixels"
+msgstr "બિંદુઓ"
+
+#: ../data/preferences.ui.in.h:44
+msgid "translator-credits"
+msgstr "અંકિત પટેલ <ankit644@yahoo.com>, શ્ર્વેતા કોઠારી <swkothar@redhat.com>"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
+msgid "Applet refresh rate in milliseconds"
+msgstr "એપ્લેટનો ફરીથી તાજા થવાનો દર મિલિસેકન્ડમાં"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+msgid "Automatically start on session startup"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+msgid "Background color for disk load graph"
+msgstr "ડિસ્ક લોડ ગ્રાફ માટે પાશ્વ ભાગનો રંગ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
+msgid "CPU graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
+msgid "CPU graph background color"
+msgstr "CPU આલેખનો પાશ્વ ભાગનો રંગ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
+#, fuzzy
+msgid "Disk load graph alpha"
+msgstr "ડિસ્ક લોડ ગ્રાફ સક્રિય કરો"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
+msgid "Enable CPU load graph"
+msgstr "CPU બોજ આલેખને સક્રિય કરો"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+msgid "Enable disk load graph"
+msgstr "ડિસ્ક લોડ ગ્રાફ સક્રિય કરો"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+msgid "Enable load average graph"
+msgstr "સરેરાશ બોજનો આલેખ સક્રિય કરો"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+msgid "Enable memory load graph"
+msgstr "મેમરી બોજનો આલેખ સક્રિય કરો"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+msgid "Enable network load graph"
+msgstr "નેટવર્ક બોજનો આલેખ સક્રિય કરો"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
+msgid "Enable swap load graph"
+msgstr "અદલબદલનાં બોજનો આલેખ સક્રિય કરો"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+msgid ""
+"For horizontal panels, the width of the graphs in pixels. For vertical "
+"panels, this is the height of the graphs."
+msgstr "આડી પેનલો માટે, આલેખની પહોળાઈ બિંદુઓમાં. ઉભી પેનલો માટે આ આલેખની ઊંચાઈ છે."
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+msgid "Graph color for buffer memory"
+msgstr "બફર મેમરી ગ્રાફનો રંગ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+msgid "Graph color for cached memory"
+msgstr "કેશ મેમરી માટે ગ્રાફનો રંગ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+msgid "Graph color for disk read"
+msgstr "ડિસ્ક વાંચવા માટે ગ્રાફનો રંગ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+msgid "Graph color for disk write"
+msgstr "ડિસ્ક પર લખવા માટે ગ્રાફનો રંગ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+msgid "Graph color for input network activity"
+msgstr "ઇનપુટ નેટવર્ક પ્રવૃત્તિ માટે આલેખ રંગ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+msgid "Graph color for iowait related CPU activity"
+msgstr "iowait સંબંધિત CPU ક્રિયા માટે ગ્રાફનો રંગ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+msgid "Graph color for load average"
+msgstr "સરેરાશ બોજ માટે આલેખનો રંગ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+msgid "Graph color for loopback network usage"
+msgstr "લુપબેક નેટવર્ક વપરાશ માટે ગ્રાફ રંગ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
+msgid "Graph color for nice-related CPU activity"
+msgstr "niceને લગતી CPUની ક્રિયા માટે આલેખનો રંગ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
+msgid "Graph color for output network activity"
+msgstr "આઉટપુટ નેટવર્ક પ્રવૃત્તિ માટે આલેખ રંગ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
+msgid "Graph color for shared memory"
+msgstr "સહભાગી મેમરી માટે આલેખનો રંગ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
+msgid "Graph color for system-related CPU activity"
+msgstr "સિસ્ટમને લગતી CPUની ક્રિયા માટે આલેખનો રંગ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
+msgid "Graph color for user-related CPU activity"
+msgstr "વપરાશકર્તાને લગતી CPUની ક્રિયા માટે આલેખનો રંગ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
+msgid "Graph color for user-related memory usage"
+msgstr "વપરાશકર્તાને લગતી મેમરીનાં વપરાશ માટે આલેખનો રંગ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:28
+msgid "Graph color for user-related swap usage"
+msgstr "વપરાશકર્તાને લગતી અદલબદલની જગ્યાનાં વપરાશ માટે આલેખનો રંગ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:29
+#, fuzzy
+msgid "Load graph alpha"
+msgstr "આલેખનાં પાશ્વ ભાગનો રંગ લાવો"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:30
+msgid "Load graph background color"
+msgstr "આલેખનાં પાશ્વ ભાગનો રંગ લાવો"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:31
+#, fuzzy
+msgid "Memory graph alpha"
+msgstr "મેમરી આલેખનાં પાશ્વ ભાગનો રંગ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:32
+msgid "Memory graph background color"
+msgstr "મેમરી આલેખનાં પાશ્વ ભાગનો રંગ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:33
+#, fuzzy
+msgid "Network graph alpha"
+msgstr "નેટવર્ક આલેખનાં પાશ્વ ભાગનો રંગ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:34
+msgid "Network graph background color"
+msgstr "નેટવર્ક આલેખનાં પાશ્વ ભાગનો રંગ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:35
+#, fuzzy
+msgid "Swap graph alpha"
+msgstr "અદલબદલની જગ્યાનાં આલેખનાં પાશ્વ ભાગનો રંગ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:36
+msgid "Swap graph background color"
+msgstr "અદલબદલની જગ્યાનાં આલેખનાં પાશ્વ ભાગનો રંગ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:37
+msgid "The desktop description file to execute as the system monitor"
+msgstr "સિસ્ટમ મોનીટર તરીકે ચલાવવા માટે ડેસ્કટોપ વર્ણન ફાઇલ"
+
+#: ../data/indicator-multiload.desktop.in.h:2
+#, fuzzy
+msgid "System Load Indicator"
+msgstr "સિસ્ટમ પરનો બોજ દર્શાવનાર"

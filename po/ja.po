@@ -1,0 +1,385 @@
+# gnome-applets ja.po.
+# Copyright (C) 1998-2010 Free Software Foundation, Inc.
+# Yukihiro Nakai <Nakai@abricot.co.jp>, 1998,2000.
+# Yasuyuki Furukawa <yasu@on.cs.keio.ac.jp>, 1999.
+# Eiichiro ITANI <emu@ceres.dti.ne.jp>, 1999.
+# Yuusuke Tahara <tahara@gnome.gr.jp>, 2000.
+# Shingo Akagaki <dora@kondara.org>, 2000.
+# Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2000-2002, 2010.
+# Akira TAGOH <tagoh@gnome.gr.jp>, 2001.
+# Sun G11n <gnome_int_l10n@ireland.sun.com>, 2002.
+# KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
+# Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2009.
+# Satoru SATOH <ss@gnome.gr.jp>, 2006.
+# Hideki Yamane (Debian-JP) <henrich@debian.or.jp>, 2009.
+# OKANO Takayoshi <kano@na.rim.or.jp>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-applets master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-05-02 00:01+0200\n"
+"PO-Revision-Date: 2010-11-01 00:13+0900\n"
+"Last-Translator: Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>\n"
+"Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
+msgid ""
+"A system load monitor capable of displaying graphs for CPU, ram, and swap "
+"space use, plus network traffic."
+msgstr ""
+"CPU、RAM、スワップの使用率とネットワーク負荷のグラフを表示できるシステム負荷"
+"モニタです。"
+
+#: ../data/preferences.ui.in.h:2
+msgid "Cach_ed"
+msgstr "キャッシュ(_E)"
+
+#: ../data/preferences.ui.in.h:3
+msgid "Colors"
+msgstr "色"
+
+#: ../data/preferences.ui.in.h:4
+msgid "F_ree"
+msgstr "未使用(_R)"
+
+#: ../data/preferences.ui.in.h:5
+msgid "Harddisk"
+msgstr "ハードディスク"
+
+#: ../data/preferences.ui.in.h:6
+msgid "I_OWait"
+msgstr "IOWait(_O)"
+
+#: ../data/preferences.ui.in.h:7
+msgid "I_dle"
+msgstr "待機(_D)"
+
+#: ../data/preferences.ui.in.h:8
+msgid "Load"
+msgstr "負荷"
+
+#: ../data/preferences.ui.in.h:9
+msgid "Memory"
+msgstr "メモリ"
+
+#: ../data/preferences.ui.in.h:10
+msgid "Monitored Resources"
+msgstr "モニターするリソース"
+
+#: ../data/preferences.ui.in.h:11
+msgid "N_ice"
+msgstr "Nice値(_I)"
+
+#: ../data/preferences.ui.in.h:12
+msgid "Network"
+msgstr "ネットワーク"
+
+#: ../data/preferences.ui.in.h:13
+msgid "Options"
+msgstr "オプション"
+
+#: ../data/preferences.ui.in.h:14
+msgid "Processor"
+msgstr "プロセッサ"
+
+#: ../data/preferences.ui.in.h:15
+msgid "S_wap Space"
+msgstr "スワップ領域(_W)"
+
+#: ../data/preferences.ui.in.h:16
+msgid "S_ystem"
+msgstr "システム(_Y)"
+
+#: ../data/preferences.ui.in.h:17
+msgid "Sh_ared"
+msgstr "共有(_A)"
+
+#: ../data/preferences.ui.in.h:18
+msgid "Swap Space"
+msgstr "スワップ"
+
+#: ../data/preferences.ui.in.h:19
+msgid "Sys_tem monitor update interval: "
+msgstr "更新間隔(_T): "
+
+#: ../data/preferences.ui.in.h:20
+msgid "System m_onitor width: "
+msgstr "システムモニタの幅(_O): "
+
+#: ../data/preferences.ui.in.h:21
+msgid "_About"
+msgstr "情報(_A)"
+
+#: ../data/preferences.ui.in.h:22
+msgid "_Autostart: "
+msgstr ""
+
+#: ../data/preferences.ui.in.h:23
+msgid "_Average"
+msgstr "平均(_A)"
+
+#: ../data/preferences.ui.in.h:24
+msgid "_Background"
+msgstr "背景色(_B)"
+
+#: ../data/preferences.ui.in.h:25
+msgid "_Buffers"
+msgstr "バッファ(_B)"
+
+#: ../data/preferences.ui.in.h:26
+msgid "_Free"
+msgstr "未使用(_F)"
+
+#: ../data/preferences.ui.in.h:27
+msgid "_Harddisk"
+msgstr "ハードディスク(_H)"
+
+#: ../data/preferences.ui.in.h:28
+msgid "_In"
+msgstr "受信(_I)"
+
+#: ../data/preferences.ui.in.h:29
+msgid "_Load"
+msgstr "負荷(_L)"
+
+#: ../data/preferences.ui.in.h:30
+msgid "_Local"
+msgstr "ローカル(_L)"
+
+#: ../data/preferences.ui.in.h:31
+msgid "_Memory"
+msgstr "メモリ(_M)"
+
+#: ../data/preferences.ui.in.h:32
+msgid "_Network"
+msgstr "ネットワーク(_N)"
+
+#: ../data/preferences.ui.in.h:33
+msgid "_Open System Monitor"
+msgstr "システムモニタを開く(_O)"
+
+#: ../data/preferences.ui.in.h:34
+msgid "_Out"
+msgstr "送信(_O)"
+
+#: ../data/preferences.ui.in.h:35
+msgid "_Preferences"
+msgstr "設定(_P)"
+
+#: ../data/preferences.ui.in.h:36
+msgid "_Processor"
+msgstr "プロセッサ(_P)"
+
+#: ../data/preferences.ui.in.h:37
+msgid "_Quit"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:38
+msgid "_Read"
+msgstr "読み込み(_R)"
+
+#: ../data/preferences.ui.in.h:39
+msgid "_Used"
+msgstr "使用中(_U)"
+
+#: ../data/preferences.ui.in.h:40
+msgid "_User"
+msgstr "ユーザ(_U)"
+
+#: ../data/preferences.ui.in.h:41
+msgid "_Write"
+msgstr "書き込み(_W)"
+
+#: ../data/preferences.ui.in.h:42
+msgid "milliseconds"
+msgstr "ミリ秒"
+
+#: ../data/preferences.ui.in.h:43
+msgid "pixels"
+msgstr "ピクセル"
+
+#: ../data/preferences.ui.in.h:44
+msgid "translator-credits"
+msgstr ""
+"相花 毅 <takeshi.aihana@gmail.com>\n"
+"佐藤 暁 <ss@gnome.gr.jp>\n"
+"KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>\n"
+"Sun G11n <gnome_int_l10n@ireland.sun.com>\n"
+"Akira TAGOH <tagoh@gnome.gr.jp>\n"
+"草野 貴之 <AE5T-KSN@asahi-net.or.jp>\n"
+"Shingo Akagaki <dora@kondara.org>\n"
+"Yuusuke Tahara <tahara@gnome.gr.jp>\n"
+"Eiichiro ITANI <emu@ceres.dti.ne.jp>\n"
+"Yasuyuki Furukawa <yasu@on.cs.keio.ac.jp>\n"
+"Yukihiro Nakai <Nakai@abricot.co.jp>\n"
+"やまねひでき <henrich@debian.or.jp>\n"
+"OKANO Takayoshi <kano@na.rim.or.jp>\n"
+"日本GNOMEユーザー会 <http://www.gnome.gr.jp/>"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
+msgid "Applet refresh rate in milliseconds"
+msgstr "アプレットのリフレッシュ・レート (ミリ秒単位)"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+msgid "Automatically start on session startup"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+msgid "Background color for disk load graph"
+msgstr "ディスク使用率グラフの背景色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
+msgid "CPU graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
+msgid "CPU graph background color"
+msgstr "CPU グラフの背景色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
+#, fuzzy
+msgid "Disk load graph alpha"
+msgstr "ディスク使用率のグラフを表示する"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
+msgid "Enable CPU load graph"
+msgstr "CPU 使用率のグラフを表示する"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+msgid "Enable disk load graph"
+msgstr "ディスク使用率のグラフを表示する"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+msgid "Enable load average graph"
+msgstr "平均使用率のグラフを表示する"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+msgid "Enable memory load graph"
+msgstr "メモリ使用率のグラフを表示する"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+msgid "Enable network load graph"
+msgstr "ネットワーク使用率のグラフを表示する"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
+msgid "Enable swap load graph"
+msgstr "スワップ使用率のグラフを表示する"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+msgid ""
+"For horizontal panels, the width of the graphs in pixels. For vertical "
+"panels, this is the height of the graphs."
+msgstr ""
+"水平方向のパネルにおけるグラフ表示部の幅 (ピクセル単位) です。垂直方向のパネ"
+"ルでグラフの高さに相当します"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+msgid "Graph color for buffer memory"
+msgstr "バッファ・メモリ用のグラフの色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+msgid "Graph color for cached memory"
+msgstr "キャッシュ・メモリ用グラフの色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+msgid "Graph color for disk read"
+msgstr "ディスク読み込みのグラフの色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+msgid "Graph color for disk write"
+msgstr "ディスク書き込みのグラフの色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+msgid "Graph color for input network activity"
+msgstr "ネットワークの受信量を示すグラフの色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+msgid "Graph color for iowait related CPU activity"
+msgstr "iowait 値に依存する CPU 使用率のグラフの色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+msgid "Graph color for load average"
+msgstr "キャッシュ・メモリ用グラフの色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+msgid "Graph color for loopback network usage"
+msgstr "ループバックの受信量を示すグラフの色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
+msgid "Graph color for nice-related CPU activity"
+msgstr "nice 値に依存する CPU 使用率のグラフの色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
+msgid "Graph color for output network activity"
+msgstr "ネットワークの送信量を示すグラフの色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
+msgid "Graph color for shared memory"
+msgstr "共有メモリ用グラフの色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
+msgid "Graph color for system-related CPU activity"
+msgstr "システムに依存する CPU 使用率のグラフの色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
+msgid "Graph color for user-related CPU activity"
+msgstr "ユーザに依存する CPU 使用率のグラフの色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
+msgid "Graph color for user-related memory usage"
+msgstr "ユーザに依存するメモリ使用率のグラフの色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:28
+msgid "Graph color for user-related swap usage"
+msgstr "スワップ・メモリ使用率のグラフの色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:29
+#, fuzzy
+msgid "Load graph alpha"
+msgstr "使用率グラフの背景色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:30
+msgid "Load graph background color"
+msgstr "使用率グラフの背景色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:31
+#, fuzzy
+msgid "Memory graph alpha"
+msgstr "メモリ・グラフの背景色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:32
+msgid "Memory graph background color"
+msgstr "メモリ・グラフの背景色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:33
+#, fuzzy
+msgid "Network graph alpha"
+msgstr "ネットワーク・グラフの背景色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:34
+msgid "Network graph background color"
+msgstr "ネットワーク・グラフの背景色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:35
+#, fuzzy
+msgid "Swap graph alpha"
+msgstr "スワップ・グラフの背景色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:36
+msgid "Swap graph background color"
+msgstr "スワップ・グラフの背景色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:37
+msgid "The desktop description file to execute as the system monitor"
+msgstr "システム・モニタとして実行する .desktop ファイル"
+
+#: ../data/indicator-multiload.desktop.in.h:2
+#, fuzzy
+msgid "System Load Indicator"
+msgstr "システム負荷を表示します"
