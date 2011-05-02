@@ -5,6 +5,10 @@ export DH_VERBOSE=1
 %:
 	dh $@
 
+override_dh_auto_configure:
+	./autogen.sh
+	dh_auto_configure
+
 override_dh_auto_install:
 	dh_auto_install
 	rm debian/indicator-multiload/usr/share/doc/indicator-multiload/COPYING
