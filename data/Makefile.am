@@ -12,7 +12,7 @@ nodist_ui_DATA = preferences.ui
 
 EXTRA_DIST = \
 	$(desktop_in_files) \
-	$(ui_DATA) \
+	preferences.ui.in \
 	de.mh21.indicator.multiload.gschema.xml.in.in
 
 CLEANFILES = \
