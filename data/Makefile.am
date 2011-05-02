@@ -8,7 +8,7 @@ desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 gsettings_SCHEMAS = de.mh21.indicator.multiload.gschema.xml
 
 uidir = $(pkgdatadir)
-ui_DATA = preferences.ui
+nodist_ui_DATA = preferences.ui
 
 EXTRA_DIST = \
 	$(desktop_in_files) \

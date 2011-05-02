@@ -45,13 +45,12 @@ public class Main : Application {
     public bool autostart {
         get {
             var autostartkey = "X-GNOME-Autostart-enabled";
-            var autostartfile = Path.build_filename("autostart",
-                    "indicator-multiload.desktop");
-            var configautostartfile = Path.build_filename(Environment.get_user_config_dir(),
-                    autostartfile);
+            var filename = "indicator-multiload.desktop";
+            var autostartfile = Path.build_filename(Environment.get_user_config_dir(),
+                    "autostart", filename);
             KeyFile file = new KeyFile();
             try {
-                file.load_from_file(configautostartfile, KeyFileFlags.NONE);
+                file.load_from_file(autostartfile, KeyFileFlags.NONE);
             } catch (Error e) {
                 return false;
             }
@@ -64,17 +63,17 @@ public class Main : Application {
 
         set {
             var autostartkey = "X-GNOME-Autostart-enabled";
-            var autostartfile = Path.build_filename("autostart",
-                    "indicator-multiload.desktop");
-            var configautostartfile = Path.build_filename(Environment.get_user_config_dir(),
-                    autostartfile);
+            var filename = "indicator-multiload.desktop";
+            var autostartfile = Path.build_filename(Environment.get_user_config_dir(),
+                    "autostart", filename);
+            var applicationfile = Path.build_filename("applications", filename);
             KeyFile file = new KeyFile();
             try {
-                file.load_from_file(configautostartfile, KeyFileFlags.KEEP_COMMENTS |
+                file.load_from_file(autostartfile, KeyFileFlags.KEEP_COMMENTS |
                         KeyFileFlags.KEEP_TRANSLATIONS);
             } catch (Error e) {
                 try {
-                    file.load_from_data_dirs(autostartfile, null, KeyFileFlags.KEEP_COMMENTS |
+                    file.load_from_data_dirs(applicationfile, null, KeyFileFlags.KEEP_COMMENTS |
                             KeyFileFlags.KEEP_TRANSLATIONS);
                 } catch (Error e) {
                     // TODO: nicer defaults: icon, name, description
@@ -85,7 +84,7 @@ public class Main : Application {
             }
             file.set_boolean(KeyFileDesktop.GROUP, autostartkey, value);
             try {
-                FileUtils.set_contents(configautostartfile, file.to_data());
+                FileUtils.set_contents(autostartfile, file.to_data());
             } catch (Error e) {
                 stderr.printf("Could not create autostart desktop file: %s\n", e.message);
             }

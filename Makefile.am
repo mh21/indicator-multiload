@@ -6,7 +6,9 @@ multiloaddoc_DATA = \
 	AUTHORS \
 	TODO
 
-EXTRA_DIST = $(multiloaddoc_DATA)
+EXTRA_DIST = \
+	$(multiloaddoc_DATA) \
+	autogen.sh
 
 uninstall-hook:
 	-rmdir $(multiloaddocdir)
