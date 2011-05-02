@@ -23,8 +23,6 @@ msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
-"GNU Genel Kamu Lisansına göre yayınlanmıştır.\n"
-"\n"
 "İşlemci, bellek, takas alanı kullanımı ve ağ yoğunluğunun çizelgelerini "
 "gösterebilen bir sistem yükü izleyicisidir."
 
