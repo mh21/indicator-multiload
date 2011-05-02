@@ -6,7 +6,7 @@
 	dh --with autoreconf $@
 
 override_dh_autoreconf:
-	dh_auto_reconf ./autogen.sh
+	dh_autoreconf ./autogen.sh
 
 override_dh_auto_install:
 	dh_auto_install
