@@ -1,0 +1,402 @@
+# Greek translation for gnome-applets
+# Copyright (C) 1999 - 2009 Free Software Foundation, Inc.
+#
+# Half of translation by Spiros, Simos/Sarantis other half.
+# Revision by Sarantis/Simos.
+# Simos added about 160, totaling to 868 messages.
+#  -->
+#      load=φορτίο ή φόρτος; (2)
+#
+# kostas: 25May2003, one more update.
+# kostas:06Jul2003, one more update.
+# kostas: 27Jul2003, one more update.
+# Nikos:  13Feb2004 fixes
+# Nikos:  15Jul2004 minor fixes
+# Nikos:  30Jul2004 minor fixes
+#
+#
+# simos: 1016 messages, 18Feb2001.
+# simos: 1069 messages, 18Feb2001, with visual verification.
+# simos: 1074 messages, 27Feb2001.
+# simos: 1074 messages, 26Mar2001, unfuzzied 1 (beargsgppl).
+# simos: 1077 messages, 4Jun2001, (micumple).
+# simos: 1092 messages, 2Aug2001, (conbea).
+# simos: 487 messages, 14May2002, (GNOME2 update, UTF-8 encoding.).
+# kostas: 818 messages, 25Oct2002, completed translation.
+# simos: 818 messages, 25Oct2002, review of translation.
+# kostas:740 messages, 06Jan2003, updated translation.
+# kostas: 23May2003, 179 new, unfuzzy 172, update for 2.4xx.
+# kostas: 914messages,10Aug2003, one more update.
+# kostas: 1201messages,15Aug2003, one more update.
+# kostas: 1202messages,05Sep2003, one more update.
+# kostas: 1204messages,12Nov2003, updates and fixes.
+# kostas: 1258messages,26Jan2004.
+# kostas: 1260messages,03Feb2004.
+# Spiros Papadimitriou <spapadim+@cs.cmu.edu>, 1999.
+# Simos Xenitellis <simos@hellug.gr>, 1999, 2000, 2001, 2002.
+# Sarantis Paskalis <paskalis@di.uoa.gr>, 2000.
+# Kostas Papadimas <pkst@gnome.org>,  2002,2003, 2004, 2005, 2006, 2008.
+# Nikos Charonitakis <charosn@her.forthnet.gr>, 2004.
+# Simos Xenitellis <simos@gnome.org>, 2005.
+# Marios Zindilis <m.zindilis@dmajor.org>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-applets.HEAD.el\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-05-02 23:22+0200\n"
+"PO-Revision-Date: 2011-05-02 18:14+0000\n"
+"Last-Translator: Michael Kotsarinis <Unknown>\n"
+"Language-Team: Greek <team@gnome.gr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-05-03 06:15+0000\n"
+"X-Generator: Launchpad (build 12758)\n"
+"Language: el\n"
+
+#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
+msgid ""
+"A system load monitor capable of displaying graphs for CPU, ram, and swap "
+"space use, plus network traffic."
+msgstr ""
+"Η εφαρμογή φόρτου συστήματος προβάλλει γραφικά για τη χρήση ΚΜΕ, μνήμης RAM, "
+"και αρχείου εναλλαγής, καθώς και το φόρτο δικτύου."
+
+#: ../data/preferences.ui.in.h:2
+msgid "Cach_ed"
+msgstr "Cach_ed"
+
+#: ../data/preferences.ui.in.h:3
+msgid "Colors"
+msgstr "Χρώματα"
+
+#: ../data/preferences.ui.in.h:4
+msgid "F_ree"
+msgstr "Ελ_εύθερο"
+
+#: ../data/preferences.ui.in.h:5
+msgid "Harddisk"
+msgstr "Σκληρός δίσκος"
+
+#: ../data/preferences.ui.in.h:6
+msgid "I_OWait"
+msgstr "I_OWait"
+
+#: ../data/preferences.ui.in.h:7
+msgid "I_dle"
+msgstr "Αδ_ρανής"
+
+#: ../data/preferences.ui.in.h:8
+msgid "Load"
+msgstr "Φόρτος"
+
+#: ../data/preferences.ui.in.h:9
+msgid "Memory"
+msgstr "Μνήμη"
+
+#: ../data/preferences.ui.in.h:10
+msgid "Monitored Resources"
+msgstr "Παρακολουθούμενοι Πόροι"
+
+#: ../data/preferences.ui.in.h:11
+msgid "N_ice"
+msgstr "Ωραιο_ποίηση"
+
+#: ../data/preferences.ui.in.h:12
+msgid "Network"
+msgstr "Δίκτυο"
+
+#: ../data/preferences.ui.in.h:13
+msgid "Options"
+msgstr "Επιλογές"
+
+#: ../data/preferences.ui.in.h:14
+msgid "Processor"
+msgstr "Επεξεργαστής"
+
+#: ../data/preferences.ui.in.h:15
+msgid "S_wap Space"
+msgstr "Χώρος S_wap"
+
+#: ../data/preferences.ui.in.h:16
+msgid "S_ystem"
+msgstr "Σ_ύστημα"
+
+#: ../data/preferences.ui.in.h:17
+msgid "Sh_ared"
+msgstr "Διαμοιρα_ζόμενο"
+
+#: ../data/preferences.ui.in.h:18
+msgid "Swap Space"
+msgstr "Αρχείο Εναλλαγής"
+
+#: ../data/preferences.ui.in.h:19
+msgid "Sys_tem monitor update interval: "
+msgstr "Μεσοδιάστημα ενημέρωσης παρα_κολούθησης συστήματος: "
+
+#: ../data/preferences.ui.in.h:20
+msgid "System m_onitor width: "
+msgstr "Πλάτος πα_ρακολούθησης συστήματος: "
+
+#: ../data/preferences.ui.in.h:21
+msgid "_About"
+msgstr "_Περί"
+
+#: ../data/preferences.ui.in.h:22
+msgid "_Autostart: "
+msgstr ""
+
+#: ../data/preferences.ui.in.h:23
+msgid "_Average"
+msgstr "Μέ_σος Φόρτος"
+
+#: ../data/preferences.ui.in.h:24
+msgid "_Background"
+msgstr "_Παρασκήνιο"
+
+#: ../data/preferences.ui.in.h:25
+msgid "_Buffers"
+msgstr "_Ενταμιευτές"
+
+#: ../data/preferences.ui.in.h:26
+msgid "_Free"
+msgstr "_Ελεύθερο"
+
+#: ../data/preferences.ui.in.h:27
+msgid "_Harddisk"
+msgstr "_Σκληρός δίσκος"
+
+#: ../data/preferences.ui.in.h:28
+msgid "_In"
+msgstr "_In"
+
+#: ../data/preferences.ui.in.h:29
+msgid "_Load"
+msgstr "Φό_ρτος"
+
+#: ../data/preferences.ui.in.h:30
+msgid "_Local"
+msgstr "_Τοπικό"
+
+#: ../data/preferences.ui.in.h:31
+msgid "_Memory"
+msgstr "_Μνήμη"
+
+#: ../data/preferences.ui.in.h:32
+msgid "_Network"
+msgstr "_Δίκτυο"
+
+#: ../data/preferences.ui.in.h:33
+msgid "_Open System Monitor"
+msgstr "Άν_οιγμα Παρακολούθησης Συστήματος"
+
+#: ../data/preferences.ui.in.h:34
+msgid "_Out"
+msgstr "_Out"
+
+#: ../data/preferences.ui.in.h:35
+msgid "_Preferences"
+msgstr "_Προτιμήσεις"
+
+#: ../data/preferences.ui.in.h:36
+msgid "_Processor"
+msgstr "_Επεξεργαστής"
+
+#: ../data/preferences.ui.in.h:37
+msgid "_Quit"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:38
+msgid "_Read"
+msgstr "Α_νάγνωση"
+
+#: ../data/preferences.ui.in.h:39
+msgid "_Used"
+msgstr "_Κατειλημμένο"
+
+#: ../data/preferences.ui.in.h:40
+msgid "_User"
+msgstr "_Χρήστης"
+
+#: ../data/preferences.ui.in.h:41
+msgid "_Write"
+msgstr "Ε_γγραφή"
+
+#: ../data/preferences.ui.in.h:42
+msgid "milliseconds"
+msgstr "χιλιοστά δευτερολέπτου"
+
+#: ../data/preferences.ui.in.h:43
+msgid "pixels"
+msgstr "εικονοστοιχεία"
+
+#: ../data/preferences.ui.in.h:44
+msgid "translator-credits"
+msgstr ""
+"Σπύρος Παπαδημητρίου <spapadim+@cs.cmu.edu>\n"
+"Σίμος Ξενιτέλλης <simos@gnome.org>\n"
+"Σαράντης Πασχάλης <paskalis@di.uoa.gr>\n"
+"Κώστας Παπαδήμας <pkst@gnome.org>\n"
+"Νίκος Χαρωνιτάκης <charosn@her.forthnet.gr>\n"
+"Μάριος Ζηντίλης <m.zindilis@dmajor.org>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Michael Kotsarinis https://launchpad.net/~mk73628"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
+msgid "Applet refresh rate in milliseconds"
+msgstr "Ρυθμός ανανέωσης μικροεφαρμογής σε χιλιοστά δευτερ."
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+msgid "Automatically start on session startup"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+msgid "Background color for disk load graph"
+msgstr "Χρώμα παρασκηνίου για το γράφημα φόρτου δίσκου"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
+msgid "CPU graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
+msgid "CPU graph background color"
+msgstr "Χρώμα παρασκηνίου γραφήματος CPU"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
+msgid "Disk load graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
+msgid "Enable CPU load graph"
+msgstr "Ενεργοποίηση γραφήματος φόρτου CPU"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+msgid "Enable disk load graph"
+msgstr "Ενεργοποίηση του γραφήματος φόρτου δίσκου"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+msgid "Enable load average graph"
+msgstr "Ενεργοποίηση γραφήματος μέσου φόρτου"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+msgid "Enable memory load graph"
+msgstr "Ενεργοποίηση γραφήματος φόρτου μνήμης"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+msgid "Enable network load graph"
+msgstr "Ενεργοποίηση γραφήματος φόρτου δικτύου"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
+msgid "Enable swap load graph"
+msgstr "Ενεργοποίηση του γραφήματος φόρτου swap"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+msgid ""
+"For horizontal panels, the width of the graphs in pixels. For vertical "
+"panels, this is the height of the graphs."
+msgstr ""
+"Για οριζόντιο πίνακα εφαρμογών, το πλάτος των γραφημάτων σε εικονοστοιχεία. "
+"Για κάθετους πίνακες εφαρμογών αυτό είναι το ύψος των γραφημάτων."
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+msgid "Graph color for buffer memory"
+msgstr "Χρώμα γραφήματος για τη μνήμη buffer."
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+msgid "Graph color for cached memory"
+msgstr "Χρώμα γραφήματος για τη μνήμη cached."
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+msgid "Graph color for disk read"
+msgstr "Χρώμα γραφήματος για τον ανάγνωση δίσκου"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+msgid "Graph color for disk write"
+msgstr "Χρώμα γραφήματος για εγγραφή δίσκου"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+msgid "Graph color for input network activity"
+msgstr "Χρώμα γραφήματος για τη εισερχόμενη δραστηριότητα δικτύου"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+msgid "Graph color for iowait related CPU activity"
+msgstr "Χρώμα γραφήματος για την  iowait related δραστηριότητα επεξεργαστή"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+msgid "Graph color for load average"
+msgstr "Χρώμα γραφήματος για το μέσο φόρτο."
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+msgid "Graph color for loopback network usage"
+msgstr "Χρώμα γραφήματος για τη loopback δραστηριότητα  δικτύου"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
+msgid "Graph color for nice-related CPU activity"
+msgstr "Χρώμα γραφήματος για την nice-related δραστηριότητα επεξεργαστή"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
+msgid "Graph color for output network activity"
+msgstr "Χρώμα γραφήματος για την εξερχόμενη δραστηριότητα δικτύου"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
+msgid "Graph color for shared memory"
+msgstr "Χρώμα γραφήματος για την κοινόχρηστη μνήμη"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
+msgid "Graph color for system-related CPU activity"
+msgstr "Χρώμα γραφήματος για την system-related δραστηριότητα επεξεργαστή"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
+msgid "Graph color for user-related CPU activity"
+msgstr "Χρώμα γραφήματος για την user-related δραστηριότητα επεξεργαστή"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
+msgid "Graph color for user-related memory usage"
+msgstr "Χρώμα γραφήματος για την user-related χρήση μνήμης"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:28
+msgid "Graph color for user-related swap usage"
+msgstr "Χρώμα γραφήματος για την user-related χρήση εναλλαγής"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:29
+msgid "Load graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:30
+msgid "Load graph background color"
+msgstr "Χρώμα παρασκηνίου γραφήματος φόρτου"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:31
+msgid "Memory graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:32
+msgid "Memory graph background color"
+msgstr "Χρώμα παρασκηνίου γραφήματος μνήμης"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:33
+msgid "Network graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:34
+msgid "Network graph background color"
+msgstr "Χρώμα παρασκηνίου γραφήματος δικτύου"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:35
+msgid "Swap graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:36
+msgid "Swap graph background color"
+msgstr "Χρώμα παρασκηνίου του γραφήματος εναλλαγής"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:37
+msgid "The desktop description file to execute as the system monitor"
+msgstr ""
+"Το αρχείο περιγραφής επιφάνειας εργασίας για εκτέλεση ως παρακολούθηση "
+"συστήματος"
+
+#: ../data/indicator-multiload.desktop.in.h:2
+msgid "System Load Indicator"
+msgstr ""

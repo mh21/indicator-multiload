@@ -1,0 +1,368 @@
+# translation of gnome-applets.HEAD.cy.po to Cymraeg
+# gnome-applets yn Gymraeg.
+# Copyright (C) 2003, 2004 Free Software Foundation, Inc.
+# Largely Chris and Dafydd H.
+# Also lots of stuff merged from Kyfieithu later on. Owain?
+# www.gyfieithu.co.uk <kyfieithu@dotmon.com>, 2003.
+# Dafydd Harries <daf@muse.19inch.net>, 2003, 2004.
+# Dafydd Tomos <l10n@da.fydd.org>, 2004.
+# Rhys Jones <rhys@sucs.org>, 2005.
+#
+# rhysj: Wedi diweddaru a gwirio hwn erbyn GNOME 2.12.
+# rhysj: Ac hefyd 2.14 a 2.16.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-applets\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-05-02 23:22+0200\n"
+"PO-Revision-Date: 2011-05-02 18:15+0000\n"
+"Last-Translator: Rhys Jones <rhys@sucs.org>\n"
+"Language-Team: Cymraeg <gnome-cy@lists.linux.org.uk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-05-03 06:16+0000\n"
+"X-Generator: Launchpad (build 12758)\n"
+"Language: \n"
+
+#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
+msgid ""
+"A system load monitor capable of displaying graphs for CPU, ram, and swap "
+"space use, plus network traffic."
+msgstr ""
+"Monitor llwyth system sy'n gallu dangos graffiau defnydd CPU, cof a gofod "
+"cyfnewid, a thraffig rhwydwaith."
+
+#: ../data/preferences.ui.in.h:2
+msgid "Cach_ed"
+msgstr "_Storfa"
+
+#: ../data/preferences.ui.in.h:3
+msgid "Colors"
+msgstr "Lliwiau"
+
+#: ../data/preferences.ui.in.h:4
+msgid "F_ree"
+msgstr "_Rhydd"
+
+#: ../data/preferences.ui.in.h:5
+msgid "Harddisk"
+msgstr "Disgen Galed"
+
+#: ../data/preferences.ui.in.h:6
+msgid "I_OWait"
+msgstr "I_OWait"
+
+#: ../data/preferences.ui.in.h:7
+msgid "I_dle"
+msgstr "_Seibio"
+
+#: ../data/preferences.ui.in.h:8
+msgid "Load"
+msgstr "Llwyth"
+
+#: ../data/preferences.ui.in.h:9
+msgid "Memory"
+msgstr "Cof"
+
+#: ../data/preferences.ui.in.h:10
+msgid "Monitored Resources"
+msgstr "Adnoddau a Monitrwyd"
+
+#: ../data/preferences.ui.in.h:11
+msgid "N_ice"
+msgstr "_Neis"
+
+#: ../data/preferences.ui.in.h:12
+msgid "Network"
+msgstr "Rhwydwaith"
+
+#: ../data/preferences.ui.in.h:13
+msgid "Options"
+msgstr "Hoffterau"
+
+#: ../data/preferences.ui.in.h:14
+msgid "Processor"
+msgstr "Prosesydd"
+
+#: ../data/preferences.ui.in.h:15
+msgid "S_wap Space"
+msgstr "_Gofod Cyfnewid"
+
+#: ../data/preferences.ui.in.h:16
+msgid "S_ystem"
+msgstr "_System"
+
+#: ../data/preferences.ui.in.h:17
+msgid "Sh_ared"
+msgstr "Wedi _Rhannu"
+
+#: ../data/preferences.ui.in.h:18
+msgid "Swap Space"
+msgstr "Gofod Cyfnewid"
+
+#: ../data/preferences.ui.in.h:19
+msgid "Sys_tem monitor update interval: "
+msgstr "_Ysbaid diweddaru'r monitor system: "
+
+#: ../data/preferences.ui.in.h:20
+msgid "System m_onitor width: "
+msgstr "_Lled y monitor system: "
+
+#: ../data/preferences.ui.in.h:21
+msgid "_About"
+msgstr "_Ynghylch"
+
+#: ../data/preferences.ui.in.h:22
+msgid "_Autostart: "
+msgstr ""
+
+#: ../data/preferences.ui.in.h:23
+msgid "_Average"
+msgstr "_Cyfartaledd"
+
+#: ../data/preferences.ui.in.h:24
+msgid "_Background"
+msgstr "_Cefndir"
+
+#: ../data/preferences.ui.in.h:25
+msgid "_Buffers"
+msgstr "_Byfferau"
+
+#: ../data/preferences.ui.in.h:26
+msgid "_Free"
+msgstr "_Rhydd"
+
+#: ../data/preferences.ui.in.h:27
+msgid "_Harddisk"
+msgstr "_Disgen Galed"
+
+#: ../data/preferences.ui.in.h:28
+msgid "_In"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:29
+msgid "_Load"
+msgstr "_Llwyth"
+
+#: ../data/preferences.ui.in.h:30
+msgid "_Local"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:31
+msgid "_Memory"
+msgstr "_Cof"
+
+#: ../data/preferences.ui.in.h:32
+msgid "_Network"
+msgstr "_Rhwydwaith"
+
+#: ../data/preferences.ui.in.h:33
+msgid "_Open System Monitor"
+msgstr "_Agor y Monitor System"
+
+#: ../data/preferences.ui.in.h:34
+msgid "_Out"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:35
+msgid "_Preferences"
+msgstr "_Hoffterau"
+
+#: ../data/preferences.ui.in.h:36
+msgid "_Processor"
+msgstr "_Prosesydd"
+
+#: ../data/preferences.ui.in.h:37
+msgid "_Quit"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:38
+msgid "_Read"
+msgstr "_Darllen"
+
+#: ../data/preferences.ui.in.h:39
+msgid "_Used"
+msgstr "_Wedi Defnyddio"
+
+#: ../data/preferences.ui.in.h:40
+msgid "_User"
+msgstr "_Defnyddiwr"
+
+#: ../data/preferences.ui.in.h:41
+msgid "_Write"
+msgstr "_Ysgrifennu"
+
+#: ../data/preferences.ui.in.h:42
+msgid "milliseconds"
+msgstr "milfedau o eiliadau"
+
+#: ../data/preferences.ui.in.h:43
+msgid "pixels"
+msgstr "picsel"
+
+#: ../data/preferences.ui.in.h:44
+msgid "translator-credits"
+msgstr ""
+"Dafydd Harries <daf@parnassus.ath.cx>\n"
+"Rhys Jones <rhys@sucs.org>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Rhys Jones https://launchpad.net/~rhys-sucs"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
+msgid "Applet refresh rate in milliseconds"
+msgstr "Cyfradd diweddaru'r rhaglennig mewn milfedau eiliad"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+msgid "Automatically start on session startup"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+msgid "Background color for disk load graph"
+msgstr "Lliw'r cefndir ar gyfer graff llwyth disg"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
+msgid "CPU graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
+msgid "CPU graph background color"
+msgstr "Lliw cefndir y graff CPU"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
+msgid "Disk load graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
+msgid "Enable CPU load graph"
+msgstr "Galluogi graff llwyth CPU"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+msgid "Enable disk load graph"
+msgstr "Galluogi graff llwyth disg"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+msgid "Enable load average graph"
+msgstr "Galluogi graff cyfartaledd llwyth"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+msgid "Enable memory load graph"
+msgstr "Galluogi graff llwyth cof"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+msgid "Enable network load graph"
+msgstr "Galluogi graff llwyth rhwydwaith"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
+msgid "Enable swap load graph"
+msgstr "Galluogi graff llwyth cyfnewid"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+msgid ""
+"For horizontal panels, the width of the graphs in pixels. For vertical "
+"panels, this is the height of the graphs."
+msgstr ""
+"Ar gyfer paneli llorweddol, lled y graffiau mewn picseli. Ar gyfer paneli "
+"fertigol, dyma uchder y graffiau."
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+msgid "Graph color for buffer memory"
+msgstr "Lliw'r graff ar gyfer cof byffer"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+msgid "Graph color for cached memory"
+msgstr "Lliw'r graff ar gyfer cof yn y storfa"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+msgid "Graph color for disk read"
+msgstr "Lliw'r graff ar gyfer darllen disg"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+msgid "Graph color for disk write"
+msgstr "Lliw'r graff ar gyfer ysgrifennu i'r ddisg"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+msgid "Graph color for input network activity"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+msgid "Graph color for iowait related CPU activity"
+msgstr "Lliw'r graff ar gyfer defnydd o'r CPU sy'n gysylltiedig ag iowait"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+msgid "Graph color for load average"
+msgstr "Lliw'r graff ar gyfer y cyfartaledd llwyth"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+msgid "Graph color for loopback network usage"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
+msgid "Graph color for nice-related CPU activity"
+msgstr "Lliw'r graff ar gyfer defnydd neis o'r CPU"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
+msgid "Graph color for output network activity"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
+msgid "Graph color for shared memory"
+msgstr "Lliw'r graff ar gyfer cof wedi ei rhannu"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
+msgid "Graph color for system-related CPU activity"
+msgstr "Lliw'r graff ar gyfer defnydd y CPU gan y system"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
+msgid "Graph color for user-related CPU activity"
+msgstr "Lliw'r graff ar gyfer defnydd y CPU gan ddefnyddwyr"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
+msgid "Graph color for user-related memory usage"
+msgstr "Lliw'r graff ar gyfer defnydd y cof gan ddefnyddwyr"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:28
+msgid "Graph color for user-related swap usage"
+msgstr "Lliw'r graff ar gyfer defnydd y cyfnewid gan ddefnyddwyr"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:29
+msgid "Load graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:30
+msgid "Load graph background color"
+msgstr "Lliw cefndir y graff llwyth"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:31
+msgid "Memory graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:32
+msgid "Memory graph background color"
+msgstr "Lliw cefndir y graff cof"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:33
+msgid "Network graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:34
+msgid "Network graph background color"
+msgstr "Lliw cefndir y graff rhwydwaith"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:35
+msgid "Swap graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:36
+msgid "Swap graph background color"
+msgstr "Lliw cefndir y graff cyfnewid"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:37
+msgid "The desktop description file to execute as the system monitor"
+msgstr ""
+
+#: ../data/indicator-multiload.desktop.in.h:2
+msgid "System Load Indicator"
+msgstr ""

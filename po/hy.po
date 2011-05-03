@@ -1,0 +1,368 @@
+# translation of gnome-applets.HEAD.po to armenian
+# This file is distributed under the same license as the gnome-applets package.
+# Copyright (C) 2005 Norayr Chilingaryan, 2005.
+# Narine Martirosyan <training@instigate.am>
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-applets.HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-05-02 23:22+0200\n"
+"PO-Revision-Date: 2011-05-02 18:06+0000\n"
+"Last-Translator: Narine Martirosyan <Unknown>\n"
+"Language-Team: <norayr@arnet.am>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-05-03 06:15+0000\n"
+"X-Generator: Launchpad (build 12758)\n"
+"Language: \n"
+
+#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
+msgid ""
+"A system load monitor capable of displaying graphs for CPU, ram, and swap "
+"space use, plus network traffic."
+msgstr ""
+"Համակարգի ստուգման ծրագիրը հնարավորություն ունի պատկերել պրոցեսորի բեռնման, "
+"հիշողության, փոխանակման տարածքի օգտագործման և ցանցի բեռնման գրաֆիկներ"
+
+#: ../data/preferences.ui.in.h:2
+msgid "Cach_ed"
+msgstr "Հիշողություն"
+
+#: ../data/preferences.ui.in.h:3
+msgid "Colors"
+msgstr "Գույներ"
+
+#: ../data/preferences.ui.in.h:4
+msgid "F_ree"
+msgstr "Ազատ"
+
+#: ../data/preferences.ui.in.h:5
+msgid "Harddisk"
+msgstr "Ամուր դիսկ"
+
+#: ../data/preferences.ui.in.h:6
+msgid "I_OWait"
+msgstr "I_OWait"
+
+#: ../data/preferences.ui.in.h:7
+msgid "I_dle"
+msgstr "Պարապուրդ"
+
+#: ../data/preferences.ui.in.h:8
+msgid "Load"
+msgstr "Բեռնում"
+
+#: ../data/preferences.ui.in.h:9
+msgid "Memory"
+msgstr "Հիշողություն"
+
+#: ../data/preferences.ui.in.h:10
+msgid "Monitored Resources"
+msgstr "Ստուգվող ռեսուրսներ"
+
+#: ../data/preferences.ui.in.h:11
+msgid "N_ice"
+msgstr "Առաջնայնություն"
+
+#: ../data/preferences.ui.in.h:12
+msgid "Network"
+msgstr "Ցանց"
+
+#: ../data/preferences.ui.in.h:13
+msgid "Options"
+msgstr "Տարբերակներ"
+
+#: ../data/preferences.ui.in.h:14
+msgid "Processor"
+msgstr "Պրոցեսոր"
+
+#: ../data/preferences.ui.in.h:15
+msgid "S_wap Space"
+msgstr "Փոխանակության տարածք"
+
+#: ../data/preferences.ui.in.h:16
+msgid "S_ystem"
+msgstr "Համակարգ"
+
+#: ../data/preferences.ui.in.h:17
+msgid "Sh_ared"
+msgstr "Տարանջատված"
+
+#: ../data/preferences.ui.in.h:18
+msgid "Swap Space"
+msgstr "Փոխանակման տարածք"
+
+#: ../data/preferences.ui.in.h:19
+msgid "Sys_tem monitor update interval: "
+msgstr "Համակարգի մոնիտորի նորացման արագություն "
+
+#: ../data/preferences.ui.in.h:20
+msgid "System m_onitor width: "
+msgstr "Համակարգի մոնիտորի լայնությունը "
+
+#: ../data/preferences.ui.in.h:21
+msgid "_About"
+msgstr "_ Մասին"
+
+#: ../data/preferences.ui.in.h:22
+msgid "_Autostart: "
+msgstr ""
+
+#: ../data/preferences.ui.in.h:23
+msgid "_Average"
+msgstr "Միջին"
+
+#: ../data/preferences.ui.in.h:24
+msgid "_Background"
+msgstr "Ֆոն"
+
+#: ../data/preferences.ui.in.h:25
+msgid "_Buffers"
+msgstr "Բուֆերներ"
+
+#: ../data/preferences.ui.in.h:26
+msgid "_Free"
+msgstr "Ազատ"
+
+#: ../data/preferences.ui.in.h:27
+msgid "_Harddisk"
+msgstr "Ամուր դիսկ"
+
+#: ../data/preferences.ui.in.h:28
+msgid "_In"
+msgstr "_Մեջ"
+
+#: ../data/preferences.ui.in.h:29
+msgid "_Load"
+msgstr "Բեռնում"
+
+#: ../data/preferences.ui.in.h:30
+msgid "_Local"
+msgstr "_Տեղային"
+
+#: ../data/preferences.ui.in.h:31
+msgid "_Memory"
+msgstr "Հիշողություն"
+
+#: ../data/preferences.ui.in.h:32
+msgid "_Network"
+msgstr "Ցանց"
+
+#: ../data/preferences.ui.in.h:33
+msgid "_Open System Monitor"
+msgstr "Բացել համակարգի ստուգում ծրագիրը"
+
+#: ../data/preferences.ui.in.h:34
+msgid "_Out"
+msgstr "_Դուրս"
+
+#: ../data/preferences.ui.in.h:35
+msgid "_Preferences"
+msgstr "_Նախընտրանքներ"
+
+#: ../data/preferences.ui.in.h:36
+msgid "_Processor"
+msgstr "Պրոցեսոր"
+
+#: ../data/preferences.ui.in.h:37
+msgid "_Quit"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:38
+msgid "_Read"
+msgstr "Ընթերցում"
+
+#: ../data/preferences.ui.in.h:39
+msgid "_Used"
+msgstr "Օգտագործված"
+
+#: ../data/preferences.ui.in.h:40
+msgid "_User"
+msgstr "Գործարկող"
+
+#: ../data/preferences.ui.in.h:41
+msgid "_Write"
+msgstr "Գրել"
+
+#: ../data/preferences.ui.in.h:42
+msgid "milliseconds"
+msgstr "Միլի վայրկյաններ"
+
+#: ../data/preferences.ui.in.h:43
+msgid "pixels"
+msgstr "պիքսել"
+
+#: ../data/preferences.ui.in.h:44
+msgid "translator-credits"
+msgstr ""
+"թարգմանչի կրեդիտներ\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Narine Martirosyan https://launchpad.net/~training-instigate"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
+msgid "Applet refresh rate in milliseconds"
+msgstr "Ապլետի նորացման հաճախականությունը միլի վայրկյաններում"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+msgid "Automatically start on session startup"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+msgid "Background color for disk load graph"
+msgstr "Սկավառակիկի ծանրաբեռնվածության գրաֆիկի նախադրյալի գույնը"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
+msgid "CPU graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
+msgid "CPU graph background color"
+msgstr "Պրոցեսորի գրաֆիկի նախադրյալի գույնը"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
+msgid "Disk load graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
+msgid "Enable CPU load graph"
+msgstr "Միացնել պրոցեսորի ծանրաբեռնվածության գրաֆիկը"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+msgid "Enable disk load graph"
+msgstr "Միացնել դիսկի ծանրաբեռնվածության գրաֆիկը"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+msgid "Enable load average graph"
+msgstr "Միացնել միջին ծանրաբեռնվածության գրաֆիկը"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+msgid "Enable memory load graph"
+msgstr "Միացնել հիշողության ծանրաբեռնվածության գրաֆիկը"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+msgid "Enable network load graph"
+msgstr "Միացնել ցանցի ծանրաբեռնվածության գրաֆիկը"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
+msgid "Enable swap load graph"
+msgstr "Միացնել փոխանակային ծանրաբerնվածության գրաֆիկը"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+msgid ""
+"For horizontal panels, the width of the graphs in pixels. For vertical "
+"panels, this is the height of the graphs."
+msgstr ""
+"Հորիզոնական պանելի համար, գրաֆիկի լայնությունը պիքսելներով, (պատկերման "
+"նվազագույն տարրերով)։  Ուղղահայաց պանելի համար, գրաֆիկի բարձրությունը"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+msgid "Graph color for buffer memory"
+msgstr "Բուֆերային հիշողության պատկերման գրաֆիկի գույնը"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+msgid "Graph color for cached memory"
+msgstr "cached հիշողության պատկերման գրաֆիկի գույնը"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+msgid "Graph color for disk read"
+msgstr "Սկավառակըը կարդալու գրակիֆի գույնը"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+msgid "Graph color for disk write"
+msgstr "Գրաֆիկի գույնը դիսկը ձայնագրելու համար"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+msgid "Graph color for input network activity"
+msgstr "Գրաֆիկի գույնը ցանցային գործունեության համար"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+msgid "Graph color for iowait related CPU activity"
+msgstr ""
+"Գրաֆիկի գույնը պրոցեսորի iowait–ի հետ առնչվող գործունեությունը պատկերելու "
+"համար"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+msgid "Graph color for load average"
+msgstr "Գրաֆիկի գույնը միջին բեռի պատկերման համար"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+msgid "Graph color for loopback network usage"
+msgstr "Գրաֆիկի գույնը ցանցի այլ օգտագործման համար"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
+msgid "Graph color for nice-related CPU activity"
+msgstr "Գրաֆիկի գույնը պրոցեսորի՝ nice–ի հետ առնչվող գործունեության համար"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
+msgid "Graph color for output network activity"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
+msgid "Graph color for shared memory"
+msgstr "Գրաֆիկի գույնը առանձնացված հիշողությունը պատկերելու համար"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
+msgid "Graph color for system-related CPU activity"
+msgstr ""
+"Գրաֆիկի գույնը պրոցեսորի՝ համակարգի հետ առնչվող գործունեությունը պատկերելու "
+"համար"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
+msgid "Graph color for user-related CPU activity"
+msgstr ""
+"Գրաֆիկի գույնը պրոցեսորի գործարկողի հետ առնչվող գործունեությունը պատկերելու "
+"համար"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
+msgid "Graph color for user-related memory usage"
+msgstr ""
+"Գրաֆիկի գույնը գործարկողի կողմից օգտագործվող հիշողությունը պատկերելու համար"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:28
+msgid "Graph color for user-related swap usage"
+msgstr ""
+"Գրաֆիկի գույնը գործարկողի կողմից փոխանակման ծրագրի օգտագործումը պատկերելու "
+"համար"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:29
+msgid "Load graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:30
+msgid "Load graph background color"
+msgstr "Բեռի գրաֆիկի ֆոնի գույնը"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:31
+msgid "Memory graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:32
+msgid "Memory graph background color"
+msgstr "ՀԻշողության գրաֆիկի ֆոնի գույնը"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:33
+msgid "Network graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:34
+msgid "Network graph background color"
+msgstr "Ցանցի գրաֆիկի ֆոնի գույնը"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:35
+msgid "Swap graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:36
+msgid "Swap graph background color"
+msgstr "Փոխանակային ծրագրի ֆոնի գույնը"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:37
+msgid "The desktop description file to execute as the system monitor"
+msgstr ""
+"Աշխատանքային սեղանի նկարագրական ֆայլը ձևակերպել որպես համակարգային ցուցասարք"
+
+#: ../data/indicator-multiload.desktop.in.h:2
+msgid "System Load Indicator"
+msgstr ""

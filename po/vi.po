@@ -1,0 +1,366 @@
+# Vietnamese translation for GNOME Applets.
+# Copyright © 2009 GNOME i18n Project for Vietnamese.
+# This file is distributed under the same license as the gnome-applets package.
+# T.M.Thanh <tmthanh@yahoo.com>, 2002-2003.
+# Nguyễn Thái Ngọc Duy <pclouds@gmail.org>, 2002-2004.
+# Clytie Siddall <clytie@riverland.net.au>, 2005-2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-applets 2.25.90\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-05-02 23:22+0200\n"
+"PO-Revision-Date: 2011-05-02 17:48+0000\n"
+"Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
+"Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-05-03 06:16+0000\n"
+"X-Generator: Launchpad (build 12758)\n"
+"Language: vi\n"
+
+#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
+msgid ""
+"A system load monitor capable of displaying graphs for CPU, ram, and swap "
+"space use, plus network traffic."
+msgstr ""
+"Bộ theo dõi trọng tải hệ thống, có khả năng hiển thị đồ thị của cách sử dụng "
+"CPU (đơn vị xử lý trung tâm), RAM (bộ nhớ truy cập ngẫu nhiên) và bộ nhớ "
+"trao đổi, và cũng lưu tải cho mạng."
+
+#: ../data/preferences.ui.in.h:2
+msgid "Cach_ed"
+msgstr "Nhớ tạ_m"
+
+#: ../data/preferences.ui.in.h:3
+msgid "Colors"
+msgstr "Màu sắc"
+
+#: ../data/preferences.ui.in.h:4
+msgid "F_ree"
+msgstr "Còn _rảnh"
+
+#: ../data/preferences.ui.in.h:5
+msgid "Harddisk"
+msgstr "Đĩa cứng"
+
+#: ../data/preferences.ui.in.h:6
+msgid "I_OWait"
+msgstr "Chờ _V/R"
+
+#: ../data/preferences.ui.in.h:7
+msgid "I_dle"
+msgstr "N_ghỉ"
+
+#: ../data/preferences.ui.in.h:8
+msgid "Load"
+msgstr "Trọng tải"
+
+#: ../data/preferences.ui.in.h:9
+msgid "Memory"
+msgstr "Bộ nhớ"
+
+#: ../data/preferences.ui.in.h:10
+msgid "Monitored Resources"
+msgstr "Tài nguyên được theo dõi"
+
+#: ../data/preferences.ui.in.h:11
+msgid "N_ice"
+msgstr "Cấp N_ice"
+
+#: ../data/preferences.ui.in.h:12
+msgid "Network"
+msgstr "Mạng"
+
+#: ../data/preferences.ui.in.h:13
+msgid "Options"
+msgstr "Tùy chọn"
+
+#: ../data/preferences.ui.in.h:14
+msgid "Processor"
+msgstr "Bộ xử lý"
+
+#: ../data/preferences.ui.in.h:15
+msgid "S_wap Space"
+msgstr "Bộ nhớ t_ráo đổi"
+
+#: ../data/preferences.ui.in.h:16
+msgid "S_ystem"
+msgstr "_Hệ thống"
+
+#: ../data/preferences.ui.in.h:17
+msgid "Sh_ared"
+msgstr "Chi_a sẻ"
+
+#: ../data/preferences.ui.in.h:18
+msgid "Swap Space"
+msgstr "Bộ nhớ trao đổi"
+
+#: ../data/preferences.ui.in.h:19
+msgid "Sys_tem monitor update interval: "
+msgstr "Khoảng cập nhậ_t theo dõi hệ thống: "
+
+#: ../data/preferences.ui.in.h:20
+msgid "System m_onitor width: "
+msgstr "Độ rộng bộ the_o dõi hệ thống: "
+
+#: ../data/preferences.ui.in.h:21
+msgid "_About"
+msgstr "_Giới thiệu"
+
+#: ../data/preferences.ui.in.h:22
+msgid "_Autostart: "
+msgstr ""
+
+#: ../data/preferences.ui.in.h:23
+msgid "_Average"
+msgstr "Trung _bình"
+
+#: ../data/preferences.ui.in.h:24
+msgid "_Background"
+msgstr "_Nền"
+
+#: ../data/preferences.ui.in.h:25
+msgid "_Buffers"
+msgstr "_Bộ nhớ đệm"
+
+#: ../data/preferences.ui.in.h:26
+msgid "_Free"
+msgstr "_Còn rảnh"
+
+#: ../data/preferences.ui.in.h:27
+msgid "_Harddisk"
+msgstr "Đĩa _cứng"
+
+#: ../data/preferences.ui.in.h:28
+msgid "_In"
+msgstr "_Vào"
+
+#: ../data/preferences.ui.in.h:29
+msgid "_Load"
+msgstr "_Trọng tải"
+
+#: ../data/preferences.ui.in.h:30
+msgid "_Local"
+msgstr "_Cục bộ"
+
+#: ../data/preferences.ui.in.h:31
+msgid "_Memory"
+msgstr "_Bộ nhớ"
+
+#: ../data/preferences.ui.in.h:32
+msgid "_Network"
+msgstr "Mạ_ng"
+
+#: ../data/preferences.ui.in.h:33
+msgid "_Open System Monitor"
+msgstr "Mở bộ the_o dõi hệ thống"
+
+#: ../data/preferences.ui.in.h:34
+msgid "_Out"
+msgstr "_Ra"
+
+#: ../data/preferences.ui.in.h:35
+msgid "_Preferences"
+msgstr "Tù_y thích"
+
+#: ../data/preferences.ui.in.h:36
+msgid "_Processor"
+msgstr "Bộ _xử lý"
+
+#: ../data/preferences.ui.in.h:37
+msgid "_Quit"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:38
+msgid "_Read"
+msgstr "Đọ_c"
+
+#: ../data/preferences.ui.in.h:39
+msgid "_Used"
+msgstr "Đã _dùng"
+
+#: ../data/preferences.ui.in.h:40
+msgid "_User"
+msgstr "N_gười dùng"
+
+#: ../data/preferences.ui.in.h:41
+msgid "_Write"
+msgstr "_Ghi"
+
+#: ../data/preferences.ui.in.h:42
+msgid "milliseconds"
+msgstr "mili giây"
+
+#: ../data/preferences.ui.in.h:43
+msgid "pixels"
+msgstr "điểm ảnh"
+
+#: ../data/preferences.ui.in.h:44
+msgid "translator-credits"
+msgstr ""
+"Nhóm Việt hoá GNOME (http://gnomevi.sourceforge.net)\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Clytie Siddall https://launchpad.net/~clytie"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
+msgid "Applet refresh rate in milliseconds"
+msgstr "Tần số cập nhật tiểu dụng (theo mili giây)"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+msgid "Automatically start on session startup"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+msgid "Background color for disk load graph"
+msgstr "Màu nền cho đồ thị trọng tải đĩa"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
+msgid "CPU graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
+msgid "CPU graph background color"
+msgstr "Màu nền cho đồ thị CPU"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
+msgid "Disk load graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
+msgid "Enable CPU load graph"
+msgstr "Bật đồ thị trọng tải CPU"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+msgid "Enable disk load graph"
+msgstr "Bật đồ thị trọng tải đĩa"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+msgid "Enable load average graph"
+msgstr "Bật đồ thị trung bình trọng tải"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+msgid "Enable memory load graph"
+msgstr "Bật đồ thị trọng tải bộ nhớ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+msgid "Enable network load graph"
+msgstr "Bật đồ thị trọng tải mạng"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
+msgid "Enable swap load graph"
+msgstr "Bật đồ thị trọng tải trao đổi"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+msgid ""
+"For horizontal panels, the width of the graphs in pixels. For vertical "
+"panels, this is the height of the graphs."
+msgstr ""
+"Với bảng ngang thì có độ rộng của đồ thị theo điểm ảnh. Còn với bảng dọc thì "
+"có chiều cao đồ thị."
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+msgid "Graph color for buffer memory"
+msgstr "Màu đồ thị cho bộ nhớ vùng đệm"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+msgid "Graph color for cached memory"
+msgstr "Màu đồ thị cho bộ nhớ tạm"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+msgid "Graph color for disk read"
+msgstr "Màu đồ thị cho hoạt động đọc đĩa"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+msgid "Graph color for disk write"
+msgstr "Màu đồ thị cho hoạt động ghi vào đĩa"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+msgid "Graph color for input network activity"
+msgstr "Màu đồ thị cho hoạt động mạng vào"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+msgid "Graph color for iowait related CPU activity"
+msgstr ""
+"Màu đồ thị cho hoạt động CPU liên quan đến thời gian đời khi dữ liệu gõ/xuất "
+"(iowait)"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+msgid "Graph color for load average"
+msgstr "Màu đồ thị cho trung bình trọng tải"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+msgid "Graph color for loopback network usage"
+msgstr "Màu đồ thị cho sử dụng mạng mạch nội bộ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
+msgid "Graph color for nice-related CPU activity"
+msgstr ""
+"Màu đồ thị cho hoạt động CPU liên quan đến \"nice\" (ưu tiên CPU cho ứng "
+"dụng)"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
+msgid "Graph color for output network activity"
+msgstr "Màu đồ thị cho hoạt động mạng ra"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
+msgid "Graph color for shared memory"
+msgstr "Màu đồ thị cho bộ nhớ dùng chung"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
+msgid "Graph color for system-related CPU activity"
+msgstr "Màu đồ thị cho hoạt động CPU liên quan đến hệ thống"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
+msgid "Graph color for user-related CPU activity"
+msgstr "Màu đồ thị cho hoạt động CPU liên quan đến người dùng"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
+msgid "Graph color for user-related memory usage"
+msgstr "Màu đồ thị cho việc sử dụng bộ nhớ liên quan đến người dùng"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:28
+msgid "Graph color for user-related swap usage"
+msgstr "Màu đồ thị cho việc sử dụng bộ nhớ trao đổi liên quan đến người dùng"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:29
+msgid "Load graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:30
+msgid "Load graph background color"
+msgstr "Màu nền đồ thị trọng tải"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:31
+msgid "Memory graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:32
+msgid "Memory graph background color"
+msgstr "Màu nền đồ thị bộ nhớ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:33
+msgid "Network graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:34
+msgid "Network graph background color"
+msgstr "Màu nền đồ thị mạng"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:35
+msgid "Swap graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:36
+msgid "Swap graph background color"
+msgstr "Màu nền đồ thị bộ nhớ trao đổi"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:37
+msgid "The desktop description file to execute as the system monitor"
+msgstr "Tập tin mô tả màn hình nền cần thực hiện làm bộ theo dõi hệ thống"
+
+#: ../data/indicator-multiload.desktop.in.h:2
+msgid "System Load Indicator"
+msgstr ""
