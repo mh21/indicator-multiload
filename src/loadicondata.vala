@@ -21,13 +21,13 @@ public class LoadIconData : IconData {
         base("loadavg", 1, 10, 1);
     }
 
-    public override void update_traces() {
+    public override void update() {
         GTop.LoadAvg loadavg;
         GTop.get_loadavg(out loadavg);
 
         this.traces[0].add_value(loadavg.loadavg[0]);
 
-        base.update_traces();
+        this.update_scale();
     }
 }
 

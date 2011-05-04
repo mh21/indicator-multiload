@@ -25,7 +25,7 @@ public class DiskIconData : IconData {
         base("diskload", 2, 10, 1000);
     }
 
-    public override void update_traces() {
+    public override void update() {
         uint64[] newdata = new uint64[3];
         uint64 newtime = get_monotonic_time();
 
@@ -54,6 +54,6 @@ public class DiskIconData : IconData {
         this.lastdata = newdata;
         this.lasttime = newtime;
 
-        base.update_traces();
+        this.update_scale();
     }
 }

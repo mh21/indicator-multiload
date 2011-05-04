@@ -16,13 +16,18 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.                *
  ******************************************************************************/
 
+internal class IconMenu {
+    public Gtk.MenuItem[] items;
+    public Gtk.MenuItem separator;
+}
+
 public class MultiLoadIndicator : Object {
-    private uint index;
-    private uint count;
+    private bool currenticonisattention;
     private uint height;
     private string directory;
     private TimeoutSource timeout;
     private FixedAppIndicator.Indicator indicator;
+    private IconMenu[] icon_menus;
 
     private uint _size;
     private uint _speed;
@@ -54,10 +59,39 @@ public class MultiLoadIndicator : Object {
                 this.timeout = new TimeoutSource(this.speed);
             this.timeout.attach(null);
             this.timeout.set_callback(() => {
-                    foreach (unowned IconData icon_data in this._icon_datas)
-                        icon_data.update_traces();
+                    uint menu_position = 0;
+                    // TODO: hide these for the invisible icons
+                    for (uint i = 0, isize = this._icon_datas.length; i < isize; ++i) {
+                        unowned IconMenu icon_menu = this.icon_menus[i];
+                        unowned IconData icon_data = this._icon_datas[i];
+                        icon_data.update();
+                        var menuitems = icon_data.menuitems;
+                        var length = menuitems.length;
+                        for (uint j = 0, jsize = length; j < jsize; ++j) {
+                            if (j < icon_menu.items.length) {
+                                icon_menu.items[j].label = menuitems[j];
+                            } else {
+                                var item = new Gtk.MenuItem.with_label(menuitems[j]);
+                                item.show();
+                                icon_menu.items += item;
+                                this.menu.insert(item, (int)menu_position);
+                            }
+                            ++menu_position;
+                        }
+                        if (length != icon_menu.items.length) {
+                            for (uint j = length, jsize = icon_menu.items.length; j < jsize; ++j)
+                                icon_menu.items[j].destroy();
+                            icon_menu.items = icon_menu.items[0:length];
+                        }
+                        if (icon_menu.separator == null) {
+                            icon_menu.separator = new Gtk.SeparatorMenuItem();
+                            this.menu.insert(icon_menu.separator, (int)menu_position);
+                        }
+                        ++menu_position;
+                        icon_menu.separator.visible = length > 0;
+                    }
                     if (indicator != null)
-                        indicator.set_icon(this.write());
+                        indicator.set_status(this.write());
                     return true;
                 });
         }
@@ -78,9 +112,13 @@ public class MultiLoadIndicator : Object {
             if (value == null)
                 this.indicator = null;
             if (value != null && this.indicator == null) {
-                this.indicator = new FixedAppIndicator.Indicator.with_path("multiload", this.write(),
+                // create icon
+                this.write();
+                this.indicator = new FixedAppIndicator.Indicator.with_path("multiload", this.filename(0),
                         AppIndicator.IndicatorCategory.SYSTEM_SERVICES, this.directory);
+                this.indicator.set_attention_icon(this.filename(1));
                 this.indicator.set_status(AppIndicator.IndicatorStatus.ACTIVE);
+                // TODO: get the initial menu correct
             }
             if (value != null)
                 this.indicator.set_menu(value);
@@ -96,7 +134,7 @@ public class MultiLoadIndicator : Object {
     }
 
     ~MultiLoadIndicator() {
-        for (uint i = 0, icount = this.count; i < icount; ++i)
+        for (uint i = 0; i < 2; ++i)
             FileUtils.remove(this.filename(i));
         DirUtils.remove(this.directory);
     }
@@ -104,8 +142,7 @@ public class MultiLoadIndicator : Object {
     public MultiLoadIndicator() {
         var template = "/var/lock/multiload-icons-XXXXXX".dup();
         this.directory = DirUtils.mkdtemp(template);
-        this.index = 0;
-        this.count = 2;
+        this.currenticonisattention = false;
         this.height = 22;
 
         this.size = 40;
@@ -115,13 +152,16 @@ public class MultiLoadIndicator : Object {
     public void add_icon_data(IconData data) {
         data.trace_length = this._size;
         this._icon_datas += data;
+        this.icon_menus += new IconMenu();
     }
 
     private string filename(uint index) {
         return @"$(this.directory)/$index.png";
     }
 
-    private string write() {
+    // uses the attention icon as secondary icon
+    // if the active icon was changed directly another dbus roundtrip would happen
+    private AppIndicator.IndicatorStatus write() {
         uint count = 0;
         foreach (unowned IconData icon_data in this._icon_datas)
             if (icon_data.enabled)
@@ -139,7 +179,7 @@ public class MultiLoadIndicator : Object {
             ctx.rectangle(offset, 0, this._size, this.height);
             ctx.fill();
             var values = new double[icon_data.traces.length, this._size];
-            var scale = icon_data.factor;
+            var scale = icon_data.scale;
             for (uint j = 0, jsize = values.length[0]; j < jsize; ++j) {
                 unowned double[] trace_data = icon_data.traces[j].values;
                 for (uint i = 0, isize = values.length[1]; i < isize; ++i)
@@ -158,9 +198,9 @@ public class MultiLoadIndicator : Object {
             }
             offset += this._size + 2;
         }
-        string name = this.filename(this.index);
-        surface.write_to_png(name);
-        this.index = (this.index + 1) % this.count;
-        return name;
+        surface.write_to_png(this.filename((uint)this.currenticonisattention));
+        this.currenticonisattention = !this.currenticonisattention;
+        return this.currenticonisattention ?
+            AppIndicator.IndicatorStatus.ACTIVE : AppIndicator.IndicatorStatus.ATTENTION;
     }
 }

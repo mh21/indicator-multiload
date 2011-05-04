@@ -21,7 +21,7 @@ public class MemIconData : IconData {
         base("memload", 4, 1, 1);
     }
 
-    public override void update_traces() {
+    public override void update() {
         GTop.Mem mem;
         GTop.get_mem(out mem);
 
@@ -32,7 +32,7 @@ public class MemIconData : IconData {
         this.traces[2].add_value(mem.buffer / total);
         this.traces[3].add_value(mem.cached / total);
 
-        base.update_traces();
+        this.update_scale();
     }
 }
 

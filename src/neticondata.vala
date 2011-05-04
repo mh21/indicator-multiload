@@ -25,7 +25,7 @@ public class NetIconData : IconData {
         base("netload", 3, 10, 5000);
     }
 
-    public override void update_traces() {
+    public override void update() {
         uint64[] newdata = new uint64[3];
         uint64 newtime = get_monotonic_time();
 
@@ -56,6 +56,6 @@ public class NetIconData : IconData {
         this.lastdata = newdata;
         this.lasttime = newtime;
 
-        base.update_traces();
+        this.update_scale();
     }
 }

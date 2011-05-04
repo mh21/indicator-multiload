@@ -16,7 +16,7 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.                *
  ******************************************************************************/
 
-public class IconData : GLib.Object {
+public abstract class IconData : GLib.Object {
     private uint _trace_length;
     private double[] scalerhistory;
     private double scalerminimum;
@@ -25,8 +25,8 @@ public class IconData : GLib.Object {
     public uint alpha { get; set; default = 0xffff; }
     public bool enabled { get; set; default = true; }
     public string id { get; private set; }
-    public double factor { get; private set; default = 1; }
-    public string[] menuitems { get; private set; default = {}; }
+    public double scale { get; private set; default = 1; }
+    public string[] menuitems { get; protected set; default = {}; }
     public IconTraceData[] traces {get; private set; }
     public uint trace_length {
         get {
@@ -52,6 +52,9 @@ public class IconData : GLib.Object {
         this.scalerminimum = scalerminimum;
     }
 
+    // needs to add data points to the traces and update the menuitems
+    public abstract void update();
+
     // Fast attack, slow decay
     // - each cycle, the peak value in the plot is determined
     // - if the peak value is greater than anything in the history buffer, the
@@ -61,8 +64,8 @@ public class IconData : GLib.Object {
     //   - it is never smaller than the peak value in the plot
     //   - after the current peak leaves the plot, the scaling factor gets
     //     reduced slowly
-    // call this method at the end of the derived methods
-    public virtual void update_traces() {
+    // call this method at the end of update()
+    protected virtual void update_scale() {
         double currentpeak = this.scalerminimum;
         for (uint i = 0, isize = this.trace_length; i < isize; ++i) {
             double currentvalue = 0;
@@ -79,7 +82,7 @@ public class IconData : GLib.Object {
                 this.scalerhistory[i] = currentpeak;
         }
         this.scalerhistory[this.scalerhistory.length - 1] = currentpeak;
-        this.factor = Utils.mean(this.scalerhistory);
+        this.scale = Utils.mean(this.scalerhistory);
     }
 
     public void set_source_color(Cairo.Context ctx)

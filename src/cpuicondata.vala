@@ -23,7 +23,7 @@ public class CpuIconData : IconData {
         base("cpuload", 4, 1, 1);
     }
 
-    public override void update_traces() {
+    public override void update() {
         GTop.Cpu cpu;
         GTop.get_cpu(out cpu);
 
@@ -34,19 +34,28 @@ public class CpuIconData : IconData {
         newdata[3] = cpu.iowait + cpu.irq + cpu.softirq;
         newdata[4] = cpu.idle;
 
+        uint percentage = 0;
+
         if (this.lastdata.length == 0) {
             foreach (unowned IconTraceData trace in this.traces)
                 trace.add_value(0);
         } else {
-            double total = 0;
+            double total = 0, inuse = 0;
             for (uint i = 0, isize = newdata.length; i < isize; ++i)
-            	total += newdata[i] - this.lastdata[i];
+                total += newdata[i] - this.lastdata[i];
+            for (uint i = 0; i < 3; ++i)
+                inuse += newdata[i] - this.lastdata[i];
             for (uint i = 0, isize = this.traces.length; i < isize; ++i)
                 this.traces[i].add_value((newdata[i] - this.lastdata[i]) / total);
+            percentage = (uint)(100 * inuse / total);
         }
         this.lastdata = newdata;
 
-        base.update_traces();
+        this.menuitems = {
+            _("%s: %u%% in use").printf(_("Processor"), percentage)
+        };
+
+        this.update_scale();
     }
 }
 

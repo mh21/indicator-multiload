@@ -21,13 +21,13 @@ public class SwapIconData : IconData {
         base("swapload", 1, 1, 1);
     }
 
-    public override void update_traces() {
+    public override void update() {
         GTop.Swap swap;
         GTop.get_swap(out swap);
 
         this.traces[0].add_value(swap.used / (double)swap.total);
 
-        base.update_traces();
+        this.update_scale();
     }
 }
 
