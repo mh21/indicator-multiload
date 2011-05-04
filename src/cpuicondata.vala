@@ -45,6 +45,8 @@ public class CpuIconData : IconData {
                 this.traces[i].add_value((newdata[i] - this.lastdata[i]) / total);
         }
         this.lastdata = newdata;
+
+        base.update_traces();
     }
 }
 

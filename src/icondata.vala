@@ -17,7 +17,6 @@
  ******************************************************************************/
 
 public class IconData : GLib.Object {
-    protected IconTraceData[] traces;
     private uint _trace_length;
     private double[] scalerhistory;
     private double scalerminimum;
@@ -27,6 +26,8 @@ public class IconData : GLib.Object {
     public bool enabled { get; set; default = true; }
     public string id { get; private set; }
     public double factor { get; private set; default = 1; }
+    public string[] menuitems { get; private set; default = {}; }
+    public IconTraceData[] traces {get; private set; }
     public uint trace_length {
         get {
             return this._trace_length;
@@ -35,12 +36,6 @@ public class IconData : GLib.Object {
             this._trace_length = value;
             foreach (unowned IconTraceData trace in this.traces)
                 trace.set_values_length(value);
-        }
-    }
-
-    public uint length {
-        get {
-            return this.traces.length;
         }
     }
 
@@ -57,15 +52,6 @@ public class IconData : GLib.Object {
         this.scalerminimum = scalerminimum;
     }
 
-    public virtual void update_traces() {
-        double sum = 0;
-        foreach (unowned IconTraceData trace in this.traces) {
-            var next = Random.double_range(0, 1.0 - sum);
-            sum += next;
-            trace.add_value(next);
-        }
-    }
-
     // Fast attack, slow decay
     // - each cycle, the peak value in the plot is determined
     // - if the peak value is greater than anything in the history buffer, the
@@ -75,7 +61,8 @@ public class IconData : GLib.Object {
     //   - it is never smaller than the peak value in the plot
     //   - after the current peak leaves the plot, the scaling factor gets
     //     reduced slowly
-    public void update_factor() {
+    // call this method at the end of the derived methods
+    public virtual void update_traces() {
         double currentpeak = this.scalerminimum;
         for (uint i = 0, isize = this.trace_length; i < isize; ++i) {
             double currentvalue = 0;
@@ -93,10 +80,6 @@ public class IconData : GLib.Object {
         }
         this.scalerhistory[this.scalerhistory.length - 1] = currentpeak;
         this.factor = Utils.mean(this.scalerhistory);
-    }
-
-    public unowned IconTraceData trace(uint index) {
-        return this.traces[index];
     }
 
     public void set_source_color(Cairo.Context ctx)

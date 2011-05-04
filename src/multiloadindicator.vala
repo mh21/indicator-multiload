@@ -54,10 +54,8 @@ public class MultiLoadIndicator : Object {
                 this.timeout = new TimeoutSource(this.speed);
             this.timeout.attach(null);
             this.timeout.set_callback(() => {
-                    foreach (unowned IconData icon_data in this._icon_datas) {
+                    foreach (unowned IconData icon_data in this._icon_datas)
                         icon_data.update_traces();
-                        icon_data.update_factor();
-                    }
                     if (indicator != null)
                         indicator.set_icon(this.write());
                     return true;
@@ -140,16 +138,16 @@ public class MultiLoadIndicator : Object {
             icon_data.set_source_color(ctx);
             ctx.rectangle(offset, 0, this._size, this.height);
             ctx.fill();
-            var values = new double[icon_data.length, this._size];
+            var values = new double[icon_data.traces.length, this._size];
             var scale = icon_data.factor;
             for (uint j = 0, jsize = values.length[0]; j < jsize; ++j) {
-                unowned double[] trace_data = icon_data.trace(j).values;
+                unowned double[] trace_data = icon_data.traces[j].values;
                 for (uint i = 0, isize = values.length[1]; i < isize; ++i)
                     values[j, i] = (j > 0 ? values[j - 1, i] : 0) + trace_data[i] / scale;
             }
 
             for (int j = values.length[0] - 1; j >= 0; --j) {
-                Gdk.cairo_set_source_color(ctx, icon_data.trace(j).color);
+                Gdk.cairo_set_source_color(ctx, icon_data.traces[j].color);
                 for (uint i = 0, isize = values.length[1]; i < isize; ++i) {
                     // the baseline is outside the canvas
                     ctx.move_to(0.5 + offset + i, this.height + 0.5);

@@ -185,10 +185,10 @@ public class Main : Application {
         this.datasettings = new FixedGSettings.Settings("de.mh21.indicator.multiload");
         foreach (unowned IconData icon_data in this.multi.icon_datas) {
             var id = icon_data.id;
-            var length = icon_data.length;
+            var length = icon_data.traces.length;
             for (uint j = 0, jsize = length; j < jsize; ++j)
                 this.datasettings.bind_with_mapping(@"$id-color$j",
-                        icon_data.trace(j), "color",
+                        icon_data.traces[j], "color",
                         SettingsBindFlags.DEFAULT, get_settings_color, set_settings_color, null, () => {});
             this.datasettings.bind_with_mapping(@"$id-color$length",
                     icon_data, "color",
@@ -213,7 +213,7 @@ public class Main : Application {
         this.prefsettings = new FixedGSettings.Settings("de.mh21.indicator.multiload");
         foreach (unowned IconData icon_data in this.multi.icon_datas) {
             var id = icon_data.id;
-            var length = icon_data.length;
+            var length = icon_data.traces.length;
             for (uint j = 0, jsize = length; j < jsize; ++j)
                 this.prefsettings.bind_with_mapping(@"$id-color$j",
                         this.builder.get_object(@"$(id)_color$j"), "color",

@@ -53,5 +53,7 @@ public class DiskIconData : IconData {
         }
         this.lastdata = newdata;
         this.lasttime = newtime;
+
+        base.update_traces();
     }
 }

@@ -26,6 +26,8 @@ public class LoadIconData : IconData {
         GTop.get_loadavg(out loadavg);
 
         this.traces[0].add_value(loadavg.loadavg[0]);
+
+        base.update_traces();
     }
 }
 

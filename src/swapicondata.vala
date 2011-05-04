@@ -26,6 +26,8 @@ public class SwapIconData : IconData {
         GTop.get_swap(out swap);
 
         this.traces[0].add_value(swap.used / (double)swap.total);
+
+        base.update_traces();
     }
 }
 
