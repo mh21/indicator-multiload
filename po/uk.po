@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-02 23:22+0200\n"
-"PO-Revision-Date: 2011-05-02 17:48+0000\n"
-"Last-Translator: Maxim Dziumanenko <Unknown>\n"
+"PO-Revision-Date: 2011-05-03 12:57+0000\n"
+"Last-Translator: Сергій Матрунчик (SkyMan) <Unknown>\n"
 "Language-Team: ukrainian <Ukrainian <uk@li.org>>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-05-03 06:16+0000\n"
+"X-Launchpad-Export-Date: 2011-05-04 05:35+0000\n"
 "X-Generator: Launchpad (build 12758)\n"
 "Language: \n"
 
@@ -108,7 +108,7 @@ msgstr "_Про програму"
 
 #: ../data/preferences.ui.in.h:22
 msgid "_Autostart: "
-msgstr ""
+msgstr "_Автостарт: "
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Average"
@@ -169,7 +169,7 @@ msgstr "П_роцесор"
 
 #: ../data/preferences.ui.in.h:37
 msgid "_Quit"
-msgstr ""
+msgstr "_Вихід"
 
 #: ../data/preferences.ui.in.h:38
 msgid "_Read"
@@ -203,7 +203,8 @@ msgstr ""
 "Wanderlust <wanderlust@ukr.net>\n"
 "\n"
 "Launchpad Contributions:\n"
-"  Maxim Dziumanenko https://launchpad.net/~dziumanenko"
+"  Maxim Dziumanenko https://launchpad.net/~dziumanenko\n"
+"  Сергій Матрунчик (SkyMan) https://launchpad.net/~skymanphp"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
 msgid "Applet refresh rate in milliseconds"
@@ -211,7 +212,7 @@ msgstr "Частота оновлення аплету (в мілісекунд�
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
 msgid "Automatically start on session startup"
-msgstr ""
+msgstr "Завантажуватись автоматично після входу в систему"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
 msgid "Background color for disk load graph"
@@ -219,7 +220,7 @@ msgstr "Колір тла для графіка завантаження дис�
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
 msgid "CPU graph alpha"
-msgstr ""
+msgstr "Показник завантажування процесора"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
 msgid "CPU graph background color"
@@ -227,7 +228,7 @@ msgstr "Колір тла графіка використання ЦП"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
 msgid "Disk load graph alpha"
-msgstr ""
+msgstr "Показник завантажування диску"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
 msgid "Enable CPU load graph"
@@ -323,7 +324,7 @@ msgstr "Колір графіка використання підкачки ко
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:29
 msgid "Load graph alpha"
-msgstr ""
+msgstr "Показник завантажування"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:30
 msgid "Load graph background color"
@@ -331,7 +332,7 @@ msgstr "Колір тла графіка завантаженості"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:31
 msgid "Memory graph alpha"
-msgstr ""
+msgstr "Показник завантажування пам’яті"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:32
 msgid "Memory graph background color"
@@ -339,7 +340,7 @@ msgstr "Колір тла графіка пам'яті"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:33
 msgid "Network graph alpha"
-msgstr ""
+msgstr "Показник завантажування мережі"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:34
 msgid "Network graph background color"
@@ -347,7 +348,7 @@ msgstr "Колір тла графіка мережі"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:35
 msgid "Swap graph alpha"
-msgstr ""
+msgstr "Показник завантажування розділу підкачки"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:36
 msgid "Swap graph background color"
@@ -359,4 +360,4 @@ msgstr "Файл опису для виконання як системний м
 
 #: ../data/indicator-multiload.desktop.in.h:2
 msgid "System Load Indicator"
-msgstr ""
+msgstr "Індикатор завантажування системи"
