@@ -1,4 +1,14 @@
 [type: gettext/glade]data/preferences.ui.in
 data/de.mh21.indicator.multiload.gschema.xml.in.in
 data/indicator-multiload.desktop.in
-src/cpuicondata.c
+src/cpuicondata.vala
+src/diskicondata.vala
+src/icondata.vala
+src/icontracedata.vala
+src/loadicondata.vala
+src/main.vala
+src/memicondata.vala
+src/multiloadindicator.vala
+src/neticondata.vala
+src/swapicondata.vala
+src/utils.vala

@@ -1,2 +1,13 @@
 data/de.mh21.indicator.multiload.gschema.xml.in
 data/preferences.ui
+src/cpuicondata.c
+src/diskicondata.c
+src/icondata.c
+src/icontracedata.c
+src/loadicondata.c
+src/main.c
+src/memicondata.c
+src/multiloadindicator.c
+src/neticondata.c
+src/swapicondata.c
+src/utils.c

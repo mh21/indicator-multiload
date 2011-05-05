@@ -32,6 +32,12 @@ public class MemIconData : IconData {
         this.traces[2].add_value(mem.buffer / total);
         this.traces[3].add_value(mem.cached / total);
 
+        this.menuitems = {
+            _("Mem: %u%%, cache %u%%").printf
+                ((uint)Math.round(100 * mem.user / total),
+                 (uint)Math.round(100 * (mem.shared + mem.buffer + mem.cached) / total))
+        };
+
         this.update_scale();
     }
 }

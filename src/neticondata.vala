@@ -25,6 +25,21 @@ public class NetIconData : IconData {
         base("netload", 3, 10, 5000);
     }
 
+    private string format_speed(double speed) {
+        const string[] units = {
+            N_("%.1f kB/s"),
+            N_("%.1f MB/s"),
+            N_("%.1f GB/s"),
+            N_("%.1f TB/s")
+        };
+        int index = -1;
+        while (Math.round(speed) >= 1000 && ++index < 3)
+            speed /= 1000;
+        if (index < 0)
+            return ngettext("%u byte/s", "%u bytes/s", (ulong)speed).printf((uint)speed);
+        return _(units[index]).printf(speed);
+    }
+
     public override void update() {
         uint64[] newdata = new uint64[3];
         uint64 newtime = get_monotonic_time();
@@ -45,16 +60,26 @@ public class NetIconData : IconData {
             }
         }
 
+        double down = 0, up = 0;
+
         if (this.lastdata.length == 0) {
             foreach (unowned IconTraceData trace in this.traces)
                 trace.add_value(0);
         } else {
             double delta = (newtime - this.lasttime) / 1e6;
+            down = (newdata[0] - this.lastdata[0]) / delta;
+            up = (newdata[1] - this.lastdata[1]) / delta;
             for (uint i = 0, isize = this.traces.length; i < isize; ++i)
                 this.traces[i].add_value((newdata[i] - this.lastdata[i]) / delta);
         }
         this.lastdata = newdata;
         this.lasttime = newtime;
+
+        this.menuitems = {
+            _("Net: down %s, up %s").printf
+                (this.format_speed(down),
+                 this.format_speed(up))
+        };
 
         this.update_scale();
     }
