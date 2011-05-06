@@ -1,0 +1,7 @@
+You need at least vala 0.12 and devel packages for glib, gtk+ 2.0, cairo, appindicator and libgtop 2.0.
+
+To compile, run
+    ./autogen.sh && make
+
+To run without install, use
+    make test-run
