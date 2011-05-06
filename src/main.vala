@@ -37,10 +37,10 @@ public class Main : Application {
     private MultiLoadIndicator multi;
     private FixedGSettings.Settings datasettings;
     private FixedGSettings.Settings prefsettings;
-    private unowned Gtk.Window preferences;
-    private unowned Gtk.AboutDialog about;
-    private unowned Gtk.Menu menu;
-    private Gtk.CheckButton*[] checkbuttons; // unowned
+    private Gtk.Window preferences;
+    private Gtk.AboutDialog about;
+    private Gtk.Menu menu;
+    private Gtk.CheckButton[] checkbuttons;
     private static const string autostartkey = "X-GNOME-Autostart-enabled";
     private static const string desktopfilename = "indicator-multiload.desktop";
     private string autostartfile = Path.build_filename(Environment.get_user_config_dir(),
@@ -132,13 +132,13 @@ public class Main : Application {
     [CCode (instance_pos = -1)]
     public void on_checkbutton_toggled(Gtk.CheckButton source) {
         uint count = 0;
-        foreach (unowned Gtk.CheckButton checkbutton in this.checkbuttons)
+        foreach (var checkbutton in this.checkbuttons)
             count += (uint)checkbutton.active;
         if (count == 1)
-            foreach (unowned Gtk.CheckButton checkbutton in this.checkbuttons)
+            foreach (var checkbutton in this.checkbuttons)
                 checkbutton.sensitive = !checkbutton.active;
         else
-            foreach (unowned Gtk.CheckButton checkbutton in this.checkbuttons)
+            foreach (var checkbutton in this.checkbuttons)
                 checkbutton.sensitive = true;
     }
 
@@ -183,7 +183,7 @@ public class Main : Application {
         this.multi.add_icon_data(new DiskIconData());
 
         this.datasettings = new FixedGSettings.Settings("de.mh21.indicator.multiload");
-        foreach (unowned IconData icon_data in this.multi.icon_datas) {
+        foreach (var icon_data in this.multi.icon_datas) {
             var id = icon_data.id;
             var length = icon_data.traces.length;
             for (uint j = 0, jsize = length; j < jsize; ++j)
@@ -211,7 +211,7 @@ public class Main : Application {
                 SettingsBindFlags.DEFAULT);
 
         this.prefsettings = new FixedGSettings.Settings("de.mh21.indicator.multiload");
-        foreach (unowned IconData icon_data in this.multi.icon_datas) {
+        foreach (var icon_data in this.multi.icon_datas) {
             var id = icon_data.id;
             var length = icon_data.traces.length;
             for (uint j = 0, jsize = length; j < jsize; ++j)
@@ -239,7 +239,7 @@ public class Main : Application {
                 this.builder.get_object("autostart"), "active",
                 SettingsBindFlags.DEFAULT);
 
-        foreach (unowned IconData icon_data in this.multi.icon_datas)
+        foreach (var icon_data in this.multi.icon_datas)
             this.checkbuttons += this.builder.get_object(@"view_$(icon_data.id)") as Gtk.CheckButton;
 
         this.menu = this.builder.get_object("menu") as Gtk.Menu;

@@ -27,6 +27,11 @@ public class LoadIconData : IconData {
 
         this.traces[0].add_value(loadavg.loadavg[0]);
 
+        this.menuitems = {
+            _("Load: %.2f").printf
+                (loadavg.loadavg[0])
+        };
+
         this.update_scale();
     }
 }

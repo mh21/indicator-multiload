@@ -43,16 +43,26 @@ public class DiskIconData : IconData {
             newdata[1] += fsusage.write;
         }
 
+        double read = 0, write = 0;
+
         if (this.lastdata.length == 0) {
-            foreach (unowned IconTraceData trace in this.traces)
+            foreach (var trace in this.traces)
                 trace.add_value(0);
         } else {
             double delta = (newtime - this.lasttime) / 1e6;
+            read = (newdata[0] - this.lastdata[0]) / delta;
+            write = (newdata[1] - this.lastdata[1]) / delta;
             for (uint i = 0, isize = this.traces.length; i < isize; ++i)
                 this.traces[i].add_value((newdata[i] - this.lastdata[i]) / delta);
         }
         this.lastdata = newdata;
         this.lasttime = newtime;
+
+        this.menuitems = {
+            _("Disk: read %s, write %s").printf
+                (Utils.format_speed(read),
+                 Utils.format_speed(write))
+        };
 
         this.update_scale();
     }

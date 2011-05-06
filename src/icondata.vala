@@ -34,7 +34,7 @@ public abstract class IconData : GLib.Object {
         }
         set {
             this._trace_length = value;
-            foreach (unowned IconTraceData trace in this.traces)
+            foreach (var trace in this.traces)
                 trace.set_values_length(value);
         }
     }
@@ -69,7 +69,7 @@ public abstract class IconData : GLib.Object {
         double currentpeak = this.scalerminimum;
         for (uint i = 0, isize = this.trace_length; i < isize; ++i) {
             double currentvalue = 0;
-            foreach (unowned IconTraceData trace in this.traces)
+            foreach (var trace in this.traces)
                 currentvalue += trace.values[i];
             currentpeak = double.max(currentpeak, currentvalue);
         }

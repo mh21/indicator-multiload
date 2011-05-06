@@ -40,7 +40,7 @@ public class CpuIconData : IconData {
 
         if (this.lastdata.length == 0) {
             total = 1;
-            foreach (unowned IconTraceData trace in this.traces)
+            foreach (var trace in this.traces)
                 trace.add_value(0);
         } else {
             for (uint i = 0, isize = newdata.length; i < isize; ++i)

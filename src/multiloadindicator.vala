@@ -40,7 +40,7 @@ public class MultiLoadIndicator : Object {
         }
         set {
             this._size = value;
-            foreach (unowned IconData icon_data in this._icon_datas)
+            foreach (var icon_data in this._icon_datas)
                 icon_data.trace_length = value;
         }
     }
@@ -62,20 +62,23 @@ public class MultiLoadIndicator : Object {
                     uint menu_position = 0;
                     // TODO: hide these for the invisible icons
                     for (uint i = 0, isize = this._icon_datas.length; i < isize; ++i) {
-                        unowned IconMenu icon_menu = this.icon_menus[i];
-                        unowned IconData icon_data = this._icon_datas[i];
+                        IconMenu icon_menu = this.icon_menus[i];
+                        IconData icon_data = this._icon_datas[i];
                         icon_data.update();
+                        var enabled = icon_data.enabled;
                         var menuitems = icon_data.menuitems;
                         var length = menuitems.length;
                         for (uint j = 0, jsize = length; j < jsize; ++j) {
+                            Gtk.MenuItem item;
                             if (j < icon_menu.items.length) {
-                                icon_menu.items[j].label = menuitems[j];
+                                item = icon_menu.items[j];
                             } else {
-                                var item = new Gtk.MenuItem.with_label(menuitems[j]);
-                                item.show();
-                                icon_menu.items += item;
+                                item = new Gtk.MenuItem();
                                 this.menu.insert(item, (int)menu_position);
+                                icon_menu.items += item;
                             }
+                            item.label = menuitems[j];
+                            item.visible = enabled;
                             ++menu_position;
                         }
                         if (length != icon_menu.items.length) {
@@ -88,7 +91,7 @@ public class MultiLoadIndicator : Object {
                             this.menu.insert(icon_menu.separator, (int)menu_position);
                         }
                         ++menu_position;
-                        icon_menu.separator.visible = length > 0;
+                        icon_menu.separator.visible = length > 0 && enabled;
                     }
                     if (indicator != null)
                         indicator.set_status(this.write());
@@ -163,7 +166,7 @@ public class MultiLoadIndicator : Object {
     // if the active icon was changed directly another dbus roundtrip would happen
     private AppIndicator.IndicatorStatus write() {
         uint count = 0;
-        foreach (unowned IconData icon_data in this._icon_datas)
+        foreach (var icon_data in this._icon_datas)
             if (icon_data.enabled)
                 ++count;
         var surface = new Cairo.ImageSurface(Cairo.Format.ARGB32,
@@ -172,7 +175,7 @@ public class MultiLoadIndicator : Object {
         ctx.set_antialias(Cairo.Antialias.NONE);
         ctx.set_line_width(1);
         uint offset = 0;
-        foreach (unowned IconData icon_data in this._icon_datas) {
+        foreach (var icon_data in this._icon_datas) {
             if (!icon_data.enabled)
                 continue;
             icon_data.set_source_color(ctx);

@@ -27,6 +27,11 @@ public class SwapIconData : IconData {
 
         this.traces[0].add_value(swap.used / (double)swap.total);
 
+        this.menuitems = {
+            _("Swap: %s").printf
+                (Utils.format_size(swap.used))
+        };
+
         this.update_scale();
     }
 }
