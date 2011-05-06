@@ -36,7 +36,7 @@ public class CpuIconData : IconData {
 
         uint percentage = 0;
 
-        double total = 0, inuse = 0, nice = 0, iowait = 0;
+        double total = 0, inuse = 0, iowait = 0;
 
         if (this.lastdata.length == 0) {
             total = 1;
@@ -45,8 +45,8 @@ public class CpuIconData : IconData {
         } else {
             for (uint i = 0, isize = newdata.length; i < isize; ++i)
                 total += newdata[i] - this.lastdata[i];
-            inuse = newdata[0] - this.lastdata[0] + newdata[2] - this.lastdata[2];
-            nice = newdata[1] - this.lastdata[1];
+            for (uint i = 0, isize = 3; i < isize; ++i)
+                inuse += newdata[i] - this.lastdata[i];
             iowait = newdata[3] - this.lastdata[3];
             for (uint i = 0, isize = this.traces.length; i < isize; ++i)
                 this.traces[i].add_value((newdata[i] - this.lastdata[i]) / total);
@@ -55,9 +55,8 @@ public class CpuIconData : IconData {
         this.lastdata = newdata;
 
         this.menuitems = {
-            _("CPU: %u%%, nice %u%%, iowait %u%%").printf
+            _("CPU: %u%%, iowait %u%%").printf
                 ((uint)Math.round(100 * inuse / total),
-                 (uint)Math.round(100 * nice / total),
                  (uint)Math.round(100 * iowait / total))
         };
 

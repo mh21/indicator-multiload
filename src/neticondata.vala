@@ -25,19 +25,30 @@ public class NetIconData : IconData {
         base("netload", 3, 10, 5000);
     }
 
-    private string format_speed(double speed) {
+    private string format_speed(double val) {
         const string[] units = {
-            N_("%.1f kB/s"),
-            N_("%.1f MB/s"),
-            N_("%.1f GB/s"),
-            N_("%.1f TB/s")
+            // TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+            N_("{} kB/s"),
+            // TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+            N_("{} MB/s"),
+            // TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+            N_("{} GB/s"),
+            // TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+            N_("{} TB/s")
         };
         int index = -1;
-        while (Math.round(speed) >= 1000 && ++index < 3)
-            speed /= 1000;
+        while (index + 1 < units.length && val >= 1000) {
+            val /= 1000;
+            ++index;
+        }
         if (index < 0)
-            return ngettext("%u byte/s", "%u bytes/s", (ulong)speed).printf((uint)speed);
-        return _(units[index]).printf(speed);
+            return ngettext("%u byte/s", "%u bytes/s", (ulong)val).printf((uint)val);
+        // 4 significant digits
+        var pattern = _(units[index]).replace("{}",
+            val < 9.9995 ? "%.3f" :
+            val < 99.995 ? "%.2f" :
+            val < 999.95 ? "%.1f" : "%.0f");
+        return pattern.printf(val);
     }
 
     public override void update() {
