@@ -19,6 +19,7 @@
 public class DiskIconData : IconData {
     private uint64[] lastdata;
     private uint64 lasttime;
+    private const string[] networkfs = { "smbfs", "nfs", "cifs", "fuse.sshfs" };
 
     public DiskIconData() {
         // minimum of 1 kb/s
@@ -75,6 +76,10 @@ public class DiskIconData : IconData {
             GTop.MountList mountlist;
             mountentries = GTop.get_mountlist (out mountlist, false);
             for (uint i = 0; i < mountlist.number; ++i) {
+                // Skip network mounts to prevent hangs if not available and to
+                // allow suspend (gnome bug #579888)
+                if (mountentries[i].type in this.networkfs)
+                    continue;
                 GTop.FSUsage fsusage;
                 GTop.get_fsusage(out fsusage, mountentries[i].mountdir);
                 newdata[0] += fsusage.block_size * fsusage.read;
