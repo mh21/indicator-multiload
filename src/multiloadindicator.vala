@@ -18,7 +18,6 @@
 
 internal class IconMenu {
     public Gtk.MenuItem[] items;
-    public Gtk.MenuItem separator;
 }
 
 public class MultiLoadIndicator : Object {
@@ -60,12 +59,10 @@ public class MultiLoadIndicator : Object {
             this.timeout.attach(null);
             this.timeout.set_callback(() => {
                     uint menu_position = 0;
-                    // TODO: hide these for the invisible icons
                     for (uint i = 0, isize = this._icon_datas.length; i < isize; ++i) {
                         IconMenu icon_menu = this.icon_menus[i];
                         IconData icon_data = this._icon_datas[i];
                         icon_data.update();
-                        var enabled = icon_data.enabled;
                         var menuitems = icon_data.menuitems;
                         var length = menuitems.length;
                         for (uint j = 0, jsize = length; j < jsize; ++j) {
@@ -74,11 +71,11 @@ public class MultiLoadIndicator : Object {
                                 item = icon_menu.items[j];
                             } else {
                                 item = new Gtk.MenuItem();
+                                item.visible = true;
                                 this.menu.insert(item, (int)menu_position);
                                 icon_menu.items += item;
                             }
                             item.label = menuitems[j];
-                            item.visible = enabled;
                             ++menu_position;
                         }
                         if (length != icon_menu.items.length) {
@@ -86,12 +83,6 @@ public class MultiLoadIndicator : Object {
                                 icon_menu.items[j].destroy();
                             icon_menu.items = icon_menu.items[0:length];
                         }
-                        if (icon_menu.separator == null) {
-                            icon_menu.separator = new Gtk.SeparatorMenuItem();
-                            this.menu.insert(icon_menu.separator, (int)menu_position);
-                        }
-                        ++menu_position;
-                        icon_menu.separator.visible = length > 0 && enabled;
                     }
                     if (indicator != null)
                         indicator.set_status(this.write());
@@ -121,7 +112,6 @@ public class MultiLoadIndicator : Object {
                         AppIndicator.IndicatorCategory.SYSTEM_SERVICES, this.directory);
                 this.indicator.set_attention_icon(this.filename(1));
                 this.indicator.set_status(AppIndicator.IndicatorStatus.ACTIVE);
-                // TODO: get the initial menu correct
             }
             if (value != null)
                 this.indicator.set_menu(value);

@@ -20,7 +20,7 @@ public class IconTraceData : GLib.Object {
     private double[] _values;
 
     public Gdk.Color color { get; set; }
-    public unowned double[] values {
+    public double[] values {
         get {
             return _values;
         }

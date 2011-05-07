@@ -45,6 +45,13 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
   <object class="GtkMenu" id="menu">
     <property name="can_focus">False</property>
     <child>
+      <object class="GtkSeparatorMenuItem" id="separatormenuitem1">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="use_action_appearance">False</property>
+      </object>
+    </child>
+    <child>
       <object class="GtkMenuItem" id="sysmon">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
@@ -55,7 +62,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
       </object>
     </child>
     <child>
-      <object class="GtkSeparatorMenuItem" id="separatormenuitem1">
+      <object class="GtkSeparatorMenuItem" id="separatormenuitem2">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="use_action_appearance">False</property>
