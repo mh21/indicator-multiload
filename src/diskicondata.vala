@@ -25,22 +25,61 @@ public class DiskIconData : IconData {
         base("diskload", 2, 10, 1000);
     }
 
+    private string[] split(string val) {
+        string[] result = null;
+        char *last = null;
+        char *current = val;
+        for (; *current != '\0'; current = current + 1) {
+            if (*current == ' ' || *current == '\n') {
+                if (last != null) {
+                    result += strndup(last, current - last);
+                    last = null;
+                }
+            } else {
+                if (last == null)
+                    last = current;
+            }
+        }
+        if (last != null)
+            result += strndup(last, current - last);
+        return result;
+    }
+
     public override void update() {
         uint64[] newdata = new uint64[3];
         uint64 newtime = get_monotonic_time();
 
-        // TODO: This does not work for LVM or virtual fs
-        // may give weird results anyway if there are two partitions on the same drive?
-        // on Linux, maybe copy the code from iotop?
-        GTop.MountEntry[] mountentries;
-        GTop.MountList mountlist;
-        mountentries = GTop.get_mountlist (out mountlist, false);
-
-        for (uint i = 0; i < mountlist.number; ++i) {
-            GTop.FSUsage fsusage;
-            GTop.get_fsusage(out fsusage, mountentries[i].mountdir);
-            newdata[0] += fsusage.read;
-            newdata[1] += fsusage.write;
+        try {
+            // Accounts for io for everything that has an associated device
+            // TODO: will jump on unmount
+            Dir directory = Dir.open("/sys/block");
+            string entry;
+            while ((entry = directory.read_name()) != null) {
+                if (!FileUtils.test(@"/sys/block/$entry/device", FileTest.EXISTS))
+                    continue;
+                string stat;
+                try {
+                    FileUtils.get_contents(@"/sys/block/$entry/stat", out stat);
+                } catch (Error e) {
+                    continue;
+                }
+                string[] stats = this.split(stat);
+                if (stats.length < 8)
+                    continue;
+                newdata[0] += 512 * uint64.parse(stats[2]);
+                newdata[1] += 512 * uint64.parse(stats[6]);
+            }
+        } catch (Error e) {
+            // Fall back to libgtop if we have no /sys
+            GTop.MountEntry[] mountentries;
+            GTop.MountList mountlist;
+            mountentries = GTop.get_mountlist (out mountlist, false);
+            for (uint i = 0; i < mountlist.number; ++i) {
+                GTop.FSUsage fsusage;
+                GTop.get_fsusage(out fsusage, mountentries[i].mountdir);
+                newdata[0] += fsusage.block_size * fsusage.read;
+                newdata[1] += fsusage.block_size * fsusage.write;
+            }
         }
 
         double read = 0, write = 0;

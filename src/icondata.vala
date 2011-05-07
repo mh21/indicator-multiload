@@ -52,7 +52,10 @@ public abstract class IconData : GLib.Object {
         this.scalerminimum = scalerminimum;
     }
 
-    // needs to add data points to the traces and update the menuitems
+    // needs to
+    // - add data points to the traces
+    // - update the menuitems
+    // - call update_scale
     public abstract void update();
 
     // Fast attack, slow decay
@@ -64,7 +67,6 @@ public abstract class IconData : GLib.Object {
     //   - it is never smaller than the peak value in the plot
     //   - after the current peak leaves the plot, the scaling factor gets
     //     reduced slowly
-    // call this method at the end of update()
     protected virtual void update_scale() {
         double currentpeak = this.scalerminimum;
         for (uint i = 0, isize = this.trace_length; i < isize; ++i) {
