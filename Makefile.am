@@ -4,7 +4,7 @@ multiloaddocdir = ${datadir}/doc/indicator-multiload
 multiloaddoc_DATA = \
 	COPYING \
 	AUTHORS \
-	TODO
+	HACKING
 
 EXTRA_DIST = \
 	$(multiloaddoc_DATA) \
