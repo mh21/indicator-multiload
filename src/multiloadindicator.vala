@@ -23,6 +23,7 @@ internal class IconMenu {
 public class MultiLoadIndicator : Object {
     private bool currenticonisattention;
     private uint height;
+    private uint lastwidth;
     private string icondirectory;
     private TimeoutSource timeout;
     private FixedAppIndicator.Indicator indicator;
@@ -87,6 +88,16 @@ public class MultiLoadIndicator : Object {
                     if (indicator != null) {
                         indicator.set_status(this.write((uint)this.currenticonisattention));
                         this.currenticonisattention = !this.currenticonisattention;
+                        // fix icon size if using the fallback GtkStatusIcon
+                        Gtk.Window.list_toplevels().foreach((w) => {
+                            if (w.get_type().name() != "GtkTrayIcon" || !(w is Gtk.Container))
+                                return;
+                            ((Gtk.Container)w).foreach((w) => {
+                                if (!(w is Gtk.Image))
+                                    return;
+                                ((Gtk.Image)w).pixel_size = (int)uint.max(this.lastwidth, this.height);
+                            });
+                        });
                     }
                     return true;
                 });
@@ -111,8 +122,7 @@ public class MultiLoadIndicator : Object {
                 // create first versions of icons for icontheme caching
                 this.write(0);
                 this.write(1);
-                this.indicator = new
-                FixedAppIndicator.Indicator.with_path("multiload", this.iconname(0),
+                this.indicator = new FixedAppIndicator.Indicator.with_path("multiload", this.iconname(0),
                         AppIndicator.IndicatorCategory.SYSTEM_SERVICES, this.icondirectory);
                 this.indicator.set_attention_icon(this.iconname(1));
                 this.indicator.set_status(AppIndicator.IndicatorStatus.ACTIVE);
@@ -169,8 +179,9 @@ public class MultiLoadIndicator : Object {
         foreach (var icon_data in this._icon_datas)
             if (icon_data.enabled)
                 ++count;
+        this.lastwidth = (int)(count * (this._size + 2)) - 2;
         var surface = new Cairo.ImageSurface(Cairo.Format.ARGB32,
-                (int)(count * (this._size + 2)) - 2, (int)this.height);
+                (int)this.lastwidth, (int)this.height);
         var ctx = new Cairo.Context(surface);
         ctx.set_antialias(Cairo.Antialias.NONE);
         ctx.set_line_width(1);
@@ -202,7 +213,7 @@ public class MultiLoadIndicator : Object {
             offset += this._size + 2;
         }
         surface.write_to_png(this.iconpath(index));
-        return index ?
+        return index > 0 ?
             AppIndicator.IndicatorStatus.ATTENTION : AppIndicator.IndicatorStatus.ACTIVE;
     }
 }
