@@ -23,7 +23,7 @@ internal class IconMenu {
 public class MultiLoadIndicator : Object {
     private bool currenticonisattention;
     private uint height;
-    private string directory;
+    private string icondirectory;
     private TimeoutSource timeout;
     private FixedAppIndicator.Indicator indicator;
     private IconMenu[] icon_menus;
@@ -84,8 +84,10 @@ public class MultiLoadIndicator : Object {
                             icon_menu.items = icon_menu.items[0:length];
                         }
                     }
-                    if (indicator != null)
-                        indicator.set_status(this.write());
+                    if (indicator != null) {
+                        indicator.set_status(this.write((uint)this.currenticonisattention));
+                        this.currenticonisattention = !this.currenticonisattention;
+                    }
                     return true;
                 });
         }
@@ -106,11 +108,13 @@ public class MultiLoadIndicator : Object {
             if (value == null)
                 this.indicator = null;
             if (value != null && this.indicator == null) {
-                // create icon
-                this.write();
-                this.indicator = new FixedAppIndicator.Indicator.with_path("multiload", this.filename(0),
-                        AppIndicator.IndicatorCategory.SYSTEM_SERVICES, this.directory);
-                this.indicator.set_attention_icon(this.filename(1));
+                // create first versions of icons for icontheme caching
+                this.write(0);
+                this.write(1);
+                this.indicator = new
+                FixedAppIndicator.Indicator.with_path("multiload", this.iconname(0),
+                        AppIndicator.IndicatorCategory.SYSTEM_SERVICES, this.icondirectory);
+                this.indicator.set_attention_icon(this.iconname(1));
                 this.indicator.set_status(AppIndicator.IndicatorStatus.ACTIVE);
             }
             if (value != null)
@@ -126,15 +130,10 @@ public class MultiLoadIndicator : Object {
         this.timeout = null;
     }
 
-    ~MultiLoadIndicator() {
-        for (uint i = 0; i < 2; ++i)
-            FileUtils.remove(this.filename(i));
-        DirUtils.remove(this.directory);
-    }
+    public MultiLoadIndicator(string datadirectory) {
+        this.icondirectory = Path.build_filename(datadirectory, "icons");
+        DirUtils.create(this.icondirectory, 0777);
 
-    public MultiLoadIndicator() {
-        var template = "/var/lock/multiload-icons-XXXXXX".dup();
-        this.directory = DirUtils.mkdtemp(template);
         this.currenticonisattention = false;
         this.height = 22;
 
@@ -142,19 +141,30 @@ public class MultiLoadIndicator : Object {
         this.speed = 1000;
     }
 
+    ~MultiLoadIndicator() {
+        for (uint i = 0; i < 2; ++i)
+            FileUtils.remove(this.iconpath(i));
+        DirUtils.remove(this.icondirectory);
+    }
+
+
     public void add_icon_data(IconData data) {
         data.trace_length = this._size;
         this._icon_datas += data;
         this.icon_menus += new IconMenu();
     }
 
-    private string filename(uint index) {
-        return @"$(this.directory)/$index.png";
+    private string iconname(uint index) {
+        return @"indicator-multiload-graphs-$index";
+    }
+
+    private string iconpath(uint index) {
+        return Path.build_filename(this.icondirectory, this.iconname(index) + ".png");
     }
 
     // uses the attention icon as secondary icon
     // if the active icon was changed directly another dbus roundtrip would happen
-    private AppIndicator.IndicatorStatus write() {
+    private AppIndicator.IndicatorStatus write(uint index) {
         uint count = 0;
         foreach (var icon_data in this._icon_datas)
             if (icon_data.enabled)
@@ -191,9 +201,8 @@ public class MultiLoadIndicator : Object {
             }
             offset += this._size + 2;
         }
-        surface.write_to_png(this.filename((uint)this.currenticonisattention));
-        this.currenticonisattention = !this.currenticonisattention;
-        return this.currenticonisattention ?
-            AppIndicator.IndicatorStatus.ACTIVE : AppIndicator.IndicatorStatus.ATTENTION;
+        surface.write_to_png(this.iconpath(index));
+        return index ?
+            AppIndicator.IndicatorStatus.ATTENTION : AppIndicator.IndicatorStatus.ACTIVE;
     }
 }

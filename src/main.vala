@@ -41,6 +41,7 @@ public class Main : Application {
     private Gtk.AboutDialog about;
     private Gtk.Menu menu;
     private Gtk.CheckButton[] checkbuttons;
+    private static string datadirectory;
     private static const string autostartkey = "X-GNOME-Autostart-enabled";
     private static const string desktopfilename = "indicator-multiload.desktop";
     private string autostartfile = Path.build_filename(Environment.get_user_config_dir(),
@@ -174,7 +175,7 @@ public class Main : Application {
         this.preferences = this.builder.get_object("preferencesdialog") as Gtk.Window;
         this.about = this.builder.get_object("aboutdialog") as Gtk.AboutDialog;
 
-        this.multi = new MultiLoadIndicator();
+        this.multi = new MultiLoadIndicator(datadirectory);
         this.multi.add_icon_data(new CpuIconData());
         this.multi.add_icon_data(new MemIconData());
         this.multi.add_icon_data(new NetIconData());
@@ -260,9 +261,22 @@ public class Main : Application {
         Intl.bind_textdomain_codeset(Config.GETTEXT_PACKAGE, "UTF-8");
         Intl.textdomain(Config.GETTEXT_PACKAGE);
 
+        // This needs to happen before get_system_data_dirs is called the first time
+        var template = "/var/lock/multiload-icons-XXXXXX".dup();
+        datadirectory = DirUtils.mkdtemp(template);
+        var xdgdatadirs = Environment.get_variable("XDG_DATA_DIRS");
+        if (xdgdatadirs.length > 0)
+            xdgdatadirs += ":";
+        Environment.set_variable("XDG_DATA_DIRS",
+                xdgdatadirs + datadirectory, true);
+
         Gtk.init(ref args);
         Gtk.Window.set_default_icon_name("utilities-system-monitor");
 
-        return new Main("de.mh21.indicator.multiload", ApplicationFlags.FLAGS_NONE).run(args);
+        var result = new Main("de.mh21.indicator.multiload", ApplicationFlags.FLAGS_NONE).run(args);
+
+        DirUtils.remove(datadirectory);
+
+        return result;
     }
 }
