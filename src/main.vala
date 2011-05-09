@@ -204,6 +204,9 @@ public class Main : Application {
         this.datasettings.bind("size",
                 this.multi, "size",
                 SettingsBindFlags.DEFAULT);
+        this.datasettings.bind("height",
+                this.multi, "height",
+                SettingsBindFlags.DEFAULT);
         this.datasettings.bind("speed",
                 this.multi, "speed",
                 SettingsBindFlags.DEFAULT);

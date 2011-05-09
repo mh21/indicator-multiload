@@ -68,7 +68,12 @@
 
         <key name="size" type="i">
             <default>40</default>
-            <_summary>For horizontal panels, the width of the graphs in pixels.  For vertical panels, this is the height of the graphs.</_summary>
+            <_summary>Width of the graphs in pixels.</_summary>
+        </key>
+
+        <key name="height" type="i">
+            <default>22</default>
+            <_summary>Height of the graphs in pixels.</_summary>
         </key>
 
         <key name="cpuload-color0" type="s">

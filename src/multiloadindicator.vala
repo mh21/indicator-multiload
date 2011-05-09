@@ -22,7 +22,6 @@ internal class IconMenu {
 
 public class MultiLoadIndicator : Object {
     private bool currenticonisattention;
-    private uint height;
     private uint lastwidth;
     private string icondirectory;
     private TimeoutSource timeout;
@@ -33,6 +32,8 @@ public class MultiLoadIndicator : Object {
     private uint _speed;
     private IconData[] _icon_datas;
     private Gtk.Menu _menu;
+
+    public uint height { get; set; default = 22; }
 
     public uint size {
         get {
@@ -145,15 +146,14 @@ public class MultiLoadIndicator : Object {
         DirUtils.create(this.icondirectory, 0777);
 
         this.currenticonisattention = false;
-        this.height = 22;
 
         this.size = 40;
         this.speed = 1000;
     }
 
     ~MultiLoadIndicator() {
-        for (uint i = 0; i < 2; ++i)
-            FileUtils.remove(this.iconpath(i));
+        FileUtils.remove(this.iconpath(0));
+        FileUtils.remove(this.iconpath(1));
         DirUtils.remove(this.icondirectory);
     }
 
