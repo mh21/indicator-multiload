@@ -20,5 +20,5 @@ test-run:
 	-ln -s ../../../data/de.mh21.indicator.multiload.gschema.xml local-xdg-data-dir/glib-2.0/schemas
 	-ln -s ../../data/preferences.ui local-xdg-data-dir/indicator-multiload
 	-glib-compile-schemas local-xdg-data-dir/glib-2.0/schemas
-	-XDG_DATA_DIRS=./local-xdg-data-dir:$$XDG_DATA_DIRS src/indicator-multiload
+	-XDG_DATA_DIRS=./local-xdg-data-dir:$$XDG_DATA_DIRS G_SLICE=always-malloc src/indicator-multiload
 	-rm -rf local-xdg-data-dir

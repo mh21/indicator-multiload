@@ -17,7 +17,7 @@ Benoît Dejean &lt;TazForEver@dlfp.org&gt;
 Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
     <property name="translator_credits" translatable="yes">translator-credits</property>
     <property name="logo_icon_name">utilities-system-monitor</property>
-    <signal name="response" handler="gtk_widget_hide" swapped="no"/>
+    <signal name="response" handler="gtk_widget_destroy" swapped="no"/>
     <child internal-child="vbox">
       <object class="GtkVBox" id="dialog-vbox3">
         <property name="visible">True</property>
@@ -103,8 +103,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
     <property name="can_focus">False</property>
     <property name="border_width">5</property>
     <property name="type_hint">dialog</property>
-    <signal name="delete-event" handler="gtk_widget_hide_on_delete" swapped="no"/>
-    <signal name="response" handler="gtk_widget_hide" swapped="no"/>
+    <signal name="response" handler="gtk_widget_destroy" swapped="no"/>
     <child internal-child="vbox">
       <object class="GtkVBox" id="dialog-vbox2">
         <property name="visible">True</property>

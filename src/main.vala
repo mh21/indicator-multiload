@@ -33,21 +33,15 @@ public Variant set_settings_color(Value value, VariantType expected_type, void *
 }
 
 public class Main : Application {
-    private Gtk.Builder builder;
     private MultiLoadIndicator multi;
-    private FixedGSettings.Settings datasettings;
-    private FixedGSettings.Settings prefsettings;
-    private Gtk.Window preferences;
-    private Gtk.AboutDialog about;
-    private Gtk.Menu menu;
-    private Gtk.CheckButton[] checkbuttons;
+    private Gtk.CheckButton*[] checkbuttons; // unowned
     private static string datadirectory;
-    private static const string autostartkey = "X-GNOME-Autostart-enabled";
-    private static const string desktopfilename = "indicator-multiload.desktop";
-    private string autostartfile = Path.build_filename(Environment.get_user_config_dir(),
-            "autostart", desktopfilename);
-    private string applicationfile = Path.build_filename("applications",
-            desktopfilename);
+    private string gsettings;
+    private string autostartkey;
+    private string desktopfilename;
+    private string autostartfile;
+    private string applicationfile;
+    private string uifile;
 
     public bool autostart {
         get {
@@ -96,19 +90,15 @@ public class Main : Application {
         if (sysmon.length == 0)
             sysmon = "gnome-system-monitor.desktop";
         var info = new DesktopAppInfo(sysmon);
-        var screen = this.menu.get_screen(); // TODO: maybe this needs to be the default?
         if (info != null) {
-            var context = new Gdk.AppLaunchContext();
-            context.set_timestamp(Gtk.get_current_event_time());
-            context.set_screen(screen);
             try {
-                info.launch(null, context); // TODO: launches in background
+                info.launch(null, null);
             } catch (Error e) {
                 stderr.printf("Could not launch system monitor: %s\n", e.message);
             }
         } else {
             try {
-                Gdk.spawn_command_line_on_screen(screen, "gnome-system-monitor");
+                Process.spawn_command_line_async("gnome-system-monitor");
             } catch (Error e) {
                 stderr.printf("Could not launch system monitor: %s\n", e.message);
             }
@@ -117,12 +107,52 @@ public class Main : Application {
 
     [CCode (instance_pos = -1)]
     public void on_preferences_activate(Gtk.MenuItem source) {
-        this.preferences.show_all();
+        Gtk.Builder builder;
+        var preferences = get_ui("preferencesdialog", {"sizeadjustment",
+                "speedadjustment"}, out builder) as Gtk.Dialog;
+        return_if_fail(preferences != null);
+
+        this.checkbuttons = null;
+        foreach (var icon_data in this.multi.icon_datas)
+            this.checkbuttons += builder.get_object(@"view_$(icon_data.id)") as Gtk.CheckButton;
+
+        var prefsettings = new FixedGSettings.Settings("de.mh21.indicator.multiload");
+        foreach (var icon_data in this.multi.icon_datas) {
+            var id = icon_data.id;
+            var length = icon_data.traces.length;
+            for (uint j = 0, jsize = length; j < jsize; ++j)
+                prefsettings.bind_with_mapping(@"$id-color$j",
+                        builder.get_object(@"$(id)_color$j"), "color",
+                        SettingsBindFlags.DEFAULT, get_settings_color, set_settings_color, null, () => {});
+            prefsettings.bind_with_mapping(@"$id-color$length",
+                    builder.get_object(@"$(id)_color$length"), "color",
+                    SettingsBindFlags.DEFAULT, get_settings_color, set_settings_color, null, () => {});
+            prefsettings.bind(@"view-$id",
+                    builder.get_object(@"view_$id"), "active",
+                    SettingsBindFlags.DEFAULT);
+            prefsettings.bind(@"$id-alpha$length",
+                    builder.get_object(@"$(id)_color$length"), "alpha",
+                    SettingsBindFlags.DEFAULT);
+        }
+
+        prefsettings.bind("size",
+                builder.get_object("size"), "value",
+                SettingsBindFlags.DEFAULT);
+        prefsettings.bind("speed",
+                builder.get_object("speed"), "value",
+                SettingsBindFlags.DEFAULT);
+        prefsettings.bind("autostart",
+                builder.get_object("autostart"), "active",
+                SettingsBindFlags.DEFAULT);
+
+        preferences.show_all();
     }
 
     [CCode (instance_pos = -1)]
     public void on_about_activate(Gtk.MenuItem source) {
-        this.about.show_all();
+        var about = get_ui("aboutdialog") as Gtk.Dialog;
+        return_if_fail(about != null);
+        about.show_all();
     }
 
     [CCode (instance_pos = -1)]
@@ -134,17 +164,52 @@ public class Main : Application {
     public void on_checkbutton_toggled(Gtk.CheckButton source) {
         uint count = 0;
         foreach (var checkbutton in this.checkbuttons)
-            count += (uint)checkbutton.active;
+            count += (uint)checkbutton->active;
         if (count == 1)
             foreach (var checkbutton in this.checkbuttons)
-                checkbutton.sensitive = !checkbutton.active;
+                checkbutton->sensitive = !checkbutton->active;
         else
             foreach (var checkbutton in this.checkbuttons)
-                checkbutton.sensitive = true;
+                checkbutton->sensitive = true;
     }
 
     public Main(string app_id, ApplicationFlags flags) {
         Object(application_id: app_id, flags: flags);
+
+        this.gsettings = "de.mh21.indicator.multiload";
+        this.autostartkey = "X-GNOME-Autostart-enabled";
+        this.desktopfilename = "indicator-multiload.desktop";
+        this.autostartfile = Path.build_filename(Environment.get_user_config_dir(),
+                "autostart", desktopfilename);
+        this.applicationfile = Path.build_filename("applications",
+                desktopfilename);
+
+        string[] datadirs = { Config.PACKAGE_DATA_DIR };
+        foreach (var datadir in Environment.get_system_data_dirs())
+            datadirs += Path.build_filename(datadir, Config.PACKAGE_NAME);
+        foreach (var datadir in datadirs) {
+            var uifile = Path.build_filename(datadir, "preferences.ui");
+            stderr.printf("%s\n", uifile);
+            if (!FileUtils.test(uifile, FileTest.IS_REGULAR))
+                continue;
+            this.uifile = uifile;
+            break;
+        }
+    }
+
+    private Object get_ui(string object_id, string[] additional = {},
+            out Gtk.Builder builder = null) {
+        builder = new Gtk.Builder();
+        string[] ids = additional;
+        ids += object_id;
+        try {
+            builder.add_objects_from_file(this.uifile, ids);
+        } catch (Error e) {
+            stderr.printf("Could not load indicator ui %s from %s: %s\n",
+                    object_id, this.uifile, e.message);
+        }
+        builder.connect_signals(this);
+        return builder.get_object(object_id);
     }
 
     public override void activate() {
@@ -152,29 +217,6 @@ public class Main : Application {
     }
 
     public override void startup() {
-        this.builder = new Gtk.Builder();
-
-        string[] datadirs = { Config.PACKAGE_DATA_DIR };
-        foreach (var datadir in Environment.get_system_data_dirs())
-            datadirs += Path.build_filename(datadir, Config.PACKAGE_NAME);
-        bool found = false;
-        foreach (var datadir in datadirs) {
-            try {
-                this.builder.add_from_file(Path.build_filename(datadir, "preferences.ui"));
-                found = true;
-                break;
-            } catch (Error e) {
-                stderr.printf("Could not initialize indicator gui from %s: %s\n", datadir, e.message);
-            }
-        }
-        if (!found)
-            return;
-
-        this.builder.connect_signals(this);
-
-        this.preferences = this.builder.get_object("preferencesdialog") as Gtk.Window;
-        this.about = this.builder.get_object("aboutdialog") as Gtk.AboutDialog;
-
         this.multi = new MultiLoadIndicator(datadirectory);
         this.multi.add_icon_data(new CpuIconData());
         this.multi.add_icon_data(new MemIconData());
@@ -183,71 +225,40 @@ public class Main : Application {
         this.multi.add_icon_data(new LoadIconData());
         this.multi.add_icon_data(new DiskIconData());
 
-        this.datasettings = new FixedGSettings.Settings("de.mh21.indicator.multiload");
+        var datasettings = new FixedGSettings.Settings("de.mh21.indicator.multiload");
         foreach (var icon_data in this.multi.icon_datas) {
             var id = icon_data.id;
             var length = icon_data.traces.length;
             for (uint j = 0, jsize = length; j < jsize; ++j)
-                this.datasettings.bind_with_mapping(@"$id-color$j",
+                datasettings.bind_with_mapping(@"$id-color$j",
                         icon_data.traces[j], "color",
                         SettingsBindFlags.DEFAULT, get_settings_color, set_settings_color, null, () => {});
-            this.datasettings.bind_with_mapping(@"$id-color$length",
+            datasettings.bind_with_mapping(@"$id-color$length",
                     icon_data, "color",
                     SettingsBindFlags.DEFAULT, get_settings_color, set_settings_color, null, () => {});
-            this.datasettings.bind(@"view-$id",
+            datasettings.bind(@"view-$id",
                     icon_data, "enabled",
                     SettingsBindFlags.DEFAULT);
-            this.datasettings.bind(@"$id-alpha$length",
+            datasettings.bind(@"$id-alpha$length",
                     icon_data, "alpha",
                     SettingsBindFlags.DEFAULT);
         }
-        this.datasettings.bind("size",
+        datasettings.bind("size",
                 this.multi, "size",
                 SettingsBindFlags.DEFAULT);
-        this.datasettings.bind("height",
+        datasettings.bind("height",
                 this.multi, "height",
                 SettingsBindFlags.DEFAULT);
-        this.datasettings.bind("speed",
+        datasettings.bind("speed",
                 this.multi, "speed",
                 SettingsBindFlags.DEFAULT);
-        this.datasettings.bind("autostart",
+        datasettings.bind("autostart",
                 this, "autostart",
                 SettingsBindFlags.DEFAULT);
 
-        this.prefsettings = new FixedGSettings.Settings("de.mh21.indicator.multiload");
-        foreach (var icon_data in this.multi.icon_datas) {
-            var id = icon_data.id;
-            var length = icon_data.traces.length;
-            for (uint j = 0, jsize = length; j < jsize; ++j)
-                this.prefsettings.bind_with_mapping(@"$id-color$j",
-                        this.builder.get_object(@"$(id)_color$j"), "color",
-                        SettingsBindFlags.DEFAULT, get_settings_color, set_settings_color, null, () => {});
-            this.prefsettings.bind_with_mapping(@"$id-color$length",
-                    this.builder.get_object(@"$(id)_color$length"), "color",
-                    SettingsBindFlags.DEFAULT, get_settings_color, set_settings_color, null, () => {});
-            this.prefsettings.bind(@"view-$id",
-                    this.builder.get_object(@"view_$id"), "active",
-                    SettingsBindFlags.DEFAULT);
-            this.prefsettings.bind(@"$id-alpha$length",
-                    this.builder.get_object(@"$(id)_color$length"), "alpha",
-                    SettingsBindFlags.DEFAULT);
-        }
-
-        this.prefsettings.bind("size",
-                this.builder.get_object("size"), "value",
-                SettingsBindFlags.DEFAULT);
-        this.prefsettings.bind("speed",
-                this.builder.get_object("speed"), "value",
-                SettingsBindFlags.DEFAULT);
-        this.prefsettings.bind("autostart",
-                this.builder.get_object("autostart"), "active",
-                SettingsBindFlags.DEFAULT);
-
-        foreach (var icon_data in this.multi.icon_datas)
-            this.checkbuttons += this.builder.get_object(@"view_$(icon_data.id)") as Gtk.CheckButton;
-
-        this.menu = this.builder.get_object("menu") as Gtk.Menu;
-        this.multi.menu = this.menu;
+        var menu = get_ui("menu") as Gtk.Menu;
+        return_if_fail(menu != null);
+        this.multi.menu = menu;
 
         this.hold();
 
@@ -266,19 +277,19 @@ public class Main : Application {
 
         // This needs to happen before get_system_data_dirs is called the first time
         var template = "/var/lock/multiload-icons-XXXXXX".dup();
-        datadirectory = DirUtils.mkdtemp(template);
+        Main.datadirectory = DirUtils.mkdtemp(template);
         var xdgdatadirs = Environment.get_variable("XDG_DATA_DIRS");
         if (xdgdatadirs.length > 0)
             xdgdatadirs += ":";
         Environment.set_variable("XDG_DATA_DIRS",
-                xdgdatadirs + datadirectory, true);
+                xdgdatadirs + Main.datadirectory, true);
 
         Gtk.init(ref args);
         Gtk.Window.set_default_icon_name("utilities-system-monitor");
 
         var result = new Main("de.mh21.indicator.multiload", ApplicationFlags.FLAGS_NONE).run(args);
 
-        DirUtils.remove(datadirectory);
+        DirUtils.remove(Main.datadirectory);
 
         return result;
     }
