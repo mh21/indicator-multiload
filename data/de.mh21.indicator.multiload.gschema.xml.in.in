@@ -61,17 +61,17 @@
         </key>
 
 
-        <key name="speed" type="i">
+        <key name="speed" type="q">
             <default>500</default>
             <_summary>Applet refresh rate in milliseconds</_summary>
         </key>
 
-        <key name="size" type="i">
+        <key name="size" type="q">
             <default>40</default>
             <_summary>Width of the graphs in pixels.</_summary>
         </key>
 
-        <key name="height" type="i">
+        <key name="height" type="q">
             <default>22</default>
             <_summary>Height of the graphs in pixels.</_summary>
         </key>
