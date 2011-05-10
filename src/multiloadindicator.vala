@@ -21,7 +21,7 @@ internal class IconMenu {
 }
 
 public class MultiLoadIndicator : Object {
-    private bool currenticonisattention;
+    private uint currenticonindex;
     private uint lastwidth;
     private string icondirectory;
     private TimeoutSource timeout;
@@ -87,8 +87,8 @@ public class MultiLoadIndicator : Object {
                         }
                     }
                     if (indicator != null) {
-                        indicator.set_status(this.write((uint)this.currenticonisattention));
-                        this.currenticonisattention = !this.currenticonisattention;
+                        indicator.set_icon(this.write(this.currenticonindex));
+                        this.currenticonindex = 1 - this.currenticonindex;
                         // fix icon size if using the fallback GtkStatusIcon
                         Gtk.Window.list_toplevels().foreach((w) => {
                             if (w.get_type().name() != "GtkTrayIcon" || !(w is Gtk.Container))
@@ -125,7 +125,6 @@ public class MultiLoadIndicator : Object {
                 this.write(1);
                 this.indicator = new FixedAppIndicator.Indicator.with_path("multiload", this.iconname(0),
                         AppIndicator.IndicatorCategory.SYSTEM_SERVICES, this.icondirectory);
-                this.indicator.set_attention_icon(this.iconname(1));
                 this.indicator.set_status(AppIndicator.IndicatorStatus.ACTIVE);
             }
             if (value != null)
@@ -145,7 +144,7 @@ public class MultiLoadIndicator : Object {
         this.icondirectory = Path.build_filename(datadirectory, "icons");
         DirUtils.create(this.icondirectory, 0777);
 
-        this.currenticonisattention = false;
+        this.currenticonindex = 0;
 
         this.size = 40;
         this.speed = 1000;
@@ -172,9 +171,7 @@ public class MultiLoadIndicator : Object {
         return Path.build_filename(this.icondirectory, this.iconname(index) + ".png");
     }
 
-    // uses the attention icon as secondary icon
-    // if the active icon was changed directly another dbus roundtrip would happen
-    private AppIndicator.IndicatorStatus write(uint index) {
+    private string write(uint index) {
         uint count = 0;
         foreach (var icon_data in this._icon_datas)
             if (icon_data.enabled)
@@ -213,7 +210,6 @@ public class MultiLoadIndicator : Object {
             offset += this._size + 2;
         }
         surface.write_to_png(this.iconpath(index));
-        return index > 0 ?
-            AppIndicator.IndicatorStatus.ATTENTION : AppIndicator.IndicatorStatus.ACTIVE;
+        return this.iconname(index);
     }
 }
