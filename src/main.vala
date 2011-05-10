@@ -34,7 +34,9 @@ public Variant set_settings_color(Value value, VariantType expected_type, void *
 
 public class Main : Application {
     private MultiLoadIndicator multi;
-    private Gtk.CheckButton*[] checkbuttons; // unowned
+    private Gtk.Dialog about;
+    private Gtk.Dialog preferences;
+    private Gtk.CheckButton[] checkbuttons;
     private static string datadirectory;
     private string gsettings;
     private string autostartkey;
@@ -107,12 +109,16 @@ public class Main : Application {
 
     [CCode (instance_pos = -1)]
     public void on_preferences_activate(Gtk.MenuItem source) {
-        Gtk.Builder builder;
-        var preferences = get_ui("preferencesdialog", {"sizeadjustment",
-                "speedadjustment"}, out builder) as Gtk.Dialog;
-        return_if_fail(preferences != null);
+        if (this.preferences != null) {
+            this.preferences.present();
+            return;
+        }
 
-        this.checkbuttons = null;
+        Gtk.Builder builder;
+        this.preferences = get_ui("preferencesdialog", {"sizeadjustment",
+                "speedadjustment"}, out builder) as Gtk.Dialog;
+        return_if_fail(this.preferences != null);
+
         foreach (var icon_data in this.multi.icon_datas)
             this.checkbuttons += builder.get_object(@"view_$(icon_data.id)") as Gtk.CheckButton;
 
@@ -145,14 +151,20 @@ public class Main : Application {
                 builder.get_object("autostart"), "active",
                 SettingsBindFlags.DEFAULT);
 
-        preferences.show_all();
+        this.preferences.show_all();
     }
 
     [CCode (instance_pos = -1)]
     public void on_about_activate(Gtk.MenuItem source) {
-        var about = get_ui("aboutdialog") as Gtk.Dialog;
-        return_if_fail(about != null);
-        about.show_all();
+        if (this.about != null) {
+            this.about.present();
+            return;
+        }
+
+        this.about = get_ui("aboutdialog") as Gtk.Dialog;
+        return_if_fail(this.about != null);
+
+        this.about.show_all();
     }
 
     [CCode (instance_pos = -1)]
@@ -164,13 +176,24 @@ public class Main : Application {
     public void on_checkbutton_toggled(Gtk.CheckButton source) {
         uint count = 0;
         foreach (var checkbutton in this.checkbuttons)
-            count += (uint)checkbutton->active;
+            count += (uint)checkbutton.active;
         if (count == 1)
             foreach (var checkbutton in this.checkbuttons)
-                checkbutton->sensitive = !checkbutton->active;
+                checkbutton.sensitive = !checkbutton.active;
         else
             foreach (var checkbutton in this.checkbuttons)
-                checkbutton->sensitive = true;
+                checkbutton.sensitive = true;
+    }
+
+    [CCode (instance_pos = -1)]
+    public void on_aboutdialog_destroy(Gtk.Widget source) {
+        this.about = null;
+    }
+
+    [CCode (instance_pos = -1)]
+    public void on_preferencesdialog_destroy(Gtk.Widget source) {
+        this.preferences = null;
+        this.checkbuttons = null;
     }
 
     public Main(string app_id, ApplicationFlags flags) {
