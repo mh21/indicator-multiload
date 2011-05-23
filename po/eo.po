@@ -9,14 +9,14 @@ msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-02 23:22+0200\n"
-"PO-Revision-Date: 2011-05-02 18:14+0000\n"
+"PO-Revision-Date: 2011-05-22 06:50+0000\n"
 "Last-Translator: Kristjan SCHMIDT <Unknown>\n"
 "Language-Team: Esperanto <ubuntu-l10n-eo@lists.launchpad.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-05-03 06:15+0000\n"
-"X-Generator: Launchpad (build 12758)\n"
+"X-Launchpad-Export-Date: 2011-05-23 05:34+0000\n"
+"X-Generator: Launchpad (build 12959)\n"
 "Language: eo\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
@@ -161,7 +161,7 @@ msgstr "_El"
 
 #: ../data/preferences.ui.in.h:35
 msgid "_Preferences"
-msgstr "_Preferoj"
+msgstr "_Agordoj"
 
 #: ../data/preferences.ui.in.h:36
 msgid "_Processor"
