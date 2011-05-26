@@ -1,3 +1,9 @@
+indicator-multiload (0.1+bzr5) oneiric; urgency=low
+
+  * initial upload
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 26 May 2011 14:33:18 +0200
+
 indicator-multiload (0.1) unstable; urgency=low
 
   * Initial release.
