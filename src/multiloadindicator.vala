@@ -25,7 +25,7 @@ public class MultiLoadIndicator : Object {
     private uint lastwidth;
     private string icondirectory;
     private TimeoutSource timeout;
-    private FixedAppIndicator.Indicator indicator;
+    private AppIndicator.Indicator indicator;
     private IconMenu[] icon_menus;
 
     private uint _size;
@@ -123,7 +123,7 @@ public class MultiLoadIndicator : Object {
                 // create first versions of icons for icontheme caching
                 this.write(0);
                 this.write(1);
-                this.indicator = new FixedAppIndicator.Indicator.with_path("multiload", this.iconname(0),
+                this.indicator = new AppIndicator.Indicator.with_path("multiload", this.iconname(0),
                         AppIndicator.IndicatorCategory.SYSTEM_SERVICES, this.icondirectory);
                 this.indicator.set_status(AppIndicator.IndicatorStatus.ACTIVE);
             }
