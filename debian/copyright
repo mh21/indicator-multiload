@@ -3,7 +3,7 @@ Upstream-Name: indicator-multiload
 Source: <https://launchpad.net/igotu2gpx>
 
 Files: *
-Copyright: 2001 Michael Hofmann <mh21@mh21.de>
+Copyright: 2011 Michael Hofmann <mh21@mh21.de>
 License: GPL-3.0+
 
 Files: debian/*
