@@ -11,14 +11,14 @@ msgstr ""
 "Project-Id-Version: gnome-applets 2.29.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-02 23:22+0200\n"
-"PO-Revision-Date: 2011-05-02 18:05+0000\n"
-"Last-Translator: Luca Ferretti <Unknown>\n"
+"PO-Revision-Date: 2011-05-27 12:57+0000\n"
+"Last-Translator: simone.sandri <lexluxsox@hotmail.it>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-05-03 06:15+0000\n"
-"X-Generator: Launchpad (build 12758)\n"
+"X-Launchpad-Export-Date: 2011-05-28 05:52+0000\n"
+"X-Generator: Launchpad (build 12959)\n"
 "Language: it\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
@@ -111,7 +111,7 @@ msgstr "I_nformazioni"
 
 #: ../data/preferences.ui.in.h:22
 msgid "_Autostart: "
-msgstr ""
+msgstr "_Avvio automatico: "
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Average"
@@ -171,7 +171,7 @@ msgstr "_Processore"
 
 #: ../data/preferences.ui.in.h:37
 msgid "_Quit"
-msgstr ""
+msgstr "_Esci"
 
 #: ../data/preferences.ui.in.h:38
 msgid "_Read"
@@ -210,7 +210,8 @@ msgstr ""
 "  * tutti i revisori del TP\n"
 "\n"
 "Launchpad Contributions:\n"
-"  Luca Ferretti https://launchpad.net/~lferrett"
+"  Luca Ferretti https://launchpad.net/~lferrett\n"
+"  simone.sandri https://launchpad.net/~lexluxsox"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
 msgid "Applet refresh rate in milliseconds"
@@ -218,7 +219,7 @@ msgstr "Aggiornamento dell'applet in millisecondi"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
 msgid "Automatically start on session startup"
-msgstr ""
+msgstr "Avvio automatico all'inizializzazione del sistema"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
 msgid "Background color for disk load graph"
@@ -226,7 +227,7 @@ msgstr "Colore di sfondo per il grafico del carico del disco"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
 msgid "CPU graph alpha"
-msgstr ""
+msgstr "Grafico alpha CPU"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
 msgid "CPU graph background color"
@@ -234,7 +235,7 @@ msgstr "Colore di sfondo del grafico del processore"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
 msgid "Disk load graph alpha"
-msgstr ""
+msgstr "Grafico alpha dei caricamenti dischi"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
 msgid "Enable CPU load graph"
@@ -333,7 +334,7 @@ msgstr "Colore grafico uso swap legato agli utenti"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:29
 msgid "Load graph alpha"
-msgstr ""
+msgstr "Grafico alpha dei caricamenti"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:30
 msgid "Load graph background color"
@@ -341,7 +342,7 @@ msgstr "Colore di sfondo grafico carico"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:31
 msgid "Memory graph alpha"
-msgstr ""
+msgstr "Grafico alpha della memoria"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:32
 msgid "Memory graph background color"
@@ -349,7 +350,7 @@ msgstr "Colore di sfondo grafico memoria"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:33
 msgid "Network graph alpha"
-msgstr ""
+msgstr "Grafico alpha della rete"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:34
 msgid "Network graph background color"
@@ -357,7 +358,7 @@ msgstr "Colore di sfondo grafico rete"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:35
 msgid "Swap graph alpha"
-msgstr ""
+msgstr "Grafico alpha degli scambi"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:36
 msgid "Swap graph background color"
@@ -370,4 +371,4 @@ msgstr "Il file descrizione desktop da eseguire come monitor di sistema"
 
 #: ../data/indicator-multiload.desktop.in.h:2
 msgid "System Load Indicator"
-msgstr ""
+msgstr "Indicatore Sistema Caricamento"
