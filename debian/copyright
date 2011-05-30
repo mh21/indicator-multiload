@@ -1,6 +1,6 @@
 Format: http://dep.debian.net/deps/dep5
 Upstream-Name: indicator-multiload
-Source: <https://launchpad.net/igotu2gpx>
+Source: <https://launchpad.net/indicator-multiload>
 
 Files: *
 Copyright: 2011 Michael Hofmann <mh21@mh21.de>
