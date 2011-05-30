@@ -1,14 +1,14 @@
-indicator-multiload (0.3-0ubuntu1) unstable; urgency=low
-
-  * Adressed the NEW review points from Jamie Strandboge (many thanks!).
-
- -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 26 May 2011 14:33:18 +0200
-
 indicator-multiload (0.3) unstable; urgency=low
 
   * Initial release.
 
  -- Michael Hofmann <mh21@piware.de>  Sat, 28 May 2011 15:14:14 +0200
+
+indicator-multiload (0.1-0ubuntu1) unstable; urgency=low
+
+  * Adressed the NEW review points from Jamie Strandboge (many thanks!).
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 26 May 2011 14:33:18 +0200
 
 indicator-multiload (0.1) unstable; urgency=low
 
