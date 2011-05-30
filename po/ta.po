@@ -1,0 +1,448 @@
+# translation of gnome-applets.master.ta.po to Tamil
+# translation of gnome-applets.gnome-2-26.ta.po to
+# translation of ta.po to
+# Translation of gnome-applets.
+# Copyright (C) 2002, 2004, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
+#
+# B Muthukumar <kulirnila@yahoo.com>, 2002.
+# Jayaradha N <njayaradha@yahoo.com>, 2004, 2006.
+# Felix <ifelix@redhat.com>, 2006.
+# drtvasudevan <agnihot3@gmail.com>, 2006.
+# I felix <ifelix@redhat.com>, 2007.
+# Dr.T.Vasudevan <agnihot3@gmail.com>, 2007, 2009, 2010.
+# I. Felix <ifelix@redhat.com>, 2008, 2009.
+# Dr,T,Vasudevan <agnihot3@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-applets.master.ta\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-05-10 00:45+0200\n"
+"PO-Revision-Date: 2011-05-28 13:40+0000\n"
+"Last-Translator: Dr.T.Vasudevan <agnihot3@gmail.com>\n"
+"Language-Team: Tamil <<Ubuntu-l10n-tam@lists.ubuntu.com>>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2011-05-30 05:47+0000\n"
+"X-Generator: Launchpad (build 12959)\n"
+"Language: ta\n"
+
+#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
+msgid ""
+"A system load monitor capable of displaying graphs for CPU, ram, and swap "
+"space use, plus network traffic."
+msgstr ""
+"ஒரு 'ஏற்றுதலைக் கண்காணித்தல்' அமைப்பு ஸிபியு, ரேம் மற்றும் ஸ்வாப் "
+"ஆகியவற்றின் வரைபடங்களையும் கோப்பை பயன்படுத்துதலையும், வலையமைப்பின் "
+"போக்குவரத்தையும் காட்ட வல்லது"
+
+#: ../data/preferences.ui.in.h:2
+msgid "Cach_ed"
+msgstr "_க கேச்ட்"
+
+#: ../data/preferences.ui.in.h:3
+msgid "Colors"
+msgstr "வண்ணங்கள்"
+
+#: ../data/preferences.ui.in.h:4
+msgid "F_ree"
+msgstr "_எஞ்சியது"
+
+#: ../data/preferences.ui.in.h:5
+msgid "Harddisk"
+msgstr "நிலைவட்டு"
+
+#: ../data/preferences.ui.in.h:6
+msgid "I_OWait"
+msgstr "_ஐஓவெயிட்"
+
+#: ../data/preferences.ui.in.h:7
+msgid "I_dle"
+msgstr "_ச சும்மாயிருத்தல்"
+
+#: ../data/preferences.ui.in.h:8
+msgid "Load"
+msgstr "பளு்றி"
+
+#: ../data/preferences.ui.in.h:9
+msgid "Memory"
+msgstr "நினைவகம்"
+
+#: ../data/preferences.ui.in.h:10
+msgid "Monitored Resources"
+msgstr "கண்காணிக்கப்பட்ட வளம்"
+
+#: ../data/preferences.ui.in.h:11
+msgid "N_ice"
+msgstr "_ந நைஸ்"
+
+#: ../data/preferences.ui.in.h:12
+msgid "Network"
+msgstr "வலையமைப்பு"
+
+#: ../data/preferences.ui.in.h:13
+msgid "Options"
+msgstr "விருப்பத்தேர்வுகள்"
+
+#: ../data/preferences.ui.in.h:14
+msgid "Processor"
+msgstr "செயலகம்"
+
+#: ../data/preferences.ui.in.h:15
+msgid "S_wap Space"
+msgstr "_இட மாற்று நினைவகம்"
+
+#: ../data/preferences.ui.in.h:16
+msgid "S_ystem"
+msgstr "_கணினி"
+
+#: ../data/preferences.ui.in.h:17
+msgid "Sh_ared"
+msgstr "ப_ங்கிடப்பட்டது"
+
+#: ../data/preferences.ui.in.h:18
+msgid "Swap Space"
+msgstr "இட மாற்று நினைவக வெளி"
+
+#: ../data/preferences.ui.in.h:19
+msgid "Sys_tem monitor update interval: "
+msgstr "_இ அமைப்புக்கண்காணியை புதுப்பித்தல் இடைவேளை நேரம்: "
+
+#: ../data/preferences.ui.in.h:20
+msgid "System m_onitor width: "
+msgstr "_அமைப்புக்கண்காணியின் அகலம்: "
+
+#: ../data/preferences.ui.in.h:21
+msgid "_About"
+msgstr "பற்றி (_A)"
+
+#: ../data/preferences.ui.in.h:22
+msgid "_Autostart: "
+msgstr ""
+
+#: ../data/preferences.ui.in.h:23
+msgid "_Average"
+msgstr "_சராசரி"
+
+#: ../data/preferences.ui.in.h:24
+msgid "_Background"
+msgstr "_ப பின்னணி"
+
+#: ../data/preferences.ui.in.h:25
+msgid "_Buffers"
+msgstr "_ட இடையகங்கள்"
+
+#: ../data/preferences.ui.in.h:26
+msgid "_Free"
+msgstr "_எஞ்சியது"
+
+#: ../data/preferences.ui.in.h:27
+msgid "_Harddisk"
+msgstr "_வ நிலைவட்டு"
+
+#: ../data/preferences.ui.in.h:28
+msgid "_In"
+msgstr "_In"
+
+#: ../data/preferences.ui.in.h:29
+msgid "_Load"
+msgstr "_பளு"
+
+#: ../data/preferences.ui.in.h:30
+msgid "_Local"
+msgstr "இடம் (_L)"
+
+#: ../data/preferences.ui.in.h:31
+msgid "_Memory"
+msgstr "_ந நினைவகம்"
+
+#: ../data/preferences.ui.in.h:32
+msgid "_Network"
+msgstr "_வலையமைப்பு"
+
+#: ../data/preferences.ui.in.h:33
+msgid "_Open System Monitor"
+msgstr "_த அமைப்புக் கண்காணியை திற"
+
+#: ../data/preferences.ui.in.h:34
+msgid "_Out"
+msgstr "வெளியே (_O)"
+
+#: ../data/preferences.ui.in.h:35
+msgid "_Preferences"
+msgstr "_வ விருப்பங்கள்..."
+
+#: ../data/preferences.ui.in.h:36
+msgid "_Processor"
+msgstr "_ச செயலகம்"
+
+#: ../data/preferences.ui.in.h:37
+msgid "_Quit"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:38
+msgid "_Read"
+msgstr "_படி"
+
+#: ../data/preferences.ui.in.h:39
+msgid "_Used"
+msgstr "_பயன்படுத்தப்பட்டது"
+
+#: ../data/preferences.ui.in.h:40
+msgid "_User"
+msgstr "_பயனர்"
+
+#: ../data/preferences.ui.in.h:41
+msgid "_Write"
+msgstr "_எழுது"
+
+#: ../data/preferences.ui.in.h:42
+msgid "milliseconds"
+msgstr "மில்லி வினாடிகள்"
+
+#: ../data/preferences.ui.in.h:43
+msgid "pixels"
+msgstr "படத் துணுக்குகள்"
+
+#: ../data/preferences.ui.in.h:44
+msgid "translator-credits"
+msgstr ""
+"மொழிபெயர்ப்பாளர்-சன்மானம் /nB Muthukumar <kulirnila@yahoo.com>, "
+"2002./nJayaradha N <njayaradha@yahoo.com>, 2004, 2006./nFelix "
+"<ifelix@redhat.com>, 2006./ndrtvasudevan <agnihot3@gmail.com>, 2006./n"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
+msgid "Applet refresh rate in milliseconds"
+msgstr "சிறுநிரல்களைப் புதுப்பிக்கும் வகையை மில்லி நொடிகளில் அமை"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+msgid "Automatically start on session startup"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+msgid "Background color for disk load graph"
+msgstr "வட்டு பளு வரைபடத்திற்கு பின்னணியின் வண்ணம்,"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
+msgid "CPU graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
+msgid "CPU graph background color"
+msgstr "ஸிபியு வரைப்படத்தின் பின்னணி நிறம்"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
+msgid "Disk load graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
+msgid "Enable CPU load graph"
+msgstr "ஸிபியு பளு வரைபடத்தை செயல்படுத்து"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+msgid "Enable disk load graph"
+msgstr "இட மாற்று நினைவக பளு வரைபடத்தை செயல்படுத்து"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+msgid "Enable load average graph"
+msgstr "சராசரி பளு வரைபடத்தை செயல்படுத்து"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+msgid "Enable memory load graph"
+msgstr "நினைவக பளு வரைபடத்தை செயல்படுத்து"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+msgid "Enable network load graph"
+msgstr "வலைப்பின்னல் பளு வரைபடத்தை செயல்படுத்து"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
+msgid "Enable swap load graph"
+msgstr "இட மாற்று நினைவக பளு வரைபடத்தை செயல்படுத்து"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+msgid "Graph color for buffer memory"
+msgstr "இடையகம் நினைவகம் வரைப்படத்தின் நிறம்"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+msgid "Graph color for cached memory"
+msgstr "கேச் நினைவக வரைப்படத்தின் நிறம்"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+msgid "Graph color for disk read"
+msgstr "வட்டு படித்தல் வரைப்படத்தின் நிறம்"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+msgid "Graph color for disk write"
+msgstr "வட்டு எழுதுதல் வரைப்படத்தின் நிறம்"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+msgid "Graph color for input network activity"
+msgstr "உள்பாடு பிணைய செயல்பாட்டுக்கா வரைபட நிறம்"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+msgid "Graph color for iowait related CPU activity"
+msgstr "ஸிபியு சம்பந்தமான ஐஓவெயிட் செயலுக்கான வரைப்பட நிறம்"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+msgid "Graph color for load average"
+msgstr "சராசரி ஏற்று வரைப்படத்தின் நிறம்"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+msgid "Graph color for loopback network usage"
+msgstr "லூப்பேக் பிணைய பயன்படுத்தலுக்கான வரைப்பட நிறம்"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+msgid "Graph color for nice-related CPU activity"
+msgstr "நைஸ் சம்பந்தமான ஸிபியு செயலுக்கான வரைப்பட நிறம்"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
+msgid "Graph color for output network activity"
+msgstr "வெளிப்பாடு பிணைய செயல்பாட்டுக்கான வரைபட நிறம்"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
+msgid "Graph color for shared memory"
+msgstr "பிரிக்க பட்ட நினைவகத்தின் வரைப்பட நிறம்"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
+msgid "Graph color for system-related CPU activity"
+msgstr "ஸிபியு முறைமை சார்ந்த செயலுக்கான வரைப்பட நிறம்"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
+msgid "Graph color for user-related CPU activity"
+msgstr "ஸிபியு பயன்படுத்துபவரை சார்ந்த செயலுக்கான வரைப்பட நிறம்"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
+msgid "Graph color for user-related memory usage"
+msgstr "பயன்படுத்துபவரை சார்ந்த நினைவக பயன் பாட்டுக்கான வரைப்பட நிறம்"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
+msgid "Graph color for user-related swap usage"
+msgstr "பயன்படுத்துபவரை சார்ந்த இட மாற்று நினைவக வரைப்பட நிறம்"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:28
+msgid "Height of the graphs in pixels."
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:29
+msgid "Load graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:30
+msgid "Load graph background color"
+msgstr "பின்னணி நிறத்திற்கான வரைப்படம் ஏற்று"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:31
+msgid "Memory graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:32
+msgid "Memory graph background color"
+msgstr "நினைவக வரைப்படம்- பின்னணி நிறம்"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:33
+msgid "Network graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:34
+msgid "Network graph background color"
+msgstr "இணைய வரைப்படம்- பின்னணி நிறம்"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:35
+msgid "Swap graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:36
+msgid "Swap graph background color"
+msgstr "இட மாற்று நினைவக வரைப்படம்- பின்னணி நிறம்"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:37
+msgid "The desktop description file to execute as the system monitor"
+msgstr "பணிமேடை விவர கோப்பு கணினி கண்காணிப்பாக செயல்படுத்தப்படுகிறது"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:38
+msgid "Width of the graphs in pixels."
+msgstr ""
+
+#: ../data/indicator-multiload.desktop.in.h:2
+msgid "System Load Indicator"
+msgstr ""
+
+#: ../src/cpuicondata.vala:58
+#, c-format
+msgid "CPU: %u%%, iowait %u%%"
+msgstr ""
+
+#: ../src/diskicondata.vala:106
+#, c-format
+msgid "Disk: read %s, write %s"
+msgstr ""
+
+#: ../src/loadicondata.vala:31
+#, c-format
+msgid "Load: %.2f"
+msgstr ""
+
+#: ../src/memicondata.vala:36
+#, c-format
+msgid "Mem: %s, cache %s"
+msgstr ""
+
+#: ../src/neticondata.vala:64
+#, c-format
+msgid "Net: down %s, up %s"
+msgstr ""
+
+#: ../src/swapicondata.vala:31
+#, c-format
+msgid "Swap: %s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:43
+msgid "{} kB"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:45
+msgid "{} MB"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:47
+msgid "{} GB"
+msgstr ""
+
+#: ../src/utils.vala:55
+#, c-format
+msgid "%u byte"
+msgid_plural "%u bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:67
+msgid "{} kB/s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:69
+msgid "{} MB/s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:71
+msgid "{} GB/s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:73
+msgid "{} TB/s"
+msgstr ""
+
+#: ../src/utils.vala:81
+#, c-format
+msgid "%u byte/s"
+msgid_plural "%u bytes/s"
+msgstr[0] ""
+msgstr[1] ""

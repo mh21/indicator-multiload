@@ -1,0 +1,437 @@
+# translation of as.po to Assamese
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Amitakhya Phukan <amitakhya@svn.gnome.org>, 2007.
+# Amitakhya Phukan <aphukan@redhat.com>, 2007, 2008.
+# Amitakhya Phukan <aphukan@fedoraproject.org>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: as\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-05-10 00:45+0200\n"
+"PO-Revision-Date: 2011-05-28 13:40+0000\n"
+"Last-Translator: \n"
+"Language-Team: Assamese <>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n!=1;\n"
+"X-Launchpad-Export-Date: 2011-05-30 05:46+0000\n"
+"X-Generator: Launchpad (build 12959)\n"
+"Language: as\n"
+
+#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
+msgid ""
+"A system load monitor capable of displaying graphs for CPU, ram, and swap "
+"space use, plus network traffic."
+msgstr ""
+"CPU, ram, swap-ৰ ব্যৱহাৰ আৰু নেটৱৰ্ক ট্ৰাফিক প্ৰভৃতিসহ ব্যৱস্থাপ্ৰণালীেৰ উপৰ "
+"চাপ নিৰীক্ষণ ব্যৱস্থা ।"
+
+#: ../data/preferences.ui.in.h:2
+msgid "Cach_ed"
+msgstr "ক্যাশে কৰা (_e)"
+
+#: ../data/preferences.ui.in.h:3
+msgid "Colors"
+msgstr "ৰঙ"
+
+#: ../data/preferences.ui.in.h:4
+msgid "F_ree"
+msgstr "মুক্ত (_r)"
+
+#: ../data/preferences.ui.in.h:5
+msgid "Harddisk"
+msgstr "হাৰ্ড-ডিস্ক"
+
+#: ../data/preferences.ui.in.h:6
+msgid "I_OWait"
+msgstr "I_OWait"
+
+#: ../data/preferences.ui.in.h:7
+msgid "I_dle"
+msgstr "কৰ্মবিহীন (_d)"
+
+#: ../data/preferences.ui.in.h:8
+msgid "Load"
+msgstr "তুলি লওক"
+
+#: ../data/preferences.ui.in.h:9
+msgid "Memory"
+msgstr "মেমৰি"
+
+#: ../data/preferences.ui.in.h:10
+msgid "Monitored Resources"
+msgstr "নিৰীক্ষিত ৰিসোৰ্স"
+
+#: ../data/preferences.ui.in.h:11
+msgid "N_ice"
+msgstr "N_ice"
+
+#: ../data/preferences.ui.in.h:12
+msgid "Network"
+msgstr "নেটৱৰ্ক"
+
+#: ../data/preferences.ui.in.h:13
+msgid "Options"
+msgstr "বিকল্পসমূহ"
+
+#: ../data/preferences.ui.in.h:14
+msgid "Processor"
+msgstr "প্ৰসেসৰ"
+
+#: ../data/preferences.ui.in.h:15
+msgid "S_wap Space"
+msgstr "Swap স্থান(_w)"
+
+#: ../data/preferences.ui.in.h:16
+msgid "S_ystem"
+msgstr "ব্যৱস্থাপ্ৰণালী (_y)"
+
+#: ../data/preferences.ui.in.h:17
+msgid "Sh_ared"
+msgstr "যৌথৰূপে ব্যৱহৃত (_a)"
+
+#: ../data/preferences.ui.in.h:18
+msgid "Swap Space"
+msgstr "Swap স্থান"
+
+#: ../data/preferences.ui.in.h:19
+msgid "Sys_tem monitor update interval: "
+msgstr "System Monitor'ৰ তথ্য আপডেটেৰ মধ্যবৰ্তী বিৰতিকাল:(_t) "
+
+#: ../data/preferences.ui.in.h:20
+msgid "System m_onitor width: "
+msgstr "System Monitor'ৰ প্ৰস্থ (_o) "
+
+#: ../data/preferences.ui.in.h:21
+msgid "_About"
+msgstr "বিষয়ে (_A)"
+
+#: ../data/preferences.ui.in.h:22
+msgid "_Autostart: "
+msgstr ""
+
+#: ../data/preferences.ui.in.h:23
+msgid "_Average"
+msgstr "গড় (_A)"
+
+#: ../data/preferences.ui.in.h:24
+msgid "_Background"
+msgstr "পটভূমি (_B)"
+
+#: ../data/preferences.ui.in.h:25
+msgid "_Buffers"
+msgstr "বাফাৰ (_B)"
+
+#: ../data/preferences.ui.in.h:26
+msgid "_Free"
+msgstr "মুক্ত (_F)"
+
+#: ../data/preferences.ui.in.h:27
+msgid "_Harddisk"
+msgstr "হাৰ্ড-ডিস্ক (_H)"
+
+#: ../data/preferences.ui.in.h:28
+msgid "_In"
+msgstr "ইন (_I)"
+
+#: ../data/preferences.ui.in.h:29
+msgid "_Load"
+msgstr "তুলি লওক"
+
+#: ../data/preferences.ui.in.h:30
+msgid "_Local"
+msgstr "স্থানীয় (_L)"
+
+#: ../data/preferences.ui.in.h:31
+msgid "_Memory"
+msgstr "মেমৰি(_M)"
+
+#: ../data/preferences.ui.in.h:32
+msgid "_Network"
+msgstr "নেটৱৰ্ক"
+
+#: ../data/preferences.ui.in.h:33
+msgid "_Open System Monitor"
+msgstr "খোলক"
+
+#: ../data/preferences.ui.in.h:34
+msgid "_Out"
+msgstr "আউট (_O)"
+
+#: ../data/preferences.ui.in.h:35
+msgid "_Preferences"
+msgstr "পছন্দ (_P)"
+
+#: ../data/preferences.ui.in.h:36
+msgid "_Processor"
+msgstr "প্ৰসেসৰ (_P)"
+
+#: ../data/preferences.ui.in.h:37
+msgid "_Quit"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:38
+msgid "_Read"
+msgstr "পড়া (_R)"
+
+#: ../data/preferences.ui.in.h:39
+msgid "_Used"
+msgstr "ব্যৱহৃত (_U)"
+
+#: ../data/preferences.ui.in.h:40
+msgid "_User"
+msgstr "ব্যৱহাৰকৰোঁতা (_U)"
+
+#: ../data/preferences.ui.in.h:41
+msgid "_Write"
+msgstr "লিখা (_W)"
+
+#: ../data/preferences.ui.in.h:42
+msgid "milliseconds"
+msgstr "মিলি-সেকেন্ড"
+
+#: ../data/preferences.ui.in.h:43
+msgid "pixels"
+msgstr "পিক্সেল"
+
+#: ../data/preferences.ui.in.h:44
+msgid "translator-credits"
+msgstr "অমিতাক্ষ ফুকন (aphukan@fedoraproject.org)"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
+msgid "Applet refresh rate in milliseconds"
+msgstr "মিলিসেকেন্ডে এপ্লেটেৰ পৰিবৰ্তনেৰ হাৰ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+msgid "Automatically start on session startup"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+msgid "Background color for disk load graph"
+msgstr "ডিস্ক'ৰ উপৰ ভাৰ চিহ্নকৰ্তা ৰেখাচিত্ৰৰ পটভূমিৰ ৰং"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
+msgid "CPU graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
+msgid "CPU graph background color"
+msgstr "CPU ৰেখাচিত্ৰৰ পটভূমিৰ ৰং"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
+msgid "Disk load graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
+msgid "Enable CPU load graph"
+msgstr "সক্ৰিয়"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+msgid "Enable disk load graph"
+msgstr "সক্ৰিয়"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+msgid "Enable load average graph"
+msgstr "সক্ৰিয়"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+msgid "Enable memory load graph"
+msgstr "সক্ৰিয়"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+msgid "Enable network load graph"
+msgstr "সক্ৰিয়"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
+msgid "Enable swap load graph"
+msgstr "সক্ৰিয়"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+msgid "Graph color for buffer memory"
+msgstr "বাফাৰ মেমৰিৰ ৰেখাচিত্ৰৰ ৰং"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+msgid "Graph color for cached memory"
+msgstr "ক্যাশে মেমৰিৰ ৰেখাচিত্ৰৰ ৰং"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+msgid "Graph color for disk read"
+msgstr "ডিস্ক পাঠেৰ কৰ্মেৰ ৰেখাচিত্ৰৰ ৰং"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+msgid "Graph color for disk write"
+msgstr "ডিস্ক লিখা কৰ্মেৰ ৰেখাচিত্ৰৰ ৰং"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+msgid "Graph color for input network activity"
+msgstr "আগমনকৰ্তা নেটৱৰ্কেৰ কৰ্ম প্ৰদৰ্শনকৰ্তা ৰেখাচিত্ৰৰ ৰং"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+msgid "Graph color for iowait related CPU activity"
+msgstr "iowait সংক্ৰান্ত CPU কৰ্ম চিহ্নিত কৰিবলৈ ব্যৱহৃত গ্ৰাফেৰ ৰং"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+msgid "Graph color for load average"
+msgstr "গড় ভাৰ চিহ্নকৰ্তা ৰেখাচিত্ৰৰ ৰং"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+msgid "Graph color for loopback network usage"
+msgstr "লুপব্যাক নেটৱৰ্কেৰ ব্যৱহাৰ সংক্ৰান্ত ৰেখাচিত্ৰৰ ৰং"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+msgid "Graph color for nice-related CPU activity"
+msgstr "nice-সম্বন্ধীয় CPU গতিবিধি প্ৰদৰ্শনেৰ ৰেখাচিত্ৰৰ ৰং"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
+msgid "Graph color for output network activity"
+msgstr "বাহিৰমূখী নেটৱৰ্কেৰ কৰ্ম প্ৰদৰ্শনকৰ্তা ৰেখাচিত্ৰৰ ৰং"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
+msgid "Graph color for shared memory"
+msgstr "যৌথৰূপে ব্যৱহৃত মেমৰি ৰেখাচিত্ৰৰ ৰং"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
+msgid "Graph color for system-related CPU activity"
+msgstr "ব্যৱস্থাপ্ৰণালী সম্বন্ধীয় CPU গতিবিধিৰ ৰেখাচিত্ৰৰ ৰং"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
+msgid "Graph color for user-related CPU activity"
+msgstr "ব্যৱহাৰকৰোঁতা সম্বন্ধীয় CPU গতিবিধিৰ ৰেখাচিত্ৰৰ ৰং"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
+msgid "Graph color for user-related memory usage"
+msgstr "ব্যৱহাৰকৰোঁতা সম্বন্ধীয় মেমৰি ব্যৱহাৰৰ ৰেখাচিত্ৰৰ ৰং"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
+msgid "Graph color for user-related swap usage"
+msgstr "ব্যৱহাৰকৰোঁতা সম্বন্ধীয় swap ব্যৱহাৰৰ ৰেখাচিত্ৰৰ ৰং"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:28
+msgid "Height of the graphs in pixels."
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:29
+msgid "Load graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:30
+msgid "Load graph background color"
+msgstr "তুলি লওক"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:31
+msgid "Memory graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:32
+msgid "Memory graph background color"
+msgstr "মেমৰিৰ ৰেখাচিত্ৰৰ পটভূমিৰ ৰং"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:33
+msgid "Network graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:34
+msgid "Network graph background color"
+msgstr "নেটৱৰ্ক"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:35
+msgid "Swap graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:36
+msgid "Swap graph background color"
+msgstr "Swap ৰেখাচিত্ৰৰ পটভূমিৰ ৰং"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:37
+msgid "The desktop description file to execute as the system monitor"
+msgstr "সিস্টেম নিৰীক্ষণৰ বাবে যে ডেস্কটপ বিবৰণৰ ফাইল সঞ্চালন কৰা হ'ব"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:38
+msgid "Width of the graphs in pixels."
+msgstr ""
+
+#: ../data/indicator-multiload.desktop.in.h:2
+msgid "System Load Indicator"
+msgstr ""
+
+#: ../src/cpuicondata.vala:58
+#, c-format
+msgid "CPU: %u%%, iowait %u%%"
+msgstr ""
+
+#: ../src/diskicondata.vala:106
+#, c-format
+msgid "Disk: read %s, write %s"
+msgstr ""
+
+#: ../src/loadicondata.vala:31
+#, c-format
+msgid "Load: %.2f"
+msgstr ""
+
+#: ../src/memicondata.vala:36
+#, c-format
+msgid "Mem: %s, cache %s"
+msgstr ""
+
+#: ../src/neticondata.vala:64
+#, c-format
+msgid "Net: down %s, up %s"
+msgstr ""
+
+#: ../src/swapicondata.vala:31
+#, c-format
+msgid "Swap: %s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:43
+msgid "{} kB"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:45
+msgid "{} MB"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:47
+msgid "{} GB"
+msgstr ""
+
+#: ../src/utils.vala:55
+#, c-format
+msgid "%u byte"
+msgid_plural "%u bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:67
+msgid "{} kB/s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:69
+msgid "{} MB/s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:71
+msgid "{} GB/s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:73
+msgid "{} TB/s"
+msgstr ""
+
+#: ../src/utils.vala:81
+#, c-format
+msgid "%u byte/s"
+msgid_plural "%u bytes/s"
+msgstr[0] ""
+msgstr[1] ""

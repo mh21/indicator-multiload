@@ -1,0 +1,440 @@
+# Ukrainian translation of gnome-applets.
+# Copyright (C) 2000 Free Software Foundation, Inc.
+# Yuri Syrota <rasta@renome.rovno.ua>, 2000
+# Maxim Dziumanenko <dziumanenko@gmail.com>, 2004-2009
+# wanderlust <wanderlust@ukr.net>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-applets\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-05-10 00:45+0200\n"
+"PO-Revision-Date: 2011-05-28 13:40+0000\n"
+"Last-Translator: Maxim Dziumanenko <dziumanenko@gmail.com>\n"
+"Language-Team: ukrainian <Ukrainian <uk@li.org>>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Launchpad-Export-Date: 2011-05-30 05:47+0000\n"
+"X-Generator: Launchpad (build 12959)\n"
+"Language: \n"
+
+#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
+msgid ""
+"A system load monitor capable of displaying graphs for CPU, ram, and swap "
+"space use, plus network traffic."
+msgstr ""
+"Монітор навантаження системи відображає графіки використання процесора, "
+"пам'яті, файлу підкачки, дискового простору та мережі."
+
+#: ../data/preferences.ui.in.h:2
+msgid "Cach_ed"
+msgstr "Ке_ш"
+
+#: ../data/preferences.ui.in.h:3
+msgid "Colors"
+msgstr "Кольори"
+
+#: ../data/preferences.ui.in.h:4
+msgid "F_ree"
+msgstr "_Вільна"
+
+#: ../data/preferences.ui.in.h:5
+msgid "Harddisk"
+msgstr "Жорсткий диск"
+
+#: ../data/preferences.ui.in.h:6
+msgid "I_OWait"
+msgstr "I_OWait"
+
+#: ../data/preferences.ui.in.h:7
+msgid "I_dle"
+msgstr "О_чікування"
+
+#: ../data/preferences.ui.in.h:8
+msgid "Load"
+msgstr "Завантаження"
+
+#: ../data/preferences.ui.in.h:9
+msgid "Memory"
+msgstr "Пам'ять"
+
+#: ../data/preferences.ui.in.h:10
+msgid "Monitored Resources"
+msgstr "Ресурси, що контролюються"
+
+#: ../data/preferences.ui.in.h:11
+msgid "N_ice"
+msgstr "Пр_іоритеті"
+
+#: ../data/preferences.ui.in.h:12
+msgid "Network"
+msgstr "Мережа"
+
+#: ../data/preferences.ui.in.h:13
+msgid "Options"
+msgstr "Параметри"
+
+#: ../data/preferences.ui.in.h:14
+msgid "Processor"
+msgstr "Процесор"
+
+#: ../data/preferences.ui.in.h:15
+msgid "S_wap Space"
+msgstr "Під_качка"
+
+#: ../data/preferences.ui.in.h:16
+msgid "S_ystem"
+msgstr "_Система"
+
+#: ../data/preferences.ui.in.h:17
+msgid "Sh_ared"
+msgstr "_Спільна"
+
+#: ../data/preferences.ui.in.h:18
+msgid "Swap Space"
+msgstr "Підкачка"
+
+#: ../data/preferences.ui.in.h:19
+msgid "Sys_tem monitor update interval: "
+msgstr "Період _оновлення системного монітору: "
+
+#: ../data/preferences.ui.in.h:20
+msgid "System m_onitor width: "
+msgstr "_Ширина системного монітору: "
+
+#: ../data/preferences.ui.in.h:21
+msgid "_About"
+msgstr "_Про програму"
+
+#: ../data/preferences.ui.in.h:22
+msgid "_Autostart: "
+msgstr "_Автостарт: "
+
+#: ../data/preferences.ui.in.h:23
+msgid "_Average"
+msgstr "_Середнє"
+
+#: ../data/preferences.ui.in.h:24
+msgid "_Background"
+msgstr "_Тло"
+
+#: ../data/preferences.ui.in.h:25
+msgid "_Buffers"
+msgstr "_Буфери"
+
+#: ../data/preferences.ui.in.h:26
+msgid "_Free"
+msgstr "_Вільно"
+
+#: ../data/preferences.ui.in.h:27
+msgid "_Harddisk"
+msgstr "_Жорсткий диск"
+
+#: ../data/preferences.ui.in.h:28
+msgid "_In"
+msgstr "В_хідний"
+
+#: ../data/preferences.ui.in.h:29
+msgid "_Load"
+msgstr "З_авантаження"
+
+#: ../data/preferences.ui.in.h:30
+msgid "_Local"
+msgstr "_Локальний"
+
+#: ../data/preferences.ui.in.h:31
+msgid "_Memory"
+msgstr "_Пам'ять"
+
+#: ../data/preferences.ui.in.h:32
+msgid "_Network"
+msgstr "_Мережа"
+
+#
+#: ../data/preferences.ui.in.h:33
+msgid "_Open System Monitor"
+msgstr "Відкрити _Системний монітор"
+
+#: ../data/preferences.ui.in.h:34
+msgid "_Out"
+msgstr "В_ихідний"
+
+#: ../data/preferences.ui.in.h:35
+msgid "_Preferences"
+msgstr "П_араметри"
+
+#: ../data/preferences.ui.in.h:36
+msgid "_Processor"
+msgstr "П_роцесор"
+
+#: ../data/preferences.ui.in.h:37
+msgid "_Quit"
+msgstr "_Вихід"
+
+#: ../data/preferences.ui.in.h:38
+msgid "_Read"
+msgstr "_Читання"
+
+#: ../data/preferences.ui.in.h:39
+msgid "_Used"
+msgstr "В_икористано"
+
+#: ../data/preferences.ui.in.h:40
+msgid "_User"
+msgstr "_Користувач"
+
+#: ../data/preferences.ui.in.h:41
+msgid "_Write"
+msgstr "_Запис"
+
+#: ../data/preferences.ui.in.h:42
+msgid "milliseconds"
+msgstr "мс"
+
+#: ../data/preferences.ui.in.h:43
+msgid "pixels"
+msgstr "точок"
+
+#: ../data/preferences.ui.in.h:44
+msgid "translator-credits"
+msgstr ""
+"Юрій Сирота <yuri@beer.com>\n"
+"Максим Дзюманенко <dziumanenko@gmail.com>\n"
+"Wanderlust <wanderlust@ukr.net>"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
+msgid "Applet refresh rate in milliseconds"
+msgstr "Частота оновлення аплету (в мілісекундах)"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+msgid "Automatically start on session startup"
+msgstr "Завантажуватись автоматично після входу в систему"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+msgid "Background color for disk load graph"
+msgstr "Колір тла для графіка завантаження диска"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
+msgid "CPU graph alpha"
+msgstr "Показник завантажування процесора"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
+msgid "CPU graph background color"
+msgstr "Колір тла графіка використання ЦП"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
+msgid "Disk load graph alpha"
+msgstr "Показник завантажування диску"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
+msgid "Enable CPU load graph"
+msgstr "Ввімкнути графік використання ЦП"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+msgid "Enable disk load graph"
+msgstr "Ввімкнути графік використання диска"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+msgid "Enable load average graph"
+msgstr "Ввімкнути графік середнього завантаження"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+msgid "Enable memory load graph"
+msgstr "Ввімкнути графік використання пам'яті"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+msgid "Enable network load graph"
+msgstr "Ввімкнути графік використання мережі"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
+msgid "Enable swap load graph"
+msgstr "Ввімкнути графік використання підкачки"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+msgid "Graph color for buffer memory"
+msgstr "Колір графіка буфера пам'яті"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+msgid "Graph color for cached memory"
+msgstr "Колір графіка кешованої пам'яті"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+msgid "Graph color for disk read"
+msgstr "Колір графіка для читання з диска"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+msgid "Graph color for disk write"
+msgstr "Колір графіка для запису на диск"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+msgid "Graph color for input network activity"
+msgstr "Колір графіка активності для вхідних пакетів мережі"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+msgid "Graph color for iowait related CPU activity"
+msgstr "Колір графіка для відображення активності ЦП з урахуванням iowait"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+msgid "Graph color for load average"
+msgstr "Колір графіка середньої завантаженості"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+msgid "Graph color for loopback network usage"
+msgstr "Колір графіка для локального використання мережі"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+msgid "Graph color for nice-related CPU activity"
+msgstr "Колір графіка активності ЦП з урахуванням пріоритету"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
+msgid "Graph color for output network activity"
+msgstr "Колір графіка активності для вихідних даних мережі"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
+msgid "Graph color for shared memory"
+msgstr "Колір графіка спільної пам'яті"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
+msgid "Graph color for system-related CPU activity"
+msgstr "Колір графіка системної активності процесора"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
+msgid "Graph color for user-related CPU activity"
+msgstr "Колір графіка завантаженості процесора користувачем"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
+msgid "Graph color for user-related memory usage"
+msgstr "Колір графіка використання пам'яті користувачем"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
+msgid "Graph color for user-related swap usage"
+msgstr "Колір графіка використання підкачки користувачем"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:28
+msgid "Height of the graphs in pixels."
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:29
+msgid "Load graph alpha"
+msgstr "Показник завантажування"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:30
+msgid "Load graph background color"
+msgstr "Колір тла графіка завантаженості"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:31
+msgid "Memory graph alpha"
+msgstr "Показник завантажування пам’яті"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:32
+msgid "Memory graph background color"
+msgstr "Колір тла графіка пам'яті"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:33
+msgid "Network graph alpha"
+msgstr "Показник завантажування мережі"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:34
+msgid "Network graph background color"
+msgstr "Колір тла графіка мережі"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:35
+msgid "Swap graph alpha"
+msgstr "Показник завантажування розділу підкачки"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:36
+msgid "Swap graph background color"
+msgstr "Колір тла графіка підкачки"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:37
+msgid "The desktop description file to execute as the system monitor"
+msgstr "Файл опису для виконання як системний монітор"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:38
+msgid "Width of the graphs in pixels."
+msgstr ""
+
+#: ../data/indicator-multiload.desktop.in.h:2
+msgid "System Load Indicator"
+msgstr "Індикатор завантажування системи"
+
+#: ../src/cpuicondata.vala:58
+#, c-format
+msgid "CPU: %u%%, iowait %u%%"
+msgstr ""
+
+#: ../src/diskicondata.vala:106
+#, c-format
+msgid "Disk: read %s, write %s"
+msgstr ""
+
+#: ../src/loadicondata.vala:31
+#, c-format
+msgid "Load: %.2f"
+msgstr ""
+
+#: ../src/memicondata.vala:36
+#, c-format
+msgid "Mem: %s, cache %s"
+msgstr ""
+
+#: ../src/neticondata.vala:64
+#, c-format
+msgid "Net: down %s, up %s"
+msgstr ""
+
+#: ../src/swapicondata.vala:31
+#, c-format
+msgid "Swap: %s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:43
+msgid "{} kB"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:45
+msgid "{} MB"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:47
+msgid "{} GB"
+msgstr ""
+
+#: ../src/utils.vala:55
+#, c-format
+msgid "%u byte"
+msgid_plural "%u bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:67
+msgid "{} kB/s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:69
+msgid "{} MB/s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:71
+msgid "{} GB/s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:73
+msgid "{} TB/s"
+msgstr ""
+
+#: ../src/utils.vala:81
+#, c-format
+msgid "%u byte/s"
+msgid_plural "%u bytes/s"
+msgstr[0] ""
+msgstr[1] ""

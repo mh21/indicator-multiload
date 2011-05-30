@@ -1,0 +1,447 @@
+# Dzongkha translation of gnome-applets.
+# Copyright @ 2006 Free Software Foundation, Inc.
+# Mindu Dorji
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-applets\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-05-10 00:45+0200\n"
+"PO-Revision-Date: 2011-05-28 13:40+0000\n"
+"Last-Translator: Dawa pemo <daws_403@hotmail.com>\n"
+"Language-Team: DZONGKHA <pgeyleg@dit.gov.bt>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Launchpad-Export-Date: 2011-05-30 05:46+0000\n"
+"X-Generator: Launchpad (build 12959)\n"
+"X-Poedit-Country: BHUTAN\n"
+"Language: \n"
+"X-Poedit-Language: Dzongkha\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
+msgid ""
+"A system load monitor capable of displaying graphs for CPU, ram, and swap "
+"space use, plus network traffic."
+msgstr ""
+"ལས་སྦྱོར་ལྟེ་བ་དང་ རེམ་ བརྗེ་སོར་་བར་སྟོང་ལག་ལེན་ "
+"དེ་ལས་ཡོངས་འབྲེལ་འགྲུལ་ལམ་གྱི་དོན་ལུ་ ཚད་ཁྲམ་ཚུ་བཀྲམ་སྟོན་འབད་ནིའི་ "
+"ལྕོགས་གྲུབ་ཅན་གྱི་ རིམ་ལུགས་ལྗིད་ཚད་ལྟ་རྟོག་པ་ཅིག"
+
+#: ../data/preferences.ui.in.h:2
+msgid "Cach_ed"
+msgstr "འདྲ་མཛོད་ནང་བཞག་ཡོདཔ།(_e)"
+
+#: ../data/preferences.ui.in.h:3
+msgid "Colors"
+msgstr "ཚོས་གཞི།"
+
+#: ../data/preferences.ui.in.h:4
+msgid "F_ree"
+msgstr "དལཝ།(_r)"
+
+#: ../data/preferences.ui.in.h:5
+msgid "Harddisk"
+msgstr "ཧརཌི་ཌིཀསི།"
+
+#: ../data/preferences.ui.in.h:6
+msgid "I_OWait"
+msgstr "ཨའི་ཨོ་ཝེཊི།(_O)"
+
+#: ../data/preferences.ui.in.h:7
+msgid "I_dle"
+msgstr "ལས་མེད།(_d)"
+
+#: ../data/preferences.ui.in.h:8
+msgid "Load"
+msgstr "ལྗིད་ཚད།"
+
+#: ../data/preferences.ui.in.h:9
+msgid "Memory"
+msgstr "དྲན་ཚད།"
+
+#: ../data/preferences.ui.in.h:10
+msgid "Monitored Resources"
+msgstr "ལྟ་རྟོག་འབད་ཡོད་པའི་ཐོན་ཁུངས།"
+
+#: ../data/preferences.ui.in.h:11
+msgid "N_ice"
+msgstr "ཆུང་ཀུ།(_i)"
+
+#: ../data/preferences.ui.in.h:12
+msgid "Network"
+msgstr "ཡོངས་འབྲེལ།"
+
+#: ../data/preferences.ui.in.h:13
+msgid "Options"
+msgstr "གདམ་ཁ་ཚུ།"
+
+#: ../data/preferences.ui.in.h:14
+msgid "Processor"
+msgstr "ལས་སྦྱོར་་འཕྲུལ་ཆས།"
+
+#: ../data/preferences.ui.in.h:15
+msgid "S_wap Space"
+msgstr "བརྗེ་སོར་བར་སྟོང་།(_w)"
+
+#: ../data/preferences.ui.in.h:16
+msgid "S_ystem"
+msgstr "རིམ་ལུགས།(_y)"
+
+#: ../data/preferences.ui.in.h:17
+msgid "Sh_ared"
+msgstr "རུབ་སྤྱོད་འབད་ཡོདཔ།(_a)"
+
+#: ../data/preferences.ui.in.h:18
+msgid "Swap Space"
+msgstr "བརྗེ་སོར་བར་སྟོང་།"
+
+#: ../data/preferences.ui.in.h:19
+msgid "Sys_tem monitor update interval: "
+msgstr "རིམ་ལུགས་ལྟ་རྟོག་པ དུས་མཐུན་བཟོ་བའི་བར་མཚམས།(_t) "
+
+#: ../data/preferences.ui.in.h:20
+msgid "System m_onitor width: "
+msgstr "རིམ་ལུགས་གསལ་གཞིའི་གློག་འཕྲུལ་གྱི་རྒྱ་ཚད།(_o) "
+
+#: ../data/preferences.ui.in.h:21
+msgid "_About"
+msgstr "སྐོར་ལས།(_A)"
+
+#: ../data/preferences.ui.in.h:22
+msgid "_Autostart: "
+msgstr ""
+
+#: ../data/preferences.ui.in.h:23
+msgid "_Average"
+msgstr "ཆ་སྙོམས།(_A)"
+
+#: ../data/preferences.ui.in.h:24
+msgid "_Background"
+msgstr "རྒྱབ་གཞི།(_B)"
+
+#: ../data/preferences.ui.in.h:25
+msgid "_Buffers"
+msgstr "གནད་ཁོངས་ཚུ།(_B)"
+
+#: ../data/preferences.ui.in.h:26
+msgid "_Free"
+msgstr "དལཝ།(_F)"
+
+#: ../data/preferences.ui.in.h:27
+msgid "_Harddisk"
+msgstr "ཧརཌི་ཌིཀསི།(_H)"
+
+#: ../data/preferences.ui.in.h:28
+msgid "_In"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:29
+msgid "_Load"
+msgstr "ལྗིད་ཚད།(_L)"
+
+#: ../data/preferences.ui.in.h:30
+msgid "_Local"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:31
+msgid "_Memory"
+msgstr "དྲན་ཚད།(_M)"
+
+#: ../data/preferences.ui.in.h:32
+msgid "_Network"
+msgstr "ཡོངས་འབྲེལ།(_N)"
+
+#: ../data/preferences.ui.in.h:33
+msgid "_Open System Monitor"
+msgstr "རིམ་ལུགས་ལྟ་རྟོག་པ་ཁ་ཕྱེ།(_O)"
+
+#: ../data/preferences.ui.in.h:34
+msgid "_Out"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:35
+msgid "_Preferences"
+msgstr "དགའ་གདམ་ཚུ།\"(_P)"
+
+#: ../data/preferences.ui.in.h:36
+msgid "_Processor"
+msgstr "ལས་སྦྱོར་འཕྲུལ་ཆས།(_P)"
+
+#: ../data/preferences.ui.in.h:37
+msgid "_Quit"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:38
+msgid "_Read"
+msgstr "ལྷག(_R)"
+
+#: ../data/preferences.ui.in.h:39
+msgid "_Used"
+msgstr "ལག་ལེན་འཐབ་ཡོདཔ།(_U)"
+
+#: ../data/preferences.ui.in.h:40
+msgid "_User"
+msgstr "ལག་ལེན་པ།(_U)"
+
+#: ../data/preferences.ui.in.h:41
+msgid "_Write"
+msgstr "བྲིས།(_W)"
+
+#: ../data/preferences.ui.in.h:42
+msgid "milliseconds"
+msgstr "མི་ལི་སྐར་ཆ།"
+
+#: ../data/preferences.ui.in.h:43
+msgid "pixels"
+msgstr "པིག་སེལསི།"
+
+#: ../data/preferences.ui.in.h:44
+msgid "translator-credits"
+msgstr ""
+"ཨའི་ཌི་ཨར་སི་གི་མ་དངུལ་རྒྱབ་སྐྱོར་ཐོག་ལས་ བརྡ་དོན་འཕྲུལ་རིག་ལས་ཁུངས་ནང་ "
+"སྐད་བསྒྱུར་འབད་ཡི། ཁ་གསལ་གྱི་དོན་ལུ་ འབྲེལ་བ་འཐབ་ས་: "
+"<pema_geyleg@druknet.bt>/<pgeyleg@dit.gov.bt>"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
+msgid "Applet refresh rate in milliseconds"
+msgstr "ཨེཔ་ལེཊི་ཡང་སེལ་གྱི་མྱུར་ཚད་ མི་ལི་སྐར་ཆའི་ནང་།"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+msgid "Automatically start on session startup"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+msgid "Background color for disk load graph"
+msgstr "ཌིཀསི་གི་ལྗིད་ཚད་ཀྱི་ ཚད་ཁྲམ་གྱི་དོན་ལས་ རྒྱབ་གཞིའི་ཚོས་གཞི།"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
+msgid "CPU graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
+msgid "CPU graph background color"
+msgstr "ལས་སྦྱོར་ལྟེ་བའི་ཚད་ཁྲམ་གྱི་ རྒྱབ་གཞིའི་ཚོས་གཞི།"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
+msgid "Disk load graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
+msgid "Enable CPU load graph"
+msgstr "ལས་སྦྱོར་ལྟེ་བ་ ལྗིད་ཚད་ཚད་ཁྲམ་ ལྕོགས་ཅན་བཟོ།"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+msgid "Enable disk load graph"
+msgstr "ཌིསིཀ་གི་ལྗིད་ཚད་ཚད་ཁྲམ་ ལྕོགས་ཅན་བཟོ།"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+msgid "Enable load average graph"
+msgstr "ལྗིད་ཚད་ཆ་སྙོམས་ཀྱི་ཚད་ཁྲམ་ ལྕོགས་ཅན་བཟོ།"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+msgid "Enable memory load graph"
+msgstr "དྲན་ཚད་ཀྱི་ལྗིད་ཚད་ཚད་ཁྲམ་ ལྕོགས་ཅན་བཟོ།"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+msgid "Enable network load graph"
+msgstr "ཡོངས་འབྲེལ་ལྗིད་ཚད་ཀྱི་ཚད་ཁྲམ་ ལྕོགས་ཅན་བཟོ།"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
+msgid "Enable swap load graph"
+msgstr "བརྗེ་སོར་ལྗིད་ཚད་ཀྱི་ཚད་ཁྲམ་ ལྕོགས་ཅན་བཟོ།"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+msgid "Graph color for buffer memory"
+msgstr "གནད་ཁོངས་ཀྱི་ དྲན་ཚད་དོན་ལུ་ ཚད་ཁྲམ་གྱི་ཚོས་གཞི།"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+msgid "Graph color for cached memory"
+msgstr "འདྲ་མཛོད་ནང་གི་ དྲན་ཚད་ཀྱི་དོན་ལུ་ ཚད་ཁྲམ་གྱི་ཚོས་གཞི།"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+msgid "Graph color for disk read"
+msgstr "ཌིཀསི་ལྷག་ནིའི་དོན་ལུ་ ཚད་ཁྲམ་གྱི་ཚོས་གཞི།"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+msgid "Graph color for disk write"
+msgstr "ཌིཀསི་ལུ་འབྲི་ནིའི་དོན་ལུ་ ཚད་ཁྲམ་གྱི་ཚོས་གཞི།"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+msgid "Graph color for input network activity"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+msgid "Graph color for iowait related CPU activity"
+msgstr ""
+"ཨའི་ཨོ་ཝེཊི་དང་ འབྲེལ་བ་ཡོད་པའི་ ལས་སྦྱོར་ལྟེ་བའི་ ལཱ་གི་དོན་ལུ་ "
+"ཚད་ཁྲམ་གྱི་ཚོས་གཞི།"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+msgid "Graph color for load average"
+msgstr "་ཆ་སྙོམས་ལྗིད་ཚད་ཀྱི་དོན་ལུ་ ཚད་ཁྲམ་གྱི་ཚོས་གཞི།"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+msgid "Graph color for loopback network usage"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+msgid "Graph color for nice-related CPU activity"
+msgstr ""
+"ཆུང་ཀུ་དང་འབྲེལ་བ་ཡོད་པའི་ ལས་སྦྱོར་ལྟེ་བའི་ལཱ་གི་དོན་ལུ་ ཚད་ཁྲམ་གྱི་ཚོས་གཞི།"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
+msgid "Graph color for output network activity"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
+msgid "Graph color for shared memory"
+msgstr "རུབ་སྤྱོད་དྲན་ཚད་ཀྱི་དོན་ལུ་ ཚད་ཁྲམ་གྱི་ཚོས་གཞི།"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
+msgid "Graph color for system-related CPU activity"
+msgstr ""
+"རིམ་ལུགས་དང་འབྲེལ་བའི་ ལས་སྦྱོར་ལྟེ་བའི་ལཱ་གི་དོན་ལས་ ཚད་ཁྲམ་གྱི་ཚོས་གཞི།"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
+msgid "Graph color for user-related CPU activity"
+msgstr ""
+"ལག་ལེན་པ་དང་འབྲེལ་བའི་ ལས་སྦྱོར་ལྟེ་བའི་ལཱ་གི་དོན་ལུ་ ཚད་ཁྲམ་གྱི་ཚོས་གཞི།"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
+msgid "Graph color for user-related memory usage"
+msgstr "ལག་ལེན་པ་དང་འབྲེལ་བའི་ དྲན་ཚད་ལག་ལེན་གྱི་དོན་ལུ་ ཚད་ཁྲམ་གྱི་ཚོས་གཞི།"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
+msgid "Graph color for user-related swap usage"
+msgstr ""
+"ལག་ལེན་པ་དང་འབྲེལ་བའི་ བརྗེ་སོར་ལག་ལེན་གྱི་དོན་ལུ་ ཚད་ཁྲམ་གྱི་ཚོས་གཞི།"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:28
+msgid "Height of the graphs in pixels."
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:29
+msgid "Load graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:30
+msgid "Load graph background color"
+msgstr "ལྗིད་ཚད་ཚད་ཁྲམ་གྱི་ རྒྱབ་གཞིའི་ཚོས་གཞི།"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:31
+msgid "Memory graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:32
+msgid "Memory graph background color"
+msgstr "དྲན་ཚད་ཚད་ཁྲམ་གྱི་ རྒྱབ་གཞིའི་ཚོས་གཞི།"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:33
+msgid "Network graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:34
+msgid "Network graph background color"
+msgstr "ནེཊི་ཝོརོཀ་ཚད་ཁྲམ་གྱི་ རྒྱབ་གཞིའི་ཚོས་གཞི།"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:35
+msgid "Swap graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:36
+msgid "Swap graph background color"
+msgstr "བརྗེ་སོར་ཚད་ཁྲམ་གྱི་ རྒྱབ་གཞིའི་ཚོས་གཞི།"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:37
+msgid "The desktop description file to execute as the system monitor"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:38
+msgid "Width of the graphs in pixels."
+msgstr ""
+
+#: ../data/indicator-multiload.desktop.in.h:2
+msgid "System Load Indicator"
+msgstr ""
+
+#: ../src/cpuicondata.vala:58
+#, c-format
+msgid "CPU: %u%%, iowait %u%%"
+msgstr ""
+
+#: ../src/diskicondata.vala:106
+#, c-format
+msgid "Disk: read %s, write %s"
+msgstr ""
+
+#: ../src/loadicondata.vala:31
+#, c-format
+msgid "Load: %.2f"
+msgstr ""
+
+#: ../src/memicondata.vala:36
+#, c-format
+msgid "Mem: %s, cache %s"
+msgstr ""
+
+#: ../src/neticondata.vala:64
+#, c-format
+msgid "Net: down %s, up %s"
+msgstr ""
+
+#: ../src/swapicondata.vala:31
+#, c-format
+msgid "Swap: %s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:43
+msgid "{} kB"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:45
+msgid "{} MB"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:47
+msgid "{} GB"
+msgstr ""
+
+#: ../src/utils.vala:55
+#, c-format
+msgid "%u byte"
+msgid_plural "%u bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:67
+msgid "{} kB/s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:69
+msgid "{} MB/s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:71
+msgid "{} GB/s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:73
+msgid "{} TB/s"
+msgstr ""
+
+#: ../src/utils.vala:81
+#, c-format
+msgid "%u byte/s"
+msgid_plural "%u bytes/s"
+msgstr[0] ""
+msgstr[1] ""

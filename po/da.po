@@ -1,0 +1,464 @@
+# Danish translation of gnome-applets.
+# Copyright (C) 1998-99, 2000-08 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-applets package.
+# Kenneth Christiansen <kenneth@ripen.dk>, 1998-2000.
+# Birger Langkjer <birger.langkjer@image.dk>, 2000.
+# Keld Simonsen <keld@dkuug.dk>, 2000.
+# Ole Laursen <olau@hardworking.dk>, 2001-2005.
+# Martin Willemoes Hansen <mwh@sysrq.dk>, 2004-2005.
+# David Nielsen <gnomeuser@gmail.com>, 2006
+# Peter Bach <bach.peter@gmail.com>, 2007.
+# Kenneth Nielsen <k.nielsen@gmail.com>, 2008-2009.
+# Ask Hjorth Larsen <asklarsen@gmail.com>, 2008, 10.
+#
+# Konventioner:
+#
+#   AC power -> lysnettet
+#   applet -> panelprogram
+#   battery power -> batteriet
+#   layout -> tastaturlayout
+#   settings, properties -> indstillinger
+#
+# Husk at tilføje dig i credit-listen (besked id "translator-credits")
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-applets\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-05-10 00:45+0200\n"
+"PO-Revision-Date: 2011-05-28 13:40+0000\n"
+"Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2011-05-30 05:46+0000\n"
+"X-Generator: Launchpad (build 12959)\n"
+"Language: da\n"
+
+#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
+msgid ""
+"A system load monitor capable of displaying graphs for CPU, ram, and swap "
+"space use, plus network traffic."
+msgstr ""
+"En systembelastningsovervåger der kan vise grafer for processor, hukommelse "
+"og swapfilsforbrug, plus netværkstraffik."
+
+#: ../data/preferences.ui.in.h:2
+msgid "Cach_ed"
+msgstr "_Cache"
+
+#: ../data/preferences.ui.in.h:3
+msgid "Colors"
+msgstr "Farver"
+
+#: ../data/preferences.ui.in.h:4
+msgid "F_ree"
+msgstr "L_edig"
+
+#: ../data/preferences.ui.in.h:5
+msgid "Harddisk"
+msgstr "Harddisk"
+
+#: ../data/preferences.ui.in.h:6
+msgid "I_OWait"
+msgstr "I_O-ventning"
+
+#: ../data/preferences.ui.in.h:7
+msgid "I_dle"
+msgstr "_Inaktiv"
+
+#: ../data/preferences.ui.in.h:8
+msgid "Load"
+msgstr "Belastning"
+
+#: ../data/preferences.ui.in.h:9
+msgid "Memory"
+msgstr "Hukommelse"
+
+#: ../data/preferences.ui.in.h:10
+msgid "Monitored Resources"
+msgstr "Overvågede resurser"
+
+#: ../data/preferences.ui.in.h:11
+msgid "N_ice"
+msgstr "_Nedprioriteret"
+
+#: ../data/preferences.ui.in.h:12
+msgid "Network"
+msgstr "Netværk"
+
+#: ../data/preferences.ui.in.h:13
+msgid "Options"
+msgstr "Indstillinger"
+
+#: ../data/preferences.ui.in.h:14
+msgid "Processor"
+msgstr "Processor"
+
+#: ../data/preferences.ui.in.h:15
+msgid "S_wap Space"
+msgstr "S_wapplads"
+
+#: ../data/preferences.ui.in.h:16
+msgid "S_ystem"
+msgstr "S_ystem"
+
+#: ../data/preferences.ui.in.h:17
+msgid "Sh_ared"
+msgstr "_Delt"
+
+#: ../data/preferences.ui.in.h:18
+msgid "Swap Space"
+msgstr "Swapplads"
+
+#: ../data/preferences.ui.in.h:19
+msgid "Sys_tem monitor update interval: "
+msgstr "Sys_temovervågningsinterval: "
+
+#: ../data/preferences.ui.in.h:20
+msgid "System m_onitor width: "
+msgstr "System_overvågningsbredde: "
+
+#: ../data/preferences.ui.in.h:21
+msgid "_About"
+msgstr "_Om"
+
+#: ../data/preferences.ui.in.h:22
+msgid "_Autostart: "
+msgstr ""
+
+#: ../data/preferences.ui.in.h:23
+msgid "_Average"
+msgstr "_Gennemsnit"
+
+#: ../data/preferences.ui.in.h:24
+msgid "_Background"
+msgstr "_Baggrund"
+
+#: ../data/preferences.ui.in.h:25
+msgid "_Buffers"
+msgstr "_Buffere"
+
+#: ../data/preferences.ui.in.h:26
+msgid "_Free"
+msgstr "_Ledig"
+
+#: ../data/preferences.ui.in.h:27
+msgid "_Harddisk"
+msgstr "_Harddisk"
+
+#: ../data/preferences.ui.in.h:28
+msgid "_In"
+msgstr "_Ind"
+
+#: ../data/preferences.ui.in.h:29
+msgid "_Load"
+msgstr "_Belastning"
+
+# Fejlrapport
+#: ../data/preferences.ui.in.h:30
+msgid "_Local"
+msgstr "_Lokal"
+
+#: ../data/preferences.ui.in.h:31
+msgid "_Memory"
+msgstr "_Hukommelse"
+
+#: ../data/preferences.ui.in.h:32
+msgid "_Network"
+msgstr "_Netværk"
+
+#: ../data/preferences.ui.in.h:33
+msgid "_Open System Monitor"
+msgstr "_Åbn systemovervåger"
+
+#: ../data/preferences.ui.in.h:34
+msgid "_Out"
+msgstr "_Ud"
+
+#: ../data/preferences.ui.in.h:35
+msgid "_Preferences"
+msgstr "_Indstillinger"
+
+#: ../data/preferences.ui.in.h:36
+msgid "_Processor"
+msgstr "_Processor"
+
+#: ../data/preferences.ui.in.h:37
+msgid "_Quit"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:38
+msgid "_Read"
+msgstr "_Læse"
+
+#: ../data/preferences.ui.in.h:39
+msgid "_Used"
+msgstr "_Brugt"
+
+#: ../data/preferences.ui.in.h:40
+msgid "_User"
+msgstr "_Bruger"
+
+#: ../data/preferences.ui.in.h:41
+msgid "_Write"
+msgstr "_Skrive"
+
+#: ../data/preferences.ui.in.h:42
+msgid "milliseconds"
+msgstr "millisekunder"
+
+#: ../data/preferences.ui.in.h:43
+msgid "pixels"
+msgstr "punkter"
+
+#: ../data/preferences.ui.in.h:44
+msgid "translator-credits"
+msgstr ""
+"Birger Langkjer\n"
+"David Nielsen\n"
+"Keld Simonsen\n"
+"Kenneth Christiansen\n"
+"Martin Willemoes Hansen\n"
+"Ole Laursen\n"
+"Peter Bach\n"
+"\n"
+"Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
+"Mere info: http://www.dansk-gruppen.dk"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
+msgid "Applet refresh rate in milliseconds"
+msgstr "Opdateringsinterval i millisekunder"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+msgid "Automatically start on session startup"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+msgid "Background color for disk load graph"
+msgstr "Baggrundsfarve for diskbelastningsgraf"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
+msgid "CPU graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
+msgid "CPU graph background color"
+msgstr "CPU-grafbaggrundsfarve"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
+msgid "Disk load graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
+msgid "Enable CPU load graph"
+msgstr "Aktivér CPU-belastningsgraf"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+msgid "Enable disk load graph"
+msgstr "Aktivér diskbelastningsgraf"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+msgid "Enable load average graph"
+msgstr "Aktivér belastninggennemsnitsgraf"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+msgid "Enable memory load graph"
+msgstr "Aktivér hukommelsesforbruggraf"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+msgid "Enable network load graph"
+msgstr "Aktivér netværksbelastningsgraf"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
+msgid "Enable swap load graph"
+msgstr "Aktivér swapbelastningsgraf"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+msgid "Graph color for buffer memory"
+msgstr "Graffarve for bufferhukommelse"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+msgid "Graph color for cached memory"
+msgstr "Graffarve for cachehukommelse"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+msgid "Graph color for disk read"
+msgstr "Graffarve for disklæsning"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+msgid "Graph color for disk write"
+msgstr "Graffarve for diskskrivning"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+msgid "Graph color for input network activity"
+msgstr "Graffarve for indgående netværksaktivitet"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+msgid "Graph color for iowait related CPU activity"
+msgstr "Graffarve for CPU-aktivitet relateret til ventning på ind- og uddata"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+msgid "Graph color for load average"
+msgstr "Graffarve for belastningsgennemsnit"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+msgid "Graph color for loopback network usage"
+msgstr "Graffarve for tilbagedirigeret netværksbrug"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+msgid "Graph color for nice-related CPU activity"
+msgstr "Graffarve for nice-relateret CPU-aktivitet"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
+msgid "Graph color for output network activity"
+msgstr "Graffarve for udgående netværksaktivitet"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
+msgid "Graph color for shared memory"
+msgstr "Graffarve for delt hukommelse"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
+msgid "Graph color for system-related CPU activity"
+msgstr "Graffarve for system-relateret CPU-aktivitet"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
+msgid "Graph color for user-related CPU activity"
+msgstr "Graffarve for bruger-relateret CPU-aktivitet"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
+msgid "Graph color for user-related memory usage"
+msgstr "Graffarve for bruger-relateret hukommelsesforbrug"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
+msgid "Graph color for user-related swap usage"
+msgstr "Graffarve for bruger-relateret swapforbrug"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:28
+msgid "Height of the graphs in pixels."
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:29
+msgid "Load graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:30
+msgid "Load graph background color"
+msgstr "Belastningsbaggrundsfarve"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:31
+msgid "Memory graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:32
+msgid "Memory graph background color"
+msgstr "Hukommelsesbaggrundsfarve"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:33
+msgid "Network graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:34
+msgid "Network graph background color"
+msgstr "Netværksbaggrundsfarve"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:35
+msgid "Swap graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:36
+msgid "Swap graph background color"
+msgstr "Swapbaggrundsfarve"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:37
+msgid "The desktop description file to execute as the system monitor"
+msgstr "Skrivebordsbeskrivelsesfilen der eksekveres som systemovervågning"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:38
+msgid "Width of the graphs in pixels."
+msgstr ""
+
+#: ../data/indicator-multiload.desktop.in.h:2
+msgid "System Load Indicator"
+msgstr ""
+
+#: ../src/cpuicondata.vala:58
+#, c-format
+msgid "CPU: %u%%, iowait %u%%"
+msgstr ""
+
+#: ../src/diskicondata.vala:106
+#, c-format
+msgid "Disk: read %s, write %s"
+msgstr ""
+
+#: ../src/loadicondata.vala:31
+#, c-format
+msgid "Load: %.2f"
+msgstr ""
+
+#: ../src/memicondata.vala:36
+#, c-format
+msgid "Mem: %s, cache %s"
+msgstr ""
+
+#: ../src/neticondata.vala:64
+#, c-format
+msgid "Net: down %s, up %s"
+msgstr ""
+
+#: ../src/swapicondata.vala:31
+#, c-format
+msgid "Swap: %s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:43
+msgid "{} kB"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:45
+msgid "{} MB"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:47
+msgid "{} GB"
+msgstr ""
+
+#: ../src/utils.vala:55
+#, c-format
+msgid "%u byte"
+msgid_plural "%u bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:67
+msgid "{} kB/s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:69
+msgid "{} MB/s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:71
+msgid "{} GB/s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:73
+msgid "{} TB/s"
+msgstr ""
+
+#: ../src/utils.vala:81
+#, c-format
+msgid "%u byte/s"
+msgid_plural "%u bytes/s"
+msgstr[0] ""
+msgstr[1] ""

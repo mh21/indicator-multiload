@@ -1,0 +1,438 @@
+# Xhosa translation of gnome-applets
+# Copyright (C) 2005 Canonical Ltd.
+# This file is distributed under the same license as the gnome-applets package.
+# Translation by Canonical Ltd <translations@canonical.com> with thanks to
+# Translation World CC in South Africa, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-applets\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-05-10 00:45+0200\n"
+"PO-Revision-Date: 2011-05-28 13:40+0000\n"
+"Last-Translator: Canonical Ltd <translations@canonical.com>\n"
+"Language-Team: Xhosa <xh-translate@ubuntu.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2011-05-30 05:47+0000\n"
+"X-Generator: Launchpad (build 12959)\n"
+"Language: xh\n"
+
+#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
+msgid ""
+"A system load monitor capable of displaying graphs for CPU, ram, and swap "
+"space use, plus network traffic."
+msgstr ""
+"Imonitha yenkqubo yokufaka ekwaziyo ukubonisa iigrafu ze-CPU, ram, kunye "
+"nokutshintsha ukusetyenziswa kwesithuba, kunye netrafiki yothungelwano."
+
+#: ../data/preferences.ui.in.h:2
+msgid "Cach_ed"
+msgstr "iFakwe kuVi_mba wethutyana"
+
+#: ../data/preferences.ui.in.h:3
+msgid "Colors"
+msgstr "Imibala"
+
+#: ../data/preferences.ui.in.h:4
+msgid "F_ree"
+msgstr "S_imahla"
+
+#: ../data/preferences.ui.in.h:5
+msgid "Harddisk"
+msgstr "Idiski eyakhelwe ngaphakathi"
+
+#: ../data/preferences.ui.in.h:6
+msgid "I_OWait"
+msgstr "i-I_OWait"
+
+#: ../data/preferences.ui.in.h:7
+msgid "I_dle"
+msgstr "iL_alele"
+
+#: ../data/preferences.ui.in.h:8
+msgid "Load"
+msgstr "Faka"
+
+#: ../data/preferences.ui.in.h:9
+msgid "Memory"
+msgstr "Uvimba weefayili"
+
+#: ../data/preferences.ui.in.h:10
+msgid "Monitored Resources"
+msgstr "OoVimba abaHlolwayo"
+
+#: ../data/preferences.ui.in.h:11
+msgid "N_ice"
+msgstr "i-N_ice"
+
+#: ../data/preferences.ui.in.h:12
+msgid "Network"
+msgstr "Uthungelwano"
+
+#: ../data/preferences.ui.in.h:13
+msgid "Options"
+msgstr "Okunokukhethwa kuko"
+
+#: ../data/preferences.ui.in.h:14
+msgid "Processor"
+msgstr "Isixhobo sokusebenza"
+
+#: ../data/preferences.ui.in.h:15
+msgid "S_wap Space"
+msgstr "T_shintshiselana ngesithuba"
+
+#: ../data/preferences.ui.in.h:16
+msgid "S_ystem"
+msgstr "iN_kqubo"
+
+#: ../data/preferences.ui.in.h:17
+msgid "Sh_ared"
+msgstr "Kw_abelana"
+
+#: ../data/preferences.ui.in.h:18
+msgid "Swap Space"
+msgstr "Isithuba soTshintshisano"
+
+#: ../data/preferences.ui.in.h:19
+msgid "Sys_tem monitor update interval: "
+msgstr "Ikhefu lohlaziyo lwemonitha yenkq_ubo: "
+
+#: ../data/preferences.ui.in.h:20
+msgid "System m_onitor width: "
+msgstr "Ububanzi bem_onitha yenkqubo: "
+
+#: ../data/preferences.ui.in.h:21
+msgid "_About"
+msgstr "_Malunga"
+
+#: ../data/preferences.ui.in.h:22
+msgid "_Autostart: "
+msgstr ""
+
+#: ../data/preferences.ui.in.h:23
+msgid "_Average"
+msgstr "u_Mndilili"
+
+#: ../data/preferences.ui.in.h:24
+msgid "_Background"
+msgstr "_Okungasemva"
+
+#: ../data/preferences.ui.in.h:25
+msgid "_Buffers"
+msgstr "_Izigcini zethutyana"
+
+#: ../data/preferences.ui.in.h:26
+msgid "_Free"
+msgstr "_Ngahlawulelwa"
+
+#: ../data/preferences.ui.in.h:27
+msgid "_Harddisk"
+msgstr "I_diski eyakhelwe ngaphakathi"
+
+#: ../data/preferences.ui.in.h:28
+msgid "_In"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:29
+msgid "_Load"
+msgstr "_Faka"
+
+#: ../data/preferences.ui.in.h:30
+msgid "_Local"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:31
+msgid "_Memory"
+msgstr "_Uvimba wolwazi"
+
+#: ../data/preferences.ui.in.h:32
+msgid "_Network"
+msgstr "u_Thungelwano"
+
+#: ../data/preferences.ui.in.h:33
+msgid "_Open System Monitor"
+msgstr "_Vula iNkqubo yeMonitha"
+
+#: ../data/preferences.ui.in.h:34
+msgid "_Out"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:35
+msgid "_Preferences"
+msgstr "_Okunokukhethwa kuko"
+
+#: ../data/preferences.ui.in.h:36
+msgid "_Processor"
+msgstr "_Isixhobo sokusebenza"
+
+#: ../data/preferences.ui.in.h:37
+msgid "_Quit"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:38
+msgid "_Read"
+msgstr "_Funda"
+
+#: ../data/preferences.ui.in.h:39
+msgid "_Used"
+msgstr "_Isetyenzisiwe"
+
+#: ../data/preferences.ui.in.h:40
+msgid "_User"
+msgstr "_Umsebenzisi"
+
+#: ../data/preferences.ui.in.h:41
+msgid "_Write"
+msgstr "_Bhala"
+
+#: ../data/preferences.ui.in.h:42
+msgid "milliseconds"
+msgstr "ii-milliseconds"
+
+#: ../data/preferences.ui.in.h:43
+msgid "pixels"
+msgstr "ii-pixel"
+
+#: ../data/preferences.ui.in.h:44
+msgid "translator-credits"
+msgstr "Canonical Ltd <translations@canonical.com>"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
+msgid "Applet refresh rate in milliseconds"
+msgstr "Izinga lokuhlaziya inkqutyana yekhompyutha ngee-milliseconds"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+msgid "Automatically start on session startup"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+msgid "Background color for disk load graph"
+msgstr "Umbala wokungasemva wegrafu yofako lwediski"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
+msgid "CPU graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
+msgid "CPU graph background color"
+msgstr "Umbala wokungasemva kwigrafu ye-CPU"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
+msgid "Disk load graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
+msgid "Enable CPU load graph"
+msgstr "Ukwenza ukuba isebenze igrafu yofako lwe-CPU"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+msgid "Enable disk load graph"
+msgstr "Ukwenza ukuba isebenze igrafy yofako lwediski"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+msgid "Enable load average graph"
+msgstr "Ukwenza ukuba isebenze igrafu yofako lomndilili"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+msgid "Enable memory load graph"
+msgstr "Ukwenza ukuba isebenze igrafu yofako lukavimba wolwazi"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+msgid "Enable network load graph"
+msgstr "Ukwenza ukuba isebenze igrafu yofako lothungelwano"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
+msgid "Enable swap load graph"
+msgstr "Ukwenza kusebenze utshintshiswano lofako lwegrafu"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+msgid "Graph color for buffer memory"
+msgstr "Umbala wegrafu kavimba wethutyana"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+msgid "Graph color for cached memory"
+msgstr "Umbala wegrafu kavimba wolwazi wethutyana"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+msgid "Graph color for disk read"
+msgstr "Umbala wegrafu wokuba kufundwe kwidiski"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+msgid "Graph color for disk write"
+msgstr "Umbala wegrafu wokuba kubhalwe kwidiski"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+msgid "Graph color for input network activity"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+msgid "Graph color for iowait related CPU activity"
+msgstr "Umbala wegrafu kwi-iowait enxulumene nomsebenzi we-CPU"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+msgid "Graph color for load average"
+msgstr "Umbala wegrafu wofako lomndlili"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+msgid "Graph color for loopback network usage"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+msgid "Graph color for nice-related CPU activity"
+msgstr "Umbala wegrafu kwi-nice enxulumene nomsebenzi we-CPU"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
+msgid "Graph color for output network activity"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
+msgid "Graph color for shared memory"
+msgstr "Umbala wegrafu kavimba wolwazi wokwabelana"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
+msgid "Graph color for system-related CPU activity"
+msgstr "Umbala wegrafu kwinkqubo enxulumene nomsebenzi we-CPU"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
+msgid "Graph color for user-related CPU activity"
+msgstr ""
+"Umbala wegrafu kusetyenziso lomsebenzisi olunxulumene nomsebenzi we-CPU"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
+msgid "Graph color for user-related memory usage"
+msgstr ""
+"Umbala wegrafu wokusetyenziswa ngumsebenzisi onxulumene novimba wolwazi"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
+msgid "Graph color for user-related swap usage"
+msgstr "Umbala wegrafu kusetyenziso lomsebenzisi olunxulumene nokutshintsha"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:28
+msgid "Height of the graphs in pixels."
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:29
+msgid "Load graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:30
+msgid "Load graph background color"
+msgstr "Faka umbala wokungasemva wegrafu"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:31
+msgid "Memory graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:32
+msgid "Memory graph background color"
+msgstr "Umbala wokungasemva wegrafu kavimba weefayili"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:33
+msgid "Network graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:34
+msgid "Network graph background color"
+msgstr "Umbala wokungasemva wegrafu yothungelwano"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:35
+msgid "Swap graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:36
+msgid "Swap graph background color"
+msgstr "Tshintsha umbala wokungasemva wegrafu"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:37
+msgid "The desktop description file to execute as the system monitor"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:38
+msgid "Width of the graphs in pixels."
+msgstr ""
+
+#: ../data/indicator-multiload.desktop.in.h:2
+msgid "System Load Indicator"
+msgstr ""
+
+#: ../src/cpuicondata.vala:58
+#, c-format
+msgid "CPU: %u%%, iowait %u%%"
+msgstr ""
+
+#: ../src/diskicondata.vala:106
+#, c-format
+msgid "Disk: read %s, write %s"
+msgstr ""
+
+#: ../src/loadicondata.vala:31
+#, c-format
+msgid "Load: %.2f"
+msgstr ""
+
+#: ../src/memicondata.vala:36
+#, c-format
+msgid "Mem: %s, cache %s"
+msgstr ""
+
+#: ../src/neticondata.vala:64
+#, c-format
+msgid "Net: down %s, up %s"
+msgstr ""
+
+#: ../src/swapicondata.vala:31
+#, c-format
+msgid "Swap: %s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:43
+msgid "{} kB"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:45
+msgid "{} MB"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:47
+msgid "{} GB"
+msgstr ""
+
+#: ../src/utils.vala:55
+#, c-format
+msgid "%u byte"
+msgid_plural "%u bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:67
+msgid "{} kB/s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:69
+msgid "{} MB/s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:71
+msgid "{} GB/s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:73
+msgid "{} TB/s"
+msgstr ""
+
+#: ../src/utils.vala:81
+#, c-format
+msgid "%u byte/s"
+msgid_plural "%u bytes/s"
+msgstr[0] ""
+msgstr[1] ""

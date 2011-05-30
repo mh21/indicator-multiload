@@ -1,0 +1,448 @@
+# Chinese (Taiwan) translation of gnome-applets.
+# Copyright (C) 1999, 2000, 01, 02, 03, 04, 05, 06, 07 Free Software Foundation, Inc.
+# GNOME 1.x:
+# Yuan-Chung Cheng <platin@linux.org.tw>, 1999.
+# Jing-Jong Shyue <shyue@sonoma.com.tw>, 2000,
+# Abel Cheung <abel@oaka.org>, 2001-2002.
+# GNOME 2.x:
+# Abel Cheung <abel@oaka.org>, 2002-2004.
+# Woodman Tuen <wmtuen@gmail.com>, 2005-07
+# Chao-Hsiung Liao <j_h_liau@yahoo.com.tw> , 2008.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-applets 2.32.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-05-10 00:45+0200\n"
+"PO-Revision-Date: 2011-05-28 13:40+0000\n"
+"Last-Translator: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>\n"
+"Language-Team: Chinese (Taiwan) <zh-l10n@lists.linux.org.tw>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Launchpad-Export-Date: 2011-05-30 05:47+0000\n"
+"X-Generator: Launchpad (build 12959)\n"
+"Language: \n"
+
+#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
+msgid ""
+"A system load monitor capable of displaying graphs for CPU, ram, and swap "
+"space use, plus network traffic."
+msgstr "系統負載監控程式可以顯示 CPU、記憶體、交換記憶及網路使用量。"
+
+#: ../data/preferences.ui.in.h:2
+msgid "Cach_ed"
+msgstr "快取記憶(_E)"
+
+#: ../data/preferences.ui.in.h:3
+msgid "Colors"
+msgstr "色彩"
+
+#: ../data/preferences.ui.in.h:4
+msgid "F_ree"
+msgstr "未用(_R)"
+
+#: ../data/preferences.ui.in.h:5
+msgid "Harddisk"
+msgstr "硬碟"
+
+#: ../data/preferences.ui.in.h:6
+msgid "I_OWait"
+msgstr "I_OWait"
+
+#: ../data/preferences.ui.in.h:7
+msgid "I_dle"
+msgstr "閒置(_D)"
+
+#: ../data/preferences.ui.in.h:8
+msgid "Load"
+msgstr "負載"
+
+#: ../data/preferences.ui.in.h:9
+msgid "Memory"
+msgstr "記憶體"
+
+#: ../data/preferences.ui.in.h:10
+msgid "Monitored Resources"
+msgstr "受監控的資源"
+
+#: ../data/preferences.ui.in.h:11
+msgid "N_ice"
+msgstr "N_ice"
+
+#: ../data/preferences.ui.in.h:12
+msgid "Network"
+msgstr "網路"
+
+#: ../data/preferences.ui.in.h:13
+msgid "Options"
+msgstr "選項"
+
+#: ../data/preferences.ui.in.h:14
+msgid "Processor"
+msgstr "處理器"
+
+#: ../data/preferences.ui.in.h:15
+msgid "S_wap Space"
+msgstr "交換記憶(_W)"
+
+#: ../data/preferences.ui.in.h:16
+msgid "S_ystem"
+msgstr "系統(_Y)"
+
+#: ../data/preferences.ui.in.h:17
+msgid "Sh_ared"
+msgstr "分享(_A)"
+
+#: ../data/preferences.ui.in.h:18
+msgid "Swap Space"
+msgstr "交換記憶"
+
+#: ../data/preferences.ui.in.h:19
+msgid "Sys_tem monitor update interval: "
+msgstr "系統監控更新間隔(_T): "
+
+#: ../data/preferences.ui.in.h:20
+msgid "System m_onitor width: "
+msgstr "系統監控程式寬度(_O): "
+
+#: ../data/preferences.ui.in.h:21
+msgid "_About"
+msgstr "關於(_A)"
+
+#: ../data/preferences.ui.in.h:22
+msgid "_Autostart: "
+msgstr ""
+
+#: ../data/preferences.ui.in.h:23
+msgid "_Average"
+msgstr "平均(_A)"
+
+#: ../data/preferences.ui.in.h:24
+msgid "_Background"
+msgstr "背景顏色(_B)"
+
+#: ../data/preferences.ui.in.h:25
+msgid "_Buffers"
+msgstr "緩衝區(_B)"
+
+#: ../data/preferences.ui.in.h:26
+msgid "_Free"
+msgstr "可用(_F)"
+
+#: ../data/preferences.ui.in.h:27
+msgid "_Harddisk"
+msgstr "硬碟(_H)"
+
+#: ../data/preferences.ui.in.h:28
+msgid "_In"
+msgstr "進(_I)"
+
+#: ../data/preferences.ui.in.h:29
+msgid "_Load"
+msgstr "負載(_L)"
+
+#: ../data/preferences.ui.in.h:30
+msgid "_Local"
+msgstr "本地端(_L)"
+
+#: ../data/preferences.ui.in.h:31
+msgid "_Memory"
+msgstr "記憶體(_M)"
+
+#: ../data/preferences.ui.in.h:32
+msgid "_Network"
+msgstr "網路(_N)"
+
+#: ../data/preferences.ui.in.h:33
+msgid "_Open System Monitor"
+msgstr "啟動系統監控程式(_O)"
+
+#: ../data/preferences.ui.in.h:34
+msgid "_Out"
+msgstr "出(_O)"
+
+#: ../data/preferences.ui.in.h:35
+msgid "_Preferences"
+msgstr "偏好設定(_P)"
+
+#: ../data/preferences.ui.in.h:36
+msgid "_Processor"
+msgstr "處理器(_P)"
+
+#: ../data/preferences.ui.in.h:37
+msgid "_Quit"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:38
+msgid "_Read"
+msgstr "讀(_R)"
+
+#: ../data/preferences.ui.in.h:39
+msgid "_Used"
+msgstr "使用中(_U)"
+
+#: ../data/preferences.ui.in.h:40
+msgid "_User"
+msgstr "使用者(_U)"
+
+#: ../data/preferences.ui.in.h:41
+msgid "_Write"
+msgstr "寫(_W)"
+
+#: ../data/preferences.ui.in.h:42
+msgid "milliseconds"
+msgstr "亳秒"
+
+#: ../data/preferences.ui.in.h:43
+msgid "pixels"
+msgstr "像素"
+
+#: ../data/preferences.ui.in.h:44
+msgid "translator-credits"
+msgstr ""
+"如對翻譯有任何意見，請送一封電子郵件給\n"
+"以下地址，GNOME 翻譯團隊會儘快回覆您：\n"
+"zh-l10n@lists.linux.org.tw\n"
+"\n"
+"Woodman Tuen <wmtuen@gmail.com>, 2005-2006\n"
+"Abel Cheung <abel@oaka.org>, 2001-2004\n"
+"Jing-Jong Shyue <shyue@sonoma.com.tw>, 2000\n"
+"Yuan-Chung Cheng <platin@linux.org.tw>, 1999"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
+msgid "Applet refresh rate in milliseconds"
+msgstr "面板程式自動更新頻率（毫秒）"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+msgid "Automatically start on session startup"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+msgid "Background color for disk load graph"
+msgstr "磁碟負載圖的背景色彩"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
+msgid "CPU graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
+msgid "CPU graph background color"
+msgstr "CPU 負載圖的背景顏色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
+msgid "Disk load graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
+msgid "Enable CPU load graph"
+msgstr "顯示 CPU 負載圖"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+msgid "Enable disk load graph"
+msgstr "顯示磁碟負載圖"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+msgid "Enable load average graph"
+msgstr "顯示系統平均負載圖"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+msgid "Enable memory load graph"
+msgstr "顯示記憶體負載圖"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+msgid "Enable network load graph"
+msgstr "顯示網路負載圖"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
+msgid "Enable swap load graph"
+msgstr "顯示交換記憶負載圖"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+msgid "Graph color for buffer memory"
+msgstr "代表緩衝記憶用量的顏色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+msgid "Graph color for cached memory"
+msgstr "代表快取記憶用量的顏色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+msgid "Graph color for disk read"
+msgstr "代表磁碟讀取的顏色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+msgid "Graph color for disk write"
+msgstr "代表磁碟寫入的顏色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+msgid "Graph color for input network activity"
+msgstr "代表數據進入網路的圖表顏色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+msgid "Graph color for iowait related CPU activity"
+msgstr "代表 iowait 相關的 CPU 活動的顏色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+msgid "Graph color for load average"
+msgstr "代表系統平均負載的顏色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+msgid "Graph color for loopback network usage"
+msgstr "代表 loopback 網路的圖表顏色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+msgid "Graph color for nice-related CPU activity"
+msgstr "代表優先值較低的進程的 CPU 用量的顏色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
+msgid "Graph color for output network activity"
+msgstr "代表數據送出網路的圖表顏色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
+msgid "Graph color for shared memory"
+msgstr "代表分享記憶用量的顏色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
+msgid "Graph color for system-related CPU activity"
+msgstr "代表和系統有關的 CPU 用量的顏色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
+msgid "Graph color for user-related CPU activity"
+msgstr "代表和用戶有關的 CPU 用量的顏色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
+msgid "Graph color for user-related memory usage"
+msgstr "代表和用戶有關的記憶體用量的顏色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
+msgid "Graph color for user-related swap usage"
+msgstr "代表和用戶有關的交換記憶用量的顏色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:28
+msgid "Height of the graphs in pixels."
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:29
+msgid "Load graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:30
+msgid "Load graph background color"
+msgstr "系統負載量背景顏色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:31
+msgid "Memory graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:32
+msgid "Memory graph background color"
+msgstr "記憶體負載量背景顏色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:33
+msgid "Network graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:34
+msgid "Network graph background color"
+msgstr "網路負載量背景顏色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:35
+msgid "Swap graph alpha"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:36
+msgid "Swap graph background color"
+msgstr "交換記憶負載量背景顏色"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:37
+msgid "The desktop description file to execute as the system monitor"
+msgstr "以系統監視器執行的桌面描述檔案"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:38
+msgid "Width of the graphs in pixels."
+msgstr ""
+
+#: ../data/indicator-multiload.desktop.in.h:2
+msgid "System Load Indicator"
+msgstr ""
+
+#: ../src/cpuicondata.vala:58
+#, c-format
+msgid "CPU: %u%%, iowait %u%%"
+msgstr ""
+
+#: ../src/diskicondata.vala:106
+#, c-format
+msgid "Disk: read %s, write %s"
+msgstr ""
+
+#: ../src/loadicondata.vala:31
+#, c-format
+msgid "Load: %.2f"
+msgstr ""
+
+#: ../src/memicondata.vala:36
+#, c-format
+msgid "Mem: %s, cache %s"
+msgstr ""
+
+#: ../src/neticondata.vala:64
+#, c-format
+msgid "Net: down %s, up %s"
+msgstr ""
+
+#: ../src/swapicondata.vala:31
+#, c-format
+msgid "Swap: %s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:43
+msgid "{} kB"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:45
+msgid "{} MB"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:47
+msgid "{} GB"
+msgstr ""
+
+#: ../src/utils.vala:55
+#, c-format
+msgid "%u byte"
+msgid_plural "%u bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:67
+msgid "{} kB/s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:69
+msgid "{} MB/s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:71
+msgid "{} GB/s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:73
+msgid "{} TB/s"
+msgstr ""
+
+#: ../src/utils.vala:81
+#, c-format
+msgid "%u byte/s"
+msgid_plural "%u bytes/s"
+msgstr[0] ""
+msgstr[1] ""
