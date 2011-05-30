@@ -1,6 +1,7 @@
-indicator-multiload (0.1+bzr5) oneiric; urgency=low
+indicator-multiload (0.1-0ubuntu1) oneiric; urgency=low
 
-  * initial upload
+  * initial upload to ubuntu oneiric, adressed the NEW review
+    points from Jamie Strandboge (many thanks!)
 
  -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 26 May 2011 14:33:18 +0200
 
