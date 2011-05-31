@@ -17,14 +17,14 @@ msgstr ""
 "Project-Id-Version: gnome-applets master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-10 00:45+0200\n"
-"PO-Revision-Date: 2011-05-28 13:40+0000\n"
-"Last-Translator: Mario Blättermann <mariobl@gnome.org>\n"
+"PO-Revision-Date: 2011-05-30 20:29+0000\n"
+"Last-Translator: Michael Hofmann <mh21@mh21.de>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2011-05-30 05:46+0000\n"
+"X-Launchpad-Export-Date: 2011-05-31 05:54+0000\n"
 "X-Generator: Launchpad (build 12959)\n"
 "Language: \n"
 
@@ -178,7 +178,7 @@ msgstr "_Prozessor"
 
 #: ../data/preferences.ui.in.h:37
 msgid "_Quit"
-msgstr ""
+msgstr "_Beenden"
 
 #: ../data/preferences.ui.in.h:38
 msgid "_Read"
@@ -217,7 +217,10 @@ msgstr ""
 "Hendrik Brandt <heb@gnome-de.org>\n"
 "Mario Blättermann <mariobl@gnome.org>\n"
 "Mario Klug <klug_mario@inode.at>\n"
-"Christian Kirbach <Christian.Kirbach@googlemail.com>"
+"Christian Kirbach <Christian.Kirbach@googlemail.com>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Michael Hofmann https://launchpad.net/~mh21"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
 msgid "Applet refresh rate in milliseconds"
