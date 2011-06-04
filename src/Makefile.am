@@ -29,7 +29,6 @@ indicator_multiload_SOURCES = \
 	neticondata.vala \
 	swapicondata.vala \
 	utils.vala \
-	appindicator-fixed.vapi \
 	config.vapi \
 	gsettings-fixed.vapi \
 	gtop.vapi \
