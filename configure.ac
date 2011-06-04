@@ -21,7 +21,7 @@ AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [gettext package name])
 
 GLIB_GSETTINGS
 
-PKG_CHECK_MODULES(MULTILOADDEPS, [gtk+-2.0 cairo appindicator-0.1 glib-2.0 gio-unix-2.0 gmodule-2.0 libgtop-2.0])
+PKG_CHECK_MODULES(MULTILOADDEPS, [gtk+-3.0 cairo appindicator3-0.1 glib-2.0 gio-unix-2.0 gmodule-2.0 libgtop-2.0])
 
 AC_CONFIG_FILES([
 Makefile
