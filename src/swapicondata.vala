@@ -25,7 +25,7 @@ public class SwapIconData : IconData {
         GTop.Swap swap;
         GTop.get_swap(out swap);
 
-        this.traces[0].add_value(swap.used / (double)swap.total);
+        this.traces[0].add_value(swap.total == 0 ? 0 : swap.used / (double)swap.total);
 
         this.menuitems = {
             _("Swap: %s").printf
