@@ -17,14 +17,14 @@ msgstr ""
 "Project-Id-Version: gnome-applets master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-10 00:45+0200\n"
-"PO-Revision-Date: 2011-05-30 20:29+0000\n"
-"Last-Translator: Michael Hofmann <mh21@mh21.de>\n"
+"PO-Revision-Date: 2011-06-07 18:42+0000\n"
+"Last-Translator: d-snake <Unknown>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2011-05-31 05:54+0000\n"
+"X-Launchpad-Export-Date: 2011-06-08 05:44+0000\n"
 "X-Generator: Launchpad (build 12959)\n"
 "Language: \n"
 
@@ -118,7 +118,7 @@ msgstr "_Info"
 
 #: ../data/preferences.ui.in.h:22
 msgid "_Autostart: "
-msgstr ""
+msgstr "_Autostart "
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Average"
@@ -220,7 +220,8 @@ msgstr ""
 "Christian Kirbach <Christian.Kirbach@googlemail.com>\n"
 "\n"
 "Launchpad Contributions:\n"
-"  Michael Hofmann https://launchpad.net/~mh21"
+"  Michael Hofmann https://launchpad.net/~mh21\n"
+"  d-snake https://launchpad.net/~dsnake"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
 msgid "Applet refresh rate in milliseconds"
@@ -228,7 +229,7 @@ msgstr "Aktualisierungsintervall des Applets in Millisekunden"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
 msgid "Automatically start on session startup"
-msgstr ""
+msgstr "Automatisch beim Hochfahren starten"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
 msgid "Background color for disk load graph"
@@ -236,7 +237,7 @@ msgstr "Hintergrundfarbe für den Plattenlastgraphen"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
 msgid "CPU graph alpha"
-msgstr ""
+msgstr "CPU-Graph durchlässigkeit"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
 msgid "CPU graph background color"
@@ -244,7 +245,7 @@ msgstr "Hintergrundfarbe des Prozessorgraphen"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
 msgid "Disk load graph alpha"
-msgstr ""
+msgstr "HD-Auslasstungs-Graph durchlässigkeit"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
 msgid "Enable CPU load graph"
@@ -332,7 +333,7 @@ msgstr "Graphfarbe für benutzerseitige Auslagerungslast"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:28
 msgid "Height of the graphs in pixels."
-msgstr ""
+msgstr "Höhe der Graphen in Pixel"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:29
 msgid "Load graph alpha"
@@ -344,7 +345,7 @@ msgstr "Hintergrundfarbe des Auslastungsgraphen"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:31
 msgid "Memory graph alpha"
-msgstr ""
+msgstr "RAM-Graph durchlässigkeit"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:32
 msgid "Memory graph background color"
@@ -352,7 +353,7 @@ msgstr "Hintergrundfarbe des Speichergraphen"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:33
 msgid "Network graph alpha"
-msgstr ""
+msgstr "Netzwerk-Graph durchlässigkeit"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:34
 msgid "Network graph background color"
@@ -360,7 +361,7 @@ msgstr "Hintergrundfarbe des Netzwerkgraphen"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:35
 msgid "Swap graph alpha"
-msgstr ""
+msgstr "Swap-Graph durchlässigkeit"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:36
 msgid "Swap graph background color"
@@ -372,7 +373,7 @@ msgstr "Die beim Anklicken zu startende .desktop-Datei"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:38
 msgid "Width of the graphs in pixels."
-msgstr ""
+msgstr "Weite der Graphen in Pixel"
 
 #: ../data/indicator-multiload.desktop.in.h:2
 msgid "System Load Indicator"
