@@ -212,7 +212,6 @@ public class Main : Application {
             datadirs += Path.build_filename(datadir, Config.PACKAGE_NAME);
         foreach (var datadir in datadirs) {
             var uifile = Path.build_filename(datadir, "preferences.ui");
-            stderr.printf("%s\n", uifile);
             if (!FileUtils.test(uifile, FileTest.IS_REGULAR))
                 continue;
             this.uifile = uifile;
