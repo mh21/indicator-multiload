@@ -17,15 +17,15 @@ msgstr ""
 "Project-Id-Version: gnome-applets.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-10 00:45+0200\n"
-"PO-Revision-Date: 2011-05-28 13:40+0000\n"
-"Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
+"PO-Revision-Date: 2011-06-16 18:52+0000\n"
+"Last-Translator: antonimous <Unknown>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2011-05-30 05:47+0000\n"
-"X-Generator: Launchpad (build 12959)\n"
+"X-Launchpad-Export-Date: 2011-06-17 05:42+0000\n"
+"X-Generator: Launchpad (build 13168)\n"
 "Language: \n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
@@ -38,7 +38,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:2
 msgid "Cach_ed"
-msgstr "C_acheada"
+msgstr "Cache_ada"
 
 # gnome-terminal/gnome-terminal.c:801
 #: ../data/preferences.ui.in.h:3
@@ -47,7 +47,7 @@ msgstr "Colores"
 
 #: ../data/preferences.ui.in.h:4
 msgid "F_ree"
-msgstr "_Libre"
+msgstr "Li_bre"
 
 #: ../data/preferences.ui.in.h:5
 msgid "Harddisk"
@@ -59,7 +59,7 @@ msgstr "Espera _E/S"
 
 #: ../data/preferences.ui.in.h:7
 msgid "I_dle"
-msgstr "_Ocioso"
+msgstr "I_nactivo"
 
 #: ../data/preferences.ui.in.h:8
 msgid "Load"
@@ -75,7 +75,7 @@ msgstr "Recursos monitorizados"
 
 #: ../data/preferences.ui.in.h:11
 msgid "N_ice"
-msgstr "_Prioridad"
+msgstr "Pri_oridad"
 
 #: ../data/preferences.ui.in.h:12
 msgid "Network"
@@ -95,15 +95,15 @@ msgstr "Espacio de _intercambio"
 
 #: ../data/preferences.ui.in.h:16
 msgid "S_ystem"
-msgstr "_Sistema"
+msgstr "S_istema"
 
 #: ../data/preferences.ui.in.h:17
 msgid "Sh_ared"
-msgstr "_Compartida"
+msgstr "Comp_artida"
 
 #: ../data/preferences.ui.in.h:18
 msgid "Swap Space"
-msgstr "Espacio de intercambio"
+msgstr "Espacio de intercambio (swap)"
 
 #: ../data/preferences.ui.in.h:19
 msgid "Sys_tem monitor update interval: "
@@ -115,15 +115,15 @@ msgstr "Anchura del m_onitor del sistema: "
 
 #: ../data/preferences.ui.in.h:21
 msgid "_About"
-msgstr "Acerca _de"
+msgstr "_Acerca de"
 
 #: ../data/preferences.ui.in.h:22
 msgid "_Autostart: "
-msgstr ""
+msgstr "_Autoarranque: "
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Average"
-msgstr "_Media"
+msgstr "P_romedio"
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Background"
@@ -147,7 +147,7 @@ msgstr "_Entrada"
 
 #: ../data/preferences.ui.in.h:29
 msgid "_Load"
-msgstr "Car_ga"
+msgstr "_Cargar"
 
 #: ../data/preferences.ui.in.h:30
 msgid "_Local"
@@ -163,7 +163,7 @@ msgstr "_Red"
 
 #: ../data/preferences.ui.in.h:33
 msgid "_Open System Monitor"
-msgstr "Abrir el m_onitor del sistema"
+msgstr "_Abrir el monitor del sistema"
 
 #: ../data/preferences.ui.in.h:34
 msgid "_Out"
@@ -171,7 +171,7 @@ msgstr "_Salida"
 
 #: ../data/preferences.ui.in.h:35
 msgid "_Preferences"
-msgstr "Prefere_ncias"
+msgstr "_Preferencias..."
 
 #: ../data/preferences.ui.in.h:36
 msgid "_Processor"
@@ -209,11 +209,14 @@ msgstr "píxeles"
 msgid "translator-credits"
 msgstr ""
 "Jorge González <jorgegonz@svn.gnome.org>\n"
-"Francisco Javier F. Serrador <serrador@cvs.gnome.org>"
+"Francisco Javier F. Serrador <serrador@cvs.gnome.org>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  antonimous https://launchpad.net/~antonimous"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
 msgid "Applet refresh rate in milliseconds"
-msgstr "Tasa de refresco de la miniaplicación en milisegundos"
+msgstr "Tasa del refresco de la miniaplicación en milisegundos"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
 msgid "Automatically start on session startup"
@@ -327,11 +330,11 @@ msgstr "El color del gráfico para el uso de intercambio relativo al usuario"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:28
 msgid "Height of the graphs in pixels."
-msgstr ""
+msgstr "Altura de los gráficos en píxeles."
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:29
 msgid "Load graph alpha"
-msgstr ""
+msgstr "Cargar gráfico alfa"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:30
 msgid "Load graph background color"
@@ -339,7 +342,7 @@ msgstr "Color de fondo del gráfico de carga del sistema"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:31
 msgid "Memory graph alpha"
-msgstr ""
+msgstr "Memoria gráfico alfa"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:32
 msgid "Memory graph background color"
@@ -347,15 +350,15 @@ msgstr "Color de fondo del gráfico de uso de memoria"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:33
 msgid "Network graph alpha"
-msgstr ""
+msgstr "Red gráfico alfa"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:34
 msgid "Network graph background color"
-msgstr "Color de fondo del gráfico de red"
+msgstr "Color de fondo del gráfico red"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:35
 msgid "Swap graph alpha"
-msgstr ""
+msgstr "Espacio de intercambio gráfico alfa"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:36
 msgid "Swap graph background color"
@@ -369,11 +372,11 @@ msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:38
 msgid "Width of the graphs in pixels."
-msgstr ""
+msgstr "Ancho de los gráficos en píxeles."
 
 #: ../data/indicator-multiload.desktop.in.h:2
 msgid "System Load Indicator"
-msgstr ""
+msgstr "Indicador del sistema de carga"
 
 #: ../src/cpuicondata.vala:58
 #, c-format
@@ -383,73 +386,72 @@ msgstr ""
 #: ../src/diskicondata.vala:106
 #, c-format
 msgid "Disk: read %s, write %s"
-msgstr ""
+msgstr "Disco: lectura%s, escritura %s"
 
 #: ../src/loadicondata.vala:31
 #, c-format
 msgid "Load: %.2f"
-msgstr ""
+msgstr "Carga: %.2f"
 
 #: ../src/memicondata.vala:36
 #, c-format
 msgid "Mem: %s, cache %s"
-msgstr ""
+msgstr "Mem: %s, caché %s"
 
 #: ../src/neticondata.vala:64
 #, c-format
 msgid "Net: down %s, up %s"
-msgstr ""
+msgstr "Red: bajado %s, subido %s"
 
 #: ../src/swapicondata.vala:31
 #, c-format
 msgid "Swap: %s"
-msgstr ""
+msgstr "Swap: %s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:43
 msgid "{} kB"
-msgstr ""
+msgstr "Copy text \t {} kB"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:45
 msgid "{} MB"
-msgstr ""
+msgstr "{} MB"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:47
 msgid "{} GB"
-msgstr ""
+msgstr "{} GB"
 
 #: ../src/utils.vala:55
 #, c-format
 msgid "%u byte"
 msgid_plural "%u bytes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u byte"
+msgstr[1] "%u bytes"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:67
 msgid "{} kB/s"
-msgstr ""
+msgstr "{} kB/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:69
 msgid "{} MB/s"
-msgstr ""
+msgstr "{} MB/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:71
 msgid "{} GB/s"
-msgstr ""
+msgstr "{} GB/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:73
 msgid "{} TB/s"
-msgstr ""
+msgstr "{} TB/s"
 
 #: ../src/utils.vala:81
 #, c-format
 msgid "%u byte/s"
 msgid_plural "%u bytes/s"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u byte/s"
