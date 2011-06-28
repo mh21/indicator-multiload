@@ -9,14 +9,14 @@ msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-02 23:22+0200\n"
-"PO-Revision-Date: 2011-05-05 20:12+0000\n"
-"Last-Translator: Stanisław Gackowski <Unknown>\n"
+"PO-Revision-Date: 2011-06-27 22:32+0000\n"
+"Last-Translator: Michał Ćwikliński <Unknown>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-05-06 05:40+0000\n"
-"X-Generator: Launchpad (build 12959)\n"
+"X-Launchpad-Export-Date: 2011-06-28 05:31+0000\n"
+"X-Generator: Launchpad (build 13168)\n"
 "X-Poedit-Country: Poland\n"
 "Language: pl\n"
 "X-Poedit-Language: Polish\n"
@@ -203,6 +203,7 @@ msgstr ""
 "Aviary.pl <gnomepl@aviary.pl>, 2008, 2009, 2010\n"
 "\n"
 "Launchpad Contributions:\n"
+"  Michał Ćwikliński https://launchpad.net/~mcwiklinski\n"
 "  Piotr Drąg https://launchpad.net/~raven46\n"
 "  Stanisław Gackowski https://launchpad.net/~soeb"
 
@@ -220,7 +221,7 @@ msgstr "Kolor tła wykresu obciążenia dysku"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
 msgid "CPU graph alpha"
-msgstr ""
+msgstr "Przeźroczystość wykresu CPU"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
 msgid "CPU graph background color"
@@ -228,7 +229,7 @@ msgstr "Kolor tła wykresu procesora"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
 msgid "Disk load graph alpha"
-msgstr ""
+msgstr "Przeźroczystość wykresu obciążenia dysku"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
 msgid "Enable CPU load graph"
@@ -262,69 +263,69 @@ msgstr ""
 "Dla paneli poziomych, szerokość wykresów w pikselach. Dla paneli pionowych, "
 "wysokość wykresów w pikselach."
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
 msgid "Graph color for buffer memory"
 msgstr "Kolor wykresu pamięci buforującej"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
 msgid "Graph color for cached memory"
 msgstr "Kolor wykresu pamięci cache'owanej"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
 msgid "Graph color for disk read"
 msgstr "Kolor wykresu dla odczytów z dysku"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
 msgid "Graph color for disk write"
 msgstr "Kolor wykresu dla zapisów dysku"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
 msgid "Graph color for input network activity"
 msgstr "Kolor wykresu ruchu wejściowego do sieci"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
 msgid "Graph color for iowait related CPU activity"
 msgstr "Kolor wykresu wykorzystania procesora przez procesy \"iowait\""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
 msgid "Graph color for load average"
 msgstr "Kolor wykresu przeciętnego obciążenia"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
 msgid "Graph color for loopback network usage"
 msgstr "Kolor wykresu ruchu wewnątrz sieci"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
 msgid "Graph color for nice-related CPU activity"
 msgstr "Kolor wykresu wykorzystania procesora przez procesy \"nice\""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
 msgid "Graph color for output network activity"
 msgstr "Kolor wykresu ruchu wyjściowego z sieci"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
 msgid "Graph color for shared memory"
 msgstr "Kolor wykresu pamięci dzielonej"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
 msgid "Graph color for system-related CPU activity"
 msgstr "Kolor wykresu wykorzystania procesora przez system"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
 msgid "Graph color for user-related CPU activity"
 msgstr "Kolor wykresu wykorzystania procesora przez użytkownika"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
 msgid "Graph color for user-related memory usage"
 msgstr "Kolor wykresu wykorzystania pamięci przez użytkownika"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:28
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
 msgid "Graph color for user-related swap usage"
 msgstr "Kolor wykresu wykorzystania przestrzeni wymiany przez użytkownika"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:29
 msgid "Load graph alpha"
-msgstr ""
+msgstr "Przeźroczystość wykresu obciążenia"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:30
 msgid "Load graph background color"
@@ -332,7 +333,7 @@ msgstr "Kolor tła wykresu obciążenia"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:31
 msgid "Memory graph alpha"
-msgstr ""
+msgstr "Przeźroczystość wykresu pamięci"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:32
 msgid "Memory graph background color"
@@ -340,7 +341,7 @@ msgstr "Kolor tła wykresu pamięci"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:33
 msgid "Network graph alpha"
-msgstr ""
+msgstr "Przeźroczystość wykresu sieci"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:34
 msgid "Network graph background color"
@@ -348,7 +349,7 @@ msgstr "Kolor tła wykresu sieci"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:35
 msgid "Swap graph alpha"
-msgstr ""
+msgstr "Przeźroczystość wykresu pamięci swap"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:36
 msgid "Swap graph background color"
