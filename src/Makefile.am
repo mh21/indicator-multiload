@@ -26,6 +26,7 @@ indicator_multiload_SOURCES = \
 	icontracedata.vala \
 	loaddata.vala \
 	memdata.vala \
+	menudata.vala \
 	multiloadindicator.vala \
 	main.vala \
 	netdata.vala \

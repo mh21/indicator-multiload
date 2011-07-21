@@ -22,7 +22,6 @@ public class IconData : GLib.Object {
     private double[] scalerhistory;
 
     string[] expressions;
-    string[] menuexpressions;
     string minimumexpression;
 
     public Gdk.Color color { get; set; }
@@ -30,7 +29,6 @@ public class IconData : GLib.Object {
     public bool enabled { get; set; default = true; }
     public string id { get; private set; }
     public double scale { get; private set; default = 1; }
-    public string[] menuitems { get; protected set; default = {}; }
     public IconTraceData[] traces {get; private set; }
     public uint trace_length {
         get {
@@ -44,8 +42,7 @@ public class IconData : GLib.Object {
     }
 
     // set scalerdelay to 1 and scalerminimum to 1 for percentage values without scaling
-    public IconData(string id, string limits, string[] expressions, 
-            string[] menuexpressions) {
+    public IconData(string id, string limits, string[] expressions) {
         var slimits = limits.split(":");
         if (slimits.length < 1)
             slimits += "1";
@@ -55,7 +52,6 @@ public class IconData : GLib.Object {
             slimits += "1";
 
         this.expressions = expressions;
-        this.menuexpressions = menuexpressions;
         this.minimumexpression = slimits[0];
 
         this.traces = new IconTraceData[expressions.length];
@@ -75,16 +71,8 @@ public class IconData : GLib.Object {
             this.traces[i].add_value(double.parse(parser.evaluate(tokens)));
         }
 
-        {
-            var tokens = parser.tokenize(this.minimumexpression);
-            this.update_scale(double.parse(parser.evaluate(tokens)));
-        }
-
-        this.menuitems = new string[this.menuexpressions.length];
-        for (uint i = 0, isize = this.menuexpressions.length; i < isize; ++i) {
-            var tokens = parser.tokenize(this.menuexpressions[i]);
-            this.menuitems[i] = parser.evaluate(tokens);
-        }
+        var tokens = parser.tokenize(this.minimumexpression);
+        this.update_scale(double.parse(parser.evaluate(tokens)));
     }
 
     // Fast attack, slow decay
@@ -96,7 +84,7 @@ public class IconData : GLib.Object {
     //   - it is never smaller than the peak value in the plot
     //   - after the current peak leaves the plot, the scaling factor gets
     //     reduced slowly
-    protected virtual void update_scale(double scalerminimum) {
+    private void update_scale(double scalerminimum) {
         double currentpeak = scalerminimum;
         for (uint i = 0, isize = this.trace_length; i < isize; ++i) {
             double currentvalue = 0;

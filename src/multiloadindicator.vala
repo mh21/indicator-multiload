@@ -16,18 +16,14 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.                *
  ******************************************************************************/
 
-internal class IconMenu {
-    public Gtk.MenuItem[] items;
-}
-
 public class MultiLoadIndicator : Object {
     private uint currenticonindex;
     private uint lastwidth;
     private string icondirectory;
     private TimeoutSource timeout;
     private AppIndicator.Indicator indicator;
-    private IconMenu[] icon_menus;
     private Data[] datas;
+    private Gtk.MenuItem[] menuitems;
 
     private uint _size;
     private uint _speed;
@@ -35,6 +31,7 @@ public class MultiLoadIndicator : Object {
     private Gtk.Menu _menu;
 
     public uint height { get; set; default = 22; }
+    public MenuData menudata { get; set; }
 
     public uint size {
         get {
@@ -63,32 +60,34 @@ public class MultiLoadIndicator : Object {
             this.timeout.set_callback(() => {
                     foreach (var data in this.datas)
                         data.update();
-                    uint menu_position = 0;
+
+                    uint menu_position = 2;
                     for (uint i = 0, isize = this._icon_datas.length; i < isize; ++i) {
-                        IconMenu icon_menu = this.icon_menus[i];
                         IconData icon_data = this._icon_datas[i];
                         icon_data.update(this.datas);
-                        var menuitems = icon_data.menuitems;
-                        var length = menuitems.length;
-                        for (uint j = 0, jsize = length; j < jsize; ++j) {
-                            Gtk.MenuItem item;
-                            if (j < icon_menu.items.length) {
-                                item = icon_menu.items[j];
-                            } else {
-                                item = new Gtk.MenuItem();
-                                item.visible = true;
-                                this.menu.insert(item, (int)menu_position);
-                                icon_menu.items += item;
-                            }
-                            item.label = menuitems[j];
-                            ++menu_position;
-                        }
-                        if (length != icon_menu.items.length) {
-                            for (uint j = length, jsize = icon_menu.items.length; j < jsize; ++j)
-                                icon_menu.items[j].destroy();
-                            icon_menu.items = icon_menu.items[0:length];
-                        }
                     }
+                    this.menudata.update(this.datas);
+                    var menuitemlabels = this.menudata.menuitems;
+                    var length = menuitemlabels.length;
+                    for (uint j = 0; j < length; ++j) {
+                        Gtk.MenuItem item;
+                        if (j < this.menuitems.length) {
+                            item = this.menuitems[j];
+                        } else {
+                            item = new Gtk.MenuItem();
+                            item.visible = true;
+                            this.menu.insert(item, (int)menu_position);
+                            this.menuitems += item;
+                        }
+                        item.label = menuitemlabels[j];
+                        ++menu_position;
+                    }
+                    if (length != this.menuitems.length) {
+                        for (uint j = length, jsize = this.menuitems.length; j < jsize; ++j)
+                            menuitems[j].destroy();
+                        this.menuitems = this.menuitems[0:length];
+                    }
+
                     if (indicator != null) {
                         indicator.set_icon(this.write(this.currenticonindex));
                         this.currenticonindex = 1 - this.currenticonindex;
@@ -143,8 +142,9 @@ public class MultiLoadIndicator : Object {
         this.timeout = null;
     }
 
-    public MultiLoadIndicator(string datadirectory) {
+    public MultiLoadIndicator(string datadirectory, Data[] datas) {
         this.icondirectory = Path.build_filename(datadirectory, "icons");
+        this.datas = datas;
         DirUtils.create(this.icondirectory, 0777);
 
         this.currenticonindex = 0;
@@ -160,14 +160,9 @@ public class MultiLoadIndicator : Object {
     }
 
 
-    public void add_data(Data data) {
-        this.datas += data;
-    }
-
     public void add_icon_data(IconData data) {
         data.trace_length = this._size;
         this._icon_datas += data;
-        this.icon_menus += new IconMenu();
     }
 
     private string iconname(uint index) {
