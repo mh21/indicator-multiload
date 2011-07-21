@@ -191,5 +191,17 @@
             <_summary>Automatically start on session startup</_summary>
         </key>
 
+        <key name="menu-entries" type="as">
+            <default>[
+                "CPU: $(percent(cpu.inuse)), iowait $(percent(cpu.io))",
+                "Mem: $(size(mem.user)), cache $(size(mem.cache))",
+                "Net: down $(speed(net.down)), up $(speed(net.up))",
+                "Load: $load.avg",
+                "Swap: $(size(swap.used))",
+                "Disk: read $(speed(disk.read)), write $(speed(disk.write))"
+            ]</default>
+            <_summary>Information shown as menu entries</_summary>
+        </key>
+
   </schema>
 </schemalist>

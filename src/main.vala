@@ -256,14 +256,6 @@ public class Main : Application {
             {"$load.avg"}));
         this.multi.add_icon_data(new IconData("diskload", "1000:xx:10", 
             {"$disk.read", "$disk.write"}));
-        this.multi.menudata = new MenuData({
-            "CPU: $(percent(cpu.inuse)), iowait $(percent(cpu.io))",
-            "Mem: $(size(mem.user)), cache $(size(mem.cache))",
-            "Net: down $(speed(net.down)), up $(speed(net.up))",
-            "Load: $load.avg",
-            "Swap: $(size(swap.used))",
-            "Disk: read $(speed(disk.read)), write $(speed(disk.write))"
-        });
 
         var datasettings = new FixedGSettings.Settings("de.mh21.indicator.multiload");
         foreach (var icon_data in this.multi.icon_datas) {
@@ -285,6 +277,9 @@ public class Main : Application {
         }
         datasettings.bind("size",
                 this.multi, "size",
+                SettingsBindFlags.DEFAULT);
+        datasettings.bind("menu-entries",
+                this.multi.menudata, "menuexpressions",
                 SettingsBindFlags.DEFAULT);
         datasettings.bind("height",
                 this.multi, "height",

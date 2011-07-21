@@ -31,7 +31,7 @@ public class MultiLoadIndicator : Object {
     private Gtk.Menu _menu;
 
     public uint height { get; set; default = 22; }
-    public MenuData menudata { get; set; }
+    public MenuData menudata { get; set; default = new MenuData(); }
 
     public uint size {
         get {

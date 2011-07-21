@@ -17,20 +17,24 @@
  ******************************************************************************/
 
 public class MenuData : GLib.Object {
-    string[] menuexpressions;
+    string[] _menuexpressions;
 
     public string[] menuitems { get; private set; default = {}; }
-
-    public MenuData(string[] menuexpressions) {
-        this.menuexpressions = menuexpressions;
+    public string[] menuexpressions { 
+        get {
+            return _menuexpressions;
+        } 
+        set {
+            _menuexpressions = value;
+        }
     }
 
     public void update(Data[] datas) {
         var parser = new ExpressionParser(datas);
 
-        this.menuitems = new string[this.menuexpressions.length];
-        for (uint i = 0, isize = this.menuexpressions.length; i < isize; ++i) {
-            var tokens = parser.tokenize(this.menuexpressions[i]);
+        this.menuitems = new string[this._menuexpressions.length];
+        for (uint i = 0, isize = this._menuexpressions.length; i < isize; ++i) {
+            var tokens = parser.tokenize(this._menuexpressions[i]);
             this.menuitems[i] = parser.evaluate(tokens);
         }
     }
