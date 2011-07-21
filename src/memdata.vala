@@ -16,23 +16,23 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.                *
  ******************************************************************************/
 
-public class LoadIconData : IconData {
-    public LoadIconData() {
-        base("loadavg", 1, 10, 1);
+public class MemData : Data {
+    public MemData() {
+        base("mem", {"user", "shared", "buffer", "cached", "total", "cache"});
     }
 
     public override void update() {
-        GTop.LoadAvg loadavg;
-        GTop.get_loadavg(out loadavg);
+        GTop.Mem mem;
+        GTop.get_mem(out mem);
 
-        this.traces[0].add_value(loadavg.loadavg[0]);
-
-        this.menuitems = {
-            _("Load: %.2f").printf
-                (loadavg.loadavg[0])
+        this.values = {
+            mem.user,
+            mem.shared,
+            mem.buffer,
+            mem.cached,
+            mem.total,
+            mem.shared + mem.buffer + mem.cached
         };
-
-        this.update_scale();
     }
 }
 

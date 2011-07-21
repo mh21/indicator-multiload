@@ -27,6 +27,7 @@ public class MultiLoadIndicator : Object {
     private TimeoutSource timeout;
     private AppIndicator.Indicator indicator;
     private IconMenu[] icon_menus;
+    private Data[] datas;
 
     private uint _size;
     private uint _speed;
@@ -60,11 +61,13 @@ public class MultiLoadIndicator : Object {
                 this.timeout = new TimeoutSource(this.speed);
             this.timeout.attach(null);
             this.timeout.set_callback(() => {
+                    foreach (var data in this.datas)
+                        data.update();
                     uint menu_position = 0;
                     for (uint i = 0, isize = this._icon_datas.length; i < isize; ++i) {
                         IconMenu icon_menu = this.icon_menus[i];
                         IconData icon_data = this._icon_datas[i];
-                        icon_data.update();
+                        icon_data.update(this.datas);
                         var menuitems = icon_data.menuitems;
                         var length = menuitems.length;
                         for (uint j = 0, jsize = length; j < jsize; ++j) {
@@ -156,6 +159,10 @@ public class MultiLoadIndicator : Object {
         DirUtils.remove(this.icondirectory);
     }
 
+
+    public void add_data(Data data) {
+        this.datas += data;
+    }
 
     public void add_icon_data(IconData data) {
         data.trace_length = this._size;

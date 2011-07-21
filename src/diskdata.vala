@@ -16,14 +16,13 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.                *
  ******************************************************************************/
 
-public class DiskIconData : IconData {
+public class DiskData : Data {
     private uint64[] lastdata;
     private uint64 lasttime;
     private const string[] networkfs = { "smbfs", "nfs", "cifs", "fuse.sshfs" };
 
-    public DiskIconData() {
-        // minimum of 1 kb/s
-        base("diskload", 2, 10, 1000);
+    public DiskData() {
+        base("disk", {"read", "write"});
     }
 
     private string[] split(string val) {
@@ -87,27 +86,14 @@ public class DiskIconData : IconData {
             }
         }
 
-        double read = 0, write = 0;
-
-        if (this.lastdata.length == 0) {
-            foreach (var trace in this.traces)
-                trace.add_value(0);
-        } else {
+        if (this.lastdata.length != 0) {
             double delta = (newtime - this.lasttime) / 1e6;
-            read = (newdata[0] - this.lastdata[0]) / delta;
-            write = (newdata[1] - this.lastdata[1]) / delta;
-            for (uint i = 0, isize = this.traces.length; i < isize; ++i)
-                this.traces[i].add_value((newdata[i] - this.lastdata[i]) / delta);
+            this.values = {
+                (newdata[0] - this.lastdata[0]) / delta,
+                (newdata[1] - this.lastdata[1]) / delta
+            };
         }
         this.lastdata = newdata;
         this.lasttime = newtime;
-
-        this.menuitems = {
-            _("Disk: read %s, write %s").printf
-                (Utils.format_speed(read),
-                 Utils.format_speed(write))
-        };
-
-        this.update_scale();
     }
 }

@@ -70,7 +70,6 @@ public class Main : Application {
                     file.load_from_data_dirs(this.applicationfile, null, KeyFileFlags.KEEP_COMMENTS |
                             KeyFileFlags.KEEP_TRANSLATIONS);
                 } catch (Error e) {
-                    // TODO: nicer defaults: icon, name, description
                     file.set_string(KeyFileDesktop.GROUP, KeyFileDesktop.KEY_TYPE, "Application");
                     file.set_string(KeyFileDesktop.GROUP, KeyFileDesktop.KEY_NAME, "indicator-multiload");
                     file.set_string(KeyFileDesktop.GROUP, KeyFileDesktop.KEY_EXEC, "indicator-multiload");
@@ -78,6 +77,8 @@ public class Main : Application {
             }
             file.set_boolean(KeyFileDesktop.GROUP, autostartkey, value);
             try {
+                DirUtils.create(Path.build_filename
+                        (Environment.get_user_config_dir(), "autostart"), 0777);
                 FileUtils.set_contents(this.autostartfile, file.to_data());
             } catch (Error e) {
                 stderr.printf("Could not create autostart desktop file: %s\n", e.message);
@@ -240,12 +241,30 @@ public class Main : Application {
 
     public override void startup() {
         this.multi = new MultiLoadIndicator(datadirectory);
-        this.multi.add_icon_data(new CpuIconData());
-        this.multi.add_icon_data(new MemIconData());
-        this.multi.add_icon_data(new NetIconData());
-        this.multi.add_icon_data(new SwapIconData());
-        this.multi.add_icon_data(new LoadIconData());
-        this.multi.add_icon_data(new DiskIconData());
+        this.multi.add_data(new CpuData());
+        this.multi.add_data(new MemData());
+        this.multi.add_data(new NetData());
+        this.multi.add_data(new SwapData());
+        this.multi.add_data(new LoadData());
+        this.multi.add_data(new DiskData());
+        this.multi.add_icon_data(new IconData("cpuload", "1:xx:1", 
+            {"$cpu.user", "$cpu.nice", "$cpu.sys", "$cpu.io"}, 
+            {"CPU: $(percent(cpu.inuse)), iowait $(percent(cpu.io))"}));
+        this.multi.add_icon_data(new IconData("memload", "$mem.total:xx:1", 
+            {"$mem.user", "$mem.shared", "$mem.buffer", "$mem.cached"}, 
+            {"Mem: $(size(mem.user)), cache $(size(mem.cache))"}));
+        this.multi.add_icon_data(new IconData("netload", "5000:xx:10", 
+            {"$net.down", "$net.up", "$net.local"},
+            {"Net: down $(speed(net.down)), up $(speed(net.up))"}));
+        this.multi.add_icon_data(new IconData("swapload", "$swap.total:xx:1", 
+            {"$swap.used"},
+            {"Swap: $(size(swap.used))"}));
+        this.multi.add_icon_data(new IconData("loadavg", "$load.cpus:xx:1", 
+            {"$load.avg"},
+            {"Load: $load.avg"}));
+        this.multi.add_icon_data(new IconData("diskload", "1000:xx:10", 
+            {"$disk.read", "$disk.write"},
+            {"Disk: read $(speed(disk.read)), write $(speed(disk.write))"}));
 
         var datasettings = new FixedGSettings.Settings("de.mh21.indicator.multiload");
         foreach (var icon_data in this.multi.icon_datas) {

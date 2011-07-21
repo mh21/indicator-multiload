@@ -16,23 +16,17 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.                *
  ******************************************************************************/
 
-public class SwapIconData : IconData {
-    public SwapIconData() {
-        base("swapload", 1, 1, 1);
+public abstract class Data : GLib.Object {
+    public string id { get; private set; }
+
+    public string[] keys { get; private set; }
+    public double[] values { get; protected set; }
+
+    public Data(string id, string[] keys) {
+	this.id = id;
+	this.keys = keys;
+	this.values = new double[keys.length];
     }
 
-    public override void update() {
-        GTop.Swap swap;
-        GTop.get_swap(out swap);
-
-        this.traces[0].add_value(swap.total == 0 ? 0 : swap.used / (double)swap.total);
-
-        this.menuitems = {
-            _("Swap: %s").printf
-                (Utils.format_size(swap.used))
-        };
-
-        this.update_scale();
-    }
+    public abstract void update();
 }
-

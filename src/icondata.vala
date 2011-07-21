@@ -16,10 +16,14 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.                *
  ******************************************************************************/
 
-public abstract class IconData : GLib.Object {
+public class IconData : GLib.Object {
     private uint _trace_length;
+    private uint scalerdelay;
     private double[] scalerhistory;
-    private double scalerminimum;
+
+    string[] expressions;
+    string[] menuexpressions;
+    string minimumexpression;
 
     public Gdk.Color color { get; set; }
     public uint alpha { get; set; default = 0xffff; }
@@ -40,23 +44,48 @@ public abstract class IconData : GLib.Object {
     }
 
     // set scalerdelay to 1 and scalerminimum to 1 for percentage values without scaling
-    public IconData(string id, uint traces, uint scalerdelay, double scalerminimum) {
-        this.traces = new IconTraceData[traces];
-        for (uint i = 0; i < traces; ++i)
+    public IconData(string id, string limits, string[] expressions, 
+            string[] menuexpressions) {
+        var slimits = limits.split(":");
+        if (slimits.length < 1)
+            slimits += "1";
+        if (slimits.length < 2)
+            slimits += "0"; // TODO: maximum
+        if (slimits.length < 3)
+            slimits += "1";
+
+        this.expressions = expressions;
+        this.menuexpressions = menuexpressions;
+        this.minimumexpression = slimits[0];
+
+        this.traces = new IconTraceData[expressions.length];
+        for (uint i = 0, isize = this.traces.length; i < isize; ++i)
             this.traces[i] = new IconTraceData();
         this.id = id;
         this.trace_length = 16;
-        this.scalerhistory = new double[scalerdelay];
-        for (uint i = 0; i < scalerdelay; ++i)
-            this.scalerhistory[i] = scalerminimum;
-        this.scalerminimum = scalerminimum;
+        this.scalerdelay = (uint)uint64.parse(slimits[2]);
+        this.scalerhistory = null;
     }
 
-    // needs to
-    // - add data points to the traces
-    // - update the menuitems
-    // - call update_scale
-    public abstract void update();
+    public void update(Data[] datas) {
+        var parser = new ExpressionParser(datas);
+
+        for (uint i = 0, isize = this.traces.length; i < isize; ++i) {
+            var tokens = parser.tokenize(this.expressions[i]);
+            this.traces[i].add_value(double.parse(parser.evaluate(tokens)));
+        }
+
+        {
+            var tokens = parser.tokenize(this.minimumexpression);
+            this.update_scale(double.parse(parser.evaluate(tokens)));
+        }
+
+        this.menuitems = new string[this.menuexpressions.length];
+        for (uint i = 0, isize = this.menuexpressions.length; i < isize; ++i) {
+            var tokens = parser.tokenize(this.menuexpressions[i]);
+            this.menuitems[i] = parser.evaluate(tokens);
+        }
+    }
 
     // Fast attack, slow decay
     // - each cycle, the peak value in the plot is determined
@@ -67,13 +96,18 @@ public abstract class IconData : GLib.Object {
     //   - it is never smaller than the peak value in the plot
     //   - after the current peak leaves the plot, the scaling factor gets
     //     reduced slowly
-    protected virtual void update_scale() {
-        double currentpeak = this.scalerminimum;
+    protected virtual void update_scale(double scalerminimum) {
+        double currentpeak = scalerminimum;
         for (uint i = 0, isize = this.trace_length; i < isize; ++i) {
             double currentvalue = 0;
             foreach (var trace in this.traces)
                 currentvalue += trace.values[i];
             currentpeak = double.max(currentpeak, currentvalue);
+        }
+        if (this.scalerhistory.length == 0) {
+	    this.scalerhistory = new double[this.scalerdelay];
+	    for (uint i = 0; i < this.scalerdelay; ++i)
+		this.scalerhistory[i] = scalerminimum;
         }
         double historymaximum = Utils.max(this.scalerhistory);
         if (currentpeak < historymaximum) {
