@@ -10,14 +10,14 @@ msgstr ""
 "Project-Id-Version: gnome-applets-2.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-02 23:22+0200\n"
-"PO-Revision-Date: 2011-05-02 18:17+0000\n"
-"Last-Translator: Dangerous Piper <dangerous_piper@softastur.org>\n"
+"PO-Revision-Date: 2011-07-21 18:38+0000\n"
+"Last-Translator: Mikel González <mikelglez@softastur.org>\n"
 "Language-Team: Asturian <gnome@softastur.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-05-03 06:15+0000\n"
-"X-Generator: Launchpad (build 12758)\n"
+"X-Launchpad-Export-Date: 2011-07-22 05:17+0000\n"
+"X-Generator: Launchpad (build 13405)\n"
 "Language: ast\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
@@ -110,7 +110,7 @@ msgstr "_Tocante a"
 
 #: ../data/preferences.ui.in.h:22
 msgid "_Autostart: "
-msgstr ""
+msgstr "_Autoaniciar: "
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Average"
@@ -170,7 +170,7 @@ msgstr "_Procesador"
 
 #: ../data/preferences.ui.in.h:37
 msgid "_Quit"
-msgstr ""
+msgstr "_Colar"
 
 #: ../data/preferences.ui.in.h:38
 msgid "_Read"
@@ -200,7 +200,7 @@ msgstr "pixels"
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
-"  Dangerous Piper https://launchpad.net/~dangerouspiper"
+"  Mikel González https://launchpad.net/~mikelglez"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
 msgid "Applet refresh rate in milliseconds"
@@ -208,7 +208,7 @@ msgstr "Tiempu de recarga de l'aplicación en milisegundos"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
 msgid "Automatically start on session startup"
-msgstr ""
+msgstr "Aniciar automaticamente al entamar la sesión"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
 msgid "Background color for disk load graph"
@@ -216,7 +216,7 @@ msgstr "Color del fondu pal gráficu de carga del discu"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
 msgid "CPU graph alpha"
-msgstr ""
+msgstr "CPU gráficu alfa"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
 msgid "CPU graph background color"
@@ -224,7 +224,7 @@ msgstr "Color del fondu pal gráficu de carga de la CPU"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
 msgid "Disk load graph alpha"
-msgstr ""
+msgstr "Carga de discu gráficu alfa"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
 msgid "Enable CPU load graph"
@@ -258,69 +258,69 @@ msgstr ""
 "Pa los paneles horizontales, l'anchor de los gráficos en píxeles pa los "
 "paneles verticales ye l'altor de los gráficos."
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
 msgid "Graph color for buffer memory"
 msgstr "El color del gráficu pa la memoria del buffer"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
 msgid "Graph color for cached memory"
 msgstr "El color del gráficu pala memoria caché"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
 msgid "Graph color for disk read"
 msgstr "Color del gráficu pa les llectures de discu"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
 msgid "Graph color for disk write"
 msgstr "El color del gráficu pa les escritures de discu"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
 msgid "Graph color for input network activity"
 msgstr "Color del grafu pa l'actividá d'entrada de rede"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
 msgid "Graph color for iowait related CPU activity"
 msgstr "El color del gráficu pa la espera d'E/S según la actividá de la CPU"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
 msgid "Graph color for load average"
 msgstr "El color del gráficu pal promediu de carga"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
 msgid "Graph color for loopback network usage"
 msgstr "Color del grafu pa l'usu de la rede loopback"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
 msgid "Graph color for nice-related CPU activity"
 msgstr "El color del gráficu pa l'actividá de la CPU según la prioridá"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
 msgid "Graph color for output network activity"
 msgstr "Color del grafu pa l'actividá de salida de rede"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
 msgid "Graph color for shared memory"
 msgstr "El color del gráficu pa la memoria compartida"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
 msgid "Graph color for system-related CPU activity"
 msgstr "El color del gráficu pa l'actividá de la CPU según el sistema"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
 msgid "Graph color for user-related CPU activity"
 msgstr "El color del gráficu pa l'actividá de la CPU según l'usuariu"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
 msgid "Graph color for user-related memory usage"
 msgstr "El color del gráficu pal usu de memoria según l'usuariu"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:28
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
 msgid "Graph color for user-related swap usage"
 msgstr "El color del gráficu pal usu de swap según l'usuariu"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:29
 msgid "Load graph alpha"
-msgstr ""
+msgstr "Cargar gráficu alfa"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:30
 msgid "Load graph background color"
@@ -328,7 +328,7 @@ msgstr "Color de fondu del gráficu de carga del sistema"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:31
 msgid "Memory graph alpha"
-msgstr ""
+msgstr "Memoria gráficu alfa"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:32
 msgid "Memory graph background color"
@@ -336,7 +336,7 @@ msgstr "Color de fondu del gráficu d'usu de memoria"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:33
 msgid "Network graph alpha"
-msgstr ""
+msgstr "Rede gráficu alfa"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:34
 msgid "Network graph background color"
@@ -344,7 +344,7 @@ msgstr "Color de fondu del gráficu de rede"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:35
 msgid "Swap graph alpha"
-msgstr ""
+msgstr "Swap gráficu alfa"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:36
 msgid "Swap graph background color"
@@ -358,4 +358,4 @@ msgstr ""
 
 #: ../data/indicator-multiload.desktop.in.h:2
 msgid "System Load Indicator"
-msgstr ""
+msgstr "Indicador de carga del sistema"
