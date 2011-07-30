@@ -22,14 +22,16 @@ indicator_multiload_SOURCES = \
 	data.vala \
 	diskdata.vala \
 	expressionparser.vala \
-	icondata.vala \
-	icontracedata.vala \
+	graphdata.vala \
+	tracedata.vala \
 	loaddata.vala \
 	memdata.vala \
 	menudata.vala \
+	menupreferences.vala \
 	multiloadindicator.vala \
 	main.vala \
 	netdata.vala \
+	preferences.vala \
 	swapdata.vala \
 	utils.vala \
 	config.vapi \

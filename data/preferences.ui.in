@@ -46,13 +46,6 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
   <object class="GtkMenu" id="menu">
     <property name="can_focus">False</property>
     <child>
-      <object class="GtkSeparatorMenuItem" id="separatormenuitem1">
-        <property name="visible">True</property>
-        <property name="can_focus">False</property>
-        <property name="use_action_appearance">False</property>
-      </object>
-    </child>
-    <child>
       <object class="GtkMenuItem" id="sysmon">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
@@ -60,6 +53,13 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
         <property name="label" translatable="yes">_Open System Monitor</property>
         <property name="use_underline">True</property>
         <signal name="activate" handler="main_on_sysmon_activate" swapped="no"/>
+      </object>
+    </child>
+    <child>
+      <object class="GtkSeparatorMenuItem" id="separatormenuitem1">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="use_action_appearance">False</property>
       </object>
     </child>
     <child>
@@ -100,12 +100,123 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
       </object>
     </child>
   </object>
+  <object class="GtkAdjustment" id="menuitemadj1">
+    <property name="upper">100</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="menuitemadj2">
+    <property name="upper">100</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkDialog" id="menuitemdialog">
+    <property name="can_focus">False</property>
+    <property name="border_width">5</property>
+    <property name="type_hint">dialog</property>
+    <signal name="destroy" handler="menu_preferences_on_menuitemdialog_destroy" swapped="no"/>
+    <signal name="response" handler="menu_preferences_on_menuitemdialog_response" swapped="no"/>
+    <child internal-child="vbox">
+      <object class="GtkVBox" id="dialog-vbox4">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="spacing">2</property>
+        <child internal-child="action_area">
+          <object class="GtkHButtonBox" id="dialog-action_area4">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="layout_style">end</property>
+            <child>
+              <object class="GtkButton" id="button1">
+                <property name="label">gtk-close</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="use_action_appearance">False</property>
+                <property name="use_stock">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="button2">
+                <property name="label">gtk-revert-to-saved</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="use_action_appearance">False</property>
+                <property name="use_stock">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">1</property>
+                <property name="secondary">True</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="pack_type">end</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkTreeView" id="menuitemview">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="model">menuitemstore</property>
+            <property name="hadjustment">menuitemadj1</property>
+            <property name="vadjustment">menuitemadj2</property>
+            <property name="headers_visible">False</property>
+            <property name="reorderable">True</property>
+            <property name="search_column">0</property>
+            <child>
+              <object class="GtkTreeViewColumn" id="expressioncolumn">
+                <child>
+                  <object class="GtkCellRendererText" id="expressionrenderer">
+                    <property name="editable">True</property>
+                    <signal name="edited" handler="menu_preferences_on_expressionrenderer_edited" swapped="no"/>
+                  </object>
+                  <attributes>
+                    <attribute name="text">0</attribute>
+                  </attributes>
+                </child>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <action-widgets>
+      <action-widget response="0">button1</action-widget>
+      <action-widget response="1">button2</action-widget>
+    </action-widgets>
+  </object>
+  <object class="GtkListStore" id="menuitemstore">
+    <columns>
+      <!-- column-name expression -->
+      <column type="gchararray"/>
+    </columns>
+    <signal name="row-deleted" handler="menu_preferences_on_menuitemstore_row_deleted" swapped="no"/>
+    <signal name="row-changed" handler="menu_preferences_on_menuitemstore_row_changed" swapped="no"/>
+    <signal name="row-inserted" handler="menu_preferences_on_menuitemstore_row_inserted" swapped="no"/>
+  </object>
   <object class="GtkDialog" id="preferencesdialog">
     <property name="can_focus">False</property>
     <property name="border_width">5</property>
     <property name="type_hint">dialog</property>
-    <signal name="destroy" handler="main_on_preferencesdialog_destroy" swapped="no"/>
-    <signal name="response" handler="gtk_widget_destroy" swapped="no"/>
+    <signal name="destroy" handler="preferences_on_preferencesdialog_destroy" swapped="no"/>
+    <signal name="response" handler="preferences_on_preferencesdialog_response" swapped="no"/>
     <child internal-child="vbox">
       <object class="GtkVBox" id="dialog-vbox2">
         <property name="visible">True</property>
@@ -156,7 +267,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                             <property name="can_focus">False</property>
                             <property name="spacing">6</property>
                             <child>
-                              <object class="GtkCheckButton" id="view_cpuload">
+                              <object class="GtkCheckButton" id="cpu_enabled">
                                 <property name="label" translatable="yes">_Processor</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
@@ -164,7 +275,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                 <property name="use_action_appearance">False</property>
                                 <property name="use_underline">True</property>
                                 <property name="draw_indicator">True</property>
-                                <signal name="toggled" handler="main_on_checkbutton_toggled" swapped="no"/>
+                                <signal name="toggled" handler="preferences_on_checkbutton_toggled" swapped="no"/>
                               </object>
                               <packing>
                                 <property name="expand">True</property>
@@ -173,7 +284,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                               </packing>
                             </child>
                             <child>
-                              <object class="GtkCheckButton" id="view_memload">
+                              <object class="GtkCheckButton" id="mem_enabled">
                                 <property name="label" translatable="yes">_Memory</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
@@ -181,7 +292,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                 <property name="use_action_appearance">False</property>
                                 <property name="use_underline">True</property>
                                 <property name="draw_indicator">True</property>
-                                <signal name="toggled" handler="main_on_checkbutton_toggled" swapped="no"/>
+                                <signal name="toggled" handler="preferences_on_checkbutton_toggled" swapped="no"/>
                               </object>
                               <packing>
                                 <property name="expand">True</property>
@@ -190,7 +301,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                               </packing>
                             </child>
                             <child>
-                              <object class="GtkCheckButton" id="view_netload">
+                              <object class="GtkCheckButton" id="net_enabled">
                                 <property name="label" translatable="yes">_Network</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
@@ -198,7 +309,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                 <property name="use_action_appearance">False</property>
                                 <property name="use_underline">True</property>
                                 <property name="draw_indicator">True</property>
-                                <signal name="toggled" handler="main_on_checkbutton_toggled" swapped="no"/>
+                                <signal name="toggled" handler="preferences_on_checkbutton_toggled" swapped="no"/>
                               </object>
                               <packing>
                                 <property name="expand">True</property>
@@ -207,7 +318,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                               </packing>
                             </child>
                             <child>
-                              <object class="GtkCheckButton" id="view_swapload">
+                              <object class="GtkCheckButton" id="swap_enabled">
                                 <property name="label" translatable="yes">S_wap Space</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
@@ -215,7 +326,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                 <property name="use_action_appearance">False</property>
                                 <property name="use_underline">True</property>
                                 <property name="draw_indicator">True</property>
-                                <signal name="toggled" handler="main_on_checkbutton_toggled" swapped="no"/>
+                                <signal name="toggled" handler="preferences_on_checkbutton_toggled" swapped="no"/>
                               </object>
                               <packing>
                                 <property name="expand">True</property>
@@ -224,7 +335,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                               </packing>
                             </child>
                             <child>
-                              <object class="GtkCheckButton" id="view_loadavg">
+                              <object class="GtkCheckButton" id="load_enabled">
                                 <property name="label" translatable="yes">_Load</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
@@ -232,7 +343,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                 <property name="use_action_appearance">False</property>
                                 <property name="use_underline">True</property>
                                 <property name="draw_indicator">True</property>
-                                <signal name="toggled" handler="main_on_checkbutton_toggled" swapped="no"/>
+                                <signal name="toggled" handler="preferences_on_checkbutton_toggled" swapped="no"/>
                               </object>
                               <packing>
                                 <property name="expand">True</property>
@@ -241,7 +352,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                               </packing>
                             </child>
                             <child>
-                              <object class="GtkCheckButton" id="view_diskload">
+                              <object class="GtkCheckButton" id="disk_enabled">
                                 <property name="label" translatable="yes">_Harddisk</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
@@ -249,7 +360,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                 <property name="use_action_appearance">False</property>
                                 <property name="use_underline">True</property>
                                 <property name="draw_indicator">True</property>
-                                <signal name="toggled" handler="main_on_checkbutton_toggled" swapped="no"/>
+                                <signal name="toggled" handler="preferences_on_checkbutton_toggled" swapped="no"/>
                               </object>
                               <packing>
                                 <property name="expand">True</property>
@@ -493,7 +604,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                     <property name="column_spacing">12</property>
                                     <property name="row_spacing">6</property>
                                     <child>
-                                      <object class="GtkColorButton" id="cpuload_color4">
+                                      <object class="GtkColorButton" id="cpu_background_color">
                                         <property name="visible">True</property>
                                         <property name="can_focus">True</property>
                                         <property name="receives_default">True</property>
@@ -509,7 +620,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                       </packing>
                                     </child>
                                     <child>
-                                      <object class="GtkColorButton" id="cpuload_color3">
+                                      <object class="GtkColorButton" id="cpu4_color">
                                         <property name="visible">True</property>
                                         <property name="can_focus">True</property>
                                         <property name="receives_default">True</property>
@@ -524,7 +635,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                       </packing>
                                     </child>
                                     <child>
-                                      <object class="GtkColorButton" id="cpuload_color2">
+                                      <object class="GtkColorButton" id="cpu3_color">
                                         <property name="visible">True</property>
                                         <property name="can_focus">True</property>
                                         <property name="receives_default">True</property>
@@ -539,7 +650,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                       </packing>
                                     </child>
                                     <child>
-                                      <object class="GtkColorButton" id="cpuload_color1">
+                                      <object class="GtkColorButton" id="cpu2_color">
                                         <property name="visible">True</property>
                                         <property name="can_focus">True</property>
                                         <property name="receives_default">True</property>
@@ -554,7 +665,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                       </packing>
                                     </child>
                                     <child>
-                                      <object class="GtkColorButton" id="cpuload_color0">
+                                      <object class="GtkColorButton" id="cpu1_color">
                                         <property name="visible">True</property>
                                         <property name="can_focus">True</property>
                                         <property name="receives_default">True</property>
@@ -572,7 +683,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                         <property name="can_focus">False</property>
                                         <property name="label" translatable="yes">_User</property>
                                         <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">cpuload_color0</property>
+                                        <property name="mnemonic_widget">cpu1_color</property>
                                       </object>
                                       <packing>
                                         <property name="top_attach">1</property>
@@ -585,7 +696,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                         <property name="can_focus">False</property>
                                         <property name="label" translatable="yes">S_ystem</property>
                                         <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">cpuload_color1</property>
+                                        <property name="mnemonic_widget">cpu2_color</property>
                                       </object>
                                       <packing>
                                         <property name="left_attach">1</property>
@@ -600,7 +711,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                         <property name="can_focus">False</property>
                                         <property name="label" translatable="yes">N_ice</property>
                                         <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">cpuload_color2</property>
+                                        <property name="mnemonic_widget">cpu3_color</property>
                                       </object>
                                       <packing>
                                         <property name="left_attach">2</property>
@@ -615,7 +726,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                         <property name="can_focus">False</property>
                                         <property name="label" translatable="yes">I_OWait</property>
                                         <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">cpuload_color3</property>
+                                        <property name="mnemonic_widget">cpu4_color</property>
                                       </object>
                                       <packing>
                                         <property name="left_attach">3</property>
@@ -630,7 +741,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                         <property name="can_focus">False</property>
                                         <property name="label" translatable="yes">I_dle</property>
                                         <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">cpuload_color4</property>
+                                        <property name="mnemonic_widget">cpu_background_color</property>
                                       </object>
                                       <packing>
                                         <property name="left_attach">4</property>
@@ -670,7 +781,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                     <property name="column_spacing">12</property>
                                     <property name="row_spacing">6</property>
                                     <child>
-                                      <object class="GtkColorButton" id="memload_color0">
+                                      <object class="GtkColorButton" id="mem1_color">
                                         <property name="visible">True</property>
                                         <property name="can_focus">True</property>
                                         <property name="receives_default">True</property>
@@ -683,7 +794,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                       </packing>
                                     </child>
                                     <child>
-                                      <object class="GtkColorButton" id="memload_color1">
+                                      <object class="GtkColorButton" id="mem2_color">
                                         <property name="visible">True</property>
                                         <property name="can_focus">True</property>
                                         <property name="receives_default">True</property>
@@ -698,7 +809,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                       </packing>
                                     </child>
                                     <child>
-                                      <object class="GtkColorButton" id="memload_color2">
+                                      <object class="GtkColorButton" id="mem3_color">
                                         <property name="visible">True</property>
                                         <property name="can_focus">True</property>
                                         <property name="receives_default">True</property>
@@ -713,7 +824,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                       </packing>
                                     </child>
                                     <child>
-                                      <object class="GtkColorButton" id="memload_color3">
+                                      <object class="GtkColorButton" id="mem4_color">
                                         <property name="visible">True</property>
                                         <property name="can_focus">True</property>
                                         <property name="receives_default">True</property>
@@ -728,7 +839,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                       </packing>
                                     </child>
                                     <child>
-                                      <object class="GtkColorButton" id="memload_color4">
+                                      <object class="GtkColorButton" id="mem_background_color">
                                         <property name="visible">True</property>
                                         <property name="can_focus">True</property>
                                         <property name="receives_default">True</property>
@@ -749,7 +860,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                         <property name="can_focus">False</property>
                                         <property name="label" translatable="yes">_User</property>
                                         <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">memload_color0</property>
+                                        <property name="mnemonic_widget">mem1_color</property>
                                       </object>
                                       <packing>
                                         <property name="top_attach">1</property>
@@ -762,7 +873,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                         <property name="can_focus">False</property>
                                         <property name="label" translatable="yes">Sh_ared</property>
                                         <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">memload_color1</property>
+                                        <property name="mnemonic_widget">mem2_color</property>
                                       </object>
                                       <packing>
                                         <property name="left_attach">1</property>
@@ -777,7 +888,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                         <property name="can_focus">False</property>
                                         <property name="label" translatable="yes">_Buffers</property>
                                         <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">memload_color2</property>
+                                        <property name="mnemonic_widget">mem3_color</property>
                                       </object>
                                       <packing>
                                         <property name="left_attach">2</property>
@@ -792,7 +903,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                         <property name="can_focus">False</property>
                                         <property name="label" translatable="yes">Cach_ed</property>
                                         <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">memload_color3</property>
+                                        <property name="mnemonic_widget">mem4_color</property>
                                       </object>
                                       <packing>
                                         <property name="left_attach">3</property>
@@ -807,7 +918,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                         <property name="can_focus">False</property>
                                         <property name="label" translatable="yes">F_ree</property>
                                         <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">memload_color4</property>
+                                        <property name="mnemonic_widget">mem_background_color</property>
                                       </object>
                                       <packing>
                                         <property name="left_attach">4</property>
@@ -851,7 +962,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                     <property name="column_spacing">12</property>
                                     <property name="row_spacing">6</property>
                                     <child>
-                                      <object class="GtkColorButton" id="netload_color0">
+                                      <object class="GtkColorButton" id="net1_color">
                                         <property name="visible">True</property>
                                         <property name="can_focus">True</property>
                                         <property name="receives_default">True</property>
@@ -864,7 +975,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                       </packing>
                                     </child>
                                     <child>
-                                      <object class="GtkColorButton" id="netload_color1">
+                                      <object class="GtkColorButton" id="net2_color">
                                         <property name="visible">True</property>
                                         <property name="can_focus">True</property>
                                         <property name="receives_default">True</property>
@@ -879,7 +990,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                       </packing>
                                     </child>
                                     <child>
-                                      <object class="GtkColorButton" id="netload_color2">
+                                      <object class="GtkColorButton" id="net3_color">
                                         <property name="visible">True</property>
                                         <property name="can_focus">True</property>
                                         <property name="receives_default">True</property>
@@ -894,7 +1005,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                       </packing>
                                     </child>
                                     <child>
-                                      <object class="GtkColorButton" id="netload_color3">
+                                      <object class="GtkColorButton" id="net_background_color">
                                         <property name="visible">True</property>
                                         <property name="can_focus">True</property>
                                         <property name="receives_default">True</property>
@@ -915,7 +1026,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                         <property name="can_focus">False</property>
                                         <property name="label" translatable="yes">_In</property>
                                         <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">netload_color0</property>
+                                        <property name="mnemonic_widget">net1_color</property>
                                       </object>
                                       <packing>
                                         <property name="top_attach">1</property>
@@ -928,7 +1039,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                         <property name="can_focus">False</property>
                                         <property name="label" translatable="yes">_Out</property>
                                         <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">netload_color1</property>
+                                        <property name="mnemonic_widget">net2_color</property>
                                       </object>
                                       <packing>
                                         <property name="left_attach">1</property>
@@ -943,7 +1054,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                         <property name="can_focus">False</property>
                                         <property name="label" translatable="yes">_Local</property>
                                         <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">netload_color2</property>
+                                        <property name="mnemonic_widget">net3_color</property>
                                       </object>
                                       <packing>
                                         <property name="left_attach">2</property>
@@ -958,7 +1069,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                         <property name="can_focus">False</property>
                                         <property name="label" translatable="yes">_Background</property>
                                         <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">netload_color3</property>
+                                        <property name="mnemonic_widget">net_background_color</property>
                                       </object>
                                       <packing>
                                         <property name="left_attach">3</property>
@@ -1002,7 +1113,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                     <property name="column_spacing">12</property>
                                     <property name="row_spacing">6</property>
                                     <child>
-                                      <object class="GtkColorButton" id="swapload_color0">
+                                      <object class="GtkColorButton" id="swap1_color">
                                         <property name="visible">True</property>
                                         <property name="can_focus">True</property>
                                         <property name="receives_default">True</property>
@@ -1015,7 +1126,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                       </packing>
                                     </child>
                                     <child>
-                                      <object class="GtkColorButton" id="swapload_color1">
+                                      <object class="GtkColorButton" id="swap_background_color">
                                         <property name="visible">True</property>
                                         <property name="can_focus">True</property>
                                         <property name="receives_default">True</property>
@@ -1036,7 +1147,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                         <property name="can_focus">False</property>
                                         <property name="label" translatable="yes">_Used</property>
                                         <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">swapload_color0</property>
+                                        <property name="mnemonic_widget">swap1_color</property>
                                       </object>
                                       <packing>
                                         <property name="top_attach">1</property>
@@ -1049,7 +1160,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                         <property name="can_focus">False</property>
                                         <property name="label" translatable="yes">_Free</property>
                                         <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">swapload_color1</property>
+                                        <property name="mnemonic_widget">swap_background_color</property>
                                       </object>
                                       <packing>
                                         <property name="left_attach">1</property>
@@ -1093,7 +1204,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                     <property name="column_spacing">12</property>
                                     <property name="row_spacing">6</property>
                                     <child>
-                                      <object class="GtkColorButton" id="loadavg_color0">
+                                      <object class="GtkColorButton" id="load1_color">
                                         <property name="visible">True</property>
                                         <property name="can_focus">True</property>
                                         <property name="receives_default">True</property>
@@ -1106,7 +1217,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                       </packing>
                                     </child>
                                     <child>
-                                      <object class="GtkColorButton" id="loadavg_color1">
+                                      <object class="GtkColorButton" id="load_background_color">
                                         <property name="visible">True</property>
                                         <property name="can_focus">True</property>
                                         <property name="receives_default">True</property>
@@ -1127,7 +1238,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                         <property name="can_focus">False</property>
                                         <property name="label" translatable="yes">_Average</property>
                                         <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">loadavg_color0</property>
+                                        <property name="mnemonic_widget">load1_color</property>
                                       </object>
                                       <packing>
                                         <property name="top_attach">1</property>
@@ -1140,7 +1251,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                         <property name="can_focus">False</property>
                                         <property name="label" translatable="yes">_Background</property>
                                         <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">loadavg_color1</property>
+                                        <property name="mnemonic_widget">load_background_color</property>
                                       </object>
                                       <packing>
                                         <property name="left_attach">1</property>
@@ -1184,7 +1295,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                     <property name="column_spacing">12</property>
                                     <property name="row_spacing">6</property>
                                     <child>
-                                      <object class="GtkColorButton" id="diskload_color0">
+                                      <object class="GtkColorButton" id="disk1_color">
                                         <property name="visible">True</property>
                                         <property name="can_focus">True</property>
                                         <property name="receives_default">True</property>
@@ -1197,7 +1308,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                       </packing>
                                     </child>
                                     <child>
-                                      <object class="GtkColorButton" id="diskload_color1">
+                                      <object class="GtkColorButton" id="disk2_color">
                                         <property name="visible">True</property>
                                         <property name="can_focus">True</property>
                                         <property name="receives_default">True</property>
@@ -1212,7 +1323,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                       </packing>
                                     </child>
                                     <child>
-                                      <object class="GtkColorButton" id="diskload_color2">
+                                      <object class="GtkColorButton" id="disk_background_color">
                                         <property name="visible">True</property>
                                         <property name="can_focus">True</property>
                                         <property name="receives_default">True</property>
@@ -1233,7 +1344,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                         <property name="can_focus">False</property>
                                         <property name="label" translatable="yes">_Read</property>
                                         <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">diskload_color0</property>
+                                        <property name="mnemonic_widget">disk1_color</property>
                                       </object>
                                       <packing>
                                         <property name="top_attach">1</property>
@@ -1246,7 +1357,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                         <property name="can_focus">False</property>
                                         <property name="label" translatable="yes">_Write</property>
                                         <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">diskload_color1</property>
+                                        <property name="mnemonic_widget">disk2_color</property>
                                       </object>
                                       <packing>
                                         <property name="left_attach">1</property>
@@ -1261,7 +1372,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                         <property name="can_focus">False</property>
                                         <property name="label" translatable="yes">_Background</property>
                                         <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">diskload_color2</property>
+                                        <property name="mnemonic_widget">disk_background_color</property>
                                       </object>
                                       <packing>
                                         <property name="left_attach">2</property>
@@ -1319,6 +1430,21 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
             <property name="can_focus">False</property>
             <property name="layout_style">end</property>
             <child>
+              <object class="GtkButton" id="menuitems">
+                <property name="label" translatable="yes">Configure menu items...</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="use_action_appearance">False</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">0</property>
+                <property name="secondary">True</property>
+              </packing>
+            </child>
+            <child>
               <object class="GtkButton" id="close">
                 <property name="label">gtk-close</property>
                 <property name="visible">True</property>
@@ -1330,7 +1456,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">False</property>
-                <property name="position">0</property>
+                <property name="position">1</property>
               </packing>
             </child>
           </object>
@@ -1344,6 +1470,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
       </object>
     </child>
     <action-widgets>
+      <action-widget response="1">menuitems</action-widget>
       <action-widget response="0">close</action-widget>
     </action-widgets>
   </object>

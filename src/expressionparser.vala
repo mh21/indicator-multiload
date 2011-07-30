@@ -133,6 +133,8 @@ public class ExpressionParser {
                                     continue;
                                 var value = data.values[j];
                                 if (function == "") {
+                                    result += value.to_string();
+                                } else if (function == "decimals") {
                                     result += "%.2f".printf(value);
                                 } else if (function == "size") {
                                     result += Utils.format_size(value);

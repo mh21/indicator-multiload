@@ -1,5 +1,541 @@
 <schemalist>
+    <schema id="de.mh21.indicator.multiload.graph" gettext-domain="@GETTEXT_PACKAGE@">
+        <key name="alpha" type="q">
+            <default>16384</default>
+            <_summary>Graph alpha value</_summary>
+        </key>
+
+        <key name="background-color" type="s">
+            <default>"#000000"</default>
+            <_summary>Graph background color</_summary>
+        </key>
+
+        <key name="enabled" type="b">
+            <default>true</default>
+            <_summary>Graph visibility</_summary>
+        </key>
+
+        <key name="minimum" type="s">
+            <default>"1"</default>
+            <_summary>Minimum value for upper graph edge</_summary>
+        </key>
+
+        <key name="maximum" type="s">
+            <default>"0"</default>
+            <_summary>Maximum value for upper graph edge, zero means unlimited</_summary>
+        </key>
+
+        <key name="smooth" type="s">
+            <default>"1"</default>
+            <_summary>Number of values used for smooth graph scaling</_summary>
+        </key>
+
+        <key name="traces" type="as">
+            <default>[ "custom1" ]</default>
+            <_summary>Available traces</_summary>
+        </key>
+    </schema>
+
+    <schema id="de.mh21.indicator.multiload.graph.trace" gettext-domain="@GETTEXT_PACKAGE@">
+        <key name="color" type="s">
+            <default>"#0072b3"</default>
+            <_summary>Trace color</_summary>
+        </key>
+
+        <key name="expression" type="s">
+            <default>"$(cpu.inuse)"</default>
+            <_summary>Trace expression</_summary>
+        </key>
+
+        <key name="enabled" type="b">
+            <default>true</default>
+            <_summary>Trace visibility</_summary>
+        </key>
+    </schema>
+
+    <schema id="de.mh21.indicator.multiload.graphs.cpu" path="/apps/indicators/multiload/cpu/" gettext-domain="@GETTEXT_PACKAGE@">
+        <key name="alpha" type="q">
+            <default>16384</default>
+            <_summary>Graph alpha value</_summary>
+        </key>
+
+        <key name="background-color" type="s">
+            <default>"#000000"</default>
+            <_summary>Graph background color</_summary>
+        </key>
+
+        <key name="enabled" type="b">
+            <default>true</default>
+            <_summary>Graph visibility</_summary>
+        </key>
+
+        <key name="minimum" type="s">
+            <default>"1"</default>
+            <_summary>Minimum value for upper graph edge</_summary>
+        </key>
+
+        <key name="maximum" type="s">
+            <default>"0"</default>
+            <_summary>Maximum value for upper graph edge, zero means unlimited</_summary>
+        </key>
+
+        <key name="smooth" type="s">
+            <default>"1"</default>
+            <_summary>Number of values used for smooth graph scaling</_summary>
+        </key>
+
+        <key name="traces" type="as">
+            <default>[ "cpu1", "cpu2", "cpu3", "cpu4" ]</default>
+            <_summary>Traces shown</_summary>
+        </key>
+    </schema>
+
+    <schema id="de.mh21.indicator.multiload.graphs.mem" path="/apps/indicators/multiload/mem/" gettext-domain="@GETTEXT_PACKAGE@">
+        <key name="alpha" type="q">
+            <default>16384</default>
+            <_summary>Graph alpha value</_summary>
+        </key>
+
+        <key name="background-color" type="s">
+            <default>"#000000"</default>
+            <_summary>Graph background color</_summary>
+        </key>
+
+        <key name="enabled" type="b">
+            <default>false</default>
+            <_summary>Graph visibility</_summary>
+        </key>
+
+        <key name="minimum" type="s">
+            <default>"$(mem.total)"</default>
+            <_summary>Minimum value for upper graph edge</_summary>
+        </key>
+
+        <key name="maximum" type="s">
+            <default>"0"</default>
+            <_summary>Maximum value for upper graph edge, zero means unlimited</_summary>
+        </key>
+
+        <key name="smooth" type="s">
+            <default>"1"</default>
+            <_summary>Number of values used for smooth graph scaling</_summary>
+        </key>
+
+        <key name="traces" type="as">
+            <default>[ "mem1", "mem2", "mem3", "mem4" ]</default>
+            <_summary>Traces shown</_summary>
+        </key>
+    </schema>
+
+    <schema id="de.mh21.indicator.multiload.graphs.net" path="/apps/indicators/multiload/net/" gettext-domain="@GETTEXT_PACKAGE@">
+        <key name="alpha" type="q">
+            <default>16384</default>
+            <_summary>Graph alpha value</_summary>
+        </key>
+
+        <key name="background-color" type="s">
+            <default>"#000000"</default>
+            <_summary>Graph background color</_summary>
+        </key>
+
+        <key name="enabled" type="b">
+            <default>false</default>
+            <_summary>Graph visibility</_summary>
+        </key>
+
+        <key name="minimum" type="s">
+            <default>"5000"</default>
+            <_summary>Minimum value for upper graph edge</_summary>
+        </key>
+
+        <key name="maximum" type="s">
+            <default>"0"</default>
+            <_summary>Maximum value for upper graph edge, zero means unlimited</_summary>
+        </key>
+
+        <key name="smooth" type="s">
+            <default>"10"</default>
+            <_summary>Number of values used for smooth graph scaling</_summary>
+        </key>
+
+        <key name="traces" type="as">
+            <default>[ "net1", "net2", "net3" ]</default>
+            <_summary>Traces shown</_summary>
+        </key>
+    </schema>
+
+    <schema id="de.mh21.indicator.multiload.graphs.swap" path="/apps/indicators/multiload/swap/" gettext-domain="@GETTEXT_PACKAGE@">
+        <key name="alpha" type="q">
+            <default>16384</default>
+            <_summary>Graph alpha value</_summary>
+        </key>
+
+        <key name="background-color" type="s">
+            <default>"#000000"</default>
+            <_summary>Graph background color</_summary>
+        </key>
+
+        <key name="enabled" type="b">
+            <default>false</default>
+            <_summary>Graph visibility</_summary>
+        </key>
+
+        <key name="minimum" type="s">
+            <default>"$(swap.total)"</default>
+            <_summary>Minimum value for upper graph edge</_summary>
+        </key>
+
+        <key name="maximum" type="s">
+            <default>"0"</default>
+            <_summary>Maximum value for upper graph edge, zero means unlimited</_summary>
+        </key>
+
+        <key name="smooth" type="s">
+            <default>"1"</default>
+            <_summary>Number of values used for smooth graph scaling</_summary>
+        </key>
+
+        <key name="traces" type="as">
+            <default>[ "swap1" ]</default>
+            <_summary>Traces shown</_summary>
+        </key>
+    </schema>
+
+    <schema id="de.mh21.indicator.multiload.graphs.load" path="/apps/indicators/multiload/load/" gettext-domain="@GETTEXT_PACKAGE@">
+        <key name="alpha" type="q">
+            <default>16384</default>
+            <_summary>Graph alpha value</_summary>
+        </key>
+
+        <key name="background-color" type="s">
+            <default>"#000000"</default>
+            <_summary>Graph background color</_summary>
+        </key>
+
+        <key name="enabled" type="b">
+            <default>false</default>
+            <_summary>Graph visibility</_summary>
+        </key>
+
+        <key name="minimum" type="s">
+            <default>"$(load.cpus)"</default>
+            <_summary>Minimum value for upper graph edge</_summary>
+        </key>
+
+        <key name="maximum" type="s">
+            <default>"0"</default>
+            <_summary>Maximum value for upper graph edge, zero means unlimited</_summary>
+        </key>
+
+        <key name="smooth" type="s">
+            <default>"1"</default>
+            <_summary>Number of values used for smooth graph scaling</_summary>
+        </key>
+
+        <key name="traces" type="as">
+            <default>[ "load1" ]</default>
+            <_summary>Traces shown</_summary>
+        </key>
+    </schema>
+
+    <schema id="de.mh21.indicator.multiload.graphs.disk" path="/apps/indicators/multiload/disk/" gettext-domain="@GETTEXT_PACKAGE@">
+        <key name="alpha" type="q">
+            <default>16384</default>
+            <_summary>Graph alpha value</_summary>
+        </key>
+
+        <key name="background-color" type="s">
+            <default>"#000000"</default>
+            <_summary>Graph background color</_summary>
+        </key>
+
+        <key name="enabled" type="b">
+            <default>false</default>
+            <_summary>Graph visibility</_summary>
+        </key>
+
+        <key name="minimum" type="s">
+            <default>"1000"</default>
+            <_summary>Minimum value for upper graph edge</_summary>
+        </key>
+
+        <key name="maximum" type="s">
+            <default>"0"</default>
+            <_summary>Maximum value for upper graph edge, zero means unlimited</_summary>
+        </key>
+
+        <key name="smooth" type="s">
+            <default>"10"</default>
+            <_summary>Number of values used for smooth graph scaling</_summary>
+        </key>
+
+        <key name="traces" type="as">
+            <default>[ "disk1", "disk2" ]</default>
+            <_summary>Traces shown</_summary>
+        </key>
+    </schema>
+
+    <schema id="de.mh21.indicator.multiload.traces.cpu1" path="/apps/indicators/multiload/cpu/cpu1/" gettext-domain="@GETTEXT_PACKAGE@">
+        <key name="color" type="s">
+            <default>"#0072b3"</default>
+            <_summary>Trace color</_summary>
+        </key>
+
+        <key name="expression" type="s">
+            <default>"$(cpu.user)"</default>
+            <_summary>Trace expression</_summary>
+        </key>
+
+        <key name="enabled" type="b">
+            <default>true</default>
+            <_summary>Trace visibility</_summary>
+        </key>
+    </schema>
+
+    <schema id="de.mh21.indicator.multiload.traces.cpu2" path="/apps/indicators/multiload/cpu/cpu2/" gettext-domain="@GETTEXT_PACKAGE@">
+        <key name="color" type="s">
+            <default>"#0092e6"</default>
+            <_summary>Trace color</_summary>
+        </key>
+
+        <key name="expression" type="s">
+            <default>"$(cpu.nice)"</default>
+            <_summary>Trace expression</_summary>
+        </key>
+
+        <key name="enabled" type="b">
+            <default>true</default>
+            <_summary>Trace visibility</_summary>
+        </key>
+    </schema>
+
+    <schema id="de.mh21.indicator.multiload.traces.cpu3" path="/apps/indicators/multiload/cpu/cpu3/" gettext-domain="@GETTEXT_PACKAGE@">
+        <key name="color" type="s">
+            <default>"#00a3ff"</default>
+            <_summary>Trace color</_summary>
+        </key>
+
+        <key name="expression" type="s">
+            <default>"$(cpu.sys)"</default>
+            <_summary>Trace expression</_summary>
+        </key>
+
+        <key name="enabled" type="b">
+            <default>true</default>
+            <_summary>Trace visibility</_summary>
+        </key>
+    </schema>
+
+    <schema id="de.mh21.indicator.multiload.traces.cpu4" path="/apps/indicators/multiload/cpu/cpu4/" gettext-domain="@GETTEXT_PACKAGE@">
+        <key name="color" type="s">
+            <default>"#002f3d"</default>
+            <_summary>Trace color</_summary>
+        </key>
+
+        <key name="expression" type="s">
+            <default>"$(cpu.io)"</default>
+            <_summary>Trace expression</_summary>
+        </key>
+
+        <key name="enabled" type="b">
+            <default>true</default>
+            <_summary>Trace visibility</_summary>
+        </key>
+    </schema>
+
+    <schema id="de.mh21.indicator.multiload.traces.mem1" path="/apps/indicators/multiload/mem/mem1/" gettext-domain="@GETTEXT_PACKAGE@">
+        <key name="color" type="s">
+            <default>"#00b35b"</default>
+            <_summary>Trace color</_summary>
+        </key>
+
+        <key name="expression" type="s">
+            <default>"$(mem.user)"</default>
+            <_summary>Trace expression</_summary>
+        </key>
+
+        <key name="enabled" type="b">
+            <default>true</default>
+            <_summary>Trace visibility</_summary>
+        </key>
+    </schema>
+
+    <schema id="de.mh21.indicator.multiload.traces.mem2" path="/apps/indicators/multiload/mem/mem2/" gettext-domain="@GETTEXT_PACKAGE@">
+        <key name="color" type="s">
+            <default>"#00e675"</default>
+            <_summary>Trace color</_summary>
+        </key>
+
+        <key name="expression" type="s">
+            <default>"$(mem.shared)"</default>
+            <_summary>Trace expression</_summary>
+        </key>
+
+        <key name="enabled" type="b">
+            <default>true</default>
+            <_summary>Trace visibility</_summary>
+        </key>
+    </schema>
+
+    <schema id="de.mh21.indicator.multiload.traces.mem3" path="/apps/indicators/multiload/mem/mem3/" gettext-domain="@GETTEXT_PACKAGE@">
+        <key name="color" type="s">
+            <default>"#00ff82"</default>
+            <_summary>Trace color</_summary>
+        </key>
+
+        <key name="expression" type="s">
+            <default>"$(mem.buffer)"</default>
+            <_summary>Trace expression</_summary>
+        </key>
+
+        <key name="enabled" type="b">
+            <default>true</default>
+            <_summary>Trace visibility</_summary>
+        </key>
+    </schema>
+
+    <schema id="de.mh21.indicator.multiload.traces.mem4" path="/apps/indicators/multiload/mem/mem4/" gettext-domain="@GETTEXT_PACKAGE@">
+        <key name="color" type="s">
+            <default>"#aaf5d0"</default>
+            <_summary>Trace color</_summary>
+        </key>
+
+        <key name="expression" type="s">
+            <default>"$(mem.cached)"</default>
+            <_summary>Trace expression</_summary>
+        </key>
+
+        <key name="enabled" type="b">
+            <default>true</default>
+            <_summary>Trace visibility</_summary>
+        </key>
+    </schema>
+
+    <schema id="de.mh21.indicator.multiload.traces.net1" path="/apps/indicators/multiload/net/net1/" gettext-domain="@GETTEXT_PACKAGE@">
+        <key name="color" type="s">
+            <default>"#fce94f"</default>
+            <_summary>Trace color</_summary>
+        </key>
+
+        <key name="expression" type="s">
+            <default>"$(net.down)"</default>
+            <_summary>Trace expression</_summary>
+        </key>
+
+        <key name="enabled" type="b">
+            <default>true</default>
+            <_summary>Trace visibility</_summary>
+        </key>
+    </schema>
+
+    <schema id="de.mh21.indicator.multiload.traces.net2" path="/apps/indicators/multiload/net/net2/" gettext-domain="@GETTEXT_PACKAGE@">
+        <key name="color" type="s">
+            <default>"#edd400"</default>
+            <_summary>Trace color</_summary>
+        </key>
+
+        <key name="expression" type="s">
+            <default>"$(net.up)"</default>
+            <_summary>Trace expression</_summary>
+        </key>
+
+        <key name="enabled" type="b">
+            <default>true</default>
+            <_summary>Trace visibility</_summary>
+        </key>
+    </schema>
+
+    <schema id="de.mh21.indicator.multiload.traces.net3" path="/apps/indicators/multiload/net/net3/" gettext-domain="@GETTEXT_PACKAGE@">
+        <key name="color" type="s">
+            <default>"#c4a000"</default>
+            <_summary>Trace color</_summary>
+        </key>
+
+        <key name="expression" type="s">
+            <default>"$(net.local)"</default>
+            <_summary>Trace expression</_summary>
+        </key>
+
+        <key name="enabled" type="b">
+            <default>true</default>
+            <_summary>Trace visibility</_summary>
+        </key>
+    </schema>
+
+    <schema id="de.mh21.indicator.multiload.traces.swap1" path="/apps/indicators/multiload/swap/swap1/" gettext-domain="@GETTEXT_PACKAGE@">
+        <key name="color" type="s">
+            <default>"#8b00c3"</default>
+            <_summary>Trace color</_summary>
+        </key>
+
+        <key name="expression" type="s">
+            <default>"$(swap.used)"</default>
+            <_summary>Trace expression</_summary>
+        </key>
+
+        <key name="enabled" type="b">
+            <default>true</default>
+            <_summary>Trace visibility</_summary>
+        </key>
+    </schema>
+
+    <schema id="de.mh21.indicator.multiload.traces.load1" path="/apps/indicators/multiload/load/load1/" gettext-domain="@GETTEXT_PACKAGE@">
+        <key name="color" type="s">
+            <default>"#d50000"</default>
+            <_summary>Trace color</_summary>
+        </key>
+
+        <key name="expression" type="s">
+            <default>"$(load.avg)"</default>
+            <_summary>Trace expression</_summary>
+        </key>
+
+        <key name="enabled" type="b">
+            <default>true</default>
+            <_summary>Trace visibility</_summary>
+        </key>
+    </schema>
+
+    <schema id="de.mh21.indicator.multiload.traces.disk1" path="/apps/indicators/multiload/disk/disk1/" gettext-domain="@GETTEXT_PACKAGE@">
+        <key name="color" type="s">
+            <default>"#c65000"</default>
+            <_summary>Trace color</_summary>
+        </key>
+
+        <key name="expression" type="s">
+            <default>"$(disk.read)"</default>
+            <_summary>Trace expression</_summary>
+        </key>
+
+        <key name="enabled" type="b">
+            <default>true</default>
+            <_summary>Trace visibility</_summary>
+        </key>
+    </schema>
+
+    <schema id="de.mh21.indicator.multiload.traces.disk2" path="/apps/indicators/multiload/disk/disk2/" gettext-domain="@GETTEXT_PACKAGE@">
+        <key name="color" type="s">
+            <default>"#ff6700"</default>
+            <_summary>Trace color</_summary>
+        </key>
+
+        <key name="expression" type="s">
+            <default>"$(disk.write)"</default>
+            <_summary>Trace expression</_summary>
+        </key>
+
+        <key name="enabled" type="b">
+            <default>true</default>
+            <_summary>Trace visibility</_summary>
+        </key>
+    </schema>
+
     <schema id="de.mh21.indicator.multiload" path="/apps/indicators/multiload/" gettext-domain="@GETTEXT_PACKAGE@">
+        <key name="graphs" type="as">
+            <default>[ "cpu", "mem", "net", "swap", "load", "disk" ]</default>
+            <_summary>Available graphs</_summary>
+        </key>
+
         <key name="cpuload-alpha4" type="q">
             <default>16384</default>
             <_summary>CPU graph alpha</_summary>
@@ -191,13 +727,13 @@
             <_summary>Automatically start on session startup</_summary>
         </key>
 
-        <key name="menu-entries" type="as">
+        <key name="menu-expressions" type="as">
             <default>[
                 "CPU: $(percent(cpu.inuse)), iowait $(percent(cpu.io))",
                 "Mem: $(size(mem.user)), cache $(size(mem.cache))",
                 "Net: down $(speed(net.down)), up $(speed(net.up))",
-                "Load: $load.avg",
                 "Swap: $(size(swap.used))",
+                "Load: $(decimals(load.avg))",
                 "Disk: read $(speed(disk.read)), write $(speed(disk.write))"
             ]</default>
             <_summary>Information shown as menu entries</_summary>

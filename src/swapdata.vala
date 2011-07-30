@@ -25,7 +25,9 @@ public class SwapData : Data {
         GTop.Swap swap;
         GTop.get_swap(out swap);
 
-        this.values = { swap.used, swap.total };
+        var total = swap.total > 0 ? swap.total : 1;
+
+        this.values = { swap.used, total };
     }
 }
 

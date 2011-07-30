@@ -16,10 +16,12 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.                *
  ******************************************************************************/
 
-public class IconTraceData : GLib.Object {
+public class TraceData : GLib.Object {
     private double[] _values;
 
     public Gdk.Color color { get; set; }
+    public string expression { get; set; }
+    public bool enabled { get; set; }
     public double[] values {
         get {
             return _values;

@@ -27,7 +27,7 @@ public class MultiLoadIndicator : Object {
 
     private uint _size;
     private uint _speed;
-    private IconData[] _icon_datas;
+    private GraphData[] _graphdatas;
     private Gtk.Menu _menu;
 
     public uint height { get; set; default = 22; }
@@ -39,8 +39,8 @@ public class MultiLoadIndicator : Object {
         }
         set {
             this._size = value;
-            foreach (var icon_data in this._icon_datas)
-                icon_data.trace_length = value;
+            foreach (var graphdata in this._graphdatas)
+                graphdata.trace_length = value;
         }
     }
 
@@ -62,12 +62,12 @@ public class MultiLoadIndicator : Object {
                         data.update();
 
                     uint menu_position = 2;
-                    for (uint i = 0, isize = this._icon_datas.length; i < isize; ++i) {
-                        IconData icon_data = this._icon_datas[i];
-                        icon_data.update(this.datas);
+                    for (uint i = 0, isize = this._graphdatas.length; i < isize; ++i) {
+                        GraphData graphdata = this._graphdatas[i];
+                        graphdata.update(this.datas);
                     }
                     this.menudata.update(this.datas);
-                    var menuitemlabels = this.menudata.menuitems;
+                    var menuitemlabels = this.menudata.labels;
                     var length = menuitemlabels.length;
                     for (uint j = 0; j < length; ++j) {
                         Gtk.MenuItem item;
@@ -107,9 +107,14 @@ public class MultiLoadIndicator : Object {
         }
     }
 
-    public IconData[] icon_datas {
+    public GraphData[] graphdatas {
         get {
-            return this._icon_datas;
+            return this._graphdatas;
+        }
+        set {
+            this._graphdatas = value;
+            foreach (var graphdata in this._graphdatas)
+                graphdata.trace_length = this._size;
         }
     }
 
@@ -159,12 +164,6 @@ public class MultiLoadIndicator : Object {
         DirUtils.remove(this.icondirectory);
     }
 
-
-    public void add_icon_data(IconData data) {
-        data.trace_length = this._size;
-        this._icon_datas += data;
-    }
-
     private string iconname(uint index) {
         return @"indicator-multiload-graphs-$index";
     }
@@ -175,8 +174,8 @@ public class MultiLoadIndicator : Object {
 
     private string write(uint index) {
         uint count = 0;
-        foreach (var icon_data in this._icon_datas)
-            if (icon_data.enabled)
+        foreach (var graphdata in this._graphdatas)
+            if (graphdata.enabled)
                 ++count;
         this.lastwidth = (int)(count * (this._size + 2)) - 2;
         var surface = new Cairo.ImageSurface(Cairo.Format.ARGB32,
@@ -185,22 +184,24 @@ public class MultiLoadIndicator : Object {
         ctx.set_antialias(Cairo.Antialias.NONE);
         ctx.set_line_width(1);
         uint offset = 0;
-        foreach (var icon_data in this._icon_datas) {
-            if (!icon_data.enabled)
+        foreach (var graphdata in this._graphdatas) {
+            if (!graphdata.enabled)
                 continue;
-            icon_data.set_source_color(ctx);
+            graphdata.set_source_color(ctx);
             ctx.rectangle(offset, 0, this._size, this.height);
             ctx.fill();
-            var values = new double[icon_data.traces.length, this._size];
-            var scale = icon_data.scale;
+            var tracedatas = graphdata.tracedatas;
+            var values = new double[tracedatas.length, this._size];
+            var scale = graphdata.scale;
             for (uint j = 0, jsize = values.length[0]; j < jsize; ++j) {
-                unowned double[] trace_data = icon_data.traces[j].values;
+                var enabled = tracedatas[j].enabled;
+                unowned double[] tracedata = tracedatas[j].values;
                 for (uint i = 0, isize = values.length[1]; i < isize; ++i)
-                    values[j, i] = (j > 0 ? values[j - 1, i] : 0) + trace_data[i] / scale;
+                    values[j, i] = (j > 0 ? values[j - 1, i] : 0) + (enabled ? tracedata[i] : 0) / scale;
             }
 
             for (int j = values.length[0] - 1; j >= 0; --j) {
-                Gdk.cairo_set_source_color(ctx, icon_data.traces[j].color);
+                Gdk.cairo_set_source_color(ctx, graphdata.tracedatas[j].color);
                 for (uint i = 0, isize = values.length[1]; i < isize; ++i) {
                     // the baseline is outside the canvas
                     ctx.move_to(0.5 + offset + i, this.height + 0.5);
