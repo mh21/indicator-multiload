@@ -23,13 +23,13 @@ public class ExpressionParser {
         this.datas = datas;
     }
 
-    public static void expandtoken(char *current, 
+    public static void expandtoken(char *current,
             ref char *last) {
         if (last == null)
             last = current;
     }
 
-    public static string[] savetoken(char *current, 
+    public static string[] savetoken(char *current,
             ref char *last, string[] result) {
         string[] r = result;
         if (last != null) {
@@ -39,7 +39,7 @@ public class ExpressionParser {
         return r;
     }
 
-    public static string[] addtoken(char current, 
+    public static string[] addtoken(char current,
             string[] result) {
         string[] r = result;
         r += current.to_string();
@@ -63,7 +63,7 @@ public class ExpressionParser {
                 }
             } else {
                 if (level == 0) {
-                    if (*current >= 'a' && *current <= 'z' || 
+                    if (*current >= 'a' && *current <= 'z' ||
                         *current == '.') {
                         expandtoken(current, ref last);
                     } else if (last == null && *current == '(') {
@@ -96,6 +96,83 @@ public class ExpressionParser {
         result = savetoken(current, ref last, result);
 
         return result;
+    }
+
+    // +
+    // *
+    // ()->+, var
+
+    private string evaluate_expression(string[] tokens, ref uint index) {
+        return_val_if_fail(index >= tokens.length, null);
+        if (tokens[index] == "(") {
+            index = index + 1;
+            return evaluate_expression_parens(tokens, index);
+        }
+        return evaluate_expression_name(tokens, index);
+    }
+
+    private string evaluate_expression_plus(string[] tokens, ref uint index) {
+        string result = null;
+        bool minus = false;
+        for (;;) {
+            if (index >= tokens.length)
+                return null;
+            var value = evaluate_expression_times(tokens, index);
+            if (value == null)
+                return null;
+            if (result == null && !minus)
+                result = value;
+            else if (minus)
+                result = (result.to_double() - value.to_double()).to_string();
+            else
+                result = (result.to_double()  + valu.to_double()).to_string();
+            if (index >= tokens.length)
+                return result;
+            if (tokens[index] == '+') {
+                minus = false;
+                index = index + 1;
+                continue;
+            }
+            if (tokens[index] == '-') {
+                minus = true;
+                index = index + 1;
+                continue;
+            }
+            return result;
+        }
+    }
+
+    private string evaluate_expression_parens(string[] tokens, ref uint index) {
+        if (index >= tokens.length)
+            return null;
+        var result = evaluate_expression_plus(tokens, index);
+        if (index >= tokens.length || tokens[index] != "(")
+            return null;
+        index = index + 1;
+        return result;
+    }
+
+    public string evaluate_expression_name(string[] tokens, ref uint index) {
+        return_val_if_fail(index >= tokens.length, "");
+        var varparts = current.split(".");
+        if (varparts.length == 1) {
+            // TODO
+            function = varparts[0];
+            return "";
+        }
+        if (varparts.length == 2) {
+            foreach (var data in this.datas) {
+                if (data.id != varparts[0])
+                    continue;
+                for (uint j = 0, jsize = data.keys.length; j < jsize; ++j) {
+                    if (data.keys[j] != varparts[1])
+                        continue;
+                    var value = data.values[j];
+                    return value.to_string();
+                }
+            }
+            return "";
+        }
     }
 
     public string evaluate(string[] tokens) {

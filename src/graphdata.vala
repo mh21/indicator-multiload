@@ -25,7 +25,7 @@ public class GraphData : GLib.Object {
     private double[] scalerhistory;
 
     public string minimum { get; set; }
-    public string maximum { get; set; } // TODO not used
+    public string maximum { get; set; }
     public string smooth { 
         get {
             return this._smooth;
