@@ -264,6 +264,20 @@ public class Main : Application {
     }
 
     public static int main(string[] args) {
+        // Data[] datas = { new CpuData(), new MemData(), new NetData(),
+        //         new SwapData(), new LoadData(), new DiskData() };
+        // foreach (var data in datas)
+        //     data.update();
+        // var parser = new ExpressionParser(datas);
+        // var tokens = parser.tokenize(args[1]);
+        // stdout.printf("Original: %s\n", args[1]);
+        // stdout.printf("Tokens:");
+        // foreach (var token in tokens)
+        //     stdout.printf(" '%s'", token);
+        // stdout.printf("\n");
+        // stdout.printf("Result: %s\n", parser.evaluate(tokens));
+        // return 1;
+
         Intl.bindtextdomain(Config.GETTEXT_PACKAGE, Config.PACKAGE_LOCALE_DIR);
         Intl.bind_textdomain_codeset(Config.GETTEXT_PACKAGE, "UTF-8");
         Intl.textdomain(Config.GETTEXT_PACKAGE);
