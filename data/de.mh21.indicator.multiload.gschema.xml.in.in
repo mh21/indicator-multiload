@@ -733,7 +733,7 @@
                 "Mem: $(size(mem.user)), cache $(size(mem.cache))",
                 "Net: down $(speed(net.down)), up $(speed(net.up))",
                 "Swap: $(size(swap.used))",
-                "Load: $(decimals(load.avg))",
+                "Load: $(decimals(load.avg,2))",
                 "Disk: read $(speed(disk.read)), write $(speed(disk.write))"
             ]</default>
             <_summary>Information shown as menu entries</_summary>

@@ -62,7 +62,10 @@ public class ExpressionParser {
     }
 
     private static bool isvariable(char current) {
-        return current >= 'a' && current <= 'z' || current == '.';
+        return
+            current >= 'a' && current <= 'z' ||
+            current >= '0' && current <= '9' ||
+            current == '.';
     }
 
     public string[] tokenize(string expression) {
@@ -151,11 +154,11 @@ public class ExpressionParser {
             switch (tokens[index]) {
             case "*":
                 div = false;
-                index = index + 1;
+                ++index;
                 continue;
             case "/":
                 div = true;
-                index = index + 1;
+                ++index;
                 continue;
             default:
                 return result;
@@ -181,11 +184,11 @@ public class ExpressionParser {
             switch (tokens[index]) {
             case "+":
                 minus = false;
-                index = index + 1;
+                ++index;
                 continue;
             case "-":
                 minus = true;
-                index = index + 1;
+                ++index;
                 continue;
             default:
                 return result;
@@ -196,35 +199,79 @@ public class ExpressionParser {
     private string evaluate_expression_parens(string[] tokens, ref uint index) throws Error {
         if (index >= tokens.length || tokens[index] != "(")
             throw error(index, "parens: expected '('");
-        index = index + 1;
+        ++index;
         var result = evaluate_expression_plus(tokens, ref index);
         if (index >= tokens.length || tokens[index] != ")")
             throw error(index, "parens: expected ')'");
-        index = index + 1;
+        ++index;
         return result;
     }
 
-    // TODO: constants with +, -, .
+    private string[] evaluate_expression_params(string[] tokens, ref uint index) throws Error {
+        string[] result = null;
+        if (index >= tokens.length || tokens[index] != "(")
+            throw error(index, "params: expected '('");
+        ++index;
+        for (;;) {
+            result += evaluate_expression_plus(tokens, ref index);
+            if (index >= tokens.length)
+                throw error(index, "params: expected ')'");
+            if (tokens[index] != ",")
+                break;
+            ++index;
+        }
+        if (index >= tokens.length || tokens[index] != ")")
+            throw error(index, "params: expected ')'");
+        ++index;
+        return result;
+    }
+
     private string evaluate_expression_name(string[] tokens, ref uint index) throws Error {
         if (index >= tokens.length)
             throw error(index, "name: expected identifier");
-        var varparts = tokens[index].split(".");
+        double sign = 1;
+        if (tokens[index] == "+") {
+            ++index;
+            if (index >= tokens.length)
+                throw error(index, "name: expected identifier");
+        } else if (tokens[index] == "-") {
+            sign = -1.0;
+            ++index;
+            if (index >= tokens.length)
+                throw error(index, "name: expected identifier");
+        }
+        var token = tokens[index];
+        if (token.length > 0 && (token[0] >= '0' && token[0] <= '9' || token[0] == '.')) {
+            ++index;
+            if (sign == -1)
+                return "-" + token;
+            return token;
+        }
+        var varparts = token.split(".");
         var nameindex = index;
-        index = index + 1;
+        ++index;
         switch (varparts.length) {
         case 1:
             var function = varparts[0];
-            var parameter = evaluate_expression_parens(tokens, ref index);
+            var parameters = evaluate_expression_params(tokens, ref index);
             switch (function) {
             case "decimals":
-                return "%.2f".printf(double.parse(parameter));
+                if (parameters.length != 2)
+                    throw error(index, "name: two parameters expected");
+                return "%.*f".printf(int.parse(parameters[1]), sign * double.parse(parameters[0]));
             case "size":
-                return Utils.format_size(double.parse(parameter));
+                if (parameters.length != 1)
+                    throw error(index, "name: one parameter expected");
+                return Utils.format_size(sign * double.parse(parameters[0]));
             case "speed":
-                return Utils.format_speed(double.parse(parameter));
+                if (parameters.length != 1)
+                    throw error(index, "name: one parameter expected");
+                return Utils.format_speed(sign * double.parse(parameters[0]));
             case "percent":
+                if (parameters.length != 1)
+                    throw error(index, "name: one parameter expected");
                 return _("%u%%").printf
-                    ((uint)Math.round(100 * double.parse(parameter)));
+                    ((uint)Math.round(100 * sign * double.parse(parameters[0])));
             default:
                 throw error(nameindex, "name: unknown function");
             }
@@ -235,8 +282,7 @@ public class ExpressionParser {
                 for (uint j = 0, jsize = data.keys.length; j < jsize; ++j) {
                     if (data.keys[j] != varparts[1])
                         continue;
-                    var value = data.values[j].to_string();
-                    return value;
+                    return (sign * data.values[j]).to_string();
                 }
             }
             throw error(nameindex, "name: unknown variable");
@@ -250,11 +296,11 @@ public class ExpressionParser {
         while (index < tokens.length) {
             string current = tokens[index];
             if (current == "$") {
-                index = index + 1;
+                ++index;
                 result += evaluate_expression(tokens, ref index);
             } else {
                 result += current;
-                index = index + 1;
+                ++index;
             }
         }
 
