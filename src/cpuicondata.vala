@@ -29,8 +29,8 @@ public class CpuIconData : IconData {
 
         uint64[] newdata = new uint64[5];
         newdata[0] = cpu.user;
-        newdata[1] = cpu.nice;
-        newdata[2] = cpu.sys;
+        newdata[1] = cpu.sys;
+        newdata[2] = cpu.nice;
         newdata[3] = cpu.iowait + cpu.irq + cpu.softirq;
         newdata[4] = cpu.idle;
 
