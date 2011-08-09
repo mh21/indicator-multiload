@@ -299,7 +299,7 @@
         </key>
 
         <key name="expression" type="s">
-            <default>"$(cpu.nice)"</default>
+            <default>"$(cpu.sys)"</default>
             <_summary>Trace expression</_summary>
         </key>
 
@@ -316,7 +316,7 @@
         </key>
 
         <key name="expression" type="s">
-            <default>"$(cpu.sys)"</default>
+            <default>"$(cpu.nice)"</default>
             <_summary>Trace expression</_summary>
         </key>
 
