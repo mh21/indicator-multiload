@@ -229,6 +229,14 @@ public class Main : Application {
         });
         var datasettings = Utils.globalsettings();
 
+        var oldgraphs = datasettings.get_strv("graphs");
+        oldgraphs += "custom0";
+        // datasettings.set_strv("graphs", oldgraphs);
+        var graphsettings = Utils.graphsettings("custom0");
+        graphsettings.set_strv("traces", {"custom0", "custom1"});
+        var tracesettings = Utils.tracesettings("custom0", "custom1");
+        tracesettings.set_string("expression", "$(cpu.idle)");
+
         datasettings.bind("size",
                 this.multi, "size",
                 SettingsBindFlags.DEFAULT);

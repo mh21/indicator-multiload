@@ -114,7 +114,7 @@ namespace Utils {
         if (graphid.has_prefix("custom"))
             return new FixedGSettings.Settings.with_path
                 ("de.mh21.indicator.multiload.graph", 
-                 @"/apps/indicators/multiload/$graphid");
+                 @"/apps/indicators/multiload/$graphid/");
         return new FixedGSettings.Settings
             (@"de.mh21.indicator.multiload.graphs.$graphid");
     }
@@ -124,7 +124,7 @@ namespace Utils {
         if (traceid.has_prefix("custom"))
             return new FixedGSettings.Settings.with_path
                 ("de.mh21.indicator.multiload.trace",
-                 @"/apps/indicators/multiload/$graphid/$traceid");
+                 @"/apps/indicators/multiload/$graphid/$traceid/");
         return new FixedGSettings.Settings
             (@"de.mh21.indicator.multiload.traces.$traceid");
     }
