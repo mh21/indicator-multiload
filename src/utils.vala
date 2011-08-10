@@ -17,7 +17,7 @@
  ******************************************************************************/
 
 namespace Utils {
-    public static string uifile;
+    public string uifile;
 
     public double max(double[] data) {
         if (data.length == 0)
@@ -54,7 +54,7 @@ namespace Utils {
             ++index;
         }
         if (index < 0)
-            return ngettext("%u byte", "%u bytes", 
+            return ngettext("%u byte", "%u bytes",
                     (ulong)val).printf((uint)val);
         // 4 significant digits
         var pattern = _(units[index]).replace("{}",
@@ -91,7 +91,7 @@ namespace Utils {
         return pattern.printf(val);
     }
 
-    public Object get_ui(string objectid, Object signalhandlers, 
+    public Object get_ui(string objectid, Object signalhandlers,
             string[] additional = {}, out Gtk.Builder builder = null) {
         builder = new Gtk.Builder();
         string[] ids = additional;
@@ -106,25 +106,25 @@ namespace Utils {
         return builder.get_object(objectid);
     }
 
-    public FixedGSettings.Settings globalsettings() {
-        return new FixedGSettings.Settings("de.mh21.indicator.multiload");
+    public FixedGSettings.Settings generalsettings() {
+        return new FixedGSettings.Settings("de.mh21.indicator.multiload.general");
     }
 
     public FixedGSettings.Settings graphsettings(string graphid) {
         if (graphid.has_prefix("custom"))
             return new FixedGSettings.Settings.with_path
-                ("de.mh21.indicator.multiload.graph", 
-                 @"/apps/indicators/multiload/$graphid/");
+                ("de.mh21.indicator.multiload.graph",
+                 @"/apps/indicators/multiload/graphs/$graphid/");
         return new FixedGSettings.Settings
             (@"de.mh21.indicator.multiload.graphs.$graphid");
     }
 
-    public FixedGSettings.Settings tracesettings(string graphid, 
+    public FixedGSettings.Settings tracesettings(string graphid,
             string traceid) {
         if (traceid.has_prefix("custom"))
             return new FixedGSettings.Settings.with_path
                 ("de.mh21.indicator.multiload.trace",
-                 @"/apps/indicators/multiload/$graphid/$traceid/");
+                 @"/apps/indicators/multiload/graphs/$graphid/$traceid/");
         return new FixedGSettings.Settings
             (@"de.mh21.indicator.multiload.traces.$traceid");
     }
@@ -139,7 +139,7 @@ namespace Utils {
         return false;
     }
 
-    public Variant set_settings_color(Value value, VariantType expected_type, 
+    public Variant set_settings_color(Value value, VariantType expected_type,
             void *user_data)
     {
         Gdk.Color color = *(Gdk.Color*)value.get_boxed();

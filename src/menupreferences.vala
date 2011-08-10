@@ -30,12 +30,12 @@ public class MenuPreferences : Object {
 
         Gtk.Builder builder;
         this.menuitems = Utils.get_ui("menuitemdialog", this,
-                {"menuitemstore", "menuitemadj1", "menuitemadj2"}, 
+                {"menuitemstore", "menuitemadj1", "menuitemadj2"},
                 out builder) as Gtk.Dialog;
         return_if_fail(this.menuitems != null);
 
         this.menuitemstore = builder.get_object("menuitemstore") as Gtk.ListStore;
-        this.menuitemsettings = Utils.globalsettings();
+        this.menuitemsettings = Utils.generalsettings();
         this.menuitemsettings.changed["menu-expressions"] += on_menuitemsettings_changed;
         this.menuitemsgsettingstostore();
 

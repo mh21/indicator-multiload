@@ -78,7 +78,7 @@ public class Main : Application {
 
     [CCode (instance_pos = -1)]
     public void on_sysmon_activate(Gtk.MenuItem source) {
-        var settings = Utils.globalsettings();
+        var settings = Utils.generalsettings();
         var sysmon = settings.get_string("system-monitor");
         if (sysmon.length == 0)
             sysmon = "gnome-system-monitor.desktop";
@@ -153,7 +153,7 @@ public class Main : Application {
     }
 
     private void creategraphs() {
-        var datasettings = Utils.globalsettings();
+        var datasettings = Utils.generalsettings();
 
         GraphData[] graphdatas = null;
         foreach (var graphid in datasettings.get_strv("graphs"))
@@ -166,7 +166,7 @@ public class Main : Application {
 
         // dconf notifications for graph/trace creation
         foreach (var creationnotifier in this.creationnotifiers)
-            SignalHandler.disconnect_by_func(creationnotifier, 
+            SignalHandler.disconnect_by_func(creationnotifier,
                     (void*) Main.creategraphs, this);
         this.creationnotifiers = { datasettings };
         datasettings.changed["graphs"].connect(this.creategraphs);
@@ -182,16 +182,16 @@ public class Main : Application {
         var graphsettings = Utils.graphsettings(graphid);
         graphsettings.bind_with_mapping("background-color",
                 graphdata, "background_color",
-                SettingsBindFlags.DEFAULT, 
-                Utils.get_settings_color, 
-                Utils.set_settings_color, 
+                SettingsBindFlags.DEFAULT,
+                Utils.get_settings_color,
+                Utils.set_settings_color,
                 null, () => {});
         string[] graphproperties = {
-            "enabled", 
-            "minimum", 
-            "maximum", 
-            "smooth", 
-            "alpha", 
+            "enabled",
+            "minimum",
+            "maximum",
+            "smooth",
+            "alpha",
             "traces" };
         foreach (var property in graphproperties)
             graphsettings.bind(property, graphdata, property,
@@ -203,14 +203,14 @@ public class Main : Application {
             this.addtracebinds(tracedatas[i], graphid, traceids[i]);
     }
 
-    private void addtracebinds(TraceData tracedata, 
+    private void addtracebinds(TraceData tracedata,
             string graphid, string traceid) {
         var tracesettings = Utils.tracesettings(graphid, traceid);
         tracesettings.bind_with_mapping("color",
                 tracedata, "color",
-                SettingsBindFlags.DEFAULT, 
-                Utils.get_settings_color, 
-                Utils.set_settings_color, 
+                SettingsBindFlags.DEFAULT,
+                Utils.get_settings_color,
+                Utils.set_settings_color,
                 null, () => {});
         string[] traceproperties = {"enabled", "expression"};
         foreach (var property in traceproperties)
@@ -227,14 +227,14 @@ public class Main : Application {
                 new CpuData(), new MemData(), new NetData(),
                 new SwapData(), new LoadData(), new DiskData()
         });
-        var datasettings = Utils.globalsettings();
+        var datasettings = Utils.generalsettings();
 
         var oldgraphs = datasettings.get_strv("graphs");
-        oldgraphs += "custom0";
+        oldgraphs += "custom1";
         // datasettings.set_strv("graphs", oldgraphs);
-        var graphsettings = Utils.graphsettings("custom0");
-        graphsettings.set_strv("traces", {"custom0", "custom1"});
-        var tracesettings = Utils.tracesettings("custom0", "custom1");
+        var graphsettings = Utils.graphsettings("custom1");
+        graphsettings.set_strv("traces", {"custom1", "custom1"});
+        var tracesettings = Utils.tracesettings("custom1", "custom1");
         tracesettings.set_string("expression", "$(cpu.idle)");
 
         datasettings.bind("size",

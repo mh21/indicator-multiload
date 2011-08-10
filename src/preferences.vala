@@ -34,12 +34,12 @@ public class Preferences : Object {
         }
 
         Gtk.Builder builder;
-        this.preferences = Utils.get_ui("preferencesdialog", this, 
-                {"sizeadjustment", "speedadjustment"}, 
+        this.preferences = Utils.get_ui("preferencesdialog", this,
+                {"sizeadjustment", "speedadjustment"},
                 out builder) as Gtk.Dialog;
         return_if_fail(this.preferences != null);
 
-        var datasettings = Utils.globalsettings();
+        var datasettings = Utils.generalsettings();
         var graphids = datasettings.get_strv("graphs");
 
         foreach (var graphid in graphids) {
@@ -72,7 +72,7 @@ public class Preferences : Object {
                     SettingsBindFlags.DEFAULT);
         }
 
-        var prefsettings = Utils.globalsettings();
+        var prefsettings = Utils.generalsettings();
         prefsettings.bind("size",
                 builder.get_object("size"), "value",
                 SettingsBindFlags.DEFAULT);
