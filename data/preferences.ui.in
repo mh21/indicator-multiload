@@ -100,19 +100,11 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
       </object>
     </child>
   </object>
-  <object class="GtkAdjustment" id="menuitemadj1">
-    <property name="upper">100</property>
-    <property name="step_increment">1</property>
-    <property name="page_increment">10</property>
-  </object>
-  <object class="GtkAdjustment" id="menuitemadj2">
-    <property name="upper">100</property>
-    <property name="step_increment">1</property>
-    <property name="page_increment">10</property>
-  </object>
   <object class="GtkDialog" id="menuitemdialog">
     <property name="can_focus">False</property>
     <property name="border_width">5</property>
+    <property name="default_width">500</property>
+    <property name="default_height">300</property>
     <property name="type_hint">dialog</property>
     <signal name="destroy" handler="menu_preferences_on_menuitemdialog_destroy" swapped="no"/>
     <signal name="response" handler="menu_preferences_on_menuitemdialog_response" swapped="no"/>
@@ -166,32 +158,146 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
           </packing>
         </child>
         <child>
-          <object class="GtkTreeView" id="menuitemview">
+          <object class="GtkHBox" id="hbox2">
             <property name="visible">True</property>
-            <property name="can_focus">True</property>
-            <property name="model">menuitemstore</property>
-            <property name="hadjustment">menuitemadj1</property>
-            <property name="vadjustment">menuitemadj2</property>
-            <property name="headers_visible">False</property>
-            <property name="reorderable">True</property>
-            <property name="search_column">0</property>
+            <property name="can_focus">False</property>
             <child>
-              <object class="GtkTreeViewColumn" id="expressioncolumn">
+              <object class="GtkScrolledWindow" id="scrolledwindow1">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="hscrollbar_policy">automatic</property>
+                <property name="vscrollbar_policy">automatic</property>
                 <child>
-                  <object class="GtkCellRendererText" id="expressionrenderer">
-                    <property name="editable">True</property>
-                    <signal name="edited" handler="menu_preferences_on_expressionrenderer_edited" swapped="no"/>
+                  <object class="GtkTreeView" id="menuitemview">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="model">menuitemstore</property>
+                    <property name="headers_visible">False</property>
+                    <property name="headers_clickable">False</property>
+                    <property name="reorderable">True</property>
+                    <property name="search_column">0</property>
+                    <child>
+                      <object class="GtkTreeViewColumn" id="expressioncolumn">
+                        <child>
+                          <object class="GtkCellRendererText" id="expressionrenderer">
+                            <property name="editable">True</property>
+                            <signal name="edited" handler="menu_preferences_on_expressionrenderer_edited" swapped="no"/>
+                          </object>
+                          <attributes>
+                            <attribute name="text">0</attribute>
+                          </attributes>
+                        </child>
+                      </object>
+                    </child>
                   </object>
-                  <attributes>
-                    <attribute name="text">0</attribute>
-                  </attributes>
                 </child>
               </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="padding">6</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkVButtonBox" id="vbuttonbox1">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="spacing">6</property>
+                <property name="layout_style">start</property>
+                <child>
+                  <object class="GtkButton" id="menuitemadd">
+                    <property name="label">gtk-add</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="use_action_appearance">False</property>
+                    <property name="use_stock">True</property>
+                    <signal name="clicked" handler="menu_preferences_on_menuitemadd_clicked" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">False</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="menuitemremove">
+                    <property name="label">gtk-remove</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="use_action_appearance">False</property>
+                    <property name="use_stock">True</property>
+                    <signal name="clicked" handler="menu_preferences_on_menuitemremove_clicked" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">False</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="menuitemedit">
+                    <property name="label">gtk-edit</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="use_action_appearance">False</property>
+                    <property name="use_stock">True</property>
+                    <signal name="clicked" handler="menu_preferences_on_menuitemedit_clicked" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">False</property>
+                    <property name="position">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="menuitemup">
+                    <property name="label">gtk-go-up</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="use_action_appearance">False</property>
+                    <property name="use_stock">True</property>
+                    <signal name="clicked" handler="menu_preferences_on_menuitemup_clicked" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">False</property>
+                    <property name="position">3</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="menuitemdown">
+                    <property name="label">gtk-go-down</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="use_action_appearance">False</property>
+                    <property name="use_stock">True</property>
+                    <signal name="clicked" handler="menu_preferences_on_menuitemdown_clicked" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">False</property>
+                    <property name="position">4</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="padding">6</property>
+                <property name="position">1</property>
+              </packing>
             </child>
           </object>
           <packing>
             <property name="expand">True</property>
             <property name="fill">True</property>
+            <property name="padding">6</property>
             <property name="position">1</property>
           </packing>
         </child>
