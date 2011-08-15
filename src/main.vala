@@ -27,6 +27,7 @@ public class Main : Application {
     private string desktopfilename;
     private string autostartfile;
     private string applicationfile;
+    private string graphsetups;
 
     public bool autostart {
         get {
@@ -152,7 +153,18 @@ public class Main : Application {
         }
     }
 
-    private void creategraphs() {
+    private void creategraphs(FixedGSettings.Settings? settings, string key) {
+        // For some reason, directly after converting settings v1->v2, this is
+        // called a lot. Recreating the graphs is expensive, so check whether
+        // it is really necessary.
+        string newgraphsetups = "";
+        foreach (var graphid in Utils.generalsettings().get_strv("graphs"))
+            newgraphsetups += "%s=%s\n".printf(graphid, string.joinv(",",
+                        Utils.graphsettings(graphid).get_strv("traces")));
+        if (this.graphsetups == newgraphsetups)
+            return;
+        this.graphsetups = newgraphsetups;
+
         var datasettings = Utils.generalsettings();
 
         GraphData[] graphdatas = null;
@@ -227,16 +239,10 @@ public class Main : Application {
                 new CpuData(), new MemData(), new NetData(),
                 new SwapData(), new LoadData(), new DiskData()
         });
+
+        new SettingsConversion().convert();
+
         var datasettings = Utils.generalsettings();
-
-        var oldgraphs = datasettings.get_strv("graphs");
-        oldgraphs += "custom1";
-        // datasettings.set_strv("graphs", oldgraphs);
-        var graphsettings = Utils.graphsettings("custom1");
-        graphsettings.set_strv("traces", {"custom1", "custom1"});
-        var tracesettings = Utils.tracesettings("custom1", "custom1");
-        tracesettings.set_string("expression", "$(cpu.idle)");
-
         datasettings.bind("size",
                 this.multi, "size",
                 SettingsBindFlags.DEFAULT);
@@ -253,7 +259,7 @@ public class Main : Application {
                 this, "autostart",
                 SettingsBindFlags.DEFAULT);
 
-        this.creategraphs();
+        this.creategraphs(null, "");
 
         var menu = Utils.get_ui("menu", this) as Gtk.Menu;
         return_if_fail(menu != null);

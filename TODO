@@ -1,6 +1,3 @@
-0.3:
-- gconf conversion
-
 0.4:
 - color schemes
 - error messages for expressions not only on stderr

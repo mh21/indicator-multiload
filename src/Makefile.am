@@ -32,6 +32,7 @@ indicator_multiload_SOURCES = \
 	main.vala \
 	netdata.vala \
 	preferences.vala \
+	settingsconversion.vala \
 	swapdata.vala \
 	utils.vala \
 	config.vapi \

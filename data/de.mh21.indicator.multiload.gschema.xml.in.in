@@ -65,6 +65,11 @@
             ]</default>
             <_summary>Information shown as menu entries</_summary>
         </key>
+
+        <key name="settings-version" type="u">
+            <default>1</default>
+            <summary>Version of the settings for backwards compatibility</summary>
+        </key>
     </schema>
 
     <schema id="de.mh21.indicator.multiload.graph" gettext-domain="@GETTEXT_PACKAGE@">
@@ -792,6 +797,31 @@
 
         <key name="diskload-color2" type="s">
             <default>"#000000"</default>
+            <summary>Deprecated</summary>
+        </key>
+
+        <key name="speed" type="q">
+            <default>500</default>
+            <summary>Deprecated</summary>
+        </key>
+
+        <key name="size" type="q">
+            <default>40</default>
+            <summary>Deprecated</summary>
+        </key>
+
+        <key name="height" type="q">
+            <default>22</default>
+            <summary>Deprecated</summary>
+        </key>
+
+        <key name="system-monitor" type="s">
+            <default>"gnome-system-monitor.desktop"</default>
+            <summary>Deprecated</summary>
+        </key>
+
+        <key name="autostart" type="b">
+            <default>true</default>
             <summary>Deprecated</summary>
         </key>
 
