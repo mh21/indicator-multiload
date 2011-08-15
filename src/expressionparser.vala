@@ -133,7 +133,7 @@ public class ExpressionParser {
             throw error(index, "empty expression");
         if (tokens[index] == "(")
             return evaluate_expression_parens(tokens, ref index);
-        return evaluate_expression_name(tokens, ref index);
+        return evaluate_expression_identifier(tokens, ref index);
     }
 
     private string evaluate_expression_times(string[] tokens, ref uint index) throws Error {
@@ -141,7 +141,7 @@ public class ExpressionParser {
         bool div = false;
         for (;;) {
             if (index >= tokens.length)
-                throw error(index, "times: expected expression");
+                throw error(index, "expression expected");
             var value = evaluate_expression(tokens, ref index);
             if (result == null)
                 result = value;
@@ -171,7 +171,7 @@ public class ExpressionParser {
         bool minus = false;
         for (;;) {
             if (index >= tokens.length)
-                throw error(index, "plus: expected expression");
+                throw error(index, "expression expected");
             var value = evaluate_expression_times(tokens, ref index);
             if (result == null)
                 result = value;
@@ -198,11 +198,11 @@ public class ExpressionParser {
 
     private string evaluate_expression_parens(string[] tokens, ref uint index) throws Error {
         if (index >= tokens.length || tokens[index] != "(")
-            throw error(index, "parens: expected '('");
+            throw error(index, "'(' expected");
         ++index;
         var result = evaluate_expression_plus(tokens, ref index);
         if (index >= tokens.length || tokens[index] != ")")
-            throw error(index, "parens: expected ')'");
+            throw error(index, "')' expected");
         ++index;
         return result;
     }
@@ -210,35 +210,39 @@ public class ExpressionParser {
     private string[] evaluate_expression_params(string[] tokens, ref uint index) throws Error {
         string[] result = null;
         if (index >= tokens.length || tokens[index] != "(")
-            throw error(index, "params: expected '('");
+            throw error(index, "'(' expected");
         ++index;
-        for (;;) {
-            result += evaluate_expression_plus(tokens, ref index);
-            if (index >= tokens.length)
-                throw error(index, "params: expected ')'");
-            if (tokens[index] != ",")
-                break;
-            ++index;
+        if (index >= tokens.length)
+            throw error(index, "parameters expected");
+        if (tokens[index] != ")") {
+            for (;;) {
+                result += evaluate_expression_plus(tokens, ref index);
+                if (index >= tokens.length)
+                    throw error(index, "')' expected");
+                if (tokens[index] != ",")
+                    break;
+                ++index;
+            }
         }
         if (index >= tokens.length || tokens[index] != ")")
-            throw error(index, "params: expected ')'");
+            throw error(index, "')' expected");
         ++index;
         return result;
     }
 
-    private string evaluate_expression_name(string[] tokens, ref uint index) throws Error {
+    private string evaluate_expression_identifier(string[] tokens, ref uint index) throws Error {
         if (index >= tokens.length)
-            throw error(index, "name: expected identifier");
+            throw error(index, "identifier expected");
         double sign = 1;
         if (tokens[index] == "+") {
             ++index;
             if (index >= tokens.length)
-                throw error(index, "name: expected identifier");
+                throw error(index, "identifier expected");
         } else if (tokens[index] == "-") {
             sign = -1.0;
             ++index;
             if (index >= tokens.length)
-                throw error(index, "name: expected identifier");
+                throw error(index, "identifier expected");
         }
         var token = tokens[index];
         if (token.length > 0 && (token[0] >= '0' && token[0] <= '9' || token[0] == '.')) {
@@ -256,24 +260,24 @@ public class ExpressionParser {
             var parameters = evaluate_expression_params(tokens, ref index);
             switch (function) {
             case "decimals":
-                if (parameters.length != 2)
-                    throw error(index, "name: two parameters expected");
+                if (parameters.length < 2)
+                    throw error(index, "at least two parameters expected");
                 return "%.*f".printf(int.parse(parameters[1]), sign * double.parse(parameters[0]));
             case "size":
-                if (parameters.length != 1)
-                    throw error(index, "name: one parameter expected");
+                if (parameters.length < 1)
+                    throw error(index, "at least one parameter expected");
                 return Utils.format_size(sign * double.parse(parameters[0]));
             case "speed":
-                if (parameters.length != 1)
-                    throw error(index, "name: one parameter expected");
+                if (parameters.length < 1)
+                    throw error(index, "at least one parameter expected");
                 return Utils.format_speed(sign * double.parse(parameters[0]));
             case "percent":
-                if (parameters.length != 1)
-                    throw error(index, "name: one parameter expected");
+                if (parameters.length < 1)
+                    throw error(index, "at least one parameter expected");
                 return _("%u%%").printf
                     ((uint)Math.round(100 * sign * double.parse(parameters[0])));
             default:
-                throw error(nameindex, "name: unknown function");
+                throw error(nameindex, "unknown function");
             }
         case 2:
             foreach (var data in this.datas) {
@@ -285,9 +289,9 @@ public class ExpressionParser {
                     return (sign * data.values[j]).to_string();
                 }
             }
-            throw error(nameindex, "name: unknown variable");
+            throw error(nameindex, "unknown variable");
         default:
-            throw error(nameindex, "name: too many identifier parts");
+            throw error(nameindex, "too many identifier parts");
         }
     }
 
@@ -312,10 +316,17 @@ public class ExpressionParser {
         try {
             return evaluate_text(tokens, ref index);
         } catch (Error e) {
-            stderr.printf("Expression error at token %i: %s\n", e.code, e.message);
-            foreach (var token in tokens)
-                stderr.printf(" '%s'", token);
-            stderr.printf("\n");
+            stderr.printf("Expression error: %s\n", e.message);
+            string errormessage = "";
+            int errorpos = -1;
+            for (uint i = 0, isize = tokens.length; i < isize; ++i) {
+                if (e.code == i)
+                    errorpos = errormessage.length;
+                errormessage += " " + tokens[i];
+            }
+            if (errorpos < 0)
+                errorpos = errormessage.length;
+            stderr.printf("%s\n%s^\n", errormessage, string.nfill(errorpos, '-'));
             return "";
         }
     }

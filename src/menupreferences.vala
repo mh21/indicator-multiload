@@ -213,7 +213,7 @@ public class MenuPreferences : Object {
             var path = this.menuitemstore.get_path(iter);
             var indices = path.get_indices();
             up = indices[0] > 0;
-            down = indices[0] < this.menuitemstore.iter_n_children(null) - 1;
+            down = indices[0] + 1 < this.menuitemstore.iter_n_children(null);
         }
         this.menuitemadd.sensitive = add;
         this.menuitemremove.sensitive = remove;
