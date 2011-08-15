@@ -1,3 +1,6 @@
+0.4:
+- color schemes
+- error messages for expressions not only on stderr
+
 File bug reports:
 - glibtop lvm
-- missing vala api for glib in various.vapi

@@ -27,6 +27,9 @@ namespace GTop {
     [CCode (cheader_filename = "glibtop.h")]
     public static GTop *global_server;
 
+    [CCode (cheader_filename = "glibtop.h")]
+    public static GTop *init();
+
     [CCode (cname = "glibtop", type_id = "GTOP_TYPE_GLIBTOP", cheader_filename = "glibtop.h")]
     public struct GTop {
         public uint flags;

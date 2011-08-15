@@ -16,23 +16,34 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.                *
  ******************************************************************************/
 
-public class LoadIconData : IconData {
-    public LoadIconData() {
-        base("loadavg", 1, 10, 1);
+public class CpuData : Data {
+    private uint64[] lastdata;
+
+    public CpuData() {
+	base("cpu", {"user", "nice", "sys", "io", "inuse", "idle"});
     }
 
     public override void update() {
-        GTop.LoadAvg loadavg;
-        GTop.get_loadavg(out loadavg);
+        GTop.Cpu cpu;
+        GTop.get_cpu(out cpu);
 
-        this.traces[0].add_value(loadavg.loadavg[0]);
+        uint64[] newdata = new uint64[6];
+        newdata[0] = cpu.user;
+        newdata[1] = cpu.sys;
+        newdata[2] = cpu.nice;
+        newdata[3] = cpu.iowait + cpu.irq + cpu.softirq;
+        newdata[4] = cpu.user + cpu.nice + cpu.sys;
+        newdata[5] = cpu.idle;
 
-        this.menuitems = {
-            _("Load: %.2f").printf
-                (loadavg.loadavg[0])
-        };
+        double total = 0;
 
-        this.update_scale();
+        if (this.lastdata.length != 0) {
+            for (uint i = 0, isize = newdata.length; i < isize; ++i)
+                total += newdata[i] - this.lastdata[i];
+            for (uint i = 0, isize = newdata.length; i < isize; ++i)
+                this.values[i] = (newdata[i] - this.lastdata[i]) / total;
+        }
+        this.lastdata = newdata;
     }
 }
 

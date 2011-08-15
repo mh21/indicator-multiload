@@ -16,29 +16,23 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.                *
  ******************************************************************************/
 
-public class MemIconData : IconData {
-    public MemIconData() {
-        base("memload", 4, 1, 1);
+public class MemData : Data {
+    public MemData() {
+        base("mem", {"user", "shared", "buffer", "cached", "total", "cache"});
     }
 
     public override void update() {
         GTop.Mem mem;
         GTop.get_mem(out mem);
 
-        double total = mem.total;
-
-        this.traces[0].add_value(mem.user / total);
-        this.traces[1].add_value(mem.shared / total);
-        this.traces[2].add_value(mem.buffer / total);
-        this.traces[3].add_value(mem.cached / total);
-
-        this.menuitems = {
-            _("Mem: %s, cache %s").printf
-                (Utils.format_size(mem.user),
-                 Utils.format_size(mem.shared + mem.buffer + mem.cached))
+        this.values = {
+            mem.user,
+            mem.shared,
+            mem.buffer,
+            mem.cached,
+            mem.total,
+            mem.shared + mem.buffer + mem.cached
         };
-
-        this.update_scale();
     }
 }
 

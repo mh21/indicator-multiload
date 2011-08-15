@@ -12,7 +12,7 @@ namespace FixedGSettings {
                 [CCode (sentinel = "")]
                 public void @get (string key, string format, ...);
                 public bool get_boolean (string key);
-                public unowned GLib.Settings get_child (string name);
+                public unowned FixedGSettings.Settings get_child (string name);
                 public double get_double (string key);
                 public int get_enum (string key);
                 public uint get_flags (string key);

@@ -16,13 +16,12 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.                *
  ******************************************************************************/
 
-public class NetIconData : IconData {
+public class NetData : Data {
     private uint64[] lastdata;
     private uint64 lasttime;
 
-    public NetIconData() {
-        // minimum of 5kb/s
-        base("netload", 3, 10, 5000);
+    public NetData() {
+        base("net", {"down", "up", "local"});
     }
 
     public override void update() {
@@ -45,27 +44,12 @@ public class NetIconData : IconData {
             }
         }
 
-        double down = 0, up = 0;
-
-        if (this.lastdata.length == 0) {
-            foreach (var trace in this.traces)
-                trace.add_value(0);
-        } else {
+        if (this.lastdata.length != 0) {
             double delta = (newtime - this.lasttime) / 1e6;
-            down = (newdata[0] - this.lastdata[0]) / delta;
-            up = (newdata[1] - this.lastdata[1]) / delta;
-            for (uint i = 0, isize = this.traces.length; i < isize; ++i)
-                this.traces[i].add_value((newdata[i] - this.lastdata[i]) / delta);
+            for (uint i = 0, isize = this.values.length; i < isize; ++i)
+                this.values[i] = (newdata[i] - this.lastdata[i]) / delta;
         }
         this.lastdata = newdata;
         this.lasttime = newtime;
-
-        this.menuitems = {
-            _("Net: down %s, up %s").printf
-                (Utils.format_speed(down),
-                 Utils.format_speed(up))
-        };
-
-        this.update_scale();
     }
 }

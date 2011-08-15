@@ -18,16 +18,22 @@ VALAFLAGS =  \
 bin_PROGRAMS = indicator-multiload
 
 indicator_multiload_SOURCES = \
-	cpuicondata.vala \
-	diskicondata.vala \
-	icondata.vala \
-	icontracedata.vala \
-	loadicondata.vala \
-	memicondata.vala \
+	cpudata.vala \
+	data.vala \
+	diskdata.vala \
+	expressionparser.vala \
+	graphdata.vala \
+	tracedata.vala \
+	loaddata.vala \
+	memdata.vala \
+	menudata.vala \
+	menupreferences.vala \
 	multiloadindicator.vala \
 	main.vala \
-	neticondata.vala \
-	swapicondata.vala \
+	netdata.vala \
+	preferences.vala \
+	settingsconversion.vala \
+	swapdata.vala \
 	utils.vala \
 	config.vapi \
 	gsettings-fixed.vapi \
