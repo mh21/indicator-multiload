@@ -106,29 +106,6 @@ namespace Utils {
         return builder.get_object(objectid);
     }
 
-    public FixedGSettings.Settings generalsettings() {
-        return new FixedGSettings.Settings("de.mh21.indicator.multiload.general");
-    }
-
-    public FixedGSettings.Settings graphsettings(string graphid) {
-        if (graphid.has_prefix("custom"))
-            return new FixedGSettings.Settings.with_path
-                ("de.mh21.indicator.multiload.graph",
-                 @"/apps/indicators/multiload/graphs/$graphid/");
-        return new FixedGSettings.Settings
-            (@"de.mh21.indicator.multiload.graphs.$graphid");
-    }
-
-    public FixedGSettings.Settings tracesettings(string graphid,
-            string traceid) {
-        if (traceid.has_prefix("custom"))
-            return new FixedGSettings.Settings.with_path
-                ("de.mh21.indicator.multiload.trace",
-                 @"/apps/indicators/multiload/graphs/$graphid/$traceid/");
-        return new FixedGSettings.Settings
-            (@"de.mh21.indicator.multiload.traces.$traceid");
-    }
-
     public bool get_settings_color(Value value, Variant variant, void *user_data)
     {
         Gdk.Color color;

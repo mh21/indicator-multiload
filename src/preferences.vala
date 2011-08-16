@@ -39,8 +39,9 @@ public class Preferences : Object {
                 out builder) as Gtk.Dialog;
         return_if_fail(this.preferences != null);
 
-        var datasettings = Utils.generalsettings();
-        var graphids = datasettings.get_strv("graphs");
+        var settingscache = new SettingsCache();
+        var prefsettings = settingscache.generalsettings();
+        var graphids = prefsettings.get_strv("graphs");
 
         foreach (var graphid in graphids) {
             var checkbutton = builder.get_object(@"$(graphid)_enabled") as Gtk.CheckButton;
@@ -49,11 +50,14 @@ public class Preferences : Object {
         }
 
         foreach (var graphid in graphids) {
-            var graphsettings = Utils.graphsettings(graphid);
+            if (!(graphid in SettingsCache.presetgraphids))
+                continue;
+
+            var graphsettings = settingscache.graphsettings(graphid);
             var traceids = graphsettings.get_strv("traces");
             for (uint j = 0, jsize = traceids.length; j < jsize; ++j) {
                 var traceid = traceids[j];
-                var tracesettings = Utils.tracesettings(graphid, traceid);
+                var tracesettings = settingscache.tracesettings(graphid, traceid);
                 tracesettings.bind_with_mapping("color",
                         builder.get_object(@"$(traceid)_color"), "color",
                         SettingsBindFlags.DEFAULT, Utils.get_settings_color,
@@ -72,7 +76,6 @@ public class Preferences : Object {
                     SettingsBindFlags.DEFAULT);
         }
 
-        var prefsettings = Utils.generalsettings();
         prefsettings.bind("size",
                 builder.get_object("size"), "value",
                 SettingsBindFlags.DEFAULT);

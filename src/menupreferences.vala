@@ -43,7 +43,7 @@ public class MenuPreferences : Object {
 
         this.menuitemstore = builder.get_object("menuitemstore") as Gtk.ListStore;
         this.menuitemview = builder.get_object("menuitemview") as Gtk.TreeView;
-        this.menuitemsettings = Utils.generalsettings();
+        this.menuitemsettings = new SettingsCache().generalsettings();
         this.menuitemsettings.changed["menu-expressions"].connect(on_menuitemsettings_changed);
 
         this.menuitemadd = builder.get_object("menuitemadd") as Gtk.Button;
@@ -132,7 +132,7 @@ public class MenuPreferences : Object {
         }
         this.menuitemstore.insert(out iter, (int) pos);
         this.menuitemview.grab_focus();
-        this.menuitemview.set_cursor(this.menuitemstore.get_path(iter), 
+        this.menuitemview.set_cursor(this.menuitemstore.get_path(iter),
                 this.menuitemview.get_column(0), true);
     }
 
@@ -156,7 +156,7 @@ public class MenuPreferences : Object {
             return;
 
         this.menuitemview.grab_focus();
-        this.menuitemview.set_cursor(this.menuitemstore.get_path(iter), 
+        this.menuitemview.set_cursor(this.menuitemstore.get_path(iter),
                 this.menuitemview.get_column(0), true);
     }
 

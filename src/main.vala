@@ -20,7 +20,7 @@ public class Main : Application {
     private MultiLoadIndicator multi;
     private Gtk.Dialog about;
     private Preferences preferences;
-    private FixedGSettings.Settings[] creationnotifiers;
+    private SettingsCache settingscache;
     private static string datadirectory;
     private string gsettings;
     private string autostartkey;
@@ -79,7 +79,7 @@ public class Main : Application {
 
     [CCode (instance_pos = -1)]
     public void on_sysmon_activate(Gtk.MenuItem source) {
-        var settings = Utils.generalsettings();
+        var settings = this.settingscache.generalsettings();
         var sysmon = settings.get_string("system-monitor");
         if (sysmon.length == 0)
             sysmon = "gnome-system-monitor.desktop";
@@ -158,14 +158,14 @@ public class Main : Application {
         // called a lot. Recreating the graphs is expensive, so check whether
         // it is really necessary.
         string newgraphsetups = "";
-        foreach (var graphid in Utils.generalsettings().get_strv("graphs"))
+        foreach (var graphid in this.settingscache.generalsettings().get_strv("graphs"))
             newgraphsetups += "%s=%s\n".printf(graphid, string.joinv(",",
-                        Utils.graphsettings(graphid).get_strv("traces")));
+                        this.settingscache.graphsettings(graphid).get_strv("traces")));
         if (this.graphsetups == newgraphsetups)
             return;
         this.graphsetups = newgraphsetups;
 
-        var datasettings = Utils.generalsettings();
+        var datasettings = this.settingscache.generalsettings();
 
         GraphData[] graphdatas = null;
         foreach (var graphid in datasettings.get_strv("graphs"))
@@ -177,21 +177,19 @@ public class Main : Application {
             this.addgraphbinds(graphdata);
 
         // dconf notifications for graph/trace creation
-        foreach (var creationnotifier in this.creationnotifiers)
-            SignalHandler.disconnect_by_func(creationnotifier,
+        foreach (var cachedsetting in this.settingscache.cachedsettings())
+            SignalHandler.disconnect_by_func(cachedsetting,
                     (void*) Main.creategraphs, this);
-        this.creationnotifiers = { datasettings };
         datasettings.changed["graphs"].connect(this.creategraphs);
         foreach (var graphdata in this.multi.graphdatas) {
-            var graphsettings = Utils.graphsettings(graphdata.id);
-            this.creationnotifiers += graphsettings;
+            var graphsettings = this.settingscache.graphsettings(graphdata.id);
             graphsettings.changed["traces"].connect(this.creategraphs);
         }
     }
 
     private void addgraphbinds(GraphData graphdata) {
         var graphid = graphdata.id;
-        var graphsettings = Utils.graphsettings(graphid);
+        var graphsettings = this.settingscache.graphsettings(graphid);
         graphsettings.bind_with_mapping("background-color",
                 graphdata, "background_color",
                 SettingsBindFlags.DEFAULT,
@@ -217,7 +215,7 @@ public class Main : Application {
 
     private void addtracebinds(TraceData tracedata,
             string graphid, string traceid) {
-        var tracesettings = Utils.tracesettings(graphid, traceid);
+        var tracesettings = this.settingscache.tracesettings(graphid, traceid);
         tracesettings.bind_with_mapping("color",
                 tracedata, "color",
                 SettingsBindFlags.DEFAULT,
@@ -240,9 +238,11 @@ public class Main : Application {
                 new SwapData(), new LoadData(), new DiskData()
         });
 
+        this.settingscache = new SettingsCache();
+
         new SettingsConversion().convert();
 
-        var datasettings = Utils.generalsettings();
+        var datasettings = this.settingscache.generalsettings();
         datasettings.bind("size",
                 this.multi, "size",
                 SettingsBindFlags.DEFAULT);
