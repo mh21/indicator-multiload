@@ -25,7 +25,7 @@ public class MultiLoadIndicator : Object {
     private Data[] datas;
     private Gtk.MenuItem[] menuitems;
 
-    private uint _size;
+    private uint _width;
     private uint _speed;
     private GraphData[] _graphdatas;
     private Gtk.Menu _menu;
@@ -33,12 +33,12 @@ public class MultiLoadIndicator : Object {
     public uint height { get; set; default = 22; }
     public MenuData menudata { get; set; default = new MenuData(); }
 
-    public uint size {
+    public uint width {
         get {
-            return this._size;
+            return this._width;
         }
         set {
-            this._size = value;
+            this._width = value;
             foreach (var graphdata in this._graphdatas)
                 graphdata.trace_length = value;
         }
@@ -114,7 +114,7 @@ public class MultiLoadIndicator : Object {
         set {
             this._graphdatas = value;
             foreach (var graphdata in this._graphdatas)
-                graphdata.trace_length = this._size;
+                graphdata.trace_length = this._width;
         }
     }
 
@@ -154,7 +154,7 @@ public class MultiLoadIndicator : Object {
 
         this.currenticonindex = 0;
 
-        this.size = 40;
+        this.width = 40;
         this.speed = 1000;
     }
 
@@ -177,7 +177,7 @@ public class MultiLoadIndicator : Object {
         foreach (var graphdata in this._graphdatas)
             if (graphdata.enabled)
                 ++count;
-        this.lastwidth = (int)(count * (this._size + 2)) - 2;
+        this.lastwidth = (int)(count * (this._width + 2)) - 2;
         var surface = new Cairo.ImageSurface(Cairo.Format.ARGB32,
                 (int)this.lastwidth, (int)this.height);
         var ctx = new Cairo.Context(surface);
@@ -188,10 +188,10 @@ public class MultiLoadIndicator : Object {
             if (!graphdata.enabled)
                 continue;
             graphdata.set_source_color(ctx);
-            ctx.rectangle(offset, 0, this._size, this.height);
+            ctx.rectangle(offset, 0, this._width, this.height);
             ctx.fill();
             var tracedatas = graphdata.tracedatas;
-            var values = new double[tracedatas.length, this._size];
+            var values = new double[tracedatas.length, this._width];
             var scale = graphdata.scale;
             for (uint j = 0, jsize = values.length[0]; j < jsize; ++j) {
                 var enabled = tracedatas[j].enabled;
@@ -210,7 +210,7 @@ public class MultiLoadIndicator : Object {
                 }
                 ctx.stroke();
             }
-            offset += this._size + 2;
+            offset += this._width + 2;
         }
         surface.write_to_png(this.iconpath(index));
         return this.iconname(index);

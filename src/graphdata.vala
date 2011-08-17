@@ -26,15 +26,15 @@ public class GraphData : GLib.Object {
 
     public string minimum { get; set; }
     public string maximum { get; set; }
-    public string smooth { 
+    public string smooth {
         get {
             return this._smooth;
-        } 
+        }
         set {
             this._smooth = value;
             this.smoothvalue = (uint)uint64.parse(value);
             this.scalerhistory = null;
-        } 
+        }
     }
 
     public Gdk.Color background_color { get; set; }

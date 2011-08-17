@@ -34,7 +34,7 @@
             <_summary>Applet refresh rate in milliseconds</_summary>
         </key>
 
-        <key name="size" type="q">
+        <key name="width" type="q">
             <default>40</default>
             <_summary>Width of the graphs in pixels.</_summary>
         </key>

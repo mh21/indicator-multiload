@@ -35,7 +35,7 @@ public class Preferences : Object {
 
         Gtk.Builder builder;
         this.preferences = Utils.get_ui("preferencesdialog", this,
-                {"sizeadjustment", "speedadjustment"},
+                {"widthadjustment", "speedadjustment"},
                 out builder) as Gtk.Dialog;
         return_if_fail(this.preferences != null);
 
@@ -76,8 +76,8 @@ public class Preferences : Object {
                     SettingsBindFlags.DEFAULT);
         }
 
-        prefsettings.bind("size",
-                builder.get_object("size"), "value",
+        prefsettings.bind("width",
+                builder.get_object("width"), "value",
                 SettingsBindFlags.DEFAULT);
         prefsettings.bind("speed",
                 builder.get_object("speed"), "value",

@@ -155,7 +155,7 @@ public class SettingsConversion : Object {
                     this.settingscache.generalsettings().set_value("speed", value);
                     break;
                 case "size":
-                    this.settingscache.generalsettings().set_value("size", value);
+                    this.settingscache.generalsettings().set_value("width", value);
                     break;
                 case "height":
                     this.settingscache.generalsettings().set_value("height", value);

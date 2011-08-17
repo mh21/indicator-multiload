@@ -25,7 +25,10 @@ public class LoadData : Data {
         GTop.LoadAvg loadavg;
         GTop.get_loadavg(out loadavg);
 
-        this.values = { loadavg.loadavg[0], GTop.global_server->ncpu };
+        this.values = {
+            loadavg.loadavg[0],
+            GTop.global_server->ncpu > 0 ? GTop.global_server->ncpu : 1
+        };
     }
 }
 

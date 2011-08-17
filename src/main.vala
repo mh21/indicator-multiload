@@ -243,11 +243,11 @@ public class Main : Application {
         new SettingsConversion().convert();
 
         var datasettings = this.settingscache.generalsettings();
-        datasettings.bind("size",
-                this.multi, "size",
-                SettingsBindFlags.DEFAULT);
         datasettings.bind("menu-expressions",
                 this.multi.menudata, "expressions",
+                SettingsBindFlags.DEFAULT);
+        datasettings.bind("width",
+                this.multi, "width",
                 SettingsBindFlags.DEFAULT);
         datasettings.bind("height",
                 this.multi, "height",
