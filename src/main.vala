@@ -22,12 +22,21 @@ public class Main : Application {
     private Preferences preferences;
     private SettingsCache settingscache;
     private static string datadirectory;
-    private string gsettings;
     private string autostartkey;
     private string desktopfilename;
     private string autostartfile;
     private string applicationfile;
     private string graphsetups;
+
+    const OptionEntry[] options = {
+        { "evaluate-expression", 'e', 0, OptionArg.CALLBACK,
+            (void*) evaluateexpression, N_("Evaluate an expression"), null },
+        { "list-identifiers", 'l', OptionFlags.NO_ARG, OptionArg.CALLBACK,
+            (void*) listidentifiers, N_("List available expression identifiers"), null },
+        { "debug", 'd', OptionFlags.NO_ARG, OptionArg.CALLBACK,
+            (void*) debug, N_("Increase debug level"), null },
+        { null }
+    };
 
     public bool autostart {
         get {
@@ -132,7 +141,6 @@ public class Main : Application {
     public Main(string app_id, ApplicationFlags flags) {
         Object(application_id: app_id, flags: flags);
 
-        this.gsettings = "de.mh21.indicator.multiload";
         this.autostartkey = "X-GNOME-Autostart-enabled";
         this.desktopfilename = "indicator-multiload.desktop";
         this.autostartfile = Path.build_filename
@@ -228,15 +236,60 @@ public class Main : Application {
                     SettingsBindFlags.DEFAULT);
     }
 
+    private Data[] newdatas() {
+        Data[] result = {
+            new CpuData(), new MemData(), new NetData(),
+            new SwapData(), new LoadData(), new DiskData()
+        };
+        return result;
+    }
+
+    [CCode (instance_pos = 3)]
+    private bool listidentifiers(string optionname, string? optionvalue) throws Error {
+        var datas = this.newdatas();
+        foreach (var data in datas)
+            data.update();
+        Thread.usleep(100000);
+        foreach (var data in datas) {
+            data.update();
+            stdout.printf("%s:\n", data.id);
+            string[] keys = data.keys;
+            double[] values = data.values;
+            for (uint i = 0, isize = keys.length; i < isize; ++i)
+                stdout.printf("  %s: %f\n", keys[i], values[i]);
+        }
+        return true;
+    }
+
+    [CCode (instance_pos = 3)]
+    private bool debug(string optionname, string? optionvalue) throws Error {
+        // Utils.debuglevel = 1;
+        return true;
+    }
+
+    [CCode (instance_pos = 3)]
+    private bool evaluateexpression(string optionname, string optionvalue) throws Error {
+        var datas = this.newdatas();
+        foreach (var data in datas)
+            data.update();
+        var parser = new ExpressionParser(datas);
+        var tokens = parser.tokenize(optionvalue);
+        stdout.printf("Original: %s\n", optionvalue);
+        stdout.printf("Tokens:");
+        foreach (var token in tokens)
+            stdout.printf(" '%s'", token);
+        stdout.printf("\n");
+        stdout.printf("Result: %s\n", parser.evaluate(tokens));
+
+        return true;
+    }
+
     public override void activate() {
         // all the work is done in startup
     }
 
     public override void startup() {
-        this.multi = new MultiLoadIndicator(datadirectory, {
-                new CpuData(), new MemData(), new NetData(),
-                new SwapData(), new LoadData(), new DiskData()
-        });
+        this.multi = new MultiLoadIndicator(datadirectory, this.newdatas());
 
         this.settingscache = new SettingsCache();
 
@@ -272,26 +325,39 @@ public class Main : Application {
         Gdk.notify_startup_complete();
     }
 
+    public override int command_line(GLib.ApplicationCommandLine command_line) {
+        // no command line processing in primary instance
+        return 0;
+    }
+
+    public override bool local_command_line
+        ([CCode (array_null_terminated = true, array_length = false)]
+         ref unowned string[] arguments,
+         out int exit_status) {
+        try {
+            OptionGroup group = new OptionGroup("", "", "", this);
+            group.add_entries(options);
+            var context = new OptionContext (_("- System load application indicator"));
+            context.set_help_enabled(true);
+            context.set_main_group((owned) group);
+            context.add_group(Gtk.get_option_group(true));
+            unowned string[] local_args = arguments;
+            context.parse(ref local_args);
+        } catch (OptionError e) {
+            stdout.printf("%s\n", e.message);
+            stdout.printf(_("Run '%s --help' to see a full list of available command line options.\n"), arguments[0]);
+            exit_status = 1;
+            return true;
+        }
+        return false;
+    }
+
     ~Main() {
         if (multi != null)
             this.multi.destroy();
     }
 
     public static int main(string[] args) {
-        // Data[] datas = { new CpuData(), new MemData(), new NetData(),
-        //         new SwapData(), new LoadData(), new DiskData() };
-        // foreach (var data in datas)
-        //     data.update();
-        // var parser = new ExpressionParser(datas);
-        // var tokens = parser.tokenize(args[1]);
-        // stdout.printf("Original: %s\n", args[1]);
-        // stdout.printf("Tokens:");
-        // foreach (var token in tokens)
-        //     stdout.printf(" '%s'", token);
-        // stdout.printf("\n");
-        // stdout.printf("Result: %s\n", parser.evaluate(tokens));
-        // return 1;
-
         Intl.bindtextdomain(Config.GETTEXT_PACKAGE, Config.PACKAGE_LOCALE_DIR);
         Intl.bind_textdomain_codeset(Config.GETTEXT_PACKAGE, "UTF-8");
         Intl.textdomain(Config.GETTEXT_PACKAGE);
