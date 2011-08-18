@@ -20,7 +20,7 @@ public class CpuData : Data {
     private uint64[] lastdata;
 
     public CpuData() {
-	base("cpu", {"user", "nice", "sys", "io", "inuse", "idle"});
+	base("cpu", {"user", "sys", "nice", "idle", "io", "inuse"});
     }
 
     public override void update() {
@@ -31,14 +31,14 @@ public class CpuData : Data {
         newdata[0] = cpu.user;
         newdata[1] = cpu.sys;
         newdata[2] = cpu.nice;
-        newdata[3] = cpu.iowait + cpu.irq + cpu.softirq;
-        newdata[4] = cpu.user + cpu.nice + cpu.sys;
-        newdata[5] = cpu.idle;
+        newdata[3] = cpu.idle;
+        newdata[4] = cpu.iowait + cpu.irq + cpu.softirq;
+        newdata[5] = cpu.user + cpu.nice + cpu.sys;
 
         double total = 0;
 
         if (this.lastdata.length != 0) {
-            for (uint i = 0, isize = newdata.length; i < isize; ++i)
+            for (uint i = 0; i < 5; ++i)
                 total += newdata[i] - this.lastdata[i];
             for (uint i = 0, isize = newdata.length; i < isize; ++i)
                 this.values[i] = (newdata[i] - this.lastdata[i]) / total;

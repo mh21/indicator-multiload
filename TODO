@@ -1,3 +1,6 @@
+0.3:
+- starting with parameter -l should return after printing list even when started as first instance
+
 0.4:
 - color schemes
 - error messages for expressions not only on stderr
