@@ -322,7 +322,7 @@
         </key>
 
         <key name="maximum" type="s">
-            <default>"0"</default>
+            <default>"$(load.cpus)"</default>
             <_summary>Maximum value for upper graph edge, zero means unlimited</_summary>
         </key>
 
