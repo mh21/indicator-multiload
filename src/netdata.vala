@@ -31,16 +31,38 @@ public class NetData : Data {
         string[] devices;
         GTop.NetList netlist;
         devices = GTop.get_netlist(out netlist);
+        debug("Netlist: %u entries", netlist.number);
         for (uint i = 0; i < netlist.number; ++i) {
             GTop.NetLoad netload;
             GTop.get_netload(out netload, devices[i]);
+            debug("Netload: %s", devices[i]);
+            debug("  flags: %llx", netload.flags);
+            debug("  if flags: %llx", netload.if_flags);
+            debug("  mtu: %u", netload.mtu);
+            debug("  subnet: %u", netload.subnet);
+            debug("  address: %u", netload.address);
+            debug("  packets in: %llu", netload.packets_in);
+            debug("  packets out: %llu", netload.packets_out);
+            debug("  packets total: %llu", netload.packets_total);
+            debug("  bytes in: %llu", netload.bytes_in);
+            debug("  bytes out: %llu", netload.bytes_out);
+            debug("  bytes total: %llu", netload.bytes_total);
+            debug("  errors in: %llu", netload.errors_in);
+            debug("  errors out: %llu", netload.errors_out);
+            debug("  errors total: %llu", netload.errors_total);
+            debug("  collisions: %llu", netload.collisions);
             if ((netload.if_flags & (1L << GTop.IFFlags.UP)) == 0) {
                 // ignore (counters jumps to zero when shut down)
+                debug("  down");
             } else if (FileUtils.test("/sys/class/net/%s/device".printf(devices[i]), FileTest.EXISTS)) {
                 newdata[0] += netload.bytes_in;
                 newdata[1] += netload.bytes_out;
+                debug("  existing device link");
             } else if ((netload.if_flags & (1L << GTop.IFFlags.LOOPBACK)) > 0) {
                 newdata[2] += netload.bytes_in;
+                debug("  loopback");
+            } else {
+                debug("  unknown");
             }
         }
 

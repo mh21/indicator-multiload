@@ -33,8 +33,8 @@ public class Main : Application {
             (void*) evaluateexpression, N_("Evaluate an expression"), null },
         { "list-identifiers", 'l', OptionFlags.NO_ARG, OptionArg.CALLBACK,
             (void*) listidentifiers, N_("List available expression identifiers"), null },
-        { "debug", 'd', OptionFlags.NO_ARG, OptionArg.CALLBACK,
-            (void*) debug, N_("Increase debug level"), null },
+        { "verbose", 'v', OptionFlags.NO_ARG, OptionArg.CALLBACK,
+            (void*) debug, N_("Show debug messages"), null },
         { null }
     };
 
@@ -263,7 +263,7 @@ public class Main : Application {
 
     [CCode (instance_pos = 3)]
     private bool debug(string optionname, string? optionvalue) throws Error {
-        // Utils.debuglevel = 1;
+        Utils.enabledebugmessages = true;
         return true;
     }
 
@@ -370,6 +370,8 @@ public class Main : Application {
             xdgdatadirs += ":";
         Environment.set_variable("XDG_DATA_DIRS",
                 xdgdatadirs + Main.datadirectory, true);
+
+        Utils.initdebug();
 
         Gtk.init(ref args);
         Gtk.Window.set_default_icon_name("utilities-system-monitor");
