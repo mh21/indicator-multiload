@@ -296,7 +296,7 @@ public class ExpressionParser {
     }
 
     private string evaluate_text(string[] tokens, ref uint index) throws Error {
-        string[] result = null;
+        string[] result = {};
         while (index < tokens.length) {
             string current = tokens[index];
             if (current == "$") {

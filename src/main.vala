@@ -17,11 +17,14 @@
  ******************************************************************************/
 
 public class Main : Application {
+    private static string datadirectory;
+    private static string expressionoption = "";
+    private static bool identifiersoption = false;
+
     private MultiLoadIndicator multi;
     private Gtk.Dialog about;
     private Preferences preferences;
     private SettingsCache settingscache;
-    private static string datadirectory;
     private string autostartkey;
     private string desktopfilename;
     private string autostartfile;
@@ -29,10 +32,10 @@ public class Main : Application {
     private string graphsetups;
 
     const OptionEntry[] options = {
-        { "evaluate-expression", 'e', 0, OptionArg.CALLBACK,
-            (void*) evaluateexpression, N_("Evaluate an expression"), null },
-        { "list-identifiers", 'l', OptionFlags.NO_ARG, OptionArg.CALLBACK,
-            (void*) listidentifiers, N_("List available expression identifiers"), null },
+        { "evaluate-expression", 'e', 0, OptionArg.STRING,
+            ref expressionoption, N_("Evaluate an expression"), null },
+        { "list-identifiers", 'l', 0, OptionArg.NONE,
+            ref identifiersoption, N_("List available expression identifiers"), null },
         { "verbose", 'v', OptionFlags.NO_ARG, OptionArg.CALLBACK,
             (void*) debug, N_("Show debug messages"), null },
         { null }
@@ -245,42 +248,8 @@ public class Main : Application {
     }
 
     [CCode (instance_pos = 3)]
-    private bool listidentifiers(string optionname, string? optionvalue) throws Error {
-        var datas = this.newdatas();
-        foreach (var data in datas)
-            data.update();
-        Thread.usleep(100000);
-        foreach (var data in datas) {
-            data.update();
-            stdout.printf("%s:\n", data.id);
-            string[] keys = data.keys;
-            double[] values = data.values;
-            for (uint i = 0, isize = keys.length; i < isize; ++i)
-                stdout.printf("  %s: %f\n", keys[i], values[i]);
-        }
-        return true;
-    }
-
-    [CCode (instance_pos = 3)]
     private bool debug(string optionname, string? optionvalue) throws Error {
         Utils.enabledebugmessages = true;
-        return true;
-    }
-
-    [CCode (instance_pos = 3)]
-    private bool evaluateexpression(string optionname, string optionvalue) throws Error {
-        var datas = this.newdatas();
-        foreach (var data in datas)
-            data.update();
-        var parser = new ExpressionParser(datas);
-        var tokens = parser.tokenize(optionvalue);
-        stdout.printf("Original: %s\n", optionvalue);
-        stdout.printf("Tokens:");
-        foreach (var token in tokens)
-            stdout.printf(" '%s'", token);
-        stdout.printf("\n");
-        stdout.printf("Result: %s\n", parser.evaluate(tokens));
-
         return true;
     }
 
@@ -349,7 +318,41 @@ public class Main : Application {
             exit_status = 1;
             return true;
         }
-        return false;
+
+        bool result = false;
+
+        if (identifiersoption) {
+            var datas = this.newdatas();
+            foreach (var data in datas)
+                data.update();
+            Thread.usleep(100000);
+            foreach (var data in datas) {
+                data.update();
+                stdout.printf("%s:\n", data.id);
+                string[] keys = data.keys;
+                double[] values = data.values;
+                for (uint i = 0, isize = keys.length; i < isize; ++i)
+                    stdout.printf("  %s: %f\n", keys[i], values[i]);
+            }
+            result = true;
+        }
+
+        if (expressionoption.length > 0) {
+            var datas = this.newdatas();
+            foreach (var data in datas)
+                data.update();
+            var parser = new ExpressionParser(datas);
+            var tokens = parser.tokenize(expressionoption);
+            stdout.printf("Original: %s\n", expressionoption);
+            stdout.printf("Tokens:");
+            foreach (var token in tokens)
+                stdout.printf(" '%s'", token);
+            stdout.printf("\n");
+            stdout.printf("Result: %s\n", parser.evaluate(tokens));
+            result = true;
+        }
+
+        return result;
     }
 
     ~Main() {
