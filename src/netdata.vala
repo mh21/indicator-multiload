@@ -51,9 +51,10 @@ public class NetData : Data {
             debug("  errors out: %llu", netload.errors_out);
             debug("  errors total: %llu", netload.errors_total);
             debug("  collisions: %llu", netload.collisions);
-            if ((netload.if_flags & (1L << GTop.IFFlags.UP)) == 0) {
-                // ignore (counters jumps to zero when shut down)
-                debug("  down");
+            if (((netload.if_flags & (1L << GTop.IFFlags.UP)) == 0) |
+                ((netload.if_flags & (1L << GTop.IFFlags.RUNNING)) == 0)) {
+                // TODO: transient high differences when shut down
+                debug("  down or not running");
             } else if (FileUtils.test("/sys/class/net/%s/device".printf(devices[i]), FileTest.EXISTS)) {
                 newdata[0] += netload.bytes_in;
                 newdata[1] += netload.bytes_out;
