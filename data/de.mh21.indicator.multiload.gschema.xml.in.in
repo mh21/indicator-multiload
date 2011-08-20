@@ -54,6 +54,35 @@
             <_summary>Automatically start on session startup</_summary>
         </key>
 
+        <key name="indicator-expressions" type="as">
+            <default>[
+                "CPU: $(percent(cpu.inuse)), iowait $(percent(cpu.io))",
+                "Mem: $(size(mem.user)), cache $(size(mem.cache))",
+                "Net: down $(speed(net.down)), up $(speed(net.up))",
+                "Swap: $(size(swap.used))",
+                "Load: $(decimals(load.avg,2))",
+                "Disk: read $(speed(disk.read)), write $(speed(disk.write))"
+            ]</default>
+            <_summary>Information shown in the indicator itself</_summary>
+        </key>
+
+        <key name="indicator-expression-index" type="i">
+            <default>-1</default>
+            <_summary>Index of the current information shown in the indicator itself</_summary>
+        </key>
+
+        <key name="indicator-expression-guides" type="as">
+            <default>[
+                "CPU: $(percent(1)), iowait $(percent(1))",
+                "Mem: $(size(999)), cache $(size(999))",
+                "Net: down $(speed(999)), up $(speed(999))",
+                "Swap: $(size(999))",
+                "Load: $(decimals(80,2))",
+                "Disk: read $(speed(999)), write $(speed(999))"
+            ]</default>
+            <_summary>Guides that determines the minimum width of the indicator text</_summary>
+        </key>
+
         <key name="menu-expressions" type="as">
             <default>[
                 "CPU: $(percent(cpu.inuse)), iowait $(percent(cpu.io))",

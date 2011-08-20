@@ -24,6 +24,7 @@ public class MultiLoadIndicator : Object {
     private AppIndicator.Indicator indicator;
     private Data[] datas;
     private Gtk.MenuItem[] menuitems;
+    private int _indicator_index;
 
     private uint _width;
     private uint _speed;
@@ -32,6 +33,16 @@ public class MultiLoadIndicator : Object {
 
     public uint height { get; set; default = 22; }
     public MenuData menudata { get; set; default = new MenuData(); }
+    public MenuData indicatordata { get; set; default = new MenuData(); }
+    public int indicator_index {
+        get {
+            return this._indicator_index;
+        }
+        set {
+            this._indicator_index = value;
+            this.updatelabel();
+        }
+    }
 
     public uint width {
         get {
@@ -60,13 +71,12 @@ public class MultiLoadIndicator : Object {
             this.timeout.set_callback(() => {
                     foreach (var data in this.datas)
                         data.update();
+                    foreach (var graphdata in this.graphdatas)
+                        graphdata.update(this.datas);
+                    this.menudata.update(this.datas);
+                    this.indicatordata.update(this.datas);
 
                     uint menu_position = 2;
-                    for (uint i = 0, isize = this._graphdatas.length; i < isize; ++i) {
-                        GraphData graphdata = this._graphdatas[i];
-                        graphdata.update(this.datas);
-                    }
-                    this.menudata.update(this.datas);
                     var menuitemlabels = this.menudata.labels;
                     var length = menuitemlabels.length;
                     for (uint j = 0; j < length; ++j) {
@@ -88,8 +98,9 @@ public class MultiLoadIndicator : Object {
                         this.menuitems = this.menuitems[0:length];
                     }
 
-                    if (indicator != null) {
-                        indicator.set_icon(this.write(this.currenticonindex));
+                    if (this.indicator != null) {
+                        this.updatelabel();
+                        this.indicator.set_icon(this.write(this.currenticonindex));
                         this.currenticonindex = 1 - this.currenticonindex;
                         // fix icon size if using the fallback GtkStatusIcon
                         Gtk.Window.list_toplevels().foreach((w) => {
@@ -133,6 +144,18 @@ public class MultiLoadIndicator : Object {
                 this.indicator = new AppIndicator.Indicator.with_path("multiload", this.iconname(0),
                         AppIndicator.IndicatorCategory.SYSTEM_SERVICES, this.icondirectory);
                 this.indicator.set_status(AppIndicator.IndicatorStatus.ACTIVE);
+                this.indicator.scroll_event.connect((delta, direction) => {
+                        var index = this.indicator_index;
+                        if (direction == Gdk.ScrollDirection.DOWN)
+                            index += delta;
+                        else if (direction == Gdk.ScrollDirection.UP)
+                            index -= delta;
+                        if (index >= this.indicatordata.labels.length)
+                            index = this.indicatordata.labels.length - 1;
+                        if (index < -1)
+                            index = -1;
+                        this.indicator_index = index;
+                    });
             }
             if (value != null)
                 this.indicator.set_menu(value);
@@ -152,8 +175,6 @@ public class MultiLoadIndicator : Object {
         this.datas = datas;
         DirUtils.create(this.icondirectory, 0777);
 
-        this.currenticonindex = 0;
-
         this.width = 40;
         this.speed = 1000;
     }
@@ -162,6 +183,21 @@ public class MultiLoadIndicator : Object {
         FileUtils.remove(this.iconpath(0));
         FileUtils.remove(this.iconpath(1));
         DirUtils.remove(this.icondirectory);
+    }
+
+    private void updatelabel() {
+        if (this.indicator == null)
+            return;
+
+        var indicatorlabels = this.indicatordata.labels;
+        var indicatorguides = this.indicatordata.guides;
+        var indicatorlabel = 0 <= this.indicator_index &&
+            this.indicator_index < indicatorlabels.length ?
+            indicatorlabels[this.indicator_index] : "";
+        var indicatorguide = 0 <= this.indicator_index &&
+            this.indicator_index < indicatorguides.length ?
+            indicatorguides[this.indicator_index] : "";
+        this.indicator.set_label(indicatorlabel, indicatorguide);
     }
 
     private string iconname(uint index) {

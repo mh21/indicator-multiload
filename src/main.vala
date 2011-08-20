@@ -18,7 +18,8 @@
 
 public class Main : Application {
     private static string datadirectory;
-    private static string expressionoption = "";
+    [CCode (array_null_terminated = true)]
+    private static string[] expressionoptions;
     private static bool identifiersoption = false;
 
     private MultiLoadIndicator multi;
@@ -32,8 +33,8 @@ public class Main : Application {
     private string graphsetups;
 
     const OptionEntry[] options = {
-        { "evaluate-expression", 'e', 0, OptionArg.STRING,
-            ref expressionoption, N_("Evaluate an expression"), null },
+        { "evaluate-expression", 'e', 0, OptionArg.STRING_ARRAY,
+            ref expressionoptions, N_("Evaluate an expression"), null },
         { "list-identifiers", 'l', 0, OptionArg.NONE,
             ref identifiersoption, N_("List available expression identifiers"), null },
         { "verbose", 'v', OptionFlags.NO_ARG, OptionArg.CALLBACK,
@@ -268,6 +269,15 @@ public class Main : Application {
         datasettings.bind("menu-expressions",
                 this.multi.menudata, "expressions",
                 SettingsBindFlags.DEFAULT);
+        datasettings.bind("indicator-expressions",
+                this.multi.indicatordata, "expressions",
+                SettingsBindFlags.DEFAULT);
+        datasettings.bind("indicator-expression-guides",
+                this.multi.indicatordata, "guide-expressions",
+                SettingsBindFlags.DEFAULT);
+        datasettings.bind("indicator-expression-index",
+                this.multi, "indicator-index",
+                SettingsBindFlags.DEFAULT);
         datasettings.bind("width",
                 this.multi, "width",
                 SettingsBindFlags.DEFAULT);
@@ -337,7 +347,7 @@ public class Main : Application {
             result = true;
         }
 
-        if (expressionoption.length > 0) {
+        foreach (var expressionoption in expressionoptions) {
             var datas = this.newdatas();
             foreach (var data in datas)
                 data.update();

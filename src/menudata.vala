@@ -17,17 +17,11 @@
  ******************************************************************************/
 
 public class MenuData : GLib.Object {
-    string[] _expressions;
 
     public string[] labels { get; private set; default = {}; }
-    public string[] expressions { 
-        get {
-            return _expressions;
-        } 
-        set {
-            _expressions = value;
-        }
-    }
+    public string[] guides { get; private set; default = {}; }
+    public string[] expressions { get; set; }
+    public string[] guide_expressions { get; set; }
 
     public void update(Data[] datas) {
         var parser = new ExpressionParser(datas);
@@ -36,6 +30,12 @@ public class MenuData : GLib.Object {
         for (uint i = 0, isize = this._expressions.length; i < isize; ++i) {
             var tokens = parser.tokenize(this._expressions[i]);
             this.labels[i] = parser.evaluate(tokens);
+        }
+
+        this.guides = new string[this._guide_expressions.length];
+        for (uint i = 0, isize = this._guide_expressions.length; i < isize; ++i) {
+            var tokens = parser.tokenize(this._guide_expressions[i]);
+            this.guides[i] = parser.evaluate(tokens);
         }
     }
 }
