@@ -16,33 +16,17 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.                *
  ******************************************************************************/
 
-public class TraceData : GLib.Object {
-    private double[] _values;
-
-    public Gdk.Color color { get; set; }
-    public string expression { get; set; }
-    public bool enabled { get; set; }
-    public double[] values {
-        get {
-            return _values;
-        }
+public class SwapProvider : Provider {
+    public SwapProvider() {
+        base("swap", {"used", "total"});
     }
 
-    public void set_values_length(uint length) {
-        if (length > this._values.length) {
-            var newvalues = new double[length];
-            var offset = length - this._values.length;
-            for (uint i = 0, isize = this._values.length; i < isize; ++i)
-                newvalues[offset + i] = this._values[i];
-            this._values = newvalues;
-        } else if (length < this._values.length) {
-            this._values = this._values[this._values.length - length:this._values.length];
-        }
-    }
+    public override void update() {
+        GTop.Swap swap;
+        GTop.get_swap(out swap);
 
-    public void add_value(double value) {
-        for (uint i = 0, isize = this._values.length; i + 1 < isize; ++i)
-            this._values[i] = this._values[i + 1];
-        this._values[this._values.length - 1] = value;
+        this.values[0] = swap.used;
+        this.values[1] = swap.total > 0 ? swap.total : 1;
     }
 }
+

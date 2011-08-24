@@ -16,26 +16,27 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.                *
  ******************************************************************************/
 
-public class MenuData : GLib.Object {
+public class TraceModel : GLib.Object {
+    public Gdk.Color color { get; set; }
+    public string expression { get; set; }
+    public bool enabled { get; set; }
+    public double[] values { get; private set; }
 
-    public string[] labels { get; private set; default = {}; }
-    public string[] guides { get; private set; default = {}; }
-    public string[] expressions { get; set; }
-    public string[] guide_expressions { get; set; }
-
-    public void update(Data[] datas) {
-        var parser = new ExpressionParser(datas);
-
-        this.labels = new string[this._expressions.length];
-        for (uint i = 0, isize = this._expressions.length; i < isize; ++i) {
-            var tokens = parser.tokenize(this._expressions[i]);
-            this.labels[i] = parser.evaluate(tokens);
+    public void set_values_length(uint length) {
+        if (length > this._values.length) {
+            var newvalues = new double[length];
+            var offset = length - this._values.length;
+            for (uint i = 0, isize = this._values.length; i < isize; ++i)
+                newvalues[offset + i] = this._values[i];
+            this._values = newvalues;
+        } else if (length < this._values.length) {
+            this._values = this._values[this._values.length - length:this._values.length];
         }
+    }
 
-        this.guides = new string[this._guide_expressions.length];
-        for (uint i = 0, isize = this._guide_expressions.length; i < isize; ++i) {
-            var tokens = parser.tokenize(this._guide_expressions[i]);
-            this.guides[i] = parser.evaluate(tokens);
-        }
+    public void add_value(double value) {
+        for (uint i = 0, isize = this._values.length; i + 1 < isize; ++i)
+            this._values[i] = this._values[i + 1];
+        this._values[this._values.length - 1] = value;
     }
 }

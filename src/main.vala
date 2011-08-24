@@ -179,31 +179,28 @@ public class Main : Application {
 
         var datasettings = this.settingscache.generalsettings();
 
-        GraphData[] graphdatas = null;
-        foreach (var graphid in datasettings.get_strv("graphs"))
-            graphdatas += new GraphData(graphid);
-        this.multi.graphdatas = graphdatas;
+        this.multi.graphmodels = new GraphModels(datasettings.get_strv("graphs"));
 
         // dconf binds: will overwrite the old binds
-        foreach (var graphdata in this.multi.graphdatas)
-            this.addgraphbinds(graphdata);
+        foreach (var graphmodel in this.multi.graphmodels.graphmodels)
+            this.addgraphbinds(graphmodel);
 
         // dconf notifications for graph/trace creation
         foreach (var cachedsetting in this.settingscache.cachedsettings())
             SignalHandler.disconnect_by_func(cachedsetting,
                     (void*) Main.creategraphs, this);
         datasettings.changed["graphs"].connect(this.creategraphs);
-        foreach (var graphdata in this.multi.graphdatas) {
-            var graphsettings = this.settingscache.graphsettings(graphdata.id);
+        foreach (var graphmodel in this.multi.graphmodels.graphmodels) {
+            var graphsettings = this.settingscache.graphsettings(graphmodel.id);
             graphsettings.changed["traces"].connect(this.creategraphs);
         }
     }
 
-    private void addgraphbinds(GraphData graphdata) {
-        var graphid = graphdata.id;
+    private void addgraphbinds(GraphModel graphmodel) {
+        var graphid = graphmodel.id;
         var graphsettings = this.settingscache.graphsettings(graphid);
         graphsettings.bind_with_mapping("background-color",
-                graphdata, "background_color",
+                graphmodel, "background_color",
                 SettingsBindFlags.DEFAULT,
                 Utils.get_settings_color,
                 Utils.set_settings_color,
@@ -216,36 +213,28 @@ public class Main : Application {
             "alpha",
             "traces" };
         foreach (var property in graphproperties)
-            graphsettings.bind(property, graphdata, property,
+            graphsettings.bind(property, graphmodel, property,
                     SettingsBindFlags.DEFAULT);
 
-        var traceids = graphdata.traces;
-        var tracedatas = graphdata.tracedatas;
+        var traceids = graphmodel.traces;
+        var tracemodels = graphmodel.tracemodels;
         for (uint i = 0, isize = traceids.length; i < isize; ++i)
-            this.addtracebinds(tracedatas[i], graphid, traceids[i]);
+            this.addtracebinds(tracemodels[i], graphid, traceids[i]);
     }
 
-    private void addtracebinds(TraceData tracedata,
+    private void addtracebinds(TraceModel tracemodel,
             string graphid, string traceid) {
         var tracesettings = this.settingscache.tracesettings(graphid, traceid);
         tracesettings.bind_with_mapping("color",
-                tracedata, "color",
+                tracemodel, "color",
                 SettingsBindFlags.DEFAULT,
                 Utils.get_settings_color,
                 Utils.set_settings_color,
                 null, () => {});
         string[] traceproperties = {"enabled", "expression"};
         foreach (var property in traceproperties)
-            tracesettings.bind(property, tracedata, property,
+            tracesettings.bind(property, tracemodel, property,
                     SettingsBindFlags.DEFAULT);
-    }
-
-    private Data[] newdatas() {
-        Data[] result = {
-            new CpuData(), new MemData(), new NetData(),
-            new SwapData(), new LoadData(), new DiskData()
-        };
-        return result;
     }
 
     [CCode (instance_pos = 3)]
@@ -259,21 +248,27 @@ public class Main : Application {
     }
 
     public override void startup() {
-        this.multi = new MultiLoadIndicator(datadirectory, this.newdatas());
+        this.multi = new MultiLoadIndicator(Path.build_filename(datadirectory, "icons"), new Providers());
 
         this.settingscache = new SettingsCache();
 
         new SettingsConversion().convert();
 
+        // initialize indicator, won't update before speed is set
+        this.creategraphs(null, "");
+        var menu = Utils.get_ui("menu", this) as Gtk.Menu;
+        return_if_fail(menu != null);
+        this.multi.menu = menu;
+
         var datasettings = this.settingscache.generalsettings();
         datasettings.bind("menu-expressions",
-                this.multi.menudata, "expressions",
+                this.multi.menumodel, "expressions",
                 SettingsBindFlags.DEFAULT);
         datasettings.bind("indicator-expressions",
-                this.multi.indicatordata, "expressions",
+                this.multi.labelmodel, "expressions",
                 SettingsBindFlags.DEFAULT);
         datasettings.bind("indicator-expression-guides",
-                this.multi.indicatordata, "guide-expressions",
+                this.multi.labelmodel, "guide-expressions",
                 SettingsBindFlags.DEFAULT);
         datasettings.bind("indicator-expression-index",
                 this.multi, "indicator-index",
@@ -284,18 +279,15 @@ public class Main : Application {
         datasettings.bind("height",
                 this.multi, "height",
                 SettingsBindFlags.DEFAULT);
-        datasettings.bind("speed",
-                this.multi, "speed",
-                SettingsBindFlags.DEFAULT);
         datasettings.bind("autostart",
                 this, "autostart",
                 SettingsBindFlags.DEFAULT);
+        // should be the last one as it initializes the timer
+        datasettings.bind("speed",
+                this.multi, "speed",
+                SettingsBindFlags.DEFAULT);
 
-        this.creategraphs(null, "");
-
-        var menu = Utils.get_ui("menu", this) as Gtk.Menu;
-        return_if_fail(menu != null);
-        this.multi.menu = menu;
+        this.multi.updateall();
 
         this.preferences = new Preferences();
 
@@ -332,15 +324,13 @@ public class Main : Application {
         bool result = false;
 
         if (identifiersoption) {
-            var datas = this.newdatas();
-            foreach (var data in datas)
-                data.update();
+            var providers = new Providers();
             Thread.usleep(100000);
-            foreach (var data in datas) {
-                data.update();
-                stdout.printf("%s:\n", data.id);
-                string[] keys = data.keys;
-                double[] values = data.values;
+            providers.update();
+            foreach (var provider in providers.providers) {
+                stdout.printf("%s:\n", provider.id);
+                string[] keys = provider.keys;
+                double[] values = provider.values;
                 for (uint i = 0, isize = keys.length; i < isize; ++i)
                     stdout.printf("  %s: %f\n", keys[i], values[i]);
             }
@@ -348,10 +338,7 @@ public class Main : Application {
         }
 
         foreach (var expressionoption in expressionoptions) {
-            var datas = this.newdatas();
-            foreach (var data in datas)
-                data.update();
-            var parser = new ExpressionParser(datas);
+            var parser = new ExpressionParser(new Providers());
             var tokens = parser.tokenize(expressionoption);
             stdout.printf("Original: %s\n", expressionoption);
             stdout.printf("Tokens:");

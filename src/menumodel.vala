@@ -16,23 +16,21 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.                *
  ******************************************************************************/
 
-public class MemData : Data {
-    public MemData() {
-        base("mem", {"user", "shared", "buffer", "cached", "total", "cache"});
-    }
+public class MenuModel : GLib.Object {
+    public string[] labels { get; private set; default = {}; }
+    public string[] guides { get; private set; default = {}; }
+    public string[] expressions { get; set; }
+    public string[] guide_expressions { get; set; }
 
-    public override void update() {
-        GTop.Mem mem;
-        GTop.get_mem(out mem);
+    public void update(Providers providers) {
+        var parser = new ExpressionParser(providers);
 
-        this.values = {
-            mem.user,
-            mem.shared,
-            mem.buffer,
-            mem.cached,
-            mem.total,
-            mem.shared + mem.buffer + mem.cached
-        };
+        this.labels = new string[this._expressions.length];
+        for (uint i = 0, isize = this._expressions.length; i < isize; ++i)
+            this.labels[i] = parser.parse(this._expressions[i]);
+
+        this.guides = new string[this._guide_expressions.length];
+        for (uint i = 0, isize = this._guide_expressions.length; i < isize; ++i)
+            this.guides[i] = parser.parse(this._guide_expressions[i]);
     }
 }
-

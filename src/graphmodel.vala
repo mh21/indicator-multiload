@@ -16,76 +16,50 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.                *
  ******************************************************************************/
 
-public class GraphData : GLib.Object {
-    private string[] _traces;
-    private uint _trace_length;
-    private string _smooth;
-
+public class GraphModel : Object {
     private uint smoothvalue;
     private double[] scalerhistory;
 
+    public string id { get; construct; }
     public string minimum { get; set; }
     public string maximum { get; set; }
-    public string smooth {
-        get {
-            return this._smooth;
-        }
-        set {
-            this._smooth = value;
-            this.smoothvalue = (uint)uint64.parse(value);
-            this.scalerhistory = null;
-        }
-    }
-
+    public string smooth { get; set; }
     public Gdk.Color background_color { get; set; }
     public uint alpha { get; set; }
     public bool enabled { get; set; }
-    public uint trace_length {
-        get {
-            return this._trace_length;
-        }
-        set {
-            this._trace_length = value;
-            foreach (var tracedata in this.tracedatas)
-                tracedata.set_values_length(value);
-        }
-    }
-    public string[] traces {
-        get {
-            return this._traces;
-        }
-        set {
-            this._traces = value;
-            while (this._tracedatas.length < this._traces.length) {
-                var tracedata = new TraceData();
-                tracedata.set_values_length(this._trace_length);
-                this._tracedatas += tracedata;
-            }
-            this._tracedatas = this._tracedatas[0:this._traces.length];
-        }
-    }
-
-    public string id { get; private set; }
+    public string[] traces { get; set; }
     public double scale { get; private set; default = 1; }
-    public TraceData[] tracedatas { get; private set; }
 
-    public GraphData(string id) {
-        this.id = id;
+    // not a real property because of unsupported datatype, no notify
+    public TraceModel[] tracemodels { get; private set; }
+
+    construct {
+        this.notify["smooth"].connect(() => {
+                this.smoothvalue = (uint)uint64.parse(this.smooth);
+                this.scalerhistory = null;
+            });
+        this.notify["traces"].connect(() => {
+                while (this._tracemodels.length < this._traces.length)
+                    this._tracemodels += new TraceModel();
+                this._tracemodels = this._tracemodels[0:this._traces.length];
+            });
     }
 
-    public void update(Data[] datas) {
-        var parser = new ExpressionParser(datas);
+    public GraphModel(string id) {
+        Object(id: id);
+    }
 
-        foreach (var tracedata in this.tracedatas) {
-            var tokens = parser.tokenize(tracedata.expression);
-            tracedata.add_value(double.parse(parser.evaluate(tokens)));
+    public void update(Providers providers, uint trace_length) {
+        var parser = new ExpressionParser(providers);
+
+        foreach (var tracemodel in this.tracemodels) {
+            tracemodel.set_values_length(trace_length);
+            tracemodel.add_value(double.parse(parser.parse(tracemodel.expression)));
         }
 
-        var minimumtokens = parser.tokenize(this.minimum);
-        var scalerminimum = double.parse(parser.evaluate(minimumtokens));
-        var maximumtokens = parser.tokenize(this.maximum);
-        var scalermaximum = double.parse(parser.evaluate(maximumtokens));
-        this.update_scale(scalerminimum, scalermaximum);
+        var scalerminimum = double.parse(parser.parse(this.minimum));
+        var scalermaximum = double.parse(parser.parse(this.maximum));
+        this.update_scale(scalerminimum, scalermaximum, trace_length);
     }
 
     // Fast attack, slow decay
@@ -97,13 +71,13 @@ public class GraphData : GLib.Object {
     //   - it is never smaller than the peak value in the plot
     //   - after the current peak leaves the plot, the scaling factor gets
     //     reduced slowly
-    private void update_scale(double scalerminimum, double scalermaximum) {
+    private void update_scale(double scalerminimum, double scalermaximum, uint trace_length) {
         double currentpeak = scalerminimum;
-        for (uint i = 0, isize = this.trace_length; i < isize; ++i) {
+        for (uint i = 0, isize = trace_length; i < isize; ++i) {
             double currentvalue = 0;
-            foreach (var tracedata in this.tracedatas)
-                if (tracedata.enabled)
-                    currentvalue += tracedata.values[i];
+            foreach (var tracemodel in this.tracemodels)
+                if (tracemodel.enabled)
+                    currentvalue += tracemodel.values[i];
             currentpeak = double.max(currentpeak, currentvalue);
         }
         if (scalermaximum != 0)

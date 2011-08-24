@@ -16,11 +16,11 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.                *
  ******************************************************************************/
 
-public class NetData : Data {
+public class NetProvider : Provider {
     private uint64[] lastdata;
     private uint64 lasttime;
 
-    public NetData() {
+    public NetProvider() {
         base("net", {"down", "up", "local"});
     }
 

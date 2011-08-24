@@ -22,8 +22,7 @@ public class Preferences : Object {
 
     private MenuPreferences menupreferences;
 
-    public Preferences()
-    {
+    construct {
         this.menupreferences = new MenuPreferences();
     }
 

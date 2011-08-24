@@ -16,12 +16,12 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.                *
  ******************************************************************************/
 
-public class DiskData : Data {
+public class DiskProvider : Provider {
     private uint64[] lastdata;
     private uint64 lasttime;
     private const string[] networkfs = { "smbfs", "nfs", "cifs", "fuse.sshfs" };
 
-    public DiskData() {
+    public DiskProvider() {
         base("disk", {"read", "write"});
     }
 
@@ -88,10 +88,8 @@ public class DiskData : Data {
 
         if (this.lastdata.length != 0) {
             double delta = (newtime - this.lasttime) / 1e6;
-            this.values = {
-                (newdata[0] - this.lastdata[0]) / delta,
-                (newdata[1] - this.lastdata[1]) / delta
-            };
+            this.values[0] = (newdata[0] - this.lastdata[0]) / delta;
+            this.values[1] = (newdata[1] - this.lastdata[1]) / delta;
         }
         this.lastdata = newdata;
         this.lasttime = newtime;

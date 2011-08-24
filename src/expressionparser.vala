@@ -16,149 +16,147 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.                *
  ******************************************************************************/
 
-Quark expression_error_quark() {
-  return Quark.from_string("expression-error-quark");
-}
-
-public class ExpressionParser {
-    Data[] datas;
-
-    public ExpressionParser(Data[] datas) {
-        this.datas = datas;
-    }
-
-    private static void expandtoken(char *current,
-            ref char *last) {
-        if (last == null)
-            last = current;
-        // stderr.printf("Expanding token to '%s'\n", strndup(last, current - last + 1));
-    }
-
-    private static string[] savetoken(char *current,
-            ref char *last, string[] result) {
-        string[] r = result;
-        if (last != null) {
-            var token = strndup(last, current - last);
-            // stderr.printf("Saving token '%s'\n", token);
-            r += token;
-            last = null;
-        } else {
-            // stderr.printf("Not saving empty token\n");
-        }
-        return r;
-    }
-
-    private static string[] addtoken(char current,
-            string[] result) {
-        string[] r = result;
-        var token = current.to_string();
-        // stderr.printf("Adding token '%s'\n", token);
-        r += token;
-        return r;
-    }
-
-    private static bool isspace(char current) {
-        return current == ' ';
-    }
-
-    private static bool isvariable(char current) {
-        return
-            current >= 'a' && current <= 'z' ||
-            current >= '0' && current <= '9' ||
-            current == '.';
-    }
+internal class ExpressionTokenizer {
+    private char *last;
+    private char *current;
+    private string[] result;
 
     public string[] tokenize(string expression) {
-        string[] result = null;
-        char *last = null;
-        char *current = expression;
+        this.result = null;
+        this.last = null;
         int level = 0;
         bool inexpression = false;
-        for (; *current != '\0'; current = current + 1) {
+        for (this.current = expression; *this.current != '\0';
+                this.current = this.current + 1) {
             if (!inexpression) {
-                if (*current == '$') {
-                    result = savetoken(current, ref last, result);
-                    result = addtoken(*current, result);
+                if (*this.current == '$') {
+                    this.save();
+                    this.add(*this.current);
                     inexpression = true;
                 } else {
-                    expandtoken(current, ref last);
+                    this.expand();
                 }
             } else {
                 if (level == 0) {
-                    if (isvariable(*current)) {
-                        expandtoken(current, ref last);
-                    } else if (last == null && *current == '(') {
-                        result = addtoken(*current, result);
+                    if (this.isvariable()) {
+                        this.expand();
+                    } else if (this.last == null && *this.current == '(') {
+                        this.add(*this.current);
                         ++level;
                     } else {
-                        result = addtoken('(', result);
-                        result = savetoken(current, ref last, result);
-                        result = addtoken(')', result);
-                        expandtoken(current, ref last);
+                        this.add('(');
+                        this.save();
+                        this.add(')');
+                        this.expand();
                         inexpression = false;
                     }
                 } else {
-                    if (*current == '(') {
-                        result = savetoken(current, ref last, result);
-                        result = addtoken(*current, result);
+                    if (*this.current == '(') {
+                        this.save();
+                        this.add(*this.current);
                         ++level;
-                    } else if (*current == ')') {
-                        result = savetoken(current, ref last, result);
-                        result = addtoken(*current, result);
+                    } else if (*this.current == ')') {
+                        this.save();
+                        this.add(*this.current);
                         --level;
                         if (level == 0)
                             inexpression = false;
-                    } else if (isspace(*current)) {
-                        result = savetoken(current, ref last, result);
-                    } else if (!isvariable(*current)) {
-                        result = savetoken(current, ref last, result);
-                        result = addtoken(*current, result);
+                    } else if (this.isspace()) {
+                        this.save();
+                    } else if (!this.isvariable()) {
+                        this.save();
+                        this.add(*this.current);
                     } else {
-                        expandtoken(current, ref last);
+                        this.expand();
                     }
                 }
             }
         }
-        result = savetoken(current, ref last, result);
-
-        return result;
+        this.save();
+        return this.result;
     }
 
-    private Error error(uint index, string message) {
-        return new Error(expression_error_quark(), (int)index, "%s", message);
+    private void expand() {
+        if (this.last == null)
+            this.last = this.current;
+        // stderr.printf("Expanding token to '%s'\n", strndup(last, current - last + 1));
     }
 
-    private string evaluate_expression(string[] tokens, ref uint index) throws Error {
-        if (index >= tokens.length)
-            throw error(index, "empty expression");
-        if (tokens[index] == "(")
-            return evaluate_expression_parens(tokens, ref index);
-        return evaluate_expression_identifier(tokens, ref index);
+    private void save() {
+        if (this.last != null) {
+            var token = strndup(this.last, this.current - this.last);
+            // stderr.printf("Saving token '%s'\n", token);
+            this.result += token;
+            this.last = null;
+        } else {
+            // stderr.printf("Not saving empty token\n");
+        }
     }
 
-    private string evaluate_expression_times(string[] tokens, ref uint index) throws Error {
+    private void add(char what) {
+        var token = what.to_string();
+        // stderr.printf("Adding token '%s'\n", token);
+        this.result += token;
+    }
+
+    private bool isspace() {
+        return *this.current == ' ';
+    }
+
+    private bool isvariable() {
+        return
+            *this.current >= 'a' && *this.current <= 'z' ||
+            *this.current >= '0' && *this.current <= '9' ||
+            *this.current == '.';
+    }
+}
+
+internal class ExpressionEvaluator {
+    private Providers providers;
+
+    private uint index;
+    private string[] tokens;
+
+    public ExpressionEvaluator(Providers providers) {
+        this.providers = providers;
+    }
+
+    private static Error error(uint index, string message) {
+        return new Error(Quark.from_string("expression-error-quark"),
+                (int)index, "%s", message);
+    }
+
+    private string parens_or_identifier() throws Error {
+        if (this.index >= this.tokens.length)
+            throw error(this.index, "empty expression");
+        if (this.tokens[this.index] == "(")
+            return parens();
+        return identifier();
+    }
+
+    private string times() throws Error {
         string result = null;
         bool div = false;
         for (;;) {
-            if (index >= tokens.length)
-                throw error(index, "expression expected");
-            var value = evaluate_expression(tokens, ref index);
+            if (this.index >= this.tokens.length)
+                throw error(this.index, "expression expected");
+            var value = parens_or_identifier();
             if (result == null)
                 result = value;
             else if (!div)
                 result = (double.parse(result) * double.parse(value)).to_string();
             else
                 result = (double.parse(result) / double.parse(value)).to_string();
-            if (index >= tokens.length)
+            if (this.index >= this.tokens.length)
                 return result;
-            switch (tokens[index]) {
+            switch (this.tokens[this.index]) {
             case "*":
                 div = false;
-                ++index;
+                ++this.index;
                 continue;
             case "/":
                 div = true;
-                ++index;
+                ++this.index;
                 continue;
             default:
                 return result;
@@ -166,29 +164,29 @@ public class ExpressionParser {
         }
     }
 
-    private string evaluate_expression_plus(string[] tokens, ref uint index) throws Error {
+    private string plus() throws Error {
         string result = null;
         bool minus = false;
         for (;;) {
-            if (index >= tokens.length)
-                throw error(index, "expression expected");
-            var value = evaluate_expression_times(tokens, ref index);
+            if (this.index >= this.tokens.length)
+                throw error(this.index, "expression expected");
+            var value = times();
             if (result == null)
                 result = value;
             else if (!minus)
                 result = (double.parse(result) + double.parse(value)).to_string();
             else
                 result = (double.parse(result) - double.parse(value)).to_string();
-            if (index >= tokens.length)
+            if (this.index >= this.tokens.length)
                 return result;
-            switch (tokens[index]) {
+            switch (this.tokens[this.index]) {
             case "+":
                 minus = false;
-                ++index;
+                ++this.index;
                 continue;
             case "-":
                 minus = true;
-                ++index;
+                ++this.index;
                 continue;
             default:
                 return result;
@@ -196,97 +194,101 @@ public class ExpressionParser {
         }
     }
 
-    private string evaluate_expression_parens(string[] tokens, ref uint index) throws Error {
-        if (index >= tokens.length || tokens[index] != "(")
-            throw error(index, "'(' expected");
-        ++index;
-        var result = evaluate_expression_plus(tokens, ref index);
-        if (index >= tokens.length || tokens[index] != ")")
-            throw error(index, "')' expected");
-        ++index;
+    private string parens() throws Error {
+        if (this.index >= this.tokens.length ||
+                this.tokens[this.index] != "(")
+            throw error(this.index, "'(' expected");
+        ++this.index;
+        var result = plus();
+        if (this.index >= this.tokens.length ||
+                this.tokens[this.index] != ")")
+            throw error(this.index, "')' expected");
+        ++this.index;
         return result;
     }
 
-    private string[] evaluate_expression_params(string[] tokens, ref uint index) throws Error {
+    private string[] params() throws Error {
         string[] result = null;
-        if (index >= tokens.length || tokens[index] != "(")
-            throw error(index, "'(' expected");
-        ++index;
-        if (index >= tokens.length)
-            throw error(index, "parameters expected");
-        if (tokens[index] != ")") {
+        if (this.index >= this.tokens.length ||
+                this.tokens[this.index] != "(")
+            throw error(this.index, "'(' expected");
+        ++this.index;
+        if (this.index >= this.tokens.length)
+            throw error(this.index, "parameters expected");
+        if (this.tokens[this.index] != ")") {
             for (;;) {
-                result += evaluate_expression_plus(tokens, ref index);
-                if (index >= tokens.length)
-                    throw error(index, "')' expected");
-                if (tokens[index] != ",")
+                result += plus();
+                if (this.index >= this.tokens.length)
+                    throw error(this.index, "')' expected");
+                if (this.tokens[this.index] != ",")
                     break;
-                ++index;
+                ++this.index;
             }
         }
-        if (index >= tokens.length || tokens[index] != ")")
-            throw error(index, "')' expected");
-        ++index;
+        if (this.index >= this.tokens.length ||
+                this.tokens[this.index] != ")")
+            throw error(this.index, "')' expected");
+        ++this.index;
         return result;
     }
 
-    private string evaluate_expression_identifier(string[] tokens, ref uint index) throws Error {
-        if (index >= tokens.length)
-            throw error(index, "identifier expected");
+    private string identifier() throws Error {
+        if (this.index >= this.tokens.length)
+            throw error(this.index, "identifier expected");
         double sign = 1;
-        if (tokens[index] == "+") {
-            ++index;
-            if (index >= tokens.length)
-                throw error(index, "identifier expected");
-        } else if (tokens[index] == "-") {
+        if (this.tokens[this.index] == "+") {
+            ++this.index;
+            if (this.index >= this.tokens.length)
+                throw error(this.index, "identifier expected");
+        } else if (this.tokens[this.index] == "-") {
             sign = -1.0;
-            ++index;
-            if (index >= tokens.length)
-                throw error(index, "identifier expected");
+            ++this.index;
+            if (this.index >= this.tokens.length)
+                throw error(this.index, "identifier expected");
         }
-        var token = tokens[index];
+        var token = this.tokens[this.index];
         if (token.length > 0 && (token[0] >= '0' && token[0] <= '9' || token[0] == '.')) {
-            ++index;
+            ++this.index;
             if (sign == -1)
                 return "-" + token;
             return token;
         }
         var varparts = token.split(".");
-        var nameindex = index;
-        ++index;
+        var nameindex = this.index;
+        ++this.index;
         switch (varparts.length) {
         case 1:
             var function = varparts[0];
-            var parameters = evaluate_expression_params(tokens, ref index);
+            var parameters = params();
             switch (function) {
             case "decimals":
                 if (parameters.length < 2)
-                    throw error(index, "at least two parameters expected");
+                    throw error(this.index, "at least two parameters expected");
                 return "%.*f".printf(int.parse(parameters[1]), sign * double.parse(parameters[0]));
             case "size":
                 if (parameters.length < 1)
-                    throw error(index, "at least one parameter expected");
+                    throw error(this.index, "at least one parameter expected");
                 return Utils.format_size(sign * double.parse(parameters[0]));
             case "speed":
                 if (parameters.length < 1)
-                    throw error(index, "at least one parameter expected");
+                    throw error(this.index, "at least one parameter expected");
                 return Utils.format_speed(sign * double.parse(parameters[0]));
             case "percent":
                 if (parameters.length < 1)
-                    throw error(index, "at least one parameter expected");
+                    throw error(this.index, "at least one parameter expected");
                 return _("%u%%").printf
-                    ((uint)Math.round(100 * sign * double.parse(parameters[0])));
+                    ((uint) Math.round(100 * sign * double.parse(parameters[0])));
             default:
                 throw error(nameindex, "unknown function");
             }
         case 2:
-            foreach (var data in this.datas) {
-                if (data.id != varparts[0])
+            foreach (var provider in this.providers.providers) {
+                if (provider.id != varparts[0])
                     continue;
-                for (uint j = 0, jsize = data.keys.length; j < jsize; ++j) {
-                    if (data.keys[j] != varparts[1])
+                for (uint j = 0, jsize = provider.keys.length; j < jsize; ++j) {
+                    if (provider.keys[j] != varparts[1])
                         continue;
-                    return (sign * data.values[j]).to_string();
+                    return (sign * provider.values[j]).to_string();
                 }
             }
             throw error(nameindex, "unknown variable");
@@ -295,16 +297,16 @@ public class ExpressionParser {
         }
     }
 
-    private string evaluate_text(string[] tokens, ref uint index) throws Error {
+    private string text() throws Error {
         string[] result = {};
-        while (index < tokens.length) {
-            string current = tokens[index];
+        while (this.index < this.tokens.length) {
+            string current = this.tokens[this.index];
             if (current == "$") {
-                ++index;
-                result += evaluate_expression(tokens, ref index);
+                ++this.index;
+                result += parens_or_identifier();
             } else {
                 result += current;
-                ++index;
+                ++this.index;
             }
         }
 
@@ -312,23 +314,44 @@ public class ExpressionParser {
     }
 
     public string evaluate(string[] tokens) {
-        uint index = 0;
+        this.index = 0;
+        this.tokens = tokens;
         try {
-            return evaluate_text(tokens, ref index);
+            return text();
         } catch (Error e) {
             stderr.printf("Expression error: %s\n", e.message);
             string errormessage = "";
             int errorpos = -1;
-            for (uint i = 0, isize = tokens.length; i < isize; ++i) {
+            for (uint i = 0, isize = this.tokens.length; i < isize; ++i) {
                 if (e.code == i)
                     errorpos = errormessage.length;
-                errormessage += " " + tokens[i];
+                errormessage += " " + this.tokens[i];
             }
             if (errorpos < 0)
                 errorpos = errormessage.length;
             stderr.printf("%s\n%s^\n", errormessage, string.nfill(errorpos, '-'));
             return "";
         }
+    }
+}
+
+public class ExpressionParser : Object {
+    private Providers providers;
+
+    public ExpressionParser(Providers providers) {
+        this.providers = providers;
+    }
+
+    public string[] tokenize(string expression) {
+        return new ExpressionTokenizer().tokenize(expression);
+    }
+
+    public string evaluate(string[] tokens) {
+        return new ExpressionEvaluator(this.providers).evaluate(tokens);
+    }
+
+    public string parse(string expression) {
+        return evaluate(tokenize(expression));
     }
 }
 

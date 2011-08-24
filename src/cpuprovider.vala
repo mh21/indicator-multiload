@@ -16,17 +16,34 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.                *
  ******************************************************************************/
 
-public abstract class Data : GLib.Object {
-    public string id { get; private set; }
+public class CpuProvider : Provider {
+    private uint64[] lastdata;
 
-    public string[] keys { get; private set; }
-    public double[] values { get; protected set; }
-
-    public Data(string id, string[] keys) {
-	this.id = id;
-	this.keys = keys;
-	this.values = new double[keys.length];
+    public CpuProvider() {
+	base("cpu", {"user", "sys", "nice", "idle", "io", "inuse"});
     }
 
-    public abstract void update();
+    public override void update() {
+        GTop.Cpu cpu;
+        GTop.get_cpu(out cpu);
+
+        uint64[] newdata = new uint64[6];
+        newdata[0] = cpu.user;
+        newdata[1] = cpu.sys;
+        newdata[2] = cpu.nice;
+        newdata[3] = cpu.idle;
+        newdata[4] = cpu.iowait + cpu.irq + cpu.softirq;
+        newdata[5] = cpu.user + cpu.nice + cpu.sys;
+
+        double total = 0;
+
+        if (this.lastdata.length != 0) {
+            for (uint i = 0; i < 5; ++i)
+                total += newdata[i] - this.lastdata[i];
+            for (uint i = 0, isize = newdata.length; i < isize; ++i)
+                this.values[i] = (newdata[i] - this.lastdata[i]) / total;
+        }
+        this.lastdata = newdata;
+    }
 }
+

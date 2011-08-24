@@ -45,3 +45,5 @@ po/stamp-it
 src/*.c
 stamp-h1
 tags
+vgdump
+vgdump.core.*
