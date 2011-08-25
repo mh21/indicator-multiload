@@ -86,7 +86,7 @@
         <key name="menu-expressions" type="as">
             <default>[
                 "CPU: $(percent(cpu.inuse)), iowait $(percent(cpu.io))",
-                "Mem: $(size(mem.user)), cache $(size(mem.cache))",
+                "Mem: $(size(mem.user)), cache $(size(mem.cached))",
                 "Net: down $(speed(net.down)), up $(speed(net.up))",
                 "Swap: $(size(swap.used))",
                 "Load: $(decimals(load.avg,2))",

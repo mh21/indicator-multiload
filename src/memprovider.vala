@@ -18,7 +18,7 @@
 
 public class MemProvider : Provider {
     public MemProvider() {
-        base("mem", {"user", "shared", "buffer", "cached", "total", "cache"});
+        base("mem", {"user", "shared", "buffer", "cached", "total", "used"});
     }
 
     public override void update() {
@@ -26,12 +26,11 @@ public class MemProvider : Provider {
         GTop.get_mem(out mem);
 
         this.values[0] = mem.user;
-        this.values[1] = mem.user;
-        this.values[2] = mem.shared;
-        this.values[3] = mem.buffer;
-        this.values[4] = mem.cached;
-        this.values[5] = mem.total;
-        this.values[6] = mem.shared + mem.buffer + mem.cached;
+        this.values[1] = mem.shared;
+        this.values[2] = mem.buffer;
+        this.values[3] = mem.cached;
+        this.values[4] = mem.total;
+        this.values[5] = mem.shared + mem.buffer + mem.cached;
     }
 }
 
