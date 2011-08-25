@@ -26,8 +26,7 @@ public class LoadProvider : Provider {
         GTop.get_loadavg(out loadavg);
 
         this.values[0] = loadavg.loadavg[0];
-        this.values[1] = GTop.global_server->ncpu > 0 ?
-            GTop.global_server->ncpu : 1;
+        this.values[1] = GTop.global_server->ncpu + 1;
     }
 }
 
