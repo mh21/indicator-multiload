@@ -23,6 +23,7 @@ public class MultiLoadIndicator : Object {
     private AppIndicator.Indicator indicator;
     private Providers providers;
     private Gtk.MenuItem[] menuitems;
+    private bool menuset;
 
     public string icondirectory {get; construct; }
     public int indicator_index { get; set; }
@@ -155,7 +156,10 @@ public class MultiLoadIndicator : Object {
                 menuitems[j].destroy();
             this.menuitems = this.menuitems[0:length];
         }
-        this.indicator.set_menu(this.menu);
+        if (!this.menuset) {
+            this.indicator.set_menu(this.menu);
+            this.menuset = true;
+        }
     }
 
     private void updatelabelview() {
