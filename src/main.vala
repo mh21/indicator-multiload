@@ -78,6 +78,9 @@ public class Main : Application {
             }
             file.set_boolean(KeyFileDesktop.GROUP, autostartkey, value);
             try {
+                DirUtils.create(Path.build_filename
+                        (Environment.get_user_config_dir(), "autostart"),
+                        0777);
                 FileUtils.set_contents(this.autostartfile, file.to_data());
             } catch (Error e) {
                 stderr.printf("Could not create autostart desktop file: %s\n", e.message);
