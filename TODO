@@ -1,3 +1,7 @@
+0.3:
+- first icon should be empty icon, not image-not-found
+- system(...) function
+
 0.4:
 - color schemes
 - error messages for expressions not only on stderr

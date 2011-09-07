@@ -74,11 +74,11 @@
         <key name="indicator-expression-guides" type="as">
             <default>[
                 "CPU $(percent(1))",
-                "Mem $(size(999))",
-                "Net $(speed(999))/$(speed(999))",
-                "Swap $(size(999))",
+                "Mem $(size(999000000))",
+                "Net $(speed(999000000))/$(speed(999000000))",
+                "Swap $(size(999000000))",
                 "Load $(decimals(80,2))",
-                "Disk $(speed(999))/$(speed(999))"
+                "Disk $(speed(999000000))/$(speed(999000000))"
             ]</default>
             <_summary>Guides that determines the minimum width of the indicator text</_summary>
         </key>

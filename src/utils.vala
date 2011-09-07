@@ -61,18 +61,18 @@ namespace Utils {
             N_("{} GB")
         };
         int index = -1;
-        while (index + 1 < units.length && val >= 1000) {
+        while (index + 1 < units.length && (val >= 1000 || index < 0)) {
             val /= 1000;
             ++index;
         }
         if (index < 0)
-            return ngettext("%u byte", "%u bytes",
+            return ngettext("%u B", "%u B",
                     (ulong)val).printf((uint)val);
         // 4 significant digits
         var pattern = _(units[index]).replace("{}",
-            val < 9.9995 ? "%.3f" :
-            val < 99.995 ? "%.2f" :
-            val < 999.95 ? "%.1f" : "%.0f");
+            val <   9.95 ? "%.1f" :
+            val <  99.5  ? "%.0f" :
+            val < 999.5  ? "%.0f" : "%.0f");
         return pattern.printf(val);
     }
 
@@ -88,18 +88,18 @@ namespace Utils {
             N_("{} TB/s")
         };
         int index = -1;
-        while (index + 1 < units.length && val >= 1000) {
+        while (index + 1 < units.length && (val >= 1000 || index < 0)) {
             val /= 1000;
             ++index;
         }
         if (index < 0)
-            return ngettext("%u byte/s", "%u bytes/s",
+            return ngettext("%u B/s", "%u B/s",
                     (ulong)val).printf((uint)val);
         // 4 significant digits
         var pattern = _(units[index]).replace("{}",
-            val < 9.9995 ? "%.3f" :
-            val < 99.995 ? "%.2f" :
-            val < 999.95 ? "%.1f" : "%.0f");
+            val <   9.95 ? "%.1f" :
+            val <  99.5  ? "%.0f" :
+            val < 999.5  ? "%.0f" : "%.0f");
         return pattern.printf(val);
     }
 
