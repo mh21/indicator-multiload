@@ -9,15 +9,15 @@ msgstr ""
 "Project-Id-Version: ku\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-10 00:45+0200\n"
-"PO-Revision-Date: 2011-05-28 13:40+0000\n"
-"Last-Translator: Rêzan Tovjîn <retovjin@hotmail.com>\n"
+"PO-Revision-Date: 2011-09-06 11:42+0000\n"
+"Last-Translator: Erdal Ronahi <erdal.ronahi@gmail.com>\n"
 "Language-Team: Kurdish <ku@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2011-05-30 05:46+0000\n"
-"X-Generator: Launchpad (build 12959)\n"
+"X-Launchpad-Export-Date: 2011-09-07 05:05+0000\n"
+"X-Generator: Launchpad (build 13861)\n"
 "Language: ku\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
@@ -130,7 +130,7 @@ msgstr "_Vala"
 
 #: ../data/preferences.ui.in.h:27
 msgid "_Harddisk"
-msgstr "_Dîska Sabît"
+msgstr "_Dîska aabît"
 
 #: ../data/preferences.ui.in.h:28
 msgid "_In"
@@ -162,7 +162,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:35
 msgid "_Preferences"
-msgstr "_Vebijark"
+msgstr "_Vebijêrk"
 
 #: ../data/preferences.ui.in.h:36
 msgid "_Processor"
@@ -200,7 +200,11 @@ msgstr "pîksel"
 msgid "translator-credits"
 msgstr ""
 "Rizoyê Xerzî <rizoxerzi@gmail.com> Erdal Ronahî <erdal.ronahi@gmail.com> \\n "
-"Elîxan Loran <elixanloranj@hotmail.com> \\n Rêzan Tovjîn <rezan@bername.net>"
+"Elîxan Loran <elixanloranj@hotmail.com> \\n Rêzan Tovjîn "
+"<rezan@bername.net>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Erdal Ronahi https://launchpad.net/~erdalronahi"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
 msgid "Applet refresh rate in milliseconds"
