@@ -27,6 +27,26 @@ public class Providers : Object {
         this.update();
     }
 
+    public double value(string variable, out bool found)
+    {
+        var varparts = variable.split(".");
+        return_val_if_fail(varparts.length == 2, 0);
+
+        found = true;
+        foreach (var provider in this.providers) {
+            if (provider.id != varparts[0])
+                continue;
+            for (uint j = 0, jsize = provider.keys.length; j < jsize; ++j) {
+                if (provider.keys[j] != varparts[1])
+                    continue;
+                return provider.values[j];
+            }
+        }
+
+        found = false;
+        return 0;
+    }
+
     public void update() {
         foreach (var provider in this.providers)
             provider.update();

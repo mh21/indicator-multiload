@@ -26,53 +26,92 @@ internal class ExpressionTokenizer {
         this.last = null;
         int level = 0;
         bool inexpression = false;
+        bool instringsingle = false;
+        bool instringdouble = false;
         for (this.current = expression; *this.current != '\0';
                 this.current = this.current + 1) {
             if (!inexpression) {
                 if (*this.current == '$') {
                     this.save();
-                    this.add(*this.current);
+                    this.addcurrent();
                     inexpression = true;
                 } else {
                     this.expand();
                 }
-            } else {
-                if (level == 0) {
-                    if (this.isvariable()) {
-                        this.expand();
-                    } else if (this.last == null && *this.current == '(') {
-                        this.add(*this.current);
-                        ++level;
-                    } else {
-                        this.add('(');
-                        this.save();
-                        this.add(')');
-                        this.expand();
-                        inexpression = false;
-                    }
+                continue;
+            }
+            // inexpression
+            if (level == 0) {
+                if (this.isvariable()) {
+                    this.expand();
+                } else if (this.last == null && *this.current == '(') {
+                    this.addcurrent();
+                    ++level;
                 } else {
-                    if (*this.current == '(') {
-                        this.save();
-                        this.add(*this.current);
-                        ++level;
-                    } else if (*this.current == ')') {
-                        this.save();
-                        this.add(*this.current);
-                        --level;
-                        if (level == 0)
-                            inexpression = false;
-                    } else if (this.isspace()) {
-                        this.save();
-                    } else if (!this.isvariable()) {
-                        this.save();
-                        this.add(*this.current);
-                    } else {
-                        this.expand();
-                    }
+                    this.add('(');
+                    this.save();
+                    this.add(')');
+                    this.expand();
+                    inexpression = false;
                 }
+                continue;
+            }
+            // level > 0
+            if (instringsingle) {
+                this.expand();
+                if (*this.current == '\'') {
+                    this.savewithcurrent();
+                    instringsingle = false;
+                }
+                continue;
+            }
+            if (instringdouble) {
+                this.expand();
+                if (*this.current == '"') {
+                    this.savewithcurrent();
+                    instringdouble = false;
+                }
+                continue;
+            }
+            // !instring
+            if (*this.current == '\'') {
+                this.save();
+                this.expand();
+                instringsingle = true;
+            } else if (*this.current == '"') {
+                this.save();
+                this.expand();
+                instringdouble = true;
+            } else if (*this.current == '(') {
+                this.save();
+                this.addcurrent();
+                ++level;
+            } else if (*this.current == ')') {
+                this.save();
+                this.addcurrent();
+                --level;
+                if (level == 0)
+                    inexpression = false;
+            } else if (this.isspace()) {
+                this.save();
+            } else if (!this.isvariable()) {
+                this.save();
+                this.addcurrent();
+            } else {
+                this.expand();
             }
         }
-        this.save();
+        // fixup open strings, parentheses
+        if (instringdouble)
+            this.savewith('"');
+        else if (instringsingle)
+            this.savewith('\'');
+        else
+            this.save();
+        while (level > 0) {
+            this.add(')');
+            --level;
+        }
         return this.result;
     }
 
@@ -82,6 +121,20 @@ internal class ExpressionTokenizer {
         // stderr.printf("Expanding token to '%s'\n", strndup(last, current - last + 1));
     }
 
+    // add the current character as a new token
+    private void addcurrent() {
+        this.add(*this.current);
+    }
+
+    // add a character as a new token
+    private void add(char what) {
+        var token = what.to_string();
+        // stderr.printf("Adding token '%s'\n", token);
+        this.result += token;
+    }
+
+    // if the current token is not empty, push it to the token list and set the
+    // current token to empty; this will not include the current character
     private void save() {
         if (this.last != null) {
             var token = strndup(this.last, this.current - this.last);
@@ -93,10 +146,18 @@ internal class ExpressionTokenizer {
         }
     }
 
-    private void add(char what) {
-        var token = what.to_string();
-        // stderr.printf("Adding token '%s'\n", token);
+    private void savewithcurrent() {
+        this.savewith(*this.current);
+    }
+
+    // add a character to the current token, push it to the token list
+    // and set the current token to empty
+    private void savewith(char what) {
+        string token = (this.last != null ?
+                strndup(this.last, this.current - this.last) : "") + what.to_string();
+        stderr.printf("Saving token '%s'\n", token);
         this.result += token;
+        this.last = null;
     }
 
     private bool isspace() {
@@ -282,16 +343,11 @@ internal class ExpressionEvaluator {
                 throw error(nameindex, "unknown function");
             }
         case 2:
-            foreach (var provider in this.providers.providers) {
-                if (provider.id != varparts[0])
-                    continue;
-                for (uint j = 0, jsize = provider.keys.length; j < jsize; ++j) {
-                    if (provider.keys[j] != varparts[1])
-                        continue;
-                    return (sign * provider.values[j]).to_string();
-                }
-            }
-            throw error(nameindex, "unknown variable");
+            bool found = false;
+            var result = (sign * this.providers.value(token, out found)).to_string();
+            if (!found)
+                throw error(nameindex, "unknown variable");
+            return result;
         default:
             throw error(nameindex, "too many identifier parts");
         }
