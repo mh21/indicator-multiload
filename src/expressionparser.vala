@@ -308,6 +308,10 @@ internal class ExpressionEvaluator {
                 throw error(this.index, "identifier expected");
         }
         var token = this.tokens[this.index];
+        if (token.length > 0 && (token[0] == '\'' || token[0] == '"')) {
+            ++this.index;
+            return (sign == -1 ? "-" : "") + token[1:token.length - 1];
+        }
         if (token.length > 0 && (token[0] >= '0' && token[0] <= '9' || token[0] == '.')) {
             ++this.index;
             if (sign == -1)
@@ -319,28 +323,17 @@ internal class ExpressionEvaluator {
         ++this.index;
         switch (varparts.length) {
         case 1:
-            var function = varparts[0];
-            var parameters = params();
-            switch (function) {
-            case "decimals":
-                if (parameters.length < 2)
-                    throw error(this.index, "at least two parameters expected");
-                return "%.*f".printf(int.parse(parameters[1]), sign * double.parse(parameters[0]));
-            case "size":
-                if (parameters.length < 1)
-                    throw error(this.index, "at least one parameter expected");
-                return Utils.format_size(sign * double.parse(parameters[0]));
-            case "speed":
-                if (parameters.length < 1)
-                    throw error(this.index, "at least one parameter expected");
-                return Utils.format_speed(sign * double.parse(parameters[0]));
-            case "percent":
-                if (parameters.length < 1)
-                    throw error(this.index, "at least one parameter expected");
-                return _("%u%%").printf
-                    ((uint) Math.round(100 * sign * double.parse(parameters[0])));
-            default:
-                throw error(nameindex, "unknown function");
+            bool found = false;
+            try {
+                var result = this.providers.call(token, this.params(), out found);
+                if (!found)
+                    throw error(nameindex, "unknown function");
+                return (sign == -1 ? "-" : "") + result;
+            } catch (Error e) {
+                // TODO: this is not the right error position, maybe it is one
+                // of the parameters so how to we transport this, maybe add
+                // nameindex + e.errorcode?
+                throw error(nameindex, e.message);
             }
         case 2:
             bool found = false;

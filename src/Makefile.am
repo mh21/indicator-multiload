@@ -19,12 +19,11 @@ bin_PROGRAMS = indicator-multiload
 
 indicator_multiload_SOURCES = \
 	cpuprovider.vala \
-	provider.vala \
-	providers.vala \
 	diskprovider.vala \
 	expressionparser.vala \
-	graphmodel.vala \
+	function.vala \
 	graphmodels.vala \
+	graphmodel.vala \
 	loadprovider.vala \
 	main.vala \
 	memprovider.vala \
@@ -33,6 +32,8 @@ indicator_multiload_SOURCES = \
 	multiloadindicator.vala \
 	netprovider.vala \
 	preferences.vala \
+	providers.vala \
+	provider.vala \
 	settingscache.vala \
 	settingsconversion.vala \
 	swapprovider.vala \

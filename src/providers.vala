@@ -18,6 +18,7 @@
 
 public class Providers : Object {
     public Provider[] providers { get; private set; }
+    public Function[] functions { get; private set; }
 
     construct {
         this.providers = {
@@ -25,11 +26,16 @@ public class Providers : Object {
             new SwapProvider(), new LoadProvider(), new DiskProvider()
         };
         this.update();
+        this.functions = {
+            new DecimalsFunction(), new SizeFunction(),
+            new SpeedFunction(), new PercentFunction()
+        };
     }
 
-    public double value(string variable, out bool found)
+    // TODO: use exceptions
+    public double value(string name, out bool found)
     {
-        var varparts = variable.split(".");
+        var varparts = name.split(".");
         return_val_if_fail(varparts.length == 2, 0);
 
         found = true;
@@ -45,6 +51,19 @@ public class Providers : Object {
 
         found = false;
         return 0;
+    }
+
+    public string call(string name, string[] parameters, out bool found) throws Error
+    {
+        found = true;
+        foreach (var function in this.functions) {
+            if (function.id != name)
+                continue;
+            return function.call(parameters);
+        }
+
+        found = false;
+        return "";
     }
 
     public void update() {

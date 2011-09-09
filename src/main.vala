@@ -334,6 +334,11 @@ public class Main : Application {
                 for (uint i = 0, isize = keys.length; i < isize; ++i)
                     stdout.printf("  %s: %f\n", keys[i], values[i]);
             }
+            stdout.printf("functions:\n");
+            foreach (var function in providers.functions) {
+                stdout.printf("  %s(%s)\n", function.id,
+                        string.joinv(", ", function.parameters));
+            }
             result = true;
         }
 
