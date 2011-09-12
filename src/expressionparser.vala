@@ -177,6 +177,7 @@ internal class ExpressionEvaluator {
 
     private uint index;
     private string[] tokens;
+    bool widest;
 
     public ExpressionEvaluator(Providers providers) {
         this.providers = providers;
@@ -325,7 +326,8 @@ internal class ExpressionEvaluator {
         case 1:
             bool found = false;
             try {
-                var result = this.providers.call(token, this.params(), out found);
+                var result = this.providers.call(token, this.params(),
+                        this.widest, out found);
                 if (!found)
                     throw error(nameindex, "unknown function");
                 return (sign == -1 ? "-" : "") + result;
@@ -362,9 +364,10 @@ internal class ExpressionEvaluator {
         return string.joinv("", result);
     }
 
-    public string evaluate(string[] tokens) {
+    public string evaluate(string[] tokens, bool widest) {
         this.index = 0;
         this.tokens = tokens;
+        this.widest = widest;
         try {
             return text();
         } catch (Error e) {
@@ -395,12 +398,15 @@ public class ExpressionParser : Object {
         return new ExpressionTokenizer().tokenize(expression);
     }
 
-    public string evaluate(string[] tokens) {
-        return new ExpressionEvaluator(this.providers).evaluate(tokens);
+    public string evaluate(string[] tokens, out string widest) {
+        var evaluator = new ExpressionEvaluator(this.providers);
+        // TODO this should only be done when we need the widest string
+        widest = evaluator.evaluate(tokens, true);
+        return evaluator.evaluate(tokens, false);
     }
 
-    public string parse(string expression) {
-        return evaluate(tokenize(expression));
+    public string parse(string expression, out string widest) {
+        return evaluate(tokenize(expression), out widest);
     }
 }
 

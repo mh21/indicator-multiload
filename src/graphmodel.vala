@@ -54,11 +54,11 @@ public class GraphModel : Object {
 
         foreach (var tracemodel in this.tracemodels) {
             tracemodel.set_values_length(trace_length);
-            tracemodel.add_value(double.parse(parser.parse(tracemodel.expression)));
+            tracemodel.add_value(double.parse(parser.parse(tracemodel.expression, null)));
         }
 
-        var scalerminimum = double.parse(parser.parse(this.minimum));
-        var scalermaximum = double.parse(parser.parse(this.maximum));
+        var scalerminimum = double.parse(parser.parse(this.minimum, null));
+        var scalermaximum = double.parse(parser.parse(this.maximum, null));
         this.update_scale(scalerminimum, scalermaximum, trace_length);
     }
 

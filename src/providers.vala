@@ -53,13 +53,13 @@ public class Providers : Object {
         return 0;
     }
 
-    public string call(string name, string[] parameters, out bool found) throws Error
+    public string call(string name, string[] parameters, bool widest, out bool found) throws Error
     {
         found = true;
         foreach (var function in this.functions) {
             if (function.id != name)
                 continue;
-            return function.call(parameters);
+            return function.call(parameters, widest);
         }
 
         found = false;

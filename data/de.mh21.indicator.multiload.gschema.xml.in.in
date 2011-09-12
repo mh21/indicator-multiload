@@ -71,18 +71,6 @@
             <_summary>Index of the current information shown in the indicator itself</_summary>
         </key>
 
-        <key name="indicator-expression-guides" type="as">
-            <default>[
-                "CPU $(percent(1))",
-                "Mem $(size(999000000))",
-                "Net $(speed(999000000))/$(speed(999000000))",
-                "Swap $(size(999000000))",
-                "Load $(decimals(80,2))",
-                "Disk $(speed(999000000))/$(speed(999000000))"
-            ]</default>
-            <_summary>Guides that determines the minimum width of the indicator text</_summary>
-        </key>
-
         <key name="menu-expressions" type="as">
             <default>[
                 "CPU: $(percent(cpu.inuse)), iowait $(percent(cpu.io))",

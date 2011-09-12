@@ -20,17 +20,13 @@ public class MenuModel : GLib.Object {
     public string[] labels { get; private set; default = {}; }
     public string[] guides { get; private set; default = {}; }
     public string[] expressions { get; set; }
-    public string[] guide_expressions { get; set; }
 
     public void update(Providers providers) {
         var parser = new ExpressionParser(providers);
 
         this.labels = new string[this._expressions.length];
+        this.guides = new string[this._expressions.length];
         for (uint i = 0, isize = this._expressions.length; i < isize; ++i)
-            this.labels[i] = parser.parse(this._expressions[i]);
-
-        this.guides = new string[this._guide_expressions.length];
-        for (uint i = 0, isize = this._guide_expressions.length; i < isize; ++i)
-            this.guides[i] = parser.parse(this._guide_expressions[i]);
+            this.labels[i] = parser.parse(this._expressions[i], out this.guides[i]);
     }
 }

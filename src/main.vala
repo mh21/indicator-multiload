@@ -267,9 +267,6 @@ public class Main : Application {
         datasettings.bind("indicator-expressions",
                 this.multi.labelmodel, "expressions",
                 SettingsBindFlags.DEFAULT);
-        datasettings.bind("indicator-expression-guides",
-                this.multi.labelmodel, "guide-expressions",
-                SettingsBindFlags.DEFAULT);
         datasettings.bind("indicator-expression-index",
                 this.multi, "indicator-index",
                 SettingsBindFlags.DEFAULT);
@@ -337,7 +334,7 @@ public class Main : Application {
             stdout.printf("functions:\n");
             foreach (var function in providers.functions) {
                 stdout.printf("  %s(%s)\n", function.id,
-                        string.joinv(", ", function.parameters));
+                        string.joinv(", ", function.parameterdescs));
             }
             result = true;
         }
@@ -350,7 +347,9 @@ public class Main : Application {
             foreach (var token in tokens)
                 stdout.printf(" '%s'", token);
             stdout.printf("\n");
-            stdout.printf("Result: %s\n", parser.evaluate(tokens));
+            string widest;
+            stdout.printf("Result: %s\n", parser.evaluate(tokens, out widest));
+            stdout.printf("Widest: %s\n", widest);
             result = true;
         }
 
