@@ -4,6 +4,7 @@ data/indicator-multiload.desktop.in
 src/cpuprovider.vala
 src/diskprovider.vala
 src/expressionparser.vala
+src/function.vala
 src/graphmodel.vala
 src/graphmodels.vala
 src/loadprovider.vala

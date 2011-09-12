@@ -3,6 +3,7 @@ data/preferences.ui
 src/cpuprovider.c
 src/diskprovider.c
 src/expressionparser.c
+src/function.c
 src/graphmodel.c
 src/graphmodels.c
 src/loadprovider.c
