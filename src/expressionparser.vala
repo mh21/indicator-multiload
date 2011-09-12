@@ -22,6 +22,7 @@ internal class ExpressionTokenizer {
     private string[] result;
 
     public string[] tokenize(string expression) {
+        stderr.printf("tokenize ");
         this.result = null;
         this.last = null;
         int level = 0;
@@ -177,7 +178,7 @@ internal class ExpressionEvaluator {
 
     private uint index;
     private string[] tokens;
-    bool widest;
+    bool guide;
 
     public ExpressionEvaluator(Providers providers) {
         this.providers = providers;
@@ -327,7 +328,7 @@ internal class ExpressionEvaluator {
             bool found = false;
             try {
                 var result = this.providers.call(token, this.params(),
-                        this.widest, out found);
+                        this.guide, out found);
                 if (!found)
                     throw error(nameindex, "unknown function");
                 return (sign == -1 ? "-" : "") + result;
@@ -364,10 +365,11 @@ internal class ExpressionEvaluator {
         return string.joinv("", result);
     }
 
-    public string evaluate(string[] tokens, bool widest) {
+    public string evaluate(string[] tokens, bool guide) {
+        stderr.printf("evaluate ");
         this.index = 0;
         this.tokens = tokens;
-        this.widest = widest;
+        this.guide = guide;
         try {
             return text();
         } catch (Error e) {
@@ -398,15 +400,22 @@ public class ExpressionParser : Object {
         return new ExpressionTokenizer().tokenize(expression);
     }
 
-    public string evaluate(string[] tokens, out string widest) {
+    public string evaluate(string[] tokens) {
         var evaluator = new ExpressionEvaluator(this.providers);
-        // TODO this should only be done when we need the widest string
-        widest = evaluator.evaluate(tokens, true);
         return evaluator.evaluate(tokens, false);
     }
 
-    public string parse(string expression, out string widest) {
-        return evaluate(tokenize(expression), out widest);
+    public string evaluateguide(string[] tokens) {
+        var evaluator = new ExpressionEvaluator(this.providers);
+        return evaluator.evaluate(tokens, true);
+    }
+
+    public string parse(string expression) {
+        return evaluate(tokenize(expression));
+    }
+
+    public string parseguide(string expression) {
+        return evaluateguide(tokenize(expression));
     }
 }
 

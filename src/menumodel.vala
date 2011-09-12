@@ -17,16 +17,59 @@
  ******************************************************************************/
 
 public class MenuModel : GLib.Object {
-    public string[] labels { get; private set; default = {}; }
-    public string[] guides { get; private set; default = {}; }
-    public string[] expressions { get; set; }
+    private Providers providers;
+    private string[] labels;
+    private string[] guides;
 
-    public void update(Providers providers) {
-        var parser = new ExpressionParser(providers);
+    private string[] _expressions;
+    public string[] expressions {
+        get {
+            return this._expressions;
+        }
 
-        this.labels = new string[this._expressions.length];
-        this.guides = new string[this._expressions.length];
-        for (uint i = 0, isize = this._expressions.length; i < isize; ++i)
-            this.labels[i] = parser.parse(this._expressions[i], out this.guides[i]);
+        set {
+            this._expressions = value;
+            this.update();
+        }
     }
+
+    public MenuModel(Providers providers) {
+        this.providers = providers;
+    }
+
+    private void updatelabel(uint index) {
+        var parser = new ExpressionParser(this.providers);
+
+        if (this.labels == null)
+            this.labels = new string[this._expressions.length];
+        if (this.guides == null)
+            this.guides = new string[this._expressions.length];
+        var tokens = parser.tokenize(this._expressions[index]);
+        this.labels[index] = parser.evaluate(tokens);
+        this.guides[index] = parser.evaluateguide(tokens);
+    }
+
+    public void update() {
+        this.labels = null;
+        this.guides = null;
+    }
+
+    public string label(uint index) {
+        return_val_if_fail(index < this._expressions.length, "");
+
+        if (this.labels == null || this.labels[index] == null)
+            this.updatelabel(index);
+
+        return this.labels[index];
+    }
+
+    public string guide(uint index) {
+        return_val_if_fail(index >= this._expressions.length, "");
+
+        if (this.guides == null || this.guides[index] == null)
+            this.updatelabel(index);
+
+        return this.guides[index];
+    }
+
 }

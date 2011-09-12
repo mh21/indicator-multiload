@@ -347,9 +347,8 @@ public class Main : Application {
             foreach (var token in tokens)
                 stdout.printf(" '%s'", token);
             stdout.printf("\n");
-            string widest;
-            stdout.printf("Result: %s\n", parser.evaluate(tokens, out widest));
-            stdout.printf("Widest: %s\n", widest);
+            stdout.printf("Result: %s\n", parser.evaluate(tokens));
+            stdout.printf("Guide: %s\n", parser.evaluateguide(tokens));
             result = true;
         }
 

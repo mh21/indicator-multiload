@@ -30,14 +30,16 @@ public class MultiLoadIndicator : Object {
     public uint height { get; set; }
     public uint width { get; set; }
     public uint speed { get; set; }
-    public MenuModel menumodel { get; private set; default = new MenuModel(); }
-    public MenuModel labelmodel { get; private set; default = new MenuModel(); }
+    public MenuModel menumodel { get; private set; }
+    public MenuModel labelmodel { get; private set; }
     public Gtk.Menu menu { get; set; }
     public GraphModels graphmodels { get; set; }
 
     public MultiLoadIndicator(string icondirectory, Providers providers) {
         Object(icondirectory: icondirectory);
         this.providers = providers;
+        this.menumodel = new MenuModel(providers);
+        this.labelmodel = new MenuModel(providers);
     }
 
     // Needs to be called before destruction to break the reference cycle from the timeout source
@@ -61,8 +63,8 @@ public class MultiLoadIndicator : Object {
                     index += delta;
                 else if (direction == Gdk.ScrollDirection.UP)
                     index -= delta;
-                if (index >= this.labelmodel.labels.length)
-                    index = this.labelmodel.labels.length - 1;
+                if (index >= this.labelmodel.expressions.length)
+                    index = this.labelmodel.expressions.length - 1;
                 if (index < -1)
                     index = -1;
                 this.indicator_index = index;
@@ -99,6 +101,7 @@ public class MultiLoadIndicator : Object {
     }
 
     public void updateall() {
+        stdout.printf("\n");
         this.updateproviders();
         this.updatemodels();
         this.updateviews();
@@ -109,8 +112,8 @@ public class MultiLoadIndicator : Object {
     }
 
     private void updatemodels() {
-        this.labelmodel.update(this.providers);
-        this.menumodel.update(this.providers);
+        this.labelmodel.update();
+        this.menumodel.update();
         this.graphmodels.update(this.providers, this.width);
     }
 
@@ -136,8 +139,7 @@ public class MultiLoadIndicator : Object {
             return;
 
         uint menu_position = 2;
-        var menuitemlabels = this.menumodel.labels;
-        var length = menuitemlabels.length;
+        var length = this.menumodel.expressions.length;
         for (uint j = 0; j < length; ++j) {
             Gtk.MenuItem item;
             if (j < this.menuitems.length) {
@@ -148,7 +150,7 @@ public class MultiLoadIndicator : Object {
                 this.menu.insert(item, (int)menu_position);
                 this.menuitems += item;
             }
-            item.label = menuitemlabels[j];
+            item.label = this.menumodel.label(j);
             ++menu_position;
         }
         if (length != this.menuitems.length) {
@@ -163,14 +165,13 @@ public class MultiLoadIndicator : Object {
     }
 
     private void updatelabelview() {
-        var indicatorlabels = this.labelmodel.labels;
-        var indicatorguides = this.labelmodel.guides;
+        var indicatorcount = this.labelmodel.expressions.length;
         var indicatorlabel = 0 <= this.indicator_index &&
-            this.indicator_index < indicatorlabels.length ?
-            indicatorlabels[this.indicator_index] : "";
+            this.indicator_index < indicatorcount ?
+            this.labelmodel.label(this.indicator_index) : "";
         var indicatorguide = 0 <= this.indicator_index &&
-            this.indicator_index < indicatorguides.length ?
-            indicatorguides[this.indicator_index] : "";
+            this.indicator_index < indicatorcount ?
+            this.labelmodel.guide(this.indicator_index) : "";
         this.indicator.set_label(indicatorlabel, indicatorguide);
     }
 
