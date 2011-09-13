@@ -43,71 +43,14 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
       </object>
     </child>
   </object>
-  <object class="GtkMenu" id="menu">
-    <property name="can_focus">False</property>
-    <child>
-      <object class="GtkMenuItem" id="sysmon">
-        <property name="visible">True</property>
-        <property name="can_focus">False</property>
-        <property name="use_action_appearance">False</property>
-        <property name="label" translatable="yes">_Open System Monitor</property>
-        <property name="use_underline">True</property>
-        <signal name="activate" handler="main_on_sysmon_activate" swapped="no"/>
-      </object>
-    </child>
-    <child>
-      <object class="GtkSeparatorMenuItem" id="separatormenuitem1">
-        <property name="visible">True</property>
-        <property name="can_focus">False</property>
-        <property name="use_action_appearance">False</property>
-      </object>
-    </child>
-    <child>
-      <object class="GtkSeparatorMenuItem" id="separatormenuitem2">
-        <property name="visible">True</property>
-        <property name="can_focus">False</property>
-        <property name="use_action_appearance">False</property>
-      </object>
-    </child>
-    <child>
-      <object class="GtkMenuItem" id="preferences">
-        <property name="visible">True</property>
-        <property name="can_focus">False</property>
-        <property name="use_action_appearance">False</property>
-        <property name="label" translatable="yes">_Preferences</property>
-        <property name="use_underline">True</property>
-        <signal name="activate" handler="main_on_preferences_activate" swapped="no"/>
-      </object>
-    </child>
-    <child>
-      <object class="GtkMenuItem" id="about">
-        <property name="visible">True</property>
-        <property name="can_focus">False</property>
-        <property name="use_action_appearance">False</property>
-        <property name="label" translatable="yes">_About</property>
-        <property name="use_underline">True</property>
-        <signal name="activate" handler="main_on_about_activate" swapped="no"/>
-      </object>
-    </child>
-    <child>
-      <object class="GtkMenuItem" id="quit">
-        <property name="visible">True</property>
-        <property name="can_focus">False</property>
-        <property name="use_action_appearance">False</property>
-        <property name="label" translatable="yes">_Quit</property>
-        <property name="use_underline">True</property>
-        <signal name="activate" handler="main_on_quit_activate" swapped="no"/>
-      </object>
-    </child>
-  </object>
-  <object class="GtkDialog" id="menuitemdialog">
+  <object class="GtkDialog" id="itemdialog">
     <property name="can_focus">False</property>
     <property name="border_width">5</property>
     <property name="default_width">500</property>
     <property name="default_height">300</property>
     <property name="type_hint">dialog</property>
-    <signal name="destroy" handler="menu_preferences_on_menuitemdialog_destroy" swapped="no"/>
-    <signal name="response" handler="menu_preferences_on_menuitemdialog_response" swapped="no"/>
+    <signal name="destroy" handler="item_preferences_on_itemdialog_destroy" swapped="no"/>
+    <signal name="response" handler="item_preferences_on_itemdialog_response" swapped="no"/>
     <child internal-child="vbox">
       <object class="GtkVBox" id="dialog-vbox4">
         <property name="visible">True</property>
@@ -168,10 +111,10 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                 <property name="hscrollbar_policy">automatic</property>
                 <property name="vscrollbar_policy">automatic</property>
                 <child>
-                  <object class="GtkTreeView" id="menuitemview">
+                  <object class="GtkTreeView" id="itemview">
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
-                    <property name="model">menuitemstore</property>
+                    <property name="model">itemstore</property>
                     <property name="headers_visible">False</property>
                     <property name="headers_clickable">False</property>
                     <property name="reorderable">True</property>
@@ -181,7 +124,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                         <child>
                           <object class="GtkCellRendererText" id="expressionrenderer">
                             <property name="editable">True</property>
-                            <signal name="edited" handler="menu_preferences_on_expressionrenderer_edited" swapped="no"/>
+                            <signal name="edited" handler="item_preferences_on_expressionrenderer_edited" swapped="no"/>
                           </object>
                           <attributes>
                             <attribute name="text">0</attribute>
@@ -206,14 +149,14 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                 <property name="spacing">6</property>
                 <property name="layout_style">start</property>
                 <child>
-                  <object class="GtkButton" id="menuitemadd">
+                  <object class="GtkButton" id="itemadd">
                     <property name="label">gtk-add</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="use_action_appearance">False</property>
                     <property name="use_stock">True</property>
-                    <signal name="clicked" handler="menu_preferences_on_menuitemadd_clicked" swapped="no"/>
+                    <signal name="clicked" handler="item_preferences_on_itemadd_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -222,14 +165,14 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkButton" id="menuitemremove">
+                  <object class="GtkButton" id="itemremove">
                     <property name="label">gtk-remove</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="use_action_appearance">False</property>
                     <property name="use_stock">True</property>
-                    <signal name="clicked" handler="menu_preferences_on_menuitemremove_clicked" swapped="no"/>
+                    <signal name="clicked" handler="item_preferences_on_itemremove_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -238,14 +181,14 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkButton" id="menuitemedit">
+                  <object class="GtkButton" id="itemedit">
                     <property name="label">gtk-edit</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="use_action_appearance">False</property>
                     <property name="use_stock">True</property>
-                    <signal name="clicked" handler="menu_preferences_on_menuitemedit_clicked" swapped="no"/>
+                    <signal name="clicked" handler="item_preferences_on_itemedit_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -254,14 +197,14 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkButton" id="menuitemup">
+                  <object class="GtkButton" id="itemup">
                     <property name="label">gtk-go-up</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="use_action_appearance">False</property>
                     <property name="use_stock">True</property>
-                    <signal name="clicked" handler="menu_preferences_on_menuitemup_clicked" swapped="no"/>
+                    <signal name="clicked" handler="item_preferences_on_itemup_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -270,14 +213,14 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkButton" id="menuitemdown">
+                  <object class="GtkButton" id="itemdown">
                     <property name="label">gtk-go-down</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="use_action_appearance">False</property>
                     <property name="use_stock">True</property>
-                    <signal name="clicked" handler="menu_preferences_on_menuitemdown_clicked" swapped="no"/>
+                    <signal name="clicked" handler="item_preferences_on_itemdown_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -308,14 +251,71 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
       <action-widget response="1">button2</action-widget>
     </action-widgets>
   </object>
-  <object class="GtkListStore" id="menuitemstore">
+  <object class="GtkListStore" id="itemstore">
     <columns>
       <!-- column-name expression -->
       <column type="gchararray"/>
     </columns>
-    <signal name="row-deleted" handler="menu_preferences_on_menuitemstore_row_deleted" swapped="no"/>
-    <signal name="row-changed" handler="menu_preferences_on_menuitemstore_row_changed" swapped="no"/>
-    <signal name="row-inserted" handler="menu_preferences_on_menuitemstore_row_inserted" swapped="no"/>
+    <signal name="row-deleted" handler="item_preferences_on_itemstore_row_deleted" swapped="no"/>
+    <signal name="row-changed" handler="item_preferences_on_itemstore_row_changed" swapped="no"/>
+    <signal name="row-inserted" handler="item_preferences_on_itemstore_row_inserted" swapped="no"/>
+  </object>
+  <object class="GtkMenu" id="menu">
+    <property name="can_focus">False</property>
+    <child>
+      <object class="GtkMenuItem" id="sysmon">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="use_action_appearance">False</property>
+        <property name="label" translatable="yes">_Open System Monitor</property>
+        <property name="use_underline">True</property>
+        <signal name="activate" handler="main_on_sysmon_activate" swapped="no"/>
+      </object>
+    </child>
+    <child>
+      <object class="GtkSeparatorMenuItem" id="separatormenuitem1">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="use_action_appearance">False</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkSeparatorMenuItem" id="separatormenuitem2">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="use_action_appearance">False</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem" id="preferences">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="use_action_appearance">False</property>
+        <property name="label" translatable="yes">_Preferences</property>
+        <property name="use_underline">True</property>
+        <signal name="activate" handler="main_on_preferences_activate" swapped="no"/>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem" id="about">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="use_action_appearance">False</property>
+        <property name="label" translatable="yes">_About</property>
+        <property name="use_underline">True</property>
+        <signal name="activate" handler="main_on_about_activate" swapped="no"/>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem" id="quit">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="use_action_appearance">False</property>
+        <property name="label" translatable="yes">_Quit</property>
+        <property name="use_underline">True</property>
+        <signal name="activate" handler="main_on_quit_activate" swapped="no"/>
+      </object>
+    </child>
   </object>
   <object class="GtkDialog" id="preferencesdialog">
     <property name="can_focus">False</property>
@@ -1537,7 +1537,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
             <property name="layout_style">end</property>
             <child>
               <object class="GtkButton" id="menuitems">
-                <property name="label" translatable="yes">Configure menu items...</property>
+                <property name="label" translatable="yes">Menu items...</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -1547,6 +1547,21 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                 <property name="expand">False</property>
                 <property name="fill">False</property>
                 <property name="position">0</property>
+                <property name="secondary">True</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="indicatoritems">
+                <property name="label" translatable="yes">Indicator items...</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="use_action_appearance">False</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">1</property>
                 <property name="secondary">True</property>
               </packing>
             </child>
@@ -1562,7 +1577,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">False</property>
-                <property name="position">1</property>
+                <property name="position">2</property>
               </packing>
             </child>
           </object>
@@ -1577,6 +1592,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
     </child>
     <action-widgets>
       <action-widget response="1">menuitems</action-widget>
+      <action-widget response="2">indicatoritems</action-widget>
       <action-widget response="0">close</action-widget>
     </action-widgets>
   </object>

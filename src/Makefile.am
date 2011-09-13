@@ -24,11 +24,11 @@ indicator_multiload_SOURCES = \
 	function.vala \
 	graphmodels.vala \
 	graphmodel.vala \
+	itempreferences.vala \
 	loadprovider.vala \
 	main.vala \
 	memprovider.vala \
 	menumodel.vala \
-	menupreferences.vala \
 	multiloadindicator.vala \
 	netprovider.vala \
 	preferences.vala \

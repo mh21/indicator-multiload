@@ -20,10 +20,12 @@ public class Preferences : Object {
     private Gtk.Dialog preferences;
     private Gtk.CheckButton[] checkbuttons;
 
-    private MenuPreferences menupreferences;
+    private ItemPreferences menupreferences;
+    private ItemPreferences indicatorpreferences;
 
     construct {
-        this.menupreferences = new MenuPreferences();
+        this.menupreferences = new ItemPreferences("menu-expressions");
+        this.indicatorpreferences = new ItemPreferences("indicator-expressions");
     }
 
     public void show() {
@@ -90,12 +92,17 @@ public class Preferences : Object {
 
     [CCode (instance_pos = -1)]
     public void on_preferencesdialog_response(Gtk.Dialog source, int response) {
-        if (response != 1) {
+    	switch (response) {
+        case 1:
+            this.menupreferences.show();
+            return;
+        case 2:
+            this.indicatorpreferences.show();
+            return;
+        default:
             source.destroy();
             return;
         }
-
-        this.menupreferences.show();
     }
 
     [CCode (instance_pos = -1)]

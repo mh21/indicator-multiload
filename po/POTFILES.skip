@@ -6,11 +6,11 @@ src/expressionparser.c
 src/function.c
 src/graphmodel.c
 src/graphmodels.c
+src/itempreferences.c
 src/loadprovider.c
 src/main.c
 src/memprovider.c
 src/menumodel.c
-src/menupreferences.c
 src/multiloadindicator.c
 src/netprovider.c
 src/preferences.c

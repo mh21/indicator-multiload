@@ -7,11 +7,11 @@ src/expressionparser.vala
 src/function.vala
 src/graphmodel.vala
 src/graphmodels.vala
+src/itempreferences.vala
 src/loadprovider.vala
 src/main.vala
 src/memprovider.vala
 src/menumodel.vala
-src/menupreferences.vala
 src/multiloadindicator.vala
 src/netprovider.vala
 src/preferences.vala
