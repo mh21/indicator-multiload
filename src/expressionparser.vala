@@ -22,7 +22,6 @@ internal class ExpressionTokenizer {
     private string[] result;
 
     public string[] tokenize(string expression) {
-        stderr.printf("tokenize ");
         this.result = null;
         this.last = null;
         int level = 0;
@@ -156,7 +155,7 @@ internal class ExpressionTokenizer {
     private void savewith(char what) {
         string token = (this.last != null ?
                 strndup(this.last, this.current - this.last) : "") + what.to_string();
-        stderr.printf("Saving token '%s'\n", token);
+        // stderr.printf("Saving token '%s'\n", token);
         this.result += token;
         this.last = null;
     }
@@ -366,7 +365,6 @@ internal class ExpressionEvaluator {
     }
 
     public string evaluate(string[] tokens, bool guide) {
-        stderr.printf("evaluate ");
         this.index = 0;
         this.tokens = tokens;
         this.guide = guide;
@@ -389,33 +387,52 @@ internal class ExpressionEvaluator {
     }
 }
 
-public class ExpressionParser : Object {
-    private Providers providers;
+public class ExpressionCache : Object {
+    public Providers providers { get; construct; }
 
-    public ExpressionParser(Providers providers) {
-        this.providers = providers;
+    private string[] _tokens;
+    private string _label;
+    private string _guide;
+
+    private string _expression;
+    public string expression {
+        get {
+            return this._expression;
+        }
+        construct set {
+            this._expression = value;
+            this._tokens = null;
+            this._label = null;
+            this._guide = null;
+        }
     }
 
-    public string[] tokenize(string expression) {
-        return new ExpressionTokenizer().tokenize(expression);
+    public ExpressionCache(Providers providers, string expression) {
+        Object(providers: providers, expression: expression);
     }
 
-    public string evaluate(string[] tokens) {
-        var evaluator = new ExpressionEvaluator(this.providers);
-        return evaluator.evaluate(tokens, false);
+    public void update() {
+        this._label = null;
+        this._guide = null;
     }
 
-    public string evaluateguide(string[] tokens) {
-        var evaluator = new ExpressionEvaluator(this.providers);
-        return evaluator.evaluate(tokens, true);
+    public string[] tokens() {
+        if (this._tokens == null)
+            this._tokens = new ExpressionTokenizer().tokenize(this._expression);
+        return this._tokens;
     }
 
-    public string parse(string expression) {
-        return evaluate(tokenize(expression));
+    public string label() {
+        if (this._label == null)
+            this._label = new ExpressionEvaluator(this.providers).evaluate(this.tokens(), false);
+        return this._label;
     }
 
-    public string parseguide(string expression) {
-        return evaluateguide(tokenize(expression));
+    public string guide() {
+        if (this._guide == null)
+            this._guide = new ExpressionEvaluator(this.providers).evaluate(this.tokens(), true);
+        return this._guide;
     }
+
 }
 

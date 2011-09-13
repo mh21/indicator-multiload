@@ -21,8 +21,9 @@ public class GraphModel : Object {
     private double[] scalerhistory;
 
     public string id { get; construct; }
-    public string minimum { get; set; }
-    public string maximum { get; set; }
+    public Providers providers {get; construct; }
+    public ExpressionCache minimum { get; construct; }
+    public ExpressionCache maximum { get; construct; }
     public string smooth { get; set; }
     public Gdk.Color background_color { get; set; }
     public uint alpha { get; set; }
@@ -40,25 +41,26 @@ public class GraphModel : Object {
             });
         this.notify["traces"].connect(() => {
                 while (this._tracemodels.length < this._traces.length)
-                    this._tracemodels += new TraceModel();
+                    this._tracemodels += new TraceModel(this.providers);
                 this._tracemodels = this._tracemodels[0:this._traces.length];
             });
     }
 
-    public GraphModel(string id) {
-        Object(id: id);
+    public GraphModel(string id, Providers providers) {
+        Object(id: id, providers: providers,
+                minimum: new ExpressionCache(providers, ""),
+                maximum: new ExpressionCache(providers, ""));
     }
 
-    public void update(Providers providers, uint trace_length) {
-        var parser = new ExpressionParser(providers);
-
+    public void update(uint trace_length) {
         foreach (var tracemodel in this.tracemodels) {
             tracemodel.set_values_length(trace_length);
-            tracemodel.add_value(double.parse(parser.parse(tracemodel.expression)));
+            tracemodel.expression.update();
+            tracemodel.add_value(double.parse(tracemodel.expression.label()));
         }
 
-        var scalerminimum = double.parse(parser.parse(this.minimum));
-        var scalermaximum = double.parse(parser.parse(this.maximum));
+        var scalerminimum = double.parse(this.minimum.label());
+        var scalermaximum = double.parse(this.maximum.label());
         this.update_scale(scalerminimum, scalermaximum, trace_length);
     }
 

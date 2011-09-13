@@ -16,11 +16,15 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.                *
  ******************************************************************************/
 
-public class TraceModel : GLib.Object {
+public class TraceModel : Object {
+    public ExpressionCache expression { get; construct; }
     public Gdk.Color color { get; set; }
-    public string expression { get; set; }
     public bool enabled { get; set; }
     public double[] values { get; private set; }
+
+    public TraceModel(Providers providers) {
+        Object(expression: new ExpressionCache(providers, ""));
+    }
 
     public void set_values_length(uint length) {
         if (length > this._values.length) {

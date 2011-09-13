@@ -21,25 +21,23 @@ public class MultiLoadIndicator : Object {
     private uint lasticonwidth;
     private TimeoutSource timeout;
     private AppIndicator.Indicator indicator;
-    private Providers providers;
     private Gtk.MenuItem[] menuitems;
     private bool menuset;
 
     public string icondirectory {get; construct; }
+    public Providers providers {get; construct; }
+    public MenuModel menumodel { get; construct; }
+    public MenuModel labelmodel { get; construct; }
     public int indicator_index { get; set; }
     public uint height { get; set; }
     public uint width { get; set; }
     public uint speed { get; set; }
-    public MenuModel menumodel { get; private set; }
-    public MenuModel labelmodel { get; private set; }
     public Gtk.Menu menu { get; set; }
     public GraphModels graphmodels { get; set; }
 
     public MultiLoadIndicator(string icondirectory, Providers providers) {
-        Object(icondirectory: icondirectory);
-        this.providers = providers;
-        this.menumodel = new MenuModel(providers);
-        this.labelmodel = new MenuModel(providers);
+        Object(icondirectory: icondirectory, providers: providers,
+                menumodel: new MenuModel(providers), labelmodel: new MenuModel(providers));
     }
 
     // Needs to be called before destruction to break the reference cycle from the timeout source
@@ -101,7 +99,6 @@ public class MultiLoadIndicator : Object {
     }
 
     public void updateall() {
-        stdout.printf("\n");
         this.updateproviders();
         this.updatemodels();
         this.updateviews();
@@ -114,7 +111,7 @@ public class MultiLoadIndicator : Object {
     private void updatemodels() {
         this.labelmodel.update();
         this.menumodel.update();
-        this.graphmodels.update(this.providers, this.width);
+        this.graphmodels.update(this.width);
     }
 
     private void updateviews() {
@@ -150,7 +147,7 @@ public class MultiLoadIndicator : Object {
                 this.menu.insert(item, (int)menu_position);
                 this.menuitems += item;
             }
-            item.label = this.menumodel.label(j);
+            item.label = this.menumodel.expression(j).label();
             ++menu_position;
         }
         if (length != this.menuitems.length) {
@@ -168,10 +165,10 @@ public class MultiLoadIndicator : Object {
         var indicatorcount = this.labelmodel.expressions.length;
         var indicatorlabel = 0 <= this.indicator_index &&
             this.indicator_index < indicatorcount ?
-            this.labelmodel.label(this.indicator_index) : "";
+            this.labelmodel.expression(this.indicator_index).label() : "";
         var indicatorguide = 0 <= this.indicator_index &&
             this.indicator_index < indicatorcount ?
-            this.labelmodel.guide(this.indicator_index) : "";
+            this.labelmodel.expression(this.indicator_index).guide() : "";
         this.indicator.set_label(indicatorlabel, indicatorguide);
     }
 

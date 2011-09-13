@@ -179,7 +179,7 @@ public class Main : Application {
 
         var datasettings = this.settingscache.generalsettings();
 
-        this.multi.graphmodels = new GraphModels(datasettings.get_strv("graphs"));
+        this.multi.graphmodels = new GraphModels(datasettings.get_strv("graphs"), this.multi.providers);
 
         // dconf binds: will overwrite the old binds
         foreach (var graphmodel in this.multi.graphmodels.graphmodels)
@@ -205,10 +205,12 @@ public class Main : Application {
                 Utils.get_settings_color,
                 Utils.set_settings_color,
                 null, () => {});
+        graphsettings.bind("minimum", graphmodel.minimum, "expression",
+                SettingsBindFlags.DEFAULT);
+        graphsettings.bind("maximum", graphmodel.maximum, "expression",
+                SettingsBindFlags.DEFAULT);
         string[] graphproperties = {
             "enabled",
-            "minimum",
-            "maximum",
             "smooth",
             "alpha",
             "traces" };
@@ -231,10 +233,10 @@ public class Main : Application {
                 Utils.get_settings_color,
                 Utils.set_settings_color,
                 null, () => {});
-        string[] traceproperties = {"enabled", "expression"};
-        foreach (var property in traceproperties)
-            tracesettings.bind(property, tracemodel, property,
-                    SettingsBindFlags.DEFAULT);
+        tracesettings.bind("enabled", tracemodel, "enabled",
+                SettingsBindFlags.DEFAULT);
+        tracesettings.bind("expression", tracemodel.expression, "expression",
+                SettingsBindFlags.DEFAULT);
     }
 
     [CCode (instance_pos = 3)]
@@ -340,15 +342,11 @@ public class Main : Application {
         }
 
         foreach (var expressionoption in expressionoptions) {
-            var parser = new ExpressionParser(new Providers());
-            var tokens = parser.tokenize(expressionoption);
+            var cache = new ExpressionCache(new Providers(), expressionoption);
             stdout.printf("Original: %s\n", expressionoption);
-            stdout.printf("Tokens:");
-            foreach (var token in tokens)
-                stdout.printf(" '%s'", token);
-            stdout.printf("\n");
-            stdout.printf("Result: %s\n", parser.evaluate(tokens));
-            stdout.printf("Guide: %s\n", parser.evaluateguide(tokens));
+            stdout.printf("Tokens: '%s'\n", string.joinv("' '", cache.tokens()));
+            stdout.printf("Result: %s\n", cache.label());
+            stdout.printf("Guide: %s\n", cache.guide());
             result = true;
         }
 

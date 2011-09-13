@@ -16,60 +16,32 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.                *
  ******************************************************************************/
 
-public class MenuModel : GLib.Object {
+public class MenuModel : Object {
     private Providers providers;
-    private string[] labels;
-    private string[] guides;
+    private ExpressionCache[] caches;
 
-    private string[] _expressions;
-    public string[] expressions {
-        get {
-            return this._expressions;
-        }
+    public string[] expressions { get; set; }
 
-        set {
-            this._expressions = value;
-            this.update();
-        }
+    construct {
+        this.notify["expressions"].connect(() => {
+                this.caches = new ExpressionCache[this._expressions.length];
+                for (uint i = 0, isize = this.caches.length; i < isize; ++i)
+                    this.caches[i] = new ExpressionCache(this.providers, this._expressions[i]);
+            });
     }
 
     public MenuModel(Providers providers) {
         this.providers = providers;
     }
 
-    private void updatelabel(uint index) {
-        var parser = new ExpressionParser(this.providers);
-
-        if (this.labels == null)
-            this.labels = new string[this._expressions.length];
-        if (this.guides == null)
-            this.guides = new string[this._expressions.length];
-        var tokens = parser.tokenize(this._expressions[index]);
-        this.labels[index] = parser.evaluate(tokens);
-        this.guides[index] = parser.evaluateguide(tokens);
-    }
-
     public void update() {
-        this.labels = null;
-        this.guides = null;
+        foreach (var cache in this.caches)
+            cache.update();
     }
 
-    public string label(uint index) {
-        return_val_if_fail(index < this._expressions.length, "");
-
-        if (this.labels == null || this.labels[index] == null)
-            this.updatelabel(index);
-
-        return this.labels[index];
+    public ExpressionCache expression(uint index)
+        requires(index < this.caches.length)
+    {
+        return this.caches[index];
     }
-
-    public string guide(uint index) {
-        return_val_if_fail(index >= this._expressions.length, "");
-
-        if (this.guides == null || this.guides[index] == null)
-            this.updatelabel(index);
-
-        return this.guides[index];
-    }
-
 }

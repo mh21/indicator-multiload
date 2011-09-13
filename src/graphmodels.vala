@@ -17,15 +17,17 @@
  ******************************************************************************/
 
 public class GraphModels : Object {
+    public Providers providers {get; construct; }
     public GraphModel[] graphmodels { get; private set; }
 
-    public GraphModels(string[] graphids) {
+    public GraphModels(string[] graphids, Providers providers) {
+        Object(providers: providers);
         foreach (var graphid in graphids)
-            this._graphmodels += new GraphModel(graphid);
+            this._graphmodels += new GraphModel(graphid, this.providers);
     }
 
-    public void update(Providers providers, uint trace_length) {
+    public void update(uint trace_length) {
         foreach (var graphmodel in this.graphmodels)
-            graphmodel.update(providers, trace_length);
+            graphmodel.update(trace_length);
     }
 }
