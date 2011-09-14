@@ -131,7 +131,9 @@ public class ItemPreferences : Object {
         Gtk.TreeIter iter;
         if (this.itemselection.get_selected(null, out iter)) {
             var path = this.itemstore.get_path(iter);
-            var indices = path.get_indices();
+	    // TODO: needs to be unowned for gtk2 as the bindings do not return
+	    // a length for the array, so the duplication of the array fails
+            unowned int[] indices = path.get_indices();
             pos = indices[0] + 1;
         }
         this.itemstore.insert(out iter, (int) pos);
@@ -215,7 +217,9 @@ public class ItemPreferences : Object {
             remove = true;
 
             var path = this.itemstore.get_path(iter);
-            var indices = path.get_indices();
+	    // TODO: needs to be unowned for gtk2 as the bindings do not return
+	    // a length for the array, so the duplication of the array fails
+            unowned int[] indices = path.get_indices();
             up = indices[0] > 0;
             down = indices[0] + 1 < this.itemstore.iter_n_children(null);
         }

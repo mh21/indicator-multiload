@@ -92,7 +92,7 @@ public class Preferences : Object {
 
     [CCode (instance_pos = -1)]
     public void on_preferencesdialog_response(Gtk.Dialog source, int response) {
-    	switch (response) {
+	switch (response) {
         case 1:
             this.menupreferences.show();
             return;
