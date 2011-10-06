@@ -256,7 +256,8 @@ public class Main : Application {
 
         new SettingsConversion().convert();
 
-        // initialize indicator, won't update before speed is set
+        // initialize indicator, won't update before speed is set; order is
+        // important here
         this.creategraphs(null, "");
         var menu = Utils.get_ui("menu", this) as Gtk.Menu;
         return_if_fail(menu != null);

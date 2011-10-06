@@ -52,7 +52,7 @@ public class MultiLoadIndicator : Object {
         DirUtils.create(this.icondirectory, 0777);
 
         this.iconwritedummy();
-        this.indicator = new AppIndicator.Indicator.with_path("multiload", "image-missing",
+        this.indicator = new AppIndicator.Indicator.with_path("multiload", "",
                 AppIndicator.IndicatorCategory.SYSTEM_SERVICES, this.icondirectory);
 
         this.indicator.scroll_event.connect((delta, direction) => {
@@ -63,8 +63,8 @@ public class MultiLoadIndicator : Object {
                     index -= delta;
                 if (index >= this.labelmodel.expressions.length)
                     index = this.labelmodel.expressions.length - 1;
-                if (index < -1)
-                    index = -1;
+                if (index < 0)
+                    index = 0;
                 this.indicator_index = index;
             });
 
@@ -119,8 +119,8 @@ public class MultiLoadIndicator : Object {
         this.updatemenuview();
         this.updategraphsview();
 
-        // ready if both a menu and graphs/a label are available
-        if (this.menu != null && this.graphmodels != null) {
+        // ready if a menu is available
+        if (this.menu != null) {
             // prevent an indicator without icon and text
             if ((this.indicator.get_icon().length == 0) &&
                 (this.indicator.label == null || this.indicator.label.length == 0))

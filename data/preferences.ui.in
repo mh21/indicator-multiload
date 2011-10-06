@@ -381,7 +381,6 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                 <property name="use_action_appearance">False</property>
                                 <property name="use_underline">True</property>
                                 <property name="draw_indicator">True</property>
-                                <signal name="toggled" handler="preferences_on_checkbutton_toggled" swapped="no"/>
                               </object>
                               <packing>
                                 <property name="expand">True</property>
@@ -398,7 +397,6 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                 <property name="use_action_appearance">False</property>
                                 <property name="use_underline">True</property>
                                 <property name="draw_indicator">True</property>
-                                <signal name="toggled" handler="preferences_on_checkbutton_toggled" swapped="no"/>
                               </object>
                               <packing>
                                 <property name="expand">True</property>
@@ -415,7 +413,6 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                 <property name="use_action_appearance">False</property>
                                 <property name="use_underline">True</property>
                                 <property name="draw_indicator">True</property>
-                                <signal name="toggled" handler="preferences_on_checkbutton_toggled" swapped="no"/>
                               </object>
                               <packing>
                                 <property name="expand">True</property>
@@ -432,7 +429,6 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                 <property name="use_action_appearance">False</property>
                                 <property name="use_underline">True</property>
                                 <property name="draw_indicator">True</property>
-                                <signal name="toggled" handler="preferences_on_checkbutton_toggled" swapped="no"/>
                               </object>
                               <packing>
                                 <property name="expand">True</property>
@@ -449,7 +445,6 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                 <property name="use_action_appearance">False</property>
                                 <property name="use_underline">True</property>
                                 <property name="draw_indicator">True</property>
-                                <signal name="toggled" handler="preferences_on_checkbutton_toggled" swapped="no"/>
                               </object>
                               <packing>
                                 <property name="expand">True</property>
@@ -466,7 +461,6 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                 <property name="use_action_appearance">False</property>
                                 <property name="use_underline">True</property>
                                 <property name="draw_indicator">True</property>
-                                <signal name="toggled" handler="preferences_on_checkbutton_toggled" swapped="no"/>
                               </object>
                               <packing>
                                 <property name="expand">True</property>

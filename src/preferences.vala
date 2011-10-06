@@ -18,7 +18,6 @@
 
 public class Preferences : Object {
     private Gtk.Dialog preferences;
-    private Gtk.CheckButton[] checkbuttons;
 
     private ItemPreferences menupreferences;
     private ItemPreferences indicatorpreferences;
@@ -43,12 +42,6 @@ public class Preferences : Object {
         var settingscache = new SettingsCache();
         var prefsettings = settingscache.generalsettings();
         var graphids = prefsettings.get_strv("graphs");
-
-        foreach (var graphid in graphids) {
-            var checkbutton = builder.get_object(@"$(graphid)_enabled") as Gtk.CheckButton;
-            if (checkbutton != null)
-                this.checkbuttons += checkbutton;
-        }
 
         foreach (var graphid in graphids) {
             if (!(graphid in SettingsCache.presetgraphids))
@@ -92,7 +85,7 @@ public class Preferences : Object {
 
     [CCode (instance_pos = -1)]
     public void on_preferencesdialog_response(Gtk.Dialog source, int response) {
-	switch (response) {
+        switch (response) {
         case 1:
             this.menupreferences.show();
             return;
@@ -108,20 +101,6 @@ public class Preferences : Object {
     [CCode (instance_pos = -1)]
     public void on_preferencesdialog_destroy(Gtk.Widget source) {
         this.preferences = null;
-        this.checkbuttons = null;
-    }
-
-    [CCode (instance_pos = -1)]
-    public void on_checkbutton_toggled(Gtk.CheckButton source) {
-        uint count = 0;
-        foreach (var checkbutton in this.checkbuttons)
-            count += (uint)checkbutton.active;
-        if (count == 1)
-            foreach (var checkbutton in this.checkbuttons)
-                checkbutton.sensitive = !checkbutton.active;
-        else
-            foreach (var checkbutton in this.checkbuttons)
-                checkbutton.sensitive = true;
     }
 }
 
