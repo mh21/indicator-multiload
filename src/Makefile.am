@@ -17,7 +17,7 @@ VALAFLAGS =  \
 
 bin_PROGRAMS = indicator-multiload
 
-indicator_multiload_SOURCES = \
+indicator_multiload_VALASOURCES = \
 	cpuprovider.vala \
 	diskprovider.vala \
 	expressionparser.vala \
@@ -38,7 +38,10 @@ indicator_multiload_SOURCES = \
 	settingsconversion.vala \
 	swapprovider.vala \
 	tracemodel.vala \
-	utils.vala \
+	utils.vala
+
+indicator_multiload_SOURCES = \
+	$(indicator_multiload_VALASOURCES) \
 	config.vapi \
 	gsettings-fixed.vapi \
 	gtop.vapi \
@@ -48,3 +51,6 @@ indicator_multiload_LDFLAGS = \
 	-Wl,--export-dynamic -Wl,--as-needed
 
 indicator_multiload_LDADD = $(MULTILOADDEPS_LIBS)
+
+DISTCLEANFILES = \
+	$(indicator_multiload_VALASOURCES:.vala=.c) indicator_multiload_vala.stamp
