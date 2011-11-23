@@ -14,15 +14,15 @@ msgstr ""
 "Project-Id-Version: gnome-applets master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-10 00:45+0200\n"
-"PO-Revision-Date: 2011-06-05 17:20+0000\n"
-"Last-Translator: Krasznecz Zoltán <zoltan.krasznecz@gmail.com>\n"
+"PO-Revision-Date: 2011-11-22 23:02+0000\n"
+"Last-Translator: Péter Trombitás <Unknown>\n"
 "Language-Team: Hungarian <gnome at fsf dot hu>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2011-06-06 05:44+0000\n"
-"X-Generator: Launchpad (build 12959)\n"
+"X-Launchpad-Export-Date: 2011-11-23 06:01+0000\n"
+"X-Generator: Launchpad (build 14336)\n"
 "Language: \n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
@@ -175,7 +175,7 @@ msgstr "_Processzor"
 
 #: ../data/preferences.ui.in.h:37
 msgid "_Quit"
-msgstr ""
+msgstr "_Kilépés"
 
 #: ../data/preferences.ui.in.h:38
 msgid "_Read"
@@ -212,7 +212,8 @@ msgstr ""
 "Tímár András <timar at gnome dot hu>\n"
 "\n"
 "Launchpad Contributions:\n"
-"  Krasznecz Zoltán https://launchpad.net/~krasznecz-zoltan"
+"  Krasznecz Zoltán https://launchpad.net/~krasznecz-zoltan\n"
+"  Péter Trombitás https://launchpad.net/~trombipeti"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
 msgid "Applet refresh rate in milliseconds"
@@ -373,7 +374,7 @@ msgstr ""
 
 #: ../data/indicator-multiload.desktop.in.h:2
 msgid "System Load Indicator"
-msgstr ""
+msgstr "Rendszerterhelés indikátor"
 
 #: ../src/cpuicondata.vala:58
 #, c-format
@@ -398,12 +399,12 @@ msgstr ""
 #: ../src/neticondata.vala:64
 #, c-format
 msgid "Net: down %s, up %s"
-msgstr ""
+msgstr "Internet: le %s, fel %s"
 
 #: ../src/swapicondata.vala:31
 #, c-format
 msgid "Swap: %s"
-msgstr ""
+msgstr "Swap: %s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:43
@@ -424,8 +425,8 @@ msgstr "{} GB"
 #, c-format
 msgid "%u byte"
 msgid_plural "%u bytes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u bájt"
+msgstr[1] "%u bájt"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:67
@@ -451,5 +452,5 @@ msgstr "{} TB/s"
 #, c-format
 msgid "%u byte/s"
 msgid_plural "%u bytes/s"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u byte/s"
+msgstr[1] "%u byte/s"
