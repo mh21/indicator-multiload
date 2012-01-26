@@ -1545,21 +1545,6 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="indicatoritems">
-                <property name="label" translatable="yes">Indicator items...</property>
-                <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
-                <property name="use_action_appearance">False</property>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">False</property>
-                <property name="position">1</property>
-                <property name="secondary">True</property>
-              </packing>
-            </child>
-            <child>
               <object class="GtkButton" id="close">
                 <property name="label">gtk-close</property>
                 <property name="visible">True</property>
@@ -1586,7 +1571,6 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
     </child>
     <action-widgets>
       <action-widget response="1">menuitems</action-widget>
-      <action-widget response="2">indicatoritems</action-widget>
       <action-widget response="0">close</action-widget>
     </action-widgets>
   </object>

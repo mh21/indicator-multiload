@@ -55,15 +55,7 @@
         </key>
 
         <key name="indicator-expressions" type="as">
-            <default>[
-                "",
-                "CPU $(percent(cpu.inuse))",
-                "Mem $(size(mem.user))",
-                "Net $(speed(net.down))/$(speed(net.up))",
-                "Swap $(size(swap.used))",
-                "Load $(decimals(load.avg,2))",
-                "Disk $(speed(disk.read))/$(speed(disk.write))"
-            ]</default>
+            <default>[]</default>
             <_summary>Information shown in the indicator itself</_summary>
         </key>
 
