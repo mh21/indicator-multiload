@@ -1,0 +1,377 @@
+# translation of gnome-applets.HEAD.po to Arabic
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
+# Sayed Jaffer Al-Mosawi <mosawi@arabeyes.org>, 2002.
+# Isam Bayazidi <bayazidi@arabeyes.org>, 2002.
+# Arafat Medini <lumina@silverpen.de>, 2003.
+# Abdulaziz Al-Arfaj <alarfaj0@yahoo.com>, 2004.
+# Ayman Hourieh <aymanh@gmail.com>, 2004.
+# Khaled Hosny <khaledhosny@eglug.org>, 2006, 2007, 2008, 2009, 2010.
+# Djihed Afifi <djihed@gmail.com>, 2007, 2008.
+# Abou Manal <aboumanal@gmail.com>, 2008.
+# Anas Afif Emad <anas.e87@gmail.com, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-applets.HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-01-26 22:58+0100\n"
+"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
+"Language-Team: Arabic <doc@arabeyes.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n % 100 >= "
+"3 && n % 100 <= 10 ? 3 : n % 100 >= 11 && n % 100 <= 99 ? 4 : 5;\n"
+"X-Launchpad-Export-Date: 2012-01-27 05:53+0000\n"
+"X-Generator: Launchpad (build 14727)\n"
+"Language: ar\n"
+
+#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
+msgid ""
+"A system load monitor capable of displaying graphs for CPU, ram, and swap "
+"space use, plus network traffic."
+msgstr ""
+"مراقب لحالة النظام يستطيع عرض رسوم بيانية للمعالج و الذاكرة و مستوى استخدام "
+"ملف التبديل بالإضافة إلى حالة الشبكة."
+
+#: ../data/preferences.ui.in.h:2
+msgid "Cach_ed"
+msgstr "_مختزن"
+
+#: ../data/preferences.ui.in.h:3
+msgid "Colors"
+msgstr "الألوان"
+
+#: ../data/preferences.ui.in.h:4
+msgid "F_ree"
+msgstr "_خالي"
+
+#: ../data/preferences.ui.in.h:5
+msgid "Harddisk"
+msgstr "القرص الصلب"
+
+#: ../data/preferences.ui.in.h:6
+msgid "I_OWait"
+msgstr "I_OWait"
+
+#: ../data/preferences.ui.in.h:7
+msgid "I_dle"
+msgstr "_خامل"
+
+#: ../data/preferences.ui.in.h:8
+msgid "Load"
+msgstr "الحِمْل"
+
+#: ../data/preferences.ui.in.h:9
+msgid "Memory"
+msgstr "الذاكرة"
+
+#: ../data/preferences.ui.in.h:10
+msgid "Menu items..."
+msgstr ""
+
+#: ../data/preferences.ui.in.h:11
+msgid "Monitored Resources"
+msgstr "الموارد المراقَبة"
+
+#: ../data/preferences.ui.in.h:12
+msgid "N_ice"
+msgstr "_تحسين"
+
+#: ../data/preferences.ui.in.h:13
+msgid "Network"
+msgstr "الشبكة"
+
+#: ../data/preferences.ui.in.h:14
+msgid "Options"
+msgstr "الخيارات"
+
+#: ../data/preferences.ui.in.h:15
+msgid "Processor"
+msgstr "المعالج"
+
+#: ../data/preferences.ui.in.h:16
+msgid "S_wap Space"
+msgstr "مساحة الت_بديل"
+
+#: ../data/preferences.ui.in.h:17
+msgid "S_ystem"
+msgstr "الن_ظام"
+
+#: ../data/preferences.ui.in.h:18
+msgid "Sh_ared"
+msgstr "مش_ترك"
+
+#: ../data/preferences.ui.in.h:19
+msgid "Swap Space"
+msgstr "مساحة التبديل"
+
+#: ../data/preferences.ui.in.h:20
+msgid "Sys_tem monitor update interval: "
+msgstr "مدة تحديث مراقب ال_نظام: "
+
+#: ../data/preferences.ui.in.h:21
+msgid "System m_onitor width: "
+msgstr "عرض مرا_قب النظام: "
+
+#: ../data/preferences.ui.in.h:22
+msgid "_About"
+msgstr "_عنْ"
+
+#: ../data/preferences.ui.in.h:23
+msgid "_Autostart: "
+msgstr ""
+
+#: ../data/preferences.ui.in.h:24
+msgid "_Average"
+msgstr "ال_متوسط"
+
+#: ../data/preferences.ui.in.h:25
+msgid "_Background"
+msgstr "ال_خلفية"
+
+#: ../data/preferences.ui.in.h:26
+msgid "_Buffers"
+msgstr "الذاكرة ال_وسيطة"
+
+#: ../data/preferences.ui.in.h:27
+msgid "_Free"
+msgstr "_خالي"
+
+#: ../data/preferences.ui.in.h:28
+msgid "_Harddisk"
+msgstr "القرص ال_صلب"
+
+#: ../data/preferences.ui.in.h:29
+msgid "_In"
+msgstr "_داخل"
+
+#: ../data/preferences.ui.in.h:30
+msgid "_Load"
+msgstr "ال_حِمْل"
+
+#: ../data/preferences.ui.in.h:31
+msgid "_Local"
+msgstr "_محلي"
+
+#: ../data/preferences.ui.in.h:32
+msgid "_Memory"
+msgstr "ال_ذاكرة"
+
+#: ../data/preferences.ui.in.h:33
+msgid "_Network"
+msgstr "ال_شبكة"
+
+#: ../data/preferences.ui.in.h:34
+msgid "_Open System Monitor"
+msgstr "ا_فتح مراقب النظام"
+
+#: ../data/preferences.ui.in.h:35
+msgid "_Out"
+msgstr "_خارج"
+
+#: ../data/preferences.ui.in.h:36
+msgid "_Preferences"
+msgstr "ال_تفضيلات"
+
+#: ../data/preferences.ui.in.h:37
+msgid "_Processor"
+msgstr "الم_عالج"
+
+#: ../data/preferences.ui.in.h:38
+msgid "_Quit"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:39
+msgid "_Read"
+msgstr "_قراءة"
+
+#: ../data/preferences.ui.in.h:40
+msgid "_Used"
+msgstr "مُ_ستخدَم"
+
+#: ../data/preferences.ui.in.h:41
+msgid "_User"
+msgstr "الم_ستخدِم"
+
+#: ../data/preferences.ui.in.h:42
+msgid "_Write"
+msgstr "_كتابة"
+
+#: ../data/preferences.ui.in.h:43
+msgid "milliseconds"
+msgstr "ملي ثانية"
+
+#: ../data/preferences.ui.in.h:44
+msgid "pixels"
+msgstr "بكسل"
+
+#: ../data/preferences.ui.in.h:45
+msgid "translator-credits"
+msgstr ""
+"فريق عربآيز للترجمة http://www.arabeyes.org :\n"
+"يوسف رفه\t<yousef@raffah.com>\n"
+"جهاد عفيفي\t<djihed@gmail.com>\n"
+"خالد حسني\t<khaledhosny@eglug.org>\n"
+"أنس عفيف عماد\t<anas.e87@gmail.com>"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
+msgid "Applet refresh rate in milliseconds"
+msgstr "تردد تحديث البريمج بالملي ثانية"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+msgid "Automatically start on session startup"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+msgid "Available graphs"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
+msgid "Available traces"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
+msgid "Graph alpha value"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
+msgid "Graph background color"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
+msgid "Graph visibility"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+msgid "Height of the graphs in pixels."
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+msgid "Index of the current information shown in the indicator itself"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+msgid "Information shown as menu entries"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+msgid "Information shown in the indicator itself"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
+msgid "Maximum value for upper graph edge, zero means unlimited"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+msgid "Minimum value for upper graph edge"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+msgid "Number of values used for smooth graph scaling"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+msgid "The desktop description file to execute as the system monitor"
+msgstr "ملف وصف سطح المكتب الذي سيتم تنفيذه كمراقب النظام"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+msgid "Trace color"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+msgid "Trace expression"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+msgid "Trace visibility"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+msgid "Traces shown"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+msgid "Width of the graphs in pixels."
+msgstr ""
+
+#: ../data/indicator-multiload.desktop.in.h:2
+msgid "System Load Indicator"
+msgstr "نظام تحميل المؤشر"
+
+#: ../src/function.vala:88
+#, c-format
+msgid "%u%%"
+msgstr ""
+
+#: ../src/main.vala:37
+msgid "Evaluate an expression"
+msgstr ""
+
+#: ../src/main.vala:39
+msgid "List available expression identifiers"
+msgstr ""
+
+#: ../src/main.vala:41
+msgid "Show debug messages"
+msgstr ""
+
+#: ../src/main.vala:311
+msgid "- System load application indicator"
+msgstr ""
+
+#: ../src/main.vala:319
+#, c-format
+msgid ""
+"Run '%s --help' to see a full list of available command line options.\n"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:57
+msgid "{} kB"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:59
+msgid "{} MB"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:61
+msgid "{} GB"
+msgstr ""
+
+#: ../src/utils.vala:69
+#, c-format
+msgid "%u B"
+msgid_plural "%u B"
+msgstr[0] ""
+msgstr[1] ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:82
+msgid "{} kB/s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:84
+msgid "{} MB/s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:86
+msgid "{} GB/s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:88
+msgid "{} TB/s"
+msgstr ""
+
+#: ../src/utils.vala:96
+#, c-format
+msgid "%u B/s"
+msgid_plural "%u B/s"
+msgstr[0] ""
+msgstr[1] ""

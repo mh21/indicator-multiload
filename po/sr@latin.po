@@ -1,0 +1,374 @@
+# Serbian translation of gnome-applets
+# Courtesy of Prevod.org team (http://prevod.org/) -- 2003, 2004, 2005, 2006.
+#
+# This file is distributed under the same license as the gnome-applets package.
+#
+# Maintainer: Danilo Šegan <danilo@gnome.org>
+# Reviewed on 2005-09-03 by: Igor Nestorović <igor@prevod.org>
+# Miloš Popović <gpopac@gmail.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-applets\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-01-26 22:58+0100\n"
+"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"Last-Translator: Miloš Popović <gpopac@gmail.com>\n"
+"Language-Team: Serbian <gnom@prevod.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Launchpad-Export-Date: 2012-01-27 05:54+0000\n"
+"X-Generator: Launchpad (build 14727)\n"
+"Language: sr\n"
+
+#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
+msgid ""
+"A system load monitor capable of displaying graphs for CPU, ram, and swap "
+"space use, plus network traffic."
+msgstr ""
+"Praćenje opterećenja sistema omogućava prikaz grafika za procesor, memoriju, "
+"i memoriju na disku, a uz to i mrežni saobraćaj."
+
+#: ../data/preferences.ui.in.h:2
+msgid "Cach_ed"
+msgstr "Keš_irana"
+
+#: ../data/preferences.ui.in.h:3
+msgid "Colors"
+msgstr "Boje"
+
+#: ../data/preferences.ui.in.h:4
+msgid "F_ree"
+msgstr "_Slobodna"
+
+#: ../data/preferences.ui.in.h:5
+msgid "Harddisk"
+msgstr "Tvrdi disk"
+
+#: ../data/preferences.ui.in.h:6
+msgid "I_OWait"
+msgstr "U_Ičekanje"
+
+#: ../data/preferences.ui.in.h:7
+msgid "I_dle"
+msgstr "_Neuposlen"
+
+#: ../data/preferences.ui.in.h:8
+msgid "Load"
+msgstr "Opterećenje"
+
+#: ../data/preferences.ui.in.h:9
+msgid "Memory"
+msgstr "Memorija"
+
+#: ../data/preferences.ui.in.h:10
+msgid "Menu items..."
+msgstr ""
+
+#: ../data/preferences.ui.in.h:11
+msgid "Monitored Resources"
+msgstr "Praćeni resursi"
+
+#: ../data/preferences.ui.in.h:12
+msgid "N_ice"
+msgstr "_Manje prioritetno"
+
+#: ../data/preferences.ui.in.h:13
+msgid "Network"
+msgstr "Mreža"
+
+#: ../data/preferences.ui.in.h:14
+msgid "Options"
+msgstr "Opcije"
+
+#: ../data/preferences.ui.in.h:15
+msgid "Processor"
+msgstr "Procesor"
+
+#: ../data/preferences.ui.in.h:16
+msgid "S_wap Space"
+msgstr "_Zamena za memoriju (swap)"
+
+#: ../data/preferences.ui.in.h:17
+msgid "S_ystem"
+msgstr "_Sistem"
+
+#: ../data/preferences.ui.in.h:18
+msgid "Sh_ared"
+msgstr "_Deljena"
+
+#: ../data/preferences.ui.in.h:19
+msgid "Swap Space"
+msgstr "Zamena za memoriju (swap)"
+
+#: ../data/preferences.ui.in.h:20
+msgid "Sys_tem monitor update interval: "
+msgstr "_Vreme između dva osvežavanja prikaza: "
+
+#: ../data/preferences.ui.in.h:21
+msgid "System m_onitor width: "
+msgstr "_Širina programčeta: "
+
+#: ../data/preferences.ui.in.h:22
+msgid "_About"
+msgstr "_O programu"
+
+#: ../data/preferences.ui.in.h:23
+msgid "_Autostart: "
+msgstr ""
+
+#: ../data/preferences.ui.in.h:24
+msgid "_Average"
+msgstr "Pro_sečno"
+
+#: ../data/preferences.ui.in.h:25
+msgid "_Background"
+msgstr "_Pozadina"
+
+#: ../data/preferences.ui.in.h:26
+msgid "_Buffers"
+msgstr "_Baferi"
+
+#: ../data/preferences.ui.in.h:27
+msgid "_Free"
+msgstr "_Slobodno"
+
+#: ../data/preferences.ui.in.h:28
+msgid "_Harddisk"
+msgstr "_Tvrdi disk"
+
+#: ../data/preferences.ui.in.h:29
+msgid "_In"
+msgstr "_Primljeno"
+
+#: ../data/preferences.ui.in.h:30
+msgid "_Load"
+msgstr "_Opterećenje"
+
+#: ../data/preferences.ui.in.h:31
+msgid "_Local"
+msgstr "_Lokalno"
+
+#: ../data/preferences.ui.in.h:32
+msgid "_Memory"
+msgstr "_Memorija"
+
+#: ../data/preferences.ui.in.h:33
+msgid "_Network"
+msgstr "M_reža"
+
+#: ../data/preferences.ui.in.h:34
+msgid "_Open System Monitor"
+msgstr "_Pokreni Praćenje sistema"
+
+#: ../data/preferences.ui.in.h:35
+msgid "_Out"
+msgstr "P_oslato"
+
+#: ../data/preferences.ui.in.h:36
+msgid "_Preferences"
+msgstr "_Postavke"
+
+#: ../data/preferences.ui.in.h:37
+msgid "_Processor"
+msgstr "_Procesor"
+
+#: ../data/preferences.ui.in.h:38
+msgid "_Quit"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:39
+msgid "_Read"
+msgstr "_Čitanje"
+
+#: ../data/preferences.ui.in.h:40
+msgid "_Used"
+msgstr "Is_korišćeno"
+
+#: ../data/preferences.ui.in.h:41
+msgid "_User"
+msgstr "_Korisnik"
+
+#: ../data/preferences.ui.in.h:42
+msgid "_Write"
+msgstr "_Upis"
+
+#: ../data/preferences.ui.in.h:43
+msgid "milliseconds"
+msgstr "milisekundi"
+
+#: ../data/preferences.ui.in.h:44
+msgid "pixels"
+msgstr "piksela"
+
+#: ../data/preferences.ui.in.h:45
+msgid "translator-credits"
+msgstr ""
+"Danilo Šegan <danilo@prevod.org>\n"
+"\n"
+"http://prevod.org — prevod na srpski jezik."
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
+msgid "Applet refresh rate in milliseconds"
+msgstr "Brzina osvežavanja programčeta u milisekundama"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+msgid "Automatically start on session startup"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+msgid "Available graphs"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
+msgid "Available traces"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
+msgid "Graph alpha value"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
+msgid "Graph background color"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
+msgid "Graph visibility"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+msgid "Height of the graphs in pixels."
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+msgid "Index of the current information shown in the indicator itself"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+msgid "Information shown as menu entries"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+msgid "Information shown in the indicator itself"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
+msgid "Maximum value for upper graph edge, zero means unlimited"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+msgid "Minimum value for upper graph edge"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+msgid "Number of values used for smooth graph scaling"
+msgstr ""
+
+# Jel ok ovako?
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+msgid "The desktop description file to execute as the system monitor"
+msgstr ""
+"Pokretačka datoteka koju treba pokrenuti kao program za praćenje sistema"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+msgid "Trace color"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+msgid "Trace expression"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+msgid "Trace visibility"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+msgid "Traces shown"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+msgid "Width of the graphs in pixels."
+msgstr ""
+
+#: ../data/indicator-multiload.desktop.in.h:2
+msgid "System Load Indicator"
+msgstr ""
+
+#: ../src/function.vala:88
+#, c-format
+msgid "%u%%"
+msgstr ""
+
+#: ../src/main.vala:37
+msgid "Evaluate an expression"
+msgstr ""
+
+#: ../src/main.vala:39
+msgid "List available expression identifiers"
+msgstr ""
+
+#: ../src/main.vala:41
+msgid "Show debug messages"
+msgstr ""
+
+#: ../src/main.vala:311
+msgid "- System load application indicator"
+msgstr ""
+
+#: ../src/main.vala:319
+#, c-format
+msgid ""
+"Run '%s --help' to see a full list of available command line options.\n"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:57
+msgid "{} kB"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:59
+msgid "{} MB"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:61
+msgid "{} GB"
+msgstr ""
+
+#: ../src/utils.vala:69
+#, c-format
+msgid "%u B"
+msgid_plural "%u B"
+msgstr[0] ""
+msgstr[1] ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:82
+msgid "{} kB/s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:84
+msgid "{} MB/s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:86
+msgid "{} GB/s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:88
+msgid "{} TB/s"
+msgstr ""
+
+#: ../src/utils.vala:96
+#, c-format
+msgid "%u B/s"
+msgid_plural "%u B/s"
+msgstr[0] ""
+msgstr[1] ""

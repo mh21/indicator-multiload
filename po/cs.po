@@ -1,0 +1,382 @@
+# Czech translation of gnome-applets.
+# Copyright (C) 1999, 2003, 2006, 2007, 2008, 2009, 2010 the author(s) of gnome-applets.
+# Copyright (C) 2003, 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+# This file is distributed under the same license as the gnome-applets package.
+# David Sauer <davids@penguin.cz> (David Šauer), 1999.
+# GIS <gis@academy.cas.cz>, 1999.
+# George Lebl <jirka@5z.com>, 2000, 2001.
+# Stanislav Brabec <utx@penguin.cz>, 2000, 2001.
+# Michal Bukovjan <bukm@centrum.cz>, 2002, 2003.
+# Miloslav Trmac <mitr@volny.cz>, 2003, 2004, 2005, 2006.
+# Petr Tomeš <ptomes@gmail.com>, 2006.
+# Jakub Friedl <jfriedl@suse.cz>, 2006, 2007.
+# Petr Kovar <pknbe@volny.cz>, 2007, 2008, 2009, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-applets\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-01-26 22:58+0100\n"
+"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"Last-Translator: Petr Kovar <pknbe@volny.cz>\n"
+"Language-Team: Czech <gnome-cs-list@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Launchpad-Export-Date: 2012-01-27 05:53+0000\n"
+"X-Generator: Launchpad (build 14727)\n"
+"Language: cs\n"
+
+#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
+msgid ""
+"A system load monitor capable of displaying graphs for CPU, ram, and swap "
+"space use, plus network traffic."
+msgstr ""
+"Sledování zátěže systému schopné zobrazovat grafy CPU, paměti, využití "
+"odkládacího prostoru a zatížení sítě."
+
+#: ../data/preferences.ui.in.h:2
+msgid "Cach_ed"
+msgstr "Ve vyrovnáva_cí paměti"
+
+#: ../data/preferences.ui.in.h:3
+msgid "Colors"
+msgstr "Barvy"
+
+#: ../data/preferences.ui.in.h:4
+msgid "F_ree"
+msgstr "Vo_lné"
+
+#: ../data/preferences.ui.in.h:5
+msgid "Harddisk"
+msgstr "Pevný disk"
+
+#: ../data/preferences.ui.in.h:6
+msgid "I_OWait"
+msgstr "I_OWait"
+
+#: ../data/preferences.ui.in.h:7
+msgid "I_dle"
+msgstr "Neč_innost"
+
+#: ../data/preferences.ui.in.h:8
+msgid "Load"
+msgstr "Zátěž"
+
+#: ../data/preferences.ui.in.h:9
+msgid "Memory"
+msgstr "Paměť"
+
+#: ../data/preferences.ui.in.h:10
+msgid "Menu items..."
+msgstr ""
+
+#: ../data/preferences.ui.in.h:11
+msgid "Monitored Resources"
+msgstr "Sledované zdroje"
+
+#: ../data/preferences.ui.in.h:12
+msgid "N_ice"
+msgstr "Ni_ce"
+
+#: ../data/preferences.ui.in.h:13
+msgid "Network"
+msgstr "Síť"
+
+#: ../data/preferences.ui.in.h:14
+msgid "Options"
+msgstr "Volby"
+
+#: ../data/preferences.ui.in.h:15
+msgid "Processor"
+msgstr "Procesor"
+
+#: ../data/preferences.ui.in.h:16
+msgid "S_wap Space"
+msgstr "_Odkládací prostor"
+
+#: ../data/preferences.ui.in.h:17
+msgid "S_ystem"
+msgstr "S_ystém"
+
+#: ../data/preferences.ui.in.h:18
+msgid "Sh_ared"
+msgstr "Sdíl_eno"
+
+#: ../data/preferences.ui.in.h:19
+msgid "Swap Space"
+msgstr "Odkládací prostor"
+
+#: ../data/preferences.ui.in.h:20
+msgid "Sys_tem monitor update interval: "
+msgstr "Frekvence _aktualizace grafu: "
+
+#: ../data/preferences.ui.in.h:21
+msgid "System m_onitor width: "
+msgstr "Šířka _grafu: "
+
+#: ../data/preferences.ui.in.h:22
+msgid "_About"
+msgstr "O _aplikaci"
+
+#: ../data/preferences.ui.in.h:23
+msgid "_Autostart: "
+msgstr "_Automatické spouštění: "
+
+#: ../data/preferences.ui.in.h:24
+msgid "_Average"
+msgstr "_Průměr"
+
+#: ../data/preferences.ui.in.h:25
+msgid "_Background"
+msgstr "Poza_dí"
+
+#: ../data/preferences.ui.in.h:26
+msgid "_Buffers"
+msgstr "Bu_ffery"
+
+#: ../data/preferences.ui.in.h:27
+msgid "_Free"
+msgstr "Vo_lné"
+
+#: ../data/preferences.ui.in.h:28
+msgid "_Harddisk"
+msgstr "Pe_vný disk"
+
+#: ../data/preferences.ui.in.h:29
+msgid "_In"
+msgstr "Vst_up"
+
+#: ../data/preferences.ui.in.h:30
+msgid "_Load"
+msgstr "Zá_těž"
+
+#: ../data/preferences.ui.in.h:31
+msgid "_Local"
+msgstr "_Místní"
+
+#: ../data/preferences.ui.in.h:32
+msgid "_Memory"
+msgstr "Pa_měť"
+
+#: ../data/preferences.ui.in.h:33
+msgid "_Network"
+msgstr "_Síť"
+
+#: ../data/preferences.ui.in.h:34
+msgid "_Open System Monitor"
+msgstr "Otevřít _sledování systému"
+
+#: ../data/preferences.ui.in.h:35
+msgid "_Out"
+msgstr "Výs_tup"
+
+#: ../data/preferences.ui.in.h:36
+msgid "_Preferences"
+msgstr "Př_edvolby"
+
+#: ../data/preferences.ui.in.h:37
+msgid "_Processor"
+msgstr "_Procesor"
+
+#: ../data/preferences.ui.in.h:38
+msgid "_Quit"
+msgstr "_Ukončit"
+
+#: ../data/preferences.ui.in.h:39
+msgid "_Read"
+msgstr "Čt_ení"
+
+#: ../data/preferences.ui.in.h:40
+msgid "_Used"
+msgstr "Po_užito"
+
+#: ../data/preferences.ui.in.h:41
+msgid "_User"
+msgstr "_Uživatel"
+
+#: ../data/preferences.ui.in.h:42
+msgid "_Write"
+msgstr "Záp_is"
+
+#: ../data/preferences.ui.in.h:43
+msgid "milliseconds"
+msgstr "milisekund"
+
+#: ../data/preferences.ui.in.h:44
+msgid "pixels"
+msgstr "bodů"
+
+#: ../data/preferences.ui.in.h:45
+msgid "translator-credits"
+msgstr ""
+"David Šauer <davids@penguin.cz>\n"
+"GIS <gis@academy.cas.cz>\n"
+"George Lebl <jirka@5z.com>\n"
+"Stanislav Brabec <utx@penguin.cz>\n"
+"Michal Bukovjan <bukm@centrum.cz>\n"
+"Miloslav Trmač <mitr@volny.cz>\n"
+"Petr Tomeš <ptomes@gmail.com>\n"
+"Jakub Friedl <jfriedl@suse.cz>\n"
+"Petr Kovář <pknbe@volny.cz>"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
+msgid "Applet refresh rate in milliseconds"
+msgstr "Čas mezi obnovou appletů v milisekundách"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+msgid "Automatically start on session startup"
+msgstr "Automatické spouštění na začátku sezení"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+msgid "Available graphs"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
+msgid "Available traces"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
+msgid "Graph alpha value"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
+msgid "Graph background color"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
+msgid "Graph visibility"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+msgid "Height of the graphs in pixels."
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+msgid "Index of the current information shown in the indicator itself"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+msgid "Information shown as menu entries"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+msgid "Information shown in the indicator itself"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
+msgid "Maximum value for upper graph edge, zero means unlimited"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+msgid "Minimum value for upper graph edge"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+msgid "Number of values used for smooth graph scaling"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+msgid "The desktop description file to execute as the system monitor"
+msgstr ""
+"Soubor popisu pracovní plochy určený ke spuštění jako sledování systému"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+msgid "Trace color"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+msgid "Trace expression"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+msgid "Trace visibility"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+msgid "Traces shown"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+msgid "Width of the graphs in pixels."
+msgstr ""
+
+#: ../data/indicator-multiload.desktop.in.h:2
+msgid "System Load Indicator"
+msgstr "Indikátor zátěže systému"
+
+#: ../src/function.vala:88
+#, c-format
+msgid "%u%%"
+msgstr ""
+
+#: ../src/main.vala:37
+msgid "Evaluate an expression"
+msgstr ""
+
+#: ../src/main.vala:39
+msgid "List available expression identifiers"
+msgstr ""
+
+#: ../src/main.vala:41
+msgid "Show debug messages"
+msgstr ""
+
+#: ../src/main.vala:311
+msgid "- System load application indicator"
+msgstr ""
+
+#: ../src/main.vala:319
+#, c-format
+msgid ""
+"Run '%s --help' to see a full list of available command line options.\n"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:57
+msgid "{} kB"
+msgstr "{} kB"
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:59
+msgid "{} MB"
+msgstr "{} MB"
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:61
+msgid "{} GB"
+msgstr "{} GB"
+
+#: ../src/utils.vala:69
+#, c-format
+msgid "%u B"
+msgid_plural "%u B"
+msgstr[0] ""
+msgstr[1] ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:82
+msgid "{} kB/s"
+msgstr "{} kB/s"
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:84
+msgid "{} MB/s"
+msgstr "{} MB/s"
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:86
+msgid "{} GB/s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:88
+msgid "{} TB/s"
+msgstr ""
+
+#: ../src/utils.vala:96
+#, c-format
+msgid "%u B/s"
+msgid_plural "%u B/s"
+msgstr[0] ""
+msgstr[1] ""

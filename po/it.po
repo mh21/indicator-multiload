@@ -1,0 +1,376 @@
+# Italian localization for gnome-applets
+# This file is distributed under the same license as gnome-applets package
+# Copyright (C) 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010 Free Software Foundation, Inc.
+# Christopher R. Gabriel, <cgabriel@pluto.linux.it> 2000.
+# Francesco Marletta <francesco.marletta@tiscali.it>, 2003.
+# Leandro Noferini <lnoferin@cybervalley.org>, 2002, 2003.
+#
+# Luca Ferretti <lferrett@gnome.org>, 2004, 2005, 2006, 2007, 2008, 2009, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-applets 2.29.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-01-26 22:58+0100\n"
+"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"Last-Translator: Luca Ferretti <lferrett@gnome.org>\n"
+"Language-Team: Italian <tp@lists.linux.it>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2012-01-27 05:54+0000\n"
+"X-Generator: Launchpad (build 14727)\n"
+"Language: it\n"
+
+#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
+msgid ""
+"A system load monitor capable of displaying graphs for CPU, ram, and swap "
+"space use, plus network traffic."
+msgstr ""
+"Un monitor del carico di sistema, capace di visualizzare grafici per la CPU, "
+"la RAM e l'uso dello spazio di swap, oltre che del traffico di rete."
+
+#: ../data/preferences.ui.in.h:2
+msgid "Cach_ed"
+msgstr "In cach_e"
+
+#: ../data/preferences.ui.in.h:3
+msgid "Colors"
+msgstr "Colori"
+
+#: ../data/preferences.ui.in.h:4
+msgid "F_ree"
+msgstr "Libe_ra"
+
+#: ../data/preferences.ui.in.h:5
+msgid "Harddisk"
+msgstr "Hard disk"
+
+#: ../data/preferences.ui.in.h:6
+msgid "I_OWait"
+msgstr "I_OWait"
+
+#: ../data/preferences.ui.in.h:7
+msgid "I_dle"
+msgstr "I_nattività"
+
+#: ../data/preferences.ui.in.h:8
+msgid "Load"
+msgstr "Carico"
+
+#: ../data/preferences.ui.in.h:9
+msgid "Memory"
+msgstr "Memoria"
+
+#: ../data/preferences.ui.in.h:10
+msgid "Menu items..."
+msgstr ""
+
+#: ../data/preferences.ui.in.h:11
+msgid "Monitored Resources"
+msgstr "Risorse monitorate"
+
+#: ../data/preferences.ui.in.h:12
+msgid "N_ice"
+msgstr "Nic_e"
+
+#: ../data/preferences.ui.in.h:13
+msgid "Network"
+msgstr "Rete"
+
+#: ../data/preferences.ui.in.h:14
+msgid "Options"
+msgstr "Opzioni"
+
+#: ../data/preferences.ui.in.h:15
+msgid "Processor"
+msgstr "Processore"
+
+#: ../data/preferences.ui.in.h:16
+msgid "S_wap Space"
+msgstr "Spazio di s_wap"
+
+#: ../data/preferences.ui.in.h:17
+msgid "S_ystem"
+msgstr "_Sistema"
+
+#: ../data/preferences.ui.in.h:18
+msgid "Sh_ared"
+msgstr "Condivis_a"
+
+#: ../data/preferences.ui.in.h:19
+msgid "Swap Space"
+msgstr "Spazio di swap"
+
+#: ../data/preferences.ui.in.h:20
+msgid "Sys_tem monitor update interval: "
+msgstr "Intervallo di aggiornamen_to monitor di sistema: "
+
+#: ../data/preferences.ui.in.h:21
+msgid "System m_onitor width: "
+msgstr "_Larghezza monitor di sistema: "
+
+#: ../data/preferences.ui.in.h:22
+msgid "_About"
+msgstr "I_nformazioni"
+
+#: ../data/preferences.ui.in.h:23
+msgid "_Autostart: "
+msgstr "_Avvio automatico: "
+
+#: ../data/preferences.ui.in.h:24
+msgid "_Average"
+msgstr "Medi_a"
+
+#: ../data/preferences.ui.in.h:25
+msgid "_Background"
+msgstr "_Sfondo"
+
+#: ../data/preferences.ui.in.h:26
+msgid "_Buffers"
+msgstr "_Buffer"
+
+#: ../data/preferences.ui.in.h:27
+msgid "_Free"
+msgstr "Li_bera"
+
+#: ../data/preferences.ui.in.h:28
+msgid "_Harddisk"
+msgstr "_Hard disk"
+
+#: ../data/preferences.ui.in.h:29
+msgid "_In"
+msgstr "I_ngresso"
+
+#: ../data/preferences.ui.in.h:30
+msgid "_Load"
+msgstr "C_arico"
+
+#: ../data/preferences.ui.in.h:31
+msgid "_Local"
+msgstr "L_ocale"
+
+#: ../data/preferences.ui.in.h:32
+msgid "_Memory"
+msgstr "_Memoria"
+
+#: ../data/preferences.ui.in.h:33
+msgid "_Network"
+msgstr "_Rete"
+
+#: ../data/preferences.ui.in.h:34
+msgid "_Open System Monitor"
+msgstr "_Apri «Monitor di sistema»"
+
+#: ../data/preferences.ui.in.h:35
+msgid "_Out"
+msgstr "_Uscita"
+
+#: ../data/preferences.ui.in.h:36
+msgid "_Preferences"
+msgstr "Preferen_ze"
+
+#: ../data/preferences.ui.in.h:37
+msgid "_Processor"
+msgstr "_Processore"
+
+#: ../data/preferences.ui.in.h:38
+msgid "_Quit"
+msgstr "_Esci"
+
+#: ../data/preferences.ui.in.h:39
+msgid "_Read"
+msgstr "_Lettura"
+
+#: ../data/preferences.ui.in.h:40
+msgid "_Used"
+msgstr "_Usata"
+
+#: ../data/preferences.ui.in.h:41
+msgid "_User"
+msgstr "_Utente"
+
+#: ../data/preferences.ui.in.h:42
+msgid "_Write"
+msgstr "_Scrittura"
+
+#: ../data/preferences.ui.in.h:43
+msgid "milliseconds"
+msgstr "millisecondi"
+
+#: ../data/preferences.ui.in.h:44
+msgid "pixels"
+msgstr "pixel"
+
+# GNOME-2-24
+#: ../data/preferences.ui.in.h:45
+msgid "translator-credits"
+msgstr ""
+"Luca Ferretti <elle.uca@libero.it>\n"
+"\n"
+"Con la partecipazione di:\n"
+"  * Christopher R. Gabriel\n"
+"  * Francesco Marletta\n"
+"  * Leandro Noferini\n"
+"  * tutti i revisori del TP"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
+msgid "Applet refresh rate in milliseconds"
+msgstr "Aggiornamento dell'applet in millisecondi"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+msgid "Automatically start on session startup"
+msgstr "Avvio automatico all'inizializzazione del sistema"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+msgid "Available graphs"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
+msgid "Available traces"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
+msgid "Graph alpha value"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
+msgid "Graph background color"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
+msgid "Graph visibility"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+msgid "Height of the graphs in pixels."
+msgstr "Altezza dei grafici in pixel."
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+msgid "Index of the current information shown in the indicator itself"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+msgid "Information shown as menu entries"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+msgid "Information shown in the indicator itself"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
+msgid "Maximum value for upper graph edge, zero means unlimited"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+msgid "Minimum value for upper graph edge"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+msgid "Number of values used for smooth graph scaling"
+msgstr ""
+
+# GNOME-2-24
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+msgid "The desktop description file to execute as the system monitor"
+msgstr "Il file descrizione desktop da eseguire come monitor di sistema"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+msgid "Trace color"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+msgid "Trace expression"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+msgid "Trace visibility"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+msgid "Traces shown"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+msgid "Width of the graphs in pixels."
+msgstr "Larghezza dei grafici in pixel."
+
+#: ../data/indicator-multiload.desktop.in.h:2
+msgid "System Load Indicator"
+msgstr "Indicatore carico di sistema"
+
+#: ../src/function.vala:88
+#, c-format
+msgid "%u%%"
+msgstr ""
+
+#: ../src/main.vala:37
+msgid "Evaluate an expression"
+msgstr ""
+
+#: ../src/main.vala:39
+msgid "List available expression identifiers"
+msgstr ""
+
+#: ../src/main.vala:41
+msgid "Show debug messages"
+msgstr ""
+
+#: ../src/main.vala:311
+msgid "- System load application indicator"
+msgstr ""
+
+#: ../src/main.vala:319
+#, c-format
+msgid ""
+"Run '%s --help' to see a full list of available command line options.\n"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:57
+msgid "{} kB"
+msgstr "{} kB"
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:59
+msgid "{} MB"
+msgstr "{} MB"
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:61
+msgid "{} GB"
+msgstr "{} GB"
+
+#: ../src/utils.vala:69
+#, c-format
+msgid "%u B"
+msgid_plural "%u B"
+msgstr[0] ""
+msgstr[1] ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:82
+msgid "{} kB/s"
+msgstr "{} kB/s"
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:84
+msgid "{} MB/s"
+msgstr "{} MB/s"
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:86
+msgid "{} GB/s"
+msgstr "{} GB/s"
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:88
+msgid "{} TB/s"
+msgstr "{} TB/s"
+
+#: ../src/utils.vala:96
+#, c-format
+msgid "%u B/s"
+msgid_plural "%u B/s"
+msgstr[0] ""
+msgstr[1] ""

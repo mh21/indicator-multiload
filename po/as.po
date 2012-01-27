@@ -1,0 +1,366 @@
+# translation of as.po to Assamese
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Amitakhya Phukan <amitakhya@svn.gnome.org>, 2007.
+# Amitakhya Phukan <aphukan@redhat.com>, 2007, 2008.
+# Amitakhya Phukan <aphukan@fedoraproject.org>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: as\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-01-26 22:58+0100\n"
+"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"Last-Translator: \n"
+"Language-Team: Assamese <>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n!=1;\n"
+"X-Launchpad-Export-Date: 2012-01-27 05:53+0000\n"
+"X-Generator: Launchpad (build 14727)\n"
+"Language: as\n"
+
+#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
+msgid ""
+"A system load monitor capable of displaying graphs for CPU, ram, and swap "
+"space use, plus network traffic."
+msgstr ""
+"CPU, ram, swap-ৰ ব্যৱহাৰ আৰু নেটৱৰ্ক ট্ৰাফিক প্ৰভৃতিসহ ব্যৱস্থাপ্ৰণালীেৰ উপৰ "
+"চাপ নিৰীক্ষণ ব্যৱস্থা ।"
+
+#: ../data/preferences.ui.in.h:2
+msgid "Cach_ed"
+msgstr "ক্যাশে কৰা (_e)"
+
+#: ../data/preferences.ui.in.h:3
+msgid "Colors"
+msgstr "ৰঙ"
+
+#: ../data/preferences.ui.in.h:4
+msgid "F_ree"
+msgstr "মুক্ত (_r)"
+
+#: ../data/preferences.ui.in.h:5
+msgid "Harddisk"
+msgstr "হাৰ্ড-ডিস্ক"
+
+#: ../data/preferences.ui.in.h:6
+msgid "I_OWait"
+msgstr "I_OWait"
+
+#: ../data/preferences.ui.in.h:7
+msgid "I_dle"
+msgstr "কৰ্মবিহীন (_d)"
+
+#: ../data/preferences.ui.in.h:8
+msgid "Load"
+msgstr "তুলি লওক"
+
+#: ../data/preferences.ui.in.h:9
+msgid "Memory"
+msgstr "মেমৰি"
+
+#: ../data/preferences.ui.in.h:10
+msgid "Menu items..."
+msgstr ""
+
+#: ../data/preferences.ui.in.h:11
+msgid "Monitored Resources"
+msgstr "নিৰীক্ষিত ৰিসোৰ্স"
+
+#: ../data/preferences.ui.in.h:12
+msgid "N_ice"
+msgstr "N_ice"
+
+#: ../data/preferences.ui.in.h:13
+msgid "Network"
+msgstr "নেটৱৰ্ক"
+
+#: ../data/preferences.ui.in.h:14
+msgid "Options"
+msgstr "বিকল্পসমূহ"
+
+#: ../data/preferences.ui.in.h:15
+msgid "Processor"
+msgstr "প্ৰসেসৰ"
+
+#: ../data/preferences.ui.in.h:16
+msgid "S_wap Space"
+msgstr "Swap স্থান(_w)"
+
+#: ../data/preferences.ui.in.h:17
+msgid "S_ystem"
+msgstr "ব্যৱস্থাপ্ৰণালী (_y)"
+
+#: ../data/preferences.ui.in.h:18
+msgid "Sh_ared"
+msgstr "যৌথৰূপে ব্যৱহৃত (_a)"
+
+#: ../data/preferences.ui.in.h:19
+msgid "Swap Space"
+msgstr "Swap স্থান"
+
+#: ../data/preferences.ui.in.h:20
+msgid "Sys_tem monitor update interval: "
+msgstr "System Monitor'ৰ তথ্য আপডেটেৰ মধ্যবৰ্তী বিৰতিকাল:(_t) "
+
+#: ../data/preferences.ui.in.h:21
+msgid "System m_onitor width: "
+msgstr "System Monitor'ৰ প্ৰস্থ (_o) "
+
+#: ../data/preferences.ui.in.h:22
+msgid "_About"
+msgstr "বিষয়ে (_A)"
+
+#: ../data/preferences.ui.in.h:23
+msgid "_Autostart: "
+msgstr ""
+
+#: ../data/preferences.ui.in.h:24
+msgid "_Average"
+msgstr "গড় (_A)"
+
+#: ../data/preferences.ui.in.h:25
+msgid "_Background"
+msgstr "পটভূমি (_B)"
+
+#: ../data/preferences.ui.in.h:26
+msgid "_Buffers"
+msgstr "বাফাৰ (_B)"
+
+#: ../data/preferences.ui.in.h:27
+msgid "_Free"
+msgstr "মুক্ত (_F)"
+
+#: ../data/preferences.ui.in.h:28
+msgid "_Harddisk"
+msgstr "হাৰ্ড-ডিস্ক (_H)"
+
+#: ../data/preferences.ui.in.h:29
+msgid "_In"
+msgstr "ইন (_I)"
+
+#: ../data/preferences.ui.in.h:30
+msgid "_Load"
+msgstr "তুলি লওক"
+
+#: ../data/preferences.ui.in.h:31
+msgid "_Local"
+msgstr "স্থানীয় (_L)"
+
+#: ../data/preferences.ui.in.h:32
+msgid "_Memory"
+msgstr "মেমৰি(_M)"
+
+#: ../data/preferences.ui.in.h:33
+msgid "_Network"
+msgstr "নেটৱৰ্ক"
+
+#: ../data/preferences.ui.in.h:34
+msgid "_Open System Monitor"
+msgstr "খোলক"
+
+#: ../data/preferences.ui.in.h:35
+msgid "_Out"
+msgstr "আউট (_O)"
+
+#: ../data/preferences.ui.in.h:36
+msgid "_Preferences"
+msgstr "পছন্দ (_P)"
+
+#: ../data/preferences.ui.in.h:37
+msgid "_Processor"
+msgstr "প্ৰসেসৰ (_P)"
+
+#: ../data/preferences.ui.in.h:38
+msgid "_Quit"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:39
+msgid "_Read"
+msgstr "পড়া (_R)"
+
+#: ../data/preferences.ui.in.h:40
+msgid "_Used"
+msgstr "ব্যৱহৃত (_U)"
+
+#: ../data/preferences.ui.in.h:41
+msgid "_User"
+msgstr "ব্যৱহাৰকৰোঁতা (_U)"
+
+#: ../data/preferences.ui.in.h:42
+msgid "_Write"
+msgstr "লিখা (_W)"
+
+#: ../data/preferences.ui.in.h:43
+msgid "milliseconds"
+msgstr "মিলি-সেকেন্ড"
+
+#: ../data/preferences.ui.in.h:44
+msgid "pixels"
+msgstr "পিক্সেল"
+
+#: ../data/preferences.ui.in.h:45
+msgid "translator-credits"
+msgstr "অমিতাক্ষ ফুকন (aphukan@fedoraproject.org)"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
+msgid "Applet refresh rate in milliseconds"
+msgstr "মিলিসেকেন্ডে এপ্লেটেৰ পৰিবৰ্তনেৰ হাৰ"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+msgid "Automatically start on session startup"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+msgid "Available graphs"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
+msgid "Available traces"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
+msgid "Graph alpha value"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
+msgid "Graph background color"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
+msgid "Graph visibility"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+msgid "Height of the graphs in pixels."
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+msgid "Index of the current information shown in the indicator itself"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+msgid "Information shown as menu entries"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+msgid "Information shown in the indicator itself"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
+msgid "Maximum value for upper graph edge, zero means unlimited"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+msgid "Minimum value for upper graph edge"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+msgid "Number of values used for smooth graph scaling"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+msgid "The desktop description file to execute as the system monitor"
+msgstr "সিস্টেম নিৰীক্ষণৰ বাবে যে ডেস্কটপ বিবৰণৰ ফাইল সঞ্চালন কৰা হ'ব"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+msgid "Trace color"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+msgid "Trace expression"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+msgid "Trace visibility"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+msgid "Traces shown"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+msgid "Width of the graphs in pixels."
+msgstr ""
+
+#: ../data/indicator-multiload.desktop.in.h:2
+msgid "System Load Indicator"
+msgstr ""
+
+#: ../src/function.vala:88
+#, c-format
+msgid "%u%%"
+msgstr ""
+
+#: ../src/main.vala:37
+msgid "Evaluate an expression"
+msgstr ""
+
+#: ../src/main.vala:39
+msgid "List available expression identifiers"
+msgstr ""
+
+#: ../src/main.vala:41
+msgid "Show debug messages"
+msgstr ""
+
+#: ../src/main.vala:311
+msgid "- System load application indicator"
+msgstr ""
+
+#: ../src/main.vala:319
+#, c-format
+msgid ""
+"Run '%s --help' to see a full list of available command line options.\n"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:57
+msgid "{} kB"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:59
+msgid "{} MB"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:61
+msgid "{} GB"
+msgstr ""
+
+#: ../src/utils.vala:69
+#, c-format
+msgid "%u B"
+msgid_plural "%u B"
+msgstr[0] ""
+msgstr[1] ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:82
+msgid "{} kB/s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:84
+msgid "{} MB/s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:86
+msgid "{} GB/s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:88
+msgid "{} TB/s"
+msgstr ""
+
+#: ../src/utils.vala:96
+#, c-format
+msgid "%u B/s"
+msgid_plural "%u B/s"
+msgstr[0] ""
+msgstr[1] ""
