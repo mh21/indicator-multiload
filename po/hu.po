@@ -14,15 +14,15 @@ msgstr ""
 "Project-Id-Version: gnome-applets master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-26 22:58+0100\n"
-"PO-Revision-Date: 2012-02-04 08:18+0000\n"
-"Last-Translator: Robert Roth <evfool@gmail.com>\n"
+"PO-Revision-Date: 2012-02-08 12:58+0000\n"
+"Last-Translator: Bence Lukács <Unknown>\n"
 "Language-Team: Hungarian <gnome at fsf dot hu>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2012-02-05 05:14+0000\n"
-"X-Generator: Launchpad (build 14738)\n"
+"X-Launchpad-Export-Date: 2012-02-09 07:48+0000\n"
+"X-Generator: Launchpad (build 14763)\n"
 "Language: \n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
@@ -216,6 +216,7 @@ msgstr ""
 "Tímár András <timar at gnome dot hu>\n"
 "\n"
 "Launchpad Contributions:\n"
+"  Bence Lukács https://launchpad.net/~lukacs-bence1\n"
 "  Robert Roth https://launchpad.net/~evfool"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
@@ -244,7 +245,7 @@ msgstr "Grafikon háttérszíne"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
 msgid "Graph visibility"
-msgstr ""
+msgstr "Grafikon láthatósága"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
 msgid "Height of the graphs in pixels."
@@ -296,7 +297,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
 msgid "Width of the graphs in pixels."
-msgstr ""
+msgstr "Grafikon szélessége pixelekben"
 
 #: ../data/indicator-multiload.desktop.in.h:2
 msgid "System Load Indicator"
