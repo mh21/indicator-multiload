@@ -12,14 +12,14 @@ msgstr ""
 "Project-Id-Version: gnome-applets master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-02 23:22+0200\n"
-"PO-Revision-Date: 2011-05-02 17:46+0000\n"
-"Last-Translator: Eleanor Chen <chenyueg@gmail.com>\n"
+"PO-Revision-Date: 2012-02-25 13:16+0000\n"
+"Last-Translator: Wang Dianjin <Unknown>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-05-03 06:16+0000\n"
-"X-Generator: Launchpad (build 12758)\n"
+"X-Launchpad-Export-Date: 2012-02-26 05:09+0000\n"
+"X-Generator: Launchpad (build 14860)\n"
 "Language: zh_CN\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
@@ -60,150 +60,151 @@ msgstr "负载"
 msgid "Memory"
 msgstr "内存"
 
-#: ../data/preferences.ui.in.h:10
+#: ../data/preferences.ui.in.h:11
 msgid "Monitored Resources"
 msgstr "已监视的资源"
 
-#: ../data/preferences.ui.in.h:11
+#: ../data/preferences.ui.in.h:12
 msgid "N_ice"
 msgstr "优先级(_I)"
 
-#: ../data/preferences.ui.in.h:12
+#: ../data/preferences.ui.in.h:13
 msgid "Network"
 msgstr "网络"
 
-#: ../data/preferences.ui.in.h:13
+#: ../data/preferences.ui.in.h:14
 msgid "Options"
 msgstr "选项"
 
-#: ../data/preferences.ui.in.h:14
+#: ../data/preferences.ui.in.h:15
 msgid "Processor"
 msgstr "处理器"
 
-#: ../data/preferences.ui.in.h:15
+#: ../data/preferences.ui.in.h:16
 msgid "S_wap Space"
 msgstr "交换空间(_W)"
 
-#: ../data/preferences.ui.in.h:16
+#: ../data/preferences.ui.in.h:17
 msgid "S_ystem"
 msgstr "系统(_Y)"
 
-#: ../data/preferences.ui.in.h:17
+#: ../data/preferences.ui.in.h:18
 msgid "Sh_ared"
 msgstr "共享(_A)"
 
-#: ../data/preferences.ui.in.h:18
+#: ../data/preferences.ui.in.h:19
 msgid "Swap Space"
 msgstr "交换空间"
 
-#: ../data/preferences.ui.in.h:19
+#: ../data/preferences.ui.in.h:20
 msgid "Sys_tem monitor update interval: "
 msgstr "系统监视器更新间隔(_T)： "
 
-#: ../data/preferences.ui.in.h:20
+#: ../data/preferences.ui.in.h:21
 msgid "System m_onitor width: "
 msgstr "系统监视器宽度(_O)： "
 
-#: ../data/preferences.ui.in.h:21
+#: ../data/preferences.ui.in.h:22
 msgid "_About"
 msgstr "关于(_A)"
 
-#: ../data/preferences.ui.in.h:22
-msgid "_Autostart: "
-msgstr ""
-
 #: ../data/preferences.ui.in.h:23
+msgid "_Autostart: "
+msgstr "开机启动(_A): "
+
+#: ../data/preferences.ui.in.h:24
 msgid "_Average"
 msgstr "均值(_A)"
 
-#: ../data/preferences.ui.in.h:24
+#: ../data/preferences.ui.in.h:25
 msgid "_Background"
 msgstr "背景(_B)"
 
-#: ../data/preferences.ui.in.h:25
+#: ../data/preferences.ui.in.h:26
 msgid "_Buffers"
 msgstr "缓冲(_B)"
 
-#: ../data/preferences.ui.in.h:26
+#: ../data/preferences.ui.in.h:27
 msgid "_Free"
 msgstr "空闲(_F)"
 
-#: ../data/preferences.ui.in.h:27
+#: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
 msgstr "硬盘(_H)"
 
-#: ../data/preferences.ui.in.h:28
+#: ../data/preferences.ui.in.h:29
 msgid "_In"
 msgstr "进(_I)"
 
-#: ../data/preferences.ui.in.h:29
+#: ../data/preferences.ui.in.h:30
 msgid "_Load"
 msgstr "负载(_L)"
 
-#: ../data/preferences.ui.in.h:30
+#: ../data/preferences.ui.in.h:31
 msgid "_Local"
 msgstr "本地(_L)"
 
-#: ../data/preferences.ui.in.h:31
+#: ../data/preferences.ui.in.h:32
 msgid "_Memory"
 msgstr "内存(_M)"
 
-#: ../data/preferences.ui.in.h:32
+#: ../data/preferences.ui.in.h:33
 msgid "_Network"
 msgstr "网络(_N)"
 
-#: ../data/preferences.ui.in.h:33
+#: ../data/preferences.ui.in.h:34
 msgid "_Open System Monitor"
 msgstr "打开系统监视器(_O)"
 
-#: ../data/preferences.ui.in.h:34
+#: ../data/preferences.ui.in.h:35
 msgid "_Out"
 msgstr "出(_O)"
 
-#: ../data/preferences.ui.in.h:35
+#: ../data/preferences.ui.in.h:36
 msgid "_Preferences"
 msgstr "首选项(_P)"
 
-#: ../data/preferences.ui.in.h:36
+#: ../data/preferences.ui.in.h:37
 msgid "_Processor"
 msgstr "处理器(_P)"
 
-#: ../data/preferences.ui.in.h:37
-msgid "_Quit"
-msgstr ""
-
 #: ../data/preferences.ui.in.h:38
+msgid "_Quit"
+msgstr "退出 (_Q)"
+
+#: ../data/preferences.ui.in.h:39
 msgid "_Read"
 msgstr "读取(_R)"
 
-#: ../data/preferences.ui.in.h:39
+#: ../data/preferences.ui.in.h:40
 msgid "_Used"
 msgstr "已用(_U)"
 
-#: ../data/preferences.ui.in.h:40
+#: ../data/preferences.ui.in.h:41
 msgid "_User"
 msgstr "用户(_U)"
 
-#: ../data/preferences.ui.in.h:41
+#: ../data/preferences.ui.in.h:42
 msgid "_Write"
 msgstr "写入(_W)"
 
-#: ../data/preferences.ui.in.h:42
+#: ../data/preferences.ui.in.h:43
 msgid "milliseconds"
 msgstr "毫秒"
 
-#: ../data/preferences.ui.in.h:43
+#: ../data/preferences.ui.in.h:44
 msgid "pixels"
 msgstr "像素"
 
-#: ../data/preferences.ui.in.h:44
+#: ../data/preferences.ui.in.h:45
 msgid "translator-credits"
 msgstr ""
 "开源软件国际化简体中文组(http://i18n.linux.net.cn)\n"
 "甘露(Gan Lu) <rhythm.gan@gmail.com>\n"
 "\n"
 "Launchpad Contributions:\n"
-"  Eleanor Chen https://launchpad.net/~chenyueg"
+"  Eleanor Chen https://launchpad.net/~chenyueg\n"
+"  Wang Dianjin https://launchpad.net/~tuhaihe"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
 msgid "Applet refresh rate in milliseconds"
@@ -211,7 +212,7 @@ msgstr "小程序的刷新率，以毫秒计"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
 msgid "Automatically start on session startup"
-msgstr ""
+msgstr "会话开始时自动启动"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
 msgid "Background color for disk load graph"
@@ -219,7 +220,7 @@ msgstr "磁盘负载图形的背景颜色"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
 msgid "CPU graph alpha"
-msgstr ""
+msgstr "处理器图像透明度"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
 msgid "CPU graph background color"
@@ -227,7 +228,7 @@ msgstr "CPU 图形背景色"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
 msgid "Disk load graph alpha"
-msgstr ""
+msgstr "硬盘负载图像透明度"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
 msgid "Enable CPU load graph"
@@ -259,69 +260,69 @@ msgid ""
 "panels, this is the height of the graphs."
 msgstr "对于水平面板，就是图像的宽度。对于垂直面板，就是图像的高度。"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
 msgid "Graph color for buffer memory"
 msgstr "缓冲内存的图形颜色"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
 msgid "Graph color for cached memory"
 msgstr "缓存内存的图形颜色"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
 msgid "Graph color for disk read"
 msgstr "磁盘读取的图形颜色"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
 msgid "Graph color for disk write"
 msgstr "磁盘写入的图形颜色"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
 msgid "Graph color for input network activity"
 msgstr "网络输入活动的图形颜色"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
 msgid "Graph color for iowait related CPU activity"
 msgstr "优先级相关 CPU 活动的图形颜色"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
 msgid "Graph color for load average"
 msgstr "平均负载的图形颜色"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
 msgid "Graph color for loopback network usage"
 msgstr "网络回送活动的图形颜色"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
 msgid "Graph color for nice-related CPU activity"
 msgstr "优先级相关 CPU 活动的图形颜色"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
 msgid "Graph color for output network activity"
 msgstr "网络输出活动的图形颜色"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
 msgid "Graph color for shared memory"
 msgstr "共享内存的图形颜色"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
 msgid "Graph color for system-related CPU activity"
 msgstr "系统相关 CPU 活动的图形颜色"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
 msgid "Graph color for user-related CPU activity"
 msgstr "用户相关 CPU 活动的图形颜色"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
 msgid "Graph color for user-related memory usage"
 msgstr "用户相关内存使用的图形颜色"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:28
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
 msgid "Graph color for user-related swap usage"
 msgstr "用户相关交换使用的图形颜色"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:29
 msgid "Load graph alpha"
-msgstr ""
+msgstr "负载图像透明度"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:30
 msgid "Load graph background color"
@@ -329,7 +330,7 @@ msgstr "负载图形背景色"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:31
 msgid "Memory graph alpha"
-msgstr ""
+msgstr "内存图像透明度"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:32
 msgid "Memory graph background color"
@@ -337,7 +338,7 @@ msgstr "内存图形背景色"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:33
 msgid "Network graph alpha"
-msgstr ""
+msgstr "网络图像透明度"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:34
 msgid "Network graph background color"
@@ -351,10 +352,10 @@ msgstr ""
 msgid "Swap graph background color"
 msgstr "交换图形背景色"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:37
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
 msgid "The desktop description file to execute as the system monitor"
 msgstr "可执行系统监视器的桌面描述文件"
 
 #: ../data/indicator-multiload.desktop.in.h:2
 msgid "System Load Indicator"
-msgstr ""
+msgstr "系统负载提示器"
