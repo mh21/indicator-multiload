@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-26 22:58+0100\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
-"Last-Translator: Anna Jonna Ármannsdóttir <annajonna@gmail.com>\n"
+"PO-Revision-Date: 2012-03-07 08:23+0000\n"
+"Last-Translator: Sigurpáll Sigurðsson <Icekhaos@hotmail.com>\n"
 "Language-Team: Icelandic\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2012-01-27 05:54+0000\n"
-"X-Generator: Launchpad (build 14727)\n"
+"X-Launchpad-Export-Date: 2012-03-08 05:13+0000\n"
+"X-Generator: Launchpad (build 14914)\n"
 "Language: \n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
@@ -117,7 +117,7 @@ msgstr "_Um"
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Autostart: "
-msgstr ""
+msgstr "_Sjálfræsing: "
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Average"
@@ -141,7 +141,7 @@ msgstr "_Harður diskur"
 
 #: ../data/preferences.ui.in.h:29
 msgid "_In"
-msgstr ""
+msgstr "_Inn"
 
 #: ../data/preferences.ui.in.h:30
 msgid "_Load"
@@ -165,7 +165,7 @@ msgstr "_Opna kerfisvakt"
 
 #: ../data/preferences.ui.in.h:35
 msgid "_Out"
-msgstr ""
+msgstr "_Út"
 
 #: ../data/preferences.ui.in.h:36
 msgid "_Preferences"
@@ -177,7 +177,7 @@ msgstr "_Örgjörvi"
 
 #: ../data/preferences.ui.in.h:38
 msgid "_Quit"
-msgstr ""
+msgstr "_Hætta"
 
 #: ../data/preferences.ui.in.h:39
 msgid "_Read"
@@ -209,15 +209,7 @@ msgstr ""
 "Samúel Jón Gunnarsson\n"
 "Anna Jonna Armannsdottir\n"
 "Launchpad Contributions:\n"
-"  Anna Jonna Armannsdottir https://launchpad.net/~annaj\n"
-"  Arnar Tumi Þorsteinsson\n"
-"  Benedikt Bogason\n"
-"  Gunnlaugur Máni Hrólfsson\n"
-"  Jóhann Sigurðsson\n"
-"  Torfi Gunnarsson\n"
-"  Tryggvi Björgvinsson\n"
-"  Tumi Steingrímsson\n"
-"  Tómas Árnason"
+"  Sigurpáll Sigurðsson https://launchpad.net/~icekhaos"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
 msgid "Applet refresh rate in milliseconds"
@@ -241,15 +233,15 @@ msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
 msgid "Graph background color"
-msgstr ""
+msgstr "Bakgrunnslitur grafs"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
 msgid "Graph visibility"
-msgstr ""
+msgstr "Sýnileiki grafs"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
 msgid "Height of the graphs in pixels."
-msgstr ""
+msgstr "Hæð grafa í pixlum"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
 msgid "Index of the current information shown in the indicator itself"
@@ -265,11 +257,11 @@ msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
 msgid "Maximum value for upper graph edge, zero means unlimited"
-msgstr ""
+msgstr "Hámarksvirði fyrir efri brún grafs, núll þýðir ótakmarkað"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
 msgid "Minimum value for upper graph edge"
-msgstr ""
+msgstr "Lágmarksvirði fyrir efri brún grafs"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
 msgid "Number of values used for smooth graph scaling"
@@ -277,11 +269,11 @@ msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
 msgid "The desktop description file to execute as the system monitor"
-msgstr ""
+msgstr "Skjáborðslýsingarskráin sem á að keyra sem kerfisvakt"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
 msgid "Trace color"
-msgstr ""
+msgstr "Litur spora"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
 msgid "Trace expression"
@@ -289,15 +281,15 @@ msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
 msgid "Trace visibility"
-msgstr ""
+msgstr "Sýnileiki spora"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
 msgid "Traces shown"
-msgstr ""
+msgstr "Spor sýnd"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
 msgid "Width of the graphs in pixels."
-msgstr ""
+msgstr "Vídd grafa í pixlum"
 
 #: ../data/indicator-multiload.desktop.in.h:2
 msgid "System Load Indicator"
@@ -306,7 +298,7 @@ msgstr ""
 #: ../src/function.vala:88
 #, c-format
 msgid "%u%%"
-msgstr ""
+msgstr "%u%%"
 
 #: ../src/main.vala:37
 msgid "Evaluate an expression"
@@ -318,7 +310,7 @@ msgstr ""
 
 #: ../src/main.vala:41
 msgid "Show debug messages"
-msgstr ""
+msgstr "Sýna viðgerðarskilaboð"
 
 #: ../src/main.vala:311
 msgid "- System load application indicator"
