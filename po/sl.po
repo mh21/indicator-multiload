@@ -14,16 +14,16 @@ msgstr ""
 "Project-Id-Version: gnome-applets master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-26 22:58+0100\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
-"Last-Translator: Andrej Žnidaršič <andrej.znidarsic@gmail.com>\n"
+"PO-Revision-Date: 2012-04-06 20:05+0000\n"
+"Last-Translator: Miha Gašperšič <mihec.gaspersic@gmail.com>\n"
 "Language-Team: Slovenščina <gnome-si@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || "
 "n%100==4 ? 3 : 0);\n"
-"X-Launchpad-Export-Date: 2012-01-27 05:54+0000\n"
-"X-Generator: Launchpad (build 14727)\n"
+"X-Launchpad-Export-Date: 2012-04-07 05:09+0000\n"
+"X-Generator: Launchpad (build 15060)\n"
 "X-Poedit-Country: SLOVENIA\n"
 "Language: \n"
 "X-Poedit-Language: Slovenian\n"
@@ -71,7 +71,7 @@ msgstr "Pomnilnik"
 
 #: ../data/preferences.ui.in.h:10
 msgid "Menu items..."
-msgstr ""
+msgstr "Elementi menija ..."
 
 #: ../data/preferences.ui.in.h:11
 msgid "Monitored Resources"
@@ -123,7 +123,7 @@ msgstr "_O programu"
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Autostart: "
-msgstr ""
+msgstr "_Samodejni zagon: "
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Average"
@@ -183,7 +183,7 @@ msgstr "_Procesor"
 
 #: ../data/preferences.ui.in.h:38
 msgid "_Quit"
-msgstr ""
+msgstr "_Končaj"
 
 #: ../data/preferences.ui.in.h:39
 msgid "_Read"
@@ -215,7 +215,10 @@ msgstr ""
 "Nejc Novak <nejc.novak@guest.arnes.si>\n"
 "Andraž Tori <andraz.tori1@guest.arnes.si>\n"
 "Matic Žgur <mr.zgur@gmail.com>\n"
-"Matej Urbančič <mateju@svn.gnome.org>"
+"Matej Urbančič <mateju@svn.gnome.org>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Miha Gašperšič https://launchpad.net/~miha.gaspersic"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
 msgid "Applet refresh rate in milliseconds"
@@ -223,7 +226,7 @@ msgstr "Čas posodabljanja apleta v milisekundah"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
 msgid "Automatically start on session startup"
-msgstr ""
+msgstr "Samodejni zagon ob pričetku seje"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
 msgid "Available graphs"
@@ -247,7 +250,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
 msgid "Height of the graphs in pixels."
-msgstr ""
+msgstr "Višina grafa v slikovnih točkah."
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
 msgid "Index of the current information shown in the indicator itself"
@@ -295,16 +298,16 @@ msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
 msgid "Width of the graphs in pixels."
-msgstr ""
+msgstr "Širina grafa v slikovnih točkah."
 
 #: ../data/indicator-multiload.desktop.in.h:2
 msgid "System Load Indicator"
-msgstr ""
+msgstr "Kazalnik obremenitve sistema"
 
 #: ../src/function.vala:88
 #, c-format
 msgid "%u%%"
-msgstr ""
+msgstr "%u%%"
 
 #: ../src/main.vala:37
 msgid "Evaluate an expression"
@@ -316,7 +319,7 @@ msgstr ""
 
 #: ../src/main.vala:41
 msgid "Show debug messages"
-msgstr ""
+msgstr "Prikaži razhroščevalna sporočila"
 
 #: ../src/main.vala:311
 msgid "- System load application indicator"
@@ -327,16 +330,17 @@ msgstr ""
 msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
+"Zaženite '%s --help' za ogled celotnega seznama možnosti ukazne vrstice.\n"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:57
 msgid "{} kB"
-msgstr ""
+msgstr "{} kB"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:59
 msgid "{} MB"
-msgstr ""
+msgstr "{} MB"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:61
