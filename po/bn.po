@@ -15,14 +15,14 @@ msgstr ""
 "Project-Id-Version: bn\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-02 23:22+0200\n"
-"PO-Revision-Date: 2012-03-18 18:26+0000\n"
-"Last-Translator: Ishak Herock <Unknown>\n"
+"PO-Revision-Date: 2012-04-11 17:56+0000\n"
+"Last-Translator: Kazi Shahnoor Ashraf <kazidxb@gmail.com>\n"
 "Language-Team: Bengali <ankur-bd-l10n@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-03-19 04:58+0000\n"
-"X-Generator: Launchpad (build 14969)\n"
+"X-Launchpad-Export-Date: 2012-04-12 05:16+0000\n"
+"X-Generator: Launchpad (build 15070)\n"
 "Language: bn\n"
 
 # msgstr "চাপ গড়"
@@ -226,7 +226,8 @@ msgstr ""
 "\n"
 "Launchpad Contributions:\n"
 "  Ishak Herock https://launchpad.net/~ourherock\n"
-"  Israt Jahan https://launchpad.net/~israt"
+"  Israt Jahan https://launchpad.net/~israt\n"
+"  Kazi Shahnoor Ashraf https://launchpad.net/~kaziweb"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
 msgid "Applet refresh rate in milliseconds"
@@ -234,7 +235,7 @@ msgstr "মিলিসেকেন্ডে অ্যাপ্লেটের �
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
 msgid "Automatically start on session startup"
-msgstr ""
+msgstr "প্রারম্ভকালে স্বয়ংক্রিয় ভাবে শুরু"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
 msgid "Background color for disk load graph"
