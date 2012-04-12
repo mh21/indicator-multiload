@@ -20,15 +20,15 @@ msgstr ""
 "Project-Id-Version: gnome-applets HEAD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-26 22:58+0100\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
-"Last-Translator: Claude Paroz <claude@2xlibre.net>\n"
+"PO-Revision-Date: 2012-04-11 21:13+0000\n"
+"Last-Translator: LEROY Jean-Christophe <Unknown>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Launchpad-Export-Date: 2012-01-27 05:54+0000\n"
-"X-Generator: Launchpad (build 14727)\n"
+"X-Launchpad-Export-Date: 2012-04-12 05:18+0000\n"
+"X-Generator: Launchpad (build 15070)\n"
 "Language: \n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
@@ -74,7 +74,7 @@ msgstr "Mémoire"
 
 #: ../data/preferences.ui.in.h:10
 msgid "Menu items..."
-msgstr ""
+msgstr "Les options de menu..."
 
 #: ../data/preferences.ui.in.h:11
 msgid "Monitored Resources"
@@ -222,7 +222,10 @@ msgstr ""
 "Robert-André Mauchin <zebob.m@pengzone.org>\n"
 "Christophe Bliard <christophe.bliard@trux.info>\n"
 "Jonathan Ernst <jonathan@ernstfamily.ch>\n"
-"Stéphane Raimbault <stephane.raimbault@gmail.com>"
+"Stéphane Raimbault <stephane.raimbault@gmail.com>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  LEROY Jean-Christophe https://launchpad.net/~celtic2"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
 msgid "Applet refresh rate in milliseconds"
@@ -234,7 +237,7 @@ msgstr "Démarrer automatiquement à l'ouverture de la session"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
 msgid "Available graphs"
-msgstr ""
+msgstr "Graphiques disponibles"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
 msgid "Available traces"
@@ -242,19 +245,19 @@ msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
 msgid "Graph alpha value"
-msgstr ""
+msgstr "Graphique valeur alpha"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
 msgid "Graph background color"
-msgstr ""
+msgstr "Couleur de fond du graphique"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
 msgid "Graph visibility"
-msgstr ""
+msgstr "Visibilité du graphique"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
 msgid "Height of the graphs in pixels."
-msgstr ""
+msgstr "Hauteur des graphiques en pixels."
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
 msgid "Index of the current information shown in the indicator itself"
