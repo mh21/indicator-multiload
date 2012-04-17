@@ -17,15 +17,15 @@ msgstr ""
 "Project-Id-Version: gnome-applets master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-26 22:58+0100\n"
-"PO-Revision-Date: 2012-04-14 11:37+0000\n"
-"Last-Translator: Daniel Winzen <d@winzen4.de>\n"
+"PO-Revision-Date: 2012-04-17 01:27+0000\n"
+"Last-Translator: Sascha Biermanns <Unknown>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2012-04-15 04:58+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2012-04-17 05:32+0000\n"
+"X-Generator: Launchpad (build 15099)\n"
 "Language: \n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
@@ -70,7 +70,7 @@ msgstr "Speicher"
 
 #: ../data/preferences.ui.in.h:10
 msgid "Menu items..."
-msgstr ""
+msgstr "Menüobjekte ..."
 
 #: ../data/preferences.ui.in.h:11
 msgid "Monitored Resources"
@@ -224,7 +224,8 @@ msgstr ""
 "Christian Kirbach <Christian.Kirbach@googlemail.com>\n"
 "\n"
 "Launchpad Contributions:\n"
-"  Daniel Winzen https://launchpad.net/~q-d"
+"  Daniel Winzen https://launchpad.net/~q-d\n"
+"  Sascha Biermanns https://launchpad.net/~skkd-h4k1n9"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
 msgid "Applet refresh rate in milliseconds"
@@ -236,23 +237,23 @@ msgstr "Automatisch beim Hochfahren starten"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
 msgid "Available graphs"
-msgstr ""
+msgstr "Verfügbare Graphen"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
 msgid "Available traces"
-msgstr ""
+msgstr "Verfügbare Protokollierungen"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
 msgid "Graph alpha value"
-msgstr ""
+msgstr "Graph Alphawert"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
 msgid "Graph background color"
-msgstr ""
+msgstr "Graph Hintergrundfarbe"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
 msgid "Graph visibility"
-msgstr ""
+msgstr "Graph Sichtbarkeit"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
 msgid "Height of the graphs in pixels."
@@ -261,26 +262,30 @@ msgstr "Höhe der Graphen in Pixel"
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
 msgid "Index of the current information shown in the indicator itself"
 msgstr ""
+"Verzeichnis der gegenwärtigen Informtionen, die im Indikator selbst "
+"angezeigt werden"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
 msgid "Information shown as menu entries"
-msgstr ""
+msgstr "Informationen die als Menüeinträge angezeigt werden"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
 msgid "Information shown in the indicator itself"
-msgstr ""
+msgstr "Informationen die im Indikator selbst angezeigt werden"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
 msgid "Maximum value for upper graph edge, zero means unlimited"
-msgstr ""
+msgstr "Maximalwerte für obere Graphränder, Null bedeutet uneingeschränkt"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
 msgid "Minimum value for upper graph edge"
-msgstr ""
+msgstr "Minimalwerte für obere Graphränder"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
 msgid "Number of values used for smooth graph scaling"
 msgstr ""
+"Anzahl an Werten die dargestellt werden sollen für eine sanfte graphische "
+"Skalierung"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
 msgid "The desktop description file to execute as the system monitor"
@@ -288,19 +293,19 @@ msgstr "Die beim Anklicken zu startende .desktop-Datei"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
 msgid "Trace color"
-msgstr ""
+msgstr "Protokollierungsfarbe"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
 msgid "Trace expression"
-msgstr ""
+msgstr "Protokollierungsausdruck"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
 msgid "Trace visibility"
-msgstr ""
+msgstr "Protokollierungssichtbarkeit"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
 msgid "Traces shown"
-msgstr ""
+msgstr "Angezeigte Protokollierungen"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
 msgid "Width of the graphs in pixels."
@@ -317,11 +322,11 @@ msgstr "%u%%"
 
 #: ../src/main.vala:37
 msgid "Evaluate an expression"
-msgstr ""
+msgstr "Berechne einen Ausdruck"
 
 #: ../src/main.vala:39
 msgid "List available expression identifiers"
-msgstr ""
+msgstr "Auflistung verfügbarer Ausdruck-Identifikatoren"
 
 #: ../src/main.vala:41
 msgid "Show debug messages"
@@ -329,7 +334,7 @@ msgstr "Debug-Meldungen anzeigen"
 
 #: ../src/main.vala:311
 msgid "- System load application indicator"
-msgstr ""
+msgstr "- Systemlast Anwendungsindikator"
 
 #: ../src/main.vala:319
 #, c-format

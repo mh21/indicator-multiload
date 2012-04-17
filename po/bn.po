@@ -15,15 +15,15 @@ msgstr ""
 "Project-Id-Version: bn\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-26 22:58+0100\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
-"Last-Translator: Israt Jahan <israt@ankur.org.bd>\n"
+"PO-Revision-Date: 2012-04-16 08:13+0000\n"
+"Last-Translator: Istiaque Ahamed <ahamedistiaque@yahoo.com>\n"
 "Language-Team: Bengali <ankur-bd-l10n@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2012-01-27 05:53+0000\n"
-"X-Generator: Launchpad (build 14727)\n"
+"X-Launchpad-Export-Date: 2012-04-17 05:32+0000\n"
+"X-Generator: Launchpad (build 15099)\n"
 "Language: bn\n"
 
 # msgstr "চাপ গড়"
@@ -118,11 +118,9 @@ msgstr "সিস্টেম পর্যবেক্ষণ তথ্য আপ
 msgid "System m_onitor width: "
 msgstr "সিস্টেম পর্যবেক্ষনের প্রস্থ: (_o) "
 
-# msgstr "উপযোগিতা"
-# উহুঁ - হবে না
 #: ../data/preferences.ui.in.h:22
 msgid "_About"
-msgstr "পরিচিতি (_A)"
+msgstr "সম্বন্ধে"
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Autostart: "
@@ -227,7 +225,11 @@ msgstr ""
 "রুণা ভট্টাচার্য্য <runabh@gmail.com>\n"
 "খন্দকার মুজাহিদুল ইসলাম <suzan@bengalinux.org>\n"
 "সাদিয়া আফরোজ <sadia@ankur.org.bd>\n"
-"ইসরাত জাহান <israt@ankur.org.bd>"
+"ইসরাত জাহান <israt@ankur.org.bd>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Istiaque Ahamed https://launchpad.net/~istiaque\n"
+"  Kazi Shahnoor Ashraf https://launchpad.net/~kaziweb"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
 msgid "Applet refresh rate in milliseconds"
@@ -235,7 +237,7 @@ msgstr "মিলিসেকেন্ডে অ্যাপ্লেটের �
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
 msgid "Automatically start on session startup"
-msgstr ""
+msgstr "প্রারম্ভকালে স্বয়ংক্রিয় ভাবে শুরু"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
 msgid "Available graphs"
@@ -313,7 +315,7 @@ msgstr ""
 
 #: ../data/indicator-multiload.desktop.in.h:2
 msgid "System Load Indicator"
-msgstr ""
+msgstr "সিস্টেম লোড নির্দেশক"
 
 #: ../src/function.vala:88
 #, c-format
@@ -382,7 +384,7 @@ msgstr ""
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:88
 msgid "{} TB/s"
-msgstr ""
+msgstr "টে.বা/সে."
 
 #: ../src/utils.vala:96
 #, c-format
