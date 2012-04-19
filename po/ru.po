@@ -17,16 +17,16 @@ msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-10 00:45+0200\n"
-"PO-Revision-Date: 2011-07-26 11:53+0000\n"
-"Last-Translator: Eugene Marshal <Unknown>\n"
+"PO-Revision-Date: 2012-04-18 07:34+0000\n"
+"Last-Translator: Vassili Platonov <Unknown>\n"
 "Language-Team: Russian <gnome-cyr@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2011-07-27 05:32+0000\n"
-"X-Generator: Launchpad (build 13405)\n"
+"X-Launchpad-Export-Date: 2012-04-19 04:55+0000\n"
+"X-Generator: Launchpad (build 15108)\n"
 "Language: ru\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
@@ -69,144 +69,144 @@ msgstr "Загрузка"
 msgid "Memory"
 msgstr "Память"
 
-#: ../data/preferences.ui.in.h:10
+#: ../data/preferences.ui.in.h:11
 msgid "Monitored Resources"
 msgstr "Отслеживаемые ресурсы"
 
-#: ../data/preferences.ui.in.h:11
+#: ../data/preferences.ui.in.h:12
 msgid "N_ice"
 msgstr "При_оритет"
 
-#: ../data/preferences.ui.in.h:12
+#: ../data/preferences.ui.in.h:13
 msgid "Network"
 msgstr "Сеть"
 
-#: ../data/preferences.ui.in.h:13
+#: ../data/preferences.ui.in.h:14
 msgid "Options"
 msgstr "Параметры"
 
-#: ../data/preferences.ui.in.h:14
+#: ../data/preferences.ui.in.h:15
 msgid "Processor"
 msgstr "Процессор"
 
-#: ../data/preferences.ui.in.h:15
+#: ../data/preferences.ui.in.h:16
 msgid "S_wap Space"
 msgstr "Под_качки"
 
-#: ../data/preferences.ui.in.h:16
+#: ../data/preferences.ui.in.h:17
 msgid "S_ystem"
 msgstr "С_истема"
 
-#: ../data/preferences.ui.in.h:17
+#: ../data/preferences.ui.in.h:18
 msgid "Sh_ared"
 msgstr "Раз_деляемая"
 
-#: ../data/preferences.ui.in.h:18
+#: ../data/preferences.ui.in.h:19
 msgid "Swap Space"
 msgstr "Подкачка"
 
-#: ../data/preferences.ui.in.h:19
+#: ../data/preferences.ui.in.h:20
 msgid "Sys_tem monitor update interval: "
 msgstr "Скорость об_новления системного монитора: "
 
-#: ../data/preferences.ui.in.h:20
+#: ../data/preferences.ui.in.h:21
 msgid "System m_onitor width: "
 msgstr "_Ширина системного монитора: "
 
-#: ../data/preferences.ui.in.h:21
+#: ../data/preferences.ui.in.h:22
 msgid "_About"
 msgstr "_Об апплете"
 
-#: ../data/preferences.ui.in.h:22
+#: ../data/preferences.ui.in.h:23
 msgid "_Autostart: "
 msgstr "_Автоматический запуск: "
 
-#: ../data/preferences.ui.in.h:23
+#: ../data/preferences.ui.in.h:24
 msgid "_Average"
 msgstr "С_редняя"
 
-#: ../data/preferences.ui.in.h:24
+#: ../data/preferences.ui.in.h:25
 msgid "_Background"
 msgstr "_Фон"
 
-#: ../data/preferences.ui.in.h:25
+#: ../data/preferences.ui.in.h:26
 msgid "_Buffers"
 msgstr "Б_уфера"
 
-#: ../data/preferences.ui.in.h:26
+#: ../data/preferences.ui.in.h:27
 msgid "_Free"
 msgstr "Сво_бодно"
 
-#: ../data/preferences.ui.in.h:27
+#: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
 msgstr "_Жесткий диск"
 
-#: ../data/preferences.ui.in.h:28
+#: ../data/preferences.ui.in.h:29
 msgid "_In"
 msgstr "_Исходящий"
 
-#: ../data/preferences.ui.in.h:29
+#: ../data/preferences.ui.in.h:30
 msgid "_Load"
 msgstr "За_грузка системы"
 
-#: ../data/preferences.ui.in.h:30
+#: ../data/preferences.ui.in.h:31
 msgid "_Local"
 msgstr "_Внутренний"
 
-#: ../data/preferences.ui.in.h:31
+#: ../data/preferences.ui.in.h:32
 msgid "_Memory"
 msgstr "Па_мять"
 
-#: ../data/preferences.ui.in.h:32
+#: ../data/preferences.ui.in.h:33
 msgid "_Network"
 msgstr "_Сеть"
 
 #
-#: ../data/preferences.ui.in.h:33
+#: ../data/preferences.ui.in.h:34
 msgid "_Open System Monitor"
 msgstr "О_ткрыть системный монитор"
 
-#: ../data/preferences.ui.in.h:34
+#: ../data/preferences.ui.in.h:35
 msgid "_Out"
 msgstr "_Входящий"
 
-#: ../data/preferences.ui.in.h:35
+#: ../data/preferences.ui.in.h:36
 msgid "_Preferences"
 msgstr "_Параметры"
 
-#: ../data/preferences.ui.in.h:36
+#: ../data/preferences.ui.in.h:37
 msgid "_Processor"
 msgstr "Про_цессор"
 
-#: ../data/preferences.ui.in.h:37
-msgid "_Quit"
-msgstr "_Выйти"
-
 #: ../data/preferences.ui.in.h:38
+msgid "_Quit"
+msgstr "В_ыход"
+
+#: ../data/preferences.ui.in.h:39
 msgid "_Read"
 msgstr "_Чтение"
 
-#: ../data/preferences.ui.in.h:39
+#: ../data/preferences.ui.in.h:40
 msgid "_Used"
 msgstr "Ис_пользуется"
 
-#: ../data/preferences.ui.in.h:40
+#: ../data/preferences.ui.in.h:41
 msgid "_User"
 msgstr "По_льзователь"
 
-#: ../data/preferences.ui.in.h:41
-msgid "_Write"
-msgstr "_Запись"
-
 #: ../data/preferences.ui.in.h:42
+msgid "_Write"
+msgstr "Запис_ь"
+
+#: ../data/preferences.ui.in.h:43
 msgid "milliseconds"
 msgstr "миллисекунд"
 
-#: ../data/preferences.ui.in.h:43
+#: ../data/preferences.ui.in.h:44
 msgid "pixels"
 msgstr "пикселей"
 
-#: ../data/preferences.ui.in.h:44
+#: ../data/preferences.ui.in.h:45
 msgid "translator-credits"
 msgstr ""
 "Макс Валянский <maxcom@vinchi.ru>\n"
@@ -218,7 +218,8 @@ msgstr ""
 "Леонид Кантер <leon@asplinux.ru>\n"
 "\n"
 "Launchpad Contributions:\n"
-"  Eugene Marshal https://launchpad.net/~lowrider"
+"  Eugene Marshal https://launchpad.net/~lowrider\n"
+"  Vassili Platonov https://launchpad.net/~vassilip"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
 msgid "Applet refresh rate in milliseconds"
@@ -226,161 +227,161 @@ msgstr "Частота обновления в миллисекундах"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
 msgid "Automatically start on session startup"
-msgstr "Автоматически запускать при загрузке"
+msgstr "Автоматический запуск при загрузке системы"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
 msgid "Background color for disk load graph"
-msgstr "Цвет фона для графика загрузки диска"
+msgstr "Цвет фона диаграммы загрузки диска"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
 msgid "CPU graph alpha"
-msgstr ""
+msgstr "Прозрачность диаграммы ЦПУ"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
 msgid "CPU graph background color"
-msgstr "Цвет фона графика загрузки процессора"
+msgstr "Цвет фона диаграммы ЦПУ"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
 msgid "Disk load graph alpha"
-msgstr ""
+msgstr "Прозрачность диаграммы загрузки жёсткого диска"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
 msgid "Enable CPU load graph"
-msgstr "Включить график загрузки процессора"
+msgstr "Включить диаграмму загрузки ЦПУ"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
 msgid "Enable disk load graph"
-msgstr "Включить график загрузки диска"
+msgstr "Включить диаграмму загрузки диска"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
 msgid "Enable load average graph"
-msgstr "Включить график средней загрузки"
+msgstr "Включить диаграмму средней загрузки"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
 msgid "Enable memory load graph"
-msgstr "Включить график загрузки памяти"
+msgstr "Включить диаграмму загрузки памяти"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
 msgid "Enable network load graph"
-msgstr "Включить график загрузки сети"
+msgstr "Включить диаграмму загрузки сети"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
 msgid "Enable swap load graph"
-msgstr "Включить график загрузки подкачки"
+msgstr "Включить диаграмму загрузки подкачки"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
 msgid "Graph color for buffer memory"
-msgstr "Цвет графика для отображения буфера памяти"
+msgstr "Цвет диаграммы буферной памяти"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
 msgid "Graph color for cached memory"
-msgstr "Цвет графика для отображения кэшированной памяти"
+msgstr "Цвет диаграммы кэшированной памяти"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
 msgid "Graph color for disk read"
-msgstr "Цвет графика для чтения с диска"
+msgstr "Цвет диаграммы чтения с диска"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
 msgid "Graph color for disk write"
-msgstr "Цвет графика для записи на диск"
+msgstr "Цвет диаграммы записи на диск"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
 msgid "Graph color for input network activity"
-msgstr "Цвет графика для отображения входящего трафика в сети"
+msgstr "Цвет диаграммы входящего трафика сети"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
 msgid "Graph color for iowait related CPU activity"
-msgstr "Цвет графика для отображения загрузки процессора с учётом iowait"
+msgstr "Цвет диаграммы активности ЦПУ с учётом iowait"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
 msgid "Graph color for load average"
-msgstr "Цвет графика для отображения средней загрузки"
+msgstr "Цвет диаграммы средней загрузки"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
 msgid "Graph color for loopback network usage"
-msgstr "Цвет графика для отображения трафика на кольцевом сетевом интерфейсе"
+msgstr "Цвет диаграммы использования loopback интерфейса"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
 msgid "Graph color for nice-related CPU activity"
-msgstr "Цвет графика для отображения загрузки процессора с учетом приоритета"
+msgstr "Цвет диаграммы активности ЦПУ с учётом приоритета"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
 msgid "Graph color for output network activity"
-msgstr "Цвет графика для отображения исходящего трафика в сети"
+msgstr "Цвет диаграммы исходящего трафика сети"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
 msgid "Graph color for shared memory"
-msgstr "Цвет графика для отображения разделяемой памяти"
+msgstr "Цвет диаграммы разделяемой памяти"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
 msgid "Graph color for system-related CPU activity"
-msgstr "Цвет графика для отображения системной загрузки процессора"
+msgstr "Цвет диаграммы активности ЦПУ с учётом системы"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
 msgid "Graph color for user-related CPU activity"
-msgstr "Цвет графика для отображения загрузки процессора пользователем"
+msgstr "Цвет диаграммы активности ЦПУ с учётом пользователя"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
 msgid "Graph color for user-related memory usage"
-msgstr "Цвет графика для отображения использования памяти пользователем"
+msgstr "Цвет диаграммы использования памяти пользователя"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
 msgid "Graph color for user-related swap usage"
-msgstr "Цвет графика для отображения использования подкачки пользователем"
+msgstr "Цвет диаграммы использования подкачки пользователем"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:28
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
 msgid "Height of the graphs in pixels."
-msgstr ""
+msgstr "Высота диаграммы в пикселях"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:29
 msgid "Load graph alpha"
-msgstr ""
+msgstr "Прозрачность диаграммы загрузки"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:30
 msgid "Load graph background color"
-msgstr "Цвет фона графика для отображения загрузки системы"
+msgstr "Цвет фона диаграммы загрузки системы"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:31
 msgid "Memory graph alpha"
-msgstr ""
+msgstr "Прозрачность диаграммы памяти"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:32
 msgid "Memory graph background color"
-msgstr "Цвет фона графика для отображения загрузки памяти"
+msgstr "Цвет фона диаграммы памяти"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:33
 msgid "Network graph alpha"
-msgstr ""
+msgstr "Прозрачность диаграммы сети"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:34
 msgid "Network graph background color"
-msgstr "Цвет фона графика для отображения загрузки сети"
+msgstr "Цвет фона диаграммы сети"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:35
 msgid "Swap graph alpha"
-msgstr ""
+msgstr "Прзрачность диаграммы подкачки"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:36
 msgid "Swap graph background color"
-msgstr "Цвет фона графика для отображения загрузки подкачки"
+msgstr "Цвет фона диаграммы подкачки"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:37
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
 msgid "The desktop description file to execute as the system monitor"
 msgstr ""
 "Файл описания приложения, запускаемого в качестве системного монитора"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:38
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
 msgid "Width of the graphs in pixels."
-msgstr ""
+msgstr "Ширина диаграммы в пикселях."
 
 #: ../data/indicator-multiload.desktop.in.h:2
 msgid "System Load Indicator"
-msgstr "Индикатор нагрузки системы"
+msgstr "Индикатор загрузки системы"
 
 #: ../src/cpuicondata.vala:58
 #, c-format
 msgid "CPU: %u%%, iowait %u%%"
-msgstr ""
+msgstr "ЦПУ: %u%%, iowait %u%%"
 
 #: ../src/diskicondata.vala:106
 #, c-format
@@ -395,30 +396,30 @@ msgstr "Загрузка: %.2f"
 #: ../src/memicondata.vala:36
 #, c-format
 msgid "Mem: %s, cache %s"
-msgstr "ОЗУ: %s, временные файлы %s"
+msgstr "Память: %s, кэш %s"
 
 #: ../src/neticondata.vala:64
 #, c-format
 msgid "Net: down %s, up %s"
-msgstr ""
+msgstr "Сеть: down %s, up %s"
 
 #: ../src/swapicondata.vala:31
 #, c-format
 msgid "Swap: %s"
-msgstr ""
+msgstr "Подкачка: %s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
-#: ../src/utils.vala:43
+#: ../src/utils.vala:57
 msgid "{} kB"
-msgstr "{} КБ"
+msgstr "{} кБ"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
-#: ../src/utils.vala:45
+#: ../src/utils.vala:59
 msgid "{} MB"
 msgstr "{} МБ"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
-#: ../src/utils.vala:47
+#: ../src/utils.vala:61
 msgid "{} GB"
 msgstr "{} ГБ"
 
@@ -426,32 +427,34 @@ msgstr "{} ГБ"
 #, c-format
 msgid "%u byte"
 msgid_plural "%u bytes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u байт"
+msgstr[1] "%u байта"
+msgstr[2] "%u байтов"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:67
+#: ../src/utils.vala:82
 msgid "{} kB/s"
-msgstr "{} КБ/с"
+msgstr "{} кБ/с"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:69
+#: ../src/utils.vala:84
 msgid "{} MB/s"
 msgstr "{} МБ/с"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:71
+#: ../src/utils.vala:86
 msgid "{} GB/s"
-msgstr ""
+msgstr "{} ГБ/с"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:73
+#: ../src/utils.vala:88
 msgid "{} TB/s"
-msgstr ""
+msgstr "{} ТБ/с"
 
 #: ../src/utils.vala:81
 #, c-format
 msgid "%u byte/s"
 msgid_plural "%u bytes/s"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u байт/с"
+msgstr[1] "%u байта/с"
+msgstr[2] "%u байтов/с"
