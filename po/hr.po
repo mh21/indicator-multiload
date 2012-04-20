@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets 0\n"
 "Report-Msgid-Bugs-To: gogo <trebelnik2@gmail.com>\n"
 "POT-Creation-Date: 2012-01-26 22:58+0100\n"
-"PO-Revision-Date: 2012-02-08 22:21+0000\n"
+"PO-Revision-Date: 2012-04-19 16:46+0000\n"
 "Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <hr@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -14,8 +14,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2012-02-09 07:48+0000\n"
-"X-Generator: Launchpad (build 14763)\n"
+"X-Launchpad-Export-Date: 2012-04-20 05:07+0000\n"
+"X-Generator: Launchpad (build 15120)\n"
 "Language: hr\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
@@ -292,7 +292,7 @@ msgstr "Širina grafova u pikselima"
 
 #: ../data/indicator-multiload.desktop.in.h:2
 msgid "System Load Indicator"
-msgstr "Indikator opterećenja sustava"
+msgstr "Indikator nadzora sustava"
 
 #: ../src/function.vala:88
 #, c-format
@@ -313,7 +313,7 @@ msgstr "Prikaži poruke otklanjanja greške"
 
 #: ../src/main.vala:311
 msgid "- System load application indicator"
-msgstr "- Programčić pokazivača opterećenja sustava"
+msgstr "- Programčić pokazivača nadzora sustava"
 
 #: ../src/main.vala:319
 #, c-format
