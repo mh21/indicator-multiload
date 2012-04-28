@@ -44,15 +44,15 @@ msgstr ""
 "Project-Id-Version: gnome-applets.HEAD.el\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-26 22:58+0100\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
-"Last-Translator: Michael Kotsarinis <mk73628@gmail.com>\n"
+"PO-Revision-Date: 2012-04-27 11:35+0000\n"
+"Last-Translator: Simos Tsimperis <simos.medical@gmail.com>\n"
 "Language-Team: Greek <team@gnome.gr>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2012-01-27 05:54+0000\n"
-"X-Generator: Launchpad (build 14727)\n"
+"X-Launchpad-Export-Date: 2012-04-28 05:16+0000\n"
+"X-Generator: Launchpad (build 15149)\n"
 "Language: el\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
@@ -133,7 +133,7 @@ msgstr "Διαμοιρα_ζόμενο"
 
 #: ../data/preferences.ui.in.h:19
 msgid "Swap Space"
-msgstr "Αρχείο Εναλλαγής"
+msgstr "Χώρος αντιμετάθεσης"
 
 #: ../data/preferences.ui.in.h:20
 msgid "Sys_tem monitor update interval: "
@@ -243,7 +243,10 @@ msgstr ""
 "Σαράντης Πασχάλης <paskalis@di.uoa.gr>\n"
 "Κώστας Παπαδήμας <pkst@gnome.org>\n"
 "Νίκος Χαρωνιτάκης <charosn@her.forthnet.gr>\n"
-"Μάριος Ζηντίλης <m.zindilis@dmajor.org>"
+"Μάριος Ζηντίλης <m.zindilis@dmajor.org>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Simos Tsimperis https://launchpad.net/~simos-medical"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
 msgid "Applet refresh rate in milliseconds"
@@ -255,7 +258,7 @@ msgstr "Αυτόματη εκκίνηση κατά την έναρξη της σ
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
 msgid "Available graphs"
-msgstr ""
+msgstr "Διαθέσημα γραφήματα"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
 msgid "Available traces"
@@ -267,11 +270,11 @@ msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
 msgid "Graph background color"
-msgstr ""
+msgstr "Χρώμα φόντου γραφήματος"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
 msgid "Graph visibility"
-msgstr ""
+msgstr "Ορατότητα γραφήματος"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
 msgid "Height of the graphs in pixels."
@@ -283,7 +286,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
 msgid "Information shown as menu entries"
-msgstr ""
+msgstr "Πληροφορίες εμφανιζόμενες ως καταχωρήσεις στο μενού"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
 msgid "Information shown in the indicator itself"
@@ -325,7 +328,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
 msgid "Width of the graphs in pixels."
-msgstr ""
+msgstr "Πλάτος των γραφημάτων σε pixels."
 
 #: ../data/indicator-multiload.desktop.in.h:2
 msgid "System Load Indicator"
@@ -346,17 +349,19 @@ msgstr ""
 
 #: ../src/main.vala:41
 msgid "Show debug messages"
-msgstr ""
+msgstr "Εμφάνιση μηνυμάτων αποσφαλμάτωσης"
 
 #: ../src/main.vala:311
 msgid "- System load application indicator"
-msgstr ""
+msgstr "Δείκτης φόρτου εφαρμογών συστήματος"
 
 #: ../src/main.vala:319
 #, c-format
 msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
+"Εκτελέστε '%s --help' για να δείτε μια πλήρη λίστα των διαθέσιμων επιλογών "
+"της γραμμής εντολών\n"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:57
