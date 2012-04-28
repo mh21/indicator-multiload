@@ -11,15 +11,15 @@ msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-10 00:45+0200\n"
-"PO-Revision-Date: 2011-11-20 18:46+0000\n"
-"Last-Translator: Bert Timmerman <Unknown>\n"
+"PO-Revision-Date: 2012-04-28 00:41+0000\n"
+"Last-Translator: korst <Unknown>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2011-11-21 05:57+0000\n"
-"X-Generator: Launchpad (build 14299)\n"
+"X-Launchpad-Export-Date: 2012-04-28 05:06+0000\n"
+"X-Generator: Launchpad (build 15149)\n"
 "Language: nl\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
@@ -62,143 +62,143 @@ msgstr "Belasting"
 msgid "Memory"
 msgstr "Geheugen"
 
-#: ../data/preferences.ui.in.h:10
+#: ../data/preferences.ui.in.h:11
 msgid "Monitored Resources"
 msgstr "Gemeten bronnen"
 
-#: ../data/preferences.ui.in.h:11
+#: ../data/preferences.ui.in.h:12
 msgid "N_ice"
 msgstr "_Achtergrond"
 
-#: ../data/preferences.ui.in.h:12
+#: ../data/preferences.ui.in.h:13
 msgid "Network"
 msgstr "Netwerk"
 
-#: ../data/preferences.ui.in.h:13
+#: ../data/preferences.ui.in.h:14
 msgid "Options"
 msgstr "Opties"
 
-#: ../data/preferences.ui.in.h:14
+#: ../data/preferences.ui.in.h:15
 msgid "Processor"
 msgstr "Processor"
 
-#: ../data/preferences.ui.in.h:15
+#: ../data/preferences.ui.in.h:16
 msgid "S_wap Space"
 msgstr "_Wisselbestand"
 
-#: ../data/preferences.ui.in.h:16
+#: ../data/preferences.ui.in.h:17
 msgid "S_ystem"
 msgstr "S_ysteem"
 
-#: ../data/preferences.ui.in.h:17
+#: ../data/preferences.ui.in.h:18
 msgid "Sh_ared"
 msgstr "Ge_deeld"
 
-#: ../data/preferences.ui.in.h:18
+#: ../data/preferences.ui.in.h:19
 msgid "Swap Space"
 msgstr "Wisselbestand"
 
-#: ../data/preferences.ui.in.h:19
+#: ../data/preferences.ui.in.h:20
 msgid "Sys_tem monitor update interval: "
 msgstr "Sys_teembelasting verversingsinterval "
 
-#: ../data/preferences.ui.in.h:20
+#: ../data/preferences.ui.in.h:21
 msgid "System m_onitor width: "
 msgstr "Systeembelasting _breedte: "
 
-#: ../data/preferences.ui.in.h:21
+#: ../data/preferences.ui.in.h:22
 msgid "_About"
 msgstr "I_nfo"
 
-#: ../data/preferences.ui.in.h:22
+#: ../data/preferences.ui.in.h:23
 msgid "_Autostart: "
 msgstr ""
 
-#: ../data/preferences.ui.in.h:23
+#: ../data/preferences.ui.in.h:24
 msgid "_Average"
 msgstr "_Gemiddeld"
 
-#: ../data/preferences.ui.in.h:24
+#: ../data/preferences.ui.in.h:25
 msgid "_Background"
 msgstr "_Achtergrond"
 
-#: ../data/preferences.ui.in.h:25
+#: ../data/preferences.ui.in.h:26
 msgid "_Buffers"
 msgstr "B_uffers"
 
-#: ../data/preferences.ui.in.h:26
+#: ../data/preferences.ui.in.h:27
 msgid "_Free"
 msgstr "_Vrij"
 
-#: ../data/preferences.ui.in.h:27
+#: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
 msgstr "_Harde schijf"
 
-#: ../data/preferences.ui.in.h:28
+#: ../data/preferences.ui.in.h:29
 msgid "_In"
 msgstr "_In"
 
-#: ../data/preferences.ui.in.h:29
+#: ../data/preferences.ui.in.h:30
 msgid "_Load"
 msgstr "_Belasting"
 
-#: ../data/preferences.ui.in.h:30
+#: ../data/preferences.ui.in.h:31
 msgid "_Local"
 msgstr "_Lokaal"
 
-#: ../data/preferences.ui.in.h:31
+#: ../data/preferences.ui.in.h:32
 msgid "_Memory"
 msgstr "_Geheugen"
 
-#: ../data/preferences.ui.in.h:32
+#: ../data/preferences.ui.in.h:33
 msgid "_Network"
 msgstr "_Netwerk"
 
-#: ../data/preferences.ui.in.h:33
+#: ../data/preferences.ui.in.h:34
 msgid "_Open System Monitor"
 msgstr "Procesbeheer _openen"
 
-#: ../data/preferences.ui.in.h:34
+#: ../data/preferences.ui.in.h:35
 msgid "_Out"
 msgstr "_Uit"
 
-#: ../data/preferences.ui.in.h:35
+#: ../data/preferences.ui.in.h:36
 msgid "_Preferences"
 msgstr "_Voorkeuren"
 
-#: ../data/preferences.ui.in.h:36
+#: ../data/preferences.ui.in.h:37
 msgid "_Processor"
 msgstr "_Processor"
 
-#: ../data/preferences.ui.in.h:37
+#: ../data/preferences.ui.in.h:38
 msgid "_Quit"
 msgstr "A_fsluiten"
 
-#: ../data/preferences.ui.in.h:38
+#: ../data/preferences.ui.in.h:39
 msgid "_Read"
 msgstr "_Lezen"
 
-#: ../data/preferences.ui.in.h:39
+#: ../data/preferences.ui.in.h:40
 msgid "_Used"
 msgstr "Gebr_uikt"
 
-#: ../data/preferences.ui.in.h:40
+#: ../data/preferences.ui.in.h:41
 msgid "_User"
 msgstr "Gebr_uiker"
 
-#: ../data/preferences.ui.in.h:41
+#: ../data/preferences.ui.in.h:42
 msgid "_Write"
 msgstr "_Schrijven"
 
-#: ../data/preferences.ui.in.h:42
+#: ../data/preferences.ui.in.h:43
 msgid "milliseconds"
 msgstr "milliseconden"
 
-#: ../data/preferences.ui.in.h:43
+#: ../data/preferences.ui.in.h:44
 msgid "pixels"
 msgstr "beeldpunten"
 
-#: ../data/preferences.ui.in.h:44
+#: ../data/preferences.ui.in.h:45
 msgid "translator-credits"
 msgstr ""
 "Tino Meinen\n"
@@ -213,7 +213,8 @@ msgstr ""
 "Kijk voor meer informatie op http://nl.gnome.org/\n"
 "\n"
 "Launchpad Contributions:\n"
-"  Bert Timmerman https://launchpad.net/~bert-timmerman"
+"  Bert Timmerman https://launchpad.net/~bert-timmerman\n"
+"  korst https://launchpad.net/~jasperkorst"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
 msgid "Applet refresh rate in milliseconds"
@@ -221,7 +222,7 @@ msgstr "Verversingsfrequentie van het applet in milliseconden"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
 msgid "Automatically start on session startup"
-msgstr ""
+msgstr "Voeg toe aan opstarttoepassingen"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
 msgid "Background color for disk load graph"
@@ -323,9 +324,9 @@ msgstr "Kleur van de grafiek voor gebruikersgerelateerd geheugengebruik"
 msgid "Graph color for user-related swap usage"
 msgstr "Kleur van de grafiek voor gebruikersgerelateerd wisselbestandgebruik"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:28
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
 msgid "Height of the graphs in pixels."
-msgstr ""
+msgstr "Hoogte van de grafiek in pixels."
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:29
 msgid "Load graph alpha"
@@ -359,14 +360,14 @@ msgstr ""
 msgid "Swap graph background color"
 msgstr "Wisselbestand-grafiek achtergrondkleur"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:37
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
 msgid "The desktop description file to execute as the system monitor"
 msgstr ""
 "Het desktop-bestand dat uitgevoerd dient te worden voor de systeemmonitor"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:38
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
 msgid "Width of the graphs in pixels."
-msgstr ""
+msgstr "Breedte van de grafiek in pixels."
 
 #: ../data/indicator-multiload.desktop.in.h:2
 msgid "System Load Indicator"
@@ -400,20 +401,20 @@ msgstr ""
 #: ../src/swapicondata.vala:31
 #, c-format
 msgid "Swap: %s"
-msgstr ""
+msgstr "Wisselgeheugen: %s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
-#: ../src/utils.vala:43
+#: ../src/utils.vala:57
 msgid "{} kB"
 msgstr "{} Kb"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
-#: ../src/utils.vala:45
+#: ../src/utils.vala:59
 msgid "{} MB"
 msgstr "{} MB"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
-#: ../src/utils.vala:47
+#: ../src/utils.vala:61
 msgid "{} GB"
 msgstr "{} GB"
 
@@ -425,22 +426,22 @@ msgstr[0] "%u byte"
 msgstr[1] "%u bytes"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:67
+#: ../src/utils.vala:82
 msgid "{} kB/s"
 msgstr "{} kB/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:69
+#: ../src/utils.vala:84
 msgid "{} MB/s"
 msgstr "{} MB/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:71
+#: ../src/utils.vala:86
 msgid "{} GB/s"
 msgstr "{} GB/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:73
+#: ../src/utils.vala:88
 msgid "{} TB/s"
 msgstr "{} TB/s"
 
