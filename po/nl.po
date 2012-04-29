@@ -11,14 +11,14 @@ msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-10 00:45+0200\n"
-"PO-Revision-Date: 2012-04-28 00:41+0000\n"
-"Last-Translator: korst <Unknown>\n"
+"PO-Revision-Date: 2012-04-28 12:25+0000\n"
+"Last-Translator: Bert Timmerman <Unknown>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2012-04-28 05:06+0000\n"
+"X-Launchpad-Export-Date: 2012-04-29 05:14+0000\n"
 "X-Generator: Launchpad (build 15149)\n"
 "Language: nl\n"
 
@@ -112,7 +112,7 @@ msgstr "I_nfo"
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Autostart: "
-msgstr ""
+msgstr "_Autostart: "
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Average"
@@ -230,7 +230,7 @@ msgstr "Achtergrondkleur voor schijfgebruik grafiek"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
 msgid "CPU graph alpha"
-msgstr ""
+msgstr "CPU grafiek alpha"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
 msgid "CPU graph background color"
@@ -238,7 +238,7 @@ msgstr "CPU-grafiek achtergrondkleur"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
 msgid "Disk load graph alpha"
-msgstr ""
+msgstr "Schijf belasting grafiek alpha"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
 msgid "Enable CPU load graph"
@@ -338,7 +338,7 @@ msgstr "Belastingsgrafiek achtergrondkleur"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:31
 msgid "Memory graph alpha"
-msgstr ""
+msgstr "Geheugen grafiek alpha"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:32
 msgid "Memory graph background color"
@@ -346,7 +346,7 @@ msgstr "Geheugengrafiek achtergrondkleur"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:33
 msgid "Network graph alpha"
-msgstr ""
+msgstr "Netwerk grafiek alpha"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:34
 msgid "Network graph background color"
@@ -354,7 +354,7 @@ msgstr "Netwerkgebruik achtergrondkleur"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:35
 msgid "Swap graph alpha"
-msgstr ""
+msgstr "Swap grafiek alpha"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:36
 msgid "Swap graph background color"
@@ -376,17 +376,17 @@ msgstr "Systeembelastingindicator"
 #: ../src/cpuicondata.vala:58
 #, c-format
 msgid "CPU: %u%%, iowait %u%%"
-msgstr ""
+msgstr "CPU: %u%%, iowait %u%%"
 
 #: ../src/diskicondata.vala:106
 #, c-format
 msgid "Disk: read %s, write %s"
-msgstr ""
+msgstr "Schijf: lees %s, schrijf %s"
 
 #: ../src/loadicondata.vala:31
 #, c-format
 msgid "Load: %.2f"
-msgstr ""
+msgstr "Laad: %.2f"
 
 #: ../src/memicondata.vala:36
 #, c-format
