@@ -15,15 +15,15 @@ msgstr ""
 "Project-Id-Version: bn\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-10 00:45+0200\n"
-"PO-Revision-Date: 2011-05-28 13:40+0000\n"
-"Last-Translator: Israt Jahan <israt@ankur.org.bd>\n"
+"PO-Revision-Date: 2012-05-12 00:53+0000\n"
+"Last-Translator: Kazi Shahnoor Ashraf <kazidxb@gmail.com>\n"
 "Language-Team: Bengali <ankur-bd-l10n@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2011-05-30 05:46+0000\n"
-"X-Generator: Launchpad (build 12959)\n"
+"X-Launchpad-Export-Date: 2012-05-12 05:57+0000\n"
+"X-Generator: Launchpad (build 15225)\n"
 "Language: bn\n"
 
 # msgstr "চাপ গড়"
@@ -69,104 +69,102 @@ msgid "Memory"
 msgstr "মেমরি"
 
 # msgstr "মোট ভার"
-#: ../data/preferences.ui.in.h:10
+#: ../data/preferences.ui.in.h:11
 msgid "Monitored Resources"
 msgstr "নিরীক্ষিত রিসোর্স"
 
-#: ../data/preferences.ui.in.h:11
+#: ../data/preferences.ui.in.h:12
 msgid "N_ice"
 msgstr "সুন্দর (_i)"
 
-#: ../data/preferences.ui.in.h:12
+#: ../data/preferences.ui.in.h:13
 msgid "Network"
 msgstr "নেটওয়ার্ক"
 
-#: ../data/preferences.ui.in.h:13
+#: ../data/preferences.ui.in.h:14
 msgid "Options"
 msgstr "অপশন"
 
-#: ../data/preferences.ui.in.h:14
+#: ../data/preferences.ui.in.h:15
 msgid "Processor"
 msgstr "প্রসেসর"
 
-#: ../data/preferences.ui.in.h:15
+#: ../data/preferences.ui.in.h:16
 msgid "S_wap Space"
 msgstr "Swap স্থান(_w)"
 
-#: ../data/preferences.ui.in.h:16
+#: ../data/preferences.ui.in.h:17
 msgid "S_ystem"
 msgstr "সিস্টেম (_y)"
 
-#: ../data/preferences.ui.in.h:17
+#: ../data/preferences.ui.in.h:18
 msgid "Sh_ared"
 msgstr "যৌথরূপে ব্যবহৃত (_a)"
 
-#: ../data/preferences.ui.in.h:18
+#: ../data/preferences.ui.in.h:19
 msgid "Swap Space"
 msgstr "Swap স্থান"
 
-#: ../data/preferences.ui.in.h:19
+#: ../data/preferences.ui.in.h:20
 msgid "Sys_tem monitor update interval: "
 msgstr "সিস্টেম পর্যবেক্ষণ তথ্য আপডেটের মধ্যবর্তী বিরতিকাল: (_t) "
 
 # msgstr "_ভার"
-#: ../data/preferences.ui.in.h:20
+#: ../data/preferences.ui.in.h:21
 msgid "System m_onitor width: "
 msgstr "সিস্টেম পর্যবেক্ষনের প্রস্থ: (_o) "
 
-# msgstr "উপযোগিতা"
-# উহুঁ - হবে না
-#: ../data/preferences.ui.in.h:21
-msgid "_About"
-msgstr "পরিচিতি (_A)"
-
 #: ../data/preferences.ui.in.h:22
-msgid "_Autostart: "
-msgstr ""
+msgid "_About"
+msgstr "সম্বন্ধে"
 
 #: ../data/preferences.ui.in.h:23
+msgid "_Autostart: "
+msgstr "_Autostart: "
+
+#: ../data/preferences.ui.in.h:24
 msgid "_Average"
 msgstr "গড় (_A)"
 
-#: ../data/preferences.ui.in.h:24
+#: ../data/preferences.ui.in.h:25
 msgid "_Background"
 msgstr "পটভূমি (_B)"
 
-#: ../data/preferences.ui.in.h:25
+#: ../data/preferences.ui.in.h:26
 msgid "_Buffers"
 msgstr "বাফার (_B)"
 
-#: ../data/preferences.ui.in.h:26
+#: ../data/preferences.ui.in.h:27
 msgid "_Free"
 msgstr "মুক্ত (_F)"
 
-#: ../data/preferences.ui.in.h:27
+#: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
 msgstr "হার্ড-ডিস্ক (_H)"
 
 # Translated by sadia
-#: ../data/preferences.ui.in.h:28
+#: ../data/preferences.ui.in.h:29
 msgid "_In"
 msgstr "ভিতরে (_I)"
 
-#: ../data/preferences.ui.in.h:29
+#: ../data/preferences.ui.in.h:30
 msgid "_Load"
 msgstr "লোড (_L)"
 
 # Translated by sadia
-#: ../data/preferences.ui.in.h:30
+#: ../data/preferences.ui.in.h:31
 msgid "_Local"
 msgstr "স্থানীয় (_L)"
 
-#: ../data/preferences.ui.in.h:31
+#: ../data/preferences.ui.in.h:32
 msgid "_Memory"
 msgstr "মেমরি(_M)"
 
-#: ../data/preferences.ui.in.h:32
+#: ../data/preferences.ui.in.h:33
 msgid "_Network"
 msgstr "নেটওয়ার্ক(_N)"
 
-#: ../data/preferences.ui.in.h:33
+#: ../data/preferences.ui.in.h:34
 msgid "_Open System Monitor"
 msgstr "সিস্টেম পর্যবেক্ষণ আরম্ভ করুন (_O)"
 
@@ -174,47 +172,47 @@ msgstr "সিস্টেম পর্যবেক্ষণ আরম্ভ ক
 # উহুঁ - হবে না
 #
 # Translated by sadia
-#: ../data/preferences.ui.in.h:34
+#: ../data/preferences.ui.in.h:35
 msgid "_Out"
 msgstr "বাইরে (_O)"
 
-#: ../data/preferences.ui.in.h:35
+#: ../data/preferences.ui.in.h:36
 msgid "_Preferences"
 msgstr "পছন্দসমূহ (_P)"
 
-#: ../data/preferences.ui.in.h:36
+#: ../data/preferences.ui.in.h:37
 msgid "_Processor"
 msgstr "প্রসেসর (_P)"
 
-#: ../data/preferences.ui.in.h:37
-msgid "_Quit"
-msgstr ""
-
 #: ../data/preferences.ui.in.h:38
+msgid "_Quit"
+msgstr "_Quit"
+
+#: ../data/preferences.ui.in.h:39
 msgid "_Read"
 msgstr "পড়া (_R)"
 
-#: ../data/preferences.ui.in.h:39
+#: ../data/preferences.ui.in.h:40
 msgid "_Used"
 msgstr "ব্যবহৃত (_U)"
 
-#: ../data/preferences.ui.in.h:40
+#: ../data/preferences.ui.in.h:41
 msgid "_User"
 msgstr "ব্যবহারকারী (_U)"
 
-#: ../data/preferences.ui.in.h:41
+#: ../data/preferences.ui.in.h:42
 msgid "_Write"
 msgstr "লেখা (_W)"
 
-#: ../data/preferences.ui.in.h:42
+#: ../data/preferences.ui.in.h:43
 msgid "milliseconds"
 msgstr "মিলি-সেকেন্ড"
 
-#: ../data/preferences.ui.in.h:43
+#: ../data/preferences.ui.in.h:44
 msgid "pixels"
 msgstr "পিক্সেল"
 
-#: ../data/preferences.ui.in.h:44
+#: ../data/preferences.ui.in.h:45
 msgid "translator-credits"
 msgstr ""
 "অঙ্কুর প্রকল্পের পক্ষে, সায়মিন্দু দাশগুপ্ত <unmadindu@bengalinux.org>\n"
@@ -223,7 +221,12 @@ msgstr ""
 "রুণা ভট্টাচার্য্য <runabh@gmail.com>\n"
 "খন্দকার মুজাহিদুল ইসলাম <suzan@bengalinux.org>\n"
 "সাদিয়া আফরোজ <sadia@ankur.org.bd>\n"
-"ইসরাত জাহান <israt@ankur.org.bd>"
+"ইসরাত জাহান <israt@ankur.org.bd>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Ishak Herock https://launchpad.net/~ourherock\n"
+"  Istiaque Ahamed https://launchpad.net/~istiaque\n"
+"  Kazi Shahnoor Ashraf https://launchpad.net/~kaziweb"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
 msgid "Applet refresh rate in milliseconds"
@@ -231,7 +234,7 @@ msgstr "মিলিসেকেন্ডে অ্যাপ্লেটের �
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
 msgid "Automatically start on session startup"
-msgstr ""
+msgstr "প্রারম্ভকালে স্বয়ংক্রিয় ভাবে শুরু"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
 msgid "Background color for disk load graph"
@@ -239,7 +242,7 @@ msgstr "ডিস্ক'র উপর ভার চিহ্নকারী র�
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
 msgid "CPU graph alpha"
-msgstr ""
+msgstr "CPU-র গ্রাফ আলফা"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
 msgid "CPU graph background color"
@@ -247,7 +250,7 @@ msgstr "CPU রেখাচিত্রের পটভূমির রং"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
 msgid "Disk load graph alpha"
-msgstr ""
+msgstr "ডিস্ক লোড গ্রাফ আলফা"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
 msgid "Enable CPU load graph"
@@ -336,13 +339,13 @@ msgstr "ব্যবহারকারী সম্বন্ধীয় মেম�
 msgid "Graph color for user-related swap usage"
 msgstr "ব্যবহারকারী সম্বন্ধীয় swap ব্যবহারের রেখাচিত্রের রং"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:28
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
 msgid "Height of the graphs in pixels."
 msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:29
 msgid "Load graph alpha"
-msgstr ""
+msgstr "লোড গ্রাফ আলফা"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:30
 msgid "Load graph background color"
@@ -350,7 +353,7 @@ msgstr "কর্মভারের রেখাচিত্রের পটভ�
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:31
 msgid "Memory graph alpha"
-msgstr ""
+msgstr "মেমরি গ্রাফ আলফা"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:32
 msgid "Memory graph background color"
@@ -358,7 +361,7 @@ msgstr "মেমরির রেখাচিত্রের পটভূমি�
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:33
 msgid "Network graph alpha"
-msgstr ""
+msgstr "নেটওয়ার্ক গ্রাফ আলফা"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:34
 msgid "Network graph background color"
@@ -366,25 +369,25 @@ msgstr "নেটওয়ার্কের রেখাচিত্রের প�
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:35
 msgid "Swap graph alpha"
-msgstr ""
+msgstr "গ্রাফ আলফা বিনিময়"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:36
 msgid "Swap graph background color"
 msgstr "Swap রেখাচিত্রের পটভূমির রং"
 
 # Translated by sadia
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:37
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
 msgid "The desktop description file to execute as the system monitor"
 msgstr ""
 "ডেক্সটপ বর্ণনাকারী ফাইলকে সিস্টেম পর্যবেক্ষক হিসেবে এক্সিকিউট করতে হবে"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:38
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
 msgid "Width of the graphs in pixels."
 msgstr ""
 
 #: ../data/indicator-multiload.desktop.in.h:2
 msgid "System Load Indicator"
-msgstr ""
+msgstr "সিস্টেম লোড নির্দেশক"
 
 #: ../src/cpuicondata.vala:58
 #, c-format
@@ -417,19 +420,19 @@ msgid "Swap: %s"
 msgstr ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
-#: ../src/utils.vala:43
+#: ../src/utils.vala:57
 msgid "{} kB"
-msgstr ""
+msgstr "{} কি.বা."
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
-#: ../src/utils.vala:45
+#: ../src/utils.vala:59
 msgid "{} MB"
-msgstr ""
+msgstr "{} মে.বা."
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
-#: ../src/utils.vala:47
+#: ../src/utils.vala:61
 msgid "{} GB"
-msgstr ""
+msgstr "{} গি.বা."
 
 #: ../src/utils.vala:55
 #, c-format
@@ -439,24 +442,24 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:67
+#: ../src/utils.vala:82
 msgid "{} kB/s"
-msgstr ""
+msgstr "{} কি.বা/সে."
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:69
+#: ../src/utils.vala:84
 msgid "{} MB/s"
-msgstr ""
+msgstr "{} মে.বা./সে."
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:71
+#: ../src/utils.vala:86
 msgid "{} GB/s"
-msgstr ""
+msgstr "{} গি.বা/সে."
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:73
+#: ../src/utils.vala:88
 msgid "{} TB/s"
-msgstr ""
+msgstr "টে.বা/সে."
 
 #: ../src/utils.vala:81
 #, c-format
