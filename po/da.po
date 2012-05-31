@@ -26,15 +26,15 @@ msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-26 22:58+0100\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2012-05-30 16:44+0000\n"
 "Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2012-01-27 05:53+0000\n"
-"X-Generator: Launchpad (build 14727)\n"
+"X-Launchpad-Export-Date: 2012-05-31 05:15+0000\n"
+"X-Generator: Launchpad (build 15322)\n"
 "Language: da\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
@@ -43,7 +43,7 @@ msgid ""
 "space use, plus network traffic."
 msgstr ""
 "En systembelastningsovervåger der kan vise grafer for processor, hukommelse "
-"og swapfilsforbrug, plus netværkstraffik."
+"og swapfilsforbrug plus netværkstrafik."
 
 #: ../data/preferences.ui.in.h:2
 msgid "Cach_ed"
@@ -63,7 +63,7 @@ msgstr "Harddisk"
 
 #: ../data/preferences.ui.in.h:6
 msgid "I_OWait"
-msgstr "I_O-ventning"
+msgstr "I_O-ventetid"
 
 #: ../data/preferences.ui.in.h:7
 msgid "I_dle"
@@ -79,7 +79,7 @@ msgstr "Hukommelse"
 
 #: ../data/preferences.ui.in.h:10
 msgid "Menu items..."
-msgstr ""
+msgstr "Menulinjer"
 
 #: ../data/preferences.ui.in.h:11
 msgid "Monitored Resources"
@@ -123,7 +123,7 @@ msgstr "Sys_temovervågningsinterval: "
 
 #: ../data/preferences.ui.in.h:21
 msgid "System m_onitor width: "
-msgstr "System_overvågningsbredde: "
+msgstr "Grafbredde: "
 
 #: ../data/preferences.ui.in.h:22
 msgid "_About"
@@ -131,7 +131,7 @@ msgstr "_Om"
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Autostart: "
-msgstr ""
+msgstr "_Autostart: "
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Average"
@@ -192,7 +192,7 @@ msgstr "_Processor"
 
 #: ../data/preferences.ui.in.h:38
 msgid "_Quit"
-msgstr ""
+msgstr "_Afslut"
 
 #: ../data/preferences.ui.in.h:39
 msgid "_Read"
@@ -230,7 +230,11 @@ msgstr ""
 "Peter Bach\n"
 "\n"
 "Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
-"Mere info: http://www.dansk-gruppen.dk"
+"Mere info: http://www.dansk-gruppen.dk\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Ask Hjorth Larsen https://launchpad.net/~askhl\n"
+"  Daniel Ejsing-Duun https://launchpad.net/~zilvador"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
 msgid "Applet refresh rate in milliseconds"
@@ -238,55 +242,55 @@ msgstr "Opdateringsinterval i millisekunder"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
 msgid "Automatically start on session startup"
-msgstr ""
+msgstr "Start automatisk ved indlogning"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
 msgid "Available graphs"
-msgstr ""
+msgstr "Tilgængelige grafer"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
 msgid "Available traces"
-msgstr ""
+msgstr "Tilgængelige sporinger"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
 msgid "Graph alpha value"
-msgstr ""
+msgstr "Alfaværdi for grafer"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
 msgid "Graph background color"
-msgstr ""
+msgstr "Baggrundsfarve for grafer"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
 msgid "Graph visibility"
-msgstr ""
+msgstr "Grafsynlighed"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
 msgid "Height of the graphs in pixels."
-msgstr ""
+msgstr "Grafhøjde i punkter"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
 msgid "Index of the current information shown in the indicator itself"
-msgstr ""
+msgstr "Indeksværdi for den givne oplysning vist i selve indikatoren"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
 msgid "Information shown as menu entries"
-msgstr ""
+msgstr "Oplysninger vist som menulinjer"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
 msgid "Information shown in the indicator itself"
-msgstr ""
+msgstr "Oplysninger vist i selve indikatoren"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
 msgid "Maximum value for upper graph edge, zero means unlimited"
-msgstr ""
+msgstr "Højeste værdi for grafens øverste kant. Nul betyder ubegrænset."
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
 msgid "Minimum value for upper graph edge"
-msgstr ""
+msgstr "Mindste værdi for grafens øvre kant"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
 msgid "Number of values used for smooth graph scaling"
-msgstr ""
+msgstr "Antal værdier i brug ved blød grafskalering"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
 msgid "The desktop description file to execute as the system monitor"
@@ -294,100 +298,102 @@ msgstr "Skrivebordsbeskrivelsesfilen der eksekveres som systemovervågning"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
 msgid "Trace color"
-msgstr ""
+msgstr "Sporingsfarve"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
 msgid "Trace expression"
-msgstr ""
+msgstr "Sporingsudtryk"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
 msgid "Trace visibility"
-msgstr ""
+msgstr "Synlighed af sporing"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
 msgid "Traces shown"
-msgstr ""
+msgstr "Viste sporinger"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
 msgid "Width of the graphs in pixels."
-msgstr ""
+msgstr "Grafernes bredde i punkter."
 
 #: ../data/indicator-multiload.desktop.in.h:2
 msgid "System Load Indicator"
-msgstr ""
+msgstr "Systembelastningsindikator"
 
 #: ../src/function.vala:88
 #, c-format
 msgid "%u%%"
-msgstr ""
+msgstr "%u%%"
 
 #: ../src/main.vala:37
 msgid "Evaluate an expression"
-msgstr ""
+msgstr "Evaluer et udtryk"
 
 #: ../src/main.vala:39
 msgid "List available expression identifiers"
-msgstr ""
+msgstr "Opstil tilgængelige udtrykssymboler"
 
 #: ../src/main.vala:41
 msgid "Show debug messages"
-msgstr ""
+msgstr "Vis fejlretningsbeskeder"
 
 #: ../src/main.vala:311
 msgid "- System load application indicator"
-msgstr ""
+msgstr "- Indikator for et systembelastningsprogram"
 
 #: ../src/main.vala:319
 #, c-format
 msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
+"Kør \"%s --help\" for at se den fulde liste af tilgængelige "
+"kommandolinjetilvalg.\n"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:57
 msgid "{} kB"
-msgstr ""
+msgstr "{} kB"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:59
 msgid "{} MB"
-msgstr ""
+msgstr "{} MB"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:61
 msgid "{} GB"
-msgstr ""
+msgstr "{} GB"
 
 #: ../src/utils.vala:69
 #, c-format
 msgid "%u B"
 msgid_plural "%u B"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u B"
+msgstr[1] "%u B"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:82
 msgid "{} kB/s"
-msgstr ""
+msgstr "{} kB/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:84
 msgid "{} MB/s"
-msgstr ""
+msgstr "{} MB/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:86
 msgid "{} GB/s"
-msgstr ""
+msgstr "{} GB/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:88
 msgid "{} TB/s"
-msgstr ""
+msgstr "{} TB/s"
 
 #: ../src/utils.vala:96
 #, c-format
 msgid "%u B/s"
 msgid_plural "%u B/s"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u B/s"
+msgstr[1] "%u B/s"
