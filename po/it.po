@@ -11,15 +11,15 @@ msgstr ""
 "Project-Id-Version: gnome-applets 2.29.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-26 22:58+0100\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
-"Last-Translator: Luca Ferretti <lferrett@gnome.org>\n"
+"PO-Revision-Date: 2012-06-30 16:47+0000\n"
+"Last-Translator: Gianfranco Frisani <gfrisani@libero.it>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2012-01-27 05:54+0000\n"
-"X-Generator: Launchpad (build 14727)\n"
+"X-Launchpad-Export-Date: 2012-07-01 04:52+0000\n"
+"X-Generator: Launchpad (build 15520)\n"
 "Language: it\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
@@ -64,7 +64,7 @@ msgstr "Memoria"
 
 #: ../data/preferences.ui.in.h:10
 msgid "Menu items..."
-msgstr ""
+msgstr "Elementi del menù..."
 
 #: ../data/preferences.ui.in.h:11
 msgid "Monitored Resources"
@@ -212,7 +212,13 @@ msgstr ""
 "  * Christopher R. Gabriel\n"
 "  * Francesco Marletta\n"
 "  * Leandro Noferini\n"
-"  * tutti i revisori del TP"
+"  * tutti i revisori del TP\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Gianfranco Frisani https://launchpad.net/~gfrisani\n"
+"  Luca Ferretti https://launchpad.net/~lferrett\n"
+"  Milo Casagrande https://launchpad.net/~milo\n"
+"  simone.sandri https://launchpad.net/~lexluxsox"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
 msgid "Applet refresh rate in milliseconds"
@@ -224,7 +230,7 @@ msgstr "Avvio automatico all'inizializzazione del sistema"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
 msgid "Available graphs"
-msgstr ""
+msgstr "Grafici disponibili"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
 msgid "Available traces"
@@ -236,11 +242,11 @@ msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
 msgid "Graph background color"
-msgstr ""
+msgstr "Colore dello sfondo del grafico"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
 msgid "Graph visibility"
-msgstr ""
+msgstr "Visibilità del grafico"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
 msgid "Height of the graphs in pixels."
@@ -261,10 +267,11 @@ msgstr ""
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
 msgid "Maximum value for upper graph edge, zero means unlimited"
 msgstr ""
+"Valore massimo per il limite superiore del grafico, zero significa illimitato"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
 msgid "Minimum value for upper graph edge"
-msgstr ""
+msgstr "Valore minimo per il limite inferiore del grafico"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
 msgid "Number of values used for smooth graph scaling"
