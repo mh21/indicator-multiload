@@ -9,15 +9,15 @@ msgstr ""
 "Project-Id-Version: gnome-applets HEAD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-26 22:58+0100\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
-"Last-Translator: Peter Tuhársky <tuharsky@misbb.sk>\n"
+"PO-Revision-Date: 2012-07-10 09:09+0000\n"
+"Last-Translator: Fpfilko <Unknown>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
-"X-Launchpad-Export-Date: 2012-01-27 05:54+0000\n"
-"X-Generator: Launchpad (build 14727)\n"
+"X-Launchpad-Export-Date: 2012-07-11 05:30+0000\n"
+"X-Generator: Launchpad (build 15593)\n"
 "X-Poedit-Country: SLOVAKIA\n"
 "Language: sk\n"
 "X-Poedit-Language: Slovak\n"
@@ -64,7 +64,7 @@ msgstr "Pamäť"
 
 #: ../data/preferences.ui.in.h:10
 msgid "Menu items..."
-msgstr ""
+msgstr "Položky menu..."
 
 #: ../data/preferences.ui.in.h:11
 msgid "Monitored Resources"
@@ -116,7 +116,7 @@ msgstr "_O programe"
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Autostart: "
-msgstr ""
+msgstr "_Autoštart: "
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Average"
@@ -140,7 +140,7 @@ msgstr "_Pevný disk"
 
 #: ../data/preferences.ui.in.h:29
 msgid "_In"
-msgstr ""
+msgstr "_Vstup"
 
 #: ../data/preferences.ui.in.h:30
 msgid "_Load"
@@ -148,7 +148,7 @@ msgstr "_Zaťaženie"
 
 #: ../data/preferences.ui.in.h:31
 msgid "_Local"
-msgstr ""
+msgstr "_Lokálne"
 
 #: ../data/preferences.ui.in.h:32
 msgid "_Memory"
@@ -164,7 +164,7 @@ msgstr "_Otvoriť sledovanie systému"
 
 #: ../data/preferences.ui.in.h:35
 msgid "_Out"
-msgstr ""
+msgstr "Vý_stup"
 
 #: ../data/preferences.ui.in.h:36
 msgid "_Preferences"
@@ -176,7 +176,7 @@ msgstr "_Procesor"
 
 #: ../data/preferences.ui.in.h:38
 msgid "_Quit"
-msgstr ""
+msgstr "U_končiť"
 
 #: ../data/preferences.ui.in.h:39
 msgid "_Read"
@@ -207,7 +207,11 @@ msgid "translator-credits"
 msgstr ""
 "Stanislav Višňovský\n"
 "Marcel Telka <marcel@telka.sk>\n"
-"Peter Tuhársky <tuharsky@misbb.sk>"
+"Peter Tuhársky <tuharsky@misbb.sk>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Fpfilko https://launchpad.net/~fpfilko\n"
+"  tuharsky https://launchpad.net/~tuharsky"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
 msgid "Applet refresh rate in milliseconds"
@@ -215,55 +219,55 @@ msgstr "Rýchlosť aktualizácie apletu v milisekundách"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
 msgid "Automatically start on session startup"
-msgstr ""
+msgstr "Spustiť pri prihlasení"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
 msgid "Available graphs"
-msgstr ""
+msgstr "Dostupné grafy"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
 msgid "Available traces"
-msgstr ""
+msgstr "Dostupné sledovače"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
 msgid "Graph alpha value"
-msgstr ""
+msgstr "Hodnota alfa kanála grafu"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
 msgid "Graph background color"
-msgstr ""
+msgstr "Farba pozadia grafu"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
 msgid "Graph visibility"
-msgstr ""
+msgstr "Viditeľnosť grafu"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
 msgid "Height of the graphs in pixels."
-msgstr ""
+msgstr "Výška grafu v bodoch"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
 msgid "Index of the current information shown in the indicator itself"
-msgstr ""
+msgstr "Zoznam aktuálnych informácií zobrazených v ukazovateli"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
 msgid "Information shown as menu entries"
-msgstr ""
+msgstr "Informácie zobrazené ako položky v menu"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
 msgid "Information shown in the indicator itself"
-msgstr ""
+msgstr "Informácie zobrazené v ukazovateli"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
 msgid "Maximum value for upper graph edge, zero means unlimited"
-msgstr ""
+msgstr "Maximálna hodnota pre horný okraj grafu, nula znamená neobmedzená"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
 msgid "Minimum value for upper graph edge"
-msgstr ""
+msgstr "Minimálna hodnota pre horný okraj grafu"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
 msgid "Number of values used for smooth graph scaling"
-msgstr ""
+msgstr "Počet hodnôt použitých na plynulé škálovanie grafu"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
 msgid "The desktop description file to execute as the system monitor"
@@ -271,100 +275,104 @@ msgstr "Opisný súbor na ploche, ktorý sa má vykonať ako systémový monitor
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
 msgid "Trace color"
-msgstr ""
+msgstr "Farba sledovača"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
 msgid "Trace expression"
-msgstr ""
+msgstr "Výraz sledovača"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
 msgid "Trace visibility"
-msgstr ""
+msgstr "Viditeľnosť sledovača"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
 msgid "Traces shown"
-msgstr ""
+msgstr "Sledovače zobrazené"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
 msgid "Width of the graphs in pixels."
-msgstr ""
+msgstr "Šírka grafov v bodoch"
 
 #: ../data/indicator-multiload.desktop.in.h:2
 msgid "System Load Indicator"
-msgstr ""
+msgstr "Ukazovateľ zaťaženia systému"
 
 #: ../src/function.vala:88
 #, c-format
 msgid "%u%%"
-msgstr ""
+msgstr "%u%%"
 
 #: ../src/main.vala:37
 msgid "Evaluate an expression"
-msgstr ""
+msgstr "Vyhodnotiť výraz"
 
 #: ../src/main.vala:39
 msgid "List available expression identifiers"
-msgstr ""
+msgstr "Zoznam dostupných mien výrazov"
 
 #: ../src/main.vala:41
 msgid "Show debug messages"
-msgstr ""
+msgstr "Zobraziť ladiace správy"
 
 #: ../src/main.vala:311
 msgid "- System load application indicator"
-msgstr ""
+msgstr "- Ukazovateľ zaťaženia aplikácií systému"
 
 #: ../src/main.vala:319
 #, c-format
 msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
+"Spustením '%s --help' zobrazíte úplný zoznam dostupných volieb príkazového "
+"riadku.\n"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:57
 msgid "{} kB"
-msgstr ""
+msgstr "{} kB"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:59
 msgid "{} MB"
-msgstr ""
+msgstr "{} MB"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:61
 msgid "{} GB"
-msgstr ""
+msgstr "{} GB"
 
 #: ../src/utils.vala:69
 #, c-format
 msgid "%u B"
 msgid_plural "%u B"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u B"
+msgstr[1] "%u B"
+msgstr[2] "%u B"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:82
 msgid "{} kB/s"
-msgstr ""
+msgstr "{} kB/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:84
 msgid "{} MB/s"
-msgstr ""
+msgstr "{} MB/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:86
 msgid "{} GB/s"
-msgstr ""
+msgstr "{} GB/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:88
 msgid "{} TB/s"
-msgstr ""
+msgstr "{} TB/s"
 
 #: ../src/utils.vala:96
 #, c-format
 msgid "%u B/s"
 msgid_plural "%u B/s"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u B/s"
+msgstr[1] "%u B/s"
+msgstr[2] "%u B/s"
