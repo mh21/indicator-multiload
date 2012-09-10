@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-26 22:58+0100\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
-"Last-Translator: Maxim Dziumanenko <dziumanenko@gmail.com>\n"
+"PO-Revision-Date: 2012-09-09 18:55+0000\n"
+"Last-Translator: Власов Александр <cvetliy_e@mail.ru>\n"
 "Language-Team: ukrainian <Ukrainian <uk@li.org>>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2012-01-27 05:54+0000\n"
-"X-Generator: Launchpad (build 14727)\n"
+"X-Launchpad-Export-Date: 2012-09-10 04:57+0000\n"
+"X-Generator: Launchpad (build 15924)\n"
 "Language: \n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
@@ -62,7 +62,7 @@ msgstr "Пам'ять"
 
 #: ../data/preferences.ui.in.h:10
 msgid "Menu items..."
-msgstr ""
+msgstr "Елементи меню"
 
 #: ../data/preferences.ui.in.h:11
 msgid "Monitored Resources"
@@ -206,7 +206,12 @@ msgid "translator-credits"
 msgstr ""
 "Юрій Сирота <yuri@beer.com>\n"
 "Максим Дзюманенко <dziumanenko@gmail.com>\n"
-"Wanderlust <wanderlust@ukr.net>"
+"Wanderlust <wanderlust@ukr.net>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Maxim Dziumanenko https://launchpad.net/~dziumanenko\n"
+"  Власов Александр https://launchpad.net/~cvetliy-e\n"
+"  Сергій Матрунчик https://launchpad.net/~sergiy.matrunchyk"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
 msgid "Applet refresh rate in milliseconds"
@@ -218,51 +223,53 @@ msgstr "Завантажуватись автоматично після вхо�
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
 msgid "Available graphs"
-msgstr ""
+msgstr "Доступні діаграми"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
 msgid "Available traces"
-msgstr ""
+msgstr "Доступні криві"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
 msgid "Graph alpha value"
-msgstr ""
+msgstr "Прозорість діаграми"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
 msgid "Graph background color"
-msgstr ""
+msgstr "Колір фону діаграми"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
 msgid "Graph visibility"
-msgstr ""
+msgstr "Видимість діаграми"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
 msgid "Height of the graphs in pixels."
-msgstr ""
+msgstr "Висота діаграми в пікселях"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
 msgid "Index of the current information shown in the indicator itself"
-msgstr ""
+msgstr "Індекс поточної інформації, яка відображається індикатором"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
 msgid "Information shown as menu entries"
-msgstr ""
+msgstr "Інформація, що відображається в пунктах меню"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
 msgid "Information shown in the indicator itself"
-msgstr ""
+msgstr "Інформація, що відображається індикатором"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
 msgid "Maximum value for upper graph edge, zero means unlimited"
 msgstr ""
+"Максимальне значення верхнього краю діаграми, нуль означає \"без обмежень\""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
 msgid "Minimum value for upper graph edge"
-msgstr ""
+msgstr "Мінімальне значення верхнього краю діаграми"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
 msgid "Number of values used for smooth graph scaling"
 msgstr ""
+"Кількість значень, використовуваних для плавної зміни масштабу діаграми"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
 msgid "The desktop description file to execute as the system monitor"
@@ -270,23 +277,23 @@ msgstr "Файл опису для виконання як системний м
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
 msgid "Trace color"
-msgstr ""
+msgstr "Колір кривої"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
 msgid "Trace expression"
-msgstr ""
+msgstr "Вираз кривої"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
 msgid "Trace visibility"
-msgstr ""
+msgstr "Видимість кривої"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
 msgid "Traces shown"
-msgstr ""
+msgstr "Відображення кривих"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
 msgid "Width of the graphs in pixels."
-msgstr ""
+msgstr "Ширина діаграми в пікселях."
 
 #: ../data/indicator-multiload.desktop.in.h:2
 msgid "System Load Indicator"
@@ -295,75 +302,78 @@ msgstr "Індикатор завантажування системи"
 #: ../src/function.vala:88
 #, c-format
 msgid "%u%%"
-msgstr ""
+msgstr "%u%%"
 
 #: ../src/main.vala:37
 msgid "Evaluate an expression"
-msgstr ""
+msgstr "Значення виразу"
 
 #: ../src/main.vala:39
 msgid "List available expression identifiers"
-msgstr ""
+msgstr "Список доступних ідентифікаторів виразу"
 
 #: ../src/main.vala:41
 msgid "Show debug messages"
-msgstr ""
+msgstr "Показувати відлагоджувальні повідомлення"
 
 #: ../src/main.vala:311
 msgid "- System load application indicator"
-msgstr ""
+msgstr "Індикатор завантаження системи"
 
 #: ../src/main.vala:319
 #, c-format
 msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
+"Виконайте '%s --help', щоб побачити повний список доступних параметрів.\n"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:57
 msgid "{} kB"
-msgstr ""
+msgstr "{} кБ"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:59
 msgid "{} MB"
-msgstr ""
+msgstr "{} МБ"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:61
 msgid "{} GB"
-msgstr ""
+msgstr "{} ГБ"
 
 #: ../src/utils.vala:69
 #, c-format
 msgid "%u B"
 msgid_plural "%u B"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u Б"
+msgstr[1] "%u Б"
+msgstr[2] "%u Б"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:82
 msgid "{} kB/s"
-msgstr ""
+msgstr "{} кБ/с"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:84
 msgid "{} MB/s"
-msgstr ""
+msgstr "{} МБ/с"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:86
 msgid "{} GB/s"
-msgstr ""
+msgstr "{} ГБ/с"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:88
 msgid "{} TB/s"
-msgstr ""
+msgstr "{} ТБ/с"
 
 #: ../src/utils.vala:96
 #, c-format
 msgid "%u B/s"
 msgid_plural "%u B/s"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u Б/с"
+msgstr[1] "%u Б/с"
+msgstr[2] "%u Б/с"
