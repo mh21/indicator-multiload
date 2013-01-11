@@ -9,16 +9,16 @@ msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-26 22:58+0100\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
-"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
+"PO-Revision-Date: 2013-01-10 23:34+0000\n"
+"Last-Translator: Kamil Warguła <Unknown>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2012-01-27 05:54+0000\n"
-"X-Generator: Launchpad (build 14727)\n"
+"X-Launchpad-Export-Date: 2013-01-11 04:51+0000\n"
+"X-Generator: Launchpad (build 16412)\n"
 "X-Poedit-Country: Poland\n"
 "Language: pl\n"
 "X-Poedit-Language: Polish\n"
@@ -45,7 +45,7 @@ msgstr "W_olna"
 
 #: ../data/preferences.ui.in.h:5
 msgid "Harddisk"
-msgstr "Dysk twardy"
+msgstr "Dysk twardy."
 
 #: ../data/preferences.ui.in.h:6
 msgid "I_OWait"
@@ -53,7 +53,7 @@ msgstr "I_OWait"
 
 #: ../data/preferences.ui.in.h:7
 msgid "I_dle"
-msgstr "_Wolna"
+msgstr "Bezczynny"
 
 #: ../data/preferences.ui.in.h:8
 msgid "Load"
@@ -65,7 +65,7 @@ msgstr "Pamięć"
 
 #: ../data/preferences.ui.in.h:10
 msgid "Menu items..."
-msgstr ""
+msgstr "Elementy menu"
 
 #: ../data/preferences.ui.in.h:11
 msgid "Monitored Resources"
@@ -81,7 +81,7 @@ msgstr "Sieć"
 
 #: ../data/preferences.ui.in.h:14
 msgid "Options"
-msgstr "Opcje"
+msgstr "Ustawienia"
 
 #: ../data/preferences.ui.in.h:15
 msgid "Processor"
@@ -89,7 +89,7 @@ msgstr "Procesor"
 
 #: ../data/preferences.ui.in.h:16
 msgid "S_wap Space"
-msgstr "Obsza_r wymiany"
+msgstr "Obszar wymiany"
 
 #: ../data/preferences.ui.in.h:17
 msgid "S_ystem"
@@ -101,7 +101,7 @@ msgstr "_Dzielona"
 
 #: ../data/preferences.ui.in.h:19
 msgid "Swap Space"
-msgstr "Obszar wymiany"
+msgstr "Przestrzeń wymiany"
 
 #: ../data/preferences.ui.in.h:20
 msgid "Sys_tem monitor update interval: "
@@ -121,11 +121,11 @@ msgstr "_Automatyczne uruchamianie: "
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Average"
-msgstr "Średn_ia"
+msgstr "_Średnia"
 
 #: ../data/preferences.ui.in.h:25
 msgid "_Background"
-msgstr "_Tło"
+msgstr "Tło"
 
 #: ../data/preferences.ui.in.h:26
 msgid "_Buffers"
@@ -133,7 +133,7 @@ msgstr "_Bufory"
 
 #: ../data/preferences.ui.in.h:27
 msgid "_Free"
-msgstr "Wol_ny"
+msgstr "Wolny"
 
 #: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
@@ -145,7 +145,7 @@ msgstr "_Wchodzący"
 
 #: ../data/preferences.ui.in.h:30
 msgid "_Load"
-msgstr "O_bciążenie"
+msgstr "_Obciążenie"
 
 #: ../data/preferences.ui.in.h:31
 msgid "_Local"
@@ -153,7 +153,7 @@ msgstr "_Lokalny"
 
 #: ../data/preferences.ui.in.h:32
 msgid "_Memory"
-msgstr "P_amięć"
+msgstr "Pamięć"
 
 #: ../data/preferences.ui.in.h:33
 msgid "_Network"
@@ -165,7 +165,7 @@ msgstr "_Otwórz monitor systemu"
 
 #: ../data/preferences.ui.in.h:35
 msgid "_Out"
-msgstr "Wy_chodzący"
+msgstr "_Wychodzący"
 
 #: ../data/preferences.ui.in.h:36
 msgid "_Preferences"
@@ -177,7 +177,7 @@ msgstr "_Procesor"
 
 #: ../data/preferences.ui.in.h:38
 msgid "_Quit"
-msgstr "Za_kończ"
+msgstr "_Zakończ"
 
 #: ../data/preferences.ui.in.h:39
 msgid "_Read"
@@ -205,7 +205,13 @@ msgstr "pikseli"
 
 #: ../data/preferences.ui.in.h:45
 msgid "translator-credits"
-msgstr "Aviary.pl <gnomepl@aviary.pl>, 2008, 2009, 2010"
+msgstr ""
+"Aviary.pl <gnomepl@aviary.pl>, 2008, 2009, 2010\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Kamil Warguła https://launchpad.net/~quamilek\n"
+"  Piotr Drąg https://launchpad.net/~raven46\n"
+"  Stanisław Gackowski https://launchpad.net/~soeb"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
 msgid "Applet refresh rate in milliseconds"
@@ -217,27 +223,27 @@ msgstr "Automatycznie uruchomienie podczas rozpoczęcia sesji"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
 msgid "Available graphs"
-msgstr ""
+msgstr "Dostępne wykresy"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
 msgid "Available traces"
-msgstr ""
+msgstr "Dostępne ślady"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
 msgid "Graph alpha value"
-msgstr ""
+msgstr "Wykres wartości alfa"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
 msgid "Graph background color"
-msgstr ""
+msgstr "Kolor tła wykresu"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
 msgid "Graph visibility"
-msgstr ""
+msgstr "Widoczność wykresu"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
 msgid "Height of the graphs in pixels."
-msgstr ""
+msgstr "Wysokość wykresu w pikselach"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
 msgid "Index of the current information shown in the indicator itself"
@@ -245,7 +251,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
 msgid "Information shown as menu entries"
-msgstr ""
+msgstr "Informacje wyświetlane jako elementy menu"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
 msgid "Information shown in the indicator itself"
@@ -254,14 +260,18 @@ msgstr ""
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
 msgid "Maximum value for upper graph edge, zero means unlimited"
 msgstr ""
+"Maksymalna wartość dla górnej krawędzi wykresu, 0 oznacza nieograniczoną "
+"wartość"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
 msgid "Minimum value for upper graph edge"
 msgstr ""
+"Minimalna wartość dla górnej krawędzi wykresu, 0 oznacza nieograniczoną "
+"wartość"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
 msgid "Number of values used for smooth graph scaling"
-msgstr ""
+msgstr "Liczba wartości używana do płynnego skalowania"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
 msgid "The desktop description file to execute as the system monitor"
@@ -285,7 +295,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
 msgid "Width of the graphs in pixels."
-msgstr ""
+msgstr "Szerokość wykresu w pikselach"
 
 #: ../data/indicator-multiload.desktop.in.h:2
 msgid "System Load Indicator"
@@ -298,15 +308,15 @@ msgstr ""
 
 #: ../src/main.vala:37
 msgid "Evaluate an expression"
-msgstr ""
+msgstr "Oblicz wyrażenie"
 
 #: ../src/main.vala:39
 msgid "List available expression identifiers"
-msgstr ""
+msgstr "Lista dostępnych wyrażeń"
 
 #: ../src/main.vala:41
 msgid "Show debug messages"
-msgstr ""
+msgstr "Wyświetlaj komunikaty debugujące"
 
 #: ../src/main.vala:311
 msgid "- System load application indicator"
@@ -316,49 +326,48 @@ msgstr ""
 #, c-format
 msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"
-msgstr ""
+msgstr "Uruchom \"%s --help\" aby wyświetlić pełną listę dostępnych opcji.\n"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:57
 msgid "{} kB"
-msgstr ""
+msgstr "{} kB"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:59
 msgid "{} MB"
-msgstr ""
+msgstr "{} MB"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:61
 msgid "{} GB"
-msgstr ""
+msgstr "{} GB"
 
 #: ../src/utils.vala:69
 #, c-format
 msgid "%u B"
 msgid_plural "%u B"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u B"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:82
 msgid "{} kB/s"
-msgstr ""
+msgstr "{} kB/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:84
 msgid "{} MB/s"
-msgstr ""
+msgstr "{} MB/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:86
 msgid "{} GB/s"
-msgstr ""
+msgstr "{} GB/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:88
 msgid "{} TB/s"
-msgstr ""
+msgstr "{} TB/s"
 
 #: ../src/utils.vala:96
 #, c-format
