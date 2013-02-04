@@ -294,6 +294,8 @@ public class Main : Application {
         this.hold();
 
         Gdk.notify_startup_complete();
+
+        base.startup();
     }
 
     public override int command_line(GLib.ApplicationCommandLine command_line) {
