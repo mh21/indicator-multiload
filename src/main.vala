@@ -18,7 +18,7 @@
 
 public class Main : Application {
     private static string datadirectory;
-    [CCode (array_null_terminated = true)]
+    [CCode (array_length=false, array_null_terminated = true)]
     private static string[] expressionoptions;
     private static bool identifiersoption = false;
 
