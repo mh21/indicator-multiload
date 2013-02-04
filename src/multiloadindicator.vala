@@ -173,7 +173,8 @@ public class MultiLoadIndicator : Object {
     }
 
     private void updategraphsview() {
-        this.indicator.set_icon(this.iconwrite());
+        this.iconwrite();
+        var found = false;
         // fix icon size if using the fallback GtkStatusIcon
         foreach (var toplevel in Gtk.Window.list_toplevels()) {
             if (toplevel.get_type().name() != "GtkTrayIcon" || !(toplevel is Gtk.Container))
@@ -181,8 +182,13 @@ public class MultiLoadIndicator : Object {
             ((Gtk.Container) toplevel).foreach((w) => {
                 if (!(w is Gtk.Image))
                     return;
+                ((Gtk.Image) w).set_from_file(this.iconpath(this.currenticonindex));
                 ((Gtk.Image) w).pixel_size = (int) uint.max(this.lasticonwidth, this.height);
+                found = true;
             });
+        }
+        if (!found) {
+            this.indicator.set_icon(this.iconname(this.currenticonindex));
         }
     }
 
@@ -201,16 +207,16 @@ public class MultiLoadIndicator : Object {
         surface.write_to_png(this.iconpath(1));
     }
 
-    private string iconwrite() {
+    private void iconwrite() {
         this.lasticonwidth = 0;
         if (this.graphmodels == null)
-            return "";
+            return;
         uint count = 0;
         foreach (var graphmodel in this.graphmodels.graphmodels)
             if (graphmodel.enabled)
                 ++count;
         if (count == 0)
-            return "";
+            return;
 
         this.lasticonwidth = (int) (count * (this._width + 2)) - 2;
         var surface = new Cairo.ImageSurface(Cairo.Format.ARGB32,
@@ -249,6 +255,5 @@ public class MultiLoadIndicator : Object {
         }
         this.currenticonindex = 1 - this.currenticonindex;
         surface.write_to_png(this.iconpath(this.currenticonindex));
-        return this.iconname(this.currenticonindex);
     }
 }
