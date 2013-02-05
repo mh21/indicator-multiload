@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-applets-master-po-gl-18973\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-26 22:58+0100\n"
+"POT-Creation-Date: 2013-02-04 21:49+0000\n"
 "PO-Revision-Date: 2012-01-26 22:20+0000\n"
 "Last-Translator: Fran Diéguez <frandieguez@ubuntu.com>\n"
 "Language-Team: Galician <gnome-gl-list@gnome.org>\n"
@@ -28,11 +28,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2012-01-27 05:54+0000\n"
-"X-Generator: Launchpad (build 14727)\n"
+"X-Launchpad-Export-Date: 2013-02-05 04:55+0000\n"
+"X-Generator: Launchpad (build 16468)\n"
 "Language: gl\n"
 
-#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
+#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
@@ -41,179 +41,6 @@ msgstr ""
 "CPU, da RAM e do espazo de swap, ademais do tráfico da rede."
 
 #: ../data/preferences.ui.in.h:2
-msgid "Cach_ed"
-msgstr "Na cac_hé"
-
-#: ../data/preferences.ui.in.h:3
-msgid "Colors"
-msgstr "Cores"
-
-#: ../data/preferences.ui.in.h:4
-msgid "F_ree"
-msgstr "Lib_re"
-
-# (pofilter) accelerators: accelerator _ does not occur in original and should not be in translation
-#: ../data/preferences.ui.in.h:5
-msgid "Harddisk"
-msgstr "Disco"
-
-#: ../data/preferences.ui.in.h:6
-msgid "I_OWait"
-msgstr "Espera _E/S"
-
-#: ../data/preferences.ui.in.h:7
-msgid "I_dle"
-msgstr "Ina_ctivo"
-
-#: ../data/preferences.ui.in.h:8
-msgid "Load"
-msgstr "Carga"
-
-#: ../data/preferences.ui.in.h:9
-msgid "Memory"
-msgstr "Memoria"
-
-#: ../data/preferences.ui.in.h:10
-msgid "Menu items..."
-msgstr ""
-
-#: ../data/preferences.ui.in.h:11
-msgid "Monitored Resources"
-msgstr "Recursos monitorizados"
-
-#: ../data/preferences.ui.in.h:12
-msgid "N_ice"
-msgstr "N_ice"
-
-#: ../data/preferences.ui.in.h:13
-msgid "Network"
-msgstr "Rede"
-
-#: ../data/preferences.ui.in.h:14
-msgid "Options"
-msgstr "Opcións"
-
-#: ../data/preferences.ui.in.h:15
-msgid "Processor"
-msgstr "Procesador"
-
-#: ../data/preferences.ui.in.h:16
-msgid "S_wap Space"
-msgstr "Espazo de s_wap"
-
-#: ../data/preferences.ui.in.h:17
-msgid "S_ystem"
-msgstr "_Sistema"
-
-#: ../data/preferences.ui.in.h:18
-msgid "Sh_ared"
-msgstr "_Compartida"
-
-#: ../data/preferences.ui.in.h:19
-msgid "Swap Space"
-msgstr "Espazo de swap"
-
-#: ../data/preferences.ui.in.h:20
-msgid "Sys_tem monitor update interval: "
-msgstr "Intervalo de actualización do monitor do sis_tema: "
-
-#: ../data/preferences.ui.in.h:21
-msgid "System m_onitor width: "
-msgstr "Largura do m_onitor do sistema: "
-
-#: ../data/preferences.ui.in.h:22
-msgid "_About"
-msgstr "_Sobre"
-
-#: ../data/preferences.ui.in.h:23
-msgid "_Autostart: "
-msgstr ""
-
-#: ../data/preferences.ui.in.h:24
-msgid "_Average"
-msgstr "_Media"
-
-#: ../data/preferences.ui.in.h:25
-msgid "_Background"
-msgstr "_Fondo"
-
-#: ../data/preferences.ui.in.h:26
-msgid "_Buffers"
-msgstr "_Búfers"
-
-#: ../data/preferences.ui.in.h:27
-msgid "_Free"
-msgstr "_Libre"
-
-#: ../data/preferences.ui.in.h:28
-msgid "_Harddisk"
-msgstr "_Disco ríxido"
-
-#: ../data/preferences.ui.in.h:29
-msgid "_In"
-msgstr "_Entrada"
-
-#: ../data/preferences.ui.in.h:30
-msgid "_Load"
-msgstr "_Carga"
-
-#: ../data/preferences.ui.in.h:31
-msgid "_Local"
-msgstr "_Local"
-
-#: ../data/preferences.ui.in.h:32
-msgid "_Memory"
-msgstr "_Memoria"
-
-#: ../data/preferences.ui.in.h:33
-msgid "_Network"
-msgstr "_Rede"
-
-#: ../data/preferences.ui.in.h:34
-msgid "_Open System Monitor"
-msgstr "_Abrir o monitor do sistema"
-
-#: ../data/preferences.ui.in.h:35
-msgid "_Out"
-msgstr "_Saída"
-
-#: ../data/preferences.ui.in.h:36
-msgid "_Preferences"
-msgstr "_Preferencias"
-
-#: ../data/preferences.ui.in.h:37
-msgid "_Processor"
-msgstr "_Procesador"
-
-#: ../data/preferences.ui.in.h:38
-msgid "_Quit"
-msgstr ""
-
-#: ../data/preferences.ui.in.h:39
-msgid "_Read"
-msgstr "_Lectura"
-
-#: ../data/preferences.ui.in.h:40
-msgid "_Used"
-msgstr "_Usado"
-
-#: ../data/preferences.ui.in.h:41
-msgid "_User"
-msgstr "_Usuario"
-
-#: ../data/preferences.ui.in.h:42
-msgid "_Write"
-msgstr "_Escritura"
-
-#: ../data/preferences.ui.in.h:43
-msgid "milliseconds"
-msgstr "milisegundos"
-
-#: ../data/preferences.ui.in.h:44
-msgid "pixels"
-msgstr "píxeles"
-
-#: ../data/preferences.ui.in.h:45
 msgid "translator-credits"
 msgstr ""
 "Fran Diéguez <frandieguez@ubuntu.com>, 2009-2010.\n"
@@ -222,54 +49,232 @@ msgstr ""
 "<g11n@mancomun.org>, 2009.\n"
 "Suso Baleato <suso.baleato@xunta.es>, 2009.\n"
 "Ignacio Casal Quinteiro <icq@gnome.org>, 2005-2008.\n"
-"Jesús Bravo Álvarez <suso@trasno.net>, 1999-2002."
+"Jesús Bravo Álvarez <suso@trasno.net>, 1999-2002.\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Fran Diéguez https://launchpad.net/~frandieguez"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
-msgid "Applet refresh rate in milliseconds"
-msgstr "Taxa de actualización do miniaplicativo en milisegundos"
+#: ../data/preferences.ui.in.h:3
+msgid "_Open System Monitor"
+msgstr "_Abrir o monitor do sistema"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
-msgid "Automatically start on session startup"
+#: ../data/preferences.ui.in.h:4
+msgid "_Preferences"
+msgstr "_Preferencias"
+
+#: ../data/preferences.ui.in.h:5
+msgid "_About"
+msgstr "_Sobre"
+
+#: ../data/preferences.ui.in.h:6
+msgid "_Quit"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+#: ../data/preferences.ui.in.h:7
+msgid "Monitored Resources"
+msgstr "Recursos monitorizados"
+
+#: ../data/preferences.ui.in.h:8
+msgid "_Processor"
+msgstr "_Procesador"
+
+#: ../data/preferences.ui.in.h:9
+msgid "_Memory"
+msgstr "_Memoria"
+
+#: ../data/preferences.ui.in.h:10
+msgid "_Network"
+msgstr "_Rede"
+
+#: ../data/preferences.ui.in.h:11
+msgid "S_wap Space"
+msgstr "Espazo de s_wap"
+
+#: ../data/preferences.ui.in.h:12
+msgid "_Load"
+msgstr "_Carga"
+
+#: ../data/preferences.ui.in.h:13
+msgid "_Harddisk"
+msgstr "_Disco ríxido"
+
+#: ../data/preferences.ui.in.h:14
+msgid "Options"
+msgstr "Opcións"
+
+#: ../data/preferences.ui.in.h:15
+msgid "System m_onitor width: "
+msgstr "Largura do m_onitor do sistema: "
+
+#: ../data/preferences.ui.in.h:16
+msgid "Sys_tem monitor update interval: "
+msgstr "Intervalo de actualización do monitor do sis_tema: "
+
+#: ../data/preferences.ui.in.h:17
+msgid "pixels"
+msgstr "píxeles"
+
+#: ../data/preferences.ui.in.h:18
+msgid "milliseconds"
+msgstr "milisegundos"
+
+#: ../data/preferences.ui.in.h:19
+msgid "_Autostart: "
+msgstr ""
+
+#: ../data/preferences.ui.in.h:20
+msgid "Colors"
+msgstr "Cores"
+
+#: ../data/preferences.ui.in.h:21
+msgid "_User"
+msgstr "_Usuario"
+
+#: ../data/preferences.ui.in.h:22
+msgid "S_ystem"
+msgstr "_Sistema"
+
+#: ../data/preferences.ui.in.h:23
+msgid "N_ice"
+msgstr "N_ice"
+
+#: ../data/preferences.ui.in.h:24
+msgid "I_OWait"
+msgstr "Espera _E/S"
+
+#: ../data/preferences.ui.in.h:25
+msgid "I_dle"
+msgstr "Ina_ctivo"
+
+#: ../data/preferences.ui.in.h:26
+msgid "Processor"
+msgstr "Procesador"
+
+#: ../data/preferences.ui.in.h:27
+msgid "Sh_ared"
+msgstr "_Compartida"
+
+#: ../data/preferences.ui.in.h:28
+msgid "_Buffers"
+msgstr "_Búfers"
+
+#: ../data/preferences.ui.in.h:29
+msgid "Cach_ed"
+msgstr "Na cac_hé"
+
+#: ../data/preferences.ui.in.h:30
+msgid "F_ree"
+msgstr "Lib_re"
+
+#: ../data/preferences.ui.in.h:31
+msgid "Memory"
+msgstr "Memoria"
+
+#: ../data/preferences.ui.in.h:32
+msgid "_In"
+msgstr "_Entrada"
+
+#: ../data/preferences.ui.in.h:33
+msgid "_Out"
+msgstr "_Saída"
+
+#: ../data/preferences.ui.in.h:34
+msgid "_Local"
+msgstr "_Local"
+
+#: ../data/preferences.ui.in.h:35
+msgid "_Background"
+msgstr "_Fondo"
+
+#: ../data/preferences.ui.in.h:36
+msgid "Network"
+msgstr "Rede"
+
+#: ../data/preferences.ui.in.h:37
+msgid "_Used"
+msgstr "_Usado"
+
+#: ../data/preferences.ui.in.h:38
+msgid "_Free"
+msgstr "_Libre"
+
+#: ../data/preferences.ui.in.h:39
+msgid "Swap Space"
+msgstr "Espazo de swap"
+
+#: ../data/preferences.ui.in.h:40
+msgid "_Average"
+msgstr "_Media"
+
+#: ../data/preferences.ui.in.h:41
+msgid "Load"
+msgstr "Carga"
+
+#: ../data/preferences.ui.in.h:42
+msgid "_Read"
+msgstr "_Lectura"
+
+#: ../data/preferences.ui.in.h:43
+msgid "_Write"
+msgstr "_Escritura"
+
+# (pofilter) accelerators: accelerator _ does not occur in original and should not be in translation
+#: ../data/preferences.ui.in.h:44
+msgid "Harddisk"
+msgstr "Disco"
+
+#: ../data/preferences.ui.in.h:45
+msgid "Menu items..."
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
 msgid "Available graphs"
 msgstr ""
 
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+msgid "Applet refresh rate in milliseconds"
+msgstr "Taxa de actualización do miniaplicativo en milisegundos"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+msgid "Width of the graphs in pixels."
+msgstr ""
+
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
-msgid "Available traces"
-msgstr ""
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
-msgid "Graph alpha value"
-msgstr ""
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
-msgid "Graph background color"
-msgstr ""
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
-msgid "Graph visibility"
-msgstr ""
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
 msgid "Height of the graphs in pixels."
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
-msgid "Index of the current information shown in the indicator itself"
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
+msgid "The desktop description file to execute as the system monitor"
+msgstr ""
+"O ficheiro de descrición do escritorio para executar como o monitor do "
+"sistema"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
+msgid "Automatically start on session startup"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
-msgid "Information shown as menu entries"
-msgstr ""
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
 msgid "Information shown in the indicator itself"
 msgstr ""
 
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+msgid "Index of the current information shown in the indicator itself"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+msgid "Information shown as menu entries"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+msgid "Graph alpha value"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+msgid "Graph background color"
+msgstr ""
+
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
-msgid "Maximum value for upper graph edge, zero means unlimited"
+msgid "Graph visibility"
 msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
@@ -277,36 +282,34 @@ msgid "Minimum value for upper graph edge"
 msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
-msgid "Number of values used for smooth graph scaling"
+msgid "Maximum value for upper graph edge, zero means unlimited"
 msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
-msgid "The desktop description file to execute as the system monitor"
+msgid "Number of values used for smooth graph scaling"
 msgstr ""
-"O ficheiro de descrición do escritorio para executar como o monitor do "
-"sistema"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
-msgid "Trace color"
+msgid "Available traces"
 msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
-msgid "Trace expression"
+msgid "Trace color"
 msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
-msgid "Trace visibility"
+msgid "Trace expression"
 msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
-msgid "Traces shown"
+msgid "Trace visibility"
 msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
-msgid "Width of the graphs in pixels."
+msgid "Traces shown"
 msgstr ""
 
-#: ../data/indicator-multiload.desktop.in.h:2
+#: ../data/indicator-multiload.desktop.in.h:1
 msgid "System Load Indicator"
 msgstr ""
 
@@ -327,11 +330,11 @@ msgstr ""
 msgid "Show debug messages"
 msgstr ""
 
-#: ../src/main.vala:311
+#: ../src/main.vala:313
 msgid "- System load application indicator"
 msgstr ""
 
-#: ../src/main.vala:319
+#: ../src/main.vala:321
 #, c-format
 msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"

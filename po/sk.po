@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-applets HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-26 22:58+0100\n"
+"POT-Creation-Date: 2013-02-04 21:49+0000\n"
 "PO-Revision-Date: 2012-07-10 09:09+0000\n"
 "Last-Translator: Fpfilko <Unknown>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
@@ -16,13 +16,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
-"X-Launchpad-Export-Date: 2012-07-11 05:30+0000\n"
-"X-Generator: Launchpad (build 15593)\n"
+"X-Launchpad-Export-Date: 2013-02-05 04:55+0000\n"
+"X-Generator: Launchpad (build 16468)\n"
 "X-Poedit-Country: SLOVAKIA\n"
 "Language: sk\n"
 "X-Poedit-Language: Slovak\n"
 
-#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
+#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
@@ -31,178 +31,6 @@ msgstr ""
 "odkladací súbor a sieťový prenos."
 
 #: ../data/preferences.ui.in.h:2
-msgid "Cach_ed"
-msgstr "_Vo vyrovnávacej pamäti"
-
-#: ../data/preferences.ui.in.h:3
-msgid "Colors"
-msgstr "Farby"
-
-#: ../data/preferences.ui.in.h:4
-msgid "F_ree"
-msgstr "V_oľná"
-
-#: ../data/preferences.ui.in.h:5
-msgid "Harddisk"
-msgstr "Pevný disk"
-
-#: ../data/preferences.ui.in.h:6
-msgid "I_OWait"
-msgstr "Čakanie na I_O"
-
-#: ../data/preferences.ui.in.h:7
-msgid "I_dle"
-msgstr "N_ečinný"
-
-#: ../data/preferences.ui.in.h:8
-msgid "Load"
-msgstr "Zaťaženie"
-
-#: ../data/preferences.ui.in.h:9
-msgid "Memory"
-msgstr "Pamäť"
-
-#: ../data/preferences.ui.in.h:10
-msgid "Menu items..."
-msgstr "Položky menu..."
-
-#: ../data/preferences.ui.in.h:11
-msgid "Monitored Resources"
-msgstr "Sledované zdroje"
-
-#: ../data/preferences.ui.in.h:12
-msgid "N_ice"
-msgstr "_Nice"
-
-#: ../data/preferences.ui.in.h:13
-msgid "Network"
-msgstr "Sieť"
-
-#: ../data/preferences.ui.in.h:14
-msgid "Options"
-msgstr "Možnosti"
-
-#: ../data/preferences.ui.in.h:15
-msgid "Processor"
-msgstr "Procesor"
-
-#: ../data/preferences.ui.in.h:16
-msgid "S_wap Space"
-msgstr "_Odkladací súbor"
-
-#: ../data/preferences.ui.in.h:17
-msgid "S_ystem"
-msgstr "_Systém"
-
-#: ../data/preferences.ui.in.h:18
-msgid "Sh_ared"
-msgstr "_Zdieľaná"
-
-#: ../data/preferences.ui.in.h:19
-msgid "Swap Space"
-msgstr "Odkladací súbor"
-
-#: ../data/preferences.ui.in.h:20
-msgid "Sys_tem monitor update interval: "
-msgstr "_Rýchlosť sledovača: "
-
-#: ../data/preferences.ui.in.h:21
-msgid "System m_onitor width: "
-msgstr "Ší_rka sledovača: "
-
-#: ../data/preferences.ui.in.h:22
-msgid "_About"
-msgstr "_O programe"
-
-#: ../data/preferences.ui.in.h:23
-msgid "_Autostart: "
-msgstr "_Autoštart: "
-
-#: ../data/preferences.ui.in.h:24
-msgid "_Average"
-msgstr "_Priemer"
-
-#: ../data/preferences.ui.in.h:25
-msgid "_Background"
-msgstr "Po_zadie"
-
-#: ../data/preferences.ui.in.h:26
-msgid "_Buffers"
-msgstr "_Buffery"
-
-#: ../data/preferences.ui.in.h:27
-msgid "_Free"
-msgstr "_Voľná"
-
-#: ../data/preferences.ui.in.h:28
-msgid "_Harddisk"
-msgstr "_Pevný disk"
-
-#: ../data/preferences.ui.in.h:29
-msgid "_In"
-msgstr "_Vstup"
-
-#: ../data/preferences.ui.in.h:30
-msgid "_Load"
-msgstr "_Zaťaženie"
-
-#: ../data/preferences.ui.in.h:31
-msgid "_Local"
-msgstr "_Lokálne"
-
-#: ../data/preferences.ui.in.h:32
-msgid "_Memory"
-msgstr "Pa_mäť"
-
-#: ../data/preferences.ui.in.h:33
-msgid "_Network"
-msgstr "_Sieť"
-
-#: ../data/preferences.ui.in.h:34
-msgid "_Open System Monitor"
-msgstr "_Otvoriť sledovanie systému"
-
-#: ../data/preferences.ui.in.h:35
-msgid "_Out"
-msgstr "Vý_stup"
-
-#: ../data/preferences.ui.in.h:36
-msgid "_Preferences"
-msgstr "_Predvoľby"
-
-#: ../data/preferences.ui.in.h:37
-msgid "_Processor"
-msgstr "_Procesor"
-
-#: ../data/preferences.ui.in.h:38
-msgid "_Quit"
-msgstr "U_končiť"
-
-#: ../data/preferences.ui.in.h:39
-msgid "_Read"
-msgstr "Čí_tanie"
-
-#: ../data/preferences.ui.in.h:40
-msgid "_Used"
-msgstr "_Použitá"
-
-#: ../data/preferences.ui.in.h:41
-msgid "_User"
-msgstr "Po_užívateľ"
-
-#: ../data/preferences.ui.in.h:42
-msgid "_Write"
-msgstr "_Zápis"
-
-#: ../data/preferences.ui.in.h:43
-msgid "milliseconds"
-msgstr "millisekúnd"
-
-#: ../data/preferences.ui.in.h:44
-msgid "pixels"
-msgstr "bodov"
-
-#: ../data/preferences.ui.in.h:45
 msgid "translator-credits"
 msgstr ""
 "Stanislav Višňovský\n"
@@ -213,87 +41,259 @@ msgstr ""
 "  Fpfilko https://launchpad.net/~fpfilko\n"
 "  tuharsky https://launchpad.net/~tuharsky"
 
+#: ../data/preferences.ui.in.h:3
+msgid "_Open System Monitor"
+msgstr "_Otvoriť sledovanie systému"
+
+#: ../data/preferences.ui.in.h:4
+msgid "_Preferences"
+msgstr "_Predvoľby"
+
+#: ../data/preferences.ui.in.h:5
+msgid "_About"
+msgstr "_O programe"
+
+#: ../data/preferences.ui.in.h:6
+msgid "_Quit"
+msgstr "U_končiť"
+
+#: ../data/preferences.ui.in.h:7
+msgid "Monitored Resources"
+msgstr "Sledované zdroje"
+
+#: ../data/preferences.ui.in.h:8
+msgid "_Processor"
+msgstr "_Procesor"
+
+#: ../data/preferences.ui.in.h:9
+msgid "_Memory"
+msgstr "Pa_mäť"
+
+#: ../data/preferences.ui.in.h:10
+msgid "_Network"
+msgstr "_Sieť"
+
+#: ../data/preferences.ui.in.h:11
+msgid "S_wap Space"
+msgstr "_Odkladací súbor"
+
+#: ../data/preferences.ui.in.h:12
+msgid "_Load"
+msgstr "_Zaťaženie"
+
+#: ../data/preferences.ui.in.h:13
+msgid "_Harddisk"
+msgstr "_Pevný disk"
+
+#: ../data/preferences.ui.in.h:14
+msgid "Options"
+msgstr "Možnosti"
+
+#: ../data/preferences.ui.in.h:15
+msgid "System m_onitor width: "
+msgstr "Ší_rka sledovača: "
+
+#: ../data/preferences.ui.in.h:16
+msgid "Sys_tem monitor update interval: "
+msgstr "_Rýchlosť sledovača: "
+
+#: ../data/preferences.ui.in.h:17
+msgid "pixels"
+msgstr "bodov"
+
+#: ../data/preferences.ui.in.h:18
+msgid "milliseconds"
+msgstr "millisekúnd"
+
+#: ../data/preferences.ui.in.h:19
+msgid "_Autostart: "
+msgstr "_Autoštart: "
+
+#: ../data/preferences.ui.in.h:20
+msgid "Colors"
+msgstr "Farby"
+
+#: ../data/preferences.ui.in.h:21
+msgid "_User"
+msgstr "Po_užívateľ"
+
+#: ../data/preferences.ui.in.h:22
+msgid "S_ystem"
+msgstr "_Systém"
+
+#: ../data/preferences.ui.in.h:23
+msgid "N_ice"
+msgstr "_Nice"
+
+#: ../data/preferences.ui.in.h:24
+msgid "I_OWait"
+msgstr "Čakanie na I_O"
+
+#: ../data/preferences.ui.in.h:25
+msgid "I_dle"
+msgstr "N_ečinný"
+
+#: ../data/preferences.ui.in.h:26
+msgid "Processor"
+msgstr "Procesor"
+
+#: ../data/preferences.ui.in.h:27
+msgid "Sh_ared"
+msgstr "_Zdieľaná"
+
+#: ../data/preferences.ui.in.h:28
+msgid "_Buffers"
+msgstr "_Buffery"
+
+#: ../data/preferences.ui.in.h:29
+msgid "Cach_ed"
+msgstr "_Vo vyrovnávacej pamäti"
+
+#: ../data/preferences.ui.in.h:30
+msgid "F_ree"
+msgstr "V_oľná"
+
+#: ../data/preferences.ui.in.h:31
+msgid "Memory"
+msgstr "Pamäť"
+
+#: ../data/preferences.ui.in.h:32
+msgid "_In"
+msgstr "_Vstup"
+
+#: ../data/preferences.ui.in.h:33
+msgid "_Out"
+msgstr "Vý_stup"
+
+#: ../data/preferences.ui.in.h:34
+msgid "_Local"
+msgstr "_Lokálne"
+
+#: ../data/preferences.ui.in.h:35
+msgid "_Background"
+msgstr "Po_zadie"
+
+#: ../data/preferences.ui.in.h:36
+msgid "Network"
+msgstr "Sieť"
+
+#: ../data/preferences.ui.in.h:37
+msgid "_Used"
+msgstr "_Použitá"
+
+#: ../data/preferences.ui.in.h:38
+msgid "_Free"
+msgstr "_Voľná"
+
+#: ../data/preferences.ui.in.h:39
+msgid "Swap Space"
+msgstr "Odkladací súbor"
+
+#: ../data/preferences.ui.in.h:40
+msgid "_Average"
+msgstr "_Priemer"
+
+#: ../data/preferences.ui.in.h:41
+msgid "Load"
+msgstr "Zaťaženie"
+
+#: ../data/preferences.ui.in.h:42
+msgid "_Read"
+msgstr "Čí_tanie"
+
+#: ../data/preferences.ui.in.h:43
+msgid "_Write"
+msgstr "_Zápis"
+
+#: ../data/preferences.ui.in.h:44
+msgid "Harddisk"
+msgstr "Pevný disk"
+
+#: ../data/preferences.ui.in.h:45
+msgid "Menu items..."
+msgstr "Položky menu..."
+
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
-msgid "Applet refresh rate in milliseconds"
-msgstr "Rýchlosť aktualizácie apletu v milisekundách"
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
-msgid "Automatically start on session startup"
-msgstr "Spustiť pri prihlasení"
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
 msgid "Available graphs"
 msgstr "Dostupné grafy"
 
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+msgid "Applet refresh rate in milliseconds"
+msgstr "Rýchlosť aktualizácie apletu v milisekundách"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+msgid "Width of the graphs in pixels."
+msgstr "Šírka grafov v bodoch"
+
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
-msgid "Available traces"
-msgstr "Dostupné sledovače"
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
-msgid "Graph alpha value"
-msgstr "Hodnota alfa kanála grafu"
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
-msgid "Graph background color"
-msgstr "Farba pozadia grafu"
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
-msgid "Graph visibility"
-msgstr "Viditeľnosť grafu"
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
 msgid "Height of the graphs in pixels."
 msgstr "Výška grafu v bodoch"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
-msgid "Index of the current information shown in the indicator itself"
-msgstr "Zoznam aktuálnych informácií zobrazených v ukazovateli"
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
+msgid "The desktop description file to execute as the system monitor"
+msgstr "Opisný súbor na ploche, ktorý sa má vykonať ako systémový monitor"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
-msgid "Information shown as menu entries"
-msgstr "Informácie zobrazené ako položky v menu"
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
+msgid "Automatically start on session startup"
+msgstr "Spustiť pri prihlasení"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
 msgid "Information shown in the indicator itself"
 msgstr "Informácie zobrazené v ukazovateli"
 
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+msgid "Index of the current information shown in the indicator itself"
+msgstr "Zoznam aktuálnych informácií zobrazených v ukazovateli"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+msgid "Information shown as menu entries"
+msgstr "Informácie zobrazené ako položky v menu"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+msgid "Graph alpha value"
+msgstr "Hodnota alfa kanála grafu"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+msgid "Graph background color"
+msgstr "Farba pozadia grafu"
+
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
-msgid "Maximum value for upper graph edge, zero means unlimited"
-msgstr "Maximálna hodnota pre horný okraj grafu, nula znamená neobmedzená"
+msgid "Graph visibility"
+msgstr "Viditeľnosť grafu"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
 msgid "Minimum value for upper graph edge"
 msgstr "Minimálna hodnota pre horný okraj grafu"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+msgid "Maximum value for upper graph edge, zero means unlimited"
+msgstr "Maximálna hodnota pre horný okraj grafu, nula znamená neobmedzená"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
 msgid "Number of values used for smooth graph scaling"
 msgstr "Počet hodnôt použitých na plynulé škálovanie grafu"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
-msgid "The desktop description file to execute as the system monitor"
-msgstr "Opisný súbor na ploche, ktorý sa má vykonať ako systémový monitor"
-
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+msgid "Available traces"
+msgstr "Dostupné sledovače"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
 msgid "Trace color"
 msgstr "Farba sledovača"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
 msgid "Trace expression"
 msgstr "Výraz sledovača"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
 msgid "Trace visibility"
 msgstr "Viditeľnosť sledovača"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
 msgid "Traces shown"
 msgstr "Sledovače zobrazené"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
-msgid "Width of the graphs in pixels."
-msgstr "Šírka grafov v bodoch"
-
-#: ../data/indicator-multiload.desktop.in.h:2
+#: ../data/indicator-multiload.desktop.in.h:1
 msgid "System Load Indicator"
 msgstr "Ukazovateľ zaťaženia systému"
 
@@ -314,11 +314,11 @@ msgstr "Zoznam dostupných mien výrazov"
 msgid "Show debug messages"
 msgstr "Zobraziť ladiace správy"
 
-#: ../src/main.vala:311
+#: ../src/main.vala:313
 msgid "- System load application indicator"
 msgstr "- Ukazovateľ zaťaženia aplikácií systému"
 
-#: ../src/main.vala:319
+#: ../src/main.vala:321
 #, c-format
 msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"
