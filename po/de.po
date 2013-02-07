@@ -17,15 +17,15 @@ msgstr ""
 "Project-Id-Version: gnome-applets master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-02-04 21:49+0000\n"
-"PO-Revision-Date: 2012-10-18 15:00+0000\n"
-"Last-Translator: Dennis Baudys <Unknown>\n"
+"PO-Revision-Date: 2013-02-06 09:36+0000\n"
+"Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-05 04:55+0000\n"
-"X-Generator: Launchpad (build 16468)\n"
+"X-Launchpad-Export-Date: 2013-02-07 05:15+0000\n"
+"X-Generator: Launchpad (build 16477)\n"
 "Language: \n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
@@ -64,7 +64,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:3
 msgid "_Open System Monitor"
-msgstr "Systemüberwachung ö_ffnen"
+msgstr "Systemmonitor ö_ffnen"
 
 #: ../data/preferences.ui.in.h:4
 msgid "_Preferences"
