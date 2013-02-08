@@ -380,6 +380,8 @@ public class Main : Application {
         Gtk.init(ref args);
         Gtk.Window.set_default_icon_name("utilities-system-monitor");
 
+        var reaper = new Reaper(args);
+
         var result = new Main("de.mh21.indicator.multiload",
                 ApplicationFlags.FLAGS_NONE).run(args);
 

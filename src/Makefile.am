@@ -4,7 +4,7 @@ AM_CPPFLAGS = \
 	$(MULTILOADDEPS_CFLAGS) \
 	-include $(CONFIG_HEADER)
 
-AM_CFLAGS = -Wall -g
+AM_CFLAGS = -Wall -g -Wno-unused-but-set-variable -Wno-unused-variable -Wno-unused-function
 
 VALAFLAGS =  \
 	--pkg=gtk+-3.0 \
@@ -34,6 +34,7 @@ indicator_multiload_VALASOURCES = \
 	preferences.vala \
 	providers.vala \
 	provider.vala \
+	reaper.vala \
 	settingscache.vala \
 	settingsconversion.vala \
 	swapprovider.vala \
