@@ -7,6 +7,7 @@ AM_CPPFLAGS = \
 AM_CFLAGS = -Wall -g -Wno-unused-but-set-variable -Wno-unused-variable -Wno-unused-function
 
 VALAFLAGS =  \
+	--pkg=posix \
 	--pkg=gtk+-3.0 \
 	--pkg=cairo \
 	--pkg=appindicator3-0.1 \

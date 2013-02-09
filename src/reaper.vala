@@ -31,8 +31,9 @@ public class Reaper : Object {
                 string status;
                 FileUtils.get_contents("/proc/self/statm", out status);
                 var pages = long.parse(status.split(" ")[1]);
+                var pagesize = Posix.sysconf(Posix._SC_PAGESIZE);
                 // restart on RSS > 50 MB to contain memory leaks
-                if (sysconf(PAGESIZE) * pages > 50 * 1000 * 1000) {
+                if (pagesize * pages > 50 * 1000 * 1000) {
                     execvp(args[0], args);
                 }
             } catch (Error e) {
