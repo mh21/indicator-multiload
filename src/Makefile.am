@@ -7,6 +7,7 @@ AM_CPPFLAGS = \
 AM_CFLAGS = -Wall -g
 
 VALAFLAGS =  \
+	--pkg=posix \
 	--pkg=gtk+-3.0 \
 	--pkg=cairo \
 	--pkg=appindicator3-0.1 \
@@ -34,6 +35,7 @@ indicator_multiload_VALASOURCES = \
 	preferences.vala \
 	providers.vala \
 	provider.vala \
+	reaper.vala \
 	settingscache.vala \
 	settingsconversion.vala \
 	swapprovider.vala \
