@@ -270,6 +270,9 @@ public class Main : Application {
         datasettings.bind("indicator-expressions",
                 this.multi.labelmodel, "expressions",
                 SettingsBindFlags.DEFAULT);
+        datasettings.bind("description-expressions",
+                this.multi.descriptionmodel, "expressions",
+                SettingsBindFlags.DEFAULT);
         datasettings.bind("indicator-expression-index",
                 this.multi, "indicator-index",
                 SettingsBindFlags.DEFAULT);
