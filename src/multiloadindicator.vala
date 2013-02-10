@@ -28,6 +28,7 @@ public class MultiLoadIndicator : Object {
     public Providers providers {get; construct; }
     public MenuModel menumodel { get; construct; }
     public MenuModel labelmodel { get; construct; }
+    public MenuModel descriptionmodel { get; construct; }
     public int indicator_index { get; set; }
     public uint height { get; set; }
     public uint width { get; set; }
@@ -36,8 +37,11 @@ public class MultiLoadIndicator : Object {
     public GraphModels graphmodels { get; set; }
 
     public MultiLoadIndicator(string icondirectory, Providers providers) {
-        Object(icondirectory: icondirectory, providers: providers,
-                menumodel: new MenuModel(providers), labelmodel: new MenuModel(providers));
+        Object(icondirectory: icondirectory,
+                providers: providers,
+                menumodel: new MenuModel(providers),
+                labelmodel: new MenuModel(providers),
+                descriptionmodel: new MenuModel(providers));
     }
 
     // Needs to be called before destruction to break the reference cycle from the timeout source
@@ -109,14 +113,15 @@ public class MultiLoadIndicator : Object {
     }
 
     private void updatemodels() {
-        this.labelmodel.update();
         this.menumodel.update();
+        this.labelmodel.update();
+        this.descriptionmodel.update();
         this.graphmodels.update(this.width);
     }
 
     private void updateviews() {
-        this.updatelabelview();
         this.updatemenuview();
+        this.updatelabelview();
         this.updategraphsview();
 
         // ready if a menu is available
@@ -135,6 +140,7 @@ public class MultiLoadIndicator : Object {
         if (this.menu == null)
             return;
 
+        // start after system monitor and separator
         uint menu_position = 2;
         var length = this.menumodel.expressions.length;
         for (uint j = 0; j < length; ++j) {
@@ -190,7 +196,8 @@ public class MultiLoadIndicator : Object {
             });
         }
         if (!found) {
-            this.indicator.set_icon(this.iconname(this.currenticonindex));
+            this.indicator.set_icon_full(this.iconname(this.currenticonindex),
+                this.descriptionmodel.expression(0).label());
         }
     }
 

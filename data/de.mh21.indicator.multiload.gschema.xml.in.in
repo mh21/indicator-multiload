@@ -54,6 +54,13 @@
             <_summary>Automatically start on session startup</_summary>
         </key>
 
+        <key name="description-expressions" type="as">
+            <default>[
+                "CPU $(percent(cpu.inuse)) Mem $(size(mem.user)) Net down $(speed(net.down)) up $(speed(net.up)) Swap $(size(swap.used)) Load $(decimals(load.avg,2)) Disk read $(speed(disk.read)) write $(speed(disk.write))"
+            ]</default>
+            <_summary>Information in the accessible description of the indicator</_summary>
+        </key>
+
         <key name="indicator-expressions" type="as">
             <default>[
                 "",
