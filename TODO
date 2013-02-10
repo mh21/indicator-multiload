@@ -1,11 +1,10 @@
-0.3:
+0.4:
 - no graphs shown should be possible
 - first icon should be empty icon, not image-not-found
 - system(...) function
-
-0.4:
 - color schemes
 - error messages for expressions not only on stderr
 
-File bug reports:
-- glibtop lvm
+After oneiric is dropped: 
+- dh compat 9
+- debian 3.9.3
