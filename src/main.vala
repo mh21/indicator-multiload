@@ -95,13 +95,11 @@ public class Main : Application {
         var settings = this.settingscache.generalsettings();
         var sysmon = settings.get_string("system-monitor");
         if (sysmon.length == 0) {
-            switch (Environment.get_variable("XDG_CURRENT_DESKTOP")) {
-            case "KDE":
+            if (Environment.get_variable("XDG_CURRENT_DESKTOP") == "KDE" ||
+                Environment.get_variable("DESKTOP_SESSION") == "kde-plasma") {
                 sysmon = "kde4-ksysguard.desktop";
-                break;
-            default:
+            } else {
                 sysmon = "gnome-system-monitor.desktop";
-                break;
             }
         }
         var info = new DesktopAppInfo(sysmon);
