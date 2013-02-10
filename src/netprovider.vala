@@ -21,11 +21,11 @@ public class NetProvider : Provider {
     private uint64 lasttime;
 
     public NetProvider() {
-        base("net", {"down", "up", "local"});
+        base("net", {"down", "up", "pdown", "pup", "local"});
     }
 
     public override void update() {
-        uint64[] newdata = new uint64[3];
+        uint64[] newdata = new uint64[5];
         uint64 newtime = get_monotonic_time();
 
         string[] devices;
@@ -59,8 +59,12 @@ public class NetProvider : Provider {
                 newdata[0] += netload.bytes_in;
                 newdata[1] += netload.bytes_out;
                 debug("  existing device link");
-            } else if ((netload.if_flags & (1L << GTop.IFFlags.LOOPBACK)) > 0) {
+            } else if ((netload.if_flags & (1L << GTop.IFFlags.POINTOPOINT)) > 0) {
                 newdata[2] += netload.bytes_in;
+                newdata[3] += netload.bytes_out;
+                debug("  pointtopoint");
+            } else if ((netload.if_flags & (1L << GTop.IFFlags.LOOPBACK)) > 0) {
+                newdata[4] += netload.bytes_in;
                 debug("  loopback");
             } else {
                 debug("  unknown");

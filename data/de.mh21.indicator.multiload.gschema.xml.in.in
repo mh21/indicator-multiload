@@ -56,7 +56,7 @@
 
         <key name="description-expressions" type="as">
             <default>[
-                "CPU $(percent(cpu.inuse)) Mem $(size(mem.user)) Net down $(speed(net.down)) up $(speed(net.up)) Swap $(size(swap.used)) Load $(decimals(load.avg,2)) Disk read $(speed(disk.read)) write $(speed(disk.write))"
+                "CPU $(percent(cpu.inuse)) Mem $(size(mem.user)) Net down $(speed(net.down+net.pdown)) up $(speed(net.up+net.pup)) Swap $(size(swap.used)) Load $(decimals(load.avg,2)) Disk read $(speed(disk.read)) write $(speed(disk.write))"
             ]</default>
             <_summary>Information in the accessible description of the indicator</_summary>
         </key>
@@ -66,7 +66,7 @@
                 "",
                 "CPU $(percent(cpu.inuse))",
                 "Mem $(size(mem.user))",
-                "Net $(speed(net.down))/$(speed(net.up))",
+                "Net $(speed(net.down+net.pdown))/$(speed(net.up+net.pup))",
                 "Swap $(size(swap.used))",
                 "Load $(decimals(load.avg,2))",
                 "Disk $(speed(disk.read))/$(speed(disk.write))"
@@ -83,7 +83,7 @@
             <default>[
                 "CPU: $(percent(cpu.inuse)), iowait $(percent(cpu.io))",
                 "Mem: $(size(mem.user)), cache $(size(mem.cached))",
-                "Net: down $(speed(net.down)), up $(speed(net.up))",
+                "Net: down $(speed(net.down+net.pdown)), up $(speed(net.up+net.pup))",
                 "Swap: $(size(swap.used))",
                 "Load: $(decimals(load.avg,2))",
                 "Disk: read $(speed(disk.read)), write $(speed(disk.write))"
@@ -547,7 +547,7 @@
         </key>
 
         <key name="expression" type="s">
-            <default>"$(net.down)"</default>
+            <default>"$(net.down+net.pdown)"</default>
             <_summary>Trace expression</_summary>
         </key>
 
@@ -564,7 +564,7 @@
         </key>
 
         <key name="expression" type="s">
-            <default>"$(net.up)"</default>
+            <default>"$(net.up+net.pup)"</default>
             <_summary>Trace expression</_summary>
         </key>
 
