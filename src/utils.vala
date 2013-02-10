@@ -18,18 +18,6 @@
 
 namespace Utils {
     public string uifile;
-    public bool enabledebugmessages;
-
-    public void initdebug() {
-        Log.set_handler(null, LogLevelFlags.LEVEL_DEBUG, debugloghandler);
-    }
-
-
-    private void debugloghandler(string? log_domain,
-            LogLevelFlags log_levels, string message) {
-        if (enabledebugmessages)
-            Log.default_handler(log_domain, log_levels, message);
-    }
 
     public double max(double[] data) {
         if (data.length == 0)

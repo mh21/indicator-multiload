@@ -37,8 +37,6 @@ public class Main : Application {
             ref expressionoptions, N_("Evaluate an expression"), null },
         { "list-identifiers", 'l', 0, OptionArg.NONE,
             ref identifiersoption, N_("List available expression identifiers"), null },
-        { "verbose", 'v', OptionFlags.NO_ARG, OptionArg.CALLBACK,
-            (void*) debug, N_("Show debug messages"), null },
         { null }
     };
 
@@ -239,12 +237,6 @@ public class Main : Application {
                 SettingsBindFlags.DEFAULT);
     }
 
-    [CCode (instance_pos = 3)]
-    private bool debug(string optionname, string? optionvalue) throws Error {
-        Utils.enabledebugmessages = true;
-        return true;
-    }
-
     public override void activate() {
         // all the work is done in startup
     }
@@ -377,8 +369,6 @@ public class Main : Application {
             xdgdatadirs += ":";
         Environment.set_variable("XDG_DATA_DIRS",
                 xdgdatadirs + Main.datadirectory, true);
-
-        Utils.initdebug();
 
         Gtk.init(ref args);
         Gtk.Window.set_default_icon_name("utilities-system-monitor");
