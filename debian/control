@@ -4,7 +4,7 @@ Priority: extra
 Maintainer: Michael Hofmann <mh21@mh21.de>
 Build-Depends: debhelper (>= 7.0.50~), libgtk-3-dev, libcairo2-dev,
  libgtop2-dev, libappindicator3-dev, valac, gnome-common, autopoint, dh-autoreconf
-Standards-Version: 3.9.1
+Standards-Version: 3.9.2
 Homepage: https://launchpad.net/indicator-multiload
 Vcs-Bzr: http://code.launchpad.net/indicator-multiload
 Vcs-Browser: http://code.launchpad.net/indicator-multiload
