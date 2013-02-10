@@ -369,14 +369,8 @@ public class Main : Application {
         Intl.bind_textdomain_codeset(Config.GETTEXT_PACKAGE, "UTF-8");
         Intl.textdomain(Config.GETTEXT_PACKAGE);
 
-        // needs to happen before get_system_data_dirs is called the first time
         var template = "/var/lock/multiload-icons-XXXXXX".dup();
         Main.datadirectory = DirUtils.mkdtemp(template);
-        var xdgdatadirs = Environment.get_variable("XDG_DATA_DIRS");
-        if (xdgdatadirs.length > 0)
-            xdgdatadirs += ":";
-        Environment.set_variable("XDG_DATA_DIRS",
-                xdgdatadirs + Main.datadirectory, true);
 
         Gtk.init(ref args);
         Gtk.Window.set_default_icon_name("utilities-system-monitor");
