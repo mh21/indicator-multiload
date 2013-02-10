@@ -94,8 +94,16 @@ public class Main : Application {
     public void on_sysmon_activate(Gtk.MenuItem source) {
         var settings = this.settingscache.generalsettings();
         var sysmon = settings.get_string("system-monitor");
-        if (sysmon.length == 0)
-            sysmon = "gnome-system-monitor.desktop";
+        if (sysmon.length == 0) {
+            switch (Environment.get_variable("XDG_CURRENT_DESKTOP")) {
+            case "KDE":
+                sysmon = "kde4-ksysguard.desktop";
+                break;
+            default:
+                sysmon = "gnome-system-monitor.desktop";
+                break;
+            }
+        }
         var info = new DesktopAppInfo(sysmon);
         if (info != null) {
             try {

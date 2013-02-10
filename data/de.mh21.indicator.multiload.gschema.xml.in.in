@@ -45,7 +45,7 @@
         </key>
 
         <key name="system-monitor" type="s">
-            <default>"gnome-system-monitor.desktop"</default>
+            <default>""</default>
             <_summary>The desktop description file to execute as the system monitor</_summary>
         </key>
 
