@@ -157,6 +157,8 @@ public class MultiLoadIndicator : Object {
         }
         if (!this.menuset) {
             this.indicator.set_menu(this.menu);
+            // first entry is system monitor, activate it on middle click
+            this.indicator.set_secondary_activate_target(this.menu.get_children().data);
             this.menuset = true;
         }
     }
