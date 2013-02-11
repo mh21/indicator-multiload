@@ -57,7 +57,7 @@
         <key name="description-expressions" type="as">
             <!-- TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, backslashes and commas. -->
             <_default>[
-                "CPU $(percent(cpu.inuse)) Mem $(size(mem.user)) Net down $(speed(net.down+net.pdown)) up $(speed(net.up+net.pup)) Swap $(size(swap.used)) Load $(decimals(load.avg,2)) Disk read $(speed(disk.read)) write $(speed(disk.write))"
+                "CPU $(percent(cpu.inuse)) Mem $(size(mem.user)) Net down $(speed(net.down)) up $(speed(net.up)) Swap $(size(swap.used)) Load $(decimals(load.avg,2)) Disk read $(speed(disk.read)) write $(speed(disk.write))"
             ]</_default>
             <_summary>Information in the accessible description of the indicator</_summary>
         </key>
@@ -68,7 +68,7 @@
                 "",
                 "CPU $(percent(cpu.inuse))",
                 "Mem $(size(mem.user))",
-                "Net $(speed(net.down+net.pdown))/$(speed(net.up+net.pup))",
+                "Net $(speed(net.down))/$(speed(net.up))",
                 "Swap $(size(swap.used))",
                 "Load $(decimals(load.avg,2))",
                 "Disk $(speed(disk.read))/$(speed(disk.write))"
@@ -86,7 +86,7 @@
             <_default>[
                 "CPU: $(percent(cpu.inuse)), iowait $(percent(cpu.io))",
                 "Mem: $(size(mem.user)), cache $(size(mem.cached))",
-                "Net: down $(speed(net.down+net.pdown)), up $(speed(net.up+net.pup))",
+                "Net: down $(speed(net.down)), up $(speed(net.up))",
                 "Swap: $(size(swap.used))",
                 "Load: $(decimals(load.avg,2))",
                 "Disk: read $(speed(disk.read)), write $(speed(disk.write))"
@@ -550,7 +550,7 @@
         </key>
 
         <key name="expression" type="s">
-            <default>"$(net.down+net.pdown)"</default>
+            <default>"$(net.down)"</default>
             <_summary>Trace expression</_summary>
         </key>
 
@@ -567,7 +567,7 @@
         </key>
 
         <key name="expression" type="s">
-            <default>"$(net.up+net.pup)"</default>
+            <default>"$(net.up)"</default>
             <_summary>Trace expression</_summary>
         </key>
 
