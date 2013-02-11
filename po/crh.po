@@ -1,0 +1,400 @@
+# Qırımtatarca gnome-applets.
+# This file is distributed under the same license as the gnome-applets package.
+#
+# Reşat SABIQ <tilde.birlik@gmail.com>, 2009, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-applets\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-02-10 18:50+0000\n"
+"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"Last-Translator: Reşat SABIQ <tilde.birlik@gmail.com>\n"
+"Language-Team: QIRIMTATARCA (Qırım Türkçesi) <tilde-birlik-"
+"tercime@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
+"Language: \n"
+
+# tr
+#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
+msgid ""
+"A system load monitor capable of displaying graphs for CPU, ram, and swap "
+"space use, plus network traffic."
+msgstr ""
+"İşlemci, bellek, takas alanı kullanımı ve ağ yoğunluğunun çizelgelerini "
+"gösterebilen bir sistem yükü izleyicisidir."
+
+#: ../data/preferences.ui.in.h:2
+msgid "translator-credits"
+msgstr ""
+"Reşat SABIQ <tilde.birlik@gmail.com>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Reşat SABIQ https://launchpad.net/~tilde-birlik"
+
+# tr
+#: ../data/preferences.ui.in.h:3
+msgid "_Open System Monitor"
+msgstr "Sistem İzleyici'yi _Aç"
+
+#: ../data/preferences.ui.in.h:4
+msgid "_Preferences"
+msgstr "_Tercihler"
+
+#: ../data/preferences.ui.in.h:5
+msgid "_About"
+msgstr "_Aqqında"
+
+#: ../data/preferences.ui.in.h:6
+msgid "_Quit"
+msgstr ""
+
+# tr
+#: ../data/preferences.ui.in.h:7
+msgid "Monitored Resources"
+msgstr "İzlenen Özkaynaklar"
+
+# tr
+#: ../data/preferences.ui.in.h:8
+msgid "_Processor"
+msgstr "İş_lemci"
+
+#: ../data/preferences.ui.in.h:9
+msgid "_Memory"
+msgstr "_Hafiza"
+
+#: ../data/preferences.ui.in.h:10
+msgid "_Network"
+msgstr "_Şebeke"
+
+# tr
+#: ../data/preferences.ui.in.h:11
+msgid "S_wap Space"
+msgstr "_Takas Alanı"
+
+# tr
+#: ../data/preferences.ui.in.h:12
+msgid "_Load"
+msgstr "_Yük"
+
+# tr
+#: ../data/preferences.ui.in.h:13
+msgid "_Harddisk"
+msgstr "_Sabit Disk"
+
+#: ../data/preferences.ui.in.h:14
+msgid "Options"
+msgstr "İhtiyariyat"
+
+# tr
+#: ../data/preferences.ui.in.h:15
+msgid "System m_onitor width: "
+msgstr "Sistem izleyici _genişliği: "
+
+# tr
+#: ../data/preferences.ui.in.h:16
+msgid "Sys_tem monitor update interval: "
+msgstr "Sistem izleyici güncelleme _sıklığı: "
+
+# tr
+#: ../data/preferences.ui.in.h:17
+msgid "pixels"
+msgstr "piksel"
+
+# tr
+#: ../data/preferences.ui.in.h:18
+msgid "milliseconds"
+msgstr "milisaniye"
+
+#: ../data/preferences.ui.in.h:19
+msgid "_Autostart: "
+msgstr ""
+
+#: ../data/preferences.ui.in.h:20
+msgid "Colors"
+msgstr "Tüsler"
+
+#: ../data/preferences.ui.in.h:21
+msgid "_User"
+msgstr "_Qullanıcı"
+
+# tr
+#: ../data/preferences.ui.in.h:22
+msgid "S_ystem"
+msgstr "_Sistem"
+
+# tr
+#: ../data/preferences.ui.in.h:23
+msgid "N_ice"
+msgstr "Ö_ncelik"
+
+# tr
+#: ../data/preferences.ui.in.h:24
+msgid "I_OWait"
+msgstr "I_OWait"
+
+# tr
+#: ../data/preferences.ui.in.h:25
+msgid "I_dle"
+msgstr "B_eklemede"
+
+# tr
+#: ../data/preferences.ui.in.h:26
+msgid "Processor"
+msgstr "İşlemci"
+
+# tr
+#: ../data/preferences.ui.in.h:27
+msgid "Sh_ared"
+msgstr "_Paylaşımda"
+
+# tr
+#: ../data/preferences.ui.in.h:28
+msgid "_Buffers"
+msgstr "_Tamponlar"
+
+# tr
+#: ../data/preferences.ui.in.h:29
+msgid "Cach_ed"
+msgstr "Önb_ellekli"
+
+# tr
+#: ../data/preferences.ui.in.h:30
+msgid "F_ree"
+msgstr "B_oş"
+
+# tr
+#: ../data/preferences.ui.in.h:31
+msgid "Memory"
+msgstr "Bellek"
+
+#: ../data/preferences.ui.in.h:32
+msgid "_In"
+msgstr "_İçeri"
+
+#: ../data/preferences.ui.in.h:33
+msgid "_Out"
+msgstr "_Tışarı"
+
+#: ../data/preferences.ui.in.h:34
+msgid "_Local"
+msgstr "_Yerli"
+
+#: ../data/preferences.ui.in.h:35
+msgid "_Background"
+msgstr "_Arqa-zemin"
+
+# tr
+#: ../data/preferences.ui.in.h:36
+msgid "Network"
+msgstr "Ağ"
+
+#: ../data/preferences.ui.in.h:37
+msgid "_Used"
+msgstr "_Qullanıla"
+
+# tr
+#: ../data/preferences.ui.in.h:38
+msgid "_Free"
+msgstr "_Boş"
+
+# tr
+#: ../data/preferences.ui.in.h:39
+msgid "Swap Space"
+msgstr "Takas Alanı"
+
+#: ../data/preferences.ui.in.h:40
+msgid "_Average"
+msgstr "Ortalam_a"
+
+#: ../data/preferences.ui.in.h:41
+msgid "Load"
+msgstr "Yük"
+
+# tr
+#: ../data/preferences.ui.in.h:42
+msgid "_Read"
+msgstr "_Okuma"
+
+# tr
+#: ../data/preferences.ui.in.h:43
+msgid "_Write"
+msgstr "_Yazma"
+
+#: ../data/preferences.ui.in.h:44
+msgid "Harddisk"
+msgstr "_Qattı disk"
+
+#: ../data/preferences.ui.in.h:45
+msgid "Menu items..."
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
+msgid "Available graphs"
+msgstr ""
+
+# tr
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+msgid "Applet refresh rate in milliseconds"
+msgstr "Milisaniye cinsinden uygulamacık tazeleme hızı"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+msgid "Width of the graphs in pixels."
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
+msgid "Height of the graphs in pixels."
+msgstr ""
+
+# tr
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
+msgid "The desktop description file to execute as the system monitor"
+msgstr "Sistem izleyici olarak çalıştırılacak masaüstü tanım dosyası"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
+msgid "Automatically start on session startup"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
+msgid "Information in the accessible description of the indicator"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+msgid "Information shown in the indicator itself"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+msgid "Index of the current information shown in the indicator itself"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+msgid "Information shown as menu entries"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+msgid "Graph alpha value"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
+msgid "Graph background color"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+msgid "Graph visibility"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+msgid "Minimum value for upper graph edge"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+msgid "Maximum value for upper graph edge, zero means unlimited"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+msgid "Number of values used for smooth graph scaling"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+msgid "Available traces"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+msgid "Trace color"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+msgid "Trace expression"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+msgid "Trace visibility"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+msgid "Traces shown"
+msgstr ""
+
+#: ../data/indicator-multiload.desktop.in.h:1
+msgid "System Load Indicator"
+msgstr ""
+
+#: ../src/function.vala:88
+#, c-format
+msgid "%u%%"
+msgstr ""
+
+#: ../src/main.vala:37
+msgid "Evaluate an expression"
+msgstr ""
+
+#: ../src/main.vala:39
+msgid "List available expression identifiers"
+msgstr ""
+
+#: ../src/main.vala:41
+msgid "Show debug messages"
+msgstr ""
+
+#: ../src/main.vala:322
+msgid "- System load application indicator"
+msgstr ""
+
+#: ../src/main.vala:330
+#, c-format
+msgid ""
+"Run '%s --help' to see a full list of available command line options.\n"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:57
+msgid "{} kB"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:59
+msgid "{} MB"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the size
+#: ../src/utils.vala:61
+msgid "{} GB"
+msgstr ""
+
+#: ../src/utils.vala:69
+#, c-format
+msgid "%u B"
+msgid_plural "%u B"
+msgstr[0] ""
+msgstr[1] ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:82
+msgid "{} kB/s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:84
+msgid "{} MB/s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:86
+msgid "{} GB/s"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
+#: ../src/utils.vala:88
+msgid "{} TB/s"
+msgstr ""
+
+#: ../src/utils.vala:96
+#, c-format
+msgid "%u B/s"
+msgid_plural "%u B/s"
+msgstr[0] ""
+msgstr[1] ""
