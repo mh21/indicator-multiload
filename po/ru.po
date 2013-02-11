@@ -16,20 +16,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-26 22:58+0100\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
-"Last-Translator: Yuri Myasoedov <omerta13@yandex.ru>\n"
+"POT-Creation-Date: 2013-02-10 18:50+0000\n"
+"PO-Revision-Date: 2012-04-18 07:37+0000\n"
+"Last-Translator: Vassili Platonov <Unknown>\n"
 "Language-Team: Russian <gnome-cyr@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2012-01-27 05:54+0000\n"
-"X-Generator: Launchpad (build 14727)\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 "Language: ru\n"
 
-#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
+#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
@@ -38,179 +38,6 @@ msgstr ""
 "файла подкачки и сетевого трафика."
 
 #: ../data/preferences.ui.in.h:2
-msgid "Cach_ed"
-msgstr "К_эшированная"
-
-#: ../data/preferences.ui.in.h:3
-msgid "Colors"
-msgstr "Цвета"
-
-#: ../data/preferences.ui.in.h:4
-msgid "F_ree"
-msgstr "Сво_бодная"
-
-#: ../data/preferences.ui.in.h:5
-msgid "Harddisk"
-msgstr "Жесткий диск"
-
-#: ../data/preferences.ui.in.h:6
-msgid "I_OWait"
-msgstr "I_OWait"
-
-#: ../data/preferences.ui.in.h:7
-msgid "I_dle"
-msgstr "Просто_й"
-
-#: ../data/preferences.ui.in.h:8
-msgid "Load"
-msgstr "Загрузка"
-
-#: ../data/preferences.ui.in.h:9
-msgid "Memory"
-msgstr "Память"
-
-#: ../data/preferences.ui.in.h:10
-msgid "Menu items..."
-msgstr ""
-
-#: ../data/preferences.ui.in.h:11
-msgid "Monitored Resources"
-msgstr "Отслеживаемые ресурсы"
-
-#: ../data/preferences.ui.in.h:12
-msgid "N_ice"
-msgstr "При_оритет"
-
-#: ../data/preferences.ui.in.h:13
-msgid "Network"
-msgstr "Сеть"
-
-#: ../data/preferences.ui.in.h:14
-msgid "Options"
-msgstr "Параметры"
-
-#: ../data/preferences.ui.in.h:15
-msgid "Processor"
-msgstr "Процессор"
-
-#: ../data/preferences.ui.in.h:16
-msgid "S_wap Space"
-msgstr "Под_качки"
-
-#: ../data/preferences.ui.in.h:17
-msgid "S_ystem"
-msgstr "С_истема"
-
-#: ../data/preferences.ui.in.h:18
-msgid "Sh_ared"
-msgstr "Раз_деляемая"
-
-#: ../data/preferences.ui.in.h:19
-msgid "Swap Space"
-msgstr "Подкачка"
-
-#: ../data/preferences.ui.in.h:20
-msgid "Sys_tem monitor update interval: "
-msgstr "Скорость об_новления системного монитора: "
-
-#: ../data/preferences.ui.in.h:21
-msgid "System m_onitor width: "
-msgstr "_Ширина системного монитора: "
-
-#: ../data/preferences.ui.in.h:22
-msgid "_About"
-msgstr "_Об апплете"
-
-#: ../data/preferences.ui.in.h:23
-msgid "_Autostart: "
-msgstr "_Автоматический запуск: "
-
-#: ../data/preferences.ui.in.h:24
-msgid "_Average"
-msgstr "С_редняя"
-
-#: ../data/preferences.ui.in.h:25
-msgid "_Background"
-msgstr "_Фон"
-
-#: ../data/preferences.ui.in.h:26
-msgid "_Buffers"
-msgstr "Б_уфера"
-
-#: ../data/preferences.ui.in.h:27
-msgid "_Free"
-msgstr "Сво_бодно"
-
-#: ../data/preferences.ui.in.h:28
-msgid "_Harddisk"
-msgstr "_Жесткий диск"
-
-#: ../data/preferences.ui.in.h:29
-msgid "_In"
-msgstr "_Исходящий"
-
-#: ../data/preferences.ui.in.h:30
-msgid "_Load"
-msgstr "За_грузка системы"
-
-#: ../data/preferences.ui.in.h:31
-msgid "_Local"
-msgstr "_Внутренний"
-
-#: ../data/preferences.ui.in.h:32
-msgid "_Memory"
-msgstr "Па_мять"
-
-#: ../data/preferences.ui.in.h:33
-msgid "_Network"
-msgstr "_Сеть"
-
-#
-#: ../data/preferences.ui.in.h:34
-msgid "_Open System Monitor"
-msgstr "О_ткрыть системный монитор"
-
-#: ../data/preferences.ui.in.h:35
-msgid "_Out"
-msgstr "_Входящий"
-
-#: ../data/preferences.ui.in.h:36
-msgid "_Preferences"
-msgstr "_Параметры"
-
-#: ../data/preferences.ui.in.h:37
-msgid "_Processor"
-msgstr "Про_цессор"
-
-#: ../data/preferences.ui.in.h:38
-msgid "_Quit"
-msgstr "_Выйти"
-
-#: ../data/preferences.ui.in.h:39
-msgid "_Read"
-msgstr "_Чтение"
-
-#: ../data/preferences.ui.in.h:40
-msgid "_Used"
-msgstr "Ис_пользуется"
-
-#: ../data/preferences.ui.in.h:41
-msgid "_User"
-msgstr "По_льзователь"
-
-#: ../data/preferences.ui.in.h:42
-msgid "_Write"
-msgstr "_Запись"
-
-#: ../data/preferences.ui.in.h:43
-msgid "milliseconds"
-msgstr "миллисекунд"
-
-#: ../data/preferences.ui.in.h:44
-msgid "pixels"
-msgstr "пикселей"
-
-#: ../data/preferences.ui.in.h:45
 msgid "translator-credits"
 msgstr ""
 "Макс Валянский <maxcom@vinchi.ru>\n"
@@ -219,124 +46,312 @@ msgstr ""
 "Александр Прокудин\n"
 "Дмитрий Мастрюков <dmitry@taurussoft.org>\n"
 "Михаил Яхонтов <mvy@asplinux.ru>\n"
-"Леонид Кантер <leon@asplinux.ru>"
+"Леонид Кантер <leon@asplinux.ru>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Eugene Marshal https://launchpad.net/~lowrider\n"
+"  Vassili Platonov https://launchpad.net/~vassilip\n"
+"  Yuri Myasoedov https://launchpad.net/~ymyasoedov\n"
+"  zmicier https://launchpad.net/~zmicier"
+
+#
+#: ../data/preferences.ui.in.h:3
+msgid "_Open System Monitor"
+msgstr "О_ткрыть системный монитор"
+
+#: ../data/preferences.ui.in.h:4
+msgid "_Preferences"
+msgstr "_Параметры"
+
+#: ../data/preferences.ui.in.h:5
+msgid "_About"
+msgstr "_Об апплете"
+
+#: ../data/preferences.ui.in.h:6
+msgid "_Quit"
+msgstr "В_ыход"
+
+#: ../data/preferences.ui.in.h:7
+msgid "Monitored Resources"
+msgstr "Отслеживаемые ресурсы"
+
+#: ../data/preferences.ui.in.h:8
+msgid "_Processor"
+msgstr "Про_цессор"
+
+#: ../data/preferences.ui.in.h:9
+msgid "_Memory"
+msgstr "Па_мять"
+
+#: ../data/preferences.ui.in.h:10
+msgid "_Network"
+msgstr "_Сеть"
+
+#: ../data/preferences.ui.in.h:11
+msgid "S_wap Space"
+msgstr "Под_качки"
+
+#: ../data/preferences.ui.in.h:12
+msgid "_Load"
+msgstr "За_грузка системы"
+
+#: ../data/preferences.ui.in.h:13
+msgid "_Harddisk"
+msgstr "_Жесткий диск"
+
+#: ../data/preferences.ui.in.h:14
+msgid "Options"
+msgstr "Параметры"
+
+#: ../data/preferences.ui.in.h:15
+msgid "System m_onitor width: "
+msgstr "_Ширина системного монитора: "
+
+#: ../data/preferences.ui.in.h:16
+msgid "Sys_tem monitor update interval: "
+msgstr "Скорость об_новления системного монитора: "
+
+#: ../data/preferences.ui.in.h:17
+msgid "pixels"
+msgstr "пикселей"
+
+#: ../data/preferences.ui.in.h:18
+msgid "milliseconds"
+msgstr "миллисекунд"
+
+#: ../data/preferences.ui.in.h:19
+msgid "_Autostart: "
+msgstr "_Автоматический запуск: "
+
+#: ../data/preferences.ui.in.h:20
+msgid "Colors"
+msgstr "Цвета"
+
+#: ../data/preferences.ui.in.h:21
+msgid "_User"
+msgstr "По_льзователь"
+
+#: ../data/preferences.ui.in.h:22
+msgid "S_ystem"
+msgstr "С_истема"
+
+#: ../data/preferences.ui.in.h:23
+msgid "N_ice"
+msgstr "При_оритет"
+
+#: ../data/preferences.ui.in.h:24
+msgid "I_OWait"
+msgstr "I_OWait"
+
+#: ../data/preferences.ui.in.h:25
+msgid "I_dle"
+msgstr "Просто_й"
+
+#: ../data/preferences.ui.in.h:26
+msgid "Processor"
+msgstr "Процессор"
+
+#: ../data/preferences.ui.in.h:27
+msgid "Sh_ared"
+msgstr "Раз_деляемая"
+
+#: ../data/preferences.ui.in.h:28
+msgid "_Buffers"
+msgstr "Б_уфера"
+
+#: ../data/preferences.ui.in.h:29
+msgid "Cach_ed"
+msgstr "К_эшированная"
+
+#: ../data/preferences.ui.in.h:30
+msgid "F_ree"
+msgstr "Сво_бодная"
+
+#: ../data/preferences.ui.in.h:31
+msgid "Memory"
+msgstr "Память"
+
+#: ../data/preferences.ui.in.h:32
+msgid "_In"
+msgstr "_Исходящий"
+
+#: ../data/preferences.ui.in.h:33
+msgid "_Out"
+msgstr "_Входящий"
+
+#: ../data/preferences.ui.in.h:34
+msgid "_Local"
+msgstr "_Внутренний"
+
+#: ../data/preferences.ui.in.h:35
+msgid "_Background"
+msgstr "_Фон"
+
+#: ../data/preferences.ui.in.h:36
+msgid "Network"
+msgstr "Сеть"
+
+#: ../data/preferences.ui.in.h:37
+msgid "_Used"
+msgstr "Ис_пользуется"
+
+#: ../data/preferences.ui.in.h:38
+msgid "_Free"
+msgstr "Сво_бодно"
+
+#: ../data/preferences.ui.in.h:39
+msgid "Swap Space"
+msgstr "Подкачка"
+
+#: ../data/preferences.ui.in.h:40
+msgid "_Average"
+msgstr "С_редняя"
+
+#: ../data/preferences.ui.in.h:41
+msgid "Load"
+msgstr "Загрузка"
+
+#: ../data/preferences.ui.in.h:42
+msgid "_Read"
+msgstr "_Чтение"
+
+#: ../data/preferences.ui.in.h:43
+msgid "_Write"
+msgstr "Запис_ь"
+
+#: ../data/preferences.ui.in.h:44
+msgid "Harddisk"
+msgstr "Жесткий диск"
+
+#: ../data/preferences.ui.in.h:45
+msgid "Menu items..."
+msgstr "Элементы меню..."
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
+msgid "Available graphs"
+msgstr "Доступные диаграммы"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
 msgstr "Частота обновления в миллисекундах"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
-msgid "Automatically start on session startup"
-msgstr "Автоматически запускать при загрузке"
-
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
-msgid "Available graphs"
-msgstr ""
+msgid "Width of the graphs in pixels."
+msgstr "Ширина диаграммы в пикселях."
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
-msgid "Available traces"
-msgstr ""
+msgid "Height of the graphs in pixels."
+msgstr "Высота диаграммы в пикселях"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
-msgid "Graph alpha value"
-msgstr ""
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
-msgid "Graph background color"
-msgstr ""
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
-msgid "Graph visibility"
-msgstr ""
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
-msgid "Height of the graphs in pixels."
-msgstr ""
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
-msgid "Index of the current information shown in the indicator itself"
-msgstr ""
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
-msgid "Information shown as menu entries"
-msgstr ""
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
-msgid "Information shown in the indicator itself"
-msgstr ""
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
-msgid "Maximum value for upper graph edge, zero means unlimited"
-msgstr ""
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
-msgid "Minimum value for upper graph edge"
-msgstr ""
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
-msgid "Number of values used for smooth graph scaling"
-msgstr ""
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
 msgid "The desktop description file to execute as the system monitor"
 msgstr ""
 "Файл описания приложения, запускаемого в качестве системного монитора"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
-msgid "Trace color"
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
+msgid "Automatically start on session startup"
+msgstr "Автоматический запуск при загрузке системы"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
+msgid "Information in the accessible description of the indicator"
 msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+msgid "Information shown in the indicator itself"
+msgstr "Информация, отображаемая индикатором"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+msgid "Index of the current information shown in the indicator itself"
+msgstr "Индекс текущей информации, отображаемой индикатором"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+msgid "Information shown as menu entries"
+msgstr "Информация, отображаемая в пунктах меню"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+msgid "Graph alpha value"
+msgstr "Прозрачность диаграммы"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
+msgid "Graph background color"
+msgstr "Цвет фона диаграммы"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+msgid "Graph visibility"
+msgstr "Видимость диаграммы"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+msgid "Minimum value for upper graph edge"
+msgstr "Минимальное значение верхнего края диаграммы"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+msgid "Maximum value for upper graph edge, zero means unlimited"
+msgstr ""
+"Максимальное значение верхнего края диаграммы, ноль означает «без "
+"ограничений»"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+msgid "Number of values used for smooth graph scaling"
+msgstr ""
+"Количество значений, используемых для плавного изменения масштаба диаграммы"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
-msgid "Trace expression"
-msgstr ""
+msgid "Available traces"
+msgstr "Доступные кривые"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
-msgid "Trace visibility"
-msgstr ""
+msgid "Trace color"
+msgstr "Цвет кривой"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
-msgid "Traces shown"
-msgstr ""
+msgid "Trace expression"
+msgstr "Выражение кривой"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
-msgid "Width of the graphs in pixels."
-msgstr ""
+msgid "Trace visibility"
+msgstr "Видимость кривой"
 
-#: ../data/indicator-multiload.desktop.in.h:2
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+msgid "Traces shown"
+msgstr "Отображение кривых"
+
+#: ../data/indicator-multiload.desktop.in.h:1
 msgid "System Load Indicator"
-msgstr "Индикатор нагрузки системы"
+msgstr "Индикатор загрузки системы"
 
 #: ../src/function.vala:88
 #, c-format
 msgid "%u%%"
-msgstr ""
+msgstr "%u%%"
 
 #: ../src/main.vala:37
 msgid "Evaluate an expression"
-msgstr ""
+msgstr "Значение выражения"
 
 #: ../src/main.vala:39
 msgid "List available expression identifiers"
-msgstr ""
+msgstr "Список доступных идентификаторов выражения"
 
 #: ../src/main.vala:41
 msgid "Show debug messages"
-msgstr ""
+msgstr "Показывать отладочные сообщения"
 
-#: ../src/main.vala:311
+#: ../src/main.vala:322
 msgid "- System load application indicator"
-msgstr ""
+msgstr "- Индикатор загрузки системы"
 
-#: ../src/main.vala:319
+#: ../src/main.vala:330
 #, c-format
 msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
+"Выполните '%s --help' для просмотра полного списка доступных параметров "
+"командной строки.\n"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:57
 msgid "{} kB"
-msgstr "{} КБ"
+msgstr "{} кБ"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:59
@@ -352,13 +367,14 @@ msgstr "{} ГБ"
 #, c-format
 msgid "%u B"
 msgid_plural "%u B"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u Б"
+msgstr[1] "%u Б"
+msgstr[2] "%u Б"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:82
 msgid "{} kB/s"
-msgstr "{} КБ/с"
+msgstr "{} кБ/с"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:84
@@ -368,16 +384,17 @@ msgstr "{} МБ/с"
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:86
 msgid "{} GB/s"
-msgstr ""
+msgstr "{} ГБ/с"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:88
 msgid "{} TB/s"
-msgstr ""
+msgstr "{} ТБ/с"
 
 #: ../src/utils.vala:96
 #, c-format
 msgid "%u B/s"
 msgid_plural "%u B/s"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u Б/с"
+msgstr[1] "%u Б/с"
+msgstr[2] "%u Б/с"

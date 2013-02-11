@@ -13,19 +13,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-applets master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-26 22:58+0100\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
-"Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
+"POT-Creation-Date: 2013-02-10 18:50+0000\n"
+"PO-Revision-Date: 2012-02-08 12:58+0000\n"
+"Last-Translator: Bence Lukács <Unknown>\n"
 "Language-Team: Hungarian <gnome at fsf dot hu>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2012-01-27 05:54+0000\n"
-"X-Generator: Launchpad (build 14727)\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 "Language: \n"
 
-#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
+#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
@@ -34,178 +34,6 @@ msgstr ""
 "használatáról, valamint a hálózati forgalomról grafikonokat rajzolni."
 
 #: ../data/preferences.ui.in.h:2
-msgid "Cach_ed"
-msgstr "Gy_orsítótárban"
-
-#: ../data/preferences.ui.in.h:3
-msgid "Colors"
-msgstr "Színek"
-
-#: ../data/preferences.ui.in.h:4
-msgid "F_ree"
-msgstr "S_zabad"
-
-#: ../data/preferences.ui.in.h:5
-msgid "Harddisk"
-msgstr "Merevlemez"
-
-#: ../data/preferences.ui.in.h:6
-msgid "I_OWait"
-msgstr "I_O várakozás"
-
-#: ../data/preferences.ui.in.h:7
-msgid "I_dle"
-msgstr "Ür_esjárat"
-
-#: ../data/preferences.ui.in.h:8
-msgid "Load"
-msgstr "Terhelés"
-
-#: ../data/preferences.ui.in.h:9
-msgid "Memory"
-msgstr "Memória"
-
-#: ../data/preferences.ui.in.h:10
-msgid "Menu items..."
-msgstr ""
-
-#: ../data/preferences.ui.in.h:11
-msgid "Monitored Resources"
-msgstr "Monitorozott erőforrások"
-
-#: ../data/preferences.ui.in.h:12
-msgid "N_ice"
-msgstr "N_ice"
-
-#: ../data/preferences.ui.in.h:13
-msgid "Network"
-msgstr "Hálózat"
-
-#: ../data/preferences.ui.in.h:14
-msgid "Options"
-msgstr "Beállítások"
-
-#: ../data/preferences.ui.in.h:15
-msgid "Processor"
-msgstr "Processzor"
-
-#: ../data/preferences.ui.in.h:16
-msgid "S_wap Space"
-msgstr "_Lapozófájl"
-
-#: ../data/preferences.ui.in.h:17
-msgid "S_ystem"
-msgstr "_Rendszer"
-
-#: ../data/preferences.ui.in.h:18
-msgid "Sh_ared"
-msgstr "Me_gosztott"
-
-#: ../data/preferences.ui.in.h:19
-msgid "Swap Space"
-msgstr "Lapozófájl"
-
-#: ../data/preferences.ui.in.h:20
-msgid "Sys_tem monitor update interval: "
-msgstr "Rendszerfigyelő frissítési idő_köze: "
-
-#: ../data/preferences.ui.in.h:21
-msgid "System m_onitor width: "
-msgstr "Ren_dszerfigyelő szélessége: "
-
-#: ../data/preferences.ui.in.h:22
-msgid "_About"
-msgstr "_Névjegy"
-
-#: ../data/preferences.ui.in.h:23
-msgid "_Autostart: "
-msgstr ""
-
-#: ../data/preferences.ui.in.h:24
-msgid "_Average"
-msgstr "Átla_gos"
-
-#: ../data/preferences.ui.in.h:25
-msgid "_Background"
-msgstr "Hátté_r"
-
-#: ../data/preferences.ui.in.h:26
-msgid "_Buffers"
-msgstr "_Pufferek"
-
-#: ../data/preferences.ui.in.h:27
-msgid "_Free"
-msgstr "S_zabad"
-
-#: ../data/preferences.ui.in.h:28
-msgid "_Harddisk"
-msgstr "Mere_vlemez"
-
-#: ../data/preferences.ui.in.h:29
-msgid "_In"
-msgstr "B_e"
-
-#: ../data/preferences.ui.in.h:30
-msgid "_Load"
-msgstr "_Terhelés"
-
-#: ../data/preferences.ui.in.h:31
-msgid "_Local"
-msgstr "_Helyi"
-
-#: ../data/preferences.ui.in.h:32
-msgid "_Memory"
-msgstr "_Memória"
-
-#: ../data/preferences.ui.in.h:33
-msgid "_Network"
-msgstr "_Hálózat"
-
-#: ../data/preferences.ui.in.h:34
-msgid "_Open System Monitor"
-msgstr "_Rendszerfigyelő megnyitása"
-
-#: ../data/preferences.ui.in.h:35
-msgid "_Out"
-msgstr "_Ki"
-
-#: ../data/preferences.ui.in.h:36
-msgid "_Preferences"
-msgstr "_Beállítások"
-
-#: ../data/preferences.ui.in.h:37
-msgid "_Processor"
-msgstr "_Processzor"
-
-#: ../data/preferences.ui.in.h:38
-msgid "_Quit"
-msgstr "_Kilépés"
-
-#: ../data/preferences.ui.in.h:39
-msgid "_Read"
-msgstr "_Olvasás"
-
-#: ../data/preferences.ui.in.h:40
-msgid "_Used"
-msgstr "_Felhasznált"
-
-#: ../data/preferences.ui.in.h:41
-msgid "_User"
-msgstr "_Felhasználó"
-
-#: ../data/preferences.ui.in.h:42
-msgid "_Write"
-msgstr "Í_rás"
-
-#: ../data/preferences.ui.in.h:43
-msgid "milliseconds"
-msgstr "ezredmásodperc"
-
-#: ../data/preferences.ui.in.h:44
-msgid "pixels"
-msgstr "képpont"
-
-#: ../data/preferences.ui.in.h:45
 msgid "translator-credits"
 msgstr ""
 "Bán Szabolcs <shooby at gnome dot hu>\n"
@@ -213,38 +41,217 @@ msgstr ""
 "Kelemen Gábor <kelemeng at gnome dot hu>\n"
 "Kovács Emese <emese at gnome dot hu>\n"
 "Sári Gábor <saga at gnome dot hu>\n"
-"Tímár András <timar at gnome dot hu>"
+"Tímár András <timar at gnome dot hu>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Bence Lukács https://launchpad.net/~lukacs-bence1\n"
+"  Krasznecz Zoltán https://launchpad.net/~krasznecz-zoltan\n"
+"  Michael Hofmann https://launchpad.net/~mh21\n"
+"  Péter Trombitás https://launchpad.net/~trombipeti\n"
+"  Robert Roth https://launchpad.net/~evfool"
+
+#: ../data/preferences.ui.in.h:3
+msgid "_Open System Monitor"
+msgstr "_Rendszerfigyelő megnyitása"
+
+#: ../data/preferences.ui.in.h:4
+msgid "_Preferences"
+msgstr "_Beállítások"
+
+#: ../data/preferences.ui.in.h:5
+msgid "_About"
+msgstr "_Névjegy"
+
+#: ../data/preferences.ui.in.h:6
+msgid "_Quit"
+msgstr "_Kilépés"
+
+#: ../data/preferences.ui.in.h:7
+msgid "Monitored Resources"
+msgstr "Monitorozott erőforrások"
+
+#: ../data/preferences.ui.in.h:8
+msgid "_Processor"
+msgstr "_Processzor"
+
+#: ../data/preferences.ui.in.h:9
+msgid "_Memory"
+msgstr "_Memória"
+
+#: ../data/preferences.ui.in.h:10
+msgid "_Network"
+msgstr "_Hálózat"
+
+#: ../data/preferences.ui.in.h:11
+msgid "S_wap Space"
+msgstr "_Lapozófájl"
+
+#: ../data/preferences.ui.in.h:12
+msgid "_Load"
+msgstr "_Terhelés"
+
+#: ../data/preferences.ui.in.h:13
+msgid "_Harddisk"
+msgstr "Mere_vlemez"
+
+#: ../data/preferences.ui.in.h:14
+msgid "Options"
+msgstr "Beállítások"
+
+#: ../data/preferences.ui.in.h:15
+msgid "System m_onitor width: "
+msgstr "Ren_dszerfigyelő szélessége: "
+
+#: ../data/preferences.ui.in.h:16
+msgid "Sys_tem monitor update interval: "
+msgstr "Rendszerfigyelő frissítési idő_köze: "
+
+#: ../data/preferences.ui.in.h:17
+msgid "pixels"
+msgstr "képpont"
+
+#: ../data/preferences.ui.in.h:18
+msgid "milliseconds"
+msgstr "ezredmásodperc"
+
+#: ../data/preferences.ui.in.h:19
+msgid "_Autostart: "
+msgstr "_Autostart: : "
+
+#: ../data/preferences.ui.in.h:20
+msgid "Colors"
+msgstr "Színek"
+
+#: ../data/preferences.ui.in.h:21
+msgid "_User"
+msgstr "_Felhasználó"
+
+#: ../data/preferences.ui.in.h:22
+msgid "S_ystem"
+msgstr "_Rendszer"
+
+#: ../data/preferences.ui.in.h:23
+msgid "N_ice"
+msgstr "N_ice"
+
+#: ../data/preferences.ui.in.h:24
+msgid "I_OWait"
+msgstr "I_O várakozás"
+
+#: ../data/preferences.ui.in.h:25
+msgid "I_dle"
+msgstr "Ür_esjárat"
+
+#: ../data/preferences.ui.in.h:26
+msgid "Processor"
+msgstr "Processzor"
+
+#: ../data/preferences.ui.in.h:27
+msgid "Sh_ared"
+msgstr "Me_gosztott"
+
+#: ../data/preferences.ui.in.h:28
+msgid "_Buffers"
+msgstr "_Pufferek"
+
+#: ../data/preferences.ui.in.h:29
+msgid "Cach_ed"
+msgstr "Gy_orsítótárban"
+
+#: ../data/preferences.ui.in.h:30
+msgid "F_ree"
+msgstr "S_zabad"
+
+#: ../data/preferences.ui.in.h:31
+msgid "Memory"
+msgstr "Memória"
+
+#: ../data/preferences.ui.in.h:32
+msgid "_In"
+msgstr "B_e"
+
+#: ../data/preferences.ui.in.h:33
+msgid "_Out"
+msgstr "_Ki"
+
+#: ../data/preferences.ui.in.h:34
+msgid "_Local"
+msgstr "_Helyi"
+
+#: ../data/preferences.ui.in.h:35
+msgid "_Background"
+msgstr "Hátté_r"
+
+#: ../data/preferences.ui.in.h:36
+msgid "Network"
+msgstr "Hálózat"
+
+#: ../data/preferences.ui.in.h:37
+msgid "_Used"
+msgstr "_Felhasznált"
+
+#: ../data/preferences.ui.in.h:38
+msgid "_Free"
+msgstr "S_zabad"
+
+#: ../data/preferences.ui.in.h:39
+msgid "Swap Space"
+msgstr "Lapozófájl"
+
+#: ../data/preferences.ui.in.h:40
+msgid "_Average"
+msgstr "Átla_gos"
+
+#: ../data/preferences.ui.in.h:41
+msgid "Load"
+msgstr "Terhelés"
+
+#: ../data/preferences.ui.in.h:42
+msgid "_Read"
+msgstr "_Olvasás"
+
+#: ../data/preferences.ui.in.h:43
+msgid "_Write"
+msgstr "Í_rás"
+
+#: ../data/preferences.ui.in.h:44
+msgid "Harddisk"
+msgstr "Merevlemez"
+
+#: ../data/preferences.ui.in.h:45
+msgid "Menu items..."
+msgstr "Menüelemek"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
-msgid "Applet refresh rate in milliseconds"
-msgstr "Kisalkalmazás frissítési gyakorisága ezredmásodpercben"
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
-msgid "Automatically start on session startup"
-msgstr ""
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
 msgid "Available graphs"
 msgstr ""
 
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+msgid "Applet refresh rate in milliseconds"
+msgstr "Kisalkalmazás frissítési gyakorisága ezredmásodpercben"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+msgid "Width of the graphs in pixels."
+msgstr "Grafikon szélessége pixelekben"
+
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
-msgid "Available traces"
-msgstr ""
+msgid "Height of the graphs in pixels."
+msgstr "Grafikonok magassága (pixel)."
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
-msgid "Graph alpha value"
-msgstr ""
+msgid "The desktop description file to execute as the system monitor"
+msgstr "A rendszerfigyelőként végrehajtandó asztali leírásfájl"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
-msgid "Graph background color"
-msgstr ""
+msgid "Automatically start on session startup"
+msgstr "Automatikus indítás bejelentkezéskor"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
-msgid "Graph visibility"
+msgid "Information in the accessible description of the indicator"
 msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
-msgid "Height of the graphs in pixels."
+msgid "Information shown in the indicator itself"
 msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
@@ -256,46 +263,50 @@ msgid "Information shown as menu entries"
 msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
-msgid "Information shown in the indicator itself"
+msgid "Graph alpha value"
 msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
-msgid "Maximum value for upper graph edge, zero means unlimited"
-msgstr ""
+msgid "Graph background color"
+msgstr "Grafikon háttérszíne"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+msgid "Graph visibility"
+msgstr "Grafikon láthatósága"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
 msgid "Minimum value for upper graph edge"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+msgid "Maximum value for upper graph edge, zero means unlimited"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
 msgid "Number of values used for smooth graph scaling"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
-msgid "The desktop description file to execute as the system monitor"
-msgstr "A rendszerfigyelőként végrehajtandó asztali leírásfájl"
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
-msgid "Trace color"
-msgstr ""
-
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
-msgid "Trace expression"
+msgid "Available traces"
 msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
-msgid "Trace visibility"
+msgid "Trace color"
 msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
-msgid "Traces shown"
+msgid "Trace expression"
 msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
-msgid "Width of the graphs in pixels."
+msgid "Trace visibility"
 msgstr ""
 
-#: ../data/indicator-multiload.desktop.in.h:2
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+msgid "Traces shown"
+msgstr ""
+
+#: ../data/indicator-multiload.desktop.in.h:1
 msgid "System Load Indicator"
 msgstr "Rendszerterhelés indikátor"
 
@@ -314,17 +325,19 @@ msgstr ""
 
 #: ../src/main.vala:41
 msgid "Show debug messages"
-msgstr ""
+msgstr "Nyomkövetési üzenetek megjelenítése"
 
-#: ../src/main.vala:311
+#: ../src/main.vala:322
 msgid "- System load application indicator"
 msgstr ""
 
-#: ../src/main.vala:319
+#: ../src/main.vala:330
 #, c-format
 msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
+"A parancssori paraméterek teljes listája a „%s --help” paranccsal íratható "
+"ki.\n"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:57
@@ -345,8 +358,7 @@ msgstr "{} GB"
 #, c-format
 msgid "%u B"
 msgid_plural "%u B"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u B"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:82
@@ -372,5 +384,5 @@ msgstr "{} TB/s"
 #, c-format
 msgid "%u B/s"
 msgid_plural "%u B/s"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u B/s"
+msgstr[1] "%u B/s"

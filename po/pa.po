@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-applets.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-26 22:58+0100\n"
+"POT-Creation-Date: 2013-02-10 18:50+0000\n"
 "PO-Revision-Date: 2012-01-26 22:20+0000\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2012-01-27 05:54+0000\n"
-"X-Generator: Launchpad (build 14727)\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 "Language: \n"
 
-#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
+#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
@@ -30,52 +30,58 @@ msgstr ""
 "ਲੋਡ ਨਿਗਰਾਨ ਹੈ।"
 
 #: ../data/preferences.ui.in.h:2
-msgid "Cach_ed"
-msgstr "ਕੈਂਚੇ(_e)"
+msgid "translator-credits"
+msgstr ""
+"ਅਮਨਪਰੀਤ ਸਿੰਘ ਆਲਮਵਾਲਾ, ੨੦੦੪-੨੦੧੦\n"
+"ਪੰਜਾਬ ਓਪਨ ਸੋਰਸ ਟੀਮ (POST)\n"
+"http://www.satluj.com\n"
+"\n"
+"Launchpad Contributions:\n"
+"  A S Alam https://launchpad.net/~aalam-users"
 
 #: ../data/preferences.ui.in.h:3
-msgid "Colors"
-msgstr "ਰੰਗ"
+msgid "_Open System Monitor"
+msgstr "ਸਿਸਟਮ ਨਿਗਰਾਨ ਖੋਲ੍ਹੋ(_O)"
 
 #: ../data/preferences.ui.in.h:4
-msgid "F_ree"
-msgstr "ਖਾਲੀ(_r)"
+msgid "_Preferences"
+msgstr "ਮੇਰੀ ਪਸੰਦ(_P)"
 
 #: ../data/preferences.ui.in.h:5
-msgid "Harddisk"
-msgstr "ਹਾਰਡ-ਡਿਸਕ"
+msgid "_About"
+msgstr "ਇਸ ਬਾਰੇ(_A)"
 
 #: ../data/preferences.ui.in.h:6
-msgid "I_OWait"
-msgstr "I_O ਉਡੀਕ"
-
-#: ../data/preferences.ui.in.h:7
-msgid "I_dle"
-msgstr "ਵੇਹਲ(_d)"
-
-#: ../data/preferences.ui.in.h:8
-msgid "Load"
-msgstr "ਲੋਡ"
-
-#: ../data/preferences.ui.in.h:9
-msgid "Memory"
-msgstr "ਮੈਮੋਰੀ"
-
-#: ../data/preferences.ui.in.h:10
-msgid "Menu items..."
+msgid "_Quit"
 msgstr ""
 
-#: ../data/preferences.ui.in.h:11
+#: ../data/preferences.ui.in.h:7
 msgid "Monitored Resources"
 msgstr "ਸਰੋਤ ਨਿਗਰਾਨੀ"
 
+#: ../data/preferences.ui.in.h:8
+msgid "_Processor"
+msgstr "ਪਰੋਸੈਸਰ(_P)"
+
+#: ../data/preferences.ui.in.h:9
+msgid "_Memory"
+msgstr "ਮੈਮੋਰੀ(_M)"
+
+#: ../data/preferences.ui.in.h:10
+msgid "_Network"
+msgstr "ਨੈੱਟਵਰਕ(_N)"
+
+#: ../data/preferences.ui.in.h:11
+msgid "S_wap Space"
+msgstr "ਸਵੈਪ ਥਾਂ(_w)"
+
 #: ../data/preferences.ui.in.h:12
-msgid "N_ice"
-msgstr "ਨਾਈਸ(_i)"
+msgid "_Load"
+msgstr "ਲੋਡ(_L)"
 
 #: ../data/preferences.ui.in.h:13
-msgid "Network"
-msgstr "ਨੈੱਟਵਰਕ"
+msgid "_Harddisk"
+msgstr "ਹਾਰਡ ਡਿਸਕ(_H)"
 
 # gnome-session/session-properties-capplet.c:217
 #: ../data/preferences.ui.in.h:14
@@ -83,162 +89,159 @@ msgid "Options"
 msgstr "ਚੋਣ"
 
 #: ../data/preferences.ui.in.h:15
-msgid "Processor"
-msgstr "ਪਰੋਸੈਸਰ"
-
-#: ../data/preferences.ui.in.h:16
-msgid "S_wap Space"
-msgstr "ਸਵੈਪ ਥਾਂ(_w)"
-
-#: ../data/preferences.ui.in.h:17
-msgid "S_ystem"
-msgstr "ਸਿਸਟਮ(_y)"
-
-#: ../data/preferences.ui.in.h:18
-msgid "Sh_ared"
-msgstr "ਸਾਂਝੀ(_a)"
-
-#: ../data/preferences.ui.in.h:19
-msgid "Swap Space"
-msgstr "ਸਵੈਪ ਥਾਂ"
-
-#: ../data/preferences.ui.in.h:20
-msgid "Sys_tem monitor update interval: "
-msgstr "ਸਿਸਟਮ ਨਿਗਰਾਨ ਅੱਪਡੇਟ ਅੰਤਰਾਲ(_t): "
-
-#: ../data/preferences.ui.in.h:21
 msgid "System m_onitor width: "
 msgstr "ਸਿਸਟਮ ਨਿਗਰਾਨ ਚੌੜਾਈ(_o): "
 
-#: ../data/preferences.ui.in.h:22
-msgid "_About"
-msgstr "ਇਸ ਬਾਰੇ(_A)"
+#: ../data/preferences.ui.in.h:16
+msgid "Sys_tem monitor update interval: "
+msgstr "ਸਿਸਟਮ ਨਿਗਰਾਨ ਅੱਪਡੇਟ ਅੰਤਰਾਲ(_t): "
 
-#: ../data/preferences.ui.in.h:23
-msgid "_Autostart: "
-msgstr ""
-
-#: ../data/preferences.ui.in.h:24
-msgid "_Average"
-msgstr "ਔਸਤ(_A)"
-
-#: ../data/preferences.ui.in.h:25
-msgid "_Background"
-msgstr "ਬੈਕਗਰਾਊਂਡ(_B)"
-
-#: ../data/preferences.ui.in.h:26
-msgid "_Buffers"
-msgstr "ਬਫ਼ਰ(_B)"
-
-#: ../data/preferences.ui.in.h:27
-msgid "_Free"
-msgstr "ਖਾਲੀ(_F)"
-
-#: ../data/preferences.ui.in.h:28
-msgid "_Harddisk"
-msgstr "ਹਾਰਡ ਡਿਸਕ(_H)"
-
-#: ../data/preferences.ui.in.h:29
-msgid "_In"
-msgstr "ਇਨ(_I)"
-
-#: ../data/preferences.ui.in.h:30
-msgid "_Load"
-msgstr "ਲੋਡ(_L)"
-
-#: ../data/preferences.ui.in.h:31
-msgid "_Local"
-msgstr "ਲੋਕਲ(_L)"
-
-#: ../data/preferences.ui.in.h:32
-msgid "_Memory"
-msgstr "ਮੈਮੋਰੀ(_M)"
-
-#: ../data/preferences.ui.in.h:33
-msgid "_Network"
-msgstr "ਨੈੱਟਵਰਕ(_N)"
-
-#: ../data/preferences.ui.in.h:34
-msgid "_Open System Monitor"
-msgstr "ਸਿਸਟਮ ਨਿਗਰਾਨ ਖੋਲ੍ਹੋ(_O)"
-
-#: ../data/preferences.ui.in.h:35
-msgid "_Out"
-msgstr "ਬਾਹਰ(_O)"
-
-#: ../data/preferences.ui.in.h:36
-msgid "_Preferences"
-msgstr "ਮੇਰੀ ਪਸੰਦ(_P)"
-
-#: ../data/preferences.ui.in.h:37
-msgid "_Processor"
-msgstr "ਪਰੋਸੈਸਰ(_P)"
-
-#: ../data/preferences.ui.in.h:38
-msgid "_Quit"
-msgstr ""
-
-#: ../data/preferences.ui.in.h:39
-msgid "_Read"
-msgstr "ਪੜ੍ਹਨ(_R)"
-
-#: ../data/preferences.ui.in.h:40
-msgid "_Used"
-msgstr "ਵਰਤੀ(_U)"
-
-#: ../data/preferences.ui.in.h:41
-msgid "_User"
-msgstr "ਯੂਜ਼ਰ(_U)"
-
-#: ../data/preferences.ui.in.h:42
-msgid "_Write"
-msgstr "ਲਿਖਣ(_W)"
-
-#: ../data/preferences.ui.in.h:43
-msgid "milliseconds"
-msgstr "ਮਿਲੀਸਕਿੰਟ"
-
-#: ../data/preferences.ui.in.h:44
+#: ../data/preferences.ui.in.h:17
 msgid "pixels"
 msgstr "ਪਿਕਸਲ"
 
-#: ../data/preferences.ui.in.h:45
-msgid "translator-credits"
+#: ../data/preferences.ui.in.h:18
+msgid "milliseconds"
+msgstr "ਮਿਲੀਸਕਿੰਟ"
+
+#: ../data/preferences.ui.in.h:19
+msgid "_Autostart: "
 msgstr ""
-"ਅਮਨਪਰੀਤ ਸਿੰਘ ਆਲਮਵਾਲਾ, ੨੦੦੪-੨੦੧੦\n"
-"ਪੰਜਾਬ ਓਪਨ ਸੋਰਸ ਟੀਮ (POST)\n"
-"http://www.satluj.com"
+
+#: ../data/preferences.ui.in.h:20
+msgid "Colors"
+msgstr "ਰੰਗ"
+
+#: ../data/preferences.ui.in.h:21
+msgid "_User"
+msgstr "ਯੂਜ਼ਰ(_U)"
+
+#: ../data/preferences.ui.in.h:22
+msgid "S_ystem"
+msgstr "ਸਿਸਟਮ(_y)"
+
+#: ../data/preferences.ui.in.h:23
+msgid "N_ice"
+msgstr "ਨਾਈਸ(_i)"
+
+#: ../data/preferences.ui.in.h:24
+msgid "I_OWait"
+msgstr "I_O ਉਡੀਕ"
+
+#: ../data/preferences.ui.in.h:25
+msgid "I_dle"
+msgstr "ਵੇਹਲ(_d)"
+
+#: ../data/preferences.ui.in.h:26
+msgid "Processor"
+msgstr "ਪਰੋਸੈਸਰ"
+
+#: ../data/preferences.ui.in.h:27
+msgid "Sh_ared"
+msgstr "ਸਾਂਝੀ(_a)"
+
+#: ../data/preferences.ui.in.h:28
+msgid "_Buffers"
+msgstr "ਬਫ਼ਰ(_B)"
+
+#: ../data/preferences.ui.in.h:29
+msgid "Cach_ed"
+msgstr "ਕੈਂਚੇ(_e)"
+
+#: ../data/preferences.ui.in.h:30
+msgid "F_ree"
+msgstr "ਖਾਲੀ(_r)"
+
+#: ../data/preferences.ui.in.h:31
+msgid "Memory"
+msgstr "ਮੈਮੋਰੀ"
+
+#: ../data/preferences.ui.in.h:32
+msgid "_In"
+msgstr "ਇਨ(_I)"
+
+#: ../data/preferences.ui.in.h:33
+msgid "_Out"
+msgstr "ਬਾਹਰ(_O)"
+
+#: ../data/preferences.ui.in.h:34
+msgid "_Local"
+msgstr "ਲੋਕਲ(_L)"
+
+#: ../data/preferences.ui.in.h:35
+msgid "_Background"
+msgstr "ਬੈਕਗਰਾਊਂਡ(_B)"
+
+#: ../data/preferences.ui.in.h:36
+msgid "Network"
+msgstr "ਨੈੱਟਵਰਕ"
+
+#: ../data/preferences.ui.in.h:37
+msgid "_Used"
+msgstr "ਵਰਤੀ(_U)"
+
+#: ../data/preferences.ui.in.h:38
+msgid "_Free"
+msgstr "ਖਾਲੀ(_F)"
+
+#: ../data/preferences.ui.in.h:39
+msgid "Swap Space"
+msgstr "ਸਵੈਪ ਥਾਂ"
+
+#: ../data/preferences.ui.in.h:40
+msgid "_Average"
+msgstr "ਔਸਤ(_A)"
+
+#: ../data/preferences.ui.in.h:41
+msgid "Load"
+msgstr "ਲੋਡ"
+
+#: ../data/preferences.ui.in.h:42
+msgid "_Read"
+msgstr "ਪੜ੍ਹਨ(_R)"
+
+#: ../data/preferences.ui.in.h:43
+msgid "_Write"
+msgstr "ਲਿਖਣ(_W)"
+
+#: ../data/preferences.ui.in.h:44
+msgid "Harddisk"
+msgstr "ਹਾਰਡ-ਡਿਸਕ"
+
+#: ../data/preferences.ui.in.h:45
+msgid "Menu items..."
+msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
-msgid "Applet refresh rate in milliseconds"
-msgstr "ਐਪਲਿਟ ਤਾਜ਼ਾ ਦਰ ਮੁੱਲ (ਮਿਲੀਸਕਿੰਟ ਵਿੱਚ)"
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
-msgid "Automatically start on session startup"
-msgstr ""
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
 msgid "Available graphs"
 msgstr ""
 
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+msgid "Applet refresh rate in milliseconds"
+msgstr "ਐਪਲਿਟ ਤਾਜ਼ਾ ਦਰ ਮੁੱਲ (ਮਿਲੀਸਕਿੰਟ ਵਿੱਚ)"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+msgid "Width of the graphs in pixels."
+msgstr ""
+
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
-msgid "Available traces"
+msgid "Height of the graphs in pixels."
 msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
-msgid "Graph alpha value"
-msgstr ""
+msgid "The desktop description file to execute as the system monitor"
+msgstr "ਸਿਸਟਮ ਨਿਗਰਾਨ ਵਜੋਂ ਚਲਾਉਣ ਲਈ ਡੈਸਕਟਾਪ ਵੇਰਵਾ ਫਾਇਲ"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
-msgid "Graph background color"
+msgid "Automatically start on session startup"
 msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
-msgid "Graph visibility"
+msgid "Information in the accessible description of the indicator"
 msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
-msgid "Height of the graphs in pixels."
+msgid "Information shown in the indicator itself"
 msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
@@ -250,46 +253,50 @@ msgid "Information shown as menu entries"
 msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
-msgid "Information shown in the indicator itself"
+msgid "Graph alpha value"
 msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
-msgid "Maximum value for upper graph edge, zero means unlimited"
+msgid "Graph background color"
 msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
-msgid "Minimum value for upper graph edge"
+msgid "Graph visibility"
 msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
-msgid "Number of values used for smooth graph scaling"
+msgid "Minimum value for upper graph edge"
 msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
-msgid "The desktop description file to execute as the system monitor"
-msgstr "ਸਿਸਟਮ ਨਿਗਰਾਨ ਵਜੋਂ ਚਲਾਉਣ ਲਈ ਡੈਸਕਟਾਪ ਵੇਰਵਾ ਫਾਇਲ"
+msgid "Maximum value for upper graph edge, zero means unlimited"
+msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
-msgid "Trace color"
+msgid "Number of values used for smooth graph scaling"
 msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
-msgid "Trace expression"
+msgid "Available traces"
 msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
-msgid "Trace visibility"
+msgid "Trace color"
 msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
-msgid "Traces shown"
+msgid "Trace expression"
 msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
-msgid "Width of the graphs in pixels."
+msgid "Trace visibility"
 msgstr ""
 
-#: ../data/indicator-multiload.desktop.in.h:2
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+msgid "Traces shown"
+msgstr ""
+
+#: ../data/indicator-multiload.desktop.in.h:1
 msgid "System Load Indicator"
 msgstr ""
 
@@ -310,11 +317,11 @@ msgstr ""
 msgid "Show debug messages"
 msgstr ""
 
-#: ../src/main.vala:311
+#: ../src/main.vala:322
 msgid "- System load application indicator"
 msgstr ""
 
-#: ../src/main.vala:319
+#: ../src/main.vala:330
 #, c-format
 msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"

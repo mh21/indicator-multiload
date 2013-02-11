@@ -19,19 +19,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-applets HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-26 22:58+0100\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
-"Last-Translator: Claude Paroz <claude@2xlibre.net>\n"
+"POT-Creation-Date: 2013-02-10 18:50+0000\n"
+"PO-Revision-Date: 2012-08-23 16:30+0000\n"
+"Last-Translator: Jerome Portal <portal.j@hotmail.fr>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Launchpad-Export-Date: 2012-01-27 05:54+0000\n"
-"X-Generator: Launchpad (build 14727)\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 "Language: \n"
 
-#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
+#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
@@ -41,178 +41,6 @@ msgstr ""
 "réseau."
 
 #: ../data/preferences.ui.in.h:2
-msgid "Cach_ed"
-msgstr "Cac_hé"
-
-#: ../data/preferences.ui.in.h:3
-msgid "Colors"
-msgstr "Couleurs"
-
-#: ../data/preferences.ui.in.h:4
-msgid "F_ree"
-msgstr "L_ibre"
-
-#: ../data/preferences.ui.in.h:5
-msgid "Harddisk"
-msgstr "Disque dur"
-
-#: ../data/preferences.ui.in.h:6
-msgid "I_OWait"
-msgstr "La_tence E/S"
-
-#: ../data/preferences.ui.in.h:7
-msgid "I_dle"
-msgstr "Au rep_os"
-
-#: ../data/preferences.ui.in.h:8
-msgid "Load"
-msgstr "Charge"
-
-#: ../data/preferences.ui.in.h:9
-msgid "Memory"
-msgstr "Mémoire"
-
-#: ../data/preferences.ui.in.h:10
-msgid "Menu items..."
-msgstr ""
-
-#: ../data/preferences.ui.in.h:11
-msgid "Monitored Resources"
-msgstr "Ressources surveillées"
-
-#: ../data/preferences.ui.in.h:12
-msgid "N_ice"
-msgstr "N_ice"
-
-#: ../data/preferences.ui.in.h:13
-msgid "Network"
-msgstr "Réseau"
-
-#: ../data/preferences.ui.in.h:14
-msgid "Options"
-msgstr "Options"
-
-#: ../data/preferences.ui.in.h:15
-msgid "Processor"
-msgstr "Processeur"
-
-#: ../data/preferences.ui.in.h:16
-msgid "S_wap Space"
-msgstr "Fichier d'_échange"
-
-#: ../data/preferences.ui.in.h:17
-msgid "S_ystem"
-msgstr "S_ystème"
-
-#: ../data/preferences.ui.in.h:18
-msgid "Sh_ared"
-msgstr "Parta_gé"
-
-#: ../data/preferences.ui.in.h:19
-msgid "Swap Space"
-msgstr "Fichier d'échange"
-
-#: ../data/preferences.ui.in.h:20
-msgid "Sys_tem monitor update interval: "
-msgstr "Fré_quence de mise à jour du moniteur système : "
-
-#: ../data/preferences.ui.in.h:21
-msgid "System m_onitor width: "
-msgstr "_Largeur du moniteur système : "
-
-#: ../data/preferences.ui.in.h:22
-msgid "_About"
-msgstr "À _propos"
-
-#: ../data/preferences.ui.in.h:23
-msgid "_Autostart: "
-msgstr "Démarrage _automatique : "
-
-#: ../data/preferences.ui.in.h:24
-msgid "_Average"
-msgstr "Mo_yenne"
-
-#: ../data/preferences.ui.in.h:25
-msgid "_Background"
-msgstr "Arrière-pla_n"
-
-#: ../data/preferences.ui.in.h:26
-msgid "_Buffers"
-msgstr "_Tampons"
-
-#: ../data/preferences.ui.in.h:27
-msgid "_Free"
-msgstr "L_ibre"
-
-#: ../data/preferences.ui.in.h:28
-msgid "_Harddisk"
-msgstr "_Disque dur"
-
-#: ../data/preferences.ui.in.h:29
-msgid "_In"
-msgstr "_Entrante"
-
-#: ../data/preferences.ui.in.h:30
-msgid "_Load"
-msgstr "_Charge"
-
-#: ../data/preferences.ui.in.h:31
-msgid "_Local"
-msgstr "_Locale"
-
-#: ../data/preferences.ui.in.h:32
-msgid "_Memory"
-msgstr "_Mémoire"
-
-#: ../data/preferences.ui.in.h:33
-msgid "_Network"
-msgstr "_Réseau"
-
-#: ../data/preferences.ui.in.h:34
-msgid "_Open System Monitor"
-msgstr "_Ouvrir le moniteur système"
-
-#: ../data/preferences.ui.in.h:35
-msgid "_Out"
-msgstr "_Sortante"
-
-#: ../data/preferences.ui.in.h:36
-msgid "_Preferences"
-msgstr "P_références"
-
-#: ../data/preferences.ui.in.h:37
-msgid "_Processor"
-msgstr "_Processeur"
-
-#: ../data/preferences.ui.in.h:38
-msgid "_Quit"
-msgstr "_Quitter"
-
-#: ../data/preferences.ui.in.h:39
-msgid "_Read"
-msgstr "L_ecture"
-
-#: ../data/preferences.ui.in.h:40
-msgid "_Used"
-msgstr "_Utilisé"
-
-#: ../data/preferences.ui.in.h:41
-msgid "_User"
-msgstr "_Utilisateur"
-
-#: ../data/preferences.ui.in.h:42
-msgid "_Write"
-msgstr "Écri_ture"
-
-#: ../data/preferences.ui.in.h:43
-msgid "milliseconds"
-msgstr "millisecondes"
-
-#: ../data/preferences.ui.in.h:44
-msgid "pixels"
-msgstr "pixels"
-
-#: ../data/preferences.ui.in.h:45
 msgid "translator-credits"
 msgstr ""
 "Christophe Merlet <redfox@redfoxcenter.org>\n"
@@ -222,38 +50,218 @@ msgstr ""
 "Robert-André Mauchin <zebob.m@pengzone.org>\n"
 "Christophe Bliard <christophe.bliard@trux.info>\n"
 "Jonathan Ernst <jonathan@ernstfamily.ch>\n"
-"Stéphane Raimbault <stephane.raimbault@gmail.com>"
+"Stéphane Raimbault <stephane.raimbault@gmail.com>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Claude Paroz https://launchpad.net/~paroz\n"
+"  Jerome Portal https://launchpad.net/~portal-j\n"
+"  LEROY Jean-Christophe https://launchpad.net/~celtic2-deactivatedaccount\n"
+"  Nicolas Delvaux https://launchpad.net/~malizor\n"
+"  demonipuch https://launchpad.net/~demonipuch"
+
+#: ../data/preferences.ui.in.h:3
+msgid "_Open System Monitor"
+msgstr "_Ouvrir le moniteur système"
+
+#: ../data/preferences.ui.in.h:4
+msgid "_Preferences"
+msgstr "P_références"
+
+#: ../data/preferences.ui.in.h:5
+msgid "_About"
+msgstr "À _propos"
+
+#: ../data/preferences.ui.in.h:6
+msgid "_Quit"
+msgstr "_Quitter"
+
+#: ../data/preferences.ui.in.h:7
+msgid "Monitored Resources"
+msgstr "Ressources surveillées"
+
+#: ../data/preferences.ui.in.h:8
+msgid "_Processor"
+msgstr "_Processeur"
+
+#: ../data/preferences.ui.in.h:9
+msgid "_Memory"
+msgstr "_Mémoire"
+
+#: ../data/preferences.ui.in.h:10
+msgid "_Network"
+msgstr "_Réseau"
+
+#: ../data/preferences.ui.in.h:11
+msgid "S_wap Space"
+msgstr "Fichier d'_échange"
+
+#: ../data/preferences.ui.in.h:12
+msgid "_Load"
+msgstr "_Charge"
+
+#: ../data/preferences.ui.in.h:13
+msgid "_Harddisk"
+msgstr "_Disque dur"
+
+#: ../data/preferences.ui.in.h:14
+msgid "Options"
+msgstr "Options"
+
+#: ../data/preferences.ui.in.h:15
+msgid "System m_onitor width: "
+msgstr "_Largeur du moniteur système : "
+
+#: ../data/preferences.ui.in.h:16
+msgid "Sys_tem monitor update interval: "
+msgstr "Fré_quence de mise à jour du moniteur système : "
+
+#: ../data/preferences.ui.in.h:17
+msgid "pixels"
+msgstr "pixels"
+
+#: ../data/preferences.ui.in.h:18
+msgid "milliseconds"
+msgstr "millisecondes"
+
+#: ../data/preferences.ui.in.h:19
+msgid "_Autostart: "
+msgstr "Démarrage _automatique : "
+
+#: ../data/preferences.ui.in.h:20
+msgid "Colors"
+msgstr "Couleurs"
+
+#: ../data/preferences.ui.in.h:21
+msgid "_User"
+msgstr "_Utilisateur"
+
+#: ../data/preferences.ui.in.h:22
+msgid "S_ystem"
+msgstr "S_ystème"
+
+#: ../data/preferences.ui.in.h:23
+msgid "N_ice"
+msgstr "N_ice"
+
+#: ../data/preferences.ui.in.h:24
+msgid "I_OWait"
+msgstr "La_tence E/S"
+
+#: ../data/preferences.ui.in.h:25
+msgid "I_dle"
+msgstr "Au rep_os"
+
+#: ../data/preferences.ui.in.h:26
+msgid "Processor"
+msgstr "Processeur"
+
+#: ../data/preferences.ui.in.h:27
+msgid "Sh_ared"
+msgstr "Parta_gé"
+
+#: ../data/preferences.ui.in.h:28
+msgid "_Buffers"
+msgstr "_Tampons"
+
+#: ../data/preferences.ui.in.h:29
+msgid "Cach_ed"
+msgstr "Cac_hé"
+
+#: ../data/preferences.ui.in.h:30
+msgid "F_ree"
+msgstr "L_ibre"
+
+#: ../data/preferences.ui.in.h:31
+msgid "Memory"
+msgstr "Mémoire"
+
+#: ../data/preferences.ui.in.h:32
+msgid "_In"
+msgstr "_Entrante"
+
+#: ../data/preferences.ui.in.h:33
+msgid "_Out"
+msgstr "_Sortante"
+
+#: ../data/preferences.ui.in.h:34
+msgid "_Local"
+msgstr "_Locale"
+
+#: ../data/preferences.ui.in.h:35
+msgid "_Background"
+msgstr "Arrière-pla_n"
+
+#: ../data/preferences.ui.in.h:36
+msgid "Network"
+msgstr "Réseau"
+
+#: ../data/preferences.ui.in.h:37
+msgid "_Used"
+msgstr "_Utilisé"
+
+#: ../data/preferences.ui.in.h:38
+msgid "_Free"
+msgstr "L_ibre"
+
+#: ../data/preferences.ui.in.h:39
+msgid "Swap Space"
+msgstr "Fichier d'échange"
+
+#: ../data/preferences.ui.in.h:40
+msgid "_Average"
+msgstr "Mo_yenne"
+
+#: ../data/preferences.ui.in.h:41
+msgid "Load"
+msgstr "Charge"
+
+#: ../data/preferences.ui.in.h:42
+msgid "_Read"
+msgstr "L_ecture"
+
+#: ../data/preferences.ui.in.h:43
+msgid "_Write"
+msgstr "Écri_ture"
+
+#: ../data/preferences.ui.in.h:44
+msgid "Harddisk"
+msgstr "Disque dur"
+
+#: ../data/preferences.ui.in.h:45
+msgid "Menu items..."
+msgstr "Les options de menu..."
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
+msgid "Available graphs"
+msgstr "Graphiques disponibles"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
 msgstr "Taux de rafraîchissement de l'applet en millisecondes"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+msgid "Width of the graphs in pixels."
+msgstr "Largeur des graphes en pixels."
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
+msgid "Height of the graphs in pixels."
+msgstr "Hauteur des graphiques en pixels."
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
+msgid "The desktop description file to execute as the system monitor"
+msgstr ""
+"Le fichier de description .desktop à utiliser pour le moniteur système"
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
 msgid "Automatically start on session startup"
 msgstr "Démarrer automatiquement à l'ouverture de la session"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
-msgid "Available graphs"
-msgstr ""
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
-msgid "Available traces"
-msgstr ""
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
-msgid "Graph alpha value"
-msgstr ""
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
-msgid "Graph background color"
-msgstr ""
-
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
-msgid "Graph visibility"
+msgid "Information in the accessible description of the indicator"
 msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
-msgid "Height of the graphs in pixels."
+msgid "Information shown in the indicator itself"
 msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
@@ -265,47 +273,50 @@ msgid "Information shown as menu entries"
 msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
-msgid "Information shown in the indicator itself"
-msgstr ""
+msgid "Graph alpha value"
+msgstr "Graphique valeur alpha"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
-msgid "Maximum value for upper graph edge, zero means unlimited"
-msgstr ""
+msgid "Graph background color"
+msgstr "Couleur de fond du graphique"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
-msgid "Minimum value for upper graph edge"
-msgstr ""
+msgid "Graph visibility"
+msgstr "Visibilité du graphique"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+msgid "Minimum value for upper graph edge"
+msgstr "Valeur minimum pour le bord haut du graphe."
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+msgid "Maximum value for upper graph edge, zero means unlimited"
+msgstr "Valeur maximum pour le bord haut du graphe, zéro signifie illimité."
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
 msgid "Number of values used for smooth graph scaling"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
-msgid "The desktop description file to execute as the system monitor"
-msgstr ""
-"Le fichier de description .desktop à utiliser pour le moniteur système"
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
-msgid "Trace color"
-msgstr ""
-
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
-msgid "Trace expression"
+msgid "Available traces"
 msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
-msgid "Trace visibility"
+msgid "Trace color"
 msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
-msgid "Traces shown"
+msgid "Trace expression"
 msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
-msgid "Width of the graphs in pixels."
-msgstr "Largeur des graphes en pixels."
+msgid "Trace visibility"
+msgstr ""
 
-#: ../data/indicator-multiload.desktop.in.h:2
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+msgid "Traces shown"
+msgstr ""
+
+#: ../data/indicator-multiload.desktop.in.h:1
 msgid "System Load Indicator"
 msgstr "Indicateur de charge système"
 
@@ -316,7 +327,7 @@ msgstr ""
 
 #: ../src/main.vala:37
 msgid "Evaluate an expression"
-msgstr ""
+msgstr "Évaluer une expression."
 
 #: ../src/main.vala:39
 msgid "List available expression identifiers"
@@ -326,11 +337,11 @@ msgstr ""
 msgid "Show debug messages"
 msgstr ""
 
-#: ../src/main.vala:311
+#: ../src/main.vala:322
 msgid "- System load application indicator"
 msgstr ""
 
-#: ../src/main.vala:319
+#: ../src/main.vala:330
 #, c-format
 msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"

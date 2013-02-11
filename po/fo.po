@@ -1,63 +1,46 @@
-# translation of gnome-applets.master.ta.po to Tamil
-# translation of gnome-applets.gnome-2-26.ta.po to
-# translation of ta.po to
-# Translation of gnome-applets.
-# Copyright (C) 2002, 2004, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
+# Faroese translation for indicator-multiload
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the indicator-multiload package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 #
-# B Muthukumar <kulirnila@yahoo.com>, 2002.
-# Jayaradha N <njayaradha@yahoo.com>, 2004, 2006.
-# Felix <ifelix@redhat.com>, 2006.
-# drtvasudevan <agnihot3@gmail.com>, 2006.
-# I felix <ifelix@redhat.com>, 2007.
-# Dr.T.Vasudevan <agnihot3@gmail.com>, 2007, 2009, 2010.
-# I. Felix <ifelix@redhat.com>, 2008, 2009.
-# Dr,T,Vasudevan <agnihot3@gmail.com>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-applets.master.ta\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: indicator-multiload\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2013-02-10 18:50+0000\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
-"Last-Translator: Dr.T.Vasudevan <agnihot3@gmail.com>\n"
-"Language-Team: Tamil <<Ubuntu-l10n-tam@lists.ubuntu.com>>\n"
+"PO-Revision-Date: 2012-02-08 17:23+0000\n"
+"Last-Translator: Jógvan Olsen <jeggy@jebster.net>\n"
+"Language-Team: Faroese <fo@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
 "X-Generator: Launchpad (build 16482)\n"
-"Language: ta\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
-"ஒரு 'ஏற்றுதலைக் கண்காணித்தல்' அமைப்பு ஸிபியு, ரேம் மற்றும் ஸ்வாப் "
-"ஆகியவற்றின் வரைபடங்களையும் கோப்பை பயன்படுத்துதலையும், வலையமைப்பின் "
-"போக்குவரத்தையும் காட்ட வல்லது"
 
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
 msgstr ""
-"மொழிபெயர்ப்பாளர்-சன்மானம் /nB Muthukumar <kulirnila@yahoo.com>, "
-"2002./nJayaradha N <njayaradha@yahoo.com>, 2004, 2006./nFelix "
-"<ifelix@redhat.com>, 2006./ndrtvasudevan <agnihot3@gmail.com>, 2006./n\n"
-"\n"
 "Launchpad Contributions:\n"
-"  drtvasudevan https://launchpad.net/~agnihot3"
+"  Jógvan Olsen https://launchpad.net/~jeggy"
 
 #: ../data/preferences.ui.in.h:3
 msgid "_Open System Monitor"
-msgstr "_த அமைப்புக் கண்காணியை திற"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:4
 msgid "_Preferences"
-msgstr "_வ விருப்பங்கள்..."
+msgstr ""
 
 #: ../data/preferences.ui.in.h:5
 msgid "_About"
-msgstr "பற்றி (_A)"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:6
 msgid "_Quit"
@@ -65,51 +48,51 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:7
 msgid "Monitored Resources"
-msgstr "கண்காணிக்கப்பட்ட வளம்"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:8
 msgid "_Processor"
-msgstr "_ச செயலகம்"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:9
 msgid "_Memory"
-msgstr "_ந நினைவகம்"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:10
 msgid "_Network"
-msgstr "_வலையமைப்பு"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:11
 msgid "S_wap Space"
-msgstr "_இட மாற்று நினைவகம்"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:12
 msgid "_Load"
-msgstr "_பளு"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:13
 msgid "_Harddisk"
-msgstr "_வ நிலைவட்டு"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:14
 msgid "Options"
-msgstr "விருப்பத்தேர்வுகள்"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:15
 msgid "System m_onitor width: "
-msgstr "_அமைப்புக்கண்காணியின் அகலம்: "
+msgstr ""
 
 #: ../data/preferences.ui.in.h:16
 msgid "Sys_tem monitor update interval: "
-msgstr "_இ அமைப்புக்கண்காணியை புதுப்பித்தல் இடைவேளை நேரம்: "
+msgstr ""
 
 #: ../data/preferences.ui.in.h:17
 msgid "pixels"
-msgstr "படத் துணுக்குகள்"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:18
 msgid "milliseconds"
-msgstr "மில்லி வினாடிகள்"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:19
 msgid "_Autostart: "
@@ -117,103 +100,103 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:20
 msgid "Colors"
-msgstr "வண்ணங்கள்"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:21
 msgid "_User"
-msgstr "_பயனர்"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:22
 msgid "S_ystem"
-msgstr "_கணினி"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:23
 msgid "N_ice"
-msgstr "_ந நைஸ்"
+msgstr "Gott"
 
 #: ../data/preferences.ui.in.h:24
 msgid "I_OWait"
-msgstr "_ஐஓவெயிட்"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:25
 msgid "I_dle"
-msgstr "_ச சும்மாயிருத்தல்"
+msgstr "Óvirkin"
 
 #: ../data/preferences.ui.in.h:26
 msgid "Processor"
-msgstr "செயலகம்"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:27
 msgid "Sh_ared"
-msgstr "ப_ங்கிடப்பட்டது"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:28
 msgid "_Buffers"
-msgstr "_ட இடையகங்கள்"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:29
 msgid "Cach_ed"
-msgstr "_க கேச்ட்"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:30
 msgid "F_ree"
-msgstr "_எஞ்சியது"
+msgstr "_Ókeypis"
 
 #: ../data/preferences.ui.in.h:31
 msgid "Memory"
-msgstr "நினைவகம்"
+msgstr "Minni"
 
 #: ../data/preferences.ui.in.h:32
 msgid "_In"
-msgstr "_In"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:33
 msgid "_Out"
-msgstr "வெளியே (_O)"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:34
 msgid "_Local"
-msgstr "இடம் (_L)"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:35
 msgid "_Background"
-msgstr "_ப பின்னணி"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:36
 msgid "Network"
-msgstr "வலையமைப்பு"
+msgstr "Netverk"
 
 #: ../data/preferences.ui.in.h:37
 msgid "_Used"
-msgstr "_பயன்படுத்தப்பட்டது"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:38
 msgid "_Free"
-msgstr "_எஞ்சியது"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:39
 msgid "Swap Space"
-msgstr "இட மாற்று நினைவக வெளி"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:40
 msgid "_Average"
-msgstr "_சராசரி"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:41
 msgid "Load"
-msgstr "பளு்றி"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:42
 msgid "_Read"
-msgstr "_படி"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:43
 msgid "_Write"
-msgstr "_எழுது"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:44
 msgid "Harddisk"
-msgstr "நிலைவட்டு"
+msgstr "Harðdiskur"
 
 #: ../data/preferences.ui.in.h:45
 msgid "Menu items..."
@@ -225,7 +208,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
-msgstr "சிறுநிரல்களைப் புதுப்பிக்கும் வகையை மில்லி நொடிகளில் அமை"
+msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
 msgid "Width of the graphs in pixels."
@@ -237,7 +220,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
 msgid "The desktop description file to execute as the system monitor"
-msgstr "பணிமேடை விவர கோப்பு கணினி கண்காணிப்பாக செயல்படுத்தப்படுகிறது"
+msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
 msgid "Automatically start on session startup"
