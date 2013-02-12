@@ -16,17 +16,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-10 18:50+0000\n"
-"PO-Revision-Date: 2012-04-18 07:37+0000\n"
-"Last-Translator: Vassili Platonov <Unknown>\n"
+"POT-Creation-Date: 2013-02-11 23:15+0000\n"
+"PO-Revision-Date: 2013-02-11 19:38+0000\n"
+"Last-Translator: Yuri Myasoedov <omerta13@yandex.ru>\n"
 "Language-Team: Russian <gnome-cyr@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2013-02-12 04:56+0000\n"
+"X-Generator: Launchpad (build 16491)\n"
 "Language: ru\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
@@ -217,7 +217,7 @@ msgstr "_Чтение"
 
 #: ../data/preferences.ui.in.h:43
 msgid "_Write"
-msgstr "Запис_ь"
+msgstr "_Запись"
 
 #: ../data/preferences.ui.in.h:44
 msgid "Harddisk"
@@ -226,6 +226,10 @@ msgstr "Жесткий диск"
 #: ../data/preferences.ui.in.h:45
 msgid "Menu items..."
 msgstr "Элементы меню..."
+
+#: ../data/preferences.ui.in.h:46
+msgid "Indicator items..."
+msgstr ""
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
 msgid "Available graphs"
@@ -252,66 +256,94 @@ msgstr ""
 msgid "Automatically start on session startup"
 msgstr "Автоматический запуск при загрузке системы"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
+#. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, backslashes and commas.
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+msgid ""
+"[ \"CPU $(percent(cpu.inuse)) Mem $(size(mem.user)) Net down "
+"$(speed(net.down)) up $(speed(net.up)) Swap $(size(swap.used)) Load "
+"$(decimals(load.avg,2)) Disk read $(speed(disk.read)) write "
+"$(speed(disk.write))\" ]"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
 msgid "Information in the accessible description of the indicator"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+#. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, backslashes and commas.
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+msgid ""
+"[ \"\", \"CPU $(percent(cpu.inuse))\", \"Mem $(size(mem.user))\", \"Net "
+"$(speed(net.down))/$(speed(net.up))\", \"Swap $(size(swap.used))\", \"Load "
+"$(decimals(load.avg,2))\", \"Disk $(speed(disk.read))/$(speed(disk.write))\" "
+"]"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
 msgid "Information shown in the indicator itself"
 msgstr "Информация, отображаемая индикатором"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
 msgid "Index of the current information shown in the indicator itself"
 msgstr "Индекс текущей информации, отображаемой индикатором"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+#. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, backslashes and commas.
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+msgid ""
+"[ \"CPU: $(percent(cpu.inuse)), iowait $(percent(cpu.io))\", \"Mem: "
+"$(size(mem.user)), cache $(size(mem.cached))\", \"Net: down "
+"$(speed(net.down)), up $(speed(net.up))\", \"Swap: $(size(swap.used))\", "
+"\"Load: $(decimals(load.avg,2))\", \"Disk: read $(speed(disk.read)), write "
+"$(speed(disk.write))\" ]"
+msgstr ""
+
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
 msgid "Information shown as menu entries"
 msgstr "Информация, отображаемая в пунктах меню"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
 msgid "Graph alpha value"
 msgstr "Прозрачность диаграммы"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
 msgid "Graph background color"
 msgstr "Цвет фона диаграммы"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
 msgid "Graph visibility"
 msgstr "Видимость диаграммы"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
 msgid "Minimum value for upper graph edge"
 msgstr "Минимальное значение верхнего края диаграммы"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
 msgid "Maximum value for upper graph edge, zero means unlimited"
 msgstr ""
 "Максимальное значение верхнего края диаграммы, ноль означает «без "
 "ограничений»"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
 msgid "Number of values used for smooth graph scaling"
 msgstr ""
 "Количество значений, используемых для плавного изменения масштаба диаграммы"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
 msgid "Available traces"
 msgstr "Доступные кривые"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
 msgid "Trace color"
 msgstr "Цвет кривой"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
 msgid "Trace expression"
 msgstr "Выражение кривой"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
 msgid "Trace visibility"
 msgstr "Видимость кривой"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
 msgid "Traces shown"
 msgstr "Отображение кривых"
 
@@ -332,15 +364,11 @@ msgstr "Значение выражения"
 msgid "List available expression identifiers"
 msgstr "Список доступных идентификаторов выражения"
 
-#: ../src/main.vala:41
-msgid "Show debug messages"
-msgstr "Показывать отладочные сообщения"
-
-#: ../src/main.vala:322
+#: ../src/main.vala:314
 msgid "- System load application indicator"
 msgstr "- Индикатор загрузки системы"
 
-#: ../src/main.vala:330
+#: ../src/main.vala:322
 #, c-format
 msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"
@@ -349,21 +377,21 @@ msgstr ""
 "командной строки.\n"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
-#: ../src/utils.vala:57
+#: ../src/utils.vala:45
 msgid "{} kB"
 msgstr "{} кБ"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
-#: ../src/utils.vala:59
+#: ../src/utils.vala:47
 msgid "{} MB"
 msgstr "{} МБ"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
-#: ../src/utils.vala:61
+#: ../src/utils.vala:49
 msgid "{} GB"
 msgstr "{} ГБ"
 
-#: ../src/utils.vala:69
+#: ../src/utils.vala:57
 #, c-format
 msgid "%u B"
 msgid_plural "%u B"
@@ -372,26 +400,26 @@ msgstr[1] "%u Б"
 msgstr[2] "%u Б"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:82
+#: ../src/utils.vala:70
 msgid "{} kB/s"
 msgstr "{} кБ/с"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:84
+#: ../src/utils.vala:72
 msgid "{} MB/s"
 msgstr "{} МБ/с"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:86
+#: ../src/utils.vala:74
 msgid "{} GB/s"
 msgstr "{} ГБ/с"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:88
+#: ../src/utils.vala:76
 msgid "{} TB/s"
 msgstr "{} ТБ/с"
 
-#: ../src/utils.vala:96
+#: ../src/utils.vala:84
 #, c-format
 msgid "%u B/s"
 msgid_plural "%u B/s"
