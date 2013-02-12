@@ -376,8 +376,11 @@ public class Main : Application {
         Intl.textdomain(Config.GETTEXT_PACKAGE);
 
         // needs to happen before get_system_data_dirs is called the first time
-        var template = "/var/lock/multiload-icons-XXXXXX".dup();
-        Main.datadirectory = DirUtils.mkdtemp(template);
+        var directory = Environment.get_variable("XDG_RUNTIME_DIR");
+        if (directory == null || directory.length == 0) {
+            directory = "/var/lock";
+        }
+        Main.datadirectory = DirUtils.mkdtemp(directory + "/multiload-icons-XXXXXX");
         var xdgdatadirs = Environment.get_variable("XDG_DATA_DIRS");
         if (xdgdatadirs.length > 0)
             xdgdatadirs += ":";
