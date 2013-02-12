@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-10 18:50+0000\n"
+"POT-Creation-Date: 2013-02-11 23:01+0000\n"
 "PO-Revision-Date: 2012-09-09 18:55+0000\n"
 "Last-Translator: Власов Александр <cvetliy_e@mail.ru>\n"
 "Language-Team: ukrainian <Ukrainian <uk@li.org>>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2013-02-12 04:58+0000\n"
+"X-Generator: Launchpad (build 16491)\n"
 "Language: \n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
@@ -237,65 +237,65 @@ msgstr "Файл опису для виконання як системний м
 msgid "Automatically start on session startup"
 msgstr "Завантажуватись автоматично після входу в систему"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
 msgid "Information in the accessible description of the indicator"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
 msgid "Information shown in the indicator itself"
 msgstr "Інформація, що відображається індикатором"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
 msgid "Index of the current information shown in the indicator itself"
 msgstr "Індекс поточної інформації, яка відображається індикатором"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
 msgid "Information shown as menu entries"
 msgstr "Інформація, що відображається в пунктах меню"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
 msgid "Graph alpha value"
 msgstr "Прозорість діаграми"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
 msgid "Graph background color"
 msgstr "Колір фону діаграми"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
 msgid "Graph visibility"
 msgstr "Видимість діаграми"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
 msgid "Minimum value for upper graph edge"
 msgstr "Мінімальне значення верхнього краю діаграми"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
 msgid "Maximum value for upper graph edge, zero means unlimited"
 msgstr ""
 "Максимальне значення верхнього краю діаграми, нуль означає \"без обмежень\""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
 msgid "Number of values used for smooth graph scaling"
 msgstr ""
 "Кількість значень, використовуваних для плавної зміни масштабу діаграми"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
 msgid "Available traces"
 msgstr "Доступні криві"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
 msgid "Trace color"
 msgstr "Колір кривої"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
 msgid "Trace expression"
 msgstr "Вираз кривої"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
 msgid "Trace visibility"
 msgstr "Видимість кривої"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
 msgid "Traces shown"
 msgstr "Відображення кривих"
 
@@ -320,11 +320,11 @@ msgstr "Список доступних ідентифікаторів вира�
 msgid "Show debug messages"
 msgstr "Показувати відлагоджувальні повідомлення"
 
-#: ../src/main.vala:322
+#: ../src/main.vala:314
 msgid "- System load application indicator"
 msgstr "Індикатор завантаження системи"
 
-#: ../src/main.vala:330
+#: ../src/main.vala:322
 #, c-format
 msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"
@@ -332,21 +332,21 @@ msgstr ""
 "Виконайте '%s --help', щоб побачити повний список доступних параметрів.\n"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
-#: ../src/utils.vala:57
+#: ../src/utils.vala:45
 msgid "{} kB"
 msgstr "{} кБ"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
-#: ../src/utils.vala:59
+#: ../src/utils.vala:47
 msgid "{} MB"
 msgstr "{} МБ"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
-#: ../src/utils.vala:61
+#: ../src/utils.vala:49
 msgid "{} GB"
 msgstr "{} ГБ"
 
-#: ../src/utils.vala:69
+#: ../src/utils.vala:57
 #, c-format
 msgid "%u B"
 msgid_plural "%u B"
@@ -355,26 +355,26 @@ msgstr[1] "%u Б"
 msgstr[2] "%u Б"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:82
+#: ../src/utils.vala:70
 msgid "{} kB/s"
 msgstr "{} кБ/с"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:84
+#: ../src/utils.vala:72
 msgid "{} MB/s"
 msgstr "{} МБ/с"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:86
+#: ../src/utils.vala:74
 msgid "{} GB/s"
 msgstr "{} ГБ/с"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:88
+#: ../src/utils.vala:76
 msgid "{} TB/s"
 msgstr "{} ТБ/с"
 
-#: ../src/utils.vala:96
+#: ../src/utils.vala:84
 #, c-format
 msgid "%u B/s"
 msgid_plural "%u B/s"

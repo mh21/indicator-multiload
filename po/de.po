@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-applets master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-10 18:50+0000\n"
+"POT-Creation-Date: 2013-02-11 23:01+0000\n"
 "PO-Revision-Date: 2013-02-06 09:36+0000\n"
 "Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
@@ -24,8 +24,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2013-02-12 04:58+0000\n"
+"X-Generator: Launchpad (build 16491)\n"
 "Language: \n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
@@ -258,67 +258,67 @@ msgstr "Die beim Anklicken zu startende .desktop-Datei"
 msgid "Automatically start on session startup"
 msgstr "Automatisch beim Hochfahren starten"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
 msgid "Information in the accessible description of the indicator"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
 msgid "Information shown in the indicator itself"
 msgstr "Informationen die im Indikator selbst angezeigt werden"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
 msgid "Index of the current information shown in the indicator itself"
 msgstr ""
 "Verzeichnis der gegenwärtigen Informtionen, die im Indikator selbst "
 "angezeigt werden"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
 msgid "Information shown as menu entries"
 msgstr "Informationen die als Menüeinträge angezeigt werden"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
 msgid "Graph alpha value"
 msgstr "Graph Alphawert"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
 msgid "Graph background color"
 msgstr "Graph Hintergrundfarbe"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
 msgid "Graph visibility"
 msgstr "Graph Sichtbarkeit"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
 msgid "Minimum value for upper graph edge"
 msgstr "Minimalwerte für obere Graphränder"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
 msgid "Maximum value for upper graph edge, zero means unlimited"
 msgstr "Maximalwerte für obere Graphränder, Null bedeutet uneingeschränkt"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
 msgid "Number of values used for smooth graph scaling"
 msgstr ""
 "Anzahl an Werten die dargestellt werden sollen für eine sanfte graphische "
 "Skalierung"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
 msgid "Available traces"
 msgstr "Verfügbare Protokollierungen"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
 msgid "Trace color"
 msgstr "Protokollierungsfarbe"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
 msgid "Trace expression"
 msgstr "Protokollierungsausdruck"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
 msgid "Trace visibility"
 msgstr "Protokollierungssichtbarkeit"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
 msgid "Traces shown"
 msgstr "Angezeigte Protokollierungen"
 
@@ -343,11 +343,11 @@ msgstr "Auflistung verfügbarer Ausdruck-Identifikatoren"
 msgid "Show debug messages"
 msgstr "Debug-Meldungen anzeigen"
 
-#: ../src/main.vala:322
+#: ../src/main.vala:314
 msgid "- System load application indicator"
 msgstr "- Systemlast Anwendungsindikator"
 
-#: ../src/main.vala:330
+#: ../src/main.vala:322
 #, c-format
 msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"
@@ -356,21 +356,21 @@ msgstr ""
 "Befehlszeilenoptionen zu erhalten.\n"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
-#: ../src/utils.vala:57
+#: ../src/utils.vala:45
 msgid "{} kB"
 msgstr "{} kB"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
-#: ../src/utils.vala:59
+#: ../src/utils.vala:47
 msgid "{} MB"
 msgstr "{} MB"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
-#: ../src/utils.vala:61
+#: ../src/utils.vala:49
 msgid "{} GB"
 msgstr "{} GB"
 
-#: ../src/utils.vala:69
+#: ../src/utils.vala:57
 #, c-format
 msgid "%u B"
 msgid_plural "%u B"
@@ -378,26 +378,26 @@ msgstr[0] "%u B"
 msgstr[1] "%u B"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:82
+#: ../src/utils.vala:70
 msgid "{} kB/s"
 msgstr "{} kB/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:84
+#: ../src/utils.vala:72
 msgid "{} MB/s"
 msgstr "{} MB/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:86
+#: ../src/utils.vala:74
 msgid "{} GB/s"
 msgstr "{} GB/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:88
+#: ../src/utils.vala:76
 msgid "{} TB/s"
 msgstr "{} TB/s"
 
-#: ../src/utils.vala:96
+#: ../src/utils.vala:84
 #, c-format
 msgid "%u B/s"
 msgid_plural "%u B/s"
