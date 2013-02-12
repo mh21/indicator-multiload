@@ -59,6 +59,10 @@ public class NetProvider : Provider {
                 newdata[0] += netload.bytes_in;
                 newdata[1] += netload.bytes_out;
                 debug("  existing device link");
+            } else if ((netload.if_flags & (1L << GTop.IFFlags.POINTOPOINT)) > 0) {
+                newdata[0] += netload.bytes_in;
+                newdata[1] += netload.bytes_out;
+                debug("  pointtopoint");
             } else if ((netload.if_flags & (1L << GTop.IFFlags.LOOPBACK)) > 0) {
                 newdata[2] += netload.bytes_in;
                 debug("  loopback");
