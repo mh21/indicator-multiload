@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-applets.HEAD.he\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-11 23:15+0000\n"
+"POT-Creation-Date: 2013-02-12 09:22+0000\n"
 "PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <he@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-12 04:56+0000\n"
+"X-Launchpad-Export-Date: 2013-02-13 04:56+0000\n"
 "X-Generator: Launchpad (build 16491)\n"
 "Language: he\n"
 
@@ -241,7 +241,7 @@ msgstr "The desktop description file to execute as the system monitor"
 msgid "Automatically start on session startup"
 msgstr ""
 
-#. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, backslashes and commas.
+#. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, and commas.
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
 msgid ""
 "[ \"CPU $(percent(cpu.inuse)) Mem $(size(mem.user)) Net down "
@@ -254,7 +254,7 @@ msgstr ""
 msgid "Information in the accessible description of the indicator"
 msgstr ""
 
-#. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, backslashes and commas.
+#. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, and commas.
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
 msgid ""
 "[ \"\", \"CPU $(percent(cpu.inuse))\", \"Mem $(size(mem.user))\", \"Net "
@@ -263,16 +263,16 @@ msgid ""
 "]"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
 msgid "Information shown in the indicator itself"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
 msgid "Index of the current information shown in the indicator itself"
 msgstr ""
 
-#. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, backslashes and commas.
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+#. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, and commas.
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
 msgid ""
 "[ \"CPU: $(percent(cpu.inuse)), iowait $(percent(cpu.io))\", \"Mem: "
 "$(size(mem.user)), cache $(size(mem.cached))\", \"Net: down "
@@ -281,51 +281,51 @@ msgid ""
 "$(speed(disk.write))\" ]"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
 msgid "Information shown as menu entries"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
 msgid "Graph alpha value"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
 msgid "Graph background color"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
 msgid "Graph visibility"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
 msgid "Minimum value for upper graph edge"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
 msgid "Maximum value for upper graph edge, zero means unlimited"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
 msgid "Number of values used for smooth graph scaling"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
 msgid "Available traces"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
 msgid "Trace color"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
 msgid "Trace expression"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
 msgid "Trace visibility"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
 msgid "Traces shown"
 msgstr ""
 
@@ -346,32 +346,32 @@ msgstr ""
 msgid "List available expression identifiers"
 msgstr ""
 
-#: ../src/main.vala:314
+#: ../src/main.vala:322
 msgid "- System load application indicator"
 msgstr ""
 
-#: ../src/main.vala:322
+#: ../src/main.vala:330
 #, c-format
 msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
-#: ../src/utils.vala:45
+#: ../src/utils.vala:57
 msgid "{} kB"
 msgstr ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
-#: ../src/utils.vala:47
+#: ../src/utils.vala:59
 msgid "{} MB"
 msgstr ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
-#: ../src/utils.vala:49
+#: ../src/utils.vala:61
 msgid "{} GB"
 msgstr ""
 
-#: ../src/utils.vala:57
+#: ../src/utils.vala:69
 #, c-format
 msgid "%u B"
 msgid_plural "%u B"
@@ -379,26 +379,26 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:70
+#: ../src/utils.vala:82
 msgid "{} kB/s"
 msgstr ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:72
+#: ../src/utils.vala:84
 msgid "{} MB/s"
 msgstr ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:74
+#: ../src/utils.vala:86
 msgid "{} GB/s"
 msgstr ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:76
+#: ../src/utils.vala:88
 msgid "{} TB/s"
 msgstr ""
 
-#: ../src/utils.vala:84
+#: ../src/utils.vala:96
 #, c-format
 msgid "%u B/s"
 msgid_plural "%u B/s"
