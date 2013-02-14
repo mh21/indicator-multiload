@@ -50,7 +50,7 @@ indicator_multiload_SOURCES = \
 	various.vapi
 
 indicator_multiload_LDFLAGS = \
-	-Wl,--export-dynamic -Wl,--as-needed
+	-Wl,--export-dynamic
 
 indicator_multiload_LDADD = $(MULTILOADDEPS_LIBS)
 
