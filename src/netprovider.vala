@@ -35,22 +35,22 @@ public class NetProvider : Provider {
         for (uint i = 0; i < netlist.number; ++i) {
             GTop.NetLoad netload;
             GTop.get_netload(out netload, devices[i]);
-            debug("Netload: %s", devices[i]);
-            debug("  flags: %llx", netload.flags);
-            debug("  if flags: %llx", netload.if_flags);
-            debug("  mtu: %u", netload.mtu);
-            debug("  subnet: %u", netload.subnet);
-            debug("  address: %u", netload.address);
-            debug("  packets in: %llu", netload.packets_in);
-            debug("  packets out: %llu", netload.packets_out);
-            debug("  packets total: %llu", netload.packets_total);
-            debug("  bytes in: %llu", netload.bytes_in);
-            debug("  bytes out: %llu", netload.bytes_out);
-            debug("  bytes total: %llu", netload.bytes_total);
-            debug("  errors in: %llu", netload.errors_in);
-            debug("  errors out: %llu", netload.errors_out);
-            debug("  errors total: %llu", netload.errors_total);
-            debug("  collisions: %llu", netload.collisions);
+            debug("Netload: " + devices[i]);
+            debug("  flags: %x", (uint32)netload.flags);
+            debug("  if flags: %x", (uint32)netload.if_flags);
+            debug("  mtu: " + netload.mtu.to_string());
+            debug("  subnet: " + netload.subnet.to_string());
+            debug("  address: " + netload.address.to_string());
+            debug("  packets in: " + netload.packets_in.to_string());
+            debug("  packets out: " + netload.packets_out.to_string());
+            debug("  packets total: " + netload.packets_total.to_string());
+            debug("  bytes in: " + netload.bytes_in.to_string());
+            debug("  bytes out: " + netload.bytes_out.to_string());
+            debug("  bytes total: " + netload.bytes_total.to_string());
+            debug("  errors in: " + netload.errors_in.to_string());
+            debug("  errors out: " + netload.errors_out.to_string());
+            debug("  errors total: " + netload.errors_total.to_string());
+            debug("  collisions: " + netload.collisions.to_string());
             if (((netload.if_flags & (1L << GTop.IFFlags.UP)) == 0) |
                 ((netload.if_flags & (1L << GTop.IFFlags.RUNNING)) == 0)) {
                 // TODO: transient high differences when shut down
