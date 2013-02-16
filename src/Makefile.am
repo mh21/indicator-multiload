@@ -4,7 +4,11 @@ AM_CPPFLAGS = \
 	$(MULTILOADDEPS_CFLAGS) \
 	-include $(CONFIG_HEADER)
 
-AM_CFLAGS = -Wall -g -Wno-unused-but-set-variable -Wno-unused-variable -Wno-unused-function
+AM_CFLAGS = -Wall -g \
+           -Wno-unused-but-set-variable \
+           -Wno-unused-variable \
+           -Wno-unused-function \
+           -Wno-missing-braces
 
 VALAFLAGS =  \
 	--pkg=posix \
@@ -52,7 +56,7 @@ indicator_multiload_SOURCES = \
 indicator_multiload_LDFLAGS = \
 	-Wl,--export-dynamic -Wl,--as-needed
 
-indicator_multiload_LDADD = $(MULTILOADDEPS_LIBS)
+indicator_multiload_LDADD = $(MULTILOADDEPS_LIBS) -lm
 
 DISTCLEANFILES = \
 	$(indicator_multiload_VALASOURCES:.vala=.c) indicator_multiload_vala.stamp
