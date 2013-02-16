@@ -4,11 +4,11 @@ Upstream-Contact: Michael Hofmann <mh21@mh21.de>
 Source: <https://launchpad.net/indicator-multiload>
 
 Files: *
-Copyright: 2001 Michael Hofmann <mh21@mh21.de>
+Copyright: 2011-2013 Michael Hofmann <mh21@mh21.de>
 License: GPL-3.0+
 
 Files: debian/*
-Copyright: 2011 Michael Hofmann <mh21@mh21.de>
+Copyright: 2011-2013 Michael Hofmann <mh21@mh21.de>
 License: GPL-3.0+
 
 License: GPL-3.0+
