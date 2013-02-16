@@ -14,7 +14,7 @@ EXTRA_DIST = \
 uninstall-hook:
 	-rmdir $(multiloaddocdir)
 
-test-run:
+test-run: all
 	-rm -rf local-xdg-data-dir
 	-mkdir -p local-xdg-data-dir/glib-2.0/schemas local-xdg-data-dir/indicator-multiload
 	-ln -s ../../../data/de.mh21.indicator.multiload.gschema.xml local-xdg-data-dir/glib-2.0/schemas
@@ -23,7 +23,7 @@ test-run:
 	-XDG_DATA_DIRS=./local-xdg-data-dir:$$XDG_DATA_DIRS G_SLICE=always-malloc src/indicator-multiload
 	-rm -rf local-xdg-data-dir
 
-test-verbose:
+test-verbose: all
 	-rm -rf local-xdg-data-dir
 	-mkdir -p local-xdg-data-dir/glib-2.0/schemas local-xdg-data-dir/indicator-multiload
 	-ln -s ../../../data/de.mh21.indicator.multiload.gschema.xml local-xdg-data-dir/glib-2.0/schemas
@@ -32,7 +32,7 @@ test-verbose:
 	-XDG_DATA_DIRS=./local-xdg-data-dir:$$XDG_DATA_DIRS G_MESSAGES_DEBUG=all G_SLICE=always-malloc src/indicator-multiload
 	-rm -rf local-xdg-data-dir
 
-test-debug:
+test-debug: all
 	-rm -rf local-xdg-data-dir
 	-mkdir -p local-xdg-data-dir/glib-2.0/schemas local-xdg-data-dir/indicator-multiload
 	-ln -s ../../../data/de.mh21.indicator.multiload.gschema.xml local-xdg-data-dir/glib-2.0/schemas
@@ -41,7 +41,7 @@ test-debug:
 	-XDG_DATA_DIRS=./local-xdg-data-dir:$$XDG_DATA_DIRS G_MESSAGES_DEBUG=all G_SLICE=always-malloc gdb --args src/indicator-multiload
 	-rm -rf local-xdg-data-dir
 
-test-valgrind:
+test-valgrind: all
 	-rm -rf local-xdg-data-dir
 	-mkdir -p local-xdg-data-dir/glib-2.0/schemas local-xdg-data-dir/indicator-multiload
 	-ln -s ../../../data/de.mh21.indicator.multiload.gschema.xml local-xdg-data-dir/glib-2.0/schemas

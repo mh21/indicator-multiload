@@ -1,5 +1,5 @@
 AC_INIT([indicator-multiload],
-	[0.3],
+	[0.4],
 	[mh21@mh21.de],
 	[indicator-multiload],
 	[http://mh21.de/])
