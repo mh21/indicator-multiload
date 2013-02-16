@@ -25,8 +25,6 @@ public class GraphModel : Object {
     public ExpressionCache minimum { get; construct; }
     public ExpressionCache maximum { get; construct; }
     public string smooth { get; set; }
-    public Gdk.Color background_color { get; set; }
-    public uint alpha { get; set; }
     public bool enabled { get; set; }
     public string[] traces { get; set; }
     public double scale { get; private set; default = 1; }
@@ -99,13 +97,5 @@ public class GraphModel : Object {
         }
         this.scalerhistory[this.scalerhistory.length - 1] = currentpeak;
         this.scale = Utils.mean(this.scalerhistory);
-    }
-
-    public void set_source_color(Cairo.Context ctx)
-    {
-        ctx.set_source_rgba(this.background_color.red / 65535.0,
-                this.background_color.green / 65565.0,
-                this.background_color.blue / 65565.0,
-                this.alpha / 65565.0);
     }
 }

@@ -23,6 +23,7 @@ VALAFLAGS =  \
 bin_PROGRAMS = indicator-multiload
 
 indicator_multiload_VALASOURCES = \
+	colormapper.vala \
 	cpuprovider.vala \
 	diskprovider.vala \
 	expressionparser.vala \

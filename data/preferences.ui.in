@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
-  <requires lib="gtk+" version="2.16"/>
-  <!-- interface-naming-policy project-wide -->
+  <!-- interface-requires gtk+ 3.0 -->
   <object class="GtkAboutDialog" id="aboutdialog">
     <property name="can_focus">False</property>
     <property name="border_width">5</property>
@@ -20,12 +19,13 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
     <signal name="destroy" handler="main_on_aboutdialog_destroy" swapped="no"/>
     <signal name="response" handler="gtk_widget_destroy" swapped="no"/>
     <child internal-child="vbox">
-      <object class="GtkVBox" id="dialog-vbox3">
+      <object class="GtkBox" id="dialog-vbox3">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
         <property name="spacing">2</property>
         <child internal-child="action_area">
-          <object class="GtkHButtonBox" id="dialog-action_area3">
+          <object class="GtkButtonBox" id="dialog-action_area3">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="layout_style">end</property>
@@ -52,18 +52,20 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
     <signal name="destroy" handler="item_preferences_on_itemdialog_destroy" swapped="no"/>
     <signal name="response" handler="item_preferences_on_itemdialog_response" swapped="no"/>
     <child internal-child="vbox">
-      <object class="GtkVBox" id="dialog-vbox4">
+      <object class="GtkBox" id="dialog-vbox4">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
         <property name="spacing">2</property>
         <child internal-child="action_area">
-          <object class="GtkHButtonBox" id="dialog-action_area4">
+          <object class="GtkButtonBox" id="dialog-action_area4">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="layout_style">end</property>
             <child>
               <object class="GtkButton" id="button1">
                 <property name="label">gtk-close</property>
+                <property name="use_action_appearance">False</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -79,6 +81,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
             <child>
               <object class="GtkButton" id="button2">
                 <property name="label">gtk-revert-to-saved</property>
+                <property name="use_action_appearance">False</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -108,8 +111,6 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
               <object class="GtkScrolledWindow" id="scrolledwindow1">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
-                <property name="hscrollbar_policy">automatic</property>
-                <property name="vscrollbar_policy">automatic</property>
                 <child>
                   <object class="GtkTreeView" id="itemview">
                     <property name="visible">True</property>
@@ -119,6 +120,9 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                     <property name="headers_clickable">False</property>
                     <property name="reorderable">True</property>
                     <property name="search_column">0</property>
+                    <child internal-child="selection">
+                      <object class="GtkTreeSelection" id="treeview-selection1"/>
+                    </child>
                     <child>
                       <object class="GtkTreeViewColumn" id="expressioncolumn">
                         <child>
@@ -151,6 +155,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                 <child>
                   <object class="GtkButton" id="itemadd">
                     <property name="label">gtk-add</property>
+                    <property name="use_action_appearance">False</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
@@ -167,6 +172,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                 <child>
                   <object class="GtkButton" id="itemremove">
                     <property name="label">gtk-remove</property>
+                    <property name="use_action_appearance">False</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
@@ -183,6 +189,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                 <child>
                   <object class="GtkButton" id="itemedit">
                     <property name="label">gtk-edit</property>
+                    <property name="use_action_appearance">False</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
@@ -199,6 +206,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                 <child>
                   <object class="GtkButton" id="itemup">
                     <property name="label">gtk-go-up</property>
+                    <property name="use_action_appearance">False</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
@@ -215,6 +223,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                 <child>
                   <object class="GtkButton" id="itemdown">
                     <property name="label">gtk-go-down</property>
+                    <property name="use_action_appearance">False</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
@@ -264,9 +273,9 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
     <property name="can_focus">False</property>
     <child>
       <object class="GtkMenuItem" id="sysmon">
+        <property name="use_action_appearance">False</property>
         <property name="visible">True</property>
         <property name="can_focus">False</property>
-        <property name="use_action_appearance">False</property>
         <property name="label" translatable="yes">_Open System Monitor</property>
         <property name="use_underline">True</property>
         <signal name="activate" handler="main_on_sysmon_activate" swapped="no"/>
@@ -274,23 +283,23 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
     </child>
     <child>
       <object class="GtkSeparatorMenuItem" id="separatormenuitem1">
+        <property name="use_action_appearance">False</property>
         <property name="visible">True</property>
         <property name="can_focus">False</property>
-        <property name="use_action_appearance">False</property>
       </object>
     </child>
     <child>
       <object class="GtkSeparatorMenuItem" id="separatormenuitem2">
+        <property name="use_action_appearance">False</property>
         <property name="visible">True</property>
         <property name="can_focus">False</property>
-        <property name="use_action_appearance">False</property>
       </object>
     </child>
     <child>
       <object class="GtkMenuItem" id="preferences">
+        <property name="use_action_appearance">False</property>
         <property name="visible">True</property>
         <property name="can_focus">False</property>
-        <property name="use_action_appearance">False</property>
         <property name="label" translatable="yes">_Preferences</property>
         <property name="use_underline">True</property>
         <signal name="activate" handler="main_on_preferences_activate" swapped="no"/>
@@ -298,9 +307,9 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
     </child>
     <child>
       <object class="GtkMenuItem" id="about">
+        <property name="use_action_appearance">False</property>
         <property name="visible">True</property>
         <property name="can_focus">False</property>
-        <property name="use_action_appearance">False</property>
         <property name="label" translatable="yes">_About</property>
         <property name="use_underline">True</property>
         <signal name="activate" handler="main_on_about_activate" swapped="no"/>
@@ -308,14 +317,38 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
     </child>
     <child>
       <object class="GtkMenuItem" id="quit">
+        <property name="use_action_appearance">False</property>
         <property name="visible">True</property>
         <property name="can_focus">False</property>
-        <property name="use_action_appearance">False</property>
         <property name="label" translatable="yes">_Quit</property>
         <property name="use_underline">True</property>
         <signal name="activate" handler="main_on_quit_activate" swapped="no"/>
       </object>
     </child>
+  </object>
+  <object class="GtkListStore" id="schemestore">
+    <columns>
+      <!-- column-name label -->
+      <column type="gchararray"/>
+      <!-- column-name id -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes" context="Color scheme name">Traditional</col>
+        <col id="1">traditional</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes" context="Color scheme name">Custom</col>
+        <col id="1">custom</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkAdjustment" id="speedadjustment">
+    <property name="lower">50</property>
+    <property name="upper">10000</property>
+    <property name="step_increment">50</property>
+    <property name="page_increment">500</property>
   </object>
   <object class="GtkDialog" id="preferencesdialog">
     <property name="can_focus">False</property>
@@ -324,9 +357,10 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
     <signal name="destroy" handler="preferences_on_preferencesdialog_destroy" swapped="no"/>
     <signal name="response" handler="preferences_on_preferencesdialog_response" swapped="no"/>
     <child internal-child="vbox">
-      <object class="GtkVBox" id="dialog-vbox2">
+      <object class="GtkBox" id="dialog-vbox2">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
         <property name="spacing">6</property>
         <child>
           <object class="GtkAlignment" id="alignment1">
@@ -371,15 +405,18 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                           <object class="GtkHBox" id="hbox1">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
+                            <property name="halign">start</property>
                             <property name="spacing">6</property>
                             <child>
                               <object class="GtkCheckButton" id="cpu_enabled">
                                 <property name="label" translatable="yes">_Processor</property>
+                                <property name="use_action_appearance">False</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">False</property>
                                 <property name="use_action_appearance">False</property>
                                 <property name="use_underline">True</property>
+                                <property name="xalign">0.5</property>
                                 <property name="draw_indicator">True</property>
                               </object>
                               <packing>
@@ -391,11 +428,13 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                             <child>
                               <object class="GtkCheckButton" id="mem_enabled">
                                 <property name="label" translatable="yes">_Memory</property>
+                                <property name="use_action_appearance">False</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">False</property>
                                 <property name="use_action_appearance">False</property>
                                 <property name="use_underline">True</property>
+                                <property name="xalign">0.5</property>
                                 <property name="draw_indicator">True</property>
                               </object>
                               <packing>
@@ -407,11 +446,13 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                             <child>
                               <object class="GtkCheckButton" id="net_enabled">
                                 <property name="label" translatable="yes">_Network</property>
+                                <property name="use_action_appearance">False</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">False</property>
                                 <property name="use_action_appearance">False</property>
                                 <property name="use_underline">True</property>
+                                <property name="xalign">0.5</property>
                                 <property name="draw_indicator">True</property>
                               </object>
                               <packing>
@@ -423,11 +464,13 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                             <child>
                               <object class="GtkCheckButton" id="swap_enabled">
                                 <property name="label" translatable="yes">S_wap Space</property>
+                                <property name="use_action_appearance">False</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">False</property>
                                 <property name="use_action_appearance">False</property>
                                 <property name="use_underline">True</property>
+                                <property name="xalign">0.5</property>
                                 <property name="draw_indicator">True</property>
                               </object>
                               <packing>
@@ -439,11 +482,13 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                             <child>
                               <object class="GtkCheckButton" id="load_enabled">
                                 <property name="label" translatable="yes">_Load</property>
+                                <property name="use_action_appearance">False</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">False</property>
                                 <property name="use_action_appearance">False</property>
                                 <property name="use_underline">True</property>
+                                <property name="xalign">0.5</property>
                                 <property name="draw_indicator">True</property>
                               </object>
                               <packing>
@@ -455,11 +500,13 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                             <child>
                               <object class="GtkCheckButton" id="disk_enabled">
                                 <property name="label" translatable="yes">_Harddisk</property>
+                                <property name="use_action_appearance">False</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">False</property>
                                 <property name="use_action_appearance">False</property>
                                 <property name="use_underline">True</property>
+                                <property name="xalign">0.5</property>
                                 <property name="draw_indicator">True</property>
                               </object>
                               <packing>
@@ -525,6 +572,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                 <property name="xalign">0</property>
                                 <property name="label" translatable="yes">System m_onitor width: </property>
                                 <property name="use_underline">True</property>
+                                <property name="mnemonic_widget">width</property>
                               </object>
                               <packing>
                                 <property name="top_attach">1</property>
@@ -539,6 +587,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                 <property name="xalign">1.1175870895385742e-08</property>
                                 <property name="label" translatable="yes">Sys_tem monitor update interval: </property>
                                 <property name="use_underline">True</property>
+                                <property name="mnemonic_widget">speed</property>
                               </object>
                               <packing>
                                 <property name="top_attach">2</property>
@@ -554,8 +603,6 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                 <property name="invisible_char_set">True</property>
                                 <property name="primary_icon_activatable">False</property>
                                 <property name="secondary_icon_activatable">False</property>
-                                <property name="primary_icon_sensitive">True</property>
-                                <property name="secondary_icon_sensitive">True</property>
                                 <property name="adjustment">widthadjustment</property>
                               </object>
                               <packing>
@@ -588,8 +635,6 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                                 <property name="invisible_char_set">True</property>
                                 <property name="primary_icon_activatable">False</property>
                                 <property name="secondary_icon_activatable">False</property>
-                                <property name="primary_icon_sensitive">True</property>
-                                <property name="secondary_icon_sensitive">True</property>
                                 <property name="adjustment">speedadjustment</property>
                               </object>
                               <packing>
@@ -615,20 +660,6 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                               </packing>
                             </child>
                             <child>
-                              <object class="GtkCheckButton" id="autostart">
-                                <property name="visible">True</property>
-                                <property name="can_focus">True</property>
-                                <property name="receives_default">False</property>
-                                <property name="use_action_appearance">False</property>
-                                <property name="draw_indicator">True</property>
-                              </object>
-                              <packing>
-                                <property name="left_attach">1</property>
-                                <property name="right_attach">2</property>
-                                <property name="x_options">GTK_FILL</property>
-                              </packing>
-                            </child>
-                            <child>
                               <object class="GtkLabel" id="label35">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
@@ -639,7 +670,17 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                               </object>
                             </child>
                             <child>
-                              <placeholder/>
+                              <object class="GtkSwitch" id="autostart">
+                                <property name="use_action_appearance">False</property>
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="halign">start</property>
+                                <property name="use_action_appearance">False</property>
+                              </object>
+                              <packing>
+                                <property name="left_attach">1</property>
+                                <property name="right_attach">3</property>
+                              </packing>
                             </child>
                           </object>
                         </child>
@@ -684,819 +725,601 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                         <property name="can_focus">False</property>
                         <property name="left_padding">12</property>
                         <child>
-                          <object class="GtkNotebook" id="notebook1">
+                          <object class="GtkTable" id="table2">
                             <property name="visible">True</property>
-                            <property name="can_focus">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="n_rows">2</property>
+                            <property name="n_columns">2</property>
+                            <property name="column_spacing">6</property>
+                            <property name="row_spacing">6</property>
                             <child>
-                              <object class="GtkAlignment" id="alignment5">
+                              <object class="GtkLabel" id="label36">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
-                                <property name="top_padding">12</property>
-                                <property name="bottom_padding">12</property>
-                                <property name="left_padding">12</property>
-                                <property name="right_padding">12</property>
-                                <child>
-                                  <object class="GtkTable" id="table2">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="n_rows">2</property>
-                                    <property name="n_columns">5</property>
-                                    <property name="column_spacing">12</property>
-                                    <property name="row_spacing">6</property>
-                                    <child>
-                                      <object class="GtkColorButton" id="cpu_background_color">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">True</property>
-                                        <property name="receives_default">True</property>
-                                        <property name="use_action_appearance">False</property>
-                                        <property name="use_alpha">True</property>
-                                        <property name="color">#000000000000</property>
-                                      </object>
-                                      <packing>
-                                        <property name="left_attach">4</property>
-                                        <property name="right_attach">5</property>
-                                        <property name="x_options">GTK_EXPAND</property>
-                                        <property name="y_options">GTK_EXPAND</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkColorButton" id="cpu4_color">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">True</property>
-                                        <property name="receives_default">True</property>
-                                        <property name="use_action_appearance">False</property>
-                                        <property name="color">#000000000000</property>
-                                      </object>
-                                      <packing>
-                                        <property name="left_attach">3</property>
-                                        <property name="right_attach">4</property>
-                                        <property name="x_options">GTK_EXPAND</property>
-                                        <property name="y_options">GTK_EXPAND</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkColorButton" id="cpu3_color">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">True</property>
-                                        <property name="receives_default">True</property>
-                                        <property name="use_action_appearance">False</property>
-                                        <property name="color">#000000000000</property>
-                                      </object>
-                                      <packing>
-                                        <property name="left_attach">2</property>
-                                        <property name="right_attach">3</property>
-                                        <property name="x_options">GTK_EXPAND</property>
-                                        <property name="y_options">GTK_EXPAND</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkColorButton" id="cpu2_color">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">True</property>
-                                        <property name="receives_default">True</property>
-                                        <property name="use_action_appearance">False</property>
-                                        <property name="color">#000000000000</property>
-                                      </object>
-                                      <packing>
-                                        <property name="left_attach">1</property>
-                                        <property name="right_attach">2</property>
-                                        <property name="x_options">GTK_EXPAND</property>
-                                        <property name="y_options">GTK_EXPAND</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkColorButton" id="cpu1_color">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">True</property>
-                                        <property name="receives_default">True</property>
-                                        <property name="use_action_appearance">False</property>
-                                        <property name="color">#000000000000</property>
-                                      </object>
-                                      <packing>
-                                        <property name="x_options">GTK_EXPAND</property>
-                                        <property name="y_options">GTK_EXPAND</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkLabel" id="label14">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">False</property>
-                                        <property name="label" translatable="yes">_User</property>
-                                        <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">cpu1_color</property>
-                                      </object>
-                                      <packing>
-                                        <property name="top_attach">1</property>
-                                        <property name="bottom_attach">2</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkLabel" id="label15">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">False</property>
-                                        <property name="label" translatable="yes">S_ystem</property>
-                                        <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">cpu2_color</property>
-                                      </object>
-                                      <packing>
-                                        <property name="left_attach">1</property>
-                                        <property name="right_attach">2</property>
-                                        <property name="top_attach">1</property>
-                                        <property name="bottom_attach">2</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkLabel" id="label16">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">False</property>
-                                        <property name="label" translatable="yes">N_ice</property>
-                                        <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">cpu3_color</property>
-                                      </object>
-                                      <packing>
-                                        <property name="left_attach">2</property>
-                                        <property name="right_attach">3</property>
-                                        <property name="top_attach">1</property>
-                                        <property name="bottom_attach">2</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkLabel" id="label17">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">False</property>
-                                        <property name="label" translatable="yes">I_OWait</property>
-                                        <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">cpu4_color</property>
-                                      </object>
-                                      <packing>
-                                        <property name="left_attach">3</property>
-                                        <property name="right_attach">4</property>
-                                        <property name="top_attach">1</property>
-                                        <property name="bottom_attach">2</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkLabel" id="label18">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">False</property>
-                                        <property name="label" translatable="yes">I_dle</property>
-                                        <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">cpu_background_color</property>
-                                      </object>
-                                      <packing>
-                                        <property name="left_attach">4</property>
-                                        <property name="right_attach">5</property>
-                                        <property name="top_attach">1</property>
-                                        <property name="bottom_attach">2</property>
-                                      </packing>
-                                    </child>
-                                  </object>
-                                </child>
+                                <property name="xalign">0</property>
+                                <property name="label" translatable="yes">Built-in schemes:</property>
+                                <property name="use_underline">True</property>
+                                <property name="mnemonic_widget">colorschemes</property>
                               </object>
                             </child>
-                            <child type="tab">
-                              <object class="GtkLabel" id="label1">
+                            <child>
+                              <object class="GtkLabel" id="label37">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
-                                <property name="label" translatable="yes">Processor</property>
+                                <property name="xalign">0</property>
+                                <property name="yalign">0</property>
+                                <property name="label" translatable="yes">Color palette:</property>
+                                <property name="use_underline">True</property>
                               </object>
                               <packing>
-                                <property name="tab_fill">False</property>
+                                <property name="top_attach">1</property>
+                                <property name="bottom_attach">2</property>
                               </packing>
                             </child>
                             <child>
-                              <object class="GtkAlignment" id="alignment6">
+                              <object class="GtkComboBox" id="colorschemes">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
-                                <property name="top_padding">12</property>
-                                <property name="bottom_padding">12</property>
-                                <property name="left_padding">12</property>
-                                <property name="right_padding">12</property>
+                                <property name="model">schemestore</property>
+                                <property name="id_column">1</property>
                                 <child>
-                                  <object class="GtkTable" id="table3">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="n_rows">2</property>
-                                    <property name="n_columns">5</property>
-                                    <property name="column_spacing">12</property>
-                                    <property name="row_spacing">6</property>
-                                    <child>
-                                      <object class="GtkColorButton" id="mem1_color">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">True</property>
-                                        <property name="receives_default">True</property>
-                                        <property name="use_action_appearance">False</property>
-                                        <property name="color">#000000000000</property>
-                                      </object>
-                                      <packing>
-                                        <property name="x_options">GTK_EXPAND</property>
-                                        <property name="y_options">GTK_EXPAND</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkColorButton" id="mem2_color">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">True</property>
-                                        <property name="receives_default">True</property>
-                                        <property name="use_action_appearance">False</property>
-                                        <property name="color">#000000000000</property>
-                                      </object>
-                                      <packing>
-                                        <property name="left_attach">1</property>
-                                        <property name="right_attach">2</property>
-                                        <property name="x_options">GTK_EXPAND</property>
-                                        <property name="y_options">GTK_EXPAND</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkColorButton" id="mem3_color">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">True</property>
-                                        <property name="receives_default">True</property>
-                                        <property name="use_action_appearance">False</property>
-                                        <property name="color">#000000000000</property>
-                                      </object>
-                                      <packing>
-                                        <property name="left_attach">2</property>
-                                        <property name="right_attach">3</property>
-                                        <property name="x_options">GTK_EXPAND</property>
-                                        <property name="y_options">GTK_EXPAND</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkColorButton" id="mem4_color">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">True</property>
-                                        <property name="receives_default">True</property>
-                                        <property name="use_action_appearance">False</property>
-                                        <property name="color">#000000000000</property>
-                                      </object>
-                                      <packing>
-                                        <property name="left_attach">3</property>
-                                        <property name="right_attach">4</property>
-                                        <property name="x_options">GTK_EXPAND</property>
-                                        <property name="y_options">GTK_EXPAND</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkColorButton" id="mem_background_color">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">True</property>
-                                        <property name="receives_default">True</property>
-                                        <property name="use_action_appearance">False</property>
-                                        <property name="use_alpha">True</property>
-                                        <property name="color">#000000000000</property>
-                                      </object>
-                                      <packing>
-                                        <property name="left_attach">4</property>
-                                        <property name="right_attach">5</property>
-                                        <property name="x_options">GTK_EXPAND</property>
-                                        <property name="y_options">GTK_EXPAND</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkLabel" id="label19">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">False</property>
-                                        <property name="label" translatable="yes">_User</property>
-                                        <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">mem1_color</property>
-                                      </object>
-                                      <packing>
-                                        <property name="top_attach">1</property>
-                                        <property name="bottom_attach">2</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkLabel" id="label20">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">False</property>
-                                        <property name="label" translatable="yes">Sh_ared</property>
-                                        <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">mem2_color</property>
-                                      </object>
-                                      <packing>
-                                        <property name="left_attach">1</property>
-                                        <property name="right_attach">2</property>
-                                        <property name="top_attach">1</property>
-                                        <property name="bottom_attach">2</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkLabel" id="label21">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">False</property>
-                                        <property name="label" translatable="yes">_Buffers</property>
-                                        <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">mem3_color</property>
-                                      </object>
-                                      <packing>
-                                        <property name="left_attach">2</property>
-                                        <property name="right_attach">3</property>
-                                        <property name="top_attach">1</property>
-                                        <property name="bottom_attach">2</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkLabel" id="label22">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">False</property>
-                                        <property name="label" translatable="yes">Cach_ed</property>
-                                        <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">mem4_color</property>
-                                      </object>
-                                      <packing>
-                                        <property name="left_attach">3</property>
-                                        <property name="right_attach">4</property>
-                                        <property name="top_attach">1</property>
-                                        <property name="bottom_attach">2</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkLabel" id="label23">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">False</property>
-                                        <property name="label" translatable="yes">F_ree</property>
-                                        <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">mem_background_color</property>
-                                      </object>
-                                      <packing>
-                                        <property name="left_attach">4</property>
-                                        <property name="right_attach">5</property>
-                                        <property name="top_attach">1</property>
-                                        <property name="bottom_attach">2</property>
-                                      </packing>
-                                    </child>
-                                  </object>
+                                  <object class="GtkCellRendererText" id="label"/>
+                                  <attributes>
+                                    <attribute name="text">0</attribute>
+                                  </attributes>
                                 </child>
                               </object>
                               <packing>
-                                <property name="position">1</property>
-                              </packing>
-                            </child>
-                            <child type="tab">
-                              <object class="GtkLabel" id="label2">
-                                <property name="visible">True</property>
-                                <property name="can_focus">False</property>
-                                <property name="label" translatable="yes">Memory</property>
-                              </object>
-                              <packing>
-                                <property name="position">1</property>
-                                <property name="tab_fill">False</property>
+                                <property name="left_attach">1</property>
+                                <property name="right_attach">2</property>
                               </packing>
                             </child>
                             <child>
-                              <object class="GtkAlignment" id="alignment7">
+                              <object class="GtkGrid" id="grid1">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
-                                <property name="top_padding">12</property>
-                                <property name="bottom_padding">12</property>
-                                <property name="left_padding">12</property>
-                                <property name="right_padding">12</property>
+                                <property name="column_spacing">6</property>
+                                <property name="column_homogeneous">True</property>
                                 <child>
-                                  <object class="GtkTable" id="table4">
+                                  <object class="GtkColorButton" id="background_color">
+                                    <property name="use_action_appearance">False</property>
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">True</property>
+                                    <property name="receives_default">True</property>
+                                    <property name="use_action_appearance">False</property>
+                                    <property name="use_alpha">True</property>
+                                    <property name="color">#000000000000</property>
+                                    <signal name="clicked" handler="preferences_on_colorbutton_clicked" swapped="no"/>
+                                  </object>
+                                  <packing>
+                                    <property name="left_attach">7</property>
+                                    <property name="top_attach">2</property>
+                                    <property name="width">1</property>
+                                    <property name="height">1</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkColorButton" id="cpu4_color">
+                                    <property name="use_action_appearance">False</property>
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">True</property>
+                                    <property name="receives_default">True</property>
+                                    <property name="use_action_appearance">False</property>
+                                    <property name="color">#000000000000</property>
+                                    <signal name="clicked" handler="preferences_on_colorbutton_clicked" swapped="no"/>
+                                  </object>
+                                  <packing>
+                                    <property name="left_attach">3</property>
+                                    <property name="top_attach">0</property>
+                                    <property name="width">1</property>
+                                    <property name="height">1</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkColorButton" id="cpu3_color">
+                                    <property name="use_action_appearance">False</property>
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">True</property>
+                                    <property name="receives_default">True</property>
+                                    <property name="use_action_appearance">False</property>
+                                    <property name="color">#000000000000</property>
+                                    <signal name="clicked" handler="preferences_on_colorbutton_clicked" swapped="no"/>
+                                  </object>
+                                  <packing>
+                                    <property name="left_attach">2</property>
+                                    <property name="top_attach">0</property>
+                                    <property name="width">1</property>
+                                    <property name="height">1</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkColorButton" id="cpu2_color">
+                                    <property name="use_action_appearance">False</property>
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">True</property>
+                                    <property name="receives_default">True</property>
+                                    <property name="use_action_appearance">False</property>
+                                    <property name="color">#000000000000</property>
+                                    <signal name="clicked" handler="preferences_on_colorbutton_clicked" swapped="no"/>
+                                  </object>
+                                  <packing>
+                                    <property name="left_attach">1</property>
+                                    <property name="top_attach">0</property>
+                                    <property name="width">1</property>
+                                    <property name="height">1</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkColorButton" id="cpu1_color">
+                                    <property name="use_action_appearance">False</property>
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">True</property>
+                                    <property name="receives_default">True</property>
+                                    <property name="use_action_appearance">False</property>
+                                    <property name="color">#000000000000</property>
+                                    <signal name="clicked" handler="preferences_on_colorbutton_clicked" swapped="no"/>
+                                  </object>
+                                  <packing>
+                                    <property name="left_attach">0</property>
+                                    <property name="top_attach">0</property>
+                                    <property name="width">1</property>
+                                    <property name="height">1</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkLabel" id="label14">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
-                                    <property name="n_rows">2</property>
-                                    <property name="n_columns">4</property>
-                                    <property name="column_spacing">12</property>
-                                    <property name="row_spacing">6</property>
-                                    <child>
-                                      <object class="GtkColorButton" id="net1_color">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">True</property>
-                                        <property name="receives_default">True</property>
-                                        <property name="use_action_appearance">False</property>
-                                        <property name="color">#000000000000</property>
-                                      </object>
-                                      <packing>
-                                        <property name="x_options">GTK_EXPAND</property>
-                                        <property name="y_options">GTK_EXPAND</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkColorButton" id="net2_color">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">True</property>
-                                        <property name="receives_default">True</property>
-                                        <property name="use_action_appearance">False</property>
-                                        <property name="color">#000000000000</property>
-                                      </object>
-                                      <packing>
-                                        <property name="left_attach">1</property>
-                                        <property name="right_attach">2</property>
-                                        <property name="x_options">GTK_EXPAND</property>
-                                        <property name="y_options">GTK_EXPAND</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkColorButton" id="net3_color">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">True</property>
-                                        <property name="receives_default">True</property>
-                                        <property name="use_action_appearance">False</property>
-                                        <property name="color">#000000000000</property>
-                                      </object>
-                                      <packing>
-                                        <property name="left_attach">2</property>
-                                        <property name="right_attach">3</property>
-                                        <property name="x_options">GTK_EXPAND</property>
-                                        <property name="y_options">GTK_EXPAND</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkColorButton" id="net_background_color">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">True</property>
-                                        <property name="receives_default">True</property>
-                                        <property name="use_action_appearance">False</property>
-                                        <property name="use_alpha">True</property>
-                                        <property name="color">#000000000000</property>
-                                      </object>
-                                      <packing>
-                                        <property name="left_attach">3</property>
-                                        <property name="right_attach">4</property>
-                                        <property name="x_options">GTK_EXPAND</property>
-                                        <property name="y_options">GTK_EXPAND</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkLabel" id="label24">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">False</property>
-                                        <property name="label" translatable="yes">_In</property>
-                                        <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">net1_color</property>
-                                      </object>
-                                      <packing>
-                                        <property name="top_attach">1</property>
-                                        <property name="bottom_attach">2</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkLabel" id="label25">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">False</property>
-                                        <property name="label" translatable="yes">_Out</property>
-                                        <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">net2_color</property>
-                                      </object>
-                                      <packing>
-                                        <property name="left_attach">1</property>
-                                        <property name="right_attach">2</property>
-                                        <property name="top_attach">1</property>
-                                        <property name="bottom_attach">2</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkLabel" id="label26">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">False</property>
-                                        <property name="label" translatable="yes">_Local</property>
-                                        <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">net3_color</property>
-                                      </object>
-                                      <packing>
-                                        <property name="left_attach">2</property>
-                                        <property name="right_attach">3</property>
-                                        <property name="top_attach">1</property>
-                                        <property name="bottom_attach">2</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkLabel" id="label27">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">False</property>
-                                        <property name="label" translatable="yes">_Background</property>
-                                        <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">net_background_color</property>
-                                      </object>
-                                      <packing>
-                                        <property name="left_attach">3</property>
-                                        <property name="right_attach">4</property>
-                                        <property name="top_attach">1</property>
-                                        <property name="bottom_attach">2</property>
-                                      </packing>
-                                    </child>
+                                    <property name="margin_bottom">6</property>
+                                    <property name="label" translatable="yes">&lt;small&gt;Busy&lt;/small&gt;</property>
+                                    <property name="use_markup">True</property>
+                                    <property name="use_underline">True</property>
+                                    <property name="mnemonic_widget">cpu1_color</property>
                                   </object>
+                                  <packing>
+                                    <property name="left_attach">0</property>
+                                    <property name="top_attach">1</property>
+                                    <property name="width">1</property>
+                                    <property name="height">1</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkLabel" id="label15">
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">False</property>
+                                    <property name="margin_bottom">6</property>
+                                    <property name="label" translatable="yes">&lt;small&gt;System&lt;/small&gt;</property>
+                                    <property name="use_markup">True</property>
+                                    <property name="use_underline">True</property>
+                                    <property name="mnemonic_widget">cpu2_color</property>
+                                  </object>
+                                  <packing>
+                                    <property name="left_attach">1</property>
+                                    <property name="top_attach">1</property>
+                                    <property name="width">1</property>
+                                    <property name="height">1</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkLabel" id="label16">
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">False</property>
+                                    <property name="margin_bottom">6</property>
+                                    <property name="label" translatable="yes">&lt;small&gt;Nice&lt;/small&gt;</property>
+                                    <property name="use_markup">True</property>
+                                    <property name="use_underline">True</property>
+                                    <property name="mnemonic_widget">cpu3_color</property>
+                                  </object>
+                                  <packing>
+                                    <property name="left_attach">2</property>
+                                    <property name="top_attach">1</property>
+                                    <property name="width">1</property>
+                                    <property name="height">1</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkLabel" id="label17">
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">False</property>
+                                    <property name="margin_bottom">6</property>
+                                    <property name="label" translatable="yes">&lt;small&gt;IOWait&lt;/small&gt;</property>
+                                    <property name="use_markup">True</property>
+                                    <property name="use_underline">True</property>
+                                    <property name="mnemonic_widget">cpu4_color</property>
+                                  </object>
+                                  <packing>
+                                    <property name="left_attach">3</property>
+                                    <property name="top_attach">1</property>
+                                    <property name="width">1</property>
+                                    <property name="height">1</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkLabel" id="label18">
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">False</property>
+                                    <property name="label" translatable="yes">&lt;small&gt;Background&lt;/small&gt;</property>
+                                    <property name="use_markup">True</property>
+                                    <property name="use_underline">True</property>
+                                    <property name="mnemonic_widget">background_color</property>
+                                  </object>
+                                  <packing>
+                                    <property name="left_attach">7</property>
+                                    <property name="top_attach">3</property>
+                                    <property name="width">1</property>
+                                    <property name="height">1</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkColorButton" id="mem1_color">
+                                    <property name="use_action_appearance">False</property>
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">True</property>
+                                    <property name="receives_default">True</property>
+                                    <property name="use_action_appearance">False</property>
+                                    <property name="color">#000000000000</property>
+                                    <signal name="clicked" handler="preferences_on_colorbutton_clicked" swapped="no"/>
+                                  </object>
+                                  <packing>
+                                    <property name="left_attach">4</property>
+                                    <property name="top_attach">0</property>
+                                    <property name="width">1</property>
+                                    <property name="height">1</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkColorButton" id="mem2_color">
+                                    <property name="use_action_appearance">False</property>
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">True</property>
+                                    <property name="receives_default">True</property>
+                                    <property name="use_action_appearance">False</property>
+                                    <property name="color">#000000000000</property>
+                                    <signal name="clicked" handler="preferences_on_colorbutton_clicked" swapped="no"/>
+                                  </object>
+                                  <packing>
+                                    <property name="left_attach">5</property>
+                                    <property name="top_attach">0</property>
+                                    <property name="width">1</property>
+                                    <property name="height">1</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkColorButton" id="mem3_color">
+                                    <property name="use_action_appearance">False</property>
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">True</property>
+                                    <property name="receives_default">True</property>
+                                    <property name="use_action_appearance">False</property>
+                                    <property name="color">#000000000000</property>
+                                    <signal name="clicked" handler="preferences_on_colorbutton_clicked" swapped="no"/>
+                                  </object>
+                                  <packing>
+                                    <property name="left_attach">6</property>
+                                    <property name="top_attach">0</property>
+                                    <property name="width">1</property>
+                                    <property name="height">1</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkColorButton" id="mem4_color">
+                                    <property name="use_action_appearance">False</property>
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">True</property>
+                                    <property name="receives_default">True</property>
+                                    <property name="use_action_appearance">False</property>
+                                    <property name="color">#000000000000</property>
+                                    <signal name="clicked" handler="preferences_on_colorbutton_clicked" swapped="no"/>
+                                  </object>
+                                  <packing>
+                                    <property name="left_attach">7</property>
+                                    <property name="top_attach">0</property>
+                                    <property name="width">1</property>
+                                    <property name="height">1</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkLabel" id="label19">
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">False</property>
+                                    <property name="margin_bottom">6</property>
+                                    <property name="label" translatable="yes">&lt;small&gt;Memory&lt;/small&gt;</property>
+                                    <property name="use_markup">True</property>
+                                    <property name="use_underline">True</property>
+                                    <property name="mnemonic_widget">mem1_color</property>
+                                  </object>
+                                  <packing>
+                                    <property name="left_attach">4</property>
+                                    <property name="top_attach">1</property>
+                                    <property name="width">1</property>
+                                    <property name="height">1</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkLabel" id="label20">
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">False</property>
+                                    <property name="margin_bottom">6</property>
+                                    <property name="label" translatable="yes">&lt;small&gt;Shared&lt;/small&gt;</property>
+                                    <property name="use_markup">True</property>
+                                    <property name="use_underline">True</property>
+                                    <property name="mnemonic_widget">mem2_color</property>
+                                  </object>
+                                  <packing>
+                                    <property name="left_attach">5</property>
+                                    <property name="top_attach">1</property>
+                                    <property name="width">1</property>
+                                    <property name="height">1</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkLabel" id="label21">
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">False</property>
+                                    <property name="margin_bottom">6</property>
+                                    <property name="label" translatable="yes">&lt;small&gt;Buffers&lt;/small&gt;</property>
+                                    <property name="use_markup">True</property>
+                                    <property name="use_underline">True</property>
+                                    <property name="mnemonic_widget">mem3_color</property>
+                                  </object>
+                                  <packing>
+                                    <property name="left_attach">6</property>
+                                    <property name="top_attach">1</property>
+                                    <property name="width">1</property>
+                                    <property name="height">1</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkLabel" id="label22">
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">False</property>
+                                    <property name="margin_bottom">6</property>
+                                    <property name="label" translatable="yes">&lt;small&gt;Cached&lt;/small&gt;</property>
+                                    <property name="use_markup">True</property>
+                                    <property name="use_underline">True</property>
+                                    <property name="mnemonic_widget">mem4_color</property>
+                                  </object>
+                                  <packing>
+                                    <property name="left_attach">7</property>
+                                    <property name="top_attach">1</property>
+                                    <property name="width">1</property>
+                                    <property name="height">1</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkColorButton" id="net1_color">
+                                    <property name="use_action_appearance">False</property>
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">True</property>
+                                    <property name="receives_default">True</property>
+                                    <property name="use_action_appearance">False</property>
+                                    <property name="color">#000000000000</property>
+                                    <signal name="clicked" handler="preferences_on_colorbutton_clicked" swapped="no"/>
+                                  </object>
+                                  <packing>
+                                    <property name="left_attach">0</property>
+                                    <property name="top_attach">2</property>
+                                    <property name="width">1</property>
+                                    <property name="height">1</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkColorButton" id="net2_color">
+                                    <property name="use_action_appearance">False</property>
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">True</property>
+                                    <property name="receives_default">True</property>
+                                    <property name="use_action_appearance">False</property>
+                                    <property name="color">#000000000000</property>
+                                    <signal name="clicked" handler="preferences_on_colorbutton_clicked" swapped="no"/>
+                                  </object>
+                                  <packing>
+                                    <property name="left_attach">1</property>
+                                    <property name="top_attach">2</property>
+                                    <property name="width">1</property>
+                                    <property name="height">1</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkColorButton" id="net3_color">
+                                    <property name="use_action_appearance">False</property>
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">True</property>
+                                    <property name="receives_default">True</property>
+                                    <property name="use_action_appearance">False</property>
+                                    <property name="color">#000000000000</property>
+                                    <signal name="clicked" handler="preferences_on_colorbutton_clicked" swapped="no"/>
+                                  </object>
+                                  <packing>
+                                    <property name="left_attach">2</property>
+                                    <property name="top_attach">2</property>
+                                    <property name="width">1</property>
+                                    <property name="height">1</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkLabel" id="label24">
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">False</property>
+                                    <property name="label" translatable="yes">&lt;small&gt;Download&lt;/small&gt;</property>
+                                    <property name="use_markup">True</property>
+                                    <property name="use_underline">True</property>
+                                    <property name="mnemonic_widget">net1_color</property>
+                                  </object>
+                                  <packing>
+                                    <property name="left_attach">0</property>
+                                    <property name="top_attach">3</property>
+                                    <property name="width">1</property>
+                                    <property name="height">1</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkLabel" id="label25">
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">False</property>
+                                    <property name="label" translatable="yes">&lt;small&gt;Upload&lt;/small&gt;</property>
+                                    <property name="use_markup">True</property>
+                                    <property name="use_underline">True</property>
+                                    <property name="mnemonic_widget">net2_color</property>
+                                  </object>
+                                  <packing>
+                                    <property name="left_attach">1</property>
+                                    <property name="top_attach">3</property>
+                                    <property name="width">1</property>
+                                    <property name="height">1</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkLabel" id="label26">
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">False</property>
+                                    <property name="label" translatable="yes">&lt;small&gt;Localhost&lt;/small&gt;</property>
+                                    <property name="use_markup">True</property>
+                                    <property name="use_underline">True</property>
+                                    <property name="mnemonic_widget">net3_color</property>
+                                  </object>
+                                  <packing>
+                                    <property name="left_attach">2</property>
+                                    <property name="top_attach">3</property>
+                                    <property name="width">1</property>
+                                    <property name="height">1</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkColorButton" id="swap1_color">
+                                    <property name="use_action_appearance">False</property>
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">True</property>
+                                    <property name="receives_default">True</property>
+                                    <property name="use_action_appearance">False</property>
+                                    <property name="color">#000000000000</property>
+                                    <signal name="clicked" handler="preferences_on_colorbutton_clicked" swapped="no"/>
+                                  </object>
+                                  <packing>
+                                    <property name="left_attach">3</property>
+                                    <property name="top_attach">2</property>
+                                    <property name="width">1</property>
+                                    <property name="height">1</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkLabel" id="label28">
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">False</property>
+                                    <property name="label" translatable="yes">&lt;small&gt;Swap&lt;/small&gt;</property>
+                                    <property name="use_markup">True</property>
+                                    <property name="use_underline">True</property>
+                                    <property name="mnemonic_widget">swap1_color</property>
+                                  </object>
+                                  <packing>
+                                    <property name="left_attach">3</property>
+                                    <property name="top_attach">3</property>
+                                    <property name="width">1</property>
+                                    <property name="height">1</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkColorButton" id="load1_color">
+                                    <property name="use_action_appearance">False</property>
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">True</property>
+                                    <property name="receives_default">True</property>
+                                    <property name="use_action_appearance">False</property>
+                                    <property name="color">#000000000000</property>
+                                    <signal name="clicked" handler="preferences_on_colorbutton_clicked" swapped="no"/>
+                                  </object>
+                                  <packing>
+                                    <property name="left_attach">4</property>
+                                    <property name="top_attach">2</property>
+                                    <property name="width">1</property>
+                                    <property name="height">1</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkLabel" id="label30">
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">False</property>
+                                    <property name="label" translatable="yes">&lt;small&gt;Load&lt;/small&gt;</property>
+                                    <property name="use_markup">True</property>
+                                    <property name="use_underline">True</property>
+                                  </object>
+                                  <packing>
+                                    <property name="left_attach">4</property>
+                                    <property name="top_attach">3</property>
+                                    <property name="width">1</property>
+                                    <property name="height">1</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkColorButton" id="disk1_color">
+                                    <property name="use_action_appearance">False</property>
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">True</property>
+                                    <property name="receives_default">True</property>
+                                    <property name="use_action_appearance">False</property>
+                                    <property name="color">#000000000000</property>
+                                    <signal name="clicked" handler="preferences_on_colorbutton_clicked" swapped="no"/>
+                                  </object>
+                                  <packing>
+                                    <property name="left_attach">5</property>
+                                    <property name="top_attach">2</property>
+                                    <property name="width">1</property>
+                                    <property name="height">1</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkLabel" id="label32">
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">False</property>
+                                    <property name="label" translatable="yes">&lt;small&gt;Read&lt;/small&gt;</property>
+                                    <property name="use_markup">True</property>
+                                    <property name="use_underline">True</property>
+                                  </object>
+                                  <packing>
+                                    <property name="left_attach">5</property>
+                                    <property name="top_attach">3</property>
+                                    <property name="width">1</property>
+                                    <property name="height">1</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkColorButton" id="disk2_color">
+                                    <property name="use_action_appearance">False</property>
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">True</property>
+                                    <property name="receives_default">True</property>
+                                    <property name="use_action_appearance">False</property>
+                                    <property name="color">#000000000000</property>
+                                    <signal name="clicked" handler="preferences_on_colorbutton_clicked" swapped="no"/>
+                                  </object>
+                                  <packing>
+                                    <property name="left_attach">6</property>
+                                    <property name="top_attach">2</property>
+                                    <property name="width">1</property>
+                                    <property name="height">1</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkLabel" id="label33">
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">False</property>
+                                    <property name="label" translatable="yes">&lt;small&gt;Write&lt;/small&gt;</property>
+                                    <property name="use_markup">True</property>
+                                    <property name="use_underline">True</property>
+                                  </object>
+                                  <packing>
+                                    <property name="left_attach">6</property>
+                                    <property name="top_attach">3</property>
+                                    <property name="width">1</property>
+                                    <property name="height">1</property>
+                                  </packing>
                                 </child>
                               </object>
                               <packing>
-                                <property name="position">2</property>
-                              </packing>
-                            </child>
-                            <child type="tab">
-                              <object class="GtkLabel" id="label3">
-                                <property name="visible">True</property>
-                                <property name="can_focus">False</property>
-                                <property name="label" translatable="yes">Network</property>
-                              </object>
-                              <packing>
-                                <property name="position">2</property>
-                                <property name="tab_fill">False</property>
-                              </packing>
-                            </child>
-                            <child>
-                              <object class="GtkAlignment" id="alignment8">
-                                <property name="visible">True</property>
-                                <property name="can_focus">False</property>
-                                <property name="top_padding">12</property>
-                                <property name="bottom_padding">12</property>
-                                <property name="left_padding">12</property>
-                                <property name="right_padding">12</property>
-                                <child>
-                                  <object class="GtkTable" id="table5">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="n_rows">2</property>
-                                    <property name="n_columns">2</property>
-                                    <property name="column_spacing">12</property>
-                                    <property name="row_spacing">6</property>
-                                    <child>
-                                      <object class="GtkColorButton" id="swap1_color">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">True</property>
-                                        <property name="receives_default">True</property>
-                                        <property name="use_action_appearance">False</property>
-                                        <property name="color">#000000000000</property>
-                                      </object>
-                                      <packing>
-                                        <property name="x_options">GTK_EXPAND</property>
-                                        <property name="y_options">GTK_EXPAND</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkColorButton" id="swap_background_color">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">True</property>
-                                        <property name="receives_default">True</property>
-                                        <property name="use_action_appearance">False</property>
-                                        <property name="use_alpha">True</property>
-                                        <property name="color">#000000000000</property>
-                                      </object>
-                                      <packing>
-                                        <property name="left_attach">1</property>
-                                        <property name="right_attach">2</property>
-                                        <property name="x_options">GTK_EXPAND</property>
-                                        <property name="y_options">GTK_EXPAND</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkLabel" id="label28">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">False</property>
-                                        <property name="label" translatable="yes">_Used</property>
-                                        <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">swap1_color</property>
-                                      </object>
-                                      <packing>
-                                        <property name="top_attach">1</property>
-                                        <property name="bottom_attach">2</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkLabel" id="label29">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">False</property>
-                                        <property name="label" translatable="yes">_Free</property>
-                                        <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">swap_background_color</property>
-                                      </object>
-                                      <packing>
-                                        <property name="left_attach">1</property>
-                                        <property name="right_attach">2</property>
-                                        <property name="top_attach">1</property>
-                                        <property name="bottom_attach">2</property>
-                                      </packing>
-                                    </child>
-                                  </object>
-                                </child>
-                              </object>
-                              <packing>
-                                <property name="position">3</property>
-                              </packing>
-                            </child>
-                            <child type="tab">
-                              <object class="GtkLabel" id="label4">
-                                <property name="visible">True</property>
-                                <property name="can_focus">False</property>
-                                <property name="label" translatable="yes">Swap Space</property>
-                              </object>
-                              <packing>
-                                <property name="position">3</property>
-                                <property name="tab_fill">False</property>
-                              </packing>
-                            </child>
-                            <child>
-                              <object class="GtkAlignment" id="alignment9">
-                                <property name="visible">True</property>
-                                <property name="can_focus">False</property>
-                                <property name="top_padding">12</property>
-                                <property name="bottom_padding">12</property>
-                                <property name="left_padding">12</property>
-                                <property name="right_padding">12</property>
-                                <child>
-                                  <object class="GtkTable" id="table6">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="n_rows">2</property>
-                                    <property name="n_columns">2</property>
-                                    <property name="column_spacing">12</property>
-                                    <property name="row_spacing">6</property>
-                                    <child>
-                                      <object class="GtkColorButton" id="load1_color">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">True</property>
-                                        <property name="receives_default">True</property>
-                                        <property name="use_action_appearance">False</property>
-                                        <property name="color">#000000000000</property>
-                                      </object>
-                                      <packing>
-                                        <property name="x_options">GTK_EXPAND</property>
-                                        <property name="y_options">GTK_EXPAND</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkColorButton" id="load_background_color">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">True</property>
-                                        <property name="receives_default">True</property>
-                                        <property name="use_action_appearance">False</property>
-                                        <property name="use_alpha">True</property>
-                                        <property name="color">#000000000000</property>
-                                      </object>
-                                      <packing>
-                                        <property name="left_attach">1</property>
-                                        <property name="right_attach">2</property>
-                                        <property name="x_options">GTK_EXPAND</property>
-                                        <property name="y_options">GTK_EXPAND</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkLabel" id="label30">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">False</property>
-                                        <property name="label" translatable="yes">_Average</property>
-                                        <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">load1_color</property>
-                                      </object>
-                                      <packing>
-                                        <property name="top_attach">1</property>
-                                        <property name="bottom_attach">2</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkLabel" id="label31">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">False</property>
-                                        <property name="label" translatable="yes">_Background</property>
-                                        <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">load_background_color</property>
-                                      </object>
-                                      <packing>
-                                        <property name="left_attach">1</property>
-                                        <property name="right_attach">2</property>
-                                        <property name="top_attach">1</property>
-                                        <property name="bottom_attach">2</property>
-                                      </packing>
-                                    </child>
-                                  </object>
-                                </child>
-                              </object>
-                              <packing>
-                                <property name="position">4</property>
-                              </packing>
-                            </child>
-                            <child type="tab">
-                              <object class="GtkLabel" id="label5">
-                                <property name="visible">True</property>
-                                <property name="can_focus">False</property>
-                                <property name="label" translatable="yes">Load</property>
-                              </object>
-                              <packing>
-                                <property name="position">4</property>
-                                <property name="tab_fill">False</property>
-                              </packing>
-                            </child>
-                            <child>
-                              <object class="GtkAlignment" id="alignment10">
-                                <property name="visible">True</property>
-                                <property name="can_focus">False</property>
-                                <property name="top_padding">12</property>
-                                <property name="bottom_padding">12</property>
-                                <property name="left_padding">12</property>
-                                <property name="right_padding">12</property>
-                                <child>
-                                  <object class="GtkTable" id="table7">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="n_rows">2</property>
-                                    <property name="n_columns">3</property>
-                                    <property name="column_spacing">12</property>
-                                    <property name="row_spacing">6</property>
-                                    <child>
-                                      <object class="GtkColorButton" id="disk1_color">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">True</property>
-                                        <property name="receives_default">True</property>
-                                        <property name="use_action_appearance">False</property>
-                                        <property name="color">#000000000000</property>
-                                      </object>
-                                      <packing>
-                                        <property name="x_options">GTK_EXPAND</property>
-                                        <property name="y_options">GTK_EXPAND</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkColorButton" id="disk2_color">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">True</property>
-                                        <property name="receives_default">True</property>
-                                        <property name="use_action_appearance">False</property>
-                                        <property name="color">#000000000000</property>
-                                      </object>
-                                      <packing>
-                                        <property name="left_attach">1</property>
-                                        <property name="right_attach">2</property>
-                                        <property name="x_options">GTK_EXPAND</property>
-                                        <property name="y_options">GTK_EXPAND</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkColorButton" id="disk_background_color">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">True</property>
-                                        <property name="receives_default">True</property>
-                                        <property name="use_action_appearance">False</property>
-                                        <property name="use_alpha">True</property>
-                                        <property name="color">#000000000000</property>
-                                      </object>
-                                      <packing>
-                                        <property name="left_attach">2</property>
-                                        <property name="right_attach">3</property>
-                                        <property name="x_options">GTK_EXPAND</property>
-                                        <property name="y_options">GTK_EXPAND</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkLabel" id="label32">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">False</property>
-                                        <property name="label" translatable="yes">_Read</property>
-                                        <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">disk1_color</property>
-                                      </object>
-                                      <packing>
-                                        <property name="top_attach">1</property>
-                                        <property name="bottom_attach">2</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkLabel" id="label33">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">False</property>
-                                        <property name="label" translatable="yes">_Write</property>
-                                        <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">disk2_color</property>
-                                      </object>
-                                      <packing>
-                                        <property name="left_attach">1</property>
-                                        <property name="right_attach">2</property>
-                                        <property name="top_attach">1</property>
-                                        <property name="bottom_attach">2</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkLabel" id="label34">
-                                        <property name="visible">True</property>
-                                        <property name="can_focus">False</property>
-                                        <property name="label" translatable="yes">_Background</property>
-                                        <property name="use_underline">True</property>
-                                        <property name="mnemonic_widget">disk_background_color</property>
-                                      </object>
-                                      <packing>
-                                        <property name="left_attach">2</property>
-                                        <property name="right_attach">3</property>
-                                        <property name="top_attach">1</property>
-                                        <property name="bottom_attach">2</property>
-                                      </packing>
-                                    </child>
-                                  </object>
-                                </child>
-                              </object>
-                              <packing>
-                                <property name="position">5</property>
-                              </packing>
-                            </child>
-                            <child type="tab">
-                              <object class="GtkLabel" id="label6">
-                                <property name="visible">True</property>
-                                <property name="can_focus">False</property>
-                                <property name="label" translatable="yes">Harddisk</property>
-                              </object>
-                              <packing>
-                                <property name="position">5</property>
-                                <property name="tab_fill">False</property>
+                                <property name="left_attach">1</property>
+                                <property name="right_attach">2</property>
+                                <property name="top_attach">1</property>
+                                <property name="bottom_attach">2</property>
                               </packing>
                             </child>
                           </object>
@@ -1525,13 +1348,14 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
           </packing>
         </child>
         <child internal-child="action_area">
-          <object class="GtkHButtonBox" id="dialog-action_area2">
+          <object class="GtkButtonBox" id="dialog-action_area2">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="layout_style">end</property>
             <child>
               <object class="GtkButton" id="menuitems">
                 <property name="label" translatable="yes">Menu items...</property>
+                <property name="use_action_appearance">False</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -1547,6 +1371,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
             <child>
               <object class="GtkButton" id="indicatoritems">
                 <property name="label" translatable="yes">Indicator items...</property>
+                <property name="use_action_appearance">False</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -1562,6 +1387,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
             <child>
               <object class="GtkButton" id="close">
                 <property name="label">gtk-close</property>
+                <property name="use_action_appearance">False</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -1589,12 +1415,6 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
       <action-widget response="2">indicatoritems</action-widget>
       <action-widget response="0">close</action-widget>
     </action-widgets>
-  </object>
-  <object class="GtkAdjustment" id="speedadjustment">
-    <property name="lower">50</property>
-    <property name="upper">10000</property>
-    <property name="step_increment">50</property>
-    <property name="page_increment">500</property>
   </object>
   <object class="GtkAdjustment" id="widthadjustment">
     <property name="lower">10</property>

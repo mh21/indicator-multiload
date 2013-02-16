@@ -18,9 +18,14 @@
 
 public class Preferences : Object {
     private Gtk.Dialog preferences;
-
     private ItemPreferences menupreferences;
     private ItemPreferences indicatorpreferences;
+    private ColorMapper colormapper;
+
+    public Preferences(ColorMapper colormapper)
+    {
+        this.colormapper = colormapper;
+    }
 
     construct {
         this.menupreferences = new ItemPreferences("menu-expressions");
@@ -35,7 +40,7 @@ public class Preferences : Object {
 
         Gtk.Builder builder;
         this.preferences = Utils.get_ui("preferencesdialog", this,
-                {"widthadjustment", "speedadjustment"},
+                {"widthadjustment", "speedadjustment", "schemestore"},
                 out builder) as Gtk.Dialog;
         return_if_fail(this.preferences != null);
 
@@ -53,26 +58,28 @@ public class Preferences : Object {
                 var traceid = traceids[j];
                 var tracesettings = settingscache.tracesettings(graphid, traceid);
                 tracesettings.bind_with_mapping("color",
-                        builder.get_object(@"$(traceid)_color"), "color",
-                        SettingsBindFlags.DEFAULT, Utils.get_settings_color,
-                        Utils.set_settings_color, null, () => {});
+                        builder.get_object(@"$(traceid)_color"), "rgba",
+                        SettingsBindFlags.DEFAULT,
+                        Utils.get_settings_rgba,
+                        Utils.set_settings_rgba,
+                        this.colormapper, () => {});
             }
 
             graphsettings.bind("enabled",
                     builder.get_object(@"$(graphid)_enabled"), "active",
                     SettingsBindFlags.DEFAULT);
-            graphsettings.bind_with_mapping("background-color",
-                    builder.get_object(@"$(graphid)_background_color"), "color",
-                    SettingsBindFlags.DEFAULT, Utils.get_settings_color,
-                    Utils.set_settings_color, null, () => {});
-            graphsettings.bind("alpha",
-                    builder.get_object(@"$(graphid)_background_color"), "alpha",
-                    SettingsBindFlags.DEFAULT);
         }
 
+        // TODO: rgba, alpha need settings conversion
         prefsettings.bind("width",
                 builder.get_object("width"), "value",
                 SettingsBindFlags.DEFAULT);
+        prefsettings.bind_with_mapping("background-color",
+                builder.get_object("background_color"), "rgba",
+                SettingsBindFlags.DEFAULT,
+                Utils.get_settings_rgba,
+                Utils.set_settings_rgba,
+                this.colormapper, () => {});
         prefsettings.bind("speed",
                 builder.get_object("speed"), "value",
                 SettingsBindFlags.DEFAULT);
@@ -81,6 +88,11 @@ public class Preferences : Object {
                 SettingsBindFlags.DEFAULT);
 
         this.preferences.show_all();
+    }
+
+    [CCode (instance_pos = -1)]
+    public void on_colorbutton_clicked(Gtk.Button button) {
+        this.colormapper.add_palette((P.ColorChooser)button);
     }
 
     [CCode (instance_pos = -1)]

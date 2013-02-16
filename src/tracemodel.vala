@@ -18,7 +18,7 @@
 
 public class TraceModel : Object {
     public ExpressionCache expression { get; construct; }
-    public Gdk.Color color { get; set; }
+    public Gdk.RGBA rgba { get; set; }
     public bool enabled { get; set; }
     public double[] values { get; private set; }
 

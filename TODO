@@ -1,10 +1,15 @@
 0.4:
 - no graphs shown should be possible
-- first icon should be empty icon, not image-not-found
+- first icon should be empty icon, not image-not-found?
 - system(...) function
-- color schemes
 - error messages for expressions not only on stderr
 
 After oneiric is dropped: 
 - dh compat 9
 - debian 3.9.3
+- debian depend on gnome 3.4
+
+color schemes:
+- make scheme switch work
+- more color schemes
+- fix upgrades

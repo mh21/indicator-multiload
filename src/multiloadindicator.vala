@@ -33,6 +33,7 @@ public class MultiLoadIndicator : Object {
     public uint height { get; set; }
     public uint width { get; set; }
     public uint speed { get; set; }
+    public Gdk.RGBA background_rgba { get; set; }
     public Gtk.Menu menu { get; set; }
     public GraphModels graphmodels { get; set; }
 
@@ -237,7 +238,7 @@ public class MultiLoadIndicator : Object {
         foreach (var graphmodel in this.graphmodels.graphmodels) {
             if (!graphmodel.enabled)
                 continue;
-            graphmodel.set_source_color(ctx);
+            Gdk.cairo_set_source_rgba(ctx, this.background_rgba);
             ctx.rectangle(offset, 0, this._width, this.height);
             ctx.fill();
             var tracemodels = graphmodel.tracemodels;
@@ -251,7 +252,7 @@ public class MultiLoadIndicator : Object {
             }
 
             for (int j = values.length[0] - 1; j >= 0; --j) {
-                Gdk.cairo_set_source_color(ctx, graphmodel.tracemodels[j].color);
+                Gdk.cairo_set_source_rgba(ctx, graphmodel.tracemodels[j].rgba);
                 for (uint i = 0, isize = values.length[1]; i < isize; ++i) {
                     // the baseline is outside the canvas
                     ctx.move_to(0.5 + offset + i, this.height + 0.5);

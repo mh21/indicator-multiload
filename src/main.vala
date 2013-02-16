@@ -21,11 +21,13 @@ public class Main : Application {
     [CCode (array_length=false, array_null_terminated = true)]
     private static string[] expressionoptions;
     private static bool identifiersoption = false;
+    private static Reaper reaper;
 
     private MultiLoadIndicator multi;
     private Gtk.Dialog about;
     private Preferences preferences;
     private SettingsCache settingscache;
+    private ColorMapper colormapper;
     private string autostartkey;
     private string desktopfilename;
     private string autostartfile;
@@ -203,12 +205,6 @@ public class Main : Application {
     private void addgraphbinds(GraphModel graphmodel) {
         var graphid = graphmodel.id;
         var graphsettings = this.settingscache.graphsettings(graphid);
-        graphsettings.bind_with_mapping("background-color",
-                graphmodel, "background_color",
-                SettingsBindFlags.DEFAULT,
-                Utils.get_settings_color,
-                Utils.set_settings_color,
-                null, () => {});
         graphsettings.bind("minimum", graphmodel.minimum, "expression",
                 SettingsBindFlags.DEFAULT);
         graphsettings.bind("maximum", graphmodel.maximum, "expression",
@@ -216,7 +212,6 @@ public class Main : Application {
         string[] graphproperties = {
             "enabled",
             "smooth",
-            "alpha",
             "traces" };
         foreach (var property in graphproperties)
             graphsettings.bind(property, graphmodel, property,
@@ -232,11 +227,11 @@ public class Main : Application {
             string graphid, string traceid) {
         var tracesettings = this.settingscache.tracesettings(graphid, traceid);
         tracesettings.bind_with_mapping("color",
-                tracemodel, "color",
+                tracemodel, "rgba",
                 SettingsBindFlags.DEFAULT,
-                Utils.get_settings_color,
-                Utils.set_settings_color,
-                null, () => {});
+                Utils.get_settings_rgba,
+                Utils.set_settings_rgba,
+                this.colormapper, () => {});
         tracesettings.bind("enabled", tracemodel, "enabled",
                 SettingsBindFlags.DEFAULT);
         tracesettings.bind("expression", tracemodel.expression, "expression",
@@ -249,7 +244,7 @@ public class Main : Application {
 
     public override void startup() {
         this.multi = new MultiLoadIndicator(Path.build_filename(datadirectory, "icons"), new Providers());
-
+        this.colormapper = new ColorMapper();
         this.settingscache = new SettingsCache();
 
         new SettingsConversion().convert();
@@ -280,6 +275,12 @@ public class Main : Application {
         datasettings.bind("height",
                 this.multi, "height",
                 SettingsBindFlags.DEFAULT);
+        datasettings.bind_with_mapping("background-color",
+                this.multi, "background_rgba",
+                SettingsBindFlags.DEFAULT,
+                Utils.get_settings_rgba,
+                Utils.set_settings_rgba,
+                this.colormapper, () => {});
         datasettings.bind("autostart",
                 this, "autostart",
                 SettingsBindFlags.DEFAULT);
@@ -290,7 +291,7 @@ public class Main : Application {
 
         this.multi.updateall();
 
-        this.preferences = new Preferences();
+        this.preferences = new Preferences(this.colormapper);
 
         this.hold();
 
@@ -324,6 +325,7 @@ public class Main : Application {
             return true;
         }
 
+        exit_status = 0;
         bool result = false;
 
         if (identifiersoption) {
@@ -376,7 +378,7 @@ public class Main : Application {
         Gtk.init(ref args);
         Gtk.Window.set_default_icon_name("utilities-system-monitor");
 
-        var reaper = new Reaper(args);
+        Main.reaper = new Reaper(args);
 
         var result = new Main("de.mh21.indicator.multiload",
                 ApplicationFlags.FLAGS_NONE).run(args);
