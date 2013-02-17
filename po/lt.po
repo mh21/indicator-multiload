@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-applets.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-12 09:22+0000\n"
+"POT-Creation-Date: 2013-02-16 18:17+0000\n"
 "PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Žygimantas Beručka <zygis@gnome.org>\n"
 "Language-Team: Lithuanian <gnome-lt@lists.akl.lt>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "(n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2013-02-13 04:56+0000\n"
+"X-Launchpad-Export-Date: 2013-02-17 04:56+0000\n"
 "X-Generator: Launchpad (build 16491)\n"
 "Language: lt\n"
 
@@ -267,16 +267,16 @@ msgid ""
 "]"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
 msgid "Information shown in the indicator itself"
 msgstr "Informacija rodoma pačiame indikatoriuje"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
 msgid "Index of the current information shown in the indicator itself"
 msgstr "Dabartinės pačiame indikatoriuje rodomos informacijos indeksas"
 
 #. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, and commas.
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
 msgid ""
 "[ \"CPU: $(percent(cpu.inuse)), iowait $(percent(cpu.io))\", \"Mem: "
 "$(size(mem.user)), cache $(size(mem.cached))\", \"Net: down "
@@ -285,51 +285,51 @@ msgid ""
 "$(speed(disk.write))\" ]"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
 msgid "Information shown as menu entries"
 msgstr "Informacija rodoma kaip meniu elementai"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
 msgid "Graph alpha value"
 msgstr "Diagramos alfa reikšmė"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
 msgid "Graph background color"
 msgstr "Diagramos fono spalva"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
 msgid "Graph visibility"
 msgstr "Diagramos matomumas"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
 msgid "Minimum value for upper graph edge"
 msgstr "Viršutinio diagramos krašto mažiausia reikšmė"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
 msgid "Maximum value for upper graph edge, zero means unlimited"
 msgstr "Viršutinio diagramos krašto didžiausia reikšmė, 0 – neribojama"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
 msgid "Number of values used for smooth graph scaling"
 msgstr "Reikšmių skaičius naudojamas glotniam diagramos mastelio keitimui"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
 msgid "Available traces"
 msgstr "Prieinami pėdsakai"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
 msgid "Trace color"
 msgstr "Pėdsako spalva"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
 msgid "Trace expression"
 msgstr "Pėdsako reiškinys"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
 msgid "Trace visibility"
 msgstr "Pėdsako matomumas"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
 msgid "Traces shown"
 msgstr "Rodomi pėdsakai"
 
@@ -350,11 +350,11 @@ msgstr "Apskaičiuoti reiškinį"
 msgid "List available expression identifiers"
 msgstr "Parodyti prieinamus reiškinių identifikatorius"
 
-#: ../src/main.vala:322
+#: ../src/main.vala:314
 msgid "- System load application indicator"
 msgstr "– sistemos apkrovos programos indikatorius"
 
-#: ../src/main.vala:330
+#: ../src/main.vala:322
 #, c-format
 msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"
@@ -363,21 +363,21 @@ msgstr ""
 "„%s --help“.\n"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
-#: ../src/utils.vala:57
+#: ../src/utils.vala:45
 msgid "{} kB"
 msgstr "{} kB"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
-#: ../src/utils.vala:59
+#: ../src/utils.vala:47
 msgid "{} MB"
 msgstr "{} MB"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
-#: ../src/utils.vala:61
+#: ../src/utils.vala:49
 msgid "{} GB"
 msgstr "{} GB"
 
-#: ../src/utils.vala:69
+#: ../src/utils.vala:57
 #, c-format
 msgid "%u B"
 msgid_plural "%u B"
@@ -386,26 +386,26 @@ msgstr[1] "%u B"
 msgstr[2] "%u B"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:82
+#: ../src/utils.vala:70
 msgid "{} kB/s"
 msgstr "{} kB/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:84
+#: ../src/utils.vala:72
 msgid "{} MB/s"
 msgstr "{} MB/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:86
+#: ../src/utils.vala:74
 msgid "{} GB/s"
 msgstr "{} GB/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:88
+#: ../src/utils.vala:76
 msgid "{} TB/s"
 msgstr "{} TB/s"
 
-#: ../src/utils.vala:96
+#: ../src/utils.vala:84
 #, c-format
 msgid "%u B/s"
 msgid_plural "%u B/s"
