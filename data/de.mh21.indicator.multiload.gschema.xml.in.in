@@ -694,107 +694,107 @@
         </key>
 
         <key name="cpuload-color0" type="s">
-            <default>"traditional:cpu1"</default>
+            <default>"#0072b3"</default>
             <summary>Deprecated</summary>
         </key>
 
         <key name="cpuload-color1" type="s">
-            <default>"traditional:cpu2"</default>
+            <default>"#0092e6"</default>
             <summary>Deprecated</summary>
         </key>
 
         <key name="cpuload-color2" type="s">
-            <default>"traditional:cpu3"</default>
+            <default>"#00a3ff"</default>
             <summary>Deprecated</summary>
         </key>
 
         <key name="cpuload-color3" type="s">
-            <default>"traditional:cpu4"</default>
+            <default>"#002f3d"</default>
             <summary>Deprecated</summary>
         </key>
 
         <key name="cpuload-color4" type="s">
-            <default>"traditional:background"</default>
+            <default>"#000000"</default>
             <summary>Deprecated</summary>
         </key>
 
         <key name="memload-color0" type="s">
-            <default>"traditional:mem1"</default>
+            <default>"#00b35b"</default>
             <summary>Deprecated</summary>
         </key>
 
         <key name="memload-color1" type="s">
-            <default>"traditional:mem2"</default>
+            <default>"#00e675"</default>
             <summary>Deprecated</summary>
         </key>
 
         <key name="memload-color2" type="s">
-            <default>"traditional:mem3"</default>
+            <default>"#00ff82"</default>
             <summary>Deprecated</summary>
         </key>
 
         <key name="memload-color3" type="s">
-            <default>"traditional:mem4"</default>
+            <default>"#AAF5D0"</default>
             <summary>Deprecated</summary>
         </key>
 
         <key name="memload-color4" type="s">
-            <default>"traditional:background"</default>
+            <default>"#000000"</default>
             <summary>Deprecated</summary>
         </key>
 
         <key name="netload-color0" type="s">
-            <default>"traditional:net1"</default>
+            <default>"#fce94f"</default>
             <summary>Deprecated</summary>
         </key>
 
         <key name="netload-color1" type="s">
-            <default>"traditional:net2"</default>
+            <default>"#edd400"</default>
             <summary>Deprecated</summary>
         </key>
 
         <key name="netload-color2" type="s">
-            <default>"traditional:net3"</default>
+            <default>"#c4a000"</default>
             <summary>Deprecated</summary>
         </key>
 
         <key name="netload-color3" type="s">
-            <default>"traditional:background"</default>
+            <default>"#000000"</default>
             <summary>Deprecated</summary>
         </key>
 
         <key name="swapload-color0" type="s">
-            <default>"traditional:swap1"</default>
+            <default>"#8b00c3"</default>
             <summary>Deprecated</summary>
         </key>
 
         <key name="swapload-color1" type="s">
-            <default>"traditional:background"</default>
+            <default>"#000000"</default>
             <summary>Deprecated</summary>
         </key>
 
         <key name="loadavg-color0" type="s">
-            <default>"traditional:load1"</default>
+            <default>"#d50000"</default>
             <summary>Deprecated</summary>
         </key>
 
         <key name="loadavg-color1" type="s">
-            <default>"traditional:background"</default>
+            <default>"#000000"</default>
             <summary>Deprecated</summary>
         </key>
 
         <key name="diskload-color0" type="s">
-            <default>"traditional:disk1"</default>
+            <default>"#C65000"</default>
             <summary>Deprecated</summary>
         </key>
 
         <key name="diskload-color1" type="s">
-            <default>"traditional:disk2"</default>
+            <default>"#FF6700"</default>
             <summary>Deprecated</summary>
         </key>
 
         <key name="diskload-color2" type="s">
-            <default>"traditional:background"</default>
+            <default>"#000000"</default>
             <summary>Deprecated</summary>
         </key>
 
