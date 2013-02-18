@@ -4,9 +4,8 @@
 - document functions in gui
 - move schema to de.mh21.indicator.multiload, adjust documentation, faq
 - label guide bug?
-- update menu only on-demand?
-- restore old schema defaults so that they match 0.2
+- kde
+- try to recover some translations for colors in pref dialog, menu items etc.
 
 color schemes:
 - fix upgrades
-- try to recover some translations for colors in pref dialog
