@@ -18,9 +18,17 @@
 
 public class Preferences : Object {
     private Gtk.Dialog preferences;
+    private Gtk.ComboBox colorschemes;
     private ItemPreferences menupreferences;
     private ItemPreferences indicatorpreferences;
     private ColorMapper colormapper;
+    private SettingsCache settingscache;
+    private Settings prefsettings;
+    private Gtk.Builder builder;
+    private bool colorschemeignoresignals;
+
+    delegate void ColorForeachFunc(Settings settings, string key,
+            Object widget, string name);
 
     public Preferences(ColorMapper colormapper)
     {
@@ -30,6 +38,8 @@ public class Preferences : Object {
     construct {
         this.menupreferences = new ItemPreferences("menu-expressions");
         this.indicatorpreferences = new ItemPreferences("indicator-expressions");
+        this.settingscache = new SettingsCache();
+        this.prefsettings = this.settingscache.generalsettings();
     }
 
     public void show() {
@@ -38,61 +48,60 @@ public class Preferences : Object {
             return;
         }
 
-        Gtk.Builder builder;
         this.preferences = Utils.get_ui("preferencesdialog", this,
                 {"widthadjustment", "speedadjustment", "schemestore"},
-                out builder) as Gtk.Dialog;
+                out this.builder) as Gtk.Dialog;
         return_if_fail(this.preferences != null);
 
-        var settingscache = new SettingsCache();
-        var prefsettings = settingscache.generalsettings();
-        var graphids = prefsettings.get_strv("graphs");
+        this.colorschemes = this.builder.get_object("colorschemes") as Gtk.ComboBox;
 
-        foreach (var graphid in graphids) {
+        var schemestore = this.builder.get_object("schemestore") as Gtk.ListStore;
+        foreach (var colorscheme in ColorMapper.colorschemes) {
+            schemestore.insert_with_values(null, -1,
+                    0, ColorMapper.schemelabel(colorscheme),
+                    1, colorscheme);
+        }
+        // TRANSLATORS: custom color scheme
+        schemestore.insert_with_values(null, -1, 0, _("Custom"), 1, "custom");
+
+        foreach (var graphid in this.prefsettings.get_strv("graphs")) {
             if (!(graphid in SettingsCache.presetgraphids))
                 continue;
-
-            var graphsettings = settingscache.graphsettings(graphid);
-            var traceids = graphsettings.get_strv("traces");
-            for (uint j = 0, jsize = traceids.length; j < jsize; ++j) {
-                var traceid = traceids[j];
-                var tracesettings = settingscache.tracesettings(graphid, traceid);
-                tracesettings.bind_with_mapping("color",
-                        builder.get_object(@"$(traceid)_color"), "rgba",
-                        SettingsBindFlags.DEFAULT,
-                        Utils.get_settings_rgba,
-                        Utils.set_settings_rgba,
-                        this.colormapper, () => {});
-            }
-
+            var graphsettings = this.settingscache.graphsettings(graphid);
             graphsettings.bind("enabled",
-                    builder.get_object(@"$(graphid)_enabled"), "active",
+                    this.builder.get_object(@"$(graphid)-enabled"), "active",
                     SettingsBindFlags.DEFAULT);
         }
 
+        this.loopcolorgsettings((settings, key, widget, name) => {
+            PGLib.settings_bind_with_mapping(settings, key,
+                    widget, "rgba",
+                    SettingsBindFlags.DEFAULT,
+                    Utils.get_settings_rgba,
+                    Utils.set_settings_rgba,
+                    this.colormapper, () => {});
+            settings.changed[key].connect(this.on_color_changed);
+        });
+
         // TODO: rgba, alpha need settings conversion
-        prefsettings.bind("width",
-                builder.get_object("width"), "value",
+        this.prefsettings.bind("width",
+                this.builder.get_object("width"), "value",
                 SettingsBindFlags.DEFAULT);
-        prefsettings.bind_with_mapping("background-color",
-                builder.get_object("background_color"), "rgba",
-                SettingsBindFlags.DEFAULT,
-                Utils.get_settings_rgba,
-                Utils.set_settings_rgba,
-                this.colormapper, () => {});
-        prefsettings.bind("speed",
-                builder.get_object("speed"), "value",
+        this.prefsettings.bind("speed",
+                this.builder.get_object("speed"), "value",
                 SettingsBindFlags.DEFAULT);
-        prefsettings.bind("autostart",
-                builder.get_object("autostart"), "active",
+        this.prefsettings.bind("autostart",
+                this.builder.get_object("autostart"), "active",
                 SettingsBindFlags.DEFAULT);
+
+        this.gsettingstowidgets();
 
         this.preferences.show_all();
     }
 
     [CCode (instance_pos = -1)]
     public void on_colorbutton_clicked(Gtk.Button button) {
-        this.colormapper.add_palette((P.ColorChooser)button);
+        this.colormapper.add_palette(button as PGtk.ColorChooser);
     }
 
     [CCode (instance_pos = -1)]
@@ -111,8 +120,61 @@ public class Preferences : Object {
     }
 
     [CCode (instance_pos = -1)]
+    public void on_color_changed() {
+        if (this.colorschemeignoresignals)
+            return;
+        this.colorschemes.set_active_id("custom");
+    }
+
+    [CCode (instance_pos = -1)]
+    public void on_colorschemes_changed(Gtk.ComboBox widget) {
+        if (this.colorschemeignoresignals)
+            return;
+        var colorscheme = this.colorschemes.get_active_id();
+        if (colorscheme == "custom")
+            return;
+        this.colormapper.color_scheme = colorscheme;
+        this.colorschemeignoresignals = true;
+        this.loopcolorgsettings((settings, key, widget, name) => {
+            settings.set_string(key, colorscheme + ":" + name);
+        });
+        this.colorschemeignoresignals = false;
+    }
+
+    [CCode (instance_pos = -1)]
     public void on_preferencesdialog_destroy(Gtk.Widget source) {
         this.preferences = null;
+    }
+
+    private void gsettingstowidgets() {
+        var colorscheme = this.colormapper.color_scheme;
+        var custom = false;
+        this.loopcolorgsettings((settings, key, widget, name) => {
+            custom |= settings.get_string(key) != colorscheme + ":" + name;
+        });
+
+        this.colorschemeignoresignals = true;
+        if (custom || !this.colorschemes.set_active_id(colorscheme)) {
+            this.colorschemes.set_active_id("custom");
+        }
+        this.colorschemeignoresignals = false;
+    }
+
+    private void loopcolorgsettings(ColorForeachFunc callback) {
+        foreach (var graphid in this.prefsettings.get_strv("graphs")) {
+            if (!(graphid in SettingsCache.presetgraphids))
+                continue;
+
+            var graphsettings = this.settingscache.graphsettings(graphid);
+            foreach (var traceid in graphsettings.get_strv("traces")) {
+                var tracesettings = this.settingscache.tracesettings(graphid, traceid);
+                callback(tracesettings, "color",
+                        this.builder.get_object(@"$(traceid)-color"), traceid);
+            }
+        }
+
+        callback(prefsettings, "background-color",
+                this.builder.get_object("background-color"), "background");
     }
 }
 

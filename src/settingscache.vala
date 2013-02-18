@@ -17,31 +17,31 @@
  ******************************************************************************/
 
 public class SettingsCache : Object {
-    public const string[] presetgraphids = {"cpu", "mem", "net", "load", "swap", "disk"};
-    private HashTable<string, FixedGSettings.Settings> cached =
-        new HashTable<string, FixedGSettings.Settings>.full
-            (str_hash, str_equal, g_free, g_object_unref);
+    public const string[] presetgraphids = {
+        "cpu", "mem", "net", "load", "swap", "disk"
+    };
+    private HashTable<string, Settings> cached = new HashTable<string, Settings>
+        .full(str_hash, str_equal, g_free, g_object_unref);
 
-    private FixedGSettings.Settings settings(string key, string? path) {
+    private Settings settings(string key, string? path) {
         var result = this.cached.lookup(key);
         if (result == null) {
             result = path == null ?
-                new FixedGSettings.Settings(key) :
-                new FixedGSettings.Settings.with_path(key, path);
+                new Settings(key) : new Settings.with_path(key, path);
             this.cached.insert(path == null ? key : @"$key:$path", result);
         }
         return result;
     }
 
-    public List<unowned FixedGSettings.Settings> cachedsettings() {
+    public List<unowned Settings> cachedsettings() {
         return this.cached.get_values();
     }
 
-    public FixedGSettings.Settings generalsettings() {
+    public Settings generalsettings() {
         return this.settings("de.mh21.indicator.multiload.general", null);
     }
 
-    public FixedGSettings.Settings graphsettings(string graphid) {
+    public Settings graphsettings(string graphid) {
         if (graphid in presetgraphids)
             return this.settings
                 (@"de.mh21.indicator.multiload.graphs.$graphid", null);
@@ -50,8 +50,7 @@ public class SettingsCache : Object {
              @"/apps/indicators/multiload/graphs/$graphid/");
     }
 
-    public FixedGSettings.Settings tracesettings(string graphid,
-            string traceid) {
+    public Settings tracesettings(string graphid, string traceid) {
         if (graphid in presetgraphids)
             return this.settings
                 (@"de.mh21.indicator.multiload.traces.$traceid", null);

@@ -26,7 +26,7 @@ public class ItemPreferences : Object {
     private Gtk.Button itemedit;
     private Gtk.Button itemup;
     private Gtk.Button itemdown;
-    private FixedGSettings.Settings itemsettings;
+    private Settings itemsettings;
     private bool itemsignoresignals;
 
     public string settingskey { get; construct; }

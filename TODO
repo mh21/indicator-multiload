@@ -1,15 +1,12 @@
 0.4:
-- no graphs shown should be possible
-- first icon should be empty icon, not image-not-found?
 - system(...) function
 - error messages for expressions not only on stderr
-
-After oneiric is dropped: 
-- dh compat 9
-- debian 3.9.3
-- debian depend on gnome 3.4
+- document functions in gui
+- move schema to de.mh21.indicator.multiload, adjust documentation, faq
+- label guide bug?
+- update menu only on-demand?
+- restore old schema defaults so that they match 0.2
 
 color schemes:
-- make scheme switch work
-- more color schemes
 - fix upgrades
+- try to recover some translations for colors in pref dialog

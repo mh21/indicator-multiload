@@ -19,7 +19,7 @@
 public class DiskProvider : Provider {
     private uint64[] lastdata;
     private uint64 lasttime;
-    private const string[] networkfs = { "smbfs", "nfs", "cifs", "fuse.sshfs" };
+    private static const string[] networkfs = { "smbfs", "nfs", "cifs", "fuse.sshfs" };
 
     public DiskProvider() {
         base("disk", {"read", "write"});
@@ -77,7 +77,7 @@ public class DiskProvider : Provider {
             for (uint i = 0; i < mountlist.number; ++i) {
                 // Skip network mounts to prevent hangs if not available and to
                 // allow suspend (gnome bug #579888)
-                if (mountentries[i].type in this.networkfs)
+                if (mountentries[i].type in networkfs)
                     continue;
                 GTop.FSUsage fsusage;
                 GTop.get_fsusage(out fsusage, mountentries[i].mountdir);

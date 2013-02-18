@@ -16,21 +16,36 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.                *
  ******************************************************************************/
 
+class ColorScheme {
+    public string label;
+    public string[] colors;
+    public Gdk.RGBA rgbas[16];
+
+    public ColorScheme(string label, string[] colors) {
+        this.label = label;
+        this.colors = colors;
+        for (uint j = 0, jsize = colors.length; j < jsize; ++j)
+            this.rgbas[j].parse(colors[j]);
+    }
+
+}
+
 public class ColorMapper : Object {
+    public static string[] colorschemes = {
+        "traditional", "ambiance", "radiance"
+    };
+
+    static HashTable<string, ColorScheme> schemes = new HashTable<string, ColorScheme>
+        .full(str_hash, str_equal, g_free, g_object_unref);
+
     static string[] colornames = {
         "cpu1",  "cpu2",  "cpu3",  "cpu4",
         "mem1",  "mem2",  "mem3",  "mem4",
         "net1",  "net2",  "net3",  "swap1",
         "load1", "disk1", "disk2", "background"
     };
-    static string[] traditionalcolors = {
-        "#0072b3", "#0092e6", "#00a3ff", "#002f3d",
-        "#00b35b", "#00e675", "#00ff82", "#aaf5d0",
-        "#fce94f", "#edd400", "#c4a000", "#8b00c3",
-        "#d50000", "#c65000", "#ff6700", "rgba(0,0,0,.25)"
-    };
-    static Gdk.RGBA traditionalrgbas[16];
-    static string[] pangocolors = {
+
+    static string[] tangocolors = {
         "#ef2929", "#cc0000", "#a40000",
         "#fcaf3e", "#f57900", "#ce5c00",
         "#fce94f", "#edd400", "#c4a000",
@@ -41,28 +56,69 @@ public class ColorMapper : Object {
         "#888a85", "#555753", "#2e3436",
         "#eeeeec", "#d3d7cf", "#babdb6"
     };
-    static Gdk.RGBA pangorgbas[27];
+    static Gdk.RGBA tangorgbas[27];
+
     static string[] graycolors = {
         "#000000", "#2e3436", "#555753", "#888a85", "#babdb6",
         "#d3d7cf", "#eeeeec", "#f3f3f3", "#ffffff"
     };
     static Gdk.RGBA grayrgbas[9];
 
+    public string color_scheme { get; set; }
+
     static construct {
-        for (uint j = 0; j < 16; ++j)
-            traditionalrgbas[j].parse(traditionalcolors[j]);
         for (uint j = 0; j < 27; ++j)
-            pangorgbas[j].parse(pangocolors[j]);
+            tangorgbas[j].parse(tangocolors[j]);
         for (uint j = 0; j < 9; ++j)
             grayrgbas[j].parse(graycolors[j]);
+
+        schemes.insert("traditional", new ColorScheme
+            // TRANSLATORS: Color theme name
+            (_("Traditional"), {
+            "#0072b3", "#0092e6", "#00a3ff", "#002f3d",
+            "#00b35b", "#00e675", "#00ff82", "#aaf5d0",
+            "#fce94f", "#edd400", "#c4a000", "#8b00c3",
+            "#d50000", "#c65000", "#ff6700", "rgba(0,0,0,.25)"
+        }));
+        schemes.insert("ambiance", new ColorScheme
+            // TRANSLATORS: Color theme name for the Ubuntu Ambiance (light on dark) theme
+            (_("Ambiance"), {
+            "#dfdbd2", "#dfdbd2", "#dfdbd2", "#a39f96",
+            "#dfdbd2", "#dfdbd2", "#dfdbd2", "#a39f96",
+            "#dfdbd2", "#a39f96", "#a39f96", "#dfdbd2",
+            "#dfdbd2", "#dfdbd2", "#a39f96", "rgba(0,0,0,0)"
+        }));
+        schemes.insert("radiance", new ColorScheme
+            // TRANSLATORS: Color theme name for the Ubuntu Radiance (dark on light) theme
+            (_("Radiance"), {
+            "#3c3c3c", "#3c3c3c", "#3c3c3c", "#a39f96",
+            "#3c3c3c", "#3c3c3c", "#3c3c3c", "#a39f96",
+            "#3c3c3c", "#a39f96", "#a39f96", "#3c3c3c",
+            "#3c3c3c", "#3c3c3c", "#a39f96", "rgba(0,0,0,0)"
+        }));
     }
 
-    public bool parse_colorname(string value, ref Gdk.RGBA rgba) {
+    static Gdk.RGBA[] schemergbas(string name) {
+        var scheme = schemes.lookup(name);
+        if (scheme == null)
+            scheme = schemes.lookup("traditional");
+        return scheme.rgbas;
+    }
+
+    public static string schemelabel(string name) {
+        var scheme = schemes.lookup(name);
+        if (scheme == null)
+            scheme = schemes.lookup("traditional");
+        return scheme.label;
+    }
+
+    public static bool parse_colorname(string value, ref Gdk.RGBA rgba) {
         var parts = value.split(":");
-        if (parts.length == 2 && parts[0] == "traditional") {
+        if (parts.length == 2) {
+            var rgbas = schemergbas(parts[0]);
             for (uint j = 0, jsize = colornames.length; j < jsize; ++j) {
                 if (colornames[j] == parts[1]) {
-                    rgba = traditionalrgbas[j];
+                    rgba = rgbas[j];
                     return true;
                 }
             }
@@ -70,11 +126,14 @@ public class ColorMapper : Object {
         return rgba.parse(value);
     }
 
-    public void add_palette(P.ColorChooser chooser) {
-        chooser.clear_palette();
-        chooser.add_palette(Gtk.Orientation.VERTICAL, 3, pangorgbas);
-        chooser.add_palette(Gtk.Orientation.HORIZONTAL, 9, grayrgbas);
-        chooser.add_palette(Gtk.Orientation.HORIZONTAL, 8, traditionalrgbas);
+    public void add_palette(PGtk.ColorChooser chooser) {
+        // https://bugzilla.gnome.org/show_bug.cgi?id=693995
+        if (Gtk.check_version(3, 8, 0) == null) {
+            chooser.add_palette(Gtk.Orientation.VERTICAL, 0, null);
+            chooser.add_palette(Gtk.Orientation.VERTICAL, 3, tangorgbas);
+            chooser.add_palette(Gtk.Orientation.HORIZONTAL, 9, grayrgbas);
+            chooser.add_palette(Gtk.Orientation.HORIZONTAL, 8, schemergbas(this.color_scheme));
+        }
     }
 }
 

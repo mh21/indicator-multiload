@@ -42,7 +42,7 @@ public class SettingsConversion : Object {
     }
 
     private void convert_version1() {
-        var oldsettings = new FixedGSettings.Settings.with_path
+        var oldsettings = new Settings.with_path
             ("de.mh21.indicator.multiload.version1", "/apps/indicators/multiload/");
         foreach (var key in oldsettings.list_keys()) {
             var value = oldsettings.get_value(key);

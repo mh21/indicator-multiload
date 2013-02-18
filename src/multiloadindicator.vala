@@ -163,6 +163,9 @@ public class MultiLoadIndicator : Object {
             this.menuitems = this.menuitems[0:length];
         }
         if (!this.menuset) {
+            this.menu.notify.connect(() => {
+                stdout.printf("notify");
+            });
             this.indicator.set_menu(this.menu);
             // first entry is system monitor, activate it on middle click
             this.indicator.set_secondary_activate_target(this.menu.get_children().data);
@@ -197,8 +200,9 @@ public class MultiLoadIndicator : Object {
             });
         }
         if (!found) {
-            this.indicator.set_icon_full(this.iconname(this.currenticonindex),
-                this.descriptionmodel.expression(0).label());
+            this.indicator.set_icon_full(this.lasticonwidth > 0 ?
+                    this.iconname(this.currenticonindex) : "",
+                    this.descriptionmodel.expression(0).label());
         }
     }
 

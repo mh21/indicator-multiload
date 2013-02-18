@@ -49,6 +49,11 @@
             <_summary>Graph background color</_summary>
         </key>
 
+        <key name="color-scheme" type="s">
+            <default>"traditional"</default>
+            <_summary>Most recently used color scheme</_summary>
+        </key>
+
         <key name="system-monitor" type="s">
             <default>""</default>
             <_summary>The desktop description file to execute as the system monitor</_summary>

@@ -50,7 +50,6 @@ indicator_multiload_VALASOURCES = \
 indicator_multiload_SOURCES = \
 	$(indicator_multiload_VALASOURCES) \
 	config.vapi \
-	gsettings-fixed.vapi \
 	gtop.vapi \
 	various.vapi
 

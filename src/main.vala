@@ -171,7 +171,7 @@ public class Main : Application {
         }
     }
 
-    private void creategraphs(FixedGSettings.Settings? settings, string key) {
+    private void creategraphs(Settings? settings, string key) {
         // For some reason, directly after converting settings v1->v2, this is
         // called a lot. Recreating the graphs is expensive, so check whether
         // it is really necessary.
@@ -226,7 +226,7 @@ public class Main : Application {
     private void addtracebinds(TraceModel tracemodel,
             string graphid, string traceid) {
         var tracesettings = this.settingscache.tracesettings(graphid, traceid);
-        tracesettings.bind_with_mapping("color",
+        PGLib.settings_bind_with_mapping(tracesettings, "color",
                 tracemodel, "rgba",
                 SettingsBindFlags.DEFAULT,
                 Utils.get_settings_rgba,
@@ -275,14 +275,17 @@ public class Main : Application {
         datasettings.bind("height",
                 this.multi, "height",
                 SettingsBindFlags.DEFAULT);
-        datasettings.bind_with_mapping("background-color",
-                this.multi, "background_rgba",
+        PGLib.settings_bind_with_mapping(datasettings, "background-color",
+                this.multi, "background-rgba",
                 SettingsBindFlags.DEFAULT,
                 Utils.get_settings_rgba,
                 Utils.set_settings_rgba,
                 this.colormapper, () => {});
         datasettings.bind("autostart",
                 this, "autostart",
+                SettingsBindFlags.DEFAULT);
+        datasettings.bind("color-scheme",
+                this.colormapper, "color-scheme",
                 SettingsBindFlags.DEFAULT);
         // should be the last one as it initializes the timer
         datasettings.bind("speed",
