@@ -7,7 +7,7 @@
     <property name="type_hint">dialog</property>
     <property name="program_name">System Load Indicator</property>
     <property name="version">@PACKAGE_VERSION@</property>
-    <property name="copyright">© 2011 Michael Hofmann</property>
+    <property name="copyright">© 2011–2013 Michael Hofmann</property>
     <property name="comments" translatable="yes">A system load monitor capable of displaying graphs for CPU, ram, and swap space use, plus network traffic.</property>
     <property name="authors">Michael Hofmann &lt;mh21@mh21.de&gt;
 Martin Baulig &lt;martin@home-of-linux.org&gt;
