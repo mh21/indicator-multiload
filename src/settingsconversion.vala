@@ -26,9 +26,9 @@ public class SettingsConversion : Object {
             this.convert_version1();
             break;
         case 2:
-            break;
+            return;
         }
-        settings.set_value("settings-version", 2);
+        settings.set_value("settings-version", 2u);
     }
 
     private void convert_version1() {

@@ -21,6 +21,7 @@ public class CpuProvider : Provider {
     private uint64[] newdata;
 
     private static string[] fields() {
+        GTop.init();
         string[] templates = {"user", "sys", "nice", "idle", "io", "inuse"};
         string[] result = new string[(GTop.global_server->ncpu + 2) * 6];
         for (uint j = 0; j < 6; ++j) {
