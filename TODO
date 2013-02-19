@@ -1,11 +1,11 @@
 0.4:
-- system(...) function
-- error messages for expressions not only on stderr
-- document functions in gui
 - move schema to de.mh21.indicator.multiload, adjust documentation, faq
 - label guide bug?
-- kde
+- document functions in gui
+- error messages for expressions not only on stderr
 - try to recover some translations for colors in pref dialog, menu items etc.
+- kde
 
-color schemes:
-- fix upgrades
+0.5:
+- more providers
+- icon styles
