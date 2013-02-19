@@ -19,26 +19,16 @@
 public class SettingsConversion : Object {
     SettingsCache settingscache = new SettingsCache();
 
-    public uint oldversion() {
-        var settings = this.settingscache.generalsettings();
-        return settings.get_value("settings-version").get_uint32();
-    }
-
-    public bool is_current() {
-        return this.oldversion() == 2;
-    }
-
     public void convert() {
         var settings = this.settingscache.generalsettings();
-
-        while (!this.is_current()) {
-            switch (this.oldversion()) {
-            case 1:
-                this.convert_version1();
-                break;
-            }
-            settings.set_value("settings-version", this.oldversion() + 1);
+        switch (settings.get_value("settings-version").get_uint32()) {
+        case 1:
+            this.convert_version1();
+            break;
+        case 2:
+            break;
         }
+        settings.set_value("settings-version", 2);
     }
 
     private void convert_version1() {
@@ -49,27 +39,8 @@ public class SettingsConversion : Object {
             oldsettings.reset(key);
             var defaultvalue = oldsettings.get_value(key);
             if (!value.equal(defaultvalue)) {
-                // TODO: this is not converting between 1 and 2, but between 1 and current
-                // no problem yet as we are only at settings version 2
                 switch (key) {
-                case "cpuload-alpha4":
-                    this.settingscache.graphsettings("cpu").set_value("alpha", value);
-                    break;
-                case "memload-alpha4":
-                    this.settingscache.graphsettings("mem").set_value("alpha", value);
-                    break;
-                case "netload-alpha3":
-                    this.settingscache.graphsettings("net").set_value("alpha", value);
-                    break;
-                case "swapload-alpha1":
-                    this.settingscache.graphsettings("swap").set_value("alpha", value);
-                    break;
-                case "loadavg-alpha1":
-                    this.settingscache.graphsettings("load").set_value("alpha", value);
-                    break;
-                case "diskload-alpha2":
-                    this.settingscache.graphsettings("disk").set_value("alpha", value);
-                    break;
+                // alpha and background values are not converted
                 case "view-cpuload":
                     this.settingscache.graphsettings("cpu").set_value("enabled", value);
                     break;
@@ -100,9 +71,6 @@ public class SettingsConversion : Object {
                 case "cpuload-color3":
                     this.settingscache.tracesettings("cpu", "cpu4").set_value("color", value);
                     break;
-                case "cpuload-color4":
-                    this.settingscache.graphsettings("cpu").set_value("background-color", value);
-                    break;
                 case "memload-color0":
                     this.settingscache.tracesettings("mem", "mem1").set_value("color", value);
                     break;
@@ -115,9 +83,6 @@ public class SettingsConversion : Object {
                 case "memload-color3":
                     this.settingscache.tracesettings("mem", "mem4").set_value("color", value);
                     break;
-                case "memload-color4":
-                    this.settingscache.graphsettings("mem").set_value("background-color", value);
-                    break;
                 case "netload-color0":
                     this.settingscache.tracesettings("net", "net1").set_value("color", value);
                     break;
@@ -127,29 +92,17 @@ public class SettingsConversion : Object {
                 case "netload-color2":
                     this.settingscache.tracesettings("net", "net3").set_value("color", value);
                     break;
-                case "netload-color3":
-                    this.settingscache.graphsettings("net").set_value("background-color", value);
-                    break;
                 case "swapload-color0":
                     this.settingscache.tracesettings("swap", "swap1").set_value("color", value);
                     break;
-                case "swapload-color1":
-                    this.settingscache.graphsettings("swap").set_value("background-color", value);
-                    break;
                 case "loadavg-color0":
                     this.settingscache.tracesettings("load", "load1").set_value("color", value);
-                    break;
-                case "loadavg-color1":
-                    this.settingscache.graphsettings("load").set_value("background-color", value);
                     break;
                 case "diskload-color0":
                     this.settingscache.tracesettings("disk", "disk1").set_value("color", value);
                     break;
                 case "diskload-color1":
                     this.settingscache.tracesettings("disk", "disk2").set_value("color", value);
-                    break;
-                case "diskload-color2":
-                    this.settingscache.graphsettings("disk").set_value("background-color", value);
                     break;
                 case "speed":
                     this.settingscache.generalsettings().set_value("speed", value);
