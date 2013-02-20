@@ -165,11 +165,6 @@
     </schema>
 
     <schema id="de.mh21.indicator-multiload.graphs.cpu" path="/de/mh21/indicator-multiload/graphs/cpu/" gettext-domain="@GETTEXT_PACKAGE@">
-        <key name="background-color" type="s">
-            <default>"traditional:background"</default>
-            <_summary>Graph background color</_summary>
-        </key>
-
         <key name="enabled" type="b">
             <default>true</default>
             <_summary>Graph visibility</_summary>
@@ -202,11 +197,6 @@
     </schema>
 
     <schema id="de.mh21.indicator-multiload.graphs.mem" path="/de/mh21/indicator-multiload/graphs/mem/" gettext-domain="@GETTEXT_PACKAGE@">
-        <key name="background-color" type="s">
-            <default>"traditional:background"</default>
-            <_summary>Graph background color</_summary>
-        </key>
-
         <key name="enabled" type="b">
             <default>false</default>
             <_summary>Graph visibility</_summary>
@@ -239,11 +229,6 @@
     </schema>
 
     <schema id="de.mh21.indicator-multiload.graphs.net" path="/de/mh21/indicator-multiload/graphs/net/" gettext-domain="@GETTEXT_PACKAGE@">
-        <key name="background-color" type="s">
-            <default>"traditional:background"</default>
-            <_summary>Graph background color</_summary>
-        </key>
-
         <key name="enabled" type="b">
             <default>false</default>
             <_summary>Graph visibility</_summary>
@@ -275,11 +260,6 @@
     </schema>
 
     <schema id="de.mh21.indicator-multiload.graphs.swap" path="/de/mh21/indicator-multiload/graphs/swap/" gettext-domain="@GETTEXT_PACKAGE@">
-        <key name="background-color" type="s">
-            <default>"traditional:background"</default>
-            <_summary>Graph background color</_summary>
-        </key>
-
         <key name="enabled" type="b">
             <default>false</default>
             <_summary>Graph visibility</_summary>
@@ -309,11 +289,6 @@
     </schema>
 
     <schema id="de.mh21.indicator-multiload.graphs.load" path="/de/mh21/indicator-multiload/graphs/load/" gettext-domain="@GETTEXT_PACKAGE@">
-        <key name="background-color" type="s">
-            <default>"traditional:background"</default>
-            <_summary>Graph background color</_summary>
-        </key>
-
         <key name="enabled" type="b">
             <default>false</default>
             <_summary>Graph visibility</_summary>
@@ -343,11 +318,6 @@
     </schema>
 
     <schema id="de.mh21.indicator-multiload.graphs.disk" path="/de/mh21/indicator-multiload/graphs/disk/" gettext-domain="@GETTEXT_PACKAGE@">
-        <key name="background-color" type="s">
-            <default>"traditional:background"</default>
-            <_summary>Graph background color</_summary>
-        </key>
-
         <key name="enabled" type="b">
             <default>false</default>
             <_summary>Graph visibility</_summary>

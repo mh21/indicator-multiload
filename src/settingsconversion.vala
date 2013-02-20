@@ -31,7 +31,7 @@ public class SettingsConversion : Object {
         } else {
             this.convert_version1();
         }
-        //settings.set_value("settings-version", 3u);
+        settings.set_value("settings-version", 3u);
     }
 
     private void convert_version1() {
@@ -137,10 +137,10 @@ public class SettingsConversion : Object {
 
     private void copysettings(Settings oldsettings, Settings newsettings, string[] ignore) {
         foreach (var key in oldsettings.list_keys()) {
-            if (key in ignore)
-                continue;
             var value = oldsettings.get_value(key);
             oldsettings.reset(key);
+            if (key in ignore)
+                continue;
             var defaultvalue = oldsettings.get_value(key);
             if (!value.equal(defaultvalue))
                 newsettings.set_value(key, value);
