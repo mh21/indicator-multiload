@@ -1,5 +1,5 @@
 [type: gettext/glade]data/preferences.ui.in
-data/de.mh21.indicator.multiload.gschema.xml.in.in
+data/de.mh21.indicator-multiload.gschema.xml.in.in
 data/indicator-multiload.desktop.in
 src/colormapper.vala
 src/cpuprovider.vala

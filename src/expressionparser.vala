@@ -28,7 +28,7 @@ internal class ExpressionTokenizer {
         bool inexpression = false;
         bool instringsingle = false;
         bool instringdouble = false;
-        for (this.current = expression; *this.current != '\0';
+        for (this.current = (char*)expression; *this.current != '\0';
                 this.current = this.current + 1) {
             if (!inexpression) {
                 if (*this.current == '$') {

@@ -27,7 +27,7 @@ Makefile
 src/Makefile
 data/Makefile
 data/preferences.ui
-data/de.mh21.indicator.multiload.gschema.xml.in
+data/de.mh21.indicator-multiload.gschema.xml.in
 po/Makefile.in
 ])
 

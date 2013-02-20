@@ -28,7 +28,7 @@ public class DiskProvider : Provider {
     private string[] split(string val) {
         string[] result = null;
         char *last = null;
-        char *current = val;
+        char *current = (char*)val;
         for (; *current != '\0'; current = current + 1) {
             if (*current == ' ' || *current == '\n') {
                 if (last != null) {

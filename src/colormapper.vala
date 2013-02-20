@@ -31,21 +31,21 @@ class ColorScheme {
 }
 
 public class ColorMapper : Object {
-    public static string[] colorschemes = {
+    public static const string[] colorschemes = {
         "traditional", "ambiance", "radiance"
     };
 
     static HashTable<string, ColorScheme> schemes = new HashTable<string, ColorScheme>
         .full(str_hash, str_equal, g_free, g_object_unref);
 
-    static string[] colornames = {
+    static const string[] colornames = {
         "cpu1",  "cpu2",  "cpu3",  "cpu4",
         "mem1",  "mem2",  "mem3",  "mem4",
         "net1",  "net2",  "net3",  "swap1",
         "load1", "disk1", "disk2", "background"
     };
 
-    static string[] tangocolors = {
+    static const string[] tangocolors = {
         "#ef2929", "#cc0000", "#a40000",
         "#fcaf3e", "#f57900", "#ce5c00",
         "#fce94f", "#edd400", "#c4a000",
@@ -58,7 +58,7 @@ public class ColorMapper : Object {
     };
     static Gdk.RGBA tangorgbas[27];
 
-    static string[] graycolors = {
+    static const string[] graycolors = {
         "#000000", "#2e3436", "#555753", "#888a85", "#babdb6",
         "#d3d7cf", "#eeeeec", "#f3f3f3", "#ffffff"
     };

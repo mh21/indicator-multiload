@@ -3,7 +3,7 @@ Reimplementation of the gnome-applets multiload applet in vala and for Canonical
 Strings have been kept the same as in gnome-applets where possible to reduce translation work.
 
 For more advanced settings such as which variables are shown and whether graphs
-autoscale, open dconf-editor and navigate to /apps/indicators/multiload/.
+autoscale, open dconf-editor and navigate to /de/mh21/indicator-multiload/.
 
 Expressions are strings with embedded code within $(...). Variables are of the
 form provider.variable, a list is available from indicator-multiload -l. You

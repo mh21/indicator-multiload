@@ -1,5 +1,4 @@
 0.4:
-- move schema to de.mh21.indicator.multiload, adjust documentation, faq
 - label guide bug?
 - document functions in gui
 - error messages for expressions not only on stderr

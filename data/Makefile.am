@@ -5,7 +5,7 @@ desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 
 @INTLTOOL_XML_NOMERGE_RULE@
 @GSETTINGS_RULES@
-gsettings_SCHEMAS = de.mh21.indicator.multiload.gschema.xml
+gsettings_SCHEMAS = de.mh21.indicator-multiload.gschema.xml
 
 uidir = $(pkgdatadir)
 nodist_ui_DATA = preferences.ui
@@ -13,7 +13,7 @@ nodist_ui_DATA = preferences.ui
 EXTRA_DIST = \
 	$(desktop_in_files) \
 	preferences.ui.in \
-	de.mh21.indicator.multiload.gschema.xml.in.in
+	de.mh21.indicator-multiload.gschema.xml.in.in
 
 CLEANFILES = \
 	$(desktop_DATA) \

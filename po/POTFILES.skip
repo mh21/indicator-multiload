@@ -1,4 +1,4 @@
-data/de.mh21.indicator.multiload.gschema.xml.in
+data/de.mh21.indicator-multiload.gschema.xml.in
 data/preferences.ui
 src/colormapper.c
 src/cpuprovider.c

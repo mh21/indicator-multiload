@@ -15,9 +15,9 @@ config.status
 config.sub
 configure
 core
-data/de.mh21.indicator.multiload.gschema.valid
-data/de.mh21.indicator.multiload.gschema.xml
-data/de.mh21.indicator.multiload.gschema.xml.in
+data/de.mh21.indicator-multiload.gschema.valid
+data/de.mh21.indicator-multiload.gschema.xml
+data/de.mh21.indicator-multiload.gschema.xml.in
 data/indicator-multiload.desktop
 data/preferences.ui
 depcomp

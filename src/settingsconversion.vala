@@ -21,19 +21,22 @@ public class SettingsConversion : Object {
 
     public void convert() {
         var settings = this.settingscache.generalsettings();
-        switch (settings.get_value("settings-version").get_uint32()) {
-        case 1:
-            this.convert_version1();
-            break;
-        case 2:
+        if (settings.get_value("settings-version").get_uint32() == 3) {
             return;
         }
-        settings.set_value("settings-version", 2u);
+        if (new Settings.with_path("de.mh21.indicator-multiload.version2.general",
+                    "/apps/indicators/multiload/general/")
+                .get_value("settings-version").get_uint32() == 2) {
+            this.convert_version2();
+        } else {
+            this.convert_version1();
+        }
+        //settings.set_value("settings-version", 3u);
     }
 
     private void convert_version1() {
         var oldsettings = new Settings.with_path
-            ("de.mh21.indicator.multiload.version1", "/apps/indicators/multiload/");
+            ("de.mh21.indicator-multiload.version1", "/apps/indicators/multiload/");
         foreach (var key in oldsettings.list_keys()) {
             var value = oldsettings.get_value(key);
             oldsettings.reset(key);
@@ -120,6 +123,49 @@ public class SettingsConversion : Object {
                     this.settingscache.generalsettings().set_value("autostart", value);
                     break;
                 }
+            }
+        }
+    }
+
+    private static const string[] version2graphs = {
+        "cpu", "mem", "net", "swap", "load", "disk"
+    };
+
+    private static const uint[] version2traces = {
+        4, 4, 3, 1, 1, 2
+    };
+
+    private void copysettings(Settings oldsettings, Settings newsettings, string[] ignore) {
+        foreach (var key in oldsettings.list_keys()) {
+            if (key in ignore)
+                continue;
+            var value = oldsettings.get_value(key);
+            oldsettings.reset(key);
+            var defaultvalue = oldsettings.get_value(key);
+            if (!value.equal(defaultvalue))
+                newsettings.set_value(key, value);
+        }
+    }
+
+    private void convert_version2() {
+        copysettings(new Settings.with_path
+                (@"de.mh21.indicator-multiload.version2.general",
+                    @"/apps/indicators/multiload/general/"),
+                this.settingscache.generalsettings(),
+                {"settings-version"});
+        for (uint j = 0, jsize = version2graphs.length; j < jsize; ++j) {
+            var graph = version2graphs[j];
+            copysettings(new Settings.with_path
+                    (@"de.mh21.indicator-multiload.version2.graphs.$graph",
+                     @"/apps/indicators/multiload/graphs/$graph/"),
+                    this.settingscache.graphsettings(graph),
+                    {"alpha", "background-color"});
+            for (uint i = 1, isize = version2traces[j]; i <= isize; ++i) {
+                copysettings(new Settings.with_path
+                        (@"de.mh21.indicator-multiload.version2.traces.$graph$i",
+                         @"/apps/indicators/multiload/graphs/$graph/$graph$i/"),
+                        this.settingscache.tracesettings(graph, @"$graph$i"),
+                        {});
             }
         }
     }

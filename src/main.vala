@@ -230,7 +230,7 @@ public class Main : Application {
                 tracemodel, "rgba",
                 SettingsBindFlags.DEFAULT,
                 Utils.get_settings_rgba,
-                Utils.set_settings_rgba,
+                (PGLib.SettingsBindSetMapping)Utils.set_settings_rgba,
                 this.colormapper, () => {});
         tracesettings.bind("enabled", tracemodel, "enabled",
                 SettingsBindFlags.DEFAULT);
@@ -279,7 +279,7 @@ public class Main : Application {
                 this.multi, "background-rgba",
                 SettingsBindFlags.DEFAULT,
                 Utils.get_settings_rgba,
-                Utils.set_settings_rgba,
+                (PGLib.SettingsBindSetMapping)Utils.set_settings_rgba,
                 this.colormapper, () => {});
         datasettings.bind("autostart",
                 this, "autostart",
@@ -383,7 +383,7 @@ public class Main : Application {
 
         Main.reaper = new Reaper(args);
 
-        var result = new Main("de.mh21.indicator.multiload",
+        var result = new Main("de.mh21.indicator-multiload",
                 ApplicationFlags.FLAGS_NONE).run(args);
 
         DirUtils.remove(Main.datadirectory);

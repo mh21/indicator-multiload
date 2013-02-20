@@ -1,29 +1,29 @@
 <schemalist>
-    <schema id="de.mh21.indicator.multiload" path="/apps/indicators/multiload/" gettext-domain="@GETTEXT_PACKAGE@">
-        <child name="general" schema="de.mh21.indicator.multiload.general" />
-        <child name="graphs" schema="de.mh21.indicator.multiload.graphs" />
+    <schema id="de.mh21.indicator-multiload" path="/de/mh21/indicator-multiload/" gettext-domain="@GETTEXT_PACKAGE@">
+        <child name="general" schema="de.mh21.indicator-multiload.general" />
+        <child name="graphs" schema="de.mh21.indicator-multiload.graphs" />
     </schema>
 
-    <schema id="de.mh21.indicator.multiload.graphs" path="/apps/indicators/multiload/graphs/" gettext-domain="@GETTEXT_PACKAGE@">
-        <child name="cpu" schema="de.mh21.indicator.multiload.graphs.cpu" />
-        <child name="mem" schema="de.mh21.indicator.multiload.graphs.mem" />
-        <child name="net" schema="de.mh21.indicator.multiload.graphs.net" />
-        <child name="swap" schema="de.mh21.indicator.multiload.graphs.swap" />
-        <child name="load" schema="de.mh21.indicator.multiload.graphs.load" />
-        <child name="disk" schema="de.mh21.indicator.multiload.graphs.disk" />
+    <schema id="de.mh21.indicator-multiload.graphs" path="/de/mh21/indicator-multiload/graphs/" gettext-domain="@GETTEXT_PACKAGE@">
+        <child name="cpu" schema="de.mh21.indicator-multiload.graphs.cpu" />
+        <child name="mem" schema="de.mh21.indicator-multiload.graphs.mem" />
+        <child name="net" schema="de.mh21.indicator-multiload.graphs.net" />
+        <child name="swap" schema="de.mh21.indicator-multiload.graphs.swap" />
+        <child name="load" schema="de.mh21.indicator-multiload.graphs.load" />
+        <child name="disk" schema="de.mh21.indicator-multiload.graphs.disk" />
 
-        <child name="custom1" schema="de.mh21.indicator.multiload.graph" />
-        <child name="custom2" schema="de.mh21.indicator.multiload.graph" />
-        <child name="custom3" schema="de.mh21.indicator.multiload.graph" />
-        <child name="custom4" schema="de.mh21.indicator.multiload.graph" />
-        <child name="custom5" schema="de.mh21.indicator.multiload.graph" />
-        <child name="custom6" schema="de.mh21.indicator.multiload.graph" />
-        <child name="custom7" schema="de.mh21.indicator.multiload.graph" />
-        <child name="custom8" schema="de.mh21.indicator.multiload.graph" />
-        <child name="custom9" schema="de.mh21.indicator.multiload.graph" />
+        <child name="custom1" schema="de.mh21.indicator-multiload.graph" />
+        <child name="custom2" schema="de.mh21.indicator-multiload.graph" />
+        <child name="custom3" schema="de.mh21.indicator-multiload.graph" />
+        <child name="custom4" schema="de.mh21.indicator-multiload.graph" />
+        <child name="custom5" schema="de.mh21.indicator-multiload.graph" />
+        <child name="custom6" schema="de.mh21.indicator-multiload.graph" />
+        <child name="custom7" schema="de.mh21.indicator-multiload.graph" />
+        <child name="custom8" schema="de.mh21.indicator-multiload.graph" />
+        <child name="custom9" schema="de.mh21.indicator-multiload.graph" />
     </schema>
 
-    <schema id="de.mh21.indicator.multiload.general" path="/apps/indicators/multiload/general/" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.general" path="/de/mh21/indicator-multiload/general/" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="graphs" type="as">
             <default>[ "cpu", "mem", "net", "swap", "load", "disk" ]</default>
             <_summary>Available graphs</_summary>
@@ -110,7 +110,7 @@
         </key>
     </schema>
 
-    <schema id="de.mh21.indicator.multiload.graph" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.graph" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="enabled" type="b">
             <default>true</default>
             <_summary>Graph visibility</_summary>
@@ -136,18 +136,18 @@
             <_summary>Available traces</_summary>
         </key>
 
-        <child name="custom1" schema="de.mh21.indicator.multiload.trace" />
-        <child name="custom2" schema="de.mh21.indicator.multiload.trace" />
-        <child name="custom3" schema="de.mh21.indicator.multiload.trace" />
-        <child name="custom4" schema="de.mh21.indicator.multiload.trace" />
-        <child name="custom5" schema="de.mh21.indicator.multiload.trace" />
-        <child name="custom6" schema="de.mh21.indicator.multiload.trace" />
-        <child name="custom7" schema="de.mh21.indicator.multiload.trace" />
-        <child name="custom8" schema="de.mh21.indicator.multiload.trace" />
-        <child name="custom9" schema="de.mh21.indicator.multiload.trace" />
+        <child name="custom1" schema="de.mh21.indicator-multiload.trace" />
+        <child name="custom2" schema="de.mh21.indicator-multiload.trace" />
+        <child name="custom3" schema="de.mh21.indicator-multiload.trace" />
+        <child name="custom4" schema="de.mh21.indicator-multiload.trace" />
+        <child name="custom5" schema="de.mh21.indicator-multiload.trace" />
+        <child name="custom6" schema="de.mh21.indicator-multiload.trace" />
+        <child name="custom7" schema="de.mh21.indicator-multiload.trace" />
+        <child name="custom8" schema="de.mh21.indicator-multiload.trace" />
+        <child name="custom9" schema="de.mh21.indicator-multiload.trace" />
     </schema>
 
-    <schema id="de.mh21.indicator.multiload.trace" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.trace" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="color" type="s">
             <default>"traditional:cpu1"</default>
             <_summary>Trace color</_summary>
@@ -164,7 +164,7 @@
         </key>
     </schema>
 
-    <schema id="de.mh21.indicator.multiload.graphs.cpu" path="/apps/indicators/multiload/graphs/cpu/" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.graphs.cpu" path="/de/mh21/indicator-multiload/graphs/cpu/" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="background-color" type="s">
             <default>"traditional:background"</default>
             <_summary>Graph background color</_summary>
@@ -195,13 +195,13 @@
             <_summary>Available traces</_summary>
         </key>
 
-        <child name="cpu1" schema="de.mh21.indicator.multiload.traces.cpu1" />
-        <child name="cpu2" schema="de.mh21.indicator.multiload.traces.cpu2" />
-        <child name="cpu3" schema="de.mh21.indicator.multiload.traces.cpu3" />
-        <child name="cpu4" schema="de.mh21.indicator.multiload.traces.cpu4" />
+        <child name="cpu1" schema="de.mh21.indicator-multiload.traces.cpu1" />
+        <child name="cpu2" schema="de.mh21.indicator-multiload.traces.cpu2" />
+        <child name="cpu3" schema="de.mh21.indicator-multiload.traces.cpu3" />
+        <child name="cpu4" schema="de.mh21.indicator-multiload.traces.cpu4" />
     </schema>
 
-    <schema id="de.mh21.indicator.multiload.graphs.mem" path="/apps/indicators/multiload/graphs/mem/" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.graphs.mem" path="/de/mh21/indicator-multiload/graphs/mem/" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="background-color" type="s">
             <default>"traditional:background"</default>
             <_summary>Graph background color</_summary>
@@ -232,13 +232,13 @@
             <_summary>Available traces</_summary>
         </key>
 
-        <child name="mem1" schema="de.mh21.indicator.multiload.traces.mem1" />
-        <child name="mem2" schema="de.mh21.indicator.multiload.traces.mem2" />
-        <child name="mem3" schema="de.mh21.indicator.multiload.traces.mem3" />
-        <child name="mem4" schema="de.mh21.indicator.multiload.traces.mem4" />
+        <child name="mem1" schema="de.mh21.indicator-multiload.traces.mem1" />
+        <child name="mem2" schema="de.mh21.indicator-multiload.traces.mem2" />
+        <child name="mem3" schema="de.mh21.indicator-multiload.traces.mem3" />
+        <child name="mem4" schema="de.mh21.indicator-multiload.traces.mem4" />
     </schema>
 
-    <schema id="de.mh21.indicator.multiload.graphs.net" path="/apps/indicators/multiload/graphs/net/" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.graphs.net" path="/de/mh21/indicator-multiload/graphs/net/" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="background-color" type="s">
             <default>"traditional:background"</default>
             <_summary>Graph background color</_summary>
@@ -269,12 +269,12 @@
             <_summary>Available traces</_summary>
         </key>
 
-        <child name="net1" schema="de.mh21.indicator.multiload.traces.net1" />
-        <child name="net2" schema="de.mh21.indicator.multiload.traces.net2" />
-        <child name="net3" schema="de.mh21.indicator.multiload.traces.net3" />
+        <child name="net1" schema="de.mh21.indicator-multiload.traces.net1" />
+        <child name="net2" schema="de.mh21.indicator-multiload.traces.net2" />
+        <child name="net3" schema="de.mh21.indicator-multiload.traces.net3" />
     </schema>
 
-    <schema id="de.mh21.indicator.multiload.graphs.swap" path="/apps/indicators/multiload/graphs/swap/" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.graphs.swap" path="/de/mh21/indicator-multiload/graphs/swap/" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="background-color" type="s">
             <default>"traditional:background"</default>
             <_summary>Graph background color</_summary>
@@ -305,10 +305,10 @@
             <_summary>Available traces</_summary>
         </key>
 
-        <child name="swap1" schema="de.mh21.indicator.multiload.traces.swap1" />
+        <child name="swap1" schema="de.mh21.indicator-multiload.traces.swap1" />
     </schema>
 
-    <schema id="de.mh21.indicator.multiload.graphs.load" path="/apps/indicators/multiload/graphs/load/" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.graphs.load" path="/de/mh21/indicator-multiload/graphs/load/" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="background-color" type="s">
             <default>"traditional:background"</default>
             <_summary>Graph background color</_summary>
@@ -339,10 +339,10 @@
             <_summary>Available traces</_summary>
         </key>
 
-        <child name="load1" schema="de.mh21.indicator.multiload.traces.load1" />
+        <child name="load1" schema="de.mh21.indicator-multiload.traces.load1" />
     </schema>
 
-    <schema id="de.mh21.indicator.multiload.graphs.disk" path="/apps/indicators/multiload/graphs/disk/" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.graphs.disk" path="/de/mh21/indicator-multiload/graphs/disk/" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="background-color" type="s">
             <default>"traditional:background"</default>
             <_summary>Graph background color</_summary>
@@ -373,11 +373,11 @@
             <_summary>Traces shown</_summary>
         </key>
 
-        <child name="disk1" schema="de.mh21.indicator.multiload.traces.disk1" />
-        <child name="disk2" schema="de.mh21.indicator.multiload.traces.disk2" />
+        <child name="disk1" schema="de.mh21.indicator-multiload.traces.disk1" />
+        <child name="disk2" schema="de.mh21.indicator-multiload.traces.disk2" />
     </schema>
 
-    <schema id="de.mh21.indicator.multiload.traces.cpu1" path="/apps/indicators/multiload/graphs/cpu/cpu1/" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.traces.cpu1" path="/de/mh21/indicator-multiload/graphs/cpu/cpu1/" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="color" type="s">
             <default>"traditional:cpu1"</default>
             <_summary>Trace color</_summary>
@@ -394,7 +394,7 @@
         </key>
     </schema>
 
-    <schema id="de.mh21.indicator.multiload.traces.cpu2" path="/apps/indicators/multiload/graphs/cpu/cpu2/" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.traces.cpu2" path="/de/mh21/indicator-multiload/graphs/cpu/cpu2/" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="color" type="s">
             <default>"traditional:cpu2"</default>
             <_summary>Trace color</_summary>
@@ -411,7 +411,7 @@
         </key>
     </schema>
 
-    <schema id="de.mh21.indicator.multiload.traces.cpu3" path="/apps/indicators/multiload/graphs/cpu/cpu3/" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.traces.cpu3" path="/de/mh21/indicator-multiload/graphs/cpu/cpu3/" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="color" type="s">
             <default>"traditional:cpu3"</default>
             <_summary>Trace color</_summary>
@@ -428,7 +428,7 @@
         </key>
     </schema>
 
-    <schema id="de.mh21.indicator.multiload.traces.cpu4" path="/apps/indicators/multiload/graphs/cpu/cpu4/" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.traces.cpu4" path="/de/mh21/indicator-multiload/graphs/cpu/cpu4/" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="color" type="s">
             <default>"traditional:cpu4"</default>
             <_summary>Trace color</_summary>
@@ -445,7 +445,7 @@
         </key>
     </schema>
 
-    <schema id="de.mh21.indicator.multiload.traces.mem1" path="/apps/indicators/multiload/graphs/mem/mem1/" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.traces.mem1" path="/de/mh21/indicator-multiload/graphs/mem/mem1/" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="color" type="s">
             <default>"traditional:mem1"</default>
             <_summary>Trace color</_summary>
@@ -462,7 +462,7 @@
         </key>
     </schema>
 
-    <schema id="de.mh21.indicator.multiload.traces.mem2" path="/apps/indicators/multiload/graphs/mem/mem2/" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.traces.mem2" path="/de/mh21/indicator-multiload/graphs/mem/mem2/" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="color" type="s">
             <default>"traditional:mem2"</default>
             <_summary>Trace color</_summary>
@@ -479,7 +479,7 @@
         </key>
     </schema>
 
-    <schema id="de.mh21.indicator.multiload.traces.mem3" path="/apps/indicators/multiload/graphs/mem/mem3/" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.traces.mem3" path="/de/mh21/indicator-multiload/graphs/mem/mem3/" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="color" type="s">
             <default>"traditional:mem3"</default>
             <_summary>Trace color</_summary>
@@ -496,7 +496,7 @@
         </key>
     </schema>
 
-    <schema id="de.mh21.indicator.multiload.traces.mem4" path="/apps/indicators/multiload/graphs/mem/mem4/" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.traces.mem4" path="/de/mh21/indicator-multiload/graphs/mem/mem4/" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="color" type="s">
             <default>"traditional:mem4"</default>
             <_summary>Trace color</_summary>
@@ -513,7 +513,7 @@
         </key>
     </schema>
 
-    <schema id="de.mh21.indicator.multiload.traces.net1" path="/apps/indicators/multiload/graphs/net/net1/" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.traces.net1" path="/de/mh21/indicator-multiload/graphs/net/net1/" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="color" type="s">
             <default>"traditional:net1"</default>
             <_summary>Trace color</_summary>
@@ -530,7 +530,7 @@
         </key>
     </schema>
 
-    <schema id="de.mh21.indicator.multiload.traces.net2" path="/apps/indicators/multiload/graphs/net/net2/" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.traces.net2" path="/de/mh21/indicator-multiload/graphs/net/net2/" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="color" type="s">
             <default>"traditional:net2"</default>
             <_summary>Trace color</_summary>
@@ -547,7 +547,7 @@
         </key>
     </schema>
 
-    <schema id="de.mh21.indicator.multiload.traces.net3" path="/apps/indicators/multiload/graphs/net/net3/" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.traces.net3" path="/de/mh21/indicator-multiload/graphs/net/net3/" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="color" type="s">
             <default>"traditional:net3"</default>
             <_summary>Trace color</_summary>
@@ -564,7 +564,7 @@
         </key>
     </schema>
 
-    <schema id="de.mh21.indicator.multiload.traces.swap1" path="/apps/indicators/multiload/graphs/swap/swap1/" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.traces.swap1" path="/de/mh21/indicator-multiload/graphs/swap/swap1/" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="color" type="s">
             <default>"traditional:swap1"</default>
             <_summary>Trace color</_summary>
@@ -581,7 +581,7 @@
         </key>
     </schema>
 
-    <schema id="de.mh21.indicator.multiload.traces.load1" path="/apps/indicators/multiload/graphs/load/load1/" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.traces.load1" path="/de/mh21/indicator-multiload/graphs/load/load1/" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="color" type="s">
             <default>"traditional:load1"</default>
             <_summary>Trace color</_summary>
@@ -598,7 +598,7 @@
         </key>
     </schema>
 
-    <schema id="de.mh21.indicator.multiload.traces.disk1" path="/apps/indicators/multiload/graphs/disk/disk1/" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.traces.disk1" path="/de/mh21/indicator-multiload/graphs/disk/disk1/" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="color" type="s">
             <default>"traditional:disk1"</default>
             <_summary>Trace color</_summary>
@@ -615,7 +615,7 @@
         </key>
     </schema>
 
-    <schema id="de.mh21.indicator.multiload.traces.disk2" path="/apps/indicators/multiload/graphs/disk/disk2/" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.traces.disk2" path="/de/mh21/indicator-multiload/graphs/disk/disk2/" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="color" type="s">
             <default>"traditional:disk2"</default>
             <_summary>Trace color</_summary>
@@ -632,7 +632,7 @@
         </key>
     </schema>
 
-    <schema id="de.mh21.indicator.multiload.version1">
+    <schema id="de.mh21.indicator-multiload.version1">
         <key name="cpuload-alpha4" type="q"><default>16384</default><summary>Deprecated</summary></key>
         <key name="memload-alpha4" type="q"><default>16384</default><summary>Deprecated</summary></key>
         <key name="netload-alpha3" type="q"><default>16384</default><summary>Deprecated</summary></key>
@@ -672,7 +672,7 @@
         <key name="system-monitor" type="s"><default>"gnome-system-monitor.desktop"</default><summary>Deprecated</summary></key>
         <key name="autostart" type="b"><default>true</default><summary>Deprecated</summary></key>
     </schema>
-    <schema id="de.mh21.indicator.multiload.version2.general" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.version2.general" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="graphs" type="as"><default>[ "cpu", "mem", "net", "swap", "load", "disk" ]</default><summary>Deprecated</summary></key>
         <key name="speed" type="q"><default>500</default><summary>Deprecated</summary></key>
         <key name="width" type="q"><default>40</default><summary>Deprecated</summary></key>
@@ -685,7 +685,7 @@
         <key name="menu-expressions" type="as"><_default l10n="messages">[ "CPU: $(percent(cpu.inuse)), iowait $(percent(cpu.io))", "Mem: $(size(mem.user)), cache $(size(mem.cached))", "Net: down $(speed(net.down)), up $(speed(net.up))", "Swap: $(size(swap.used))", "Load: $(decimals(load.avg,2))", "Disk: read $(speed(disk.read)), write $(speed(disk.write))" ]</_default><summary>Deprecated</summary></key>
         <key name="settings-version" type="u"><default>1</default><summary>Deprecated</summary></key>
     </schema>
-    <schema id="de.mh21.indicator.multiload.version2.graph" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.version2.graph" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="alpha" type="q"><default>16384</default><summary>Deprecated</summary></key>
         <key name="background-color" type="s"><default>"#000000"</default><summary>Deprecated</summary></key>
         <key name="enabled" type="b"><default>true</default><summary>Deprecated</summary></key>
@@ -694,12 +694,12 @@
         <key name="smooth" type="s"><default>"1"</default><summary>Deprecated</summary></key>
         <key name="traces" type="as"><default>[ "custom1" ]</default><summary>Deprecated</summary></key>
     </schema>
-    <schema id="de.mh21.indicator.multiload.version2.trace" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.version2.trace" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="color" type="s"><default>"#0072b3"</default><summary>Deprecated</summary></key>
         <key name="expression" type="s"><default>"$(cpu.inuse)"</default><summary>Deprecated</summary></key>
         <key name="enabled" type="b"><default>true</default><summary>Deprecated</summary></key>
     </schema>
-    <schema id="de.mh21.indicator.multiload.version2.graphs.cpu" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.version2.graphs.cpu" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="alpha" type="q"><default>16384</default><summary>Deprecated</summary></key>
         <key name="background-color" type="s"><default>"#000000"</default><summary>Deprecated</summary></key>
         <key name="enabled" type="b"><default>true</default><summary>Deprecated</summary></key>
@@ -708,7 +708,7 @@
         <key name="smooth" type="s"><default>"1"</default><summary>Deprecated</summary></key>
         <key name="traces" type="as"><default>[ "cpu1", "cpu2", "cpu3", "cpu4" ]</default><summary>Deprecated</summary></key>
     </schema>
-    <schema id="de.mh21.indicator.multiload.version2.graphs.mem" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.version2.graphs.mem" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="alpha" type="q"><default>16384</default><summary>Deprecated</summary></key>
         <key name="background-color" type="s"><default>"#000000"</default><summary>Deprecated</summary></key>
         <key name="enabled" type="b"><default>false</default><summary>Deprecated</summary></key>
@@ -717,7 +717,7 @@
         <key name="smooth" type="s"><default>"1"</default><summary>Deprecated</summary></key>
         <key name="traces" type="as"><default>[ "mem1", "mem2", "mem3", "mem4" ]</default><summary>Deprecated</summary></key>
     </schema>
-    <schema id="de.mh21.indicator.multiload.version2.graphs.net" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.version2.graphs.net" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="alpha" type="q"><default>16384</default><summary>Deprecated</summary></key>
         <key name="background-color" type="s"><default>"#000000"</default><summary>Deprecated</summary></key>
         <key name="enabled" type="b"><default>false</default><summary>Deprecated</summary></key>
@@ -726,7 +726,7 @@
         <key name="smooth" type="s"><default>"10"</default><summary>Deprecated</summary></key>
         <key name="traces" type="as"><default>[ "net1", "net2", "net3" ]</default><summary>Deprecated</summary></key>
     </schema>
-    <schema id="de.mh21.indicator.multiload.version2.graphs.swap" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.version2.graphs.swap" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="alpha" type="q"><default>16384</default><summary>Deprecated</summary></key>
         <key name="background-color" type="s"><default>"#000000"</default><summary>Deprecated</summary></key>
         <key name="enabled" type="b"><default>false</default><summary>Deprecated</summary></key>
@@ -735,7 +735,7 @@
         <key name="smooth" type="s"><default>"1"</default><summary>Deprecated</summary></key>
         <key name="traces" type="as"><default>[ "swap1" ]</default><summary>Deprecated</summary></key>
     </schema>
-    <schema id="de.mh21.indicator.multiload.version2.graphs.load" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.version2.graphs.load" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="alpha" type="q"><default>16384</default><summary>Deprecated</summary></key>
         <key name="background-color" type="s"><default>"#000000"</default><summary>Deprecated</summary></key>
         <key name="enabled" type="b"><default>false</default><summary>Deprecated</summary></key>
@@ -744,7 +744,7 @@
         <key name="smooth" type="s"><default>"1"</default><summary>Deprecated</summary></key>
         <key name="traces" type="as"><default>[ "load1" ]</default><summary>Deprecated</summary></key>
     </schema>
-    <schema id="de.mh21.indicator.multiload.version2.graphs.disk" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.version2.graphs.disk" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="alpha" type="q"><default>16384</default><summary>Deprecated</summary></key>
         <key name="background-color" type="s"><default>"#000000"</default><summary>Deprecated</summary></key>
         <key name="enabled" type="b"><default>false</default><summary>Deprecated</summary></key>
@@ -753,77 +753,77 @@
         <key name="smooth" type="s"><default>"10"</default><summary>Deprecated</summary></key>
         <key name="traces" type="as"><default>[ "disk1", "disk2" ]</default><summary>Deprecated</summary></key>
     </schema>
-    <schema id="de.mh21.indicator.multiload.version2.traces.cpu1" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.version2.traces.cpu1" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="color" type="s"><default>"#0072b3"</default><summary>Deprecated</summary></key>
         <key name="expression" type="s"><default>"$(cpu.user)"</default><summary>Deprecated</summary></key>
         <key name="enabled" type="b"><default>true</default><summary>Deprecated</summary></key>
     </schema>
-    <schema id="de.mh21.indicator.multiload.version2.traces.cpu2" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.version2.traces.cpu2" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="color" type="s"><default>"#0092e6"</default><summary>Deprecated</summary></key>
         <key name="expression" type="s"><default>"$(cpu.sys)"</default><summary>Deprecated</summary></key>
         <key name="enabled" type="b"><default>true</default><summary>Deprecated</summary></key>
     </schema>
-    <schema id="de.mh21.indicator.multiload.version2.traces.cpu3" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.version2.traces.cpu3" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="color" type="s"><default>"#00a3ff"</default><summary>Deprecated</summary></key>
         <key name="expression" type="s"><default>"$(cpu.nice)"</default><summary>Deprecated</summary></key>
         <key name="enabled" type="b"><default>true</default><summary>Deprecated</summary></key>
     </schema>
-    <schema id="de.mh21.indicator.multiload.version2.traces.cpu4" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.version2.traces.cpu4" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="color" type="s"><default>"#002f3d"</default><summary>Deprecated</summary></key>
         <key name="expression" type="s"><default>"$(cpu.io)"</default><summary>Deprecated</summary></key>
         <key name="enabled" type="b"><default>true</default><summary>Deprecated</summary></key>
     </schema>
-    <schema id="de.mh21.indicator.multiload.version2.traces.mem1" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.version2.traces.mem1" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="color" type="s"><default>"#00b35b"</default><summary>Deprecated</summary></key>
         <key name="expression" type="s"><default>"$(mem.user)"</default><summary>Deprecated</summary></key>
         <key name="enabled" type="b"><default>true</default><summary>Deprecated</summary></key>
     </schema>
-    <schema id="de.mh21.indicator.multiload.version2.traces.mem2" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.version2.traces.mem2" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="color" type="s"><default>"#00e675"</default><summary>Deprecated</summary></key>
         <key name="expression" type="s"><default>"$(mem.shared)"</default><summary>Deprecated</summary></key>
         <key name="enabled" type="b"><default>true</default><summary>Deprecated</summary></key>
     </schema>
-    <schema id="de.mh21.indicator.multiload.version2.traces.mem3" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.version2.traces.mem3" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="color" type="s"><default>"#00ff82"</default><summary>Deprecated</summary></key>
         <key name="expression" type="s"><default>"$(mem.buffer)"</default><summary>Deprecated</summary></key>
         <key name="enabled" type="b"><default>true</default><summary>Deprecated</summary></key>
     </schema>
-    <schema id="de.mh21.indicator.multiload.version2.traces.mem4" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.version2.traces.mem4" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="color" type="s"><default>"#aaf5d0"</default><summary>Deprecated</summary></key>
         <key name="expression" type="s"><default>"$(mem.cached)"</default><summary>Deprecated</summary></key>
         <key name="enabled" type="b"><default>true</default><summary>Deprecated</summary></key>
     </schema>
-    <schema id="de.mh21.indicator.multiload.version2.traces.net1" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.version2.traces.net1" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="color" type="s"><default>"#fce94f"</default><summary>Deprecated</summary></key>
         <key name="expression" type="s"><default>"$(net.down)"</default><summary>Deprecated</summary></key>
         <key name="enabled" type="b"><default>true</default><summary>Deprecated</summary></key>
     </schema>
-    <schema id="de.mh21.indicator.multiload.version2.traces.net2" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.version2.traces.net2" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="color" type="s"><default>"#edd400"</default><summary>Deprecated</summary></key>
         <key name="expression" type="s"><default>"$(net.up)"</default><summary>Deprecated</summary></key>
         <key name="enabled" type="b"><default>true</default><summary>Deprecated</summary></key>
     </schema>
-    <schema id="de.mh21.indicator.multiload.version2.traces.net3" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.version2.traces.net3" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="color" type="s"><default>"#c4a000"</default><summary>Deprecated</summary></key>
         <key name="expression" type="s"><default>"$(net.local)"</default><summary>Deprecated</summary></key>
         <key name="enabled" type="b"><default>true</default><summary>Deprecated</summary></key>
     </schema>
-    <schema id="de.mh21.indicator.multiload.version2.traces.swap1" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.version2.traces.swap1" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="color" type="s"><default>"#8b00c3"</default><summary>Deprecated</summary></key>
         <key name="expression" type="s"><default>"$(swap.used)"</default><summary>Deprecated</summary></key>
         <key name="enabled" type="b"><default>true</default><summary>Deprecated</summary></key>
     </schema>
-    <schema id="de.mh21.indicator.multiload.version2.traces.load1" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.version2.traces.load1" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="color" type="s"><default>"#d50000"</default><summary>Deprecated</summary></key>
         <key name="expression" type="s"><default>"$(load.avg)"</default><summary>Deprecated</summary></key>
         <key name="enabled" type="b"><default>true</default><summary>Deprecated</summary></key>
     </schema>
-    <schema id="de.mh21.indicator.multiload.version2.traces.disk1" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.version2.traces.disk1" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="color" type="s"><default>"#c65000"</default><summary>Deprecated</summary></key>
         <key name="expression" type="s"><default>"$(disk.read)"</default><summary>Deprecated</summary></key>
         <key name="enabled" type="b"><default>true</default><summary>Deprecated</summary></key>
     </schema>
-    <schema id="de.mh21.indicator.multiload.version2.traces.disk2" gettext-domain="@GETTEXT_PACKAGE@">
+    <schema id="de.mh21.indicator-multiload.version2.traces.disk2" gettext-domain="@GETTEXT_PACKAGE@">
         <key name="color" type="s"><default>"#ff6700"</default><summary>Deprecated</summary></key>
         <key name="expression" type="s"><default>"$(disk.write)"</default><summary>Deprecated</summary></key>
         <key name="enabled" type="b"><default>true</default><summary>Deprecated</summary></key>

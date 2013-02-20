@@ -78,7 +78,7 @@ public class Preferences : Object {
                     widget, "rgba",
                     SettingsBindFlags.DEFAULT,
                     Utils.get_settings_rgba,
-                    Utils.set_settings_rgba,
+                    (PGLib.SettingsBindSetMapping)Utils.set_settings_rgba,
                     this.colormapper, () => {});
             settings.changed[key].connect(this.on_color_changed);
         });

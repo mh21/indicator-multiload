@@ -17,7 +17,7 @@
  ******************************************************************************/
 
 public class SettingsCache : Object {
-    public const string[] presetgraphids = {
+    public static const string[] presetgraphids = {
         "cpu", "mem", "net", "load", "swap", "disk"
     };
     private HashTable<string, Settings> cached = new HashTable<string, Settings>
@@ -38,24 +38,24 @@ public class SettingsCache : Object {
     }
 
     public Settings generalsettings() {
-        return this.settings("de.mh21.indicator.multiload.general", null);
+        return this.settings("de.mh21.indicator-multiload.general", null);
     }
 
     public Settings graphsettings(string graphid) {
         if (graphid in presetgraphids)
             return this.settings
-                (@"de.mh21.indicator.multiload.graphs.$graphid", null);
+                (@"de.mh21.indicator-multiload.graphs.$graphid", null);
         return this.settings
-            ("de.mh21.indicator.multiload.graph",
+            ("de.mh21.indicator-multiload.graph",
              @"/apps/indicators/multiload/graphs/$graphid/");
     }
 
     public Settings tracesettings(string graphid, string traceid) {
         if (graphid in presetgraphids)
             return this.settings
-                (@"de.mh21.indicator.multiload.traces.$traceid", null);
+                (@"de.mh21.indicator-multiload.traces.$traceid", null);
         return this.settings
-            ("de.mh21.indicator.multiload.trace",
+            ("de.mh21.indicator-multiload.trace",
              @"/apps/indicators/multiload/graphs/$graphid/$traceid/");
     }
 }
