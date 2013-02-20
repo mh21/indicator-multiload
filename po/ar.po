@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-02-14 20:17+0000\n"
-"PO-Revision-Date: 2013-02-16 17:58+0000\n"
+"PO-Revision-Date: 2013-02-19 13:07+0000\n"
 "Last-Translator: Ibrahim Saed <ibraheem5000@gmail.com>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
 "MIME-Version: 1.0\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n % 100 >= "
 "3 && n % 100 <= 10 ? 3 : n % 100 >= 11 && n % 100 <= 99 ? 4 : 5;\n"
-"X-Launchpad-Export-Date: 2013-02-17 04:57+0000\n"
+"X-Launchpad-Export-Date: 2013-02-20 05:13+0000\n"
 "X-Generator: Launchpad (build 16491)\n"
 "Language: ar\n"
 
@@ -33,7 +33,7 @@ msgid ""
 "space use, plus network traffic."
 msgstr ""
 "مراقب لحالة النظام يستطيع عرض رسوم بيانية للمعالج و الذاكرة و مستوى استخدام "
-"ملف التبديل بالإضافة إلى حالة الشبكة."
+"مساحة الإبدال بالإضافة إلى حالة الشبكة."
 
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
@@ -51,11 +51,11 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:3
 msgid "_Open System Monitor"
-msgstr "ا_فتح مراقب النظام"
+msgstr "ا_فتح مرقاب النظام"
 
 #: ../data/preferences.ui.in.h:4
 msgid "_Preferences"
-msgstr "ال_تفضيلات"
+msgstr "الت_فضيلات"
 
 #: ../data/preferences.ui.in.h:5
 msgid "_About"
