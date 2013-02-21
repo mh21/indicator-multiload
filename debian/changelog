@@ -1,8 +1,12 @@
 indicator-multiload (0.4) precise; urgency=low
 
   * Initial release.
+  * New features:
+    - color schemes: traditional, Ambiance, Radiance
+    - cpu.user0, cpu.user1, cpu.inuse0 ... variables for per-cpu cpu usage,
+      see indicator-multiload -l for details
 
- -- Michael Hofmann <mh21@piware.de>  Sun, 17 Feb 2013 17:31:36 +0100
+ -- Michael Hofmann <mh21@piware.de>  Thu, 21 Feb 2013 11:15:56 +0100
 
 indicator-multiload (0.3) unstable; urgency=low
 
