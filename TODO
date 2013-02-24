@@ -1,10 +1,11 @@
 0.4:
-- label guide bug?
 - document functions in gui
-- error messages for expressions not only on stderr
-- try to recover some translations for colors in pref dialog, menu items etc.
 - kde
+- label guide bug? -> file bug, render label ourselves
+- try to recover some translations for colors in pref dialog, menu items etc.
 
 0.5:
+- gtop shared mem is always 0, remove or reuse? - alert color?
+- error messages for expressions not only on stderr
 - more providers
 - icon styles

@@ -24,8 +24,8 @@ public class MultiLoadIndicator : Object {
     private Gtk.MenuItem[] menuitems;
     private bool menuset;
 
-    public string icondirectory {get; construct; }
-    public Providers providers {get; construct; }
+    public string icondirectory { get; construct; }
+    public Providers providers { get; construct; }
     public MenuModel menumodel { get; construct; }
     public MenuModel labelmodel { get; construct; }
     public MenuModel descriptionmodel { get; construct; }

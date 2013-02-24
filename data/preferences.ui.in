@@ -74,7 +74,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
               </object>
               <packing>
                 <property name="expand">False</property>
-                <property name="fill">False</property>
+                <property name="fill">True</property>
                 <property name="position">0</property>
               </packing>
             </child>
@@ -90,8 +90,25 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
               </object>
               <packing>
                 <property name="expand">False</property>
-                <property name="fill">False</property>
+                <property name="fill">True</property>
                 <property name="position">1</property>
+                <property name="secondary">True</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="button3">
+                <property name="label">gtk-help</property>
+                <property name="use_action_appearance">False</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="use_action_appearance">False</property>
+                <property name="use_stock">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
                 <property name="secondary">True</property>
               </packing>
             </child>
@@ -258,6 +275,108 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
     <action-widgets>
       <action-widget response="0">button1</action-widget>
       <action-widget response="1">button2</action-widget>
+      <action-widget response="2">button3</action-widget>
+    </action-widgets>
+  </object>
+  <object class="GtkListStore" id="itemhelpstore">
+    <columns>
+      <!-- column-name expression -->
+      <column type="gchararray"/>
+      <!-- column-name rendered -->
+      <column type="gchararray"/>
+    </columns>
+  </object>
+  <object class="GtkDialog" id="itemhelpdialog">
+    <property name="can_focus">False</property>
+    <property name="border_width">5</property>
+    <property name="default_width">500</property>
+    <property name="default_height">300</property>
+    <property name="type_hint">dialog</property>
+    <signal name="destroy" handler="item_help_on_itemhelpdialog_destroy" swapped="no"/>
+    <signal name="response" handler="item_help_on_itemhelpdialog_response" swapped="no"/>
+    <child internal-child="vbox">
+      <object class="GtkBox" id="dialog-vbox6">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">2</property>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox" id="dialog-action_area6">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="layout_style">end</property>
+            <child>
+              <object class="GtkButton" id="button4">
+                <property name="label">gtk-close</property>
+                <property name="use_action_appearance">False</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="use_action_appearance">False</property>
+                <property name="use_stock">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="pack_type">end</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkScrolledWindow" id="scrolledwindow2">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <child>
+              <object class="GtkTreeView" id="itemhelpview">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="model">itemhelpstore</property>
+                <property name="headers_visible">False</property>
+                <property name="headers_clickable">False</property>
+                <property name="search_column">0</property>
+                <child internal-child="selection">
+                  <object class="GtkTreeSelection" id="treeview-selection2"/>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="expressioncolumn1">
+                    <child>
+                      <object class="GtkCellRendererText" id="expressionrenderer1"/>
+                      <attributes>
+                        <attribute name="text">0</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treeviewcolumn1">
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext2"/>
+                      <attributes>
+                        <attribute name="text">1</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <action-widgets>
+      <action-widget response="0">button4</action-widget>
     </action-widgets>
   </object>
   <object class="GtkListStore" id="itemstore">
@@ -325,6 +444,14 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
         <signal name="activate" handler="main_on_quit_activate" swapped="no"/>
       </object>
     </child>
+  </object>
+  <object class="GtkListStore" id="schemestore">
+    <columns>
+      <!-- column-name label -->
+      <column type="gchararray"/>
+      <!-- column-name id -->
+      <column type="gchararray"/>
+    </columns>
   </object>
   <object class="GtkDialog" id="preferencesdialog">
     <property name="can_focus">False</property>
@@ -1392,14 +1519,6 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
       <action-widget response="2">indicatoritems</action-widget>
       <action-widget response="0">close</action-widget>
     </action-widgets>
-  </object>
-  <object class="GtkListStore" id="schemestore">
-    <columns>
-      <!-- column-name label -->
-      <column type="gchararray"/>
-      <!-- column-name id -->
-      <column type="gchararray"/>
-    </columns>
   </object>
   <object class="GtkAdjustment" id="speedadjustment">
     <property name="lower">50</property>

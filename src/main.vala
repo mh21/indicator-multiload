@@ -26,6 +26,9 @@ public class Main : Application {
     private MultiLoadIndicator multi;
     private Gtk.Dialog about;
     private Preferences preferences;
+    private ItemPreferences menupreferences;
+    private ItemPreferences indicatorpreferences;
+    private ItemHelp itemhelp;
     private SettingsCache settingscache;
     private ColorMapper colormapper;
     private string autostartkey;
@@ -294,7 +297,17 @@ public class Main : Application {
 
         this.multi.updateall();
 
+        this.itemhelp = new ItemHelp(this.multi);
+
+        this.menupreferences = new ItemPreferences("menu-expressions");
+        this.menupreferences.itemhelp_show.connect(this.itemhelp.show);
+
+        this.indicatorpreferences = new ItemPreferences("indicator-expressions");
+        this.indicatorpreferences.itemhelp_show.connect(this.itemhelp.show);
+
         this.preferences = new Preferences(this.colormapper);
+        this.preferences.menupreferences_show.connect(this.menupreferences.show);
+        this.preferences.indicatorpreferences_show.connect(this.indicatorpreferences.show);
 
         this.hold();
 
@@ -340,7 +353,7 @@ public class Main : Application {
                 string[] keys = provider.keys;
                 double[] values = provider.values;
                 for (uint i = 0, isize = keys.length; i < isize; ++i)
-                    stdout.printf("  %s: %f\n", keys[i], values[i]);
+                    stdout.printf("  %s: %g\n", keys[i], values[i]);
             }
             stdout.printf("functions:\n");
             foreach (var function in providers.functions) {

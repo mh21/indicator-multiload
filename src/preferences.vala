@@ -19,25 +19,24 @@
 public class Preferences : Object {
     private Gtk.Dialog preferences;
     private Gtk.ComboBox colorschemes;
-    private ItemPreferences menupreferences;
-    private ItemPreferences indicatorpreferences;
-    private ColorMapper colormapper;
     private SettingsCache settingscache;
     private Settings prefsettings;
     private Gtk.Builder builder;
     private bool colorschemeignoresignals;
 
+    public ColorMapper colormapper { get; construct; }
+
+    public signal void menupreferences_show();
+    public signal void indicatorpreferences_show();
+
     delegate void ColorForeachFunc(Settings settings, string key,
             Object widget, string name);
 
-    public Preferences(ColorMapper colormapper)
-    {
-        this.colormapper = colormapper;
+    public Preferences(ColorMapper colormapper) {
+        Object(colormapper: colormapper);
     }
 
     construct {
-        this.menupreferences = new ItemPreferences("menu-expressions");
-        this.indicatorpreferences = new ItemPreferences("indicator-expressions");
         this.settingscache = new SettingsCache();
         this.prefsettings = this.settingscache.generalsettings();
     }
@@ -73,7 +72,7 @@ public class Preferences : Object {
                     SettingsBindFlags.DEFAULT);
         }
 
-        this.loopcolorgsettings((settings, key, widget, name) => {
+        this.colorgsettings_foreach((settings, key, widget, name) => {
             PGLib.settings_bind_with_mapping(settings, key,
                     widget, "rgba",
                     SettingsBindFlags.DEFAULT,
@@ -108,10 +107,10 @@ public class Preferences : Object {
     public void on_preferencesdialog_response(Gtk.Dialog source, int response) {
         switch (response) {
         case 1:
-            this.menupreferences.show();
+            this.menupreferences_show();
             return;
         case 2:
-            this.indicatorpreferences.show();
+            this.indicatorpreferences_show();
             return;
         default:
             source.destroy();
@@ -135,7 +134,7 @@ public class Preferences : Object {
             return;
         this.colormapper.color_scheme = colorscheme;
         this.colorschemeignoresignals = true;
-        this.loopcolorgsettings((settings, key, widget, name) => {
+        this.colorgsettings_foreach((settings, key, widget, name) => {
             settings.set_string(key, colorscheme + ":" + name);
         });
         this.colorschemeignoresignals = false;
@@ -149,7 +148,7 @@ public class Preferences : Object {
     private void gsettingstowidgets() {
         var colorscheme = this.colormapper.color_scheme;
         var custom = false;
-        this.loopcolorgsettings((settings, key, widget, name) => {
+        this.colorgsettings_foreach((settings, key, widget, name) => {
             custom |= settings.get_string(key) != colorscheme + ":" + name;
         });
 
@@ -160,7 +159,7 @@ public class Preferences : Object {
         this.colorschemeignoresignals = false;
     }
 
-    private void loopcolorgsettings(ColorForeachFunc callback) {
+    private void colorgsettings_foreach(ColorForeachFunc callback) {
         foreach (var graphid in this.prefsettings.get_strv("graphs")) {
             if (!(graphid in SettingsCache.presetgraphids))
                 continue;

@@ -31,6 +31,8 @@ public class ItemPreferences : Object {
 
     public string settingskey { get; construct; }
 
+    public signal void itemhelp_show();
+
     public ItemPreferences(string settingskey) {
         Object(settingskey: settingskey);
     }
@@ -76,13 +78,18 @@ public class ItemPreferences : Object {
 
     [CCode (instance_pos = -1)]
     public void on_itemdialog_response(Gtk.Dialog source, int response) {
-        if (response != 1) {
+        switch (response) {
+        case 0: // close
             source.destroy();
             return;
+        case 1: // revert
+            this.itemsettings.reset(this.settingskey);
+            this.itemselection.select_path(new Gtk.TreePath.from_indices(0));
+            break;
+        case 2: // help
+            this.itemhelp_show();
+            break;
         }
-
-        this.itemsettings.reset(this.settingskey);
-        this.itemselection.select_path(new Gtk.TreePath.from_indices(0));
     }
 
     [CCode (instance_pos = -1)]
@@ -131,9 +138,7 @@ public class ItemPreferences : Object {
         Gtk.TreeIter iter;
         if (this.itemselection.get_selected(null, out iter)) {
             var path = this.itemstore.get_path(iter);
-	    // TODO: needs to be unowned for gtk2 as the bindings do not return
-	    // a length for the array, so the duplication of the array fails
-            unowned int[] indices = path.get_indices();
+            var indices = path.get_indices();
             pos = indices[0] + 1;
         }
         this.itemstore.insert(out iter, (int) pos);
@@ -217,9 +222,7 @@ public class ItemPreferences : Object {
             remove = true;
 
             var path = this.itemstore.get_path(iter);
-	    // TODO: needs to be unowned for gtk2 as the bindings do not return
-	    // a length for the array, so the duplication of the array fails
-            unowned int[] indices = path.get_indices();
+            var indices = path.get_indices();
             up = indices[0] > 0;
             down = indices[0] + 1 < this.itemstore.iter_n_children(null);
         }
