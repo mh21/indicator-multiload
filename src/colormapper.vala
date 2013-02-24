@@ -32,7 +32,7 @@ class ColorScheme {
 
 public class ColorMapper : Object {
     public static const string[] colorschemes = {
-        "traditional", "ambiance", "radiance"
+        "traditional", "ambiance", "radiance", "xosview"
     };
 
     static HashTable<string, ColorScheme> schemes = new HashTable<string, ColorScheme>
@@ -84,7 +84,7 @@ public class ColorMapper : Object {
             // TRANSLATORS: Color theme name for the Ubuntu Ambiance (light on dark) theme
             (_("Ambiance"), {
             "#dfdbd2", "#dfdbd2", "#dfdbd2", "#a39f96",
-            "#dfdbd2", "#dfdbd2", "#dfdbd2", "#a39f96",
+            "#dfdbd2", "#dfdbd2", "#a39f96", "#a39f96",
             "#dfdbd2", "#a39f96", "#a39f96", "#dfdbd2",
             "#dfdbd2", "#dfdbd2", "#a39f96", "rgba(0,0,0,0)"
         }));
@@ -92,9 +92,18 @@ public class ColorMapper : Object {
             // TRANSLATORS: Color theme name for the Ubuntu Radiance (dark on light) theme
             (_("Radiance"), {
             "#3c3c3c", "#3c3c3c", "#3c3c3c", "#a39f96",
-            "#3c3c3c", "#3c3c3c", "#3c3c3c", "#a39f96",
+            "#3c3c3c", "#3c3c3c", "#a39f96", "#a39f96",
             "#3c3c3c", "#a39f96", "#a39f96", "#3c3c3c",
             "#3c3c3c", "#3c3c3c", "#a39f96", "rgba(0,0,0,0)"
+        }));
+        // additional mem colors: slab 0000ff, map 836fff
+        schemes.insert("xosview", new ColorScheme
+            // TRANSLATORS: Color theme name for the XOSView theme
+            (_("XOSView"), {
+            "#2e8b57", "#ffa500", "#ffff00", "#add8e6",
+            "#2e8b57", "#0000ff", "#ffa500", "#ff0000",
+            "#87ceeb", "#836fff", "#0000ff", "#2e8b57",
+            "#2e8b57", "#87ceeb", "#836fff", "rgba(127,255,212,0)"
         }));
     }
 
