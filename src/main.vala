@@ -20,7 +20,6 @@ public class Main : Application {
     private static string datadirectory;
     [CCode (array_length=false, array_null_terminated = true)]
     private static string[] expressionoptions;
-    private static bool identifiersoption = false;
     private static Reaper reaper;
 
     private MultiLoadIndicator multi;
@@ -40,8 +39,6 @@ public class Main : Application {
     const OptionEntry[] options = {
         { "evaluate-expression", 'e', 0, OptionArg.STRING_ARRAY,
             ref expressionoptions, N_("Evaluate an expression"), null },
-        { "list-identifiers", 'l', 0, OptionArg.NONE,
-            ref identifiersoption, N_("List available expression identifiers"), null },
         { null }
     };
 
@@ -344,25 +341,6 @@ public class Main : Application {
 
         exit_status = 0;
         bool result = false;
-
-        if (identifiersoption) {
-            var providers = new Providers();
-            Thread.usleep(100000);
-            providers.update();
-            foreach (var provider in providers.providers) {
-                stdout.printf("%s:\n", provider.id);
-                string[] keys = provider.keys;
-                double[] values = provider.values;
-                for (uint i = 0, isize = keys.length; i < isize; ++i)
-                    stdout.printf("  %s: %g\n", keys[i], values[i]);
-            }
-            stdout.printf("functions:\n");
-            foreach (var function in providers.functions) {
-                stdout.printf("  %s(%s)\n", function.id,
-                        string.joinv(", ", function.parameterdescs));
-            }
-            result = true;
-        }
 
         foreach (var expressionoption in expressionoptions) {
             var cache = new ExpressionCache(new Providers(), expressionoption);
