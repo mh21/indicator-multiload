@@ -99,6 +99,12 @@ public class Preferences : Object {
     }
 
     [CCode (instance_pos = -1)]
+    public void on_preferencesdialog_destroy(Gtk.Widget source) {
+        this.preferences = null;
+        this.colorschemes = null;
+    }
+
+    [CCode (instance_pos = -1)]
     public void on_colorbutton_clicked(Gtk.Button button) {
         this.colormapper.add_palette(button as PGtk.ColorChooser);
     }
@@ -138,11 +144,6 @@ public class Preferences : Object {
             settings.set_string(key, colorscheme + ":" + name);
         });
         this.colorschemeignoresignals = false;
-    }
-
-    [CCode (instance_pos = -1)]
-    public void on_preferencesdialog_destroy(Gtk.Widget source) {
-        this.preferences = null;
     }
 
     private void gsettingstowidgets() {

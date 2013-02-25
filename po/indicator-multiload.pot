@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-20 23:16+0100\n"
+"POT-Creation-Date: 2013-02-25 11:40+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,154 +29,167 @@ msgid "translator-credits"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:3
-msgid "_Open System Monitor"
+msgid "Variable"
 msgstr ""
 
-#: ../data/preferences.ui.in.h:4
-msgid "_Preferences"
-msgstr ""
-
+#. TRANSLATORS: This refers to an expression in the domain of programming, see https://en.wikipedia.org/wiki/Expression_%28programming%29
 #: ../data/preferences.ui.in.h:5
-msgid "_About"
+msgid "Expression"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:6
-msgid "_Quit"
+msgid "Value"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:7
-msgid "Monitored Resources"
+msgid "_Open System Monitor"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:8
-msgid "_Processor"
+msgid "_Preferences"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:9
-msgid "_Memory"
+msgid "_About"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:10
-msgid "_Network"
+msgid "_Quit"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:11
-msgid "S_wap Space"
+msgid "Monitored Resources"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:12
-msgid "_Load"
+msgid "_Processor"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:13
-msgid "_Harddisk"
+msgid "_Memory"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:14
-msgid "Options"
+msgid "_Network"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:15
-msgid "System m_onitor width: "
+msgid "S_wap Space"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:16
-msgid "Sys_tem monitor update interval: "
+msgid "_Load"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:17
-msgid "pixels"
+msgid "_Harddisk"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:18
-msgid "milliseconds"
+msgid "Options"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:19
-msgid "_Autostart: "
+msgid "System m_onitor width: "
 msgstr ""
 
 #: ../data/preferences.ui.in.h:20
-msgid "Colors"
+msgid "Sys_tem monitor update interval: "
 msgstr ""
 
 #: ../data/preferences.ui.in.h:21
-msgid "Built-in schemes:"
+msgid "pixels"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:22
-msgid "Color palette:"
+msgid "milliseconds"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:23
-msgid "<small>Busy</small>"
+msgid "_Autostart: "
 msgstr ""
 
 #: ../data/preferences.ui.in.h:24
-msgid "<small>System</small>"
+msgid "Colors"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:25
-msgid "<small>Nice</small>"
+msgid "Built-in schemes:"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:26
-msgid "<small>IOWait</small>"
+msgid "Color palette:"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:27
-msgid "<small>Background</small>"
+msgid "<small>Busy</small>"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:28
-msgid "<small>Memory</small>"
+msgid "<small>System</small>"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:29
-msgid "<small>Shared</small>"
+msgid "<small>Nice</small>"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:30
-msgid "<small>Buffers</small>"
+msgid "<small>IOWait</small>"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:31
-msgid "<small>Cached</small>"
+msgid "<small>Background</small>"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:32
-msgid "<small>Download</small>"
+msgid "<small>Memory</small>"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:33
-msgid "<small>Upload</small>"
+msgid "<small>Shared</small>"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:34
-msgid "<small>Localhost</small>"
+msgid "<small>Buffers</small>"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:35
-msgid "<small>Swap</small>"
+msgid "<small>Cached</small>"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:36
-msgid "<small>Load</small>"
+msgid "<small>Download</small>"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:37
-msgid "<small>Read</small>"
+msgid "<small>Upload</small>"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:38
-msgid "<small>Write</small>"
+msgid "<small>Localhost</small>"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:39
-msgid "Menu items..."
+msgid "<small>Swap</small>"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:40
+msgid "<small>Load</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:41
+msgid "<small>Read</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:42
+msgid "<small>Write</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:43
+msgid "Menu items..."
+msgstr ""
+
+#: ../data/preferences.ui.in.h:44
 msgid "Indicator items..."
 msgstr ""
 
@@ -309,30 +322,35 @@ msgstr ""
 msgid "Radiance"
 msgstr ""
 
+#. TRANSLATORS: Color theme name for the XOSView theme
+#: ../src/colormapper.vala:102
+msgid "XOSView"
+msgstr ""
+
 #: ../src/function.vala:88
 #, c-format
 msgid "%u%%"
 msgstr ""
 
-#: ../src/main.vala:39
+#: ../src/main.vala:42
 msgid "Evaluate an expression"
 msgstr ""
 
-#: ../src/main.vala:41
+#: ../src/main.vala:44
 msgid "List available expression identifiers"
 msgstr ""
 
-#: ../src/main.vala:318
+#: ../src/main.vala:332
 msgid "- System load application indicator"
 msgstr ""
 
-#: ../src/main.vala:326
+#: ../src/main.vala:340
 #, c-format
 msgid "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
 
 #. TRANSLATORS: custom color scheme
-#: ../src/preferences.vala:65
+#: ../src/preferences.vala:64
 msgid "Custom"
 msgstr ""
 

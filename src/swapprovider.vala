@@ -18,7 +18,7 @@
 
 public class SwapProvider : Provider {
     public SwapProvider() {
-        base("swap", {"used", "total"});
+        base("swap", {"used", "total"}, 'i');
     }
 
     public override void update() {

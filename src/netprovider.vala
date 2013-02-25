@@ -21,7 +21,7 @@ public class NetProvider : Provider {
     private uint64 lasttime;
 
     public NetProvider() {
-        base("net", {"down", "up", "local"});
+        base("net", {"down", "up", "local"}, 's');
     }
 
     public override void update() {

@@ -107,7 +107,6 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="model">itemhelpstore</property>
-                <property name="headers_visible">False</property>
                 <property name="headers_clickable">False</property>
                 <property name="search_column">0</property>
                 <child internal-child="selection">
@@ -115,6 +114,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                 </child>
                 <child>
                   <object class="GtkTreeViewColumn" id="treeviewcolumn1">
+                    <property name="title" translatable="yes">Variable</property>
                     <child>
                       <object class="GtkCellRendererText" id="cellrenderertext1"/>
                       <attributes>
@@ -125,6 +125,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                 </child>
                 <child>
                   <object class="GtkTreeViewColumn" id="treeviewcolumn2">
+                    <property name="title" translatable="yes" comments="TRANSLATORS: This refers to an expression in the domain of programming, see https://en.wikipedia.org/wiki/Expression_%28programming%29">Expression</property>
                     <child>
                       <object class="GtkCellRendererText" id="cellrenderertext2"/>
                       <attributes>
@@ -135,6 +136,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                 </child>
                 <child>
                   <object class="GtkTreeViewColumn" id="treeviewcolumn3">
+                    <property name="title" translatable="yes">Value</property>
                     <child>
                       <object class="GtkCellRendererText" id="cellrenderertext3"/>
                       <attributes>

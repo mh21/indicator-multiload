@@ -18,7 +18,7 @@
 
 public class MemProvider : Provider {
     public MemProvider() {
-        base("mem", {"user", "shared", "buffer", "cached", "total", "used"});
+        base("mem", {"user", "shared", "buffer", "cached", "total", "used"}, 'i');
     }
 
     public override void update() {

@@ -52,7 +52,22 @@ public class ItemHelp : Object {
                     3, -1);
             string[] keys = provider.keys;
             for (uint i = 0, isize = keys.length; i < isize; ++i) {
-                var expression = @"$$($(provider.id).$(keys[i]))";
+                var variable = @"$(provider.id).$(keys[i])";
+                var expression = "";
+                switch (provider.displaytype) {
+                case 'd':
+                    expression = @"$$(decimals($variable,2))";
+                    break;
+                case 'p':
+                    expression = @"$$(percent($variable))";
+                    break;
+                case 's':
+                    expression = @"$$(speed($variable))";
+                    break;
+                case 'i':
+                    expression = @"$$(size($variable))";
+                    break;
+                }
                 expressions += expression;
                 this.itemstore.insert_with_values(null, parent, -1,
                         0, keys[i],
@@ -62,7 +77,7 @@ public class ItemHelp : Object {
         }
         this.menumodel.expressions = expressions;
 
-        this.updateitems();
+        this.update();
         this.itemview.expand_all();
 
         this.items.show_all();
@@ -72,6 +87,8 @@ public class ItemHelp : Object {
     public void on_itemhelpdialog_destroy(Gtk.Widget source) {
         this.items = null;
         this.itemstore = null;
+        this.itemview = null;
+        this.menumodel = null;
     }
 
     [CCode (instance_pos = -1)]
@@ -83,9 +100,11 @@ public class ItemHelp : Object {
         }
     }
 
-    private void updateitems() {
-        this.menumodel.update();
+    public void update() {
+        if (this.items == null)
+            return;
 
+        this.menumodel.update();
         this.itemstore.foreach((model, path, iter) => {
             int index;
             model.get(iter, 3, out index);

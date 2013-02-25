@@ -298,6 +298,7 @@ public class Main : Application {
         this.multi.updateall();
 
         this.itemhelp = new ItemHelp(this.multi);
+        this.multi.providers_updated.connect(this.itemhelp.update);
 
         this.menupreferences = new ItemPreferences("menu-expressions");
         this.menupreferences.itemhelp_show.connect(this.itemhelp.show);

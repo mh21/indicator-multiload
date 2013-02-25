@@ -37,6 +37,8 @@ public class MultiLoadIndicator : Object {
     public Gtk.Menu menu { get; set; }
     public GraphModels graphmodels { get; set; }
 
+    public signal void providers_updated();
+
     public MultiLoadIndicator(string icondirectory, Providers providers) {
         Object(icondirectory: icondirectory,
                 providers: providers,
@@ -105,6 +107,7 @@ public class MultiLoadIndicator : Object {
 
     public void updateall() {
         this.updateproviders();
+        this.providers_updated();
         this.updatemodels();
         this.updateviews();
     }

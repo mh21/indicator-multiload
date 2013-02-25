@@ -22,7 +22,7 @@ public class DiskProvider : Provider {
     private static const string[] networkfs = { "smbfs", "nfs", "cifs", "fuse.sshfs" };
 
     public DiskProvider() {
-        base("disk", {"read", "write"});
+        base("disk", {"read", "write"}, 's');
     }
 
     private string[] split(string val) {

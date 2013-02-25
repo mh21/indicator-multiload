@@ -72,7 +72,14 @@ public class ItemPreferences : Object {
     public void on_itemdialog_destroy(Gtk.Widget source) {
         this.items = null;
         this.itemstore = null;
+        this.itemview = null;
         this.itemsettings = null;
+        this.itemadd = null;
+        this.itemremove = null;
+        this.itemedit = null;
+        this.itemup = null;
+        this.itemdown = null;
+        this.itemselection = null;
     }
 
     [CCode (instance_pos = -1)]

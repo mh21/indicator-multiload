@@ -19,11 +19,12 @@
 public abstract class Provider : GLib.Object {
     public string id { get; construct; }
     public string[] keys { get; construct; }
+    public char displaytype { get; construct; }
 
     public double[] values { get; private set; }
 
-    public Provider(string id, string[] keys) {
-        Object(id: id, keys: keys);
+    public Provider(string id, string[] keys, char displaytype) {
+        Object(id: id, keys: keys, displaytype: displaytype);
     }
 
     construct {
