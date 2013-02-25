@@ -59,7 +59,6 @@ public class ItemPreferences : Object {
         this.itemdown = builder.get_object("itemdown") as Gtk.Button;
 
         this.itemselection = (builder.get_object("itemview") as Gtk.TreeView).get_selection();
-        this.itemselection.changed.connect(on_itemselection_changed);
 
         this.itemsgsettingstostore();
         // will invoke updatebuttons()
@@ -101,7 +100,7 @@ public class ItemPreferences : Object {
     }
 
     [CCode (instance_pos = -1)]
-    public void on_itemselection_changed() {
+    public void on_itemselection_changed(Gtk.TreeSelection selection) {
         this.updatebuttons();
     }
 

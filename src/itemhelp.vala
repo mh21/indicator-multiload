@@ -18,7 +18,7 @@
 
 public class ItemHelp : Object {
     private Gtk.Dialog items;
-    private Gtk.ListStore itemstore;
+    private Gtk.TreeStore itemstore;
     private Gtk.TreeView itemview;
     private MenuModel menumodel;
 
@@ -38,12 +38,32 @@ public class ItemHelp : Object {
         this.items = Utils.get_ui("itemhelpdialog", this, {"itemhelpstore"}, out builder) as Gtk.Dialog;
         return_if_fail(this.items != null);
 
-        this.itemstore = builder.get_object("itemhelpstore") as Gtk.ListStore;
+        this.itemstore = builder.get_object("itemhelpstore") as Gtk.TreeStore;
         this.itemview = builder.get_object("itemhelpview") as Gtk.TreeView;
 
+        this.itemstore.clear();
+
         this.menumodel = new MenuModel(this.indicator.providers);
+        string[] expressions = {};
+        foreach (var provider in this.indicator.providers.providers) {
+            Gtk.TreeIter parent;
+            this.itemstore.insert_with_values(out parent, null, -1,
+                    0, provider.id,
+                    3, -1);
+            string[] keys = provider.keys;
+            for (uint i = 0, isize = keys.length; i < isize; ++i) {
+                var expression = @"$$($(provider.id).$(keys[i]))";
+                expressions += expression;
+                this.itemstore.insert_with_values(null, parent, -1,
+                        0, keys[i],
+                        1, expression,
+                        3, expressions.length - 1);
+            }
+        }
+        this.menumodel.expressions = expressions;
 
         this.updateitems();
+        this.itemview.expand_all();
 
         this.items.show_all();
     }
@@ -64,22 +84,17 @@ public class ItemHelp : Object {
     }
 
     private void updateitems() {
-        string[] expressions = {};
-        foreach (var provider in this.indicator.providers.providers) {
-            string[] keys = provider.keys;
-            for (uint i = 0, isize = keys.length; i < isize; ++i)
-                expressions += @"$$($(provider.id).$(keys[i]))";
-        }
-        this.menumodel.expressions = expressions;
         this.menumodel.update();
 
-        this.itemstore.clear();
-        var length = this.menumodel.expressions.length;
-        for (uint j = 0; j < length; ++j) {
-           this.itemstore.insert_with_values(null, -1,
-                   0, this.menumodel.expressions[j],
-                   1, this.menumodel.expression(j).label());
-        }
+        this.itemstore.foreach((model, path, iter) => {
+            int index;
+            model.get(iter, 3, out index);
+            if (index >= 0) {
+                (model as Gtk.TreeStore).set(iter,
+                        2, this.menumodel.expression(index).label());
+            }
+            return false;
+        });
     }
 }
 
