@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-21 10:22+0000\n"
+"POT-Creation-Date: 2013-02-24 21:15+0000\n"
 "PO-Revision-Date: 2013-02-11 19:38+0000\n"
 "Last-Translator: Yuri Myasoedov <omerta13@yandex.ru>\n"
 "Language-Team: Russian <gnome-cyr@gnome.org>\n"
@@ -25,7 +25,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2013-02-22 05:27+0000\n"
+"X-Launchpad-Export-Date: 2013-02-25 05:19+0000\n"
 "X-Generator: Launchpad (build 16506)\n"
 "Language: ru\n"
 
@@ -343,24 +343,29 @@ msgstr ""
 msgid "Radiance"
 msgstr ""
 
+#. TRANSLATORS: Color theme name for the XOSView theme
+#: ../src/colormapper.vala:102
+msgid "XOSView"
+msgstr ""
+
 #: ../src/function.vala:88
 #, c-format
 msgid "%u%%"
 msgstr "%u%%"
 
-#: ../src/main.vala:39
+#: ../src/main.vala:42
 msgid "Evaluate an expression"
 msgstr "Значение выражения"
 
-#: ../src/main.vala:41
+#: ../src/main.vala:44
 msgid "List available expression identifiers"
 msgstr "Список доступных идентификаторов выражения"
 
-#: ../src/main.vala:318
+#: ../src/main.vala:331
 msgid "- System load application indicator"
 msgstr "- Индикатор загрузки системы"
 
-#: ../src/main.vala:326
+#: ../src/main.vala:339
 #, c-format
 msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"
@@ -369,7 +374,7 @@ msgstr ""
 "командной строки.\n"
 
 #. TRANSLATORS: custom color scheme
-#: ../src/preferences.vala:65
+#: ../src/preferences.vala:64
 msgid "Custom"
 msgstr ""
 

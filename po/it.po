@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-applets 2.29.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-21 10:22+0000\n"
+"POT-Creation-Date: 2013-02-24 21:15+0000\n"
 "PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Luca Ferretti <lferrett@gnome.org>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-22 05:27+0000\n"
+"X-Launchpad-Export-Date: 2013-02-25 05:19+0000\n"
 "X-Generator: Launchpad (build 16506)\n"
 "Language: it\n"
 
@@ -333,24 +333,29 @@ msgstr ""
 msgid "Radiance"
 msgstr ""
 
+#. TRANSLATORS: Color theme name for the XOSView theme
+#: ../src/colormapper.vala:102
+msgid "XOSView"
+msgstr ""
+
 #: ../src/function.vala:88
 #, c-format
 msgid "%u%%"
 msgstr "%u%%"
 
-#: ../src/main.vala:39
+#: ../src/main.vala:42
 msgid "Evaluate an expression"
 msgstr "Analizzare una espressione"
 
-#: ../src/main.vala:41
+#: ../src/main.vala:44
 msgid "List available expression identifiers"
 msgstr "Elenco dell'identificativo delle espressioni disponibili"
 
-#: ../src/main.vala:318
+#: ../src/main.vala:331
 msgid "- System load application indicator"
 msgstr "- Indicatore di carico del sistema - Applicazione"
 
-#: ../src/main.vala:326
+#: ../src/main.vala:339
 #, c-format
 msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"
@@ -359,7 +364,7 @@ msgstr ""
 "disponibili da riga di comando.\n"
 
 #. TRANSLATORS: custom color scheme
-#: ../src/preferences.vala:65
+#: ../src/preferences.vala:64
 msgid "Custom"
 msgstr ""
 
