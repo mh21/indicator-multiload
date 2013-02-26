@@ -9,6 +9,8 @@
     <property name="version">@PACKAGE_VERSION@</property>
     <property name="copyright">© 2011–2013 Michael Hofmann</property>
     <property name="comments" translatable="yes">A system load monitor capable of displaying graphs for CPU, ram, and swap space use, plus network traffic.</property>
+    <property name="website">https://launchpad.net/indicator-multiload</property>
+    <property name="website_label">https://launchpad.net/indicator-multiload</property>
     <property name="authors">Michael Hofmann &lt;mh21@mh21.de&gt;
 Martin Baulig &lt;martin@home-of-linux.org&gt;
 Todd Kulesza &lt;fflewddur@dropline.net&gt;
@@ -463,11 +465,13 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
       </object>
     </child>
   </object>
-  <object class="GtkAdjustment" id="speedadjustment">
-    <property name="lower">50</property>
-    <property name="upper">10000</property>
-    <property name="step_increment">50</property>
-    <property name="page_increment">500</property>
+  <object class="GtkListStore" id="schemestore">
+    <columns>
+      <!-- column-name label -->
+      <column type="gchararray"/>
+      <!-- column-name id -->
+      <column type="gchararray"/>
+    </columns>
   </object>
   <object class="GtkDialog" id="preferencesdialog">
     <property name="can_focus">False</property>
@@ -1536,13 +1540,11 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
       <action-widget response="0">close</action-widget>
     </action-widgets>
   </object>
-  <object class="GtkListStore" id="schemestore">
-    <columns>
-      <!-- column-name label -->
-      <column type="gchararray"/>
-      <!-- column-name id -->
-      <column type="gchararray"/>
-    </columns>
+  <object class="GtkAdjustment" id="speedadjustment">
+    <property name="lower">50</property>
+    <property name="upper">10000</property>
+    <property name="step_increment">50</property>
+    <property name="page_increment">500</property>
   </object>
   <object class="GtkAdjustment" id="widthadjustment">
     <property name="lower">10</property>

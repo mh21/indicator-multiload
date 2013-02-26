@@ -1,5 +1,5 @@
 0.4:
-- document functions in gui
+- graph extended preferences
 - kde
 - label guide bug? -> file bug, render label ourselves
 - try to recover some translations for colors in pref dialog, menu items etc.
