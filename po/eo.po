@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-24 21:15+0000\n"
+"POT-Creation-Date: 2013-02-25 11:40+0100\n"
 "PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>\n"
 "Language-Team: Esperanto <ubuntu-l10n-eo@lists.launchpad.net>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-25 05:19+0000\n"
+"X-Launchpad-Export-Date: 2013-02-26 05:19+0000\n"
 "X-Generator: Launchpad (build 16506)\n"
 "Language: eo\n"
 
@@ -36,154 +36,167 @@ msgstr ""
 "  Kristjan SCHMIDT https://launchpad.net/~kristjan-eo"
 
 #: ../data/preferences.ui.in.h:3
-msgid "_Open System Monitor"
-msgstr "_Malfermu sistemvidigilon"
+msgid "Variable"
+msgstr ""
 
-#: ../data/preferences.ui.in.h:4
-msgid "_Preferences"
-msgstr "_Agordoj"
-
+#. TRANSLATORS: This refers to an expression in the domain of programming, see https://en.wikipedia.org/wiki/Expression_%28programming%29
 #: ../data/preferences.ui.in.h:5
-msgid "_About"
-msgstr "_Pri"
+msgid "Expression"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:6
-msgid "_Quit"
+msgid "Value"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:7
+msgid "_Open System Monitor"
+msgstr "_Malfermu sistemvidigilon"
+
+#: ../data/preferences.ui.in.h:8
+msgid "_Preferences"
+msgstr "_Agordoj"
+
+#: ../data/preferences.ui.in.h:9
+msgid "_About"
+msgstr "_Pri"
+
+#: ../data/preferences.ui.in.h:10
+msgid "_Quit"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:11
 msgid "Monitored Resources"
 msgstr "Monitorata risurcoj"
 
-#: ../data/preferences.ui.in.h:8
+#: ../data/preferences.ui.in.h:12
 msgid "_Processor"
 msgstr "_Procesoro"
 
-#: ../data/preferences.ui.in.h:9
+#: ../data/preferences.ui.in.h:13
 msgid "_Memory"
 msgstr "_Memoro"
 
-#: ../data/preferences.ui.in.h:10
+#: ../data/preferences.ui.in.h:14
 msgid "_Network"
 msgstr "_Reto"
 
-#: ../data/preferences.ui.in.h:11
+#: ../data/preferences.ui.in.h:15
 msgid "S_wap Space"
 msgstr "_Virtuala memoro"
 
-#: ../data/preferences.ui.in.h:12
+#: ../data/preferences.ui.in.h:16
 msgid "_Load"
 msgstr "Ŝar_go"
 
-#: ../data/preferences.ui.in.h:13
+#: ../data/preferences.ui.in.h:17
 msgid "_Harddisk"
 msgstr "_Fiksita disko"
 
-#: ../data/preferences.ui.in.h:14
+#: ../data/preferences.ui.in.h:18
 msgid "Options"
 msgstr "Opcioj"
 
-#: ../data/preferences.ui.in.h:15
+#: ../data/preferences.ui.in.h:19
 msgid "System m_onitor width: "
 msgstr "Sistemmonitora larĝo: "
 
-#: ../data/preferences.ui.in.h:16
+#: ../data/preferences.ui.in.h:20
 msgid "Sys_tem monitor update interval: "
 msgstr "Sistemmonitora ĝisdatiga intervalo: "
 
-#: ../data/preferences.ui.in.h:17
+#: ../data/preferences.ui.in.h:21
 msgid "pixels"
 msgstr "bilderoj"
 
-#: ../data/preferences.ui.in.h:18
+#: ../data/preferences.ui.in.h:22
 msgid "milliseconds"
 msgstr "milisekundoj"
 
-#: ../data/preferences.ui.in.h:19
+#: ../data/preferences.ui.in.h:23
 msgid "_Autostart: "
 msgstr ""
 
-#: ../data/preferences.ui.in.h:20
+#: ../data/preferences.ui.in.h:24
 msgid "Colors"
 msgstr "Koloroj"
 
-#: ../data/preferences.ui.in.h:21
+#: ../data/preferences.ui.in.h:25
 msgid "Built-in schemes:"
 msgstr ""
 
-#: ../data/preferences.ui.in.h:22
+#: ../data/preferences.ui.in.h:26
 msgid "Color palette:"
 msgstr ""
 
-#: ../data/preferences.ui.in.h:23
+#: ../data/preferences.ui.in.h:27
 msgid "<small>Busy</small>"
 msgstr ""
 
-#: ../data/preferences.ui.in.h:24
+#: ../data/preferences.ui.in.h:28
 msgid "<small>System</small>"
 msgstr ""
 
-#: ../data/preferences.ui.in.h:25
+#: ../data/preferences.ui.in.h:29
 msgid "<small>Nice</small>"
 msgstr ""
 
-#: ../data/preferences.ui.in.h:26
+#: ../data/preferences.ui.in.h:30
 msgid "<small>IOWait</small>"
 msgstr ""
 
-#: ../data/preferences.ui.in.h:27
+#: ../data/preferences.ui.in.h:31
 msgid "<small>Background</small>"
 msgstr ""
 
-#: ../data/preferences.ui.in.h:28
+#: ../data/preferences.ui.in.h:32
 msgid "<small>Memory</small>"
 msgstr ""
 
-#: ../data/preferences.ui.in.h:29
+#: ../data/preferences.ui.in.h:33
 msgid "<small>Shared</small>"
 msgstr ""
 
-#: ../data/preferences.ui.in.h:30
+#: ../data/preferences.ui.in.h:34
 msgid "<small>Buffers</small>"
 msgstr ""
 
-#: ../data/preferences.ui.in.h:31
+#: ../data/preferences.ui.in.h:35
 msgid "<small>Cached</small>"
 msgstr ""
 
-#: ../data/preferences.ui.in.h:32
+#: ../data/preferences.ui.in.h:36
 msgid "<small>Download</small>"
 msgstr ""
 
-#: ../data/preferences.ui.in.h:33
+#: ../data/preferences.ui.in.h:37
 msgid "<small>Upload</small>"
 msgstr ""
 
-#: ../data/preferences.ui.in.h:34
+#: ../data/preferences.ui.in.h:38
 msgid "<small>Localhost</small>"
 msgstr ""
 
-#: ../data/preferences.ui.in.h:35
+#: ../data/preferences.ui.in.h:39
 msgid "<small>Swap</small>"
 msgstr ""
 
-#: ../data/preferences.ui.in.h:36
+#: ../data/preferences.ui.in.h:40
 msgid "<small>Load</small>"
 msgstr ""
 
-#: ../data/preferences.ui.in.h:37
+#: ../data/preferences.ui.in.h:41
 msgid "<small>Read</small>"
 msgstr ""
 
-#: ../data/preferences.ui.in.h:38
+#: ../data/preferences.ui.in.h:42
 msgid "<small>Write</small>"
 msgstr ""
 
-#: ../data/preferences.ui.in.h:39
+#: ../data/preferences.ui.in.h:43
 msgid "Menu items..."
 msgstr ""
 
-#: ../data/preferences.ui.in.h:40
+#: ../data/preferences.ui.in.h:44
 msgid "Indicator items..."
 msgstr ""
 
@@ -336,11 +349,11 @@ msgstr ""
 msgid "List available expression identifiers"
 msgstr ""
 
-#: ../src/main.vala:331
+#: ../src/main.vala:332
 msgid "- System load application indicator"
 msgstr ""
 
-#: ../src/main.vala:339
+#: ../src/main.vala:340
 #, c-format
 msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"
