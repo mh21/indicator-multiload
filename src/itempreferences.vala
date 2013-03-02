@@ -17,16 +17,21 @@
  ******************************************************************************/
 
 public class ItemPreferences : Object {
-    private Gtk.Dialog items;
-    private Gtk.ListStore itemstore;
-    private Gtk.TreeView itemview;
-    private Gtk.TreeSelection itemselection;
-    private Gtk.Button itemadd;
-    private Gtk.Button itemremove;
-    private Gtk.Button itemedit;
-    private Gtk.Button itemup;
-    private Gtk.Button itemdown;
+    // always allocated
     private Settings itemsettings;
+
+    // only when dialog is visible
+    private Gtk.Dialog items;
+
+    // helper
+    private unowned Gtk.ListStore itemstore;
+    private unowned Gtk.TreeView itemview;
+    private unowned Gtk.TreeSelection itemselection;
+    private unowned Gtk.Button itemadd;
+    private unowned Gtk.Button itemremove;
+    private unowned Gtk.Button itemedit;
+    private unowned Gtk.Button itemup;
+    private unowned Gtk.Button itemdown;
     private bool itemsignoresignals;
 
     public string settingskey { get; construct; }
@@ -35,6 +40,11 @@ public class ItemPreferences : Object {
 
     public ItemPreferences(string settingskey) {
         Object(settingskey: settingskey);
+    }
+
+    construct {
+        this.itemsettings = new SettingsCache().generalsettings();
+        this.itemsettings.changed[this.settingskey].connect(reset_itemstore);
     }
 
     public void show() {
@@ -49,8 +59,6 @@ public class ItemPreferences : Object {
 
         this.itemstore = builder.get_object("itemstore") as Gtk.ListStore;
         this.itemview = builder.get_object("itemview") as Gtk.TreeView;
-        this.itemsettings = new SettingsCache().generalsettings();
-        this.itemsettings.changed["menu-expressions"].connect(on_itemsettings_changed);
 
         this.itemadd = builder.get_object("itemadd") as Gtk.Button;
         this.itemremove = builder.get_object("itemremove") as Gtk.Button;
@@ -68,18 +76,15 @@ public class ItemPreferences : Object {
         // TODO: F2 does not work
     }
 
+    public void reset_itemstore() {
+        if (this.items != null && !this.itemsignoresignals)
+            this.itemsgsettingstostore();
+    }
+
+
     [CCode (instance_pos = -1)]
     public void on_itemdialog_destroy(Gtk.Widget source) {
         this.items = null;
-        this.itemstore = null;
-        this.itemview = null;
-        this.itemsettings = null;
-        this.itemadd = null;
-        this.itemremove = null;
-        this.itemedit = null;
-        this.itemup = null;
-        this.itemdown = null;
-        this.itemselection = null;
     }
 
     [CCode (instance_pos = -1)]
@@ -91,10 +96,10 @@ public class ItemPreferences : Object {
         case 1: // revert
             this.itemsettings.reset(this.settingskey);
             this.itemselection.select_path(new Gtk.TreePath.from_indices(0));
-            break;
+            return;
         case 2: // help
             this.itemhelp_show();
-            break;
+            return;
         }
     }
 
@@ -109,12 +114,6 @@ public class ItemPreferences : Object {
     [CCode (instance_pos = -1)]
     public void on_itemselection_changed(Gtk.TreeSelection selection) {
         this.updatebuttons();
-    }
-
-    [CCode (instance_pos = -1)]
-    public void on_itemsettings_changed() {
-        if (!this.itemsignoresignals)
-            this.itemsgsettingstostore();
     }
 
     [CCode (instance_pos = -1)]
@@ -190,7 +189,7 @@ public class ItemPreferences : Object {
         if (!this.itemstore.get_iter(out previter, prevpath))
             return;
 
-        GLib.Value value, prevvalue;
+        Value value, prevvalue;
         this.itemstore.get_value(iter, 0, out value);
         this.itemstore.get_value(previter, 0, out prevvalue);
         this.itemstore.set_value(iter, 0, prevvalue);
@@ -211,7 +210,7 @@ public class ItemPreferences : Object {
         if (!this.itemstore.get_iter(out nextiter, nextpath))
             return;
 
-        GLib.Value value, nextvalue;
+        Value value, nextvalue;
         this.itemstore.get_value(iter, 0, out value);
         this.itemstore.get_value(nextiter, 0, out nextvalue);
         this.itemstore.set_value(iter, 0, nextvalue);
@@ -254,7 +253,7 @@ public class ItemPreferences : Object {
         Gtk.TreeIter iter;
         for (uint i = 0, isize = result.length; i < isize; ++i) {
             this.itemstore.iter_nth_child(out iter, null, (int)i);
-            GLib.Value value;
+            Value value;
             this.itemstore.get_value(iter, 0, out value);
             result[i] = value as string;
         }

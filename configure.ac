@@ -3,13 +3,15 @@ AC_INIT([indicator-multiload],
 	[mh21@mh21.de],
 	[indicator-multiload],
 	[http://mh21.de/])
-m4_ifdef([AM_SILENT_RULES],[AM_SILENT_RULES([yes])])
 
+AC_CONFIG_SRCDIR([src/main.vala])
 AC_CONFIG_HEADERS([config.h])
 AC_PROG_CC
 
-AM_INIT_AUTOMAKE([foreign])
+AM_SILENT_RULES([yes])
+AM_INIT_AUTOMAKE([foreign dist-xz no-dist-gzip subdir-objects tar-pax])
 AM_PROG_VALAC([0.14.0])
+AM_PROG_CC_C_O
 
 IT_PROG_INTLTOOL
 AM_GNU_GETTEXT([external])
@@ -24,11 +26,19 @@ PKG_CHECK_MODULES(MULTILOADDEPS, [gtk+-3.0 >= 3.4 cairo appindicator3-0.1 glib-2
 
 AC_CONFIG_FILES([
 Makefile
-src/Makefile
-data/Makefile
 data/preferences.ui
 data/de.mh21.indicator-multiload.gschema.xml.in
 po/Makefile.in
 ])
 
 AC_OUTPUT
+
+AC_MSG_RESULT([
+  ------------------------
+  $PACKAGE_NAME $VERSION
+  ------------------------
+  CPPFLAGS: ${CPPFLAGS}
+  CFLAGS:   ${CFLAGS}
+  LDFLAGS:  ${LDFLAGS}
+  ------------------------
+])

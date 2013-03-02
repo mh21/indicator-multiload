@@ -17,10 +17,13 @@
  ******************************************************************************/
 
 public class ItemHelp : Object {
+    // only when dialog is visible
     private Gtk.Dialog items;
-    private Gtk.TreeStore itemstore;
-    private Gtk.TreeView itemview;
     private MenuModel menumodel;
+
+    // helper
+    private unowned Gtk.TreeStore itemstore;
+    private unowned Gtk.TreeView itemview;
 
     public MultiLoadIndicator indicator { get; construct; }
 
@@ -86,8 +89,6 @@ public class ItemHelp : Object {
     [CCode (instance_pos = -1)]
     public void on_itemhelpdialog_destroy(Gtk.Widget source) {
         this.items = null;
-        this.itemstore = null;
-        this.itemview = null;
         this.menumodel = null;
     }
 
@@ -109,7 +110,7 @@ public class ItemHelp : Object {
             int index;
             model.get(iter, 3, out index);
             if (index >= 0) {
-                (model as Gtk.TreeStore).set(iter,
+                this.itemstore.set(iter,
                         2, this.menumodel.expression(index).label());
             }
             return false;

@@ -1,11 +1,13 @@
 *.o
 *~
 .deps/
+.dirstamp
 ABOUT-NLS
 Makefile
 Makefile.in*
 aclocal.m4
 autom4te.cache/
+compile
 config.guess
 config.h
 config.h.in
@@ -23,7 +25,7 @@ data/preferences.ui
 depcomp
 glib-2.0
 indicator-multiload
-indicator-multiload-*.tar.gz
+indicator-multiload-*.tar.xz
 indicator_multiload_vala.stamp
 install-sh
 local-xdg-data-dir/

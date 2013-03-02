@@ -17,20 +17,26 @@
  ******************************************************************************/
 
 public class Preferences : Object {
-    private Gtk.Dialog preferences;
-    private Gtk.ComboBox colorschemes;
+    // always allocated
     private SettingsCache settingscache;
     private Settings prefsettings;
+
+    // only when dialog is visible
+    private Gtk.Dialog preferences;
     private Gtk.Builder builder;
+
+    // helper
+    private unowned Gtk.ComboBox colorschemes;
     private bool colorschemeignoresignals;
 
     public ColorMapper colormapper { get; construct; }
 
+    public signal void advancedpreferences_show();
     public signal void menupreferences_show();
     public signal void indicatorpreferences_show();
 
     delegate void ColorForeachFunc(Settings settings, string key,
-            Object widget, string name);
+            Object? widget, string name);
 
     public Preferences(ColorMapper colormapper) {
         Object(colormapper: colormapper);
@@ -39,6 +45,10 @@ public class Preferences : Object {
     construct {
         this.settingscache = new SettingsCache();
         this.prefsettings = this.settingscache.generalsettings();
+
+        this.colorgsettings_foreach((settings, key, widget, name) => {
+            settings.changed[key].connect(this.update_colorscheme);
+        });
     }
 
     public void show() {
@@ -79,7 +89,6 @@ public class Preferences : Object {
                     Utils.get_settings_rgba,
                     (PGLib.SettingsBindSetMapping)Utils.set_settings_rgba,
                     this.colormapper, () => {});
-            settings.changed[key].connect(this.on_color_changed);
         });
 
         // TODO: rgba, alpha need settings conversion
@@ -101,34 +110,30 @@ public class Preferences : Object {
     [CCode (instance_pos = -1)]
     public void on_preferencesdialog_destroy(Gtk.Widget source) {
         this.preferences = null;
-        this.colorschemes = null;
-    }
-
-    [CCode (instance_pos = -1)]
-    public void on_colorbutton_clicked(Gtk.Button button) {
-        this.colormapper.add_palette(button as PGtk.ColorChooser);
+        this.builder = null;
     }
 
     [CCode (instance_pos = -1)]
     public void on_preferencesdialog_response(Gtk.Dialog source, int response) {
         switch (response) {
+        case 0: // close
+            source.destroy();
+            return;
         case 1:
-            this.menupreferences_show();
+            this.advancedpreferences_show();
             return;
         case 2:
-            this.indicatorpreferences_show();
+            this.menupreferences_show();
             return;
-        default:
-            source.destroy();
+        case 3:
+            this.indicatorpreferences_show();
             return;
         }
     }
 
     [CCode (instance_pos = -1)]
-    public void on_color_changed() {
-        if (this.colorschemeignoresignals)
-            return;
-        this.colorschemes.set_active_id("custom");
+    public void on_colorbutton_clicked(Gtk.Button button) {
+        this.colormapper.add_palette(button as PGtk.ColorChooser);
     }
 
     [CCode (instance_pos = -1)]
@@ -144,6 +149,11 @@ public class Preferences : Object {
             settings.set_string(key, colorscheme + ":" + name);
         });
         this.colorschemeignoresignals = false;
+    }
+
+    private void update_colorscheme() {
+        if (this.preferences != null && !this.colorschemeignoresignals)
+            this.colorschemes.set_active_id("custom");
     }
 
     private void gsettingstowidgets() {
@@ -168,13 +178,15 @@ public class Preferences : Object {
             var graphsettings = this.settingscache.graphsettings(graphid);
             foreach (var traceid in graphsettings.get_strv("traces")) {
                 var tracesettings = this.settingscache.tracesettings(graphid, traceid);
-                callback(tracesettings, "color",
-                        this.builder.get_object(@"$(traceid)-color"), traceid);
+                var widget = this.builder == null ?
+                    null : this.builder.get_object(@"$(traceid)-color");
+                callback(tracesettings, "color", widget, traceid);
             }
         }
 
-        callback(prefsettings, "background-color",
-                this.builder.get_object("background-color"), "background");
+        var widget = this.builder == null ?
+            null : this.builder.get_object("background-color");
+        callback(prefsettings, "background-color", widget, "background");
     }
 }
 

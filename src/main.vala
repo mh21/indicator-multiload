@@ -25,6 +25,7 @@ public class Main : Application {
     private MultiLoadIndicator multi;
     private Gtk.Dialog about;
     private Preferences preferences;
+    private AdvancedPreferences advancedpreferences;
     private ItemPreferences menupreferences;
     private ItemPreferences indicatorpreferences;
     private ItemHelp itemhelp;
@@ -297,6 +298,9 @@ public class Main : Application {
         this.itemhelp = new ItemHelp(this.multi);
         this.multi.providers_updated.connect(this.itemhelp.update);
 
+        this.advancedpreferences = new AdvancedPreferences(this.colormapper);
+        this.advancedpreferences.itemhelp_show.connect(this.itemhelp.show);
+
         this.menupreferences = new ItemPreferences("menu-expressions");
         this.menupreferences.itemhelp_show.connect(this.itemhelp.show);
 
@@ -304,6 +308,7 @@ public class Main : Application {
         this.indicatorpreferences.itemhelp_show.connect(this.itemhelp.show);
 
         this.preferences = new Preferences(this.colormapper);
+        this.preferences.advancedpreferences_show.connect(this.advancedpreferences.show);
         this.preferences.menupreferences_show.connect(this.menupreferences.show);
         this.preferences.indicatorpreferences_show.connect(this.indicatorpreferences.show);
 
