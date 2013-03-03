@@ -18,6 +18,7 @@ Benoît Dejean &lt;TazForEver@dlfp.org&gt;
 Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
     <property name="translator_credits" translatable="yes">translator-credits</property>
     <property name="logo_icon_name">utilities-system-monitor</property>
+    <property name="license_type">gpl-3-0</property>
     <signal name="destroy" handler="main_on_aboutdialog_destroy" swapped="no"/>
     <signal name="response" handler="gtk_widget_destroy" swapped="no"/>
     <child internal-child="vbox">
@@ -948,6 +949,14 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
         <signal name="activate" handler="main_on_quit_activate" swapped="no"/>
       </object>
     </child>
+  </object>
+  <object class="GtkListStore" id="schemestore">
+    <columns>
+      <!-- column-name label -->
+      <column type="gchararray"/>
+      <!-- column-name id -->
+      <column type="gchararray"/>
+    </columns>
   </object>
   <object class="GtkDialog" id="preferencesdialog">
     <property name="can_focus">False</property>
@@ -2014,25 +2023,6 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
       <action-widget response="0">close</action-widget>
     </action-widgets>
   </object>
-  <object class="GtkSizeGroup" id="advprefsizegroup">
-    <widgets>
-      <widget name="graphenabledlabel"/>
-      <widget name="graphminimumlabel"/>
-      <widget name="graphmaximumlabel"/>
-      <widget name="graphsmoothlabel"/>
-      <widget name="traceenabledlabel"/>
-      <widget name="traceexpressionlabel"/>
-      <widget name="tracecolorlabel"/>
-    </widgets>
-  </object>
-  <object class="GtkListStore" id="schemestore">
-    <columns>
-      <!-- column-name label -->
-      <column type="gchararray"/>
-      <!-- column-name id -->
-      <column type="gchararray"/>
-    </columns>
-  </object>
   <object class="GtkAdjustment" id="speedadjustment">
     <property name="lower">50</property>
     <property name="upper">10000</property>
@@ -2044,5 +2034,16 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
     <property name="upper">1000</property>
     <property name="step_increment">5</property>
     <property name="page_increment">50</property>
+  </object>
+  <object class="GtkSizeGroup" id="advprefsizegroup">
+    <widgets>
+      <widget name="graphenabledlabel"/>
+      <widget name="graphminimumlabel"/>
+      <widget name="graphmaximumlabel"/>
+      <widget name="graphsmoothlabel"/>
+      <widget name="traceenabledlabel"/>
+      <widget name="traceexpressionlabel"/>
+      <widget name="tracecolorlabel"/>
+    </widgets>
   </object>
 </interface>

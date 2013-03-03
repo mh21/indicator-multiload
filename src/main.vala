@@ -20,6 +20,7 @@ public class Main : Application {
     private static string datadirectory;
     [CCode (array_length=false, array_null_terminated = true)]
     private static string[] expressionoptions;
+    private static bool versionoption;
     private static Reaper reaper;
 
     private MultiLoadIndicator multi;
@@ -38,6 +39,8 @@ public class Main : Application {
     private string graphsetups;
 
     const OptionEntry[] options = {
+        { "version", 0, 0, OptionArg.NONE,
+            ref versionoption, N_("Output version information and exit"), null },
         { "evaluate-expression", 'e', 0, OptionArg.STRING_ARRAY,
             ref expressionoptions, N_("Evaluate an expression"), null },
         { null }
@@ -346,6 +349,21 @@ public class Main : Application {
 
         exit_status = 0;
         bool result = false;
+
+        if (versionoption) {
+            var about = Utils.get_ui("aboutdialog", this) as Gtk.AboutDialog;
+            try {
+            stdout.printf("%s %s\n%s\n%s\n\n%s\n",
+                    about.get_program_name(),
+                    about.get_version(),
+                    about.get_copyright(),
+                    new Regex("</?a[^>]*>").replace(about.get_license(), -1, 0, ""),
+                    about.get_website());
+            } catch (RegexError e) {
+                // ignored
+            }
+            result = true;
+        }
 
         foreach (var expressionoption in expressionoptions) {
             var cache = new ExpressionCache(new Providers(), expressionoption);
