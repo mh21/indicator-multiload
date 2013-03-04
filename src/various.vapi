@@ -8,14 +8,14 @@ string strndup(char* str, size_t n);
 [CCode (cheader_filename = "unistd.h")]
 int execvp(string path, [CCode (array_length = false, null_terminated = true)] string[] arg);
 
-[CCode (cprefix = "Gtk", lower_case_cprefix = "gtk_")]
+[CCode (cprefix = "Gtk", lower_case_cprefix = "gtk_", cheader_filename = "gtk/gtk.h")]
 namespace PGtk {
     public class ColorChooser {
         public void add_palette(Gtk.Orientation orientation, int colors_per_line, [CCode (array_length_pos = 2.9)] Gdk.RGBA[]? colors);
     }
 }
 
-[CCode (cprefix = "G", lower_case_cprefix = "g_")]
+[CCode (cprefix = "G", lower_case_cprefix = "g_", cheader_filename = "glib.h")]
 namespace PGLib {
     [CCode (has_target = false)]
     public delegate bool SettingsBindGetMapping(GLib.Value value, GLib.Variant variant, void *user_data);

@@ -299,7 +299,6 @@ public class Main : Application {
         this.multi.updateall();
 
         this.itemhelp = new ItemHelp(this.multi);
-        this.multi.providers_updated.connect(this.itemhelp.update);
 
         this.advancedpreferences = new AdvancedPreferences(this.colormapper);
         this.advancedpreferences.itemhelp_show.connect(this.itemhelp.show);
@@ -314,6 +313,8 @@ public class Main : Application {
         this.preferences.advancedpreferences_show.connect(this.advancedpreferences.show);
         this.preferences.menupreferences_show.connect(this.menupreferences.show);
         this.preferences.indicatorpreferences_show.connect(this.indicatorpreferences.show);
+
+        this.advancedpreferences.colorscheme_restore.connect(this.preferences.restore_colorscheme);
 
         this.hold();
 

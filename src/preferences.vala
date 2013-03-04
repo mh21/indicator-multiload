@@ -47,7 +47,7 @@ public class Preferences : Object {
         this.prefsettings = this.settingscache.generalsettings();
 
         this.colorgsettings_foreach((settings, key, widget, name) => {
-            settings.changed[key].connect(this.update_colorscheme);
+            settings.changed[key].connect(this.update_activecolorscheme);
         });
     }
 
@@ -102,7 +102,7 @@ public class Preferences : Object {
                 this.builder.get_object("autostart"), "active",
                 SettingsBindFlags.DEFAULT);
 
-        this.gsettingstowidgets();
+        this.update_activecolorscheme();
 
         this.preferences.show_all();
     }
@@ -144,19 +144,29 @@ public class Preferences : Object {
         if (colorscheme == "custom")
             return;
         this.colormapper.color_scheme = colorscheme;
+        restore_colorscheme();
+    }
+
+    // restore all colors and dropdown to colorscheme from dconf
+    // also used by revert from advanced preferences dialog
+    public void restore_colorscheme() {
+        var colorscheme = this.colormapper.color_scheme;
         this.colorschemeignoresignals = true;
         this.colorgsettings_foreach((settings, key, widget, name) => {
             settings.set_string(key, colorscheme + ":" + name);
         });
+        if (this.preferences != null && !this.colorschemes.set_active_id(colorscheme)) {
+            this.colorschemes.set_active_id("custom");
+        }
         this.colorschemeignoresignals = false;
     }
 
-    private void update_colorscheme() {
-        if (this.preferences != null && !this.colorschemeignoresignals)
-            this.colorschemes.set_active_id("custom");
-    }
+    // check whether any color was changed from scheme default
+    // set dropdown to custom in this case
+    private void update_activecolorscheme() {
+        if (this.preferences == null || this.colorschemeignoresignals)
+            return;
 
-    private void gsettingstowidgets() {
         var colorscheme = this.colormapper.color_scheme;
         var custom = false;
         this.colorgsettings_foreach((settings, key, widget, name) => {

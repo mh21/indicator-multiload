@@ -39,6 +39,7 @@ public class AdvancedPreferences : Object {
     public ColorMapper colormapper { get; construct; }
 
     public signal void itemhelp_show();
+    public signal void colorscheme_restore();
 
     public AdvancedPreferences(ColorMapper colormapper) {
         Object(colormapper: colormapper);
@@ -93,7 +94,6 @@ public class AdvancedPreferences : Object {
     }
 
     private void revert() {
-        // TODO: reset color to scheme
         var graphids = this.settingscache.generalsettings().get_strv("graphs");
         foreach (var graphid in graphids) {
             var graphsettings = this.settingscache.graphsettings(graphid);
@@ -101,10 +101,13 @@ public class AdvancedPreferences : Object {
                 graphsettings.reset(key);
             foreach (var traceid in graphsettings.get_strv("traces")) {
                 var tracesettings = this.settingscache.tracesettings(graphid, traceid);
-                foreach (var key in tracesettings.list_keys())
-                    tracesettings.reset(key);
+                foreach (var key in tracesettings.list_keys()) {
+                    if (key != "color")
+                        tracesettings.reset(key);
+                }
             }
         }
+        this.colorscheme_restore();
     }
 
     [CCode (instance_pos = -1)]

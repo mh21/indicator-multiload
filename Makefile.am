@@ -150,3 +150,10 @@ test-valgrind: all
 	-glib-compile-schemas local-xdg-data-dir/glib-2.0/schemas
 	-XDG_DATA_DIRS=./local-xdg-data-dir:$$XDG_DATA_DIRS G_MESSAGES_DEBUG=all G_SLICE=always-malloc G_DEBUG=gc-friendly valgrind --tool=memcheck --leak-check=full --leak-resolution=high --num-callers=20 --show-reachable=yes --log-file=vgdump ./indicator-multiload
 	-rm -rf local-xdg-data-dir
+
+# these are a bit of a hack, as automake has tags support
+tags:
+	-anjuta-tags -R -o tags src
+
+tags-vala:
+	-anjuta-tags -o tags-vala /usr/share/vala-$$($(VALAC) --version | sed 's/.*\(0\.[0-9]\+\)\.[0-9]\+/\1/')/vapi/*.vapi

@@ -107,18 +107,19 @@ public class ColorMapper : Object {
         }));
     }
 
-    static Gdk.RGBA[] schemergbas(string name) {
+    static ColorScheme scheme(string name) {
         var scheme = schemes.lookup(name);
         if (scheme == null)
             scheme = schemes.lookup("traditional");
-        return scheme.rgbas;
+        return scheme;
+    }
+
+    static Gdk.RGBA[] schemergbas(string name) {
+        return scheme(name).rgbas;
     }
 
     public static string schemelabel(string name) {
-        var scheme = schemes.lookup(name);
-        if (scheme == null)
-            scheme = schemes.lookup("traditional");
-        return scheme.label;
+        return scheme(name).label;
     }
 
     public static bool parse_colorname(string value, ref Gdk.RGBA rgba) {
@@ -137,12 +138,12 @@ public class ColorMapper : Object {
 
     public void add_palette(PGtk.ColorChooser chooser) {
         // https://bugzilla.gnome.org/show_bug.cgi?id=693995
-        if (Gtk.check_version(3, 8, 0) == null) {
+        //if (Gtk.check_version(3, 8, 0) == null) {
         //     chooser.add_palette(Gtk.Orientation.VERTICAL, 0, null);
         //     chooser.add_palette(Gtk.Orientation.VERTICAL, 3, tangorgbas);
         //     chooser.add_palette(Gtk.Orientation.HORIZONTAL, 9, grayrgbas);
         //     chooser.add_palette(Gtk.Orientation.HORIZONTAL, 8, schemergbas(this.color_scheme));
-        }
+        //}
     }
 }
 
