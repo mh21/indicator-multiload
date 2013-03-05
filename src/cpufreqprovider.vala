@@ -21,11 +21,12 @@ public class CpuFreqProvider : Provider {
     private static string[] fields() {
         GTop.init();
         string[] templates = {"cur", "min", "max"};
-        string[] result = new string[(GTop.global_server->ncpu + 1) * 3];
+        string[] result = new string[(GTop.global_server->ncpu + 2) * 3];
         for (uint j = 0; j < 3; ++j) {
             var template = templates[j];
+            result[j] = template;
             for (uint i = 0, isize = GTop.global_server->ncpu + 1; i < isize; ++i)
-                result[i * 3 + j] = @"$template$i";
+                result[(i + 1) * 3 + j] = @"$template$i";
         }
         return result;
     }
@@ -45,15 +46,36 @@ public class CpuFreqProvider : Provider {
     }
 
     construct {
+        double minmin = 0, maxmax = 0;
         for (uint i = 0, isize = GTop.global_server->ncpu + 1; i < isize; ++i) {
-            this.values[i * 3 + 1] = 1000.0 * read(i, "cpuinfo_min_freq");
-            this.values[i * 3 + 2] = 1000.0 * read(i, "cpuinfo_max_freq");
+            var min = 1000.0 * read(i, "cpuinfo_min_freq");
+            var max = 1000.0 * read(i, "cpuinfo_max_freq");
+            if (i == 0) {
+                minmin = min;
+                maxmax = max;
+            } else {
+                minmin = double.min(min, minmin);
+                maxmax = double.max(max, maxmax);
+            }
+            this.values[(i + 1) * 3 + 1] = min;
+            this.values[(i + 1) * 3 + 2] = max;
         }
+        this.values[1] = minmin;
+        this.values[2] = maxmax;
     }
 
     public override void update() {
-        for (uint i = 0, isize = GTop.global_server->ncpu + 1; i < isize; ++i)
-            this.values[i * 3 + 0] = 1000.0 * read(i, "scaling_cur_freq");
+        double maxcur = 0;
+        for (uint i = 0, isize = GTop.global_server->ncpu + 1; i < isize; ++i) {
+            var cur = 1000.0 * read(i, "scaling_cur_freq");
+            if (i == 0) {
+                maxcur = cur;
+            } else {
+                maxcur = double.max(cur, maxcur);
+            }
+            this.values[(i + 1) * 3 + 0] = cur;
+        }
+        this.values[0] = maxcur;
     }
 }
 
