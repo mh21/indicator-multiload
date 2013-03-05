@@ -316,6 +316,8 @@ public class Main : Application {
 
         this.advancedpreferences.colorscheme_restore.connect(this.preferences.restore_colorscheme);
 
+        this.multi.providers_updated.connect(this.itemhelp.update);
+
         this.hold();
 
         Gdk.notify_startup_complete();

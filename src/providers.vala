@@ -22,13 +22,14 @@ public class Providers : Object {
 
     construct {
         this.providers = {
-            new CpuProvider(), new MemProvider(), new NetProvider(),
-            new SwapProvider(), new LoadProvider(), new DiskProvider()
+            new CpuProvider(), new CpuFreqProvider(), new MemProvider(),
+            new NetProvider(), new SwapProvider(), new LoadProvider(),
+            new DiskProvider()
         };
         this.update();
         this.functions = {
-            new DecimalsFunction(), new SizeFunction(),
-            new SpeedFunction(), new PercentFunction()
+            new DecimalsFunction(), new SizeFunction(), new SpeedFunction(),
+            new PercentFunction(), new FrequencyFunction()
         };
     }
 

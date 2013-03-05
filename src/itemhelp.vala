@@ -70,6 +70,12 @@ public class ItemHelp : Object {
                 case 'i':
                     expression = @"$$(size($variable))";
                     break;
+                case 'f':
+                    expression = @"$$(frequency($variable))";
+                    break;
+                default:
+                    expression = @"$$($variable)";
+                    break;
                 }
                 expressions += expression;
                 this.itemstore.insert_with_values(null, parent, -1,

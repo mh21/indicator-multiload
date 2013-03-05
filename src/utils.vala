@@ -93,6 +93,32 @@ namespace Utils {
         return pattern.printf(val);
     }
 
+    public string format_frequency(double val) {
+        const string[] units = {
+            // TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
+            N_("{} kHz"),
+            // TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
+            N_("{} MHz"),
+            // TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
+            N_("{} GHz")
+        };
+        int index = -1;
+        while (index + 1 < units.length && (val >= 1000 || index < 0)) {
+            val /= 1000;
+            ++index;
+        }
+        if (index < 0)
+            // TRANSLATORS: Please leave %u as it is, it is replaced by the frequency
+            return ngettext("%u Hz", "%u Hz",
+                    (ulong)val).printf((uint)val);
+        // 4 significant digits
+        var pattern = _(units[index]).replace("{}",
+            val <   9.95 ? "%.1f" :
+            val <  99.5  ? "%.0f" :
+            val < 999.5  ? "%.0f" : "%.0f");
+        return pattern.printf(val);
+    }
+
     public Object get_ui(string objectid, Object signalhandlers,
             string[] additional = {}, out Gtk.Builder builder = null) {
         builder = new Gtk.Builder();

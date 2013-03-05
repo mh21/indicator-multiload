@@ -75,6 +75,21 @@ public class SpeedFunction : Function {
     }
 }
 
+public class FrequencyFunction : Function {
+    public FrequencyFunction() {
+        base("frequency", {"value"});
+    }
+
+    public override string call(string[] parameters, bool widest) throws Error {
+        if (parameters.length != 1)
+            throw error("one parameter expected");
+        if (widest)
+            parameters[0] = "999000000"; // MHz
+        // TODO inline
+        return Utils.format_frequency(double.parse(parameters[0]));
+    }
+}
+
 public class PercentFunction : Function {
     public PercentFunction() {
         base("percent", {"value"});
