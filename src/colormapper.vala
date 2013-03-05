@@ -138,12 +138,12 @@ public class ColorMapper : Object {
 
     public void add_palette(PGtk.ColorChooser chooser) {
         // https://bugzilla.gnome.org/show_bug.cgi?id=693995
-        //if (Gtk.check_version(3, 8, 0) == null) {
-        //     chooser.add_palette(Gtk.Orientation.VERTICAL, 0, null);
-        //     chooser.add_palette(Gtk.Orientation.VERTICAL, 3, tangorgbas);
-        //     chooser.add_palette(Gtk.Orientation.HORIZONTAL, 9, grayrgbas);
-        //     chooser.add_palette(Gtk.Orientation.HORIZONTAL, 8, schemergbas(this.color_scheme));
-        //}
+        if (Gtk.check_version(3, 8, 0) == null) {
+             chooser.add_palette(Gtk.Orientation.VERTICAL, 0, null);
+             chooser.add_palette(Gtk.Orientation.VERTICAL, 3, tangorgbas);
+             chooser.add_palette(Gtk.Orientation.HORIZONTAL, 9, grayrgbas);
+             chooser.add_palette(Gtk.Orientation.HORIZONTAL, 8, schemergbas(this.color_scheme));
+        }
     }
 }
 
