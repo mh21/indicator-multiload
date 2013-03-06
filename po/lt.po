@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-applets.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-04 07:46+0000\n"
+"POT-Creation-Date: 2013-03-05 10:41+0000\n"
 "PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Žygimantas Beručka <zygis@gnome.org>\n"
 "Language-Team: Lithuanian <gnome-lt@lists.akl.lt>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "(n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2013-03-05 05:23+0000\n"
+"X-Launchpad-Export-Date: 2013-03-06 06:05+0000\n"
 "X-Generator: Launchpad (build 16514)\n"
 "Language: lt\n"
 
@@ -390,7 +390,7 @@ msgstr ""
 msgid "XOSView"
 msgstr ""
 
-#: ../src/function.vala:88
+#: ../src/function.vala:103
 #, c-format
 msgid "%u%%"
 msgstr "%u %%"
@@ -403,11 +403,11 @@ msgstr ""
 msgid "Evaluate an expression"
 msgstr "Apskaičiuoti reiškinį"
 
-#: ../src/main.vala:338
+#: ../src/main.vala:340
 msgid "- System load application indicator"
 msgstr "– sistemos apkrovos programos indikatorius"
 
-#: ../src/main.vala:346
+#: ../src/main.vala:348
 #, c-format
 msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"
@@ -472,6 +472,29 @@ msgid_plural "%u B/s"
 msgstr[0] "%u B/s"
 msgstr[1] "%u B/s"
 msgstr[2] "%u B/s"
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
+#: ../src/utils.vala:99
+msgid "{} kHz"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
+#: ../src/utils.vala:101
+msgid "{} MHz"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
+#: ../src/utils.vala:103
+msgid "{} GHz"
+msgstr ""
+
+#. TRANSLATORS: Please leave %u as it is, it is replaced by the frequency
+#: ../src/utils.vala:112
+#, c-format
+msgid "%u Hz"
+msgid_plural "%u Hz"
+msgstr[0] ""
+msgstr[1] ""
 
 #~ msgid "Cach_ed"
 #~ msgstr "K_ešuota"
