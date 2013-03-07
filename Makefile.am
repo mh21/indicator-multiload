@@ -42,6 +42,7 @@ indicator_multiload_VALASOURCES = \
 	src/function.vala \
 	src/graphmodels.vala \
 	src/graphmodel.vala \
+	src/indicator.vala \
 	src/itemhelp.vala \
 	src/itempreferences.vala \
 	src/loadprovider.vala \

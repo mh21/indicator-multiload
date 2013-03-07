@@ -1,10 +1,15 @@
 0.4:
-- kde
-- label guide bug? -> file bug, render label ourselves
+- proper structure: composition instead of inheritance
+- guard against no icon situation again
+- option to force indicator or tray icon
+- de support indicator: lxde, xfce, gnome, classic, mint, cinnamon, unity, kde
+- de support tray icon: lxde, xfce, gnome, classic, mint, cinnamon, unity, kde
+- label guide bug? -> file bug
 - try to recover some translations for colors in pref dialog, menu items etc.
 
 0.5:
 - gtop shared mem is always 0, remove or reuse? - alert color?
 - error messages for expressions not only on stderr
-- more providers
-- icon styles
+- more providers: temp, disk temp, disk space
+- icon styles: text, bar, chart, checker board
+- render text ourselves

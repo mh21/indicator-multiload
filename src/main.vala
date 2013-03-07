@@ -247,7 +247,10 @@ public class Main : Application {
     }
 
     public override void startup() {
-        this.multi = new MultiLoadIndicator(Path.build_filename(datadirectory, "icons"), new Providers());
+        var icondirectory = Path.build_filename(datadirectory, "icons");
+        var menu = Utils.get_ui("menu", this) as Gtk.Menu;
+        this.multi = new MultiLoadIndicator(icondirectory, new Providers(), menu);
+
         this.colormapper = new ColorMapper();
         this.settingscache = new SettingsCache();
 
@@ -256,9 +259,6 @@ public class Main : Application {
         // initialize indicator, won't update before speed is set; order is
         // important here
         this.creategraphs(null, "");
-        var menu = Utils.get_ui("menu", this) as Gtk.Menu;
-        return_if_fail(menu != null);
-        this.multi.menu = menu;
 
         var datasettings = this.settingscache.generalsettings();
         datasettings.bind("menu-expressions",
