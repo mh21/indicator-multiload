@@ -19,6 +19,8 @@
 public interface IndicatorView : Object {
     public signal void scroll_event(int delta, uint direction);
 
-    public abstract void setindicatorlabel(string label, string guide);
-    public abstract void setindicatoricon(string icon, string description);
+    public abstract string label { set; }
+    public abstract string guide { set; }
+    public abstract string icon { set; }
+    public abstract string description { set; }
 }

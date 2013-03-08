@@ -1,5 +1,4 @@
 0.4:
-- proper structure: composition instead of inheritance
 - guard against no icon situation again
 - option to force indicator or tray icon
 - de support indicator: lxde, xfce, gnome, classic, mint, cinnamon, unity, kde

@@ -60,6 +60,7 @@ indicator_multiload_VALASOURCES = \
 	src/settingsconversion.vala \
 	src/swapprovider.vala \
 	src/tracemodel.vala \
+	src/trayindicatorview.vala \
 	src/utils.vala
 
 indicator_multiload_SOURCES = \

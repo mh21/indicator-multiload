@@ -19,6 +19,30 @@
 public class AppIndicatorView : IndicatorView, Object {
     private AppIndicator.Indicator indicator;
 
+    public string label {
+        set {
+            this.indicator.label = value;
+        }
+    }
+
+    public string guide {
+        set {
+            this.indicator.label_guide = value;
+        }
+    }
+
+    public string icon {
+        set {
+            this.indicator.icon_name = value;
+        }
+    }
+
+    public string description {
+        set {
+            this.indicator.icon_desc = value;
+        }
+    }
+
     public AppIndicatorView(string icondirectory, Gtk.Menu menu) {
         this.indicator = new AppIndicator.Indicator.with_path("multiload", "",
                 AppIndicator.IndicatorCategory.SYSTEM_SERVICES, icondirectory);
@@ -28,13 +52,5 @@ public class AppIndicatorView : IndicatorView, Object {
             this.scroll_event(delta, direction);
         });
         this.indicator.set_secondary_activate_target(menu.get_children().data);
-    }
-
-    public void setindicatorlabel(string label, string guide) {
-        this.indicator.set_label(label, guide);
-    }
-
-    public void setindicatoricon(string icon, string description) {
-        this.indicator.set_icon_full(icon, description);
     }
 }

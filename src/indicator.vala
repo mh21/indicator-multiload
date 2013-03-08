@@ -74,7 +74,7 @@ public class Indicator : Object {
                     });
             });
 
-        this.indicatorview = new AppIndicatorView(this.icondirectory,
+        this.indicatorview = new TrayIndicatorView(this.icondirectory,
                 this.menu);
         this.indicatorview.scroll_event.connect(this.scrollhandler);
     }
@@ -152,13 +152,12 @@ public class Indicator : Object {
 
     private void updatelabelview() {
         var indicatorcount = this.labelmodel.expressions.length;
-        var indicatorlabel = 0 <= this.indicator_index &&
+        this.indicatorview.label = 0 <= this.indicator_index &&
             this.indicator_index < indicatorcount ?
             this.labelmodel.expression(this.indicator_index).label() : "";
-        var indicatorguide = 0 <= this.indicator_index &&
+        this.indicatorview.guide = 0 <= this.indicator_index &&
             this.indicator_index < indicatorcount ?
             this.labelmodel.expression(this.indicator_index).guide() : "";
-        this.indicatorview.setindicatorlabel(indicatorlabel, indicatorguide);
     }
 
     private void updategraphsview() {
@@ -177,10 +176,10 @@ public class Indicator : Object {
             });
         }
         if (!found) {
-            this.indicatorview.setindicatoricon(this.lasticonwidth > 0 ?
-                    this.iconname(this.currenticonindex) : "",
-                    this.descriptionmodel.expression(0).label());
+            this.indicatorview.icon = this.lasticonwidth > 0 ?
+                    this.iconname(this.currenticonindex) : "";
         }
+        this.indicatorview.description = this.descriptionmodel.expression(0).label();
     }
 
     private string iconname(uint index) {
