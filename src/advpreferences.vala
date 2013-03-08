@@ -148,32 +148,32 @@ public class AdvancedPreferences : Object {
         if (traceid == null) {
             this.notebook.set_current_page(0);
             var graphsettings = this.settingscache.graphsettings(graphid);
-            graphsettings.unbind(this.graphminimum, "text");
+            Settings.unbind(this.graphminimum, "text");
             graphsettings.bind("minimum", this.graphminimum, "text",
                     SettingsBindFlags.DEFAULT);
-            graphsettings.unbind(this.graphmaximum, "text");
+            Settings.unbind(this.graphmaximum, "text");
             graphsettings.bind("maximum", this.graphmaximum, "text",
                     SettingsBindFlags.DEFAULT);
-            graphsettings.unbind(this.graphenabled, "active");
+            Settings.unbind(this.graphenabled, "active");
             graphsettings.bind("enabled", this.graphenabled, "active",
                     SettingsBindFlags.DEFAULT);
-            graphsettings.unbind(this.graphsmooth, "text");
+            Settings.unbind(this.graphsmooth, "text");
             graphsettings.bind("smooth", this.graphsmooth, "text",
                     SettingsBindFlags.DEFAULT);
         } else {
             this.notebook.set_current_page(1);
             var tracesettings = this.settingscache.tracesettings(graphid, traceid);
-            tracesettings.unbind(this.tracecolor, "rgba");
+            Settings.unbind(this.tracecolor, "rgba");
             PGLib.settings_bind_with_mapping(tracesettings, "color",
                     this.tracecolor, "rgba",
                     SettingsBindFlags.DEFAULT,
                     Utils.get_settings_rgba,
                     (PGLib.SettingsBindSetMapping)Utils.set_settings_rgba,
-                    this.colormapper, () => {});
-            tracesettings.unbind(this.traceenabled, "active");
+                    null, () => {});
+            Settings.unbind(this.traceenabled, "active");
             tracesettings.bind("enabled", this.traceenabled, "active",
                     SettingsBindFlags.DEFAULT);
-            tracesettings.unbind(this.traceexpression, "text");
+            Settings.unbind(this.traceexpression, "text");
             tracesettings.bind("expression", this.traceexpression, "text",
                     SettingsBindFlags.DEFAULT);
         }

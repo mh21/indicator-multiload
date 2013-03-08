@@ -135,10 +135,10 @@ namespace Utils {
     }
 
     public bool get_settings_rgba(Value value, Variant variant,
-            ColorMapper *colormapper)
+            void *user_data)
     {
         Gdk.RGBA rgba = Gdk.RGBA();
-        if (colormapper->parse_colorname(variant.get_string(), ref rgba)) {
+        if (ColorMapper.parse_colorname(variant.get_string(), ref rgba)) {
             value.set_boxed(&rgba);
             return true;
         }

@@ -235,7 +235,7 @@ public class Main : Application {
                 SettingsBindFlags.DEFAULT,
                 Utils.get_settings_rgba,
                 (PGLib.SettingsBindSetMapping)Utils.set_settings_rgba,
-                this.colormapper, () => {});
+                null, () => {});
         tracesettings.bind("enabled", tracemodel, "enabled",
                 SettingsBindFlags.DEFAULT);
         tracesettings.bind("expression", tracemodel.expression, "expression",
@@ -284,7 +284,7 @@ public class Main : Application {
                 SettingsBindFlags.DEFAULT,
                 Utils.get_settings_rgba,
                 (PGLib.SettingsBindSetMapping)Utils.set_settings_rgba,
-                this.colormapper, () => {});
+                null, () => {});
         datasettings.bind("autostart",
                 this, "autostart",
                 SettingsBindFlags.DEFAULT);

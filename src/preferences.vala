@@ -88,7 +88,7 @@ public class Preferences : Object {
                     SettingsBindFlags.DEFAULT,
                     Utils.get_settings_rgba,
                     (PGLib.SettingsBindSetMapping)Utils.set_settings_rgba,
-                    this.colormapper, () => {});
+                    null, () => {});
         });
 
         // TODO: rgba, alpha need settings conversion
