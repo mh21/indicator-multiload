@@ -16,11 +16,12 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.                *
  ******************************************************************************/
 
-public abstract class Indicator : Object {
+public class Indicator : Object {
     private uint currenticonindex;
     private uint lasticonwidth;
     private TimeoutSource timeout;
     private Gtk.MenuItem[] menuitems;
+    private IndicatorView indicatorview;
 
     // TODO some of these don't need to be properties
     public string icondirectory { get; construct; }
@@ -72,6 +73,10 @@ public abstract class Indicator : Object {
                         return true;
                     });
             });
+
+        this.indicatorview = new AppIndicatorView(this.icondirectory,
+                this.menu);
+        this.indicatorview.scroll_event.connect(this.scrollhandler);
     }
 
     ~MultiLoadIndicator() {
@@ -95,10 +100,7 @@ public abstract class Indicator : Object {
         this.updateviews();
     }
 
-    protected abstract void setindicatorlabel(string label, string guide);
-    protected abstract void setindicatoricon(string icon, string description);
-
-    protected void scrollhandler(int delta, uint direction) {
+    private void scrollhandler(int delta, uint direction) {
         var index = this.indicator_index;
         if (direction == Gdk.ScrollDirection.DOWN)
             index += delta;
@@ -156,7 +158,7 @@ public abstract class Indicator : Object {
         var indicatorguide = 0 <= this.indicator_index &&
             this.indicator_index < indicatorcount ?
             this.labelmodel.expression(this.indicator_index).guide() : "";
-        this.setindicatorlabel(indicatorlabel, indicatorguide);
+        this.indicatorview.setindicatorlabel(indicatorlabel, indicatorguide);
     }
 
     private void updategraphsview() {
@@ -175,7 +177,7 @@ public abstract class Indicator : Object {
             });
         }
         if (!found) {
-            this.setindicatoricon(this.lasticonwidth > 0 ?
+            this.indicatorview.setindicatoricon(this.lasticonwidth > 0 ?
                     this.iconname(this.currenticonindex) : "",
                     this.descriptionmodel.expression(0).label());
         }

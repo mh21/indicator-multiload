@@ -23,7 +23,7 @@ public class Main : Application {
     private static bool versionoption;
     private static Reaper reaper;
 
-    private MultiLoadIndicator multi;
+    private Indicator multi;
     private Gtk.Dialog about;
     private Preferences preferences;
     private AdvancedPreferences advancedpreferences;
@@ -249,7 +249,7 @@ public class Main : Application {
     public override void startup() {
         var icondirectory = Path.build_filename(datadirectory, "icons");
         var menu = Utils.get_ui("menu", this) as Gtk.Menu;
-        this.multi = new MultiLoadIndicator(icondirectory, new Providers(), menu);
+        this.multi = new Indicator(icondirectory, new Providers(), menu);
 
         this.colormapper = new ColorMapper();
         this.settingscache = new SettingsCache();

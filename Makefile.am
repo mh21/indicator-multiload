@@ -34,6 +34,7 @@ bin_PROGRAMS = indicator-multiload
 
 indicator_multiload_VALASOURCES = \
 	src/advpreferences.vala \
+	src/appindicatorview.vala \
 	src/colormapper.vala \
 	src/cpufreqprovider.vala \
 	src/cpuprovider.vala \
@@ -43,13 +44,13 @@ indicator_multiload_VALASOURCES = \
 	src/graphmodels.vala \
 	src/graphmodel.vala \
 	src/indicator.vala \
+	src/indicatorview.vala \
 	src/itemhelp.vala \
 	src/itempreferences.vala \
 	src/loadprovider.vala \
 	src/main.vala \
 	src/memprovider.vala \
 	src/menumodel.vala \
-	src/multiloadindicator.vala \
 	src/netprovider.vala \
 	src/preferences.vala \
 	src/providers.vala \

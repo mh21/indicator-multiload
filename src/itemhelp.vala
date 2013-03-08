@@ -25,9 +25,9 @@ public class ItemHelp : Object {
     private unowned Gtk.TreeStore itemstore;
     private unowned Gtk.TreeView itemview;
 
-    public MultiLoadIndicator indicator { get; construct; }
+    public Indicator indicator { get; construct; }
 
-    public ItemHelp(MultiLoadIndicator indicator) {
+    public ItemHelp(Indicator indicator) {
         Object(indicator: indicator);
     }
 
