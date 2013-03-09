@@ -21,6 +21,7 @@ public class Main : Application {
     [CCode (array_length=false, array_null_terminated = true)]
     private static string[] expressionoptions;
     private static bool versionoption;
+    private static bool trayiconoption;
     private static Reaper reaper;
 
     private Indicator multi;
@@ -41,6 +42,8 @@ public class Main : Application {
     const OptionEntry[] options = {
         { "version", 0, 0, OptionArg.NONE,
             ref versionoption, N_("Output version information and exit"), null },
+        { "trayicon", 0, 0, OptionArg.NONE,
+            ref trayiconoption, N_("System tray icon instead of app indicator"), null },
         { "evaluate-expression", 'e', 0, OptionArg.STRING_ARRAY,
             ref expressionoptions, N_("Evaluate an expression"), null },
         { null }
@@ -249,7 +252,8 @@ public class Main : Application {
     public override void startup() {
         var icondirectory = Path.build_filename(datadirectory, "icons");
         var menu = Utils.get_ui("menu", this) as Gtk.Menu;
-        this.multi = new Indicator(icondirectory, new Providers(), menu);
+        this.multi = new Indicator(icondirectory, new Providers(), menu,
+                trayiconoption);
 
         this.colormapper = new ColorMapper();
         this.settingscache = new SettingsCache();

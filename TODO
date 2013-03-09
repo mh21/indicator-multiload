@@ -1,6 +1,4 @@
 0.4:
-- guard against no icon situation again
-- option to force indicator or tray icon
 - de support indicator: lxde, xfce, gnome, classic, mint, cinnamon, unity, kde
 - de support tray icon: lxde, xfce, gnome, classic, mint, cinnamon, unity, kde
 - label guide bug? -> file bug

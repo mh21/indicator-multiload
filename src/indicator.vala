@@ -39,16 +39,15 @@ public class Indicator : Object {
 
     public signal void providers_updated();
 
-    public Indicator(string icondirectory, Providers providers, Gtk.Menu menu) {
+    public Indicator(string icondirectory, Providers providers, Gtk.Menu menu,
+            bool trayicon) {
         Object(icondirectory: icondirectory,
                 providers: providers,
                 menu: menu,
                 menumodel: new MenuModel(providers),
                 labelmodel: new MenuModel(providers),
                 descriptionmodel: new MenuModel(providers));
-    }
 
-    construct {
         DirUtils.create(this.icondirectory, 0777);
 
         this.iconwritedummy();
@@ -74,8 +73,11 @@ public class Indicator : Object {
                     });
             });
 
-        this.indicatorview = new TrayIndicatorView(this.icondirectory,
-                this.menu);
+        if (trayicon)
+            this.indicatorview = new TrayIndicatorView(this.icondirectory, this.menu);
+        else
+            this.indicatorview = new AppIndicatorView(this.icondirectory, this.menu);
+
         this.indicatorview.scroll_event.connect(this.scrollhandler);
     }
 
@@ -115,15 +117,16 @@ public class Indicator : Object {
 
     private void updatemodels() {
         this.menumodel.update();
-        this.labelmodel.update();
-        this.descriptionmodel.update();
         this.graphmodels.update(this.width);
+        this.descriptionmodel.update();
+        this.labelmodel.update();
     }
 
     private void updateviews() {
         this.updatemenuview();
-        this.updatelabelview();
         this.updategraphsview();
+        // needs to after updategraphsview
+        this.updatelabelview();
     }
 
     private void updatemenuview() {
@@ -150,20 +153,10 @@ public class Indicator : Object {
         }
     }
 
-    private void updatelabelview() {
-        var indicatorcount = this.labelmodel.expressions.length;
-        this.indicatorview.label = 0 <= this.indicator_index &&
-            this.indicator_index < indicatorcount ?
-            this.labelmodel.expression(this.indicator_index).label() : "";
-        this.indicatorview.guide = 0 <= this.indicator_index &&
-            this.indicator_index < indicatorcount ?
-            this.labelmodel.expression(this.indicator_index).guide() : "";
-    }
-
     private void updategraphsview() {
         this.iconwrite();
         var found = false;
-        // fix icon size if using the fallback GtkStatusIcon
+        // fix icon size if using a GtkStatusIcon
         foreach (var toplevel in Gtk.Window.list_toplevels()) {
             if (toplevel.get_type().name() != "GtkTrayIcon" || !(toplevel is Gtk.Container))
                 continue;
@@ -180,6 +173,20 @@ public class Indicator : Object {
                     this.iconname(this.currenticonindex) : "";
         }
         this.indicatorview.description = this.descriptionmodel.expression(0).label();
+    }
+
+    private void updatelabelview() {
+        var indicatorcount = this.labelmodel.expressions.length;
+        var label = 0 <= this.indicator_index &&
+            this.indicator_index < indicatorcount ?
+            this.labelmodel.expression(this.indicator_index).label() : "";
+        var guide = 0 <= this.indicator_index &&
+            this.indicator_index < indicatorcount ?
+            this.labelmodel.expression(this.indicator_index).guide() : "";
+        this.indicatorview.label = this.lasticonwidth == 0 && label == "" ?
+            "im" : label;
+        this.indicatorview.guide = this.lasticonwidth == 0 && guide == "" ?
+            "im" : guide;
     }
 
     private string iconname(uint index) {
