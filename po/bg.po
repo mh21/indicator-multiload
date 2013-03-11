@@ -13,17 +13,17 @@ msgstr ""
 "Project-Id-Version: gnome-applets master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-02 23:22+0200\n"
-"PO-Revision-Date: 2011-05-02 18:16+0000\n"
-"Last-Translator: Alexander Shopov <ash@kambanaria.org>\n"
+"PO-Revision-Date: 2013-03-10 22:29+0000\n"
+"Last-Translator: Atanas Kovachki <Unknown>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-05-03 06:15+0000\n"
-"X-Generator: Launchpad (build 12758)\n"
+"X-Launchpad-Export-Date: 2013-03-11 05:07+0000\n"
+"X-Generator: Launchpad (build 16523)\n"
 "Language: bg\n"
 
-#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:1
+#: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
@@ -31,103 +31,103 @@ msgstr ""
 "Инструмент за наблюдение на системата, който показва графики за процесора, "
 "оперативната памет, виртуалната памет и натовареността на мрежата."
 
-#: ../data/preferences.ui.in.h:2
+#: ../data/preferences.ui.in.h:29
 msgid "Cach_ed"
 msgstr "_Записан в паметта"
 
-#: ../data/preferences.ui.in.h:3
+#: ../data/preferences.ui.in.h:34
 msgid "Colors"
 msgstr "Цветове"
 
-#: ../data/preferences.ui.in.h:4
+#: ../data/preferences.ui.in.h:30
 msgid "F_ree"
 msgstr "Сво_бодни"
 
-#: ../data/preferences.ui.in.h:5
+#: ../data/preferences.ui.in.h:44
 msgid "Harddisk"
 msgstr "Твърд диск"
 
-#: ../data/preferences.ui.in.h:6
+#: ../data/preferences.ui.in.h:24
 msgid "I_OWait"
 msgstr "_В/И изчакване"
 
-#: ../data/preferences.ui.in.h:7
+#: ../data/preferences.ui.in.h:25
 msgid "I_dle"
 msgstr "_Незаети"
 
-#: ../data/preferences.ui.in.h:8
+#: ../data/preferences.ui.in.h:41
 msgid "Load"
 msgstr "Натовареност"
 
-#: ../data/preferences.ui.in.h:9
+#: ../data/preferences.ui.in.h:31
 msgid "Memory"
 msgstr "Памет"
 
-#: ../data/preferences.ui.in.h:10
+#: ../data/preferences.ui.in.h:21
 msgid "Monitored Resources"
 msgstr "Наблюдавани ресурси"
 
-#: ../data/preferences.ui.in.h:11
+#: ../data/preferences.ui.in.h:23
 msgid "N_ice"
 msgstr "Приори_тет"
 
-#: ../data/preferences.ui.in.h:12
+#: ../data/preferences.ui.in.h:36
 msgid "Network"
 msgstr "Мрежа"
 
-#: ../data/preferences.ui.in.h:13
+#: ../data/preferences.ui.in.h:28
 msgid "Options"
 msgstr "Настройки"
 
-#: ../data/preferences.ui.in.h:14
+#: ../data/preferences.ui.in.h:26
 msgid "Processor"
 msgstr "Процесор"
 
-#: ../data/preferences.ui.in.h:15
+#: ../data/preferences.ui.in.h:25
 msgid "S_wap Space"
 msgstr "В_иртуална памет"
 
-#: ../data/preferences.ui.in.h:16
+#: ../data/preferences.ui.in.h:22
 msgid "S_ystem"
 msgstr "_Система"
 
-#: ../data/preferences.ui.in.h:17
+#: ../data/preferences.ui.in.h:27
 msgid "Sh_ared"
 msgstr "_Споделени"
 
-#: ../data/preferences.ui.in.h:18
+#: ../data/preferences.ui.in.h:39
 msgid "Swap Space"
 msgstr "Виртуална памет"
 
-#: ../data/preferences.ui.in.h:19
+#: ../data/preferences.ui.in.h:30
 msgid "Sys_tem monitor update interval: "
 msgstr "П_ериод на обновяване на системния датчик: "
 
-#: ../data/preferences.ui.in.h:20
+#: ../data/preferences.ui.in.h:29
 msgid "System m_onitor width: "
 msgstr "_Широчина на системния датчик: "
 
-#: ../data/preferences.ui.in.h:21
+#: ../data/preferences.ui.in.h:19
 msgid "_About"
 msgstr "_Относно"
 
-#: ../data/preferences.ui.in.h:22
+#: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
-msgstr ""
+msgstr "_Автоматично стартиране: "
 
-#: ../data/preferences.ui.in.h:23
+#: ../data/preferences.ui.in.h:40
 msgid "_Average"
 msgstr "_Средно"
 
-#: ../data/preferences.ui.in.h:24
+#: ../data/preferences.ui.in.h:35
 msgid "_Background"
 msgstr "_Фон"
 
-#: ../data/preferences.ui.in.h:25
+#: ../data/preferences.ui.in.h:28
 msgid "_Buffers"
 msgstr "_Буфери"
 
-#: ../data/preferences.ui.in.h:26
+#: ../data/preferences.ui.in.h:38
 msgid "_Free"
 msgstr "_Свободни"
 
@@ -135,71 +135,71 @@ msgstr "_Свободни"
 msgid "_Harddisk"
 msgstr "_Твърд диск"
 
-#: ../data/preferences.ui.in.h:28
+#: ../data/preferences.ui.in.h:32
 msgid "_In"
 msgstr "_Входящ"
 
-#: ../data/preferences.ui.in.h:29
+#: ../data/preferences.ui.in.h:26
 msgid "_Load"
 msgstr "_Натовареност"
 
-#: ../data/preferences.ui.in.h:30
+#: ../data/preferences.ui.in.h:34
 msgid "_Local"
 msgstr "_Локален"
 
-#: ../data/preferences.ui.in.h:31
+#: ../data/preferences.ui.in.h:23
 msgid "_Memory"
 msgstr "Па_мет"
 
-#: ../data/preferences.ui.in.h:32
+#: ../data/preferences.ui.in.h:24
 msgid "_Network"
 msgstr "Мре_жа"
 
-#: ../data/preferences.ui.in.h:33
+#: ../data/preferences.ui.in.h:17
 msgid "_Open System Monitor"
 msgstr "Отваряне на _системен датчик"
 
-#: ../data/preferences.ui.in.h:34
+#: ../data/preferences.ui.in.h:33
 msgid "_Out"
 msgstr "_Изходящ"
 
-#: ../data/preferences.ui.in.h:35
+#: ../data/preferences.ui.in.h:18
 msgid "_Preferences"
 msgstr "_Настройки"
 
-#: ../data/preferences.ui.in.h:36
+#: ../data/preferences.ui.in.h:22
 msgid "_Processor"
 msgstr "_Процесор"
 
-#: ../data/preferences.ui.in.h:37
+#: ../data/preferences.ui.in.h:20
 msgid "_Quit"
-msgstr ""
+msgstr "_Изход"
 
-#: ../data/preferences.ui.in.h:38
+#: ../data/preferences.ui.in.h:42
 msgid "_Read"
 msgstr "_Четене"
 
-#: ../data/preferences.ui.in.h:39
+#: ../data/preferences.ui.in.h:37
 msgid "_Used"
 msgstr "_Използвани"
 
-#: ../data/preferences.ui.in.h:40
+#: ../data/preferences.ui.in.h:21
 msgid "_User"
 msgstr "Пот_ребител"
 
-#: ../data/preferences.ui.in.h:41
+#: ../data/preferences.ui.in.h:43
 msgid "_Write"
 msgstr "_Писане"
 
-#: ../data/preferences.ui.in.h:42
+#: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
 msgstr "ms"
 
-#: ../data/preferences.ui.in.h:43
+#: ../data/preferences.ui.in.h:31
 msgid "pixels"
 msgstr "пиксела"
 
-#: ../data/preferences.ui.in.h:44
+#: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
 msgstr ""
 "Петър „peshka“ Славов <pslavov@i-space.org>\n"
@@ -212,15 +212,17 @@ msgstr ""
 "Докладвайте за грешки на http://gnome.cult.bg/bugs\n"
 "\n"
 "Launchpad Contributions:\n"
-"  Alexander Shopov https://launchpad.net/~ash-kambanaria"
+"  Alexander Shopov https://launchpad.net/~ash-kambanaria\n"
+"  Atanas Kovachki https://launchpad.net/~zdar\n"
+"  Svetoslav Stefanov https://launchpad.net/~svetlisashkov"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
 msgstr "Време за обновяване на аплета в милисекунди"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:8
 msgid "Automatically start on session startup"
-msgstr ""
+msgstr "Автоматично стартиране при влизане в сесията"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
 msgid "Background color for disk load graph"
@@ -228,7 +230,7 @@ msgstr "Фонов цвят на графиката за натоваренос�
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
 msgid "CPU graph alpha"
-msgstr ""
+msgstr "Прозрачност на CPU диаграмите"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
 msgid "CPU graph background color"
@@ -236,7 +238,7 @@ msgstr "Фонов цвят за графиката на натоваренос�
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
 msgid "Disk load graph alpha"
-msgstr ""
+msgstr "Прозрачност на диаграмите за зареждане на трърдия диск"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
 msgid "Enable CPU load graph"
@@ -270,69 +272,69 @@ msgstr ""
 "За хоризонтални панели — широчината на графиката в пиксели. За вертикални "
 "панели — височината на графиката."
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
 msgid "Graph color for buffer memory"
 msgstr "Цвят на графиката за буферната памет"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
 msgid "Graph color for cached memory"
 msgstr "Цвят на графиката за кеша"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
 msgid "Graph color for disk read"
 msgstr "Цвят на графиката за четенето от диска"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
 msgid "Graph color for disk write"
 msgstr "Цвят на графиката за писането по диска"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
 msgid "Graph color for input network activity"
 msgstr "Цвят на графиката за входящата активност на локалната мрежа"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
 msgid "Graph color for iowait related CPU activity"
 msgstr "Цвят на графиката за изчакванията за вход/изход от процесора"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
 msgid "Graph color for load average"
 msgstr "Цвят на графиката за средна натовареност"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
 msgid "Graph color for loopback network usage"
 msgstr "Цвят на графиката за активността локалната (loopback) мрежа"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
 msgid "Graph color for nice-related CPU activity"
 msgstr "Цвят на графиката за приблизителна активност на процесора"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
 msgid "Graph color for output network activity"
 msgstr "Цвят на графиката за изходящата активност на локалната мрежа"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
 msgid "Graph color for shared memory"
 msgstr "Цвят на графиката за споделената памет"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
 msgid "Graph color for system-related CPU activity"
 msgstr "Цвят на графиката за активността на процесора за системни процеси"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
 msgid "Graph color for user-related CPU activity"
 msgstr "Цвят на графиката за активността процесора за потребителски процеси"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
 msgid "Graph color for user-related memory usage"
 msgstr "Цвят на графиката за паметта използвана от потребителя"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:28
+#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
 msgid "Graph color for user-related swap usage"
 msgstr "Цвят на графиката за виртуалната памет използвана от потребителите"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:29
 msgid "Load graph alpha"
-msgstr ""
+msgstr "Прозрачност на диаграмите за зареждане"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:30
 msgid "Load graph background color"
@@ -340,7 +342,7 @@ msgstr "Фоновият цвят на графиката за натоваре�
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:31
 msgid "Memory graph alpha"
-msgstr ""
+msgstr "Прозрачност на диаграмите за памет"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:32
 msgid "Memory graph background color"
@@ -348,7 +350,7 @@ msgstr "Фоновият цвят на графиката за паметта."
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:33
 msgid "Network graph alpha"
-msgstr ""
+msgstr "Прозрачност на мрежовите диаграми"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:34
 msgid "Network graph background color"
@@ -356,18 +358,18 @@ msgstr "Фоновият цвят на графиката за мрежата."
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:35
 msgid "Swap graph alpha"
-msgstr ""
+msgstr "Прозрачност на swap диаграмите"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:36
 msgid "Swap graph background color"
 msgstr "Фоновият цвят на графиката за виртуалната памет."
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:37
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:7
 msgid "The desktop description file to execute as the system monitor"
 msgstr ""
 "Файлът със записи тип „.desktop“, който да се изпълнява като програма за "
 "наблюдение на системата."
 
-#: ../data/indicator-multiload.desktop.in.h:2
+#: ../data/indicator-multiload.desktop.in.h:1
 msgid "System Load Indicator"
-msgstr ""
+msgstr "Индикатор за зареждане на системата"
