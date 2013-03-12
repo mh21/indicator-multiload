@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-applets master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-05 10:41+0000\n"
+"POT-Creation-Date: 2013-03-11 11:14+0000\n"
 "PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Andrej Žnidaršič <andrej.znidarsic@gmail.com>\n"
 "Language-Team: Slovenščina <gnome-si@googlegroups.com>\n"
@@ -22,8 +22,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || "
 "n%100==4 ? 3 : 0);\n"
-"X-Launchpad-Export-Date: 2013-03-06 06:05+0000\n"
-"X-Generator: Launchpad (build 16514)\n"
+"X-Launchpad-Export-Date: 2013-03-12 05:00+0000\n"
+"X-Generator: Launchpad (build 16524)\n"
 "X-Poedit-Country: SLOVENIA\n"
 "Language: \n"
 "X-Poedit-Language: Slovenian\n"
@@ -401,19 +401,23 @@ msgstr ""
 msgid "%u%%"
 msgstr "%u%%"
 
-#: ../src/main.vala:43
+#: ../src/main.vala:44
 msgid "Output version information and exit"
 msgstr ""
 
-#: ../src/main.vala:45
+#: ../src/main.vala:46
+msgid "System tray icon instead of app indicator"
+msgstr ""
+
+#: ../src/main.vala:48
 msgid "Evaluate an expression"
 msgstr ""
 
-#: ../src/main.vala:340
+#: ../src/main.vala:344
 msgid "- System load application indicator"
 msgstr ""
 
-#: ../src/main.vala:348
+#: ../src/main.vala:352
 #, c-format
 msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"
