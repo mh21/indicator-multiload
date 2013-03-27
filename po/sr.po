@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-02-14 20:17+0000\n"
-"PO-Revision-Date: 2013-03-05 22:28+0000\n"
+"PO-Revision-Date: 2013-03-26 20:18+0000\n"
 "Last-Translator: Марко М. Костић <Unknown>\n"
 "Language-Team: Ubuntu Serbian Translators\n"
 "MIME-Version: 1.0\n"
@@ -18,8 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2013-03-06 06:06+0000\n"
-"X-Generator: Launchpad (build 16514)\n"
+"X-Launchpad-Export-Date: 2013-03-27 05:15+0000\n"
+"X-Generator: Launchpad (build 16540)\n"
 "X-Project-Style: gnome\n"
 "Language: sr\n"
 
@@ -44,7 +44,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:17
 msgid "_Open System Monitor"
-msgstr "_Покрени Праћење система"
+msgstr "_Покрени праћење система"
 
 #: ../data/preferences.ui.in.h:18
 msgid "_Preferences"
@@ -337,7 +337,7 @@ msgstr ""
 msgid "%u%%"
 msgstr ""
 
-#: ../src/main.vala:45
+#: ../src/main.vala:48
 msgid "Evaluate an expression"
 msgstr ""
 
@@ -349,11 +349,11 @@ msgstr ""
 msgid "Show debug messages"
 msgstr ""
 
-#: ../src/main.vala:340
+#: ../src/main.vala:344
 msgid "- System load application indicator"
 msgstr ""
 
-#: ../src/main.vala:348
+#: ../src/main.vala:352
 #, c-format
 msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"
