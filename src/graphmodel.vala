@@ -83,8 +83,8 @@ public class GraphModel : Object {
         if (scalermaximum != 0)
             currentpeak = double.min(currentpeak, scalermaximum);
         if (this.scalerhistory.length == 0) {
-            this.scalerhistory = new double[this.smoothvalue];
-            for (uint i = 0; i < this.smoothvalue; ++i)
+            this.scalerhistory = new double[this.smoothvalue.clamp(1, 128)];
+            for (uint i = 0, isize = this.scalerhistory.length; i < isize; ++i)
                 this.scalerhistory[i] = scalerminimum;
         }
         double historymaximum = Utils.max(this.scalerhistory);

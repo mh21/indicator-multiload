@@ -275,7 +275,7 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                             <property name="can_focus">False</property>
                             <property name="margin_left">12</property>
                             <property name="n_rows">3</property>
-                            <property name="n_columns">2</property>
+                            <property name="n_columns">3</property>
                             <property name="column_spacing">6</property>
                             <property name="row_spacing">6</property>
                             <child>
@@ -351,6 +351,26 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
                               <packing>
                                 <property name="left_attach">1</property>
                                 <property name="right_attach">2</property>
+                                <property name="top_attach">2</property>
+                                <property name="bottom_attach">3</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <placeholder/>
+                            </child>
+                            <child>
+                              <placeholder/>
+                            </child>
+                            <child>
+                              <object class="GtkLabel" id="label3">
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="xalign">0</property>
+                                <property name="label" translatable="yes">pixels</property>
+                              </object>
+                              <packing>
+                                <property name="left_attach">2</property>
+                                <property name="right_attach">3</property>
                                 <property name="top_attach">2</property>
                                 <property name="bottom_attach">3</property>
                               </packing>
@@ -949,14 +969,6 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
         <signal name="activate" handler="main_on_quit_activate" swapped="no"/>
       </object>
     </child>
-  </object>
-  <object class="GtkListStore" id="schemestore">
-    <columns>
-      <!-- column-name label -->
-      <column type="gchararray"/>
-      <!-- column-name id -->
-      <column type="gchararray"/>
-    </columns>
   </object>
   <object class="GtkDialog" id="preferencesdialog">
     <property name="can_focus">False</property>
@@ -2023,6 +2035,25 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
       <action-widget response="0">close</action-widget>
     </action-widgets>
   </object>
+  <object class="GtkSizeGroup" id="advprefsizegroup">
+    <widgets>
+      <widget name="graphenabledlabel"/>
+      <widget name="graphminimumlabel"/>
+      <widget name="graphmaximumlabel"/>
+      <widget name="graphsmoothlabel"/>
+      <widget name="traceenabledlabel"/>
+      <widget name="traceexpressionlabel"/>
+      <widget name="tracecolorlabel"/>
+    </widgets>
+  </object>
+  <object class="GtkListStore" id="schemestore">
+    <columns>
+      <!-- column-name label -->
+      <column type="gchararray"/>
+      <!-- column-name id -->
+      <column type="gchararray"/>
+    </columns>
+  </object>
   <object class="GtkAdjustment" id="speedadjustment">
     <property name="lower">50</property>
     <property name="upper">10000</property>
@@ -2034,16 +2065,5 @@ Davyd Madeley &lt;davyd@madeley.id.au&gt;</property>
     <property name="upper">1000</property>
     <property name="step_increment">5</property>
     <property name="page_increment">50</property>
-  </object>
-  <object class="GtkSizeGroup" id="advprefsizegroup">
-    <widgets>
-      <widget name="graphenabledlabel"/>
-      <widget name="graphminimumlabel"/>
-      <widget name="graphmaximumlabel"/>
-      <widget name="graphsmoothlabel"/>
-      <widget name="traceenabledlabel"/>
-      <widget name="traceexpressionlabel"/>
-      <widget name="tracecolorlabel"/>
-    </widgets>
   </object>
 </interface>
