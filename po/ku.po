@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ku\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-11 11:14+0000\n"
+"POT-Creation-Date: 2013-03-27 19:24+0000\n"
 "PO-Revision-Date: 2013-02-11 19:38+0000\n"
 "Last-Translator: Rêzan Tovjîn <retovjin@hotmail.com>\n"
 "Language-Team: Kurdish <ku@li.org>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-03-12 05:00+0000\n"
-"X-Generator: Launchpad (build 16524)\n"
+"X-Launchpad-Export-Date: 2013-03-28 05:03+0000\n"
+"X-Generator: Launchpad (build 16546)\n"
 "Language: ku\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
@@ -69,89 +69,89 @@ msgid "Smoothing:"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:10
+msgid "pixels"
+msgstr "pîksel"
+
+#: ../data/preferences.ui.in.h:11
 msgid "Trace"
 msgstr ""
 
-#: ../data/preferences.ui.in.h:11
+#: ../data/preferences.ui.in.h:12
 msgid "Expression:"
 msgstr ""
 
-#: ../data/preferences.ui.in.h:12
+#: ../data/preferences.ui.in.h:13
 msgid "Color:"
 msgstr ""
 
-#: ../data/preferences.ui.in.h:13
+#: ../data/preferences.ui.in.h:14
 msgid "Variable"
 msgstr ""
 
 #. TRANSLATORS: This refers to an expression in the domain of programming, see https://en.wikipedia.org/wiki/Expression_%28programming%29
-#: ../data/preferences.ui.in.h:15
+#: ../data/preferences.ui.in.h:16
 msgid "Expression"
 msgstr ""
 
-#: ../data/preferences.ui.in.h:16
+#: ../data/preferences.ui.in.h:17
 msgid "Value"
 msgstr ""
 
-#: ../data/preferences.ui.in.h:17
+#: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
 msgstr "_Temaşekerê Pergalê Veke"
 
-#: ../data/preferences.ui.in.h:18
+#: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
 msgstr "_Vebijêrk"
 
-#: ../data/preferences.ui.in.h:19
+#: ../data/preferences.ui.in.h:20
 msgid "_About"
 msgstr "_Der barê de"
 
-#: ../data/preferences.ui.in.h:20
+#: ../data/preferences.ui.in.h:21
 msgid "_Quit"
 msgstr ""
 
-#: ../data/preferences.ui.in.h:21
+#: ../data/preferences.ui.in.h:22
 msgid "Monitored Resources"
 msgstr "Çavkaniyên Xwerû yên Têne Şopandin."
 
-#: ../data/preferences.ui.in.h:22
+#: ../data/preferences.ui.in.h:23
 msgid "_Processor"
 msgstr "_Kirar"
 
-#: ../data/preferences.ui.in.h:23
+#: ../data/preferences.ui.in.h:24
 msgid "_Memory"
 msgstr "_Bîr"
 
-#: ../data/preferences.ui.in.h:24
+#: ../data/preferences.ui.in.h:25
 msgid "_Network"
 msgstr "_Tor"
 
-#: ../data/preferences.ui.in.h:25
+#: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
 msgstr "Cihê _Swap"
 
-#: ../data/preferences.ui.in.h:26
+#: ../data/preferences.ui.in.h:27
 msgid "_Load"
 msgstr "_Bar bike"
 
-#: ../data/preferences.ui.in.h:27
+#: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
 msgstr "_Dîska sabît"
 
-#: ../data/preferences.ui.in.h:28
+#: ../data/preferences.ui.in.h:29
 msgid "Options"
 msgstr "Vebijêrk"
 
-#: ../data/preferences.ui.in.h:29
+#: ../data/preferences.ui.in.h:30
 msgid "System m_onitor width: "
 msgstr "Firehbûna_temaşekerê pergalê: "
 
-#: ../data/preferences.ui.in.h:30
+#: ../data/preferences.ui.in.h:31
 msgid "Sys_tem monitor update interval: "
 msgstr "Timîkiya rojanekirina_ temaşekerê pergalê: "
-
-#: ../data/preferences.ui.in.h:31
-msgid "pixels"
-msgstr "pîksel"
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-11 11:14+0000\n"
+"POT-Creation-Date: 2013-03-27 19:24+0000\n"
 "PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Dawa pemo <daws_403@hotmail.com>\n"
 "Language-Team: DZONGKHA <pgeyleg@dit.gov.bt>\n"
@@ -14,8 +14,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2013-03-12 04:59+0000\n"
-"X-Generator: Launchpad (build 16524)\n"
+"X-Launchpad-Export-Date: 2013-03-28 05:03+0000\n"
+"X-Generator: Launchpad (build 16546)\n"
 "X-Poedit-Country: BHUTAN\n"
 "Language: \n"
 "X-Poedit-Language: Dzongkha\n"
@@ -69,89 +69,89 @@ msgid "Smoothing:"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:10
+msgid "pixels"
+msgstr "པིག་སེལསི།"
+
+#: ../data/preferences.ui.in.h:11
 msgid "Trace"
 msgstr ""
 
-#: ../data/preferences.ui.in.h:11
+#: ../data/preferences.ui.in.h:12
 msgid "Expression:"
 msgstr ""
 
-#: ../data/preferences.ui.in.h:12
+#: ../data/preferences.ui.in.h:13
 msgid "Color:"
 msgstr ""
 
-#: ../data/preferences.ui.in.h:13
+#: ../data/preferences.ui.in.h:14
 msgid "Variable"
 msgstr ""
 
 #. TRANSLATORS: This refers to an expression in the domain of programming, see https://en.wikipedia.org/wiki/Expression_%28programming%29
-#: ../data/preferences.ui.in.h:15
+#: ../data/preferences.ui.in.h:16
 msgid "Expression"
 msgstr ""
 
-#: ../data/preferences.ui.in.h:16
+#: ../data/preferences.ui.in.h:17
 msgid "Value"
 msgstr ""
 
-#: ../data/preferences.ui.in.h:17
+#: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
 msgstr "རིམ་ལུགས་ལྟ་རྟོག་པ་ཁ་ཕྱེ།(_O)"
 
-#: ../data/preferences.ui.in.h:18
+#: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
 msgstr "དགའ་གདམ་ཚུ།\"(_P)"
 
-#: ../data/preferences.ui.in.h:19
+#: ../data/preferences.ui.in.h:20
 msgid "_About"
 msgstr "སྐོར་ལས།(_A)"
 
-#: ../data/preferences.ui.in.h:20
+#: ../data/preferences.ui.in.h:21
 msgid "_Quit"
 msgstr ""
 
-#: ../data/preferences.ui.in.h:21
+#: ../data/preferences.ui.in.h:22
 msgid "Monitored Resources"
 msgstr "ལྟ་རྟོག་འབད་ཡོད་པའི་ཐོན་ཁུངས།"
 
-#: ../data/preferences.ui.in.h:22
+#: ../data/preferences.ui.in.h:23
 msgid "_Processor"
 msgstr "ལས་སྦྱོར་འཕྲུལ་ཆས།(_P)"
 
-#: ../data/preferences.ui.in.h:23
+#: ../data/preferences.ui.in.h:24
 msgid "_Memory"
 msgstr "དྲན་ཚད།(_M)"
 
-#: ../data/preferences.ui.in.h:24
+#: ../data/preferences.ui.in.h:25
 msgid "_Network"
 msgstr "ཡོངས་འབྲེལ།(_N)"
 
-#: ../data/preferences.ui.in.h:25
+#: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
 msgstr "བརྗེ་སོར་བར་སྟོང་།(_w)"
 
-#: ../data/preferences.ui.in.h:26
+#: ../data/preferences.ui.in.h:27
 msgid "_Load"
 msgstr "ལྗིད་ཚད།(_L)"
 
-#: ../data/preferences.ui.in.h:27
+#: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
 msgstr "ཧརཌི་ཌིཀསི།(_H)"
 
-#: ../data/preferences.ui.in.h:28
+#: ../data/preferences.ui.in.h:29
 msgid "Options"
 msgstr "གདམ་ཁ་ཚུ།"
 
-#: ../data/preferences.ui.in.h:29
+#: ../data/preferences.ui.in.h:30
 msgid "System m_onitor width: "
 msgstr "རིམ་ལུགས་གསལ་གཞིའི་གློག་འཕྲུལ་གྱི་རྒྱ་ཚད།(_o) "
 
-#: ../data/preferences.ui.in.h:30
+#: ../data/preferences.ui.in.h:31
 msgid "Sys_tem monitor update interval: "
 msgstr "རིམ་ལུགས་ལྟ་རྟོག་པ དུས་མཐུན་བཟོ་བའི་བར་མཚམས།(_t) "
-
-#: ../data/preferences.ui.in.h:31
-msgid "pixels"
-msgstr "པིག་སེལསི།"
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
