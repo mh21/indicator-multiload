@@ -18,7 +18,7 @@
 
 public class LoadProvider : Provider {
     public LoadProvider() {
-        base("load", {"avg", "cpus"}, 'd');
+        base("load", {"avg", "avg5", "avg15", "cpus"}, 'd');
     }
 
     public override void update() {
@@ -26,7 +26,9 @@ public class LoadProvider : Provider {
         GTop.get_loadavg(out loadavg);
 
         this.values[0] = loadavg.loadavg[0];
-        this.values[1] = GTop.global_server->ncpu + 1;
+        this.values[1] = loadavg.loadavg[1];
+        this.values[2] = loadavg.loadavg[2];
+        this.values[3] = GTop.global_server->ncpu + 1;
     }
 }
 
