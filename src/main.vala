@@ -105,6 +105,10 @@ public class Main : Application {
             if (Environment.get_variable("XDG_CURRENT_DESKTOP") == "KDE" ||
                 Environment.get_variable("DESKTOP_SESSION") == "kde-plasma") {
                 sysmon = "kde4-ksysguard.desktop";
+            } else if (Environment.get_variable("XDG_CURRENT_DESKTOP") == "XFCE" ||
+                Environment.get_variable("DESKTOP_SESSION") == "xfce" ||
+                Environment.get_variable("DESKTOP_SESSION") == "xubuntu") {
+                sysmon = "xfce4-taskmanager.desktop";
             } else {
                 sysmon = "gnome-system-monitor.desktop";
             }
