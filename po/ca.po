@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-24 09:40+0000\n"
+"POT-Creation-Date: 2013-04-25 07:45+0000\n"
 "PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Joan Duran <jodufi@gmail.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-04-25 05:42+0000\n"
+"X-Launchpad-Export-Date: 2013-04-26 05:48+0000\n"
 "X-Generator: Launchpad (build 16580)\n"
 "Language: ca\n"
 
@@ -409,11 +409,11 @@ msgstr ""
 msgid "Evaluate an expression"
 msgstr ""
 
-#: ../src/main.vala:344
+#: ../src/main.vala:348
 msgid "- System load application indicator"
 msgstr ""
 
-#: ../src/main.vala:352
+#: ../src/main.vala:356
 #, c-format
 msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"
