@@ -109,6 +109,9 @@ public class Main : Application {
                 Environment.get_variable("DESKTOP_SESSION") == "xfce" ||
                 Environment.get_variable("DESKTOP_SESSION") == "xubuntu") {
                 sysmon = "xfce4-taskmanager.desktop";
+            } else if (Environment.get_variable("XDG_CURRENT_DESKTOP") == "LXDE" ||
+                Environment.get_variable("DESKTOP_SESSION") == "Lubuntu") {
+                sysmon = "lxtask.desktop";
             } else {
                 sysmon = "gnome-system-monitor.desktop";
             }
