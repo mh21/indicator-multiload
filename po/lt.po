@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-applets.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-25 07:45+0000\n"
+"POT-Creation-Date: 2013-04-29 08:06+0000\n"
 "PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Žygimantas Beručka <zygis@gnome.org>\n"
 "Language-Team: Lithuanian <gnome-lt@lists.akl.lt>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "(n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2013-04-26 05:48+0000\n"
+"X-Launchpad-Export-Date: 2013-04-30 05:49+0000\n"
 "X-Generator: Launchpad (build 16580)\n"
 "Language: lt\n"
 
@@ -416,11 +416,11 @@ msgstr ""
 msgid "Evaluate an expression"
 msgstr "Apskaičiuoti reiškinį"
 
-#: ../src/main.vala:348
+#: ../src/main.vala:351
 msgid "- System load application indicator"
 msgstr "– sistemos apkrovos programos indikatorius"
 
-#: ../src/main.vala:356
+#: ../src/main.vala:359
 #, c-format
 msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"
