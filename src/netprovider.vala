@@ -19,23 +19,44 @@
 public class NetProvider : Provider {
     private uint64[] lastdata;
     private uint64 lasttime;
+    private string[] devicefields;
+
+    private static string[] fields(out string[] devices) {
+        GTop.init();
+
+        GTop.NetList netlist;
+        devices = GTop.get_netlist(out netlist);
+
+        string[] result = new string[3 + 2 * netlist.number];
+        result[0] = "down";
+        result[1] = "up";
+        result[2] = "local";
+        for (uint j = 0; j < netlist.number; ++j) {
+            var device = devices[j];
+            result[3 + 2 * j] = @"$device.down";
+            result[3 + 2 * j + 1] = @"$device.up";
+        }
+        return result;
+    }
 
     public NetProvider() {
-        base("net", {"down", "up", "local"}, 's');
+        string[] devices;
+        base("net", fields(out devices), 's');
+        this.devicefields = devices;
     }
 
     public override void update() {
-        uint64[] newdata = new uint64[3];
+        uint64[] newdata = new uint64[keys.length];
         uint64 newtime = get_monotonic_time();
 
-        string[] devices;
         GTop.NetList netlist;
-        devices = GTop.get_netlist(out netlist);
+        string[] devices = GTop.get_netlist(out netlist);
         debug("Netlist: %u entries", netlist.number);
         for (uint i = 0; i < netlist.number; ++i) {
+            var device = devices[i];
             GTop.NetLoad netload;
-            GTop.get_netload(out netload, devices[i]);
-            debug("Netload: " + devices[i]);
+            GTop.get_netload(out netload, device);
+            debug("Netload: " + device);
             debug("  flags: %x", (uint32)netload.flags);
             debug("  if flags: %x", (uint32)netload.if_flags);
             debug("  mtu: " + netload.mtu.to_string());
@@ -55,7 +76,7 @@ public class NetProvider : Provider {
                 ((netload.if_flags & (1L << GTop.IFFlags.RUNNING)) == 0)) {
                 // TODO: transient high differences when shut down
                 debug("  down or not running");
-            } else if (FileUtils.test("/sys/class/net/%s/device".printf(devices[i]), FileTest.EXISTS)) {
+            } else if (FileUtils.test("/sys/class/net/%s/device".printf(device), FileTest.EXISTS)) {
                 newdata[0] += netload.bytes_in;
                 newdata[1] += netload.bytes_out;
                 debug("  existing device link");
@@ -68,6 +89,13 @@ public class NetProvider : Provider {
                 debug("  loopback");
             } else {
                 debug("  unknown");
+            }
+            for (uint j = 0, isize = devicefields.length; j < isize; ++j) {
+                if (devicefields[j] == device) {
+                    newdata[3 + j * 2] = netload.bytes_in;
+                    newdata[3 + j * 2 + 1] = netload.bytes_out;
+                    break;
+                }
             }
         }
 

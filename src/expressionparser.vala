@@ -319,7 +319,7 @@ internal class ExpressionEvaluator {
                 return "-" + token;
             return token;
         }
-        var varparts = token.split(".");
+        var varparts = token.split(".", 2);
         var nameindex = this.index;
         ++this.index;
         switch (varparts.length) {
@@ -344,6 +344,7 @@ internal class ExpressionEvaluator {
                 throw error(nameindex, "unknown variable");
             return result;
         default:
+            // not reached
             throw error(nameindex, "too many identifier parts");
         }
     }

@@ -36,7 +36,7 @@ public class Providers : Object {
     // TODO: use exceptions
     public double value(string name, out bool found)
     {
-        var varparts = name.split(".");
+        var varparts = name.split(".", 2);
         return_val_if_fail(varparts.length == 2, 0);
 
         found = true;

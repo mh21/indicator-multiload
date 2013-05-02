@@ -28,7 +28,7 @@ public class CpuProvider : Provider {
             var template = templates[j];
             result[j] = template;
             for (uint i = 0, isize = GTop.global_server->ncpu + 1; i < isize; ++i)
-                result[(i + 1) * 6 + j] = @"$template$i";
+                result[(i + 1) * 6 + j] = @"cpu$i.$template";
         }
         return result;
     }
