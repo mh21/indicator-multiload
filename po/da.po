@@ -25,7 +25,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-29 08:06+0000\n"
+"POT-Creation-Date: 2013-05-02 12:43+0000\n"
 "PO-Revision-Date: 2013-02-11 19:35+0000\n"
 "Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -33,8 +33,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-04-30 05:48+0000\n"
-"X-Generator: Launchpad (build 16580)\n"
+"X-Launchpad-Export-Date: 2013-05-03 05:23+0000\n"
+"X-Generator: Launchpad (build 16598)\n"
 "Language: da\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
@@ -175,7 +175,7 @@ msgstr "Grafbredde: "
 
 #: ../data/preferences.ui.in.h:31
 msgid "Sys_tem monitor update interval: "
-msgstr "Sys_temovervågningsinterval: "
+msgstr "Opdateringsinterval for sys_temovervågning: "
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
