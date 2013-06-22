@@ -12,15 +12,15 @@ msgstr ""
 "Project-Id-Version: gnome-applets master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-05-02 12:43+0000\n"
-"PO-Revision-Date: 2013-02-11 11:20+0000\n"
-"Last-Translator: Eleanor Chen <chenyueg@gmail.com>\n"
+"PO-Revision-Date: 2013-06-21 16:31+0000\n"
+"Last-Translator: Xiaoxing Ye <Unknown>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2013-05-03 05:24+0000\n"
-"X-Generator: Launchpad (build 16598)\n"
+"X-Launchpad-Export-Date: 2013-06-22 05:56+0000\n"
+"X-Generator: Launchpad (build 16677)\n"
 "Language: zh_CN\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
@@ -38,7 +38,8 @@ msgstr ""
 "Launchpad Contributions:\n"
 "  Eleanor Chen https://launchpad.net/~chenyueg\n"
 "  Michael Hofmann https://launchpad.net/~mh21\n"
-"  Wang Dianjin https://launchpad.net/~tuhaihe"
+"  Wang Dianjin https://launchpad.net/~tuhaihe\n"
+"  Xiaoxing Ye https://launchpad.net/~xiaoxing"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -289,10 +290,13 @@ msgid ""
 "$(decimals(load.avg,2)) Disk read $(speed(disk.read)) write "
 "$(speed(disk.write))\" ]"
 msgstr ""
+"[ \"CPU $(percent(cpu.inuse)) 内存 $(size(mem.user)) 网络 下行 $(speed(net.down)) "
+"上行 $(speed(net.up)) 交换分区 $(size(swap.used)) 负载 $(decimals(load.avg,2)) 硬盘 读取 "
+"$(speed(disk.read)) 写入 $(speed(disk.write))\" ]"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:11
 msgid "Information in the accessible description of the indicator"
-msgstr ""
+msgstr "指示器的描述信息"
 
 #. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, and commas.
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:13
@@ -320,6 +324,11 @@ msgid ""
 "\"Load: $(decimals(load.avg,2))\", \"Disk: read $(speed(disk.read)), write "
 "$(speed(disk.write))\" ]"
 msgstr ""
+"[ \"CPU: $(percent(cpu.inuse)), iowait $(percent(cpu.io))\", \"内存: "
+"$(size(mem.user)), 缓存 $(size(mem.cached))\", \"网络: 下行 $(speed(net.down)), 上行 "
+"$(speed(net.up))\", \"交换分区: $(size(swap.used))\", \"负载: "
+"$(decimals(load.avg,2))\", \"硬盘: 读取 $(speed(disk.read)), 写入 "
+"$(speed(disk.write))\" ]"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:18
 msgid "Information shown as menu entries"
@@ -343,7 +352,7 @@ msgstr "平滑图像尺寸数值"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:23
 msgid "Available traces"
-msgstr ""
+msgstr "可用的追踪"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:24
 msgid "Trace color"
@@ -400,7 +409,7 @@ msgstr ""
 
 #: ../src/main.vala:48
 msgid "Evaluate an expression"
-msgstr ""
+msgstr "评估表达式"
 
 #: ../src/main.vala:351
 msgid "- System load application indicator"
