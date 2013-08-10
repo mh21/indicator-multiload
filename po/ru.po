@@ -17,16 +17,16 @@ msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-05-02 12:43+0000\n"
-"PO-Revision-Date: 2013-02-11 19:38+0000\n"
-"Last-Translator: Yuri Myasoedov <omerta13@yandex.ru>\n"
+"PO-Revision-Date: 2013-08-09 18:42+0000\n"
+"Last-Translator: Alexander Gorishnyak <kefir500@gmail.com>\n"
 "Language-Team: Russian <gnome-cyr@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2013-05-03 05:24+0000\n"
-"X-Generator: Launchpad (build 16598)\n"
+"X-Launchpad-Export-Date: 2013-08-10 05:17+0000\n"
+"X-Generator: Launchpad (build 16723)\n"
 "Language: ru\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
@@ -49,6 +49,7 @@ msgstr ""
 "Леонид Кантер <leon@asplinux.ru>\n"
 "\n"
 "Launchpad Contributions:\n"
+"  Alexander Gorishnyak https://launchpad.net/~kefir500\n"
 "  Eugene Marshal https://launchpad.net/~lowrider\n"
 "  Michael Hofmann https://launchpad.net/~mh21\n"
 "  Vassili Platonov https://launchpad.net/~vassilip\n"
@@ -73,15 +74,15 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:7
 msgid "Minimum:"
-msgstr ""
+msgstr "Минимум:"
 
 #: ../data/preferences.ui.in.h:8
 msgid "Maximum:"
-msgstr ""
+msgstr "Максимум:"
 
 #: ../data/preferences.ui.in.h:9
 msgid "Smoothing:"
-msgstr ""
+msgstr "Сглаживание:"
 
 #: ../data/preferences.ui.in.h:10
 msgid "pixels"
@@ -93,11 +94,11 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:12
 msgid "Expression:"
-msgstr ""
+msgstr "Выражение:"
 
 #: ../data/preferences.ui.in.h:13
 msgid "Color:"
-msgstr ""
+msgstr "Цвет:"
 
 #: ../data/preferences.ui.in.h:14
 msgid "Variable"
@@ -566,14 +567,8 @@ msgstr[1] ""
 #~ msgid "_Free"
 #~ msgstr "Сво_бодно"
 
-#~ msgid "_In"
-#~ msgstr "_Исходящий"
-
 #~ msgid "_Local"
 #~ msgstr "_Внутренний"
-
-#~ msgid "_Out"
-#~ msgstr "_Входящий"
 
 #~ msgid "_Read"
 #~ msgstr "_Чтение"
@@ -592,3 +587,9 @@ msgstr[1] ""
 
 #~ msgid "_Write"
 #~ msgstr "Запис_ь"
+
+#~ msgid "_Out"
+#~ msgstr "_Исходящий"
+
+#~ msgid "_In"
+#~ msgstr "_Входящий"
