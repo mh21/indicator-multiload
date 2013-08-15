@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-02-14 20:17+0000\n"
-"PO-Revision-Date: 2013-02-28 11:56+0000\n"
+"PO-Revision-Date: 2013-08-15 01:54+0000\n"
 "Last-Translator: Ibrahim Saed <ibraheem5000@gmail.com>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
 "MIME-Version: 1.0\n"
@@ -23,8 +23,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n % 100 >= "
 "3 && n % 100 <= 10 ? 3 : n % 100 >= 11 && n % 100 <= 99 ? 4 : 5;\n"
-"X-Launchpad-Export-Date: 2013-03-01 05:14+0000\n"
-"X-Generator: Launchpad (build 16514)\n"
+"X-Launchpad-Export-Date: 2013-08-15 05:42+0000\n"
+"X-Generator: Launchpad (build 16723)\n"
 "Language: ar\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
@@ -49,75 +49,75 @@ msgstr ""
 "  Khaled Hosny https://launchpad.net/~khaledhosny\n"
 "  slmb https://launchpad.net/~fqa101"
 
-#: ../data/preferences.ui.in.h:7
+#: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
 msgstr "ا_فتح مرقاب النظام"
 
-#: ../data/preferences.ui.in.h:8
+#: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
 msgstr "الت_فضيلات"
 
-#: ../data/preferences.ui.in.h:9
+#: ../data/preferences.ui.in.h:20
 msgid "_About"
 msgstr "_عنْ"
 
-#: ../data/preferences.ui.in.h:10
+#: ../data/preferences.ui.in.h:21
 msgid "_Quit"
 msgstr "ا_خرج"
 
-#: ../data/preferences.ui.in.h:11
+#: ../data/preferences.ui.in.h:22
 msgid "Monitored Resources"
 msgstr "الموارد المراقَبة"
 
-#: ../data/preferences.ui.in.h:12
+#: ../data/preferences.ui.in.h:23
 msgid "_Processor"
 msgstr "الم_عالج"
 
-#: ../data/preferences.ui.in.h:13
+#: ../data/preferences.ui.in.h:24
 msgid "_Memory"
 msgstr "ال_ذاكرة"
 
-#: ../data/preferences.ui.in.h:14
+#: ../data/preferences.ui.in.h:25
 msgid "_Network"
 msgstr "ال_شبكة"
 
-#: ../data/preferences.ui.in.h:15
+#: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
 msgstr "مساحة الإ_بدال"
 
-#: ../data/preferences.ui.in.h:16
+#: ../data/preferences.ui.in.h:27
 msgid "_Load"
 msgstr "ال_حِمْل"
 
-#: ../data/preferences.ui.in.h:17
+#: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
 msgstr "القرص ال_صلب"
 
-#: ../data/preferences.ui.in.h:18
+#: ../data/preferences.ui.in.h:29
 msgid "Options"
 msgstr "الخيارات"
 
-#: ../data/preferences.ui.in.h:19
+#: ../data/preferences.ui.in.h:30
 msgid "System m_onitor width: "
 msgstr "عرض مرا_قب النظام: "
 
-#: ../data/preferences.ui.in.h:20
+#: ../data/preferences.ui.in.h:31
 msgid "Sys_tem monitor update interval: "
 msgstr "مدة تحديث مرقاب ال_نظام: "
 
-#: ../data/preferences.ui.in.h:21
+#: ../data/preferences.ui.in.h:10
 msgid "pixels"
 msgstr "بكسل"
 
-#: ../data/preferences.ui.in.h:22
+#: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
 msgstr "ملي ثانية"
 
-#: ../data/preferences.ui.in.h:23
+#: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
 msgstr "تشغيل _تلقائي: "
 
-#: ../data/preferences.ui.in.h:24
+#: ../data/preferences.ui.in.h:34
 msgid "Colors"
 msgstr "الألوان"
 
@@ -217,7 +217,7 @@ msgstr "_كتابة"
 msgid "Harddisk"
 msgstr "القرص الصلب"
 
-#: ../data/preferences.ui.in.h:43
+#: ../data/preferences.ui.in.h:54
 msgid "Menu items..."
 msgstr "عناصر القائمة..."
 
@@ -264,7 +264,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:14
 msgid "Information shown in the indicator itself"
-msgstr ""
+msgstr "المعلومات المعروضة في المؤشر نفسه"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:15
 msgid "Index of the current information shown in the indicator itself"
@@ -287,11 +287,11 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:18
 msgid "Information shown as menu entries"
-msgstr ""
+msgstr "المعلومات المعروضة كمدخلات القائمة"
 
 #: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
 msgid "Graph alpha value"
-msgstr ""
+msgstr "قيمة الرسم البياني ألفا"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:5
 msgid "Graph background color"
@@ -299,19 +299,19 @@ msgstr "لون الخلفية للرسم البياني"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:19
 msgid "Graph visibility"
-msgstr ""
+msgstr "وضوح رؤية الرسم البياني"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:20
 msgid "Minimum value for upper graph edge"
-msgstr ""
+msgstr "أصغر قيمة لحافة الرسم البياني العلوي"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:21
 msgid "Maximum value for upper graph edge, zero means unlimited"
-msgstr ""
+msgstr "أكبر قيمة لحافة الرسم البياني العلوي (صفر يعني غير محدود)"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:22
 msgid "Number of values used for smooth graph scaling"
-msgstr ""
+msgstr "عدد القيم المستخدمة لتدريج الرسم البياني"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:23
 msgid "Available traces"
@@ -337,12 +337,12 @@ msgstr ""
 msgid "System Load Indicator"
 msgstr "مؤشر تحميلات النظام"
 
-#: ../src/function.vala:88
+#: ../src/function.vala:103
 #, c-format
 msgid "%u%%"
 msgstr "%u%%"
 
-#: ../src/main.vala:42
+#: ../src/main.vala:48
 msgid "Evaluate an expression"
 msgstr ""
 
@@ -354,11 +354,11 @@ msgstr ""
 msgid "Show debug messages"
 msgstr "عرض رسائل التنقيح"
 
-#: ../src/main.vala:332
+#: ../src/main.vala:351
 msgid "- System load application indicator"
 msgstr ""
 
-#: ../src/main.vala:340
+#: ../src/main.vala:359
 #, c-format
 msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"
