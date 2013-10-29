@@ -17,15 +17,15 @@ msgstr ""
 "Project-Id-Version: gnome-applets master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-02-14 20:17+0000\n"
-"PO-Revision-Date: 2013-02-17 12:04+0000\n"
-"Last-Translator: Dennis Baudys <Unknown>\n"
+"PO-Revision-Date: 2013-10-28 20:14+0000\n"
+"Last-Translator: Tobias B. <Unknown>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-18 05:05+0000\n"
-"X-Generator: Launchpad (build 16491)\n"
+"X-Launchpad-Export-Date: 2013-10-29 05:08+0000\n"
+"X-Generator: Launchpad (build 16818)\n"
 "Language: \n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
@@ -54,83 +54,84 @@ msgstr ""
 "Launchpad Contributions:\n"
 "  Daniel Winzen https://launchpad.net/~q-d\n"
 "  Dennis Baudys https://launchpad.net/~thecondordb\n"
-"  Flames_in_Paradise https://launchpad.net/~ellisistfroh\n"
+"  Flames_in_Paradise https://launchpad.net/~ellisistfroh-deactivatedaccount\n"
 "  Ghenrik https://launchpad.net/~ghenrik-deactivatedaccount\n"
 "  Mario Blättermann https://launchpad.net/~mario.blaettermann\n"
 "  Michael Hofmann https://launchpad.net/~mh21\n"
 "  Sascha https://launchpad.net/~skbierm-deactivatedaccount\n"
+"  Tobias B. https://launchpad.net/~toba\n"
 "  d-snake https://launchpad.net/~dsnake\n"
 "  thomas https://launchpad.net/~thomas-heuer"
 
-#: ../data/preferences.ui.in.h:3
+#: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
-msgstr "Systemmonitor ö_ffnen"
+msgstr "Systemüberwachung ö_ffnen"
 
-#: ../data/preferences.ui.in.h:4
+#: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
 msgstr "_Einstellungen"
 
-#: ../data/preferences.ui.in.h:5
+#: ../data/preferences.ui.in.h:20
 msgid "_About"
 msgstr "_Info"
 
-#: ../data/preferences.ui.in.h:6
+#: ../data/preferences.ui.in.h:21
 msgid "_Quit"
 msgstr "_Beenden"
 
-#: ../data/preferences.ui.in.h:7
+#: ../data/preferences.ui.in.h:22
 msgid "Monitored Resources"
 msgstr "Überwachte Ressourcen"
 
-#: ../data/preferences.ui.in.h:8
+#: ../data/preferences.ui.in.h:23
 msgid "_Processor"
 msgstr "_Prozessor"
 
-#: ../data/preferences.ui.in.h:9
+#: ../data/preferences.ui.in.h:24
 msgid "_Memory"
 msgstr "_Speicher"
 
-#: ../data/preferences.ui.in.h:10
+#: ../data/preferences.ui.in.h:25
 msgid "_Network"
 msgstr "_Netzwerk"
 
-#: ../data/preferences.ui.in.h:11
+#: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
 msgstr "_Auslagerungsspeicher"
 
-#: ../data/preferences.ui.in.h:12
+#: ../data/preferences.ui.in.h:27
 msgid "_Load"
 msgstr "_Last"
 
-#: ../data/preferences.ui.in.h:13
+#: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
 msgstr "_Festplatte"
 
-#: ../data/preferences.ui.in.h:14
+#: ../data/preferences.ui.in.h:29
 msgid "Options"
 msgstr "Einstellungen"
 
-#: ../data/preferences.ui.in.h:15
+#: ../data/preferences.ui.in.h:30
 msgid "System m_onitor width: "
-msgstr "B_reite des Systemmonitors: "
+msgstr "B_reite der Systemüberwachung: "
 
-#: ../data/preferences.ui.in.h:16
+#: ../data/preferences.ui.in.h:31
 msgid "Sys_tem monitor update interval: "
-msgstr "_Aktualisierungsintervall des Systemmonitors: "
+msgstr "Aktualisierungs_intervall der Systemüberwachung: "
 
-#: ../data/preferences.ui.in.h:17
+#: ../data/preferences.ui.in.h:10
 msgid "pixels"
 msgstr "Pixel"
 
-#: ../data/preferences.ui.in.h:18
+#: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
 msgstr "Millisekunden"
 
-#: ../data/preferences.ui.in.h:19
+#: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
-msgstr "_Autostart "
+msgstr "Au_tomatisch starten: "
 
-#: ../data/preferences.ui.in.h:20
+#: ../data/preferences.ui.in.h:34
 msgid "Colors"
 msgstr "Farben"
 
@@ -148,7 +149,7 @@ msgstr "P_riorität"
 
 #: ../data/preferences.ui.in.h:24
 msgid "I_OWait"
-msgstr "E_AWarten"
+msgstr "E_/A abwartend"
 
 #: ../data/preferences.ui.in.h:25
 msgid "I_dle"
@@ -230,57 +231,61 @@ msgstr "_Schreiben"
 msgid "Harddisk"
 msgstr "Festplatte"
 
-#: ../data/preferences.ui.in.h:45
+#: ../data/preferences.ui.in.h:54
 msgid "Menu items..."
-msgstr "Menüobjekte ..."
+msgstr "Menüelemente …"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:1
 msgid "Available graphs"
 msgstr "Verfügbare Graphen"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
 msgstr "Aktualisierungsintervall des Applets in Millisekunden"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:3
 msgid "Width of the graphs in pixels."
 msgstr "Breite der Graphen in Pixel"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:4
 msgid "Height of the graphs in pixels."
 msgstr "Höhe der Graphen in Pixel"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:7
 msgid "The desktop description file to execute as the system monitor"
 msgstr "Die beim Anklicken zu startende .desktop-Datei"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:8
 msgid "Automatically start on session startup"
 msgstr "Automatisch beim Hochfahren starten"
 
 #. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, and commas.
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:10
 msgid ""
 "[ \"CPU $(percent(cpu.inuse)) Mem $(size(mem.user)) Net down "
 "$(speed(net.down)) up $(speed(net.up)) Swap $(size(swap.used)) Load "
 "$(decimals(load.avg,2)) Disk read $(speed(disk.read)) write "
 "$(speed(disk.write))\" ]"
 msgstr ""
+"[ \"CPU $(percent(cpu.inuse)) Speicher $(size(mem.user)) Netzwerk ↓ "
+"$(speed(net.down)) ↑ $(speed(net.up)) Ausgelagert $(size(swap.used)) Last "
+"$(decimals(load.avg,2)) Platte $(speed(disk.read)) Lesen "
+"$(speed(disk.write)) Schreiben\" ]"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:11
 msgid "Information in the accessible description of the indicator"
-msgstr "Informationen in der aufrufbaren Beschreibung des Indikators"
+msgstr "Informationen in der aufrufbaren Beschreibung des Anzeigers"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:14
 msgid "Information shown in the indicator itself"
-msgstr "Informationen im Indikator selbst"
+msgstr "Informationen im Anzeiger selbst"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:15
 msgid "Index of the current information shown in the indicator itself"
-msgstr "Übersicht der aktuellen Informationen im Indikator selbst"
+msgstr "Übersicht der aktuellen Informationen im Anzeiger selbst"
 
 #. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, and commas.
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:17
 msgid ""
 "[ \"CPU: $(percent(cpu.inuse)), iowait $(percent(cpu.io))\", \"Mem: "
 "$(size(mem.user)), cache $(size(mem.cached))\", \"Net: down "
@@ -288,13 +293,13 @@ msgid ""
 "\"Load: $(decimals(load.avg,2))\", \"Disk: read $(speed(disk.read)), write "
 "$(speed(disk.write))\" ]"
 msgstr ""
-"[ \"CPU: $(percent(cpu.inuse)), warten $(percent(cpu.io))\", \"Speicher: "
-"$(size(mem.user)), Cache $(size(mem.cached))\", \"Netwerk: down "
-"$(speed(net.down)), up $(speed(net.up))\", \"Swap: $(size(swap.used))\", "
-"\"Last: $(decimals(load.avg,2))\", \"Festplatte: lesen $(speed(disk.read)), "
-"schreiben $(speed(disk.write))\" ]"
+"[ \"CPU: $(percent(cpu.inuse)) Auslastung, $(percent(cpu.io)) E/A "
+"abwartend\", \"Speicher: $(size(mem.user)), Cache $(size(mem.cached))\", "
+"\"Netzwerk: ↓ $(speed(net.down)), ↑ $(speed(net.up))\", \"Ausgelagert: "
+"$(size(swap.used))\", \"Last: $(decimals(load.avg,2))\", \"Platte: "
+"$(speed(disk.read)) Lesen, $(speed(disk.write)) Schreiben\" ]"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:18
 msgid "Information shown as menu entries"
 msgstr "Informationen in Form von Menüeinträgen"
 
@@ -302,45 +307,43 @@ msgstr "Informationen in Form von Menüeinträgen"
 msgid "Graph alpha value"
 msgstr "Graph Alphawert"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:5
 msgid "Graph background color"
-msgstr "Graph Hintergrundfarbe"
+msgstr "Graph-Hintergrundfarbe"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:19
 msgid "Graph visibility"
 msgstr "Graph Sichtbarkeit"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:20
 msgid "Minimum value for upper graph edge"
-msgstr "Minimalwerte für obere Graphränder"
+msgstr "Minimalwerte für obere Graphenränder"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:21
 msgid "Maximum value for upper graph edge, zero means unlimited"
-msgstr "Maximalwerte für obere Graphränder, Null bedeutet uneingeschränkt"
+msgstr "Maximalwerte für obere Graphenränder, Null bedeutet uneingeschränkt"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:22
 msgid "Number of values used for smooth graph scaling"
-msgstr ""
-"Anzahl an Werten die dargestellt werden sollen für eine sanfte graphische "
-"Skalierung"
+msgstr "Anzahl der Werte zum Glätten von skalierten Graphen"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:23
 msgid "Available traces"
 msgstr "Verfügbare Protokollierungen"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:24
 msgid "Trace color"
 msgstr "Protokollierungsfarbe"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:25
 msgid "Trace expression"
 msgstr "Protokollierungsausdruck"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:26
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:26
 msgid "Trace visibility"
 msgstr "Protokollierungssichtbarkeit"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:27
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:27
 msgid "Traces shown"
 msgstr "Angezeigte Protokollierungen"
 
@@ -348,16 +351,16 @@ msgstr "Angezeigte Protokollierungen"
 msgid "System Load Indicator"
 msgstr "Systemlastanzeige"
 
-#: ../src/function.vala:88
+#: ../src/function.vala:103
 #, c-format
 msgid "%u%%"
 msgstr "%u%%"
 
-#: ../src/main.vala:37
+#: ../src/main.vala:48
 msgid "Evaluate an expression"
 msgstr "Berechne einen Ausdruck"
 
-#: ../src/main.vala:39
+#: ../src/main.vala:44
 msgid "List available expression identifiers"
 msgstr "Auflistung verfügbarer Ausdruck-Identifikatoren"
 
@@ -365,11 +368,11 @@ msgstr "Auflistung verfügbarer Ausdruck-Identifikatoren"
 msgid "Show debug messages"
 msgstr "Debug-Meldungen anzeigen"
 
-#: ../src/main.vala:314
+#: ../src/main.vala:351
 msgid "- System load application indicator"
-msgstr "- Systemlast Anwendungsindikator"
+msgstr "– Systemlastanwendungsanzeige"
 
-#: ../src/main.vala:322
+#: ../src/main.vala:359
 #, c-format
 msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"
@@ -392,7 +395,8 @@ msgstr "{} MB"
 msgid "{} GB"
 msgstr "{} GB"
 
-#: ../src/utils.vala:57
+#. TRANSLATORS: Please leave %u as it is, it is replaced by the size
+#: ../src/utils.vala:58
 #, c-format
 msgid "%u B"
 msgid_plural "%u B"
@@ -400,26 +404,27 @@ msgstr[0] "%u B"
 msgstr[1] "%u B"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:70
+#: ../src/utils.vala:71
 msgid "{} kB/s"
 msgstr "{} kB/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:72
+#: ../src/utils.vala:73
 msgid "{} MB/s"
 msgstr "{} MB/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:74
+#: ../src/utils.vala:75
 msgid "{} GB/s"
 msgstr "{} GB/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:76
+#: ../src/utils.vala:77
 msgid "{} TB/s"
 msgstr "{} TB/s"
 
-#: ../src/utils.vala:84
+#. TRANSLATORS: Please leave %u as it is, it is replaced by the speed
+#: ../src/utils.vala:86
 #, c-format
 msgid "%u B/s"
 msgid_plural "%u B/s"
