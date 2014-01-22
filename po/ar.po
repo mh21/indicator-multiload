@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-02-14 20:17+0000\n"
-"PO-Revision-Date: 2013-08-15 01:54+0000\n"
+"PO-Revision-Date: 2014-01-22 05:14+0000\n"
 "Last-Translator: Ibrahim Saed <ibraheem5000@gmail.com>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
 "MIME-Version: 1.0\n"
@@ -23,8 +23,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n % 100 >= "
 "3 && n % 100 <= 10 ? 3 : n % 100 >= 11 && n % 100 <= 99 ? 4 : 5;\n"
-"X-Launchpad-Export-Date: 2013-08-16 05:56+0000\n"
-"X-Generator: Launchpad (build 16723)\n"
+"X-Launchpad-Export-Date: 2014-01-22 06:04+0000\n"
+"X-Generator: Launchpad (build 16901)\n"
 "Language: ar\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
@@ -32,8 +32,8 @@ msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
-"مراقب لحالة النظام يستطيع عرض رسوم بيانية للمعالج و الذاكرة و مستوى استخدام "
-"مساحة الإبدال بالإضافة إلى حالة الشبكة."
+"مراقب لحالة النظام يمكنه عرض رسوم بيانية للمعالج و الذاكرة و مستوى استخدام "
+"مساحة التبديل بالإضافة إلى حالة الشبكة."
 
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
@@ -83,7 +83,7 @@ msgstr "ال_شبكة"
 
 #: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
-msgstr "مساحة الإ_بدال"
+msgstr "مساحة الت_بديل"
 
 #: ../data/preferences.ui.in.h:27
 msgid "_Load"
@@ -195,7 +195,7 @@ msgstr "_خالي"
 
 #: ../data/preferences.ui.in.h:39
 msgid "Swap Space"
-msgstr "مساحة الإبدال"
+msgstr "مساحة التبديل"
 
 #: ../data/preferences.ui.in.h:40
 msgid "_Average"
@@ -254,7 +254,7 @@ msgid ""
 "$(speed(disk.write))\" ]"
 msgstr ""
 "[ \"المعالجة $(percent(cpu.inuse)) الذاكرة $(size(mem.user)) الشبكة ينزل "
-"$(speed(net.down)) يرفع $(speed(net.up)) مساحة الإبدال $(size(swap.used)) "
+"$(speed(net.down)) يرفع $(speed(net.up)) مساحة التبديل $(size(swap.used)) "
 "الحِمل $(decimals(load.avg,2)) القرص الصلب يقرأ $(speed(disk.read)) يكتب "
 "$(speed(disk.write))\" ]"
 
@@ -281,7 +281,7 @@ msgid ""
 msgstr ""
 "[ \"المعالجة: $(percent(cpu.inuse))، iowait $(percent(cpu.io))\", \"الذاكرة: "
 "$(size(mem.user))، الخبيئة $(size(mem.cached))\", \"الشبكة: ينزل "
-"$(speed(net.down))، يرفع $(speed(net.up))\", \"مساحة الإبدال: "
+"$(speed(net.down))، يرفع $(speed(net.up))\", \"مساحة التبديل: "
 "$(size(swap.used))\", \"الحِمل: $(decimals(load.avg,2))\", \"القرص الصلب: "
 "يقرأ $(speed(disk.read))، يكتب $(speed(disk.write))\" ]"
 
