@@ -138,7 +138,7 @@ public class Indicator : Object {
             if (j < this.menuitems.length) {
                 item = this.menuitems[j];
             } else {
-                item = new Gtk.MenuItem();
+                item = new Gtk.MenuItem.with_label("");
                 item.visible = true;
                 this.menu.insert(item, (int)menu_position);
                 this.menuitems += item;
