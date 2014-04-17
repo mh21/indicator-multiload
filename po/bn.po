@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bn\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-02 12:43+0000\n"
+"POT-Creation-Date: 2014-04-16 08:27+0000\n"
 "PO-Revision-Date: 2013-02-11 19:32+0000\n"
 "Last-Translator: Israt Jahan <Unknown>\n"
 "Language-Team: Bengali <ankur-bd-l10n@googlegroups.com>\n"
@@ -22,8 +22,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-05-03 05:23+0000\n"
-"X-Generator: Launchpad (build 16598)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:26+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 "Language: bn\n"
 
 # msgstr "চাপ গড়"
@@ -51,7 +51,7 @@ msgstr ""
 "  Ishak Herock https://launchpad.net/~ourherock\n"
 "  Israt Jahan https://launchpad.net/~israt\n"
 "  Istiaque Ahamed https://launchpad.net/~istiaque\n"
-"  Shahnoor Ashraf https://launchpad.net/~kaziweb"
+"  Kazi Shahnoor Ashraf https://launchpad.net/~kaziweb"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -397,6 +397,7 @@ msgstr ""
 msgid "Radiance"
 msgstr ""
 
+#. additional mem colors: slab 0000ff, map 836fff
 #. TRANSLATORS: Color theme name for the XOSView theme
 #: ../src/colormapper.vala:102
 msgid "XOSView"

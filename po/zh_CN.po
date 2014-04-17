@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-applets master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-02 12:43+0000\n"
+"POT-Creation-Date: 2014-04-16 08:27+0000\n"
 "PO-Revision-Date: 2013-06-21 16:31+0000\n"
 "Last-Translator: Xiaoxing Ye <Unknown>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
@@ -19,8 +19,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2013-06-22 05:56+0000\n"
-"X-Generator: Launchpad (build 16677)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:28+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 "Language: zh_CN\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
@@ -389,6 +389,7 @@ msgstr ""
 msgid "Radiance"
 msgstr ""
 
+#. additional mem colors: slab 0000ff, map 836fff
 #. TRANSLATORS: Color theme name for the XOSView theme
 #: ../src/colormapper.vala:102
 msgid "XOSView"
@@ -572,3 +573,6 @@ msgstr[1] ""
 
 #~ msgid "Graph alpha value"
 #~ msgstr "图像 alpha 值"
+
+#~ msgid "List available expression identifiers"
+#~ msgstr "列出可用的标识符表达式"

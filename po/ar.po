@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-applets.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-02 12:43+0000\n"
+"POT-Creation-Date: 2014-04-16 08:27+0000\n"
 "PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
@@ -23,8 +23,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n % 100 >= "
 "3 && n % 100 <= 10 ? 3 : n % 100 >= 11 && n % 100 <= 99 ? 4 : 5;\n"
-"X-Launchpad-Export-Date: 2013-05-03 05:23+0000\n"
-"X-Generator: Launchpad (build 16598)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:26+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 "Language: ar\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
@@ -32,8 +32,8 @@ msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
-"مراقب لحالة النظام يستطيع عرض رسوم بيانية للمعالج و الذاكرة و مستوى استخدام "
-"مساحة الإبدال بالإضافة إلى حالة الشبكة."
+"مراقب لحالة النظام يمكنه عرض رسوم بيانية للمعالج و الذاكرة و مستوى استخدام "
+"مساحة التبديل بالإضافة إلى حالة الشبكة."
 
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
@@ -140,7 +140,7 @@ msgstr "ال_شبكة"
 
 #: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
-msgstr "مساحة الإ_بدال"
+msgstr "مساحة الت_بديل"
 
 #: ../data/preferences.ui.in.h:27
 msgid "_Load"
@@ -299,7 +299,7 @@ msgid ""
 "$(speed(disk.write))\" ]"
 msgstr ""
 "[ \"المعالجة $(percent(cpu.inuse)) الذاكرة $(size(mem.user)) الشبكة ينزل "
-"$(speed(net.down)) يرفع $(speed(net.up)) مساحة الإبدال $(size(swap.used)) "
+"$(speed(net.down)) يرفع $(speed(net.up)) مساحة التبديل $(size(swap.used)) "
 "الحِمل $(decimals(load.avg,2)) القرص الصلب يقرأ $(speed(disk.read)) يكتب "
 "$(speed(disk.write))\" ]"
 
@@ -318,7 +318,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:14
 msgid "Information shown in the indicator itself"
-msgstr ""
+msgstr "المعلومات المعروضة في المؤشر نفسه"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:15
 msgid "Index of the current information shown in the indicator itself"
@@ -335,29 +335,29 @@ msgid ""
 msgstr ""
 "[ \"المعالجة: $(percent(cpu.inuse))، iowait $(percent(cpu.io))\", \"الذاكرة: "
 "$(size(mem.user))، الخبيئة $(size(mem.cached))\", \"الشبكة: ينزل "
-"$(speed(net.down))، يرفع $(speed(net.up))\", \"مساحة الإبدال: "
+"$(speed(net.down))، يرفع $(speed(net.up))\", \"مساحة التبديل: "
 "$(size(swap.used))\", \"الحِمل: $(decimals(load.avg,2))\", \"القرص الصلب: "
 "يقرأ $(speed(disk.read))، يكتب $(speed(disk.write))\" ]"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:18
 msgid "Information shown as menu entries"
-msgstr ""
+msgstr "المعلومات المعروضة كمدخلات القائمة"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:19
 msgid "Graph visibility"
-msgstr ""
+msgstr "وضوح رؤية الرسم البياني"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:20
 msgid "Minimum value for upper graph edge"
-msgstr ""
+msgstr "أصغر قيمة لحافة الرسم البياني العلوي"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:21
 msgid "Maximum value for upper graph edge, zero means unlimited"
-msgstr ""
+msgstr "أكبر قيمة لحافة الرسم البياني العلوي (صفر يعني غير محدود)"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:22
 msgid "Number of values used for smooth graph scaling"
-msgstr ""
+msgstr "عدد القيم المستخدمة لتدريج الرسم البياني"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:23
 msgid "Available traces"
@@ -398,6 +398,7 @@ msgstr ""
 msgid "Radiance"
 msgstr ""
 
+#. additional mem colors: slab 0000ff, map 836fff
 #. TRANSLATORS: Color theme name for the XOSView theme
 #: ../src/colormapper.vala:102
 msgid "XOSView"
@@ -554,6 +555,9 @@ msgstr[1] ""
 #~ msgid "Sh_ared"
 #~ msgstr "مش_ترك"
 
+#~ msgid "Swap Space"
+#~ msgstr "مساحة التبديل"
+
 #~ msgid "_Average"
 #~ msgstr "ال_متوسط"
 
@@ -587,5 +591,5 @@ msgstr[1] ""
 #~ msgid "_Write"
 #~ msgstr "_كتابة"
 
-#~ msgid "Swap Space"
-#~ msgstr "مساحة الإبدال"
+#~ msgid "Graph alpha value"
+#~ msgstr "قيمة الرسم البياني ألفا"
