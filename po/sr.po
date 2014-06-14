@@ -1,26 +1,27 @@
 # Serbian translation of gnome-applets
 # Courtesy of Prevod.org team (http://prevod.org/) -- 2003, 2004, 2005, 2006.
+#
 # This file is distributed under the same license as the gnome-applets package.
+#
 # Maintainer: Данило Шеган <danilo@gnome.org>
 # Reviewed on 2005-09-03 by: Игор Несторовић <igor@prevod.org>
 # Милош Поповић <gpopac@gmail.com>, 2010.
-# Марко М. Костић <marko.m.kostic@gmail.com>, 2013.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-14 20:17+0000\n"
-"PO-Revision-Date: 2013-03-26 20:18+0000\n"
-"Last-Translator: Марко М. Костић <Unknown>\n"
-"Language-Team: Ubuntu Serbian Translators\n"
+"POT-Creation-Date: 2014-04-16 08:27+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
+"Last-Translator: Милош Поповић <gpopac@gmail.com>\n"
+"Language-Team: Serbian <gnom@prevod.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2013-03-27 05:15+0000\n"
-"X-Generator: Launchpad (build 16540)\n"
-"X-Project-Style: gnome\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 "Language: sr\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
@@ -42,65 +43,118 @@ msgstr ""
 "  Miloš Popović https://launchpad.net/~gpopac\n"
 "  Марко М. Костић https://launchpad.net/~marko-m-kostic"
 
+#: ../data/preferences.ui.in.h:3
+msgid "Column"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:4
+msgid "Graph"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:5
+msgid "_Visible:"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:6
+msgid "Upper Edge"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:7
+msgid "Minimum:"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:8
+msgid "Maximum:"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:9
+msgid "Smoothing:"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:10
+msgid "pixels"
+msgstr "пиксела"
+
+#: ../data/preferences.ui.in.h:11
+msgid "Trace"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:12
+msgid "Expression:"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:13
+msgid "Color:"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:14
+msgid "Variable"
+msgstr ""
+
+#. TRANSLATORS: This refers to an expression in the domain of programming, see https://en.wikipedia.org/wiki/Expression_%28programming%29
+#: ../data/preferences.ui.in.h:16
+msgid "Expression"
+msgstr ""
+
 #: ../data/preferences.ui.in.h:17
+msgid "Value"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
 msgstr "_Покрени праћење система"
 
-#: ../data/preferences.ui.in.h:18
+#: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
 msgstr "_Поставке"
 
-#: ../data/preferences.ui.in.h:19
+#: ../data/preferences.ui.in.h:20
 msgid "_About"
 msgstr "_О програму"
 
-#: ../data/preferences.ui.in.h:20
+#: ../data/preferences.ui.in.h:21
 msgid "_Quit"
 msgstr "_Изађи"
 
-#: ../data/preferences.ui.in.h:21
+#: ../data/preferences.ui.in.h:22
 msgid "Monitored Resources"
 msgstr "Праћени ресурси"
 
-#: ../data/preferences.ui.in.h:22
+#: ../data/preferences.ui.in.h:23
 msgid "_Processor"
 msgstr "_Процесор"
 
-#: ../data/preferences.ui.in.h:23
+#: ../data/preferences.ui.in.h:24
 msgid "_Memory"
 msgstr "_Меморија"
 
-#: ../data/preferences.ui.in.h:24
+#: ../data/preferences.ui.in.h:25
 msgid "_Network"
 msgstr "М_режа"
 
-#: ../data/preferences.ui.in.h:25
+#: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
 msgstr "_Размена (swap)"
 
-#: ../data/preferences.ui.in.h:26
+#: ../data/preferences.ui.in.h:27
 msgid "_Load"
 msgstr "_Оптерећење"
 
-#: ../data/preferences.ui.in.h:27
+#: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
 msgstr "_Тврди диск"
 
-#: ../data/preferences.ui.in.h:28
+#: ../data/preferences.ui.in.h:29
 msgid "Options"
 msgstr "Опције"
 
-#: ../data/preferences.ui.in.h:29
+#: ../data/preferences.ui.in.h:30
 msgid "System m_onitor width: "
 msgstr "_Ширина програмчета: "
 
-#: ../data/preferences.ui.in.h:30
+#: ../data/preferences.ui.in.h:31
 msgid "Sys_tem monitor update interval: "
 msgstr "_Време између два освежавања приказа: "
-
-#: ../data/preferences.ui.in.h:31
-msgid "pixels"
-msgstr "пиксела"
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
@@ -114,105 +168,89 @@ msgstr "_Самопокретање "
 msgid "Colors"
 msgstr "Боје"
 
-#: ../data/preferences.ui.in.h:21
-msgid "_User"
-msgstr "_Корисник"
-
-#: ../data/preferences.ui.in.h:22
-msgid "S_ystem"
-msgstr "_Систем"
-
-#: ../data/preferences.ui.in.h:23
-msgid "N_ice"
-msgstr "_Мање приоритетно"
-
-#: ../data/preferences.ui.in.h:24
-msgid "I_OWait"
-msgstr "У_Ичекање"
-
-#: ../data/preferences.ui.in.h:25
-msgid "I_dle"
-msgstr "_Неупослен"
-
-#: ../data/preferences.ui.in.h:26
-msgid "Processor"
-msgstr "Процесор"
-
-#: ../data/preferences.ui.in.h:27
-msgid "Sh_ared"
-msgstr "_Дељена"
-
-#: ../data/preferences.ui.in.h:28
-msgid "_Buffers"
-msgstr "_Бафери"
-
-#: ../data/preferences.ui.in.h:29
-msgid "Cach_ed"
-msgstr "Кеш_ирана"
-
-#: ../data/preferences.ui.in.h:30
-msgid "F_ree"
-msgstr "_Слободна"
-
-#: ../data/preferences.ui.in.h:31
-msgid "Memory"
-msgstr "Меморија"
-
-#: ../data/preferences.ui.in.h:32
-msgid "_In"
-msgstr "_Примљено"
-
-#: ../data/preferences.ui.in.h:33
-msgid "_Out"
-msgstr "П_ослато"
-
-#: ../data/preferences.ui.in.h:34
-msgid "_Local"
-msgstr "_Локално"
-
 #: ../data/preferences.ui.in.h:35
-msgid "_Background"
-msgstr "_Позадина"
+msgid "Built-in schemes:"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:36
-msgid "Network"
-msgstr "Мрежа"
+msgid "Color palette:"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:37
-msgid "_Used"
-msgstr "Ис_коришћено"
+msgid "<small>Busy</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:38
-msgid "_Free"
-msgstr "_Слободно"
+msgid "<small>System</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:39
-msgid "Swap Space"
-msgstr "Замена за меморију (swap)"
+msgid "<small>Nice</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:40
-msgid "_Average"
-msgstr "Про_сечно"
+msgid "<small>IOWait</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:41
-msgid "Load"
-msgstr "Оптерећење"
+msgid "<small>Background</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:42
-msgid "_Read"
-msgstr "_Читање"
+msgid "<small>Memory</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:43
-msgid "_Write"
-msgstr "_Упис"
+msgid "<small>Shared</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:44
-msgid "Harddisk"
-msgstr "Тврди диск"
+msgid "<small>Buffers</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:45
+msgid "<small>Cached</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:46
+msgid "<small>Download</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:47
+msgid "<small>Upload</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:48
+msgid "<small>Localhost</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:49
+msgid "<small>Swap</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:50
+msgid "<small>Load</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:51
+msgid "<small>Read</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:52
+msgid "<small>Write</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:53
+msgid "Advanced..."
+msgstr ""
 
 #: ../data/preferences.ui.in.h:54
 msgid "Menu items..."
 msgstr "Ставке у изборнику..."
+
+#: ../data/preferences.ui.in.h:55
+msgid "Indicator items..."
+msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:1
 msgid "Available graphs"
@@ -229,6 +267,14 @@ msgstr "Ширина графика у пикселима"
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:4
 msgid "Height of the graphs in pixels."
 msgstr "Висина графика у пикселима"
+
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:5
+msgid "Graph background color"
+msgstr ""
+
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:6
+msgid "Most recently used color scheme"
+msgstr ""
 
 # Јел ок овако?
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:7
@@ -257,6 +303,15 @@ msgstr ""
 msgid "Information in the accessible description of the indicator"
 msgstr "Подаци у доступном опису показивача"
 
+#. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, and commas.
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:13
+msgid ""
+"[ \"\", \"CPU $(percent(cpu.inuse))\", \"Mem $(size(mem.user))\", \"Net "
+"$(speed(net.down))/$(speed(net.up))\", \"Swap $(size(swap.used))\", \"Load "
+"$(decimals(load.avg,2))\", \"Disk $(speed(disk.read))/$(speed(disk.write))\" "
+"]"
+msgstr ""
+
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:14
 msgid "Information shown in the indicator itself"
 msgstr "Подаци приказани у самом показивачу"
@@ -283,14 +338,6 @@ msgstr ""
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:18
 msgid "Information shown as menu entries"
 msgstr "Подаци приказани као уноси у изборнику"
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
-msgid "Graph alpha value"
-msgstr ""
-
-#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:5
-msgid "Graph background color"
-msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:19
 msgid "Graph visibility"
@@ -332,31 +379,57 @@ msgstr ""
 msgid "System Load Indicator"
 msgstr ""
 
+#. TRANSLATORS: Color theme name
+#: ../src/colormapper.vala:77
+msgid "Traditional"
+msgstr ""
+
+#. TRANSLATORS: Color theme name for the Ubuntu Ambiance (light on dark) theme
+#: ../src/colormapper.vala:85
+msgid "Ambiance"
+msgstr ""
+
+#. TRANSLATORS: Color theme name for the Ubuntu Radiance (dark on light) theme
+#: ../src/colormapper.vala:93
+msgid "Radiance"
+msgstr ""
+
+#. additional mem colors: slab 0000ff, map 836fff
+#. TRANSLATORS: Color theme name for the XOSView theme
+#: ../src/colormapper.vala:102
+msgid "XOSView"
+msgstr ""
+
 #: ../src/function.vala:103
 #, c-format
 msgid "%u%%"
+msgstr ""
+
+#: ../src/main.vala:44
+msgid "Output version information and exit"
+msgstr ""
+
+#: ../src/main.vala:46
+msgid "System tray icon instead of app indicator"
 msgstr ""
 
 #: ../src/main.vala:48
 msgid "Evaluate an expression"
 msgstr ""
 
-#: ../src/main.vala:44
-msgid "List available expression identifiers"
-msgstr ""
-
-#: ../src/main.vala:41
-msgid "Show debug messages"
-msgstr ""
-
-#: ../src/main.vala:344
+#: ../src/main.vala:351
 msgid "- System load application indicator"
 msgstr ""
 
-#: ../src/main.vala:352
+#: ../src/main.vala:359
 #, c-format
 msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"
+msgstr ""
+
+#. TRANSLATORS: custom color scheme
+#: ../src/preferences.vala:74
+msgid "Custom"
 msgstr ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
@@ -409,3 +482,98 @@ msgid "%u B/s"
 msgid_plural "%u B/s"
 msgstr[0] ""
 msgstr[1] ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
+#: ../src/utils.vala:99
+msgid "{} kHz"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
+#: ../src/utils.vala:101
+msgid "{} MHz"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
+#: ../src/utils.vala:103
+msgid "{} GHz"
+msgstr ""
+
+#. TRANSLATORS: Please leave %u as it is, it is replaced by the frequency
+#: ../src/utils.vala:112
+#, c-format
+msgid "%u Hz"
+msgid_plural "%u Hz"
+msgstr[0] ""
+msgstr[1] ""
+
+#~ msgid "Cach_ed"
+#~ msgstr "Кеш_ирана"
+
+#~ msgid "F_ree"
+#~ msgstr "_Слободна"
+
+#~ msgid "Harddisk"
+#~ msgstr "Тврди диск"
+
+#~ msgid "I_OWait"
+#~ msgstr "У_Ичекање"
+
+#~ msgid "I_dle"
+#~ msgstr "_Неупослен"
+
+#~ msgid "Load"
+#~ msgstr "Оптерећење"
+
+#~ msgid "Memory"
+#~ msgstr "Меморија"
+
+#~ msgid "N_ice"
+#~ msgstr "_Мање приоритетно"
+
+#~ msgid "Network"
+#~ msgstr "Мрежа"
+
+#~ msgid "Processor"
+#~ msgstr "Процесор"
+
+#~ msgid "S_ystem"
+#~ msgstr "_Систем"
+
+#~ msgid "Sh_ared"
+#~ msgstr "_Дељена"
+
+#~ msgid "Swap Space"
+#~ msgstr "Замена за меморију (swap)"
+
+#~ msgid "_Average"
+#~ msgstr "Про_сечно"
+
+#~ msgid "_Background"
+#~ msgstr "_Позадина"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Бафери"
+
+#~ msgid "_Free"
+#~ msgstr "_Слободно"
+
+#~ msgid "_In"
+#~ msgstr "_Примљено"
+
+#~ msgid "_Local"
+#~ msgstr "_Локално"
+
+#~ msgid "_Out"
+#~ msgstr "П_ослато"
+
+#~ msgid "_Read"
+#~ msgstr "_Читање"
+
+#~ msgid "_Used"
+#~ msgstr "Ис_коришћено"
+
+#~ msgid "_User"
+#~ msgstr "_Корисник"
+
+#~ msgid "_Write"
+#~ msgstr "_Упис"

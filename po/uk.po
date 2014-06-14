@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-14 20:17+0000\n"
-"PO-Revision-Date: 2013-02-12 06:03+0000\n"
-"Last-Translator: Власов Александр <cvetliy_e@mail.ru>\n"
+"POT-Creation-Date: 2014-04-16 08:27+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
+"Last-Translator: Maxim Dziumanenko <dziumanenko@gmail.com>\n"
 "Language-Team: ukrainian <Ukrainian <uk@li.org>>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2013-02-15 04:55+0000\n"
-"X-Generator: Launchpad (build 16491)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 "Language: \n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
@@ -37,208 +37,253 @@ msgstr ""
 "\n"
 "Launchpad Contributions:\n"
 "  Maxim Dziumanenko https://launchpad.net/~dziumanenko\n"
-"  Власов Александр https://launchpad.net/~cvetliy-e\n"
-"  Сергій Матрунчик https://launchpad.net/~sergiy.matrunchyk"
+"  Sergiy Matrunchyk https://launchpad.net/~sergiy.matrunchyk\n"
+"  Власов Александр https://launchpad.net/~cvetliy-e"
 
-#
 #: ../data/preferences.ui.in.h:3
-msgid "_Open System Monitor"
-msgstr "Відкрити _Системний монітор"
+msgid "Column"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:4
-msgid "_Preferences"
-msgstr "П_араметри"
+msgid "Graph"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:5
-msgid "_About"
-msgstr "_Про програму"
+msgid "_Visible:"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:6
-msgid "_Quit"
-msgstr "_Вихід"
+msgid "Upper Edge"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:7
-msgid "Monitored Resources"
-msgstr "Ресурси, що контролюються"
+msgid "Minimum:"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:8
-msgid "_Processor"
-msgstr "П_роцесор"
+msgid "Maximum:"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:9
-msgid "_Memory"
-msgstr "_Пам'ять"
+msgid "Smoothing:"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:10
-msgid "_Network"
-msgstr "_Мережа"
-
-#: ../data/preferences.ui.in.h:11
-msgid "S_wap Space"
-msgstr "Під_качка"
-
-#: ../data/preferences.ui.in.h:12
-msgid "_Load"
-msgstr "З_авантаження"
-
-#: ../data/preferences.ui.in.h:13
-msgid "_Harddisk"
-msgstr "_Жорсткий диск"
-
-#: ../data/preferences.ui.in.h:14
-msgid "Options"
-msgstr "Параметри"
-
-#: ../data/preferences.ui.in.h:15
-msgid "System m_onitor width: "
-msgstr "_Ширина системного монітору: "
-
-#: ../data/preferences.ui.in.h:16
-msgid "Sys_tem monitor update interval: "
-msgstr "Період _оновлення системного монітору: "
-
-#: ../data/preferences.ui.in.h:17
 msgid "pixels"
 msgstr "точок"
 
+#: ../data/preferences.ui.in.h:11
+msgid "Trace"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:12
+msgid "Expression:"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:13
+msgid "Color:"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:14
+msgid "Variable"
+msgstr ""
+
+#. TRANSLATORS: This refers to an expression in the domain of programming, see https://en.wikipedia.org/wiki/Expression_%28programming%29
+#: ../data/preferences.ui.in.h:16
+msgid "Expression"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:17
+msgid "Value"
+msgstr ""
+
+#
 #: ../data/preferences.ui.in.h:18
+msgid "_Open System Monitor"
+msgstr "Відкрити _Системний монітор"
+
+#: ../data/preferences.ui.in.h:19
+msgid "_Preferences"
+msgstr "П_араметри"
+
+#: ../data/preferences.ui.in.h:20
+msgid "_About"
+msgstr "_Про програму"
+
+#: ../data/preferences.ui.in.h:21
+msgid "_Quit"
+msgstr "_Вихід"
+
+#: ../data/preferences.ui.in.h:22
+msgid "Monitored Resources"
+msgstr "Ресурси, що контролюються"
+
+#: ../data/preferences.ui.in.h:23
+msgid "_Processor"
+msgstr "П_роцесор"
+
+#: ../data/preferences.ui.in.h:24
+msgid "_Memory"
+msgstr "_Пам'ять"
+
+#: ../data/preferences.ui.in.h:25
+msgid "_Network"
+msgstr "_Мережа"
+
+#: ../data/preferences.ui.in.h:26
+msgid "S_wap Space"
+msgstr "Під_качка"
+
+#: ../data/preferences.ui.in.h:27
+msgid "_Load"
+msgstr "З_авантаження"
+
+#: ../data/preferences.ui.in.h:28
+msgid "_Harddisk"
+msgstr "_Жорсткий диск"
+
+#: ../data/preferences.ui.in.h:29
+msgid "Options"
+msgstr "Параметри"
+
+#: ../data/preferences.ui.in.h:30
+msgid "System m_onitor width: "
+msgstr "_Ширина системного монітору: "
+
+#: ../data/preferences.ui.in.h:31
+msgid "Sys_tem monitor update interval: "
+msgstr "Період _оновлення системного монітору: "
+
+#: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
 msgstr "мс"
 
-#: ../data/preferences.ui.in.h:19
+#: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
 msgstr "_Автостарт: "
 
-#: ../data/preferences.ui.in.h:20
+#: ../data/preferences.ui.in.h:34
 msgid "Colors"
 msgstr "Кольори"
 
-#: ../data/preferences.ui.in.h:21
-msgid "_User"
-msgstr "_Користувач"
-
-#: ../data/preferences.ui.in.h:22
-msgid "S_ystem"
-msgstr "_Система"
-
-#: ../data/preferences.ui.in.h:23
-msgid "N_ice"
-msgstr "Пр_іоритеті"
-
-#: ../data/preferences.ui.in.h:24
-msgid "I_OWait"
-msgstr "I_OWait"
-
-#: ../data/preferences.ui.in.h:25
-msgid "I_dle"
-msgstr "О_чікування"
-
-#: ../data/preferences.ui.in.h:26
-msgid "Processor"
-msgstr "Процесор"
-
-#: ../data/preferences.ui.in.h:27
-msgid "Sh_ared"
-msgstr "_Спільна"
-
-#: ../data/preferences.ui.in.h:28
-msgid "_Buffers"
-msgstr "_Буфери"
-
-#: ../data/preferences.ui.in.h:29
-msgid "Cach_ed"
-msgstr "Ке_ш"
-
-#: ../data/preferences.ui.in.h:30
-msgid "F_ree"
-msgstr "_Вільна"
-
-#: ../data/preferences.ui.in.h:31
-msgid "Memory"
-msgstr "Пам'ять"
-
-#: ../data/preferences.ui.in.h:32
-msgid "_In"
-msgstr "В_хідний"
-
-#: ../data/preferences.ui.in.h:33
-msgid "_Out"
-msgstr "В_ихідний"
-
-#: ../data/preferences.ui.in.h:34
-msgid "_Local"
-msgstr "_Локальний"
-
 #: ../data/preferences.ui.in.h:35
-msgid "_Background"
-msgstr "_Тло"
+msgid "Built-in schemes:"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:36
-msgid "Network"
-msgstr "Мережа"
+msgid "Color palette:"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:37
-msgid "_Used"
-msgstr "В_икористано"
+msgid "<small>Busy</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:38
-msgid "_Free"
-msgstr "_Вільно"
+msgid "<small>System</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:39
-msgid "Swap Space"
-msgstr "Підкачка"
+msgid "<small>Nice</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:40
-msgid "_Average"
-msgstr "_Середнє"
+msgid "<small>IOWait</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:41
-msgid "Load"
-msgstr "Завантаження"
+msgid "<small>Background</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:42
-msgid "_Read"
-msgstr "_Читання"
+msgid "<small>Memory</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:43
-msgid "_Write"
-msgstr "_Запис"
+msgid "<small>Shared</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:44
-msgid "Harddisk"
-msgstr "Жорсткий диск"
+msgid "<small>Buffers</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:45
+msgid "<small>Cached</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:46
+msgid "<small>Download</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:47
+msgid "<small>Upload</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:48
+msgid "<small>Localhost</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:49
+msgid "<small>Swap</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:50
+msgid "<small>Load</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:51
+msgid "<small>Read</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:52
+msgid "<small>Write</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:53
+msgid "Advanced..."
+msgstr ""
+
+#: ../data/preferences.ui.in.h:54
 msgid "Menu items..."
 msgstr "Елементи меню"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
+#: ../data/preferences.ui.in.h:55
+msgid "Indicator items..."
+msgstr ""
+
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:1
 msgid "Available graphs"
 msgstr "Доступні діаграми"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
 msgstr "Частота оновлення аплету (в мілісекундах)"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:3
 msgid "Width of the graphs in pixels."
 msgstr "Ширина діаграми в пікселях."
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:4
 msgid "Height of the graphs in pixels."
 msgstr "Висота діаграми в пікселях"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:5
+msgid "Graph background color"
+msgstr "Колір фону діаграми"
+
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:6
+msgid "Most recently used color scheme"
+msgstr ""
+
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:7
 msgid "The desktop description file to execute as the system monitor"
 msgstr "Файл опису для виконання як системний монітор"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:8
 msgid "Automatically start on session startup"
 msgstr "Завантажуватись автоматично після входу в систему"
 
 #. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, and commas.
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:10
 msgid ""
 "[ \"CPU $(percent(cpu.inuse)) Mem $(size(mem.user)) Net down "
 "$(speed(net.down)) up $(speed(net.up)) Swap $(size(swap.used)) Load "
@@ -246,20 +291,29 @@ msgid ""
 "$(speed(disk.write))\" ]"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:11
 msgid "Information in the accessible description of the indicator"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+#. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, and commas.
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:13
+msgid ""
+"[ \"\", \"CPU $(percent(cpu.inuse))\", \"Mem $(size(mem.user))\", \"Net "
+"$(speed(net.down))/$(speed(net.up))\", \"Swap $(size(swap.used))\", \"Load "
+"$(decimals(load.avg,2))\", \"Disk $(speed(disk.read))/$(speed(disk.write))\" "
+"]"
+msgstr ""
+
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:14
 msgid "Information shown in the indicator itself"
 msgstr "Інформація, що відображається індикатором"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:15
 msgid "Index of the current information shown in the indicator itself"
 msgstr "Індекс поточної інформації, яка відображається індикатором"
 
 #. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, and commas.
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:17
 msgid ""
 "[ \"CPU: $(percent(cpu.inuse)), iowait $(percent(cpu.io))\", \"Mem: "
 "$(size(mem.user)), cache $(size(mem.cached))\", \"Net: down "
@@ -268,53 +322,45 @@ msgid ""
 "$(speed(disk.write))\" ]"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:18
 msgid "Information shown as menu entries"
 msgstr "Інформація, що відображається в пунктах меню"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
-msgid "Graph alpha value"
-msgstr "Прозорість діаграми"
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
-msgid "Graph background color"
-msgstr "Колір фону діаграми"
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:19
 msgid "Graph visibility"
 msgstr "Видимість діаграми"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:20
 msgid "Minimum value for upper graph edge"
 msgstr "Мінімальне значення верхнього краю діаграми"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:21
 msgid "Maximum value for upper graph edge, zero means unlimited"
 msgstr ""
 "Максимальне значення верхнього краю діаграми, нуль означає \"без обмежень\""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:22
 msgid "Number of values used for smooth graph scaling"
 msgstr ""
 "Кількість значень, використовуваних для плавної зміни масштабу діаграми"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:23
 msgid "Available traces"
 msgstr "Доступні криві"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:24
 msgid "Trace color"
 msgstr "Колір кривої"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:25
 msgid "Trace expression"
 msgstr "Вираз кривої"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:26
 msgid "Trace visibility"
 msgstr "Видимість кривої"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:27
 msgid "Traces shown"
 msgstr "Відображення кривих"
 
@@ -322,50 +368,77 @@ msgstr "Відображення кривих"
 msgid "System Load Indicator"
 msgstr "Індикатор завантажування системи"
 
-#: ../src/function.vala:88
+#. TRANSLATORS: Color theme name
+#: ../src/colormapper.vala:77
+msgid "Traditional"
+msgstr ""
+
+#. TRANSLATORS: Color theme name for the Ubuntu Ambiance (light on dark) theme
+#: ../src/colormapper.vala:85
+msgid "Ambiance"
+msgstr ""
+
+#. TRANSLATORS: Color theme name for the Ubuntu Radiance (dark on light) theme
+#: ../src/colormapper.vala:93
+msgid "Radiance"
+msgstr ""
+
+#. additional mem colors: slab 0000ff, map 836fff
+#. TRANSLATORS: Color theme name for the XOSView theme
+#: ../src/colormapper.vala:102
+msgid "XOSView"
+msgstr ""
+
+#: ../src/function.vala:103
 #, c-format
 msgid "%u%%"
 msgstr "%u%%"
 
-#: ../src/main.vala:37
+#: ../src/main.vala:44
+msgid "Output version information and exit"
+msgstr ""
+
+#: ../src/main.vala:46
+msgid "System tray icon instead of app indicator"
+msgstr ""
+
+#: ../src/main.vala:48
 msgid "Evaluate an expression"
 msgstr "Значення виразу"
 
-#: ../src/main.vala:39
-msgid "List available expression identifiers"
-msgstr "Список доступних ідентифікаторів виразу"
-
-#: ../src/main.vala:41
-msgid "Show debug messages"
-msgstr "Показувати відлагоджувальні повідомлення"
-
-#: ../src/main.vala:322
+#: ../src/main.vala:351
 msgid "- System load application indicator"
 msgstr "Індикатор завантаження системи"
 
-#: ../src/main.vala:330
+#: ../src/main.vala:359
 #, c-format
 msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
 "Виконайте '%s --help', щоб побачити повний список доступних параметрів.\n"
 
+#. TRANSLATORS: custom color scheme
+#: ../src/preferences.vala:74
+msgid "Custom"
+msgstr ""
+
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
-#: ../src/utils.vala:57
+#: ../src/utils.vala:45
 msgid "{} kB"
 msgstr "{} кБ"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
-#: ../src/utils.vala:59
+#: ../src/utils.vala:47
 msgid "{} MB"
 msgstr "{} МБ"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
-#: ../src/utils.vala:61
+#: ../src/utils.vala:49
 msgid "{} GB"
 msgstr "{} ГБ"
 
-#: ../src/utils.vala:69
+#. TRANSLATORS: Please leave %u as it is, it is replaced by the size
+#: ../src/utils.vala:58
 #, c-format
 msgid "%u B"
 msgid_plural "%u B"
@@ -374,29 +447,131 @@ msgstr[1] "%u Б"
 msgstr[2] "%u Б"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:82
+#: ../src/utils.vala:71
 msgid "{} kB/s"
 msgstr "{} кБ/с"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:84
+#: ../src/utils.vala:73
 msgid "{} MB/s"
 msgstr "{} МБ/с"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:86
+#: ../src/utils.vala:75
 msgid "{} GB/s"
 msgstr "{} ГБ/с"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:88
+#: ../src/utils.vala:77
 msgid "{} TB/s"
 msgstr "{} ТБ/с"
 
-#: ../src/utils.vala:96
+#. TRANSLATORS: Please leave %u as it is, it is replaced by the speed
+#: ../src/utils.vala:86
 #, c-format
 msgid "%u B/s"
 msgid_plural "%u B/s"
 msgstr[0] "%u Б/с"
 msgstr[1] "%u Б/с"
 msgstr[2] "%u Б/с"
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
+#: ../src/utils.vala:99
+msgid "{} kHz"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
+#: ../src/utils.vala:101
+msgid "{} MHz"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
+#: ../src/utils.vala:103
+msgid "{} GHz"
+msgstr ""
+
+#. TRANSLATORS: Please leave %u as it is, it is replaced by the frequency
+#: ../src/utils.vala:112
+#, c-format
+msgid "%u Hz"
+msgid_plural "%u Hz"
+msgstr[0] ""
+msgstr[1] ""
+
+#~ msgid "Cach_ed"
+#~ msgstr "Ке_ш"
+
+#~ msgid "F_ree"
+#~ msgstr "_Вільна"
+
+#~ msgid "Harddisk"
+#~ msgstr "Жорсткий диск"
+
+#~ msgid "I_OWait"
+#~ msgstr "I_OWait"
+
+#~ msgid "I_dle"
+#~ msgstr "О_чікування"
+
+#~ msgid "Load"
+#~ msgstr "Завантаження"
+
+#~ msgid "Memory"
+#~ msgstr "Пам'ять"
+
+#~ msgid "N_ice"
+#~ msgstr "Пр_іоритеті"
+
+#~ msgid "Network"
+#~ msgstr "Мережа"
+
+#~ msgid "Processor"
+#~ msgstr "Процесор"
+
+#~ msgid "S_ystem"
+#~ msgstr "_Система"
+
+#~ msgid "Sh_ared"
+#~ msgstr "_Спільна"
+
+#~ msgid "Swap Space"
+#~ msgstr "Підкачка"
+
+#~ msgid "_Average"
+#~ msgstr "_Середнє"
+
+#~ msgid "_Background"
+#~ msgstr "_Тло"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Буфери"
+
+#~ msgid "_Free"
+#~ msgstr "_Вільно"
+
+#~ msgid "_In"
+#~ msgstr "В_хідний"
+
+#~ msgid "_Local"
+#~ msgstr "_Локальний"
+
+#~ msgid "_Out"
+#~ msgstr "В_ихідний"
+
+#~ msgid "_Read"
+#~ msgstr "_Читання"
+
+#~ msgid "_Used"
+#~ msgstr "В_икористано"
+
+#~ msgid "_User"
+#~ msgstr "_Користувач"
+
+#~ msgid "_Write"
+#~ msgstr "_Запис"
+
+#~ msgid "Graph alpha value"
+#~ msgstr "Прозорість діаграми"
+
+#~ msgid "List available expression identifiers"
+#~ msgstr "Список доступних ідентифікаторів виразу"

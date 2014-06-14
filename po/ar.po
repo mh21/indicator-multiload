@@ -14,17 +14,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-applets.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-14 20:17+0000\n"
-"PO-Revision-Date: 2014-01-22 05:14+0000\n"
-"Last-Translator: Ibrahim Saed <ibraheem5000@gmail.com>\n"
+"POT-Creation-Date: 2014-04-16 08:27+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
+"Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n % 100 >= "
 "3 && n % 100 <= 10 ? 3 : n % 100 >= 11 && n % 100 <= 99 ? 4 : 5;\n"
-"X-Launchpad-Export-Date: 2014-01-23 05:48+0000\n"
-"X-Generator: Launchpad (build 16901)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:26+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 "Language: ar\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
@@ -48,6 +48,63 @@ msgstr ""
 "  Ibrahim Saed https://launchpad.net/~ibraheem5000\n"
 "  Khaled Hosny https://launchpad.net/~khaledhosny\n"
 "  slmb https://launchpad.net/~fqa101"
+
+#: ../data/preferences.ui.in.h:3
+msgid "Column"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:4
+msgid "Graph"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:5
+msgid "_Visible:"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:6
+msgid "Upper Edge"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:7
+msgid "Minimum:"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:8
+msgid "Maximum:"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:9
+msgid "Smoothing:"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:10
+msgid "pixels"
+msgstr "بكسل"
+
+#: ../data/preferences.ui.in.h:11
+msgid "Trace"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:12
+msgid "Expression:"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:13
+msgid "Color:"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:14
+msgid "Variable"
+msgstr ""
+
+#. TRANSLATORS: This refers to an expression in the domain of programming, see https://en.wikipedia.org/wiki/Expression_%28programming%29
+#: ../data/preferences.ui.in.h:16
+msgid "Expression"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:17
+msgid "Value"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
@@ -105,10 +162,6 @@ msgstr "عرض مرا_قب النظام: "
 msgid "Sys_tem monitor update interval: "
 msgstr "مدة تحديث مرقاب ال_نظام: "
 
-#: ../data/preferences.ui.in.h:10
-msgid "pixels"
-msgstr "بكسل"
-
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
 msgstr "ملي ثانية"
@@ -121,105 +174,89 @@ msgstr "تشغيل _تلقائي: "
 msgid "Colors"
 msgstr "الألوان"
 
-#: ../data/preferences.ui.in.h:21
-msgid "_User"
-msgstr "الم_ستخدِم"
-
-#: ../data/preferences.ui.in.h:22
-msgid "S_ystem"
-msgstr "الن_ظام"
-
-#: ../data/preferences.ui.in.h:23
-msgid "N_ice"
-msgstr "_تحسين"
-
-#: ../data/preferences.ui.in.h:24
-msgid "I_OWait"
-msgstr "I_OWait"
-
-#: ../data/preferences.ui.in.h:25
-msgid "I_dle"
-msgstr "_خامل"
-
-#: ../data/preferences.ui.in.h:26
-msgid "Processor"
-msgstr "المعالج"
-
-#: ../data/preferences.ui.in.h:27
-msgid "Sh_ared"
-msgstr "مش_ترك"
-
-#: ../data/preferences.ui.in.h:28
-msgid "_Buffers"
-msgstr "الذاكرة ال_وسيطة"
-
-#: ../data/preferences.ui.in.h:29
-msgid "Cach_ed"
-msgstr "_مختزن"
-
-#: ../data/preferences.ui.in.h:30
-msgid "F_ree"
-msgstr "_خالي"
-
-#: ../data/preferences.ui.in.h:31
-msgid "Memory"
-msgstr "الذاكرة"
-
-#: ../data/preferences.ui.in.h:32
-msgid "_In"
-msgstr "_داخل"
-
-#: ../data/preferences.ui.in.h:33
-msgid "_Out"
-msgstr "_خارج"
-
-#: ../data/preferences.ui.in.h:34
-msgid "_Local"
-msgstr "_محلي"
-
 #: ../data/preferences.ui.in.h:35
-msgid "_Background"
-msgstr "ال_خلفية"
+msgid "Built-in schemes:"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:36
-msgid "Network"
-msgstr "الشبكة"
+msgid "Color palette:"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:37
-msgid "_Used"
-msgstr "مُ_ستخدَم"
+msgid "<small>Busy</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:38
-msgid "_Free"
-msgstr "_خالي"
+msgid "<small>System</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:39
-msgid "Swap Space"
-msgstr "مساحة التبديل"
+msgid "<small>Nice</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:40
-msgid "_Average"
-msgstr "ال_متوسط"
+msgid "<small>IOWait</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:41
-msgid "Load"
-msgstr "الحِمْل"
+msgid "<small>Background</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:42
-msgid "_Read"
-msgstr "_قراءة"
+msgid "<small>Memory</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:43
-msgid "_Write"
-msgstr "_كتابة"
+msgid "<small>Shared</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:44
-msgid "Harddisk"
-msgstr "القرص الصلب"
+msgid "<small>Buffers</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:45
+msgid "<small>Cached</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:46
+msgid "<small>Download</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:47
+msgid "<small>Upload</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:48
+msgid "<small>Localhost</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:49
+msgid "<small>Swap</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:50
+msgid "<small>Load</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:51
+msgid "<small>Read</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:52
+msgid "<small>Write</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:53
+msgid "Advanced..."
+msgstr ""
 
 #: ../data/preferences.ui.in.h:54
 msgid "Menu items..."
 msgstr "عناصر القائمة..."
+
+#: ../data/preferences.ui.in.h:55
+msgid "Indicator items..."
+msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:1
 msgid "Available graphs"
@@ -236,6 +273,14 @@ msgstr "عرض الرسم البياني بالبكسل."
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:4
 msgid "Height of the graphs in pixels."
 msgstr "ارتفاع الرسم البياني بالبكسل."
+
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:5
+msgid "Graph background color"
+msgstr "لون الخلفية للرسم البياني"
+
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:6
+msgid "Most recently used color scheme"
+msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:7
 msgid "The desktop description file to execute as the system monitor"
@@ -260,6 +305,15 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:11
 msgid "Information in the accessible description of the indicator"
+msgstr ""
+
+#. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, and commas.
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:13
+msgid ""
+"[ \"\", \"CPU $(percent(cpu.inuse))\", \"Mem $(size(mem.user))\", \"Net "
+"$(speed(net.down))/$(speed(net.up))\", \"Swap $(size(swap.used))\", \"Load "
+"$(decimals(load.avg,2))\", \"Disk $(speed(disk.read))/$(speed(disk.write))\" "
+"]"
 msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:14
@@ -288,14 +342,6 @@ msgstr ""
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:18
 msgid "Information shown as menu entries"
 msgstr "المعلومات المعروضة كمدخلات القائمة"
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
-msgid "Graph alpha value"
-msgstr "قيمة الرسم البياني ألفا"
-
-#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:5
-msgid "Graph background color"
-msgstr "لون الخلفية للرسم البياني"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:19
 msgid "Graph visibility"
@@ -337,22 +383,43 @@ msgstr ""
 msgid "System Load Indicator"
 msgstr "مؤشر تحميلات النظام"
 
+#. TRANSLATORS: Color theme name
+#: ../src/colormapper.vala:77
+msgid "Traditional"
+msgstr ""
+
+#. TRANSLATORS: Color theme name for the Ubuntu Ambiance (light on dark) theme
+#: ../src/colormapper.vala:85
+msgid "Ambiance"
+msgstr ""
+
+#. TRANSLATORS: Color theme name for the Ubuntu Radiance (dark on light) theme
+#: ../src/colormapper.vala:93
+msgid "Radiance"
+msgstr ""
+
+#. additional mem colors: slab 0000ff, map 836fff
+#. TRANSLATORS: Color theme name for the XOSView theme
+#: ../src/colormapper.vala:102
+msgid "XOSView"
+msgstr ""
+
 #: ../src/function.vala:103
 #, c-format
 msgid "%u%%"
 msgstr "%u%%"
 
+#: ../src/main.vala:44
+msgid "Output version information and exit"
+msgstr ""
+
+#: ../src/main.vala:46
+msgid "System tray icon instead of app indicator"
+msgstr ""
+
 #: ../src/main.vala:48
 msgid "Evaluate an expression"
 msgstr ""
-
-#: ../src/main.vala:44
-msgid "List available expression identifiers"
-msgstr ""
-
-#: ../src/main.vala:41
-msgid "Show debug messages"
-msgstr "عرض رسائل التنقيح"
 
 #: ../src/main.vala:351
 msgid "- System load application indicator"
@@ -364,6 +431,11 @@ msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
 "نفّذ \"%s --help\" لرؤية قائمة كاملة من الخيارات المتوفرة لسطر الأوامر.\n"
+
+#. TRANSLATORS: custom color scheme
+#: ../src/preferences.vala:74
+msgid "Custom"
+msgstr ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:45
@@ -423,3 +495,101 @@ msgstr[2] "%u ب/ث"
 msgstr[3] "%u ب/ث"
 msgstr[4] "%u ب/ث"
 msgstr[5] "%u ب/ث"
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
+#: ../src/utils.vala:99
+msgid "{} kHz"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
+#: ../src/utils.vala:101
+msgid "{} MHz"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
+#: ../src/utils.vala:103
+msgid "{} GHz"
+msgstr ""
+
+#. TRANSLATORS: Please leave %u as it is, it is replaced by the frequency
+#: ../src/utils.vala:112
+#, c-format
+msgid "%u Hz"
+msgid_plural "%u Hz"
+msgstr[0] ""
+msgstr[1] ""
+
+#~ msgid "Cach_ed"
+#~ msgstr "_مختزن"
+
+#~ msgid "F_ree"
+#~ msgstr "_خالي"
+
+#~ msgid "Harddisk"
+#~ msgstr "القرص الصلب"
+
+#~ msgid "I_OWait"
+#~ msgstr "I_OWait"
+
+#~ msgid "I_dle"
+#~ msgstr "_خامل"
+
+#~ msgid "Load"
+#~ msgstr "الحِمْل"
+
+#~ msgid "Memory"
+#~ msgstr "الذاكرة"
+
+#~ msgid "N_ice"
+#~ msgstr "_تحسين"
+
+#~ msgid "Network"
+#~ msgstr "الشبكة"
+
+#~ msgid "Processor"
+#~ msgstr "المعالج"
+
+#~ msgid "S_ystem"
+#~ msgstr "الن_ظام"
+
+#~ msgid "Sh_ared"
+#~ msgstr "مش_ترك"
+
+#~ msgid "Swap Space"
+#~ msgstr "مساحة التبديل"
+
+#~ msgid "_Average"
+#~ msgstr "ال_متوسط"
+
+#~ msgid "_Background"
+#~ msgstr "ال_خلفية"
+
+#~ msgid "_Buffers"
+#~ msgstr "الذاكرة ال_وسيطة"
+
+#~ msgid "_Free"
+#~ msgstr "_خالي"
+
+#~ msgid "_In"
+#~ msgstr "_داخل"
+
+#~ msgid "_Local"
+#~ msgstr "_محلي"
+
+#~ msgid "_Out"
+#~ msgstr "_خارج"
+
+#~ msgid "_Read"
+#~ msgstr "_قراءة"
+
+#~ msgid "_Used"
+#~ msgstr "مُ_ستخدَم"
+
+#~ msgid "_User"
+#~ msgstr "الم_ستخدِم"
+
+#~ msgid "_Write"
+#~ msgstr "_كتابة"
+
+#~ msgid "Graph alpha value"
+#~ msgstr "قيمة الرسم البياني ألفا"

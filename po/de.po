@@ -16,16 +16,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-applets master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-14 20:17+0000\n"
-"PO-Revision-Date: 2013-10-28 20:14+0000\n"
-"Last-Translator: Tobias B. <Unknown>\n"
+"POT-Creation-Date: 2014-04-16 08:27+0000\n"
+"PO-Revision-Date: 2013-10-31 03:16+0000\n"
+"Last-Translator: Tobias Bannert <Unknown>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-10-29 05:08+0000\n"
-"X-Generator: Launchpad (build 16818)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 "Language: \n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
@@ -54,14 +54,71 @@ msgstr ""
 "Launchpad Contributions:\n"
 "  Daniel Winzen https://launchpad.net/~q-d\n"
 "  Dennis Baudys https://launchpad.net/~thecondordb\n"
-"  Flames_in_Paradise https://launchpad.net/~ellisistfroh-deactivatedaccount\n"
+"  Flames_in_Paradise https://launchpad.net/~ellisistfroh\n"
 "  Ghenrik https://launchpad.net/~ghenrik-deactivatedaccount\n"
 "  Mario Blättermann https://launchpad.net/~mario.blaettermann\n"
 "  Michael Hofmann https://launchpad.net/~mh21\n"
 "  Sascha https://launchpad.net/~skbierm-deactivatedaccount\n"
-"  Tobias B. https://launchpad.net/~toba\n"
+"  Tobias Bannert https://launchpad.net/~toba\n"
 "  d-snake https://launchpad.net/~dsnake\n"
 "  thomas https://launchpad.net/~thomas-heuer"
+
+#: ../data/preferences.ui.in.h:3
+msgid "Column"
+msgstr "Spalte"
+
+#: ../data/preferences.ui.in.h:4
+msgid "Graph"
+msgstr "Diagramm"
+
+#: ../data/preferences.ui.in.h:5
+msgid "_Visible:"
+msgstr "_Sichtbar:"
+
+#: ../data/preferences.ui.in.h:6
+msgid "Upper Edge"
+msgstr "Oberkante"
+
+#: ../data/preferences.ui.in.h:7
+msgid "Minimum:"
+msgstr "Minimum:"
+
+#: ../data/preferences.ui.in.h:8
+msgid "Maximum:"
+msgstr "Maximum:"
+
+#: ../data/preferences.ui.in.h:9
+msgid "Smoothing:"
+msgstr "Glättung:"
+
+#: ../data/preferences.ui.in.h:10
+msgid "pixels"
+msgstr "Pixel"
+
+#: ../data/preferences.ui.in.h:11
+msgid "Trace"
+msgstr "Protokollierung"
+
+#: ../data/preferences.ui.in.h:12
+msgid "Expression:"
+msgstr "Ausdruck:"
+
+#: ../data/preferences.ui.in.h:13
+msgid "Color:"
+msgstr "Farbe:"
+
+#: ../data/preferences.ui.in.h:14
+msgid "Variable"
+msgstr "Variable"
+
+#. TRANSLATORS: This refers to an expression in the domain of programming, see https://en.wikipedia.org/wiki/Expression_%28programming%29
+#: ../data/preferences.ui.in.h:16
+msgid "Expression"
+msgstr "Ausdruck"
+
+#: ../data/preferences.ui.in.h:17
+msgid "Value"
+msgstr "Wert"
 
 #: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
@@ -119,10 +176,6 @@ msgstr "B_reite der Systemüberwachung: "
 msgid "Sys_tem monitor update interval: "
 msgstr "Aktualisierungs_intervall der Systemüberwachung: "
 
-#: ../data/preferences.ui.in.h:10
-msgid "pixels"
-msgstr "Pixel"
-
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
 msgstr "Millisekunden"
@@ -135,105 +188,89 @@ msgstr "Au_tomatisch starten: "
 msgid "Colors"
 msgstr "Farben"
 
-#: ../data/preferences.ui.in.h:21
-msgid "_User"
-msgstr "_Benutzer"
-
-#: ../data/preferences.ui.in.h:22
-msgid "S_ystem"
-msgstr "S_ystem"
-
-#: ../data/preferences.ui.in.h:23
-msgid "N_ice"
-msgstr "P_riorität"
-
-#: ../data/preferences.ui.in.h:24
-msgid "I_OWait"
-msgstr "E_/A abwartend"
-
-#: ../data/preferences.ui.in.h:25
-msgid "I_dle"
-msgstr "_Leerlauf"
-
-#: ../data/preferences.ui.in.h:26
-msgid "Processor"
-msgstr "Prozessor"
-
-#: ../data/preferences.ui.in.h:27
-msgid "Sh_ared"
-msgstr "_Gemeinsam"
-
-#: ../data/preferences.ui.in.h:28
-msgid "_Buffers"
-msgstr "P_uffer"
-
-#: ../data/preferences.ui.in.h:29
-msgid "Cach_ed"
-msgstr "_Zwischengespeichert"
-
-#: ../data/preferences.ui.in.h:30
-msgid "F_ree"
-msgstr "_Frei"
-
-#: ../data/preferences.ui.in.h:31
-msgid "Memory"
-msgstr "Speicher"
-
-#: ../data/preferences.ui.in.h:32
-msgid "_In"
-msgstr "_Ein"
-
-#: ../data/preferences.ui.in.h:33
-msgid "_Out"
-msgstr "_Aus"
-
-#: ../data/preferences.ui.in.h:34
-msgid "_Local"
-msgstr "_Lokal"
-
 #: ../data/preferences.ui.in.h:35
-msgid "_Background"
-msgstr "_Hintergrund"
+msgid "Built-in schemes:"
+msgstr "Integrierte Farbschemata:"
 
 #: ../data/preferences.ui.in.h:36
-msgid "Network"
-msgstr "Netzwerk"
+msgid "Color palette:"
+msgstr "Farbpalette:"
 
 #: ../data/preferences.ui.in.h:37
-msgid "_Used"
-msgstr "_Belegt"
+msgid "<small>Busy</small>"
+msgstr "<small>Beschäftigt</small>"
 
 #: ../data/preferences.ui.in.h:38
-msgid "_Free"
-msgstr "_Frei"
+msgid "<small>System</small>"
+msgstr "<small>System</small>"
 
 #: ../data/preferences.ui.in.h:39
-msgid "Swap Space"
-msgstr "Auslagerungsspeicher"
+msgid "<small>Nice</small>"
+msgstr "<small>Nett</small>"
 
 #: ../data/preferences.ui.in.h:40
-msgid "_Average"
-msgstr "Last_mittel"
+msgid "<small>IOWait</small>"
+msgstr "<small>E/A abwartend</small>"
 
 #: ../data/preferences.ui.in.h:41
-msgid "Load"
-msgstr "Last"
+msgid "<small>Background</small>"
+msgstr "<small>Hintergrund</small>"
 
 #: ../data/preferences.ui.in.h:42
-msgid "_Read"
-msgstr "_Lesen"
+msgid "<small>Memory</small>"
+msgstr "<small>Speicher</small>"
 
 #: ../data/preferences.ui.in.h:43
-msgid "_Write"
-msgstr "_Schreiben"
+msgid "<small>Shared</small>"
+msgstr "<small>Gemeinsam</small>"
 
 #: ../data/preferences.ui.in.h:44
-msgid "Harddisk"
-msgstr "Festplatte"
+msgid "<small>Buffers</small>"
+msgstr "<small>Puffer</small>"
+
+#: ../data/preferences.ui.in.h:45
+msgid "<small>Cached</small>"
+msgstr "<small>Zwischengespeichert</small>"
+
+#: ../data/preferences.ui.in.h:46
+msgid "<small>Download</small>"
+msgstr "<small>Herunterladen</small>"
+
+#: ../data/preferences.ui.in.h:47
+msgid "<small>Upload</small>"
+msgstr "<small>Hochladen</small>"
+
+#: ../data/preferences.ui.in.h:48
+msgid "<small>Localhost</small>"
+msgstr "<small>Localhost</small>"
+
+#: ../data/preferences.ui.in.h:49
+msgid "<small>Swap</small>"
+msgstr "<small>Ausgelagert</small>"
+
+#: ../data/preferences.ui.in.h:50
+msgid "<small>Load</small>"
+msgstr "<small>Last</small>"
+
+#: ../data/preferences.ui.in.h:51
+msgid "<small>Read</small>"
+msgstr "<small>Lesen</small>"
+
+#: ../data/preferences.ui.in.h:52
+msgid "<small>Write</small>"
+msgstr "<small>Schreiben</small>"
+
+#: ../data/preferences.ui.in.h:53
+msgid "Advanced..."
+msgstr "Erweitert …"
 
 #: ../data/preferences.ui.in.h:54
 msgid "Menu items..."
 msgstr "Menüelemente …"
+
+#: ../data/preferences.ui.in.h:55
+msgid "Indicator items..."
+msgstr "Indikatorelemente …"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:1
 msgid "Available graphs"
@@ -250,6 +287,14 @@ msgstr "Breite der Graphen in Pixel"
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:4
 msgid "Height of the graphs in pixels."
 msgstr "Höhe der Graphen in Pixel"
+
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:5
+msgid "Graph background color"
+msgstr "Graph-Hintergrundfarbe"
+
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:6
+msgid "Most recently used color scheme"
+msgstr "Zuletzt verwendetes Farbschema"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:7
 msgid "The desktop description file to execute as the system monitor"
@@ -275,6 +320,19 @@ msgstr ""
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:11
 msgid "Information in the accessible description of the indicator"
 msgstr "Informationen in der aufrufbaren Beschreibung des Anzeigers"
+
+#. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, and commas.
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:13
+msgid ""
+"[ \"\", \"CPU $(percent(cpu.inuse))\", \"Mem $(size(mem.user))\", \"Net "
+"$(speed(net.down))/$(speed(net.up))\", \"Swap $(size(swap.used))\", \"Load "
+"$(decimals(load.avg,2))\", \"Disk $(speed(disk.read))/$(speed(disk.write))\" "
+"]"
+msgstr ""
+"[ \"\", \"CPU $(percent(cpu.inuse))\", \"Speicher $(size(mem.user))\", "
+"\"Netzwerk $(speed(net.down))/$(speed(net.up))\", \"Ausgelagert "
+"$(size(swap.used))\", \"Last $(decimals(load.avg,2))\", \"Platte "
+"$(speed(disk.read))/$(speed(disk.write))\" ]"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:14
 msgid "Information shown in the indicator itself"
@@ -302,14 +360,6 @@ msgstr ""
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:18
 msgid "Information shown as menu entries"
 msgstr "Informationen in Form von Menüeinträgen"
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
-msgid "Graph alpha value"
-msgstr "Graph Alphawert"
-
-#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:5
-msgid "Graph background color"
-msgstr "Graph-Hintergrundfarbe"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:19
 msgid "Graph visibility"
@@ -351,22 +401,43 @@ msgstr "Angezeigte Protokollierungen"
 msgid "System Load Indicator"
 msgstr "Systemlastanzeige"
 
+#. TRANSLATORS: Color theme name
+#: ../src/colormapper.vala:77
+msgid "Traditional"
+msgstr "Klassisch"
+
+#. TRANSLATORS: Color theme name for the Ubuntu Ambiance (light on dark) theme
+#: ../src/colormapper.vala:85
+msgid "Ambiance"
+msgstr "Ambiance"
+
+#. TRANSLATORS: Color theme name for the Ubuntu Radiance (dark on light) theme
+#: ../src/colormapper.vala:93
+msgid "Radiance"
+msgstr "Radiance"
+
+#. additional mem colors: slab 0000ff, map 836fff
+#. TRANSLATORS: Color theme name for the XOSView theme
+#: ../src/colormapper.vala:102
+msgid "XOSView"
+msgstr "XOSView"
+
 #: ../src/function.vala:103
 #, c-format
 msgid "%u%%"
 msgstr "%u%%"
 
+#: ../src/main.vala:44
+msgid "Output version information and exit"
+msgstr "Versionsinformationen anzeigen und beenden"
+
+#: ../src/main.vala:46
+msgid "System tray icon instead of app indicator"
+msgstr "Symbol im Systemabschnitt anstelle des Anwendungsindikators"
+
 #: ../src/main.vala:48
 msgid "Evaluate an expression"
 msgstr "Berechne einen Ausdruck"
-
-#: ../src/main.vala:44
-msgid "List available expression identifiers"
-msgstr "Auflistung verfügbarer Ausdruck-Identifikatoren"
-
-#: ../src/main.vala:41
-msgid "Show debug messages"
-msgstr "Debug-Meldungen anzeigen"
 
 #: ../src/main.vala:351
 msgid "- System load application indicator"
@@ -379,6 +450,11 @@ msgid ""
 msgstr ""
 "Führen Sie »%s --help« aus, um eine vollständige Liste von verfügbaren "
 "Befehlszeilenoptionen zu erhalten.\n"
+
+#. TRANSLATORS: custom color scheme
+#: ../src/preferences.vala:74
+msgid "Custom"
+msgstr "Benutzerdefiniert"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:45
@@ -430,3 +506,104 @@ msgid "%u B/s"
 msgid_plural "%u B/s"
 msgstr[0] "%u B/s"
 msgstr[1] "%u B/s"
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
+#: ../src/utils.vala:99
+msgid "{} kHz"
+msgstr "{} kHz"
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
+#: ../src/utils.vala:101
+msgid "{} MHz"
+msgstr "{} MHz"
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
+#: ../src/utils.vala:103
+msgid "{} GHz"
+msgstr "{} GHz"
+
+#. TRANSLATORS: Please leave %u as it is, it is replaced by the frequency
+#: ../src/utils.vala:112
+#, c-format
+msgid "%u Hz"
+msgid_plural "%u Hz"
+msgstr[0] "%u Hz"
+msgstr[1] "%u Hz"
+
+#~ msgid "Cach_ed"
+#~ msgstr "_Zwischengespeichert"
+
+#~ msgid "F_ree"
+#~ msgstr "_Frei"
+
+#~ msgid "Harddisk"
+#~ msgstr "Festplatte"
+
+#~ msgid "I_dle"
+#~ msgstr "_Leerlauf"
+
+#~ msgid "Load"
+#~ msgstr "Last"
+
+#~ msgid "Memory"
+#~ msgstr "Speicher"
+
+#~ msgid "N_ice"
+#~ msgstr "P_riorität"
+
+#~ msgid "Network"
+#~ msgstr "Netzwerk"
+
+#~ msgid "Processor"
+#~ msgstr "Prozessor"
+
+#~ msgid "S_ystem"
+#~ msgstr "S_ystem"
+
+#~ msgid "Sh_ared"
+#~ msgstr "_Gemeinsam"
+
+#~ msgid "Swap Space"
+#~ msgstr "Auslagerungsspeicher"
+
+#~ msgid "_Average"
+#~ msgstr "Last_mittel"
+
+#~ msgid "_Background"
+#~ msgstr "_Hintergrund"
+
+#~ msgid "_Buffers"
+#~ msgstr "P_uffer"
+
+#~ msgid "_Free"
+#~ msgstr "_Frei"
+
+#~ msgid "_In"
+#~ msgstr "_Ein"
+
+#~ msgid "_Local"
+#~ msgstr "_Lokal"
+
+#~ msgid "_Out"
+#~ msgstr "_Aus"
+
+#~ msgid "_Read"
+#~ msgstr "_Lesen"
+
+#~ msgid "_Used"
+#~ msgstr "_Belegt"
+
+#~ msgid "_User"
+#~ msgstr "_Benutzer"
+
+#~ msgid "_Write"
+#~ msgstr "_Schreiben"
+
+#~ msgid "Graph alpha value"
+#~ msgstr "Graph Alphawert"
+
+#~ msgid "List available expression identifiers"
+#~ msgstr "Auflistung verfügbarer Ausdruck-Identifikatoren"
+
+#~ msgid "I_OWait"
+#~ msgstr "E_/A abwartend"

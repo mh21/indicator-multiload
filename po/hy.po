@@ -6,16 +6,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-applets.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-14 20:17+0000\n"
-"PO-Revision-Date: 2013-02-12 06:37+0000\n"
-"Last-Translator: Narine Martirosyan <Unknown>\n"
+"POT-Creation-Date: 2014-04-16 08:27+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
+"Last-Translator: Narine Martirosyan <training@instigate.am>\n"
 "Language-Team: <norayr@arnet.am>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2013-02-15 04:55+0000\n"
-"X-Generator: Launchpad (build 16491)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:26+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 "Language: \n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
@@ -35,204 +35,249 @@ msgstr ""
 "  Narine Martirosyan https://launchpad.net/~training-instigate"
 
 #: ../data/preferences.ui.in.h:3
-msgid "_Open System Monitor"
-msgstr "Բացել համակարգի ստուգում ծրագիրը"
+msgid "Column"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:4
-msgid "_Preferences"
-msgstr "_Նախընտրանքներ"
+msgid "Graph"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:5
-msgid "_About"
-msgstr "_ Մասին"
+msgid "_Visible:"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:6
-msgid "_Quit"
+msgid "Upper Edge"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:7
-msgid "Monitored Resources"
-msgstr "Ստուգվող ռեսուրսներ"
+msgid "Minimum:"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:8
-msgid "_Processor"
-msgstr "Պրոցեսոր"
+msgid "Maximum:"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:9
-msgid "_Memory"
-msgstr "Հիշողություն"
+msgid "Smoothing:"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:10
-msgid "_Network"
-msgstr "Ցանց"
-
-#: ../data/preferences.ui.in.h:11
-msgid "S_wap Space"
-msgstr "Փոխանակության տարածք"
-
-#: ../data/preferences.ui.in.h:12
-msgid "_Load"
-msgstr "Բեռնում"
-
-#: ../data/preferences.ui.in.h:13
-msgid "_Harddisk"
-msgstr "Ամուր դիսկ"
-
-#: ../data/preferences.ui.in.h:14
-msgid "Options"
-msgstr "Տարբերակներ"
-
-#: ../data/preferences.ui.in.h:15
-msgid "System m_onitor width: "
-msgstr "Համակարգի մոնիտորի լայնությունը "
-
-#: ../data/preferences.ui.in.h:16
-msgid "Sys_tem monitor update interval: "
-msgstr "Համակարգի մոնիտորի նորացման արագություն "
-
-#: ../data/preferences.ui.in.h:17
 msgid "pixels"
 msgstr "պիքսել"
 
+#: ../data/preferences.ui.in.h:11
+msgid "Trace"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:12
+msgid "Expression:"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:13
+msgid "Color:"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:14
+msgid "Variable"
+msgstr ""
+
+#. TRANSLATORS: This refers to an expression in the domain of programming, see https://en.wikipedia.org/wiki/Expression_%28programming%29
+#: ../data/preferences.ui.in.h:16
+msgid "Expression"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:17
+msgid "Value"
+msgstr ""
+
 #: ../data/preferences.ui.in.h:18
+msgid "_Open System Monitor"
+msgstr "Բացել համակարգի ստուգում ծրագիրը"
+
+#: ../data/preferences.ui.in.h:19
+msgid "_Preferences"
+msgstr "_Նախընտրանքներ"
+
+#: ../data/preferences.ui.in.h:20
+msgid "_About"
+msgstr "_ Մասին"
+
+#: ../data/preferences.ui.in.h:21
+msgid "_Quit"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:22
+msgid "Monitored Resources"
+msgstr "Ստուգվող ռեսուրսներ"
+
+#: ../data/preferences.ui.in.h:23
+msgid "_Processor"
+msgstr "Պրոցեսոր"
+
+#: ../data/preferences.ui.in.h:24
+msgid "_Memory"
+msgstr "Հիշողություն"
+
+#: ../data/preferences.ui.in.h:25
+msgid "_Network"
+msgstr "Ցանց"
+
+#: ../data/preferences.ui.in.h:26
+msgid "S_wap Space"
+msgstr "Փոխանակության տարածք"
+
+#: ../data/preferences.ui.in.h:27
+msgid "_Load"
+msgstr "Բեռնում"
+
+#: ../data/preferences.ui.in.h:28
+msgid "_Harddisk"
+msgstr "Ամուր դիսկ"
+
+#: ../data/preferences.ui.in.h:29
+msgid "Options"
+msgstr "Տարբերակներ"
+
+#: ../data/preferences.ui.in.h:30
+msgid "System m_onitor width: "
+msgstr "Համակարգի մոնիտորի լայնությունը "
+
+#: ../data/preferences.ui.in.h:31
+msgid "Sys_tem monitor update interval: "
+msgstr "Համակարգի մոնիտորի նորացման արագություն "
+
+#: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
 msgstr "Միլի վայրկյաններ"
 
-#: ../data/preferences.ui.in.h:19
+#: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
 msgstr ""
 
-#: ../data/preferences.ui.in.h:20
+#: ../data/preferences.ui.in.h:34
 msgid "Colors"
 msgstr "Գույներ"
 
-#: ../data/preferences.ui.in.h:21
-msgid "_User"
-msgstr "Գործարկող"
-
-#: ../data/preferences.ui.in.h:22
-msgid "S_ystem"
-msgstr "Համակարգ"
-
-#: ../data/preferences.ui.in.h:23
-msgid "N_ice"
-msgstr "Առաջնայնություն"
-
-#: ../data/preferences.ui.in.h:24
-msgid "I_OWait"
-msgstr "I_OWait"
-
-#: ../data/preferences.ui.in.h:25
-msgid "I_dle"
-msgstr "Պարապուրդ"
-
-#: ../data/preferences.ui.in.h:26
-msgid "Processor"
-msgstr "Պրոցեսոր"
-
-#: ../data/preferences.ui.in.h:27
-msgid "Sh_ared"
-msgstr "Տարանջատված"
-
-#: ../data/preferences.ui.in.h:28
-msgid "_Buffers"
-msgstr "Բուֆերներ"
-
-#: ../data/preferences.ui.in.h:29
-msgid "Cach_ed"
-msgstr "Հիշողություն"
-
-#: ../data/preferences.ui.in.h:30
-msgid "F_ree"
-msgstr "Ազատ"
-
-#: ../data/preferences.ui.in.h:31
-msgid "Memory"
-msgstr "Հիշողություն"
-
-#: ../data/preferences.ui.in.h:32
-msgid "_In"
-msgstr "_Մեջ"
-
-#: ../data/preferences.ui.in.h:33
-msgid "_Out"
-msgstr "_Դուրս"
-
-#: ../data/preferences.ui.in.h:34
-msgid "_Local"
-msgstr "_Տեղային"
-
 #: ../data/preferences.ui.in.h:35
-msgid "_Background"
-msgstr "Ֆոն"
+msgid "Built-in schemes:"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:36
-msgid "Network"
-msgstr "Ցանց"
+msgid "Color palette:"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:37
-msgid "_Used"
-msgstr "Օգտագործված"
+msgid "<small>Busy</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:38
-msgid "_Free"
-msgstr "Ազատ"
+msgid "<small>System</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:39
-msgid "Swap Space"
-msgstr "Փոխանակման տարածք"
+msgid "<small>Nice</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:40
-msgid "_Average"
-msgstr "Միջին"
+msgid "<small>IOWait</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:41
-msgid "Load"
-msgstr "Բեռնում"
+msgid "<small>Background</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:42
-msgid "_Read"
-msgstr "Ընթերցում"
+msgid "<small>Memory</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:43
-msgid "_Write"
-msgstr "Գրել"
+msgid "<small>Shared</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:44
-msgid "Harddisk"
-msgstr "Ամուր դիսկ"
+msgid "<small>Buffers</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:45
+msgid "<small>Cached</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:46
+msgid "<small>Download</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:47
+msgid "<small>Upload</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:48
+msgid "<small>Localhost</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:49
+msgid "<small>Swap</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:50
+msgid "<small>Load</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:51
+msgid "<small>Read</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:52
+msgid "<small>Write</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:53
+msgid "Advanced..."
+msgstr ""
+
+#: ../data/preferences.ui.in.h:54
 msgid "Menu items..."
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
+#: ../data/preferences.ui.in.h:55
+msgid "Indicator items..."
+msgstr ""
+
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:1
 msgid "Available graphs"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
 msgstr "Ապլետի նորացման հաճախականությունը միլի վայրկյաններում"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:3
 msgid "Width of the graphs in pixels."
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:4
 msgid "Height of the graphs in pixels."
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:5
+msgid "Graph background color"
+msgstr ""
+
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:6
+msgid "Most recently used color scheme"
+msgstr ""
+
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:7
 msgid "The desktop description file to execute as the system monitor"
 msgstr ""
 "Աշխատանքային սեղանի նկարագրական ֆայլը ձևակերպել որպես համակարգային ցուցասարք"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:8
 msgid "Automatically start on session startup"
 msgstr ""
 
 #. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, and commas.
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:10
 msgid ""
 "[ \"CPU $(percent(cpu.inuse)) Mem $(size(mem.user)) Net down "
 "$(speed(net.down)) up $(speed(net.up)) Swap $(size(swap.used)) Load "
@@ -240,20 +285,29 @@ msgid ""
 "$(speed(disk.write))\" ]"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:11
 msgid "Information in the accessible description of the indicator"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
+#. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, and commas.
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:13
+msgid ""
+"[ \"\", \"CPU $(percent(cpu.inuse))\", \"Mem $(size(mem.user))\", \"Net "
+"$(speed(net.down))/$(speed(net.up))\", \"Swap $(size(swap.used))\", \"Load "
+"$(decimals(load.avg,2))\", \"Disk $(speed(disk.read))/$(speed(disk.write))\" "
+"]"
+msgstr ""
+
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:14
 msgid "Information shown in the indicator itself"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:15
 msgid "Index of the current information shown in the indicator itself"
 msgstr ""
 
 #. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, and commas.
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:17
 msgid ""
 "[ \"CPU: $(percent(cpu.inuse)), iowait $(percent(cpu.io))\", \"Mem: "
 "$(size(mem.user)), cache $(size(mem.cached))\", \"Net: down "
@@ -262,51 +316,43 @@ msgid ""
 "$(speed(disk.write))\" ]"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:18
 msgid "Information shown as menu entries"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
-msgid "Graph alpha value"
-msgstr ""
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
-msgid "Graph background color"
-msgstr ""
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:19
 msgid "Graph visibility"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:20
 msgid "Minimum value for upper graph edge"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:21
 msgid "Maximum value for upper graph edge, zero means unlimited"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:22
 msgid "Number of values used for smooth graph scaling"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:23
 msgid "Available traces"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:22
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:24
 msgid "Trace color"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:23
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:25
 msgid "Trace expression"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:24
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:26
 msgid "Trace visibility"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:25
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:27
 msgid "Traces shown"
 msgstr ""
 
@@ -314,49 +360,76 @@ msgstr ""
 msgid "System Load Indicator"
 msgstr ""
 
-#: ../src/function.vala:88
+#. TRANSLATORS: Color theme name
+#: ../src/colormapper.vala:77
+msgid "Traditional"
+msgstr ""
+
+#. TRANSLATORS: Color theme name for the Ubuntu Ambiance (light on dark) theme
+#: ../src/colormapper.vala:85
+msgid "Ambiance"
+msgstr ""
+
+#. TRANSLATORS: Color theme name for the Ubuntu Radiance (dark on light) theme
+#: ../src/colormapper.vala:93
+msgid "Radiance"
+msgstr ""
+
+#. additional mem colors: slab 0000ff, map 836fff
+#. TRANSLATORS: Color theme name for the XOSView theme
+#: ../src/colormapper.vala:102
+msgid "XOSView"
+msgstr ""
+
+#: ../src/function.vala:103
 #, c-format
 msgid "%u%%"
 msgstr ""
 
-#: ../src/main.vala:37
+#: ../src/main.vala:44
+msgid "Output version information and exit"
+msgstr ""
+
+#: ../src/main.vala:46
+msgid "System tray icon instead of app indicator"
+msgstr ""
+
+#: ../src/main.vala:48
 msgid "Evaluate an expression"
 msgstr ""
 
-#: ../src/main.vala:39
-msgid "List available expression identifiers"
-msgstr ""
-
-#: ../src/main.vala:41
-msgid "Show debug messages"
-msgstr ""
-
-#: ../src/main.vala:322
+#: ../src/main.vala:351
 msgid "- System load application indicator"
 msgstr ""
 
-#: ../src/main.vala:330
+#: ../src/main.vala:359
 #, c-format
 msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
 
+#. TRANSLATORS: custom color scheme
+#: ../src/preferences.vala:74
+msgid "Custom"
+msgstr ""
+
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
-#: ../src/utils.vala:57
+#: ../src/utils.vala:45
 msgid "{} kB"
 msgstr ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
-#: ../src/utils.vala:59
+#: ../src/utils.vala:47
 msgid "{} MB"
 msgstr ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
-#: ../src/utils.vala:61
+#: ../src/utils.vala:49
 msgid "{} GB"
 msgstr ""
 
-#: ../src/utils.vala:69
+#. TRANSLATORS: Please leave %u as it is, it is replaced by the size
+#: ../src/utils.vala:58
 #, c-format
 msgid "%u B"
 msgid_plural "%u B"
@@ -364,28 +437,124 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:82
+#: ../src/utils.vala:71
 msgid "{} kB/s"
 msgstr ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:84
+#: ../src/utils.vala:73
 msgid "{} MB/s"
 msgstr ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:86
+#: ../src/utils.vala:75
 msgid "{} GB/s"
 msgstr ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:88
+#: ../src/utils.vala:77
 msgid "{} TB/s"
 msgstr ""
 
-#: ../src/utils.vala:96
+#. TRANSLATORS: Please leave %u as it is, it is replaced by the speed
+#: ../src/utils.vala:86
 #, c-format
 msgid "%u B/s"
 msgid_plural "%u B/s"
 msgstr[0] ""
 msgstr[1] ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
+#: ../src/utils.vala:99
+msgid "{} kHz"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
+#: ../src/utils.vala:101
+msgid "{} MHz"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
+#: ../src/utils.vala:103
+msgid "{} GHz"
+msgstr ""
+
+#. TRANSLATORS: Please leave %u as it is, it is replaced by the frequency
+#: ../src/utils.vala:112
+#, c-format
+msgid "%u Hz"
+msgid_plural "%u Hz"
+msgstr[0] ""
+msgstr[1] ""
+
+#~ msgid "Cach_ed"
+#~ msgstr "Հիշողություն"
+
+#~ msgid "F_ree"
+#~ msgstr "Ազատ"
+
+#~ msgid "Harddisk"
+#~ msgstr "Ամուր դիսկ"
+
+#~ msgid "I_OWait"
+#~ msgstr "I_OWait"
+
+#~ msgid "I_dle"
+#~ msgstr "Պարապուրդ"
+
+#~ msgid "Load"
+#~ msgstr "Բեռնում"
+
+#~ msgid "Memory"
+#~ msgstr "Հիշողություն"
+
+#~ msgid "N_ice"
+#~ msgstr "Առաջնայնություն"
+
+#~ msgid "Network"
+#~ msgstr "Ցանց"
+
+#~ msgid "Processor"
+#~ msgstr "Պրոցեսոր"
+
+#~ msgid "S_ystem"
+#~ msgstr "Համակարգ"
+
+#~ msgid "Sh_ared"
+#~ msgstr "Տարանջատված"
+
+#~ msgid "Swap Space"
+#~ msgstr "Փոխանակման տարածք"
+
+#~ msgid "_Average"
+#~ msgstr "Միջին"
+
+#~ msgid "_Background"
+#~ msgstr "Ֆոն"
+
+#~ msgid "_Buffers"
+#~ msgstr "Բուֆերներ"
+
+#~ msgid "_Free"
+#~ msgstr "Ազատ"
+
+#~ msgid "_In"
+#~ msgstr "_Մեջ"
+
+#~ msgid "_Local"
+#~ msgstr "_Տեղային"
+
+#~ msgid "_Out"
+#~ msgstr "_Դուրս"
+
+#~ msgid "_Read"
+#~ msgstr "Ընթերցում"
+
+#~ msgid "_Used"
+#~ msgstr "Օգտագործված"
+
+#~ msgid "_User"
+#~ msgstr "Գործարկող"
+
+#~ msgid "_Write"
+#~ msgstr "Գրել"
