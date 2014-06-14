@@ -1,32 +1,82 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Greek translation for gnome-applets
+# Copyright (C) 1999 - 2009 Free Software Foundation, Inc.
 #
-#, fuzzy
+# Half of translation by Spiros, Simos/Sarantis other half.
+# Revision by Sarantis/Simos.
+# Simos added about 160, totaling to 868 messages.
+#  -->
+#      load=φορτίο ή φόρτος; (2)
+#
+# kostas: 25May2003, one more update.
+# kostas:06Jul2003, one more update.
+# kostas: 27Jul2003, one more update.
+# Nikos:  13Feb2004 fixes
+# Nikos:  15Jul2004 minor fixes
+# Nikos:  30Jul2004 minor fixes
+#
+#
+# simos: 1016 messages, 18Feb2001.
+# simos: 1069 messages, 18Feb2001, with visual verification.
+# simos: 1074 messages, 27Feb2001.
+# simos: 1074 messages, 26Mar2001, unfuzzied 1 (beargsgppl).
+# simos: 1077 messages, 4Jun2001, (micumple).
+# simos: 1092 messages, 2Aug2001, (conbea).
+# simos: 487 messages, 14May2002, (GNOME2 update, UTF-8 encoding.).
+# kostas: 818 messages, 25Oct2002, completed translation.
+# simos: 818 messages, 25Oct2002, review of translation.
+# kostas:740 messages, 06Jan2003, updated translation.
+# kostas: 23May2003, 179 new, unfuzzy 172, update for 2.4xx.
+# kostas: 914messages,10Aug2003, one more update.
+# kostas: 1201messages,15Aug2003, one more update.
+# kostas: 1202messages,05Sep2003, one more update.
+# kostas: 1204messages,12Nov2003, updates and fixes.
+# kostas: 1258messages,26Jan2004.
+# kostas: 1260messages,03Feb2004.
+# Spiros Papadimitriou <spapadim+@cs.cmu.edu>, 1999.
+# Simos Xenitellis <simos@hellug.gr>, 1999, 2000, 2001, 2002.
+# Sarantis Paskalis <paskalis@di.uoa.gr>, 2000.
+# Kostas Papadimas <pkst@gnome.org>,  2002,2003, 2004, 2005, 2006, 2008.
+# Nikos Charonitakis <charosn@her.forthnet.gr>, 2004.
+# Simos Xenitellis <simos@gnome.org>, 2005.
+# Marios Zindilis <m.zindilis@dmajor.org>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: gnome-applets.HEAD.el\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2012-05-24 07:34+0000\n"
+"Last-Translator: Simos Tsimperis <simos.medical@gmail.com>\n"
+"Language-Team: Greek <team@gnome.gr>\n"
+"Language: el\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
+"Η εφαρμογή φόρτου συστήματος προβάλλει γραφικά για τη χρήση ΚΜΕ, μνήμης RAM, "
+"και αρχείου εναλλαγής, καθώς και το φόρτο δικτύου."
 
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
 msgstr ""
+"Σπύρος Παπαδημητρίου <spapadim+@cs.cmu.edu>\n"
+"Σίμος Ξενιτέλλης <simos@gnome.org>\n"
+"Σαράντης Πασχάλης <paskalis@di.uoa.gr>\n"
+"Κώστας Παπαδήμας <pkst@gnome.org>\n"
+"Νίκος Χαρωνιτάκης <charosn@her.forthnet.gr>\n"
+"Μάριος Ζηντίλης <m.zindilis@dmajor.org>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Apostolakis Spiros https://launchpad.net/~apostolakiss\n"
+"  Michael Kotsarinis https://launchpad.net/~mk73628\n"
+"  Simos Tsimperis https://launchpad.net/~simos-medical"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -58,7 +108,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:10
 msgid "pixels"
-msgstr ""
+msgstr "εικονοστοιχεία"
 
 #: ../data/preferences.ui.in.h:11
 msgid "Trace"
@@ -69,8 +119,9 @@ msgid "Expression:"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:13
+#, fuzzy
 msgid "Color:"
-msgstr ""
+msgstr "Χρώματα"
 
 #: ../data/preferences.ui.in.h:14
 msgid "Variable"
@@ -87,71 +138,71 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
-msgstr ""
+msgstr "Άν_οιγμα Παρακολούθησης Συστήματος"
 
 #: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
-msgstr ""
+msgstr "_Προτιμήσεις"
 
 #: ../data/preferences.ui.in.h:20
 msgid "_About"
-msgstr ""
+msgstr "_Περί"
 
 #: ../data/preferences.ui.in.h:21
 msgid "_Quit"
-msgstr ""
+msgstr "_Κλείστε"
 
 #: ../data/preferences.ui.in.h:22
 msgid "Monitored Resources"
-msgstr ""
+msgstr "Παρακολουθούμενοι Πόροι"
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Processor"
-msgstr ""
+msgstr "_Επεξεργαστής"
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Memory"
-msgstr ""
+msgstr "_Μνήμη"
 
 #: ../data/preferences.ui.in.h:25
 msgid "_Network"
-msgstr ""
+msgstr "_Δίκτυο"
 
 #: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
-msgstr ""
+msgstr "Χώρος S_wap"
 
 #: ../data/preferences.ui.in.h:27
 msgid "_Load"
-msgstr ""
+msgstr "Φό_ρτος"
 
 #: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
-msgstr ""
+msgstr "_Σκληρός δίσκος"
 
 #: ../data/preferences.ui.in.h:29
 msgid "Options"
-msgstr ""
+msgstr "Επιλογές"
 
 #: ../data/preferences.ui.in.h:30
 msgid "System m_onitor width: "
-msgstr ""
+msgstr "Πλάτος πα_ρακολούθησης συστήματος: "
 
 #: ../data/preferences.ui.in.h:31
 msgid "Sys_tem monitor update interval: "
-msgstr ""
+msgstr "Μεσοδιάστημα ενημέρωσης παρα_κολούθησης συστήματος: "
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
-msgstr ""
+msgstr "χιλιοστά δευτερολέπτου"
 
 #: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
-msgstr ""
+msgstr "_Aυτόματη εκκίνηση: "
 
 #: ../data/preferences.ui.in.h:34
 msgid "Colors"
-msgstr ""
+msgstr "Χρώματα"
 
 #: ../data/preferences.ui.in.h:35
 msgid "Built-in schemes:"
@@ -239,23 +290,23 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:1
 msgid "Available graphs"
-msgstr ""
+msgstr "Διαθέσιμα γραφήματα"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
-msgstr ""
+msgstr "Ρυθμός ανανέωσης μικροεφαρμογής σε χιλιοστά δευτερ."
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:3
 msgid "Width of the graphs in pixels."
-msgstr ""
+msgstr "Πλάτος των γραφημάτων σε pixels."
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:4
 msgid "Height of the graphs in pixels."
-msgstr ""
+msgstr "Ύψος των γραφημάτων σε pixels."
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:5
 msgid "Graph background color"
-msgstr ""
+msgstr "Χρώμα φόντου γραφήματος"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:6
 msgid "Most recently used color scheme"
@@ -264,10 +315,12 @@ msgstr ""
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:7
 msgid "The desktop description file to execute as the system monitor"
 msgstr ""
+"Το αρχείο περιγραφής επιφάνειας εργασίας για εκτέλεση ως παρακολούθηση "
+"συστήματος"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:8
 msgid "Automatically start on session startup"
-msgstr ""
+msgstr "Αυτόματη εκκίνηση κατά την έναρξη της συνεδρίας"
 
 #. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, and commas.
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:10
@@ -310,11 +363,11 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:18
 msgid "Information shown as menu entries"
-msgstr ""
+msgstr "Πληροφορίες εμφανιζόμενες ως καταχωρήσεις στο μενού"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:19
 msgid "Graph visibility"
-msgstr ""
+msgstr "Ορατότητα γραφήματος"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:20
 msgid "Minimum value for upper graph edge"
@@ -350,7 +403,7 @@ msgstr ""
 
 #: ../data/indicator-multiload.desktop.in.h:1
 msgid "System Load Indicator"
-msgstr ""
+msgstr "Δείκτης Φόρτου Συστήματος"
 
 #. TRANSLATORS: Color theme name
 #: ../src/colormapper.vala:77
@@ -383,8 +436,9 @@ msgid "Output version information and exit"
 msgstr ""
 
 #: ../src/main.vala:46
+#, fuzzy
 msgid "System tray icon instead of app indicator"
-msgstr ""
+msgstr "Δείκτης φόρτου εφαρμογών συστήματος"
 
 #: ../src/main.vala:48
 msgid "Evaluate an expression"
@@ -392,12 +446,14 @@ msgstr ""
 
 #: ../src/main.vala:351
 msgid "- System load application indicator"
-msgstr ""
+msgstr "Δείκτης φόρτου εφαρμογών συστήματος"
 
 #: ../src/main.vala:359
 #, c-format
 msgid "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
+"Εκτελέστε '%s --help' για να δείτε μια πλήρη λίστα των διαθέσιμων επιλογών "
+"της γραμμής εντολών\n"
 
 #. TRANSLATORS: custom color scheme
 #: ../src/preferences.vala:74
@@ -477,3 +533,78 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
+
+#~ msgid "_User"
+#~ msgstr "_Χρήστης"
+
+#~ msgid "S_ystem"
+#~ msgstr "Σ_ύστημα"
+
+#~ msgid "N_ice"
+#~ msgstr "Ωραιο_ποίηση"
+
+#~ msgid "I_OWait"
+#~ msgstr "I_OWait"
+
+#~ msgid "I_dle"
+#~ msgstr "Αδ_ρανής"
+
+#~ msgid "Processor"
+#~ msgstr "Επεξεργαστής"
+
+#~ msgid "Sh_ared"
+#~ msgstr "Διαμοιρα_ζόμενο"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Ενταμιευτές"
+
+#~ msgid "Cach_ed"
+#~ msgstr "Cach_ed"
+
+#~ msgid "F_ree"
+#~ msgstr "Ελ_εύθερο"
+
+#~ msgid "Memory"
+#~ msgstr "Μνήμη"
+
+#~ msgid "_In"
+#~ msgstr "_In"
+
+#~ msgid "_Out"
+#~ msgstr "_Out"
+
+#~ msgid "_Local"
+#~ msgstr "_Τοπικό"
+
+#~ msgid "_Background"
+#~ msgstr "_Παρασκήνιο"
+
+#~ msgid "Network"
+#~ msgstr "Δίκτυο"
+
+#~ msgid "_Used"
+#~ msgstr "_Κατειλημμένο"
+
+#~ msgid "_Free"
+#~ msgstr "_Ελεύθερο"
+
+#~ msgid "Swap Space"
+#~ msgstr "Χώρος αντιμετάθεσης"
+
+#~ msgid "_Average"
+#~ msgstr "Μέ_σος Φόρτος"
+
+#~ msgid "Load"
+#~ msgstr "Φόρτος"
+
+#~ msgid "_Read"
+#~ msgstr "Α_νάγνωση"
+
+#~ msgid "_Write"
+#~ msgstr "Ε_γγραφή"
+
+#~ msgid "Harddisk"
+#~ msgstr "Σκληρός δίσκος"
+
+#~ msgid "Show debug messages"
+#~ msgstr "Εμφάνιση μηνυμάτων αποσφαλμάτωσης"

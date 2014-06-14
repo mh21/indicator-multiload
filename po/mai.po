@@ -1,32 +1,38 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# translation of gnome-applets.HEAD.po to Maithili
+# Copyright (C) 2006 The GNOME Foundation
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# BOSS GNU/Linux <bosslinux@cdac.in>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: gedit.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"Last-Translator: Sangeeta Kumari\n"
+"Language-Team: <en@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
+"ई सिस्टम लोड मॉनीटर, सीपीयू, रैम, स्वैप फ़ाइल उपयोग क' सँग ही सँजाल ट्रेफिक क' आरेख "
+"बताबैमे समर्थ अछि"
 
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
 msgstr ""
+"संगीता कुमारी (sangeeta09@gmail.com)\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Michael Hofmann https://launchpad.net/~mh21"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -58,7 +64,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:10
 msgid "pixels"
-msgstr ""
+msgstr "पिक्सेल्स"
 
 #: ../data/preferences.ui.in.h:11
 msgid "Trace"
@@ -69,8 +75,9 @@ msgid "Expression:"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:13
+#, fuzzy
 msgid "Color:"
-msgstr ""
+msgstr "रंग"
 
 #: ../data/preferences.ui.in.h:14
 msgid "Variable"
@@ -87,15 +94,15 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
-msgstr ""
+msgstr "सिस्टम मॉनीटर खोलू (_O)"
 
 #: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
-msgstr ""
+msgstr "वरीयतासभ (_P)"
 
 #: ../data/preferences.ui.in.h:20
 msgid "_About"
-msgstr ""
+msgstr "क' संबंधमे (_A)"
 
 #: ../data/preferences.ui.in.h:21
 msgid "_Quit"
@@ -103,47 +110,47 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:22
 msgid "Monitored Resources"
-msgstr ""
+msgstr "मॉनीटर्ड संसाधन"
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Processor"
-msgstr ""
+msgstr "प्रोसेसर (_P)"
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Memory"
-msgstr ""
+msgstr "स्मृति (_M)"
 
 #: ../data/preferences.ui.in.h:25
 msgid "_Network"
-msgstr ""
+msgstr "संजाल (_N)"
 
 #: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
-msgstr ""
+msgstr "स्वेप जगह (_w)"
 
 #: ../data/preferences.ui.in.h:27
 msgid "_Load"
-msgstr ""
+msgstr "लोड (_L)"
 
 #: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
-msgstr ""
+msgstr "हार्ड डिस्क (_H)"
 
 #: ../data/preferences.ui.in.h:29
 msgid "Options"
-msgstr ""
+msgstr "विकल्प"
 
 #: ../data/preferences.ui.in.h:30
 msgid "System m_onitor width: "
-msgstr ""
+msgstr "सिस्टम मॉनीटर चओड़ाइः (_o) "
 
 #: ../data/preferences.ui.in.h:31
 msgid "Sys_tem monitor update interval: "
-msgstr ""
+msgstr "सिस्टम मॉनीटर अद्यतन अंतरालः (_t) "
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
-msgstr ""
+msgstr "मिलीसेकेंड"
 
 #: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
@@ -151,7 +158,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:34
 msgid "Colors"
-msgstr ""
+msgstr "रंग"
 
 #: ../data/preferences.ui.in.h:35
 msgid "Built-in schemes:"
@@ -243,7 +250,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
-msgstr ""
+msgstr "मिलीसेकण्डमे एप्लेट ताज़ा करबाक दर"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:3
 msgid "Width of the graphs in pixels."
@@ -477,3 +484,66 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
+
+#~ msgid "_User"
+#~ msgstr "प्रयोक्ता (_U)"
+
+#~ msgid "S_ystem"
+#~ msgstr "तंत्र (_y)"
+
+#~ msgid "N_ice"
+#~ msgstr "नाइस (_i)"
+
+#~ msgid "I_OWait"
+#~ msgstr "I_OWait"
+
+#~ msgid "I_dle"
+#~ msgstr "निष्क्रिय (_d)"
+
+#~ msgid "Processor"
+#~ msgstr "प्रोसेसर"
+
+#~ msgid "Sh_ared"
+#~ msgstr "साझा (_a)"
+
+#~ msgid "_Buffers"
+#~ msgstr "बफ़र्स (_B)"
+
+#~ msgid "Cach_ed"
+#~ msgstr "कैच्ड (_e)"
+
+#~ msgid "F_ree"
+#~ msgstr "मुफ्त (_r)"
+
+#~ msgid "Memory"
+#~ msgstr "स्मृति"
+
+#~ msgid "_Background"
+#~ msgstr "पृष्ठभूमि (_B)"
+
+#~ msgid "Network"
+#~ msgstr "नेटवर्क"
+
+#~ msgid "_Used"
+#~ msgstr "प्रयुक्त (_U)"
+
+#~ msgid "_Free"
+#~ msgstr "खाली (_F)"
+
+#~ msgid "Swap Space"
+#~ msgstr "स्वैप जगह"
+
+#~ msgid "_Average"
+#~ msgstr "औसत (_A)"
+
+#~ msgid "Load"
+#~ msgstr "लोड"
+
+#~ msgid "_Read"
+#~ msgstr "पढ़ू (_R)"
+
+#~ msgid "_Write"
+#~ msgstr "लिखू (_W)"
+
+#~ msgid "Harddisk"
+#~ msgstr "हार्ड डिस्क"

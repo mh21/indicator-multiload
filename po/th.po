@@ -1,32 +1,44 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Thai translation for gnome-applets.
+# Copyright (C) 2004-2010 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-applets package.
+# Paisa Seeluangsawat <paisa@users.sf.net>, 2004.
+# Theppitak Karoonboonyanan <thep@linux.thai.net>, 2004-2010.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
+"Language-Team: Thai <thai-10n@googlegroups.com>\n"
+"Language: th\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
+"แอพเพล็ตติดตามทรัพยากรระบบ สามารถแสดงกราฟระดับการใช้งานตัวประมวลผล หน่วยความจำ "
+"พื้นที่สลับ และการจราจรในเครือข่าย"
 
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
 msgstr ""
+"ไพศาข์ สีเหลืองสวัสดิ์\n"
+"เทพพิทักษ์ การุญบุญญานันท์\n"
+"\n"
+"ถ้ามีเวลาโปรดมาช่วยกันแปล :-)\n"
+"http://gnome-th.sf.net\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Theppitak Karoonboonyanan https://launchpad.net/~thep"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -58,7 +70,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:10
 msgid "pixels"
-msgstr ""
+msgstr "พิกเซล"
 
 #: ../data/preferences.ui.in.h:11
 msgid "Trace"
@@ -69,8 +81,9 @@ msgid "Expression:"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:13
+#, fuzzy
 msgid "Color:"
-msgstr ""
+msgstr "สี"
 
 #: ../data/preferences.ui.in.h:14
 msgid "Variable"
@@ -87,15 +100,15 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
-msgstr ""
+msgstr "_เปิดโปรแกรมติดตามทรัพยากรระบบ"
 
 #: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
-msgstr ""
+msgstr "_ปรับแต่ง"
 
 #: ../data/preferences.ui.in.h:20
 msgid "_About"
-msgstr ""
+msgstr "เ_กี่ยวกับ"
 
 #: ../data/preferences.ui.in.h:21
 msgid "_Quit"
@@ -103,47 +116,48 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:22
 msgid "Monitored Resources"
-msgstr ""
+msgstr "ทรัพยากรที่จะติดตาม"
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Processor"
-msgstr ""
+msgstr "_ตัวประมวลผล"
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Memory"
-msgstr ""
+msgstr "_หน่วยความจำ"
 
 #: ../data/preferences.ui.in.h:25
 msgid "_Network"
-msgstr ""
+msgstr "เค_รือข่าย"
 
 #: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
-msgstr ""
+msgstr "_พื้นที่สลับ"
 
 #: ../data/preferences.ui.in.h:27
 msgid "_Load"
-msgstr ""
+msgstr "โห_ลด"
 
 #: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
-msgstr ""
+msgstr "ฮาร์ด_ดิสก์"
 
 #: ../data/preferences.ui.in.h:29
 msgid "Options"
-msgstr ""
+msgstr "ตัวเลือก"
 
+# Not a direct translation, but helps shorten the message.
 #: ../data/preferences.ui.in.h:30
 msgid "System m_onitor width: "
-msgstr ""
+msgstr "_ความกว้างของแอพเพล็ต: "
 
 #: ../data/preferences.ui.in.h:31
 msgid "Sys_tem monitor update interval: "
-msgstr ""
+msgstr "_ปรับข้อมูลทุกๆ: "
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
-msgstr ""
+msgstr "มิลลิวินาที"
 
 #: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
@@ -151,7 +165,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:34
 msgid "Colors"
-msgstr ""
+msgstr "สี"
 
 #: ../data/preferences.ui.in.h:35
 msgid "Built-in schemes:"
@@ -243,7 +257,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
-msgstr ""
+msgstr "จำนวนมิลลิวินาทีระหว่างการเขียนแอพเพล็ต"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:3
 msgid "Width of the graphs in pixels."
@@ -263,7 +277,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:7
 msgid "The desktop description file to execute as the system monitor"
-msgstr ""
+msgstr "แฟ้ม .desktop ที่จะเรียกทำงานเป็นโปรแกรมติดตามทรัพยากรระบบ"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:8
 msgid "Automatically start on session startup"
@@ -476,4 +490,76 @@ msgstr ""
 msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
-msgstr[1] ""
+
+#~ msgid "_User"
+#~ msgstr "ผู้ใ_ช้"
+
+#~ msgid "S_ystem"
+#~ msgstr "_ระบบ"
+
+#~ msgid "N_ice"
+#~ msgstr "N_ice"
+
+#~ msgid "I_OWait"
+#~ msgstr "รอ I/_O"
+
+#~ msgid "I_dle"
+#~ msgstr "_ว่าง"
+
+#~ msgid "Processor"
+#~ msgstr "ตัวประมวลผล"
+
+#~ msgid "Sh_ared"
+#~ msgstr "ใช้_ร่วม"
+
+#~ msgid "_Buffers"
+#~ msgstr "_บัฟเฟอร์"
+
+#~ msgid "Cach_ed"
+#~ msgstr "แ_คช"
+
+# free memory
+#~ msgid "F_ree"
+#~ msgstr "เ_หลือ"
+
+#~ msgid "Memory"
+#~ msgstr "หน่วยความจำ"
+
+#~ msgid "_In"
+#~ msgstr "เ_ข้า:"
+
+#~ msgid "_Out"
+#~ msgstr "_ออก"
+
+#~ msgid "_Local"
+#~ msgstr "_วนกลับ"
+
+#~ msgid "_Background"
+#~ msgstr "_พื้นหลัง"
+
+#~ msgid "Network"
+#~ msgstr "เครือข่าย"
+
+#~ msgid "_Used"
+#~ msgstr "ใ_ช้อยู่"
+
+#~ msgid "_Free"
+#~ msgstr "เ_หลือ"
+
+#~ msgid "Swap Space"
+#~ msgstr "พื้นที่สลับ"
+
+#~ msgid "_Average"
+#~ msgstr "เฉ_ลี่ย"
+
+#~ msgid "Load"
+#~ msgstr "โหลด"
+
+#~ msgid "_Read"
+#~ msgstr "_อ่าน:"
+
+#~ msgid "_Write"
+#~ msgstr "เ_ขียน:"
+
+#~ msgid "Harddisk"
+#~ msgstr "ฮาร์ดดิสก์"

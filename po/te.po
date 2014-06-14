@@ -1,32 +1,41 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# translation of gnome-applets.master.te.po to Telugu
+# Telugu translation of gnome-applets
+# Copyright (C) 2005 Free Software Foundation, Andhra Pradesh.
+# This file is distributed under the same license as the gnome-applets package.
 #
-#, fuzzy
+# Prajasakti Localisation Team <localisation@prajasakti.com>, 2005.
+# Krishna Babu K <kkrothap@redhat.com>, 2008, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: gnome-applets.master.te\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"Last-Translator: Arjuna Rao Chavala <arjunaraoc@gmail.com>\n"
+"Language-Team: Telugu <en@li.org>\n"
+"Language: te\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
+"వ్యవస్థ భార దర్శని CPU,ram, మరియు ఖాళీ బదలాయింపు ఉపయోగము కొరకు రేఖా పటములను మరియు అల్లిక ట్రాఫిక్ "
+"ను ప్రదర్శించగలదు."
 
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
 msgstr ""
+"KrishnaBabu K <kkrothap@redhat.com> 2008.\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Arjuna Rao Chavala https://launchpad.net/~arjunaraoc-gmail"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -58,7 +67,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:10
 msgid "pixels"
-msgstr ""
+msgstr "పిగ్జెల్స్"
 
 #: ../data/preferences.ui.in.h:11
 msgid "Trace"
@@ -69,8 +78,9 @@ msgid "Expression:"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:13
+#, fuzzy
 msgid "Color:"
-msgstr ""
+msgstr "వర్ణములు"
 
 #: ../data/preferences.ui.in.h:14
 msgid "Variable"
@@ -87,15 +97,15 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
-msgstr ""
+msgstr "వ్యవస్థ దర్శినిని తెరువు  (_O)"
 
 #: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
-msgstr ""
+msgstr "అభీష్టాలు(_P)"
 
 #: ../data/preferences.ui.in.h:20
 msgid "_About"
-msgstr ""
+msgstr "గురించి(_A)"
 
 #: ../data/preferences.ui.in.h:21
 msgid "_Quit"
@@ -103,47 +113,47 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:22
 msgid "Monitored Resources"
-msgstr ""
+msgstr "అజమాయిషీలో వున్న వనరులు"
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Processor"
-msgstr ""
+msgstr "ప్రోసెసర్ (_P)"
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Memory"
-msgstr ""
+msgstr "జ్ఞాపకశక్తి (_M)"
 
 #: ../data/preferences.ui.in.h:25
 msgid "_Network"
-msgstr ""
+msgstr "అల్లిక (_N)"
 
 #: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
-msgstr ""
+msgstr "బదలాయింపు స్థలం (_w)"
 
 #: ../data/preferences.ui.in.h:27
 msgid "_Load"
-msgstr ""
+msgstr "నింపుము (_L)"
 
 #: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
-msgstr ""
+msgstr "ప్రధానఖని (_H)"
 
 #: ../data/preferences.ui.in.h:29
 msgid "Options"
-msgstr ""
+msgstr "ఐచ్చికాలు"
 
 #: ../data/preferences.ui.in.h:30
 msgid "System m_onitor width: "
-msgstr ""
+msgstr "వ్యవస్థ దర్శిని వెడల్పు (_o): "
 
 #: ../data/preferences.ui.in.h:31
 msgid "Sys_tem monitor update interval: "
-msgstr ""
+msgstr "వ్యవస్థ దర్శినిని తాజాపర్చు విరామం (_t): "
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
-msgstr ""
+msgstr "మిల్లీ సెకండ్లు"
 
 #: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
@@ -151,7 +161,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:34
 msgid "Colors"
-msgstr ""
+msgstr "వర్ణములు"
 
 #: ../data/preferences.ui.in.h:35
 msgid "Built-in schemes:"
@@ -243,7 +253,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
-msgstr ""
+msgstr "మిల్లి సెకనులలో ఆప్లెట్ పునర్వికాస మార్పు"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:3
 msgid "Width of the graphs in pixels."
@@ -263,7 +273,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:7
 msgid "The desktop description file to execute as the system monitor"
-msgstr ""
+msgstr "సిస్టమ్ మానిటర్ వలె నిర్వర్తించబడుటకు డెస్కుటాప్ వివరణ దస్త్రము"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:8
 msgid "Automatically start on session startup"
@@ -477,3 +487,75 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
+
+#~ msgid "_User"
+#~ msgstr "వినియోగదారి (_U)"
+
+#~ msgid "S_ystem"
+#~ msgstr "వ్యవస్థ (_y)"
+
+#~ msgid "N_ice"
+#~ msgstr "బాగుంది  (_i)"
+
+#~ msgid "I_OWait"
+#~ msgstr "I_OWait"
+
+#~ msgid "I_dle"
+#~ msgstr "తీరిగ్గా (_d)"
+
+#~ msgid "Processor"
+#~ msgstr "ప్రోసెసర్"
+
+#~ msgid "Sh_ared"
+#~ msgstr "పంచుకున్న (_a)"
+
+#~ msgid "_Buffers"
+#~ msgstr "బఫర్ (_B)"
+
+#~ msgid "Cach_ed"
+#~ msgstr "పట్టుకొన్న (_e)"
+
+#~ msgid "F_ree"
+#~ msgstr "ఖాళీ (_r)"
+
+#~ msgid "Memory"
+#~ msgstr "జ్ఞాపకశక్తి"
+
+#~ msgid "_In"
+#~ msgstr "లోపల (_I)"
+
+#~ msgid "_Out"
+#~ msgstr "బయట (_O)"
+
+#~ msgid "_Local"
+#~ msgstr "స్థానిక (_L)"
+
+#~ msgid "_Background"
+#~ msgstr "పూర్వరంగం (_B)"
+
+#~ msgid "Network"
+#~ msgstr "నెట్వర్కు"
+
+#~ msgid "_Used"
+#~ msgstr "ఉపయోగంలోవున్న (_U)"
+
+#~ msgid "_Free"
+#~ msgstr "ఖాళీ (_F)"
+
+#~ msgid "Swap Space"
+#~ msgstr "బదలాయింపు స్థలం"
+
+#~ msgid "_Average"
+#~ msgstr "సగటు  (_A)"
+
+#~ msgid "Load"
+#~ msgstr "భారం"
+
+#~ msgid "_Read"
+#~ msgstr "చదువు (_R)"
+
+#~ msgid "_Write"
+#~ msgstr "రాత(_W)"
+
+#~ msgid "Harddisk"
+#~ msgstr "ప్రధానఖని"

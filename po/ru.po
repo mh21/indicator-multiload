@@ -1,32 +1,58 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# translation of ru.po to Russian
+# translation of gnome-applets to Russian
+# Copyright (C) 1998-2009, 2010 Free Software Foundation, Inc.
 #
-#, fuzzy
+# Alexandre Prokhudine, 2002.
+# Max Valianskiy <maxcom@vinchi.ru>, 1998,99.
+# Sergey Panov <sipan@mit.edu>, 1999.
+# Valek Filippov <frob@df.ru>, 2000-2002.
+# Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2002-2004.
+# Leonid Kanter <leon@asplinux.ru>, 2002-2004, 2005, 2006, 2007, 2010.
+# Alexander Ovcharenko <sarulezzz@inbox.ru>, 2003.
+# Sergey V. Udaltsov<svu@users.sourceforge.net>, 2003.
+# Michael Yakhontov <mvy@asplinux.ru>, 2003.
+# Yuri Kozlov <yuray@komyakino.ru>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2012-04-18 07:37+0000\n"
+"Last-Translator: Vassili Platonov <Unknown>\n"
+"Language-Team: Russian <gnome-cyr@gnome.org>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
+"Системный монитор способен отображать графики загрузки процессора, памяти, "
+"файла подкачки и сетевого трафика."
 
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
 msgstr ""
+"Макс Валянский <maxcom@vinchi.ru>\n"
+"Сергей Панов <sipan@mit.edu>\n"
+"Валёк Филиппов <frob@df.ru>\n"
+"Александр Прокудин\n"
+"Дмитрий Мастрюков <dmitry@taurussoft.org>\n"
+"Михаил Яхонтов <mvy@asplinux.ru>\n"
+"Леонид Кантер <leon@asplinux.ru>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Eugene Marshal https://launchpad.net/~lowrider\n"
+"  Vassili Platonov https://launchpad.net/~vassilip\n"
+"  Yuri Myasoedov https://launchpad.net/~ymyasoedov\n"
+"  zmicier https://launchpad.net/~zmicier"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -58,19 +84,22 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:10
 msgid "pixels"
-msgstr ""
+msgstr "пикселей"
 
 #: ../data/preferences.ui.in.h:11
+#, fuzzy
 msgid "Trace"
-msgstr ""
+msgstr "Цвет кривой"
 
 #: ../data/preferences.ui.in.h:12
+#, fuzzy
 msgid "Expression:"
-msgstr ""
+msgstr "Выражение кривой"
 
 #: ../data/preferences.ui.in.h:13
+#, fuzzy
 msgid "Color:"
-msgstr ""
+msgstr "Цвета"
 
 #: ../data/preferences.ui.in.h:14
 msgid "Variable"
@@ -78,80 +107,82 @@ msgstr ""
 
 #. TRANSLATORS: This refers to an expression in the domain of programming, see https://en.wikipedia.org/wiki/Expression_%28programming%29
 #: ../data/preferences.ui.in.h:16
+#, fuzzy
 msgid "Expression"
-msgstr ""
+msgstr "Выражение кривой"
 
 #: ../data/preferences.ui.in.h:17
 msgid "Value"
 msgstr ""
 
+#
 #: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
-msgstr ""
+msgstr "О_ткрыть системный монитор"
 
 #: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
-msgstr ""
+msgstr "_Параметры"
 
 #: ../data/preferences.ui.in.h:20
 msgid "_About"
-msgstr ""
+msgstr "_Об апплете"
 
 #: ../data/preferences.ui.in.h:21
 msgid "_Quit"
-msgstr ""
+msgstr "В_ыход"
 
 #: ../data/preferences.ui.in.h:22
 msgid "Monitored Resources"
-msgstr ""
+msgstr "Отслеживаемые ресурсы"
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Processor"
-msgstr ""
+msgstr "Про_цессор"
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Memory"
-msgstr ""
+msgstr "Па_мять"
 
 #: ../data/preferences.ui.in.h:25
 msgid "_Network"
-msgstr ""
+msgstr "_Сеть"
 
 #: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
-msgstr ""
+msgstr "Под_качки"
 
 #: ../data/preferences.ui.in.h:27
 msgid "_Load"
-msgstr ""
+msgstr "За_грузка системы"
 
 #: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
-msgstr ""
+msgstr "_Жесткий диск"
 
 #: ../data/preferences.ui.in.h:29
 msgid "Options"
-msgstr ""
+msgstr "Параметры"
 
 #: ../data/preferences.ui.in.h:30
 msgid "System m_onitor width: "
-msgstr ""
+msgstr "_Ширина системного монитора: "
 
 #: ../data/preferences.ui.in.h:31
 msgid "Sys_tem monitor update interval: "
-msgstr ""
+msgstr "Скорость об_новления системного монитора: "
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
-msgstr ""
+msgstr "миллисекунд"
 
 #: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
-msgstr ""
+msgstr "_Автоматический запуск: "
 
 #: ../data/preferences.ui.in.h:34
 msgid "Colors"
-msgstr ""
+msgstr "Цвета"
 
 #: ../data/preferences.ui.in.h:35
 msgid "Built-in schemes:"
@@ -231,31 +262,32 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:54
 msgid "Menu items..."
-msgstr ""
+msgstr "Элементы меню..."
 
 #: ../data/preferences.ui.in.h:55
+#, fuzzy
 msgid "Indicator items..."
-msgstr ""
+msgstr "Элементы меню..."
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:1
 msgid "Available graphs"
-msgstr ""
+msgstr "Доступные диаграммы"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
-msgstr ""
+msgstr "Частота обновления в миллисекундах"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:3
 msgid "Width of the graphs in pixels."
-msgstr ""
+msgstr "Ширина диаграммы в пикселях."
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:4
 msgid "Height of the graphs in pixels."
-msgstr ""
+msgstr "Высота диаграммы в пикселях"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:5
 msgid "Graph background color"
-msgstr ""
+msgstr "Цвет фона диаграммы"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:6
 msgid "Most recently used color scheme"
@@ -263,11 +295,11 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:7
 msgid "The desktop description file to execute as the system monitor"
-msgstr ""
+msgstr "Файл описания приложения, запускаемого в качестве системного монитора"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:8
 msgid "Automatically start on session startup"
-msgstr ""
+msgstr "Автоматический запуск при загрузке системы"
 
 #. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, and commas.
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:10
@@ -292,11 +324,11 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:14
 msgid "Information shown in the indicator itself"
-msgstr ""
+msgstr "Информация, отображаемая индикатором"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:15
 msgid "Index of the current information shown in the indicator itself"
-msgstr ""
+msgstr "Индекс текущей информации, отображаемой индикатором"
 
 #. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, and commas.
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:17
@@ -310,47 +342,50 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:18
 msgid "Information shown as menu entries"
-msgstr ""
+msgstr "Информация, отображаемая в пунктах меню"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:19
 msgid "Graph visibility"
-msgstr ""
+msgstr "Видимость диаграммы"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:20
 msgid "Minimum value for upper graph edge"
-msgstr ""
+msgstr "Минимальное значение верхнего края диаграммы"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:21
 msgid "Maximum value for upper graph edge, zero means unlimited"
 msgstr ""
+"Максимальное значение верхнего края диаграммы, ноль означает «без "
+"ограничений»"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:22
 msgid "Number of values used for smooth graph scaling"
 msgstr ""
+"Количество значений, используемых для плавного изменения масштаба диаграммы"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:23
 msgid "Available traces"
-msgstr ""
+msgstr "Доступные кривые"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:24
 msgid "Trace color"
-msgstr ""
+msgstr "Цвет кривой"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:25
 msgid "Trace expression"
-msgstr ""
+msgstr "Выражение кривой"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:26
 msgid "Trace visibility"
-msgstr ""
+msgstr "Видимость кривой"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:27
 msgid "Traces shown"
-msgstr ""
+msgstr "Отображение кривых"
 
 #: ../data/indicator-multiload.desktop.in.h:1
 msgid "System Load Indicator"
-msgstr ""
+msgstr "Индикатор загрузки системы"
 
 #. TRANSLATORS: Color theme name
 #: ../src/colormapper.vala:77
@@ -376,28 +411,31 @@ msgstr ""
 #: ../src/function.vala:103
 #, c-format
 msgid "%u%%"
-msgstr ""
+msgstr "%u%%"
 
 #: ../src/main.vala:44
 msgid "Output version information and exit"
 msgstr ""
 
 #: ../src/main.vala:46
+#, fuzzy
 msgid "System tray icon instead of app indicator"
-msgstr ""
+msgstr "- Индикатор загрузки системы"
 
 #: ../src/main.vala:48
 msgid "Evaluate an expression"
-msgstr ""
+msgstr "Значение выражения"
 
 #: ../src/main.vala:351
 msgid "- System load application indicator"
-msgstr ""
+msgstr "- Индикатор загрузки системы"
 
 #: ../src/main.vala:359
 #, c-format
 msgid "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
+"Выполните '%s --help' для просмотра полного списка доступных параметров "
+"командной строки.\n"
 
 #. TRANSLATORS: custom color scheme
 #: ../src/preferences.vala:74
@@ -407,68 +445,73 @@ msgstr ""
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:45
 msgid "{} kB"
-msgstr ""
+msgstr "{} кБ"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:47
 msgid "{} MB"
-msgstr ""
+msgstr "{} МБ"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:49
 msgid "{} GB"
-msgstr ""
+msgstr "{} ГБ"
 
 #. TRANSLATORS: Please leave %u as it is, it is replaced by the size
 #: ../src/utils.vala:58
 #, c-format
 msgid "%u B"
 msgid_plural "%u B"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u Б"
+msgstr[1] "%u Б"
+msgstr[2] "%u Б"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:71
 msgid "{} kB/s"
-msgstr ""
+msgstr "{} кБ/с"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:73
 msgid "{} MB/s"
-msgstr ""
+msgstr "{} МБ/с"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:75
 msgid "{} GB/s"
-msgstr ""
+msgstr "{} ГБ/с"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:77
 msgid "{} TB/s"
-msgstr ""
+msgstr "{} ТБ/с"
 
 #. TRANSLATORS: Please leave %u as it is, it is replaced by the speed
 #: ../src/utils.vala:86
 #, c-format
 msgid "%u B/s"
 msgid_plural "%u B/s"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u Б/с"
+msgstr[1] "%u Б/с"
+msgstr[2] "%u Б/с"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
 #: ../src/utils.vala:99
+#, fuzzy
 msgid "{} kHz"
-msgstr ""
+msgstr "{} кБ"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
 #: ../src/utils.vala:101
+#, fuzzy
 msgid "{} MHz"
-msgstr ""
+msgstr "{} МБ"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
 #: ../src/utils.vala:103
+#, fuzzy
 msgid "{} GHz"
-msgstr ""
+msgstr "{} ГБ"
 
 #. TRANSLATORS: Please leave %u as it is, it is replaced by the frequency
 #: ../src/utils.vala:112
@@ -477,3 +520,85 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+
+#~ msgid "_User"
+#~ msgstr "По_льзователь"
+
+#~ msgid "S_ystem"
+#~ msgstr "С_истема"
+
+#~ msgid "N_ice"
+#~ msgstr "При_оритет"
+
+#~ msgid "I_OWait"
+#~ msgstr "I_OWait"
+
+#~ msgid "I_dle"
+#~ msgstr "Просто_й"
+
+#~ msgid "Processor"
+#~ msgstr "Процессор"
+
+#~ msgid "Sh_ared"
+#~ msgstr "Раз_деляемая"
+
+#~ msgid "_Buffers"
+#~ msgstr "Б_уфера"
+
+#~ msgid "Cach_ed"
+#~ msgstr "К_эшированная"
+
+#~ msgid "F_ree"
+#~ msgstr "Сво_бодная"
+
+#~ msgid "Memory"
+#~ msgstr "Память"
+
+#~ msgid "_In"
+#~ msgstr "_Исходящий"
+
+#~ msgid "_Out"
+#~ msgstr "_Входящий"
+
+#~ msgid "_Local"
+#~ msgstr "_Внутренний"
+
+#~ msgid "_Background"
+#~ msgstr "_Фон"
+
+#~ msgid "Network"
+#~ msgstr "Сеть"
+
+#~ msgid "_Used"
+#~ msgstr "Ис_пользуется"
+
+#~ msgid "_Free"
+#~ msgstr "Сво_бодно"
+
+#~ msgid "Swap Space"
+#~ msgstr "Подкачка"
+
+#~ msgid "_Average"
+#~ msgstr "С_редняя"
+
+#~ msgid "Load"
+#~ msgstr "Загрузка"
+
+#~ msgid "_Read"
+#~ msgstr "_Чтение"
+
+#~ msgid "_Write"
+#~ msgstr "Запис_ь"
+
+#~ msgid "Harddisk"
+#~ msgstr "Жесткий диск"
+
+#~ msgid "Graph alpha value"
+#~ msgstr "Прозрачность диаграммы"
+
+#~ msgid "List available expression identifiers"
+#~ msgstr "Список доступных идентификаторов выражения"
+
+#~ msgid "Show debug messages"
+#~ msgstr "Показывать отладочные сообщения"

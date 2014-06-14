@@ -1,32 +1,41 @@
-# SOME DESCRIPTIVE TITLE.
+# translation of as.po to Assamese
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
+# Amitakhya Phukan <amitakhya@svn.gnome.org>, 2007.
+# Amitakhya Phukan <aphukan@redhat.com>, 2007, 2008.
+# Amitakhya Phukan <aphukan@fedoraproject.org>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: as\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"Last-Translator: \n"
+"Language-Team: Assamese <>\n"
+"Language: as\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=2; plural=n!=1;\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
+"CPU, ram, swap-ৰ ব্যৱহাৰ আৰু নেটৱৰ্ক ট্ৰাফিক প্ৰভৃতিসহ ব্যৱস্থাপ্ৰণালীেৰ উপৰ চাপ "
+"নিৰীক্ষণ ব্যৱস্থা ।"
 
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
 msgstr ""
+"অমিতাক্ষ ফুকন (aphukan@fedoraproject.org)\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Michael Hofmann https://launchpad.net/~mh21"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -58,7 +67,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:10
 msgid "pixels"
-msgstr ""
+msgstr "পিক্সেল"
 
 #: ../data/preferences.ui.in.h:11
 msgid "Trace"
@@ -69,8 +78,9 @@ msgid "Expression:"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:13
+#, fuzzy
 msgid "Color:"
-msgstr ""
+msgstr "ৰঙ"
 
 #: ../data/preferences.ui.in.h:14
 msgid "Variable"
@@ -87,15 +97,15 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
-msgstr ""
+msgstr "খোলক"
 
 #: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
-msgstr ""
+msgstr "পছন্দ (_P)"
 
 #: ../data/preferences.ui.in.h:20
 msgid "_About"
-msgstr ""
+msgstr "বিষয়ে (_A)"
 
 #: ../data/preferences.ui.in.h:21
 msgid "_Quit"
@@ -103,47 +113,47 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:22
 msgid "Monitored Resources"
-msgstr ""
+msgstr "নিৰীক্ষিত ৰিসোৰ্স"
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Processor"
-msgstr ""
+msgstr "প্ৰসেসৰ (_P)"
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Memory"
-msgstr ""
+msgstr "মেমৰি(_M)"
 
 #: ../data/preferences.ui.in.h:25
 msgid "_Network"
-msgstr ""
+msgstr "নেটৱৰ্ক"
 
 #: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
-msgstr ""
+msgstr "Swap স্থান(_w)"
 
 #: ../data/preferences.ui.in.h:27
 msgid "_Load"
-msgstr ""
+msgstr "তুলি লওক"
 
 #: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
-msgstr ""
+msgstr "হাৰ্ড-ডিস্ক (_H)"
 
 #: ../data/preferences.ui.in.h:29
 msgid "Options"
-msgstr ""
+msgstr "বিকল্পসমূহ"
 
 #: ../data/preferences.ui.in.h:30
 msgid "System m_onitor width: "
-msgstr ""
+msgstr "System Monitor'ৰ প্ৰস্থ (_o) "
 
 #: ../data/preferences.ui.in.h:31
 msgid "Sys_tem monitor update interval: "
-msgstr ""
+msgstr "System Monitor'ৰ তথ্য আপডেটেৰ মধ্যবৰ্তী বিৰতিকাল:(_t) "
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
-msgstr ""
+msgstr "মিলি-সেকেন্ড"
 
 #: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
@@ -151,7 +161,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:34
 msgid "Colors"
-msgstr ""
+msgstr "ৰঙ"
 
 #: ../data/preferences.ui.in.h:35
 msgid "Built-in schemes:"
@@ -243,7 +253,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
-msgstr ""
+msgstr "মিলিসেকেন্ডে এপ্লেটেৰ পৰিবৰ্তনেৰ হাৰ"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:3
 msgid "Width of the graphs in pixels."
@@ -263,7 +273,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:7
 msgid "The desktop description file to execute as the system monitor"
-msgstr ""
+msgstr "সিস্টেম নিৰীক্ষণৰ বাবে যে ডেস্কটপ বিবৰণৰ ফাইল সঞ্চালন কৰা হ'ব"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:8
 msgid "Automatically start on session startup"
@@ -477,3 +487,75 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
+
+#~ msgid "_User"
+#~ msgstr "ব্যৱহাৰকৰোঁতা (_U)"
+
+#~ msgid "S_ystem"
+#~ msgstr "ব্যৱস্থাপ্ৰণালী (_y)"
+
+#~ msgid "N_ice"
+#~ msgstr "N_ice"
+
+#~ msgid "I_OWait"
+#~ msgstr "I_OWait"
+
+#~ msgid "I_dle"
+#~ msgstr "কৰ্মবিহীন (_d)"
+
+#~ msgid "Processor"
+#~ msgstr "প্ৰসেসৰ"
+
+#~ msgid "Sh_ared"
+#~ msgstr "যৌথৰূপে ব্যৱহৃত (_a)"
+
+#~ msgid "_Buffers"
+#~ msgstr "বাফাৰ (_B)"
+
+#~ msgid "Cach_ed"
+#~ msgstr "ক্যাশে কৰা (_e)"
+
+#~ msgid "F_ree"
+#~ msgstr "মুক্ত (_r)"
+
+#~ msgid "Memory"
+#~ msgstr "মেমৰি"
+
+#~ msgid "_In"
+#~ msgstr "ইন (_I)"
+
+#~ msgid "_Out"
+#~ msgstr "আউট (_O)"
+
+#~ msgid "_Local"
+#~ msgstr "স্থানীয় (_L)"
+
+#~ msgid "_Background"
+#~ msgstr "পটভূমি (_B)"
+
+#~ msgid "Network"
+#~ msgstr "নেটৱৰ্ক"
+
+#~ msgid "_Used"
+#~ msgstr "ব্যৱহৃত (_U)"
+
+#~ msgid "_Free"
+#~ msgstr "মুক্ত (_F)"
+
+#~ msgid "Swap Space"
+#~ msgstr "Swap স্থান"
+
+#~ msgid "_Average"
+#~ msgstr "গড় (_A)"
+
+#~ msgid "Load"
+#~ msgstr "তুলি লওক"
+
+#~ msgid "_Read"
+#~ msgstr "পড়া (_R)"
+
+#~ msgid "_Write"
+#~ msgstr "লিখা (_W)"
+
+#~ msgid "Harddisk"
+#~ msgstr "হাৰ্ড-ডিস্ক"

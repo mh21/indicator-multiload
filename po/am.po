@@ -1,22 +1,24 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Translations into the Amharic Language.
+# Copyright (C) 2002 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-applets package.
+# Ge'ez Frontier Foundation <locales@geez.org>, 2002.
 #
-#, fuzzy
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: gnome-applets 2.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"Last-Translator: Ge'ez Frontier Foundation <locales@geez.org>\n"
+"Language-Team: Amharic <locales@geez.org>\n"
+"Language: am\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -27,6 +29,8 @@ msgstr ""
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
 msgstr ""
+"Launchpad Contributions:\n"
+"  Daniel Yacob https://launchpad.net/~locales"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -69,8 +73,9 @@ msgid "Expression:"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:13
+#, fuzzy
 msgid "Color:"
-msgstr ""
+msgstr "ቀለሞች"
 
 #: ../data/preferences.ui.in.h:14
 msgid "Variable"
@@ -111,11 +116,11 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Memory"
-msgstr ""
+msgstr "ማስታወሻ (_M)"
 
 #: ../data/preferences.ui.in.h:25
 msgid "_Network"
-msgstr ""
+msgstr "_መረብ"
 
 #: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
@@ -131,7 +136,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:29
 msgid "Options"
-msgstr ""
+msgstr "ምርጫዎች"
 
 #: ../data/preferences.ui.in.h:30
 msgid "System m_onitor width: "
@@ -143,7 +148,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
-msgstr ""
+msgstr "ሚሊሴኮንዶች"
 
 #: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
@@ -151,7 +156,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:34
 msgid "Colors"
-msgstr ""
+msgstr "ቀለሞች"
 
 #: ../data/preferences.ui.in.h:35
 msgid "Built-in schemes:"
@@ -477,3 +482,30 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
+
+#~ msgid "_User"
+#~ msgstr "ተጠቃሚ"
+
+#~ msgid "S_ystem"
+#~ msgstr "ሲስተም"
+
+#~ msgid "F_ree"
+#~ msgstr "ነፃ (_R)"
+
+#~ msgid "Memory"
+#~ msgstr "ማስታወሻ"
+
+#~ msgid "_In"
+#~ msgstr "ቅርበት (_I)"
+
+#~ msgid "_Out"
+#~ msgstr "ርቀት (_O)"
+
+#~ msgid "_Background"
+#~ msgstr "_መደብ"
+
+#~ msgid "Network"
+#~ msgstr "መረብ"
+
+#~ msgid "_Free"
+#~ msgstr "ነፃ (_F)"

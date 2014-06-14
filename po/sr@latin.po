@@ -1,32 +1,46 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Serbian translation of gnome-applets
+# Courtesy of Prevod.org team (http://prevod.org/) -- 2003, 2004, 2005, 2006.
 #
-#, fuzzy
+# This file is distributed under the same license as the gnome-applets package.
+#
+# Maintainer: Danilo Šegan <danilo@gnome.org>
+# Reviewed on 2005-09-03 by: Igor Nestorović <igor@prevod.org>
+# Miloš Popović <gpopac@gmail.com>, 2010.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"Last-Translator: Miloš Popović <gpopac@gmail.com>\n"
+"Language-Team: Serbian <gnom@prevod.org>\n"
+"Language: sr\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
+"Praćenje opterećenja sistema omogućava prikaz grafika za procesor, memoriju, "
+"i memoriju na disku, a uz to i mrežni saobraćaj."
 
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
 msgstr ""
+"Danilo Šegan <danilo@prevod.org>\n"
+"\n"
+"http://prevod.org — prevod na srpski jezik.\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Miloš Popović https://launchpad.net/~gpopac"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -58,7 +72,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:10
 msgid "pixels"
-msgstr ""
+msgstr "piksela"
 
 #: ../data/preferences.ui.in.h:11
 msgid "Trace"
@@ -69,8 +83,9 @@ msgid "Expression:"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:13
+#, fuzzy
 msgid "Color:"
-msgstr ""
+msgstr "Boje"
 
 #: ../data/preferences.ui.in.h:14
 msgid "Variable"
@@ -87,15 +102,15 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
-msgstr ""
+msgstr "_Pokreni Praćenje sistema"
 
 #: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
-msgstr ""
+msgstr "_Postavke"
 
 #: ../data/preferences.ui.in.h:20
 msgid "_About"
-msgstr ""
+msgstr "_O programu"
 
 #: ../data/preferences.ui.in.h:21
 msgid "_Quit"
@@ -103,47 +118,47 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:22
 msgid "Monitored Resources"
-msgstr ""
+msgstr "Praćeni resursi"
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Processor"
-msgstr ""
+msgstr "_Procesor"
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Memory"
-msgstr ""
+msgstr "_Memorija"
 
 #: ../data/preferences.ui.in.h:25
 msgid "_Network"
-msgstr ""
+msgstr "M_reža"
 
 #: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
-msgstr ""
+msgstr "_Zamena za memoriju (swap)"
 
 #: ../data/preferences.ui.in.h:27
 msgid "_Load"
-msgstr ""
+msgstr "_Opterećenje"
 
 #: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
-msgstr ""
+msgstr "_Tvrdi disk"
 
 #: ../data/preferences.ui.in.h:29
 msgid "Options"
-msgstr ""
+msgstr "Opcije"
 
 #: ../data/preferences.ui.in.h:30
 msgid "System m_onitor width: "
-msgstr ""
+msgstr "_Širina programčeta: "
 
 #: ../data/preferences.ui.in.h:31
 msgid "Sys_tem monitor update interval: "
-msgstr ""
+msgstr "_Vreme između dva osvežavanja prikaza: "
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
-msgstr ""
+msgstr "milisekundi"
 
 #: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
@@ -151,7 +166,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:34
 msgid "Colors"
-msgstr ""
+msgstr "Boje"
 
 #: ../data/preferences.ui.in.h:35
 msgid "Built-in schemes:"
@@ -243,7 +258,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
-msgstr ""
+msgstr "Brzina osvežavanja programčeta u milisekundama"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:3
 msgid "Width of the graphs in pixels."
@@ -261,9 +276,11 @@ msgstr ""
 msgid "Most recently used color scheme"
 msgstr ""
 
+# Jel ok ovako?
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:7
 msgid "The desktop description file to execute as the system monitor"
 msgstr ""
+"Pokretačka datoteka koju treba pokrenuti kao program za praćenje sistema"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:8
 msgid "Automatically start on session startup"
@@ -477,3 +494,76 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+
+#~ msgid "_User"
+#~ msgstr "_Korisnik"
+
+#~ msgid "S_ystem"
+#~ msgstr "_Sistem"
+
+#~ msgid "N_ice"
+#~ msgstr "_Manje prioritetno"
+
+#~ msgid "I_OWait"
+#~ msgstr "U_Ičekanje"
+
+#~ msgid "I_dle"
+#~ msgstr "_Neuposlen"
+
+#~ msgid "Processor"
+#~ msgstr "Procesor"
+
+#~ msgid "Sh_ared"
+#~ msgstr "_Deljena"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Baferi"
+
+#~ msgid "Cach_ed"
+#~ msgstr "Keš_irana"
+
+#~ msgid "F_ree"
+#~ msgstr "_Slobodna"
+
+#~ msgid "Memory"
+#~ msgstr "Memorija"
+
+#~ msgid "_In"
+#~ msgstr "_Primljeno"
+
+#~ msgid "_Out"
+#~ msgstr "P_oslato"
+
+#~ msgid "_Local"
+#~ msgstr "_Lokalno"
+
+#~ msgid "_Background"
+#~ msgstr "_Pozadina"
+
+#~ msgid "Network"
+#~ msgstr "Mreža"
+
+#~ msgid "_Used"
+#~ msgstr "Is_korišćeno"
+
+#~ msgid "_Free"
+#~ msgstr "_Slobodno"
+
+#~ msgid "Swap Space"
+#~ msgstr "Zamena za memoriju (swap)"
+
+#~ msgid "_Average"
+#~ msgstr "Pro_sečno"
+
+#~ msgid "Load"
+#~ msgstr "Opterećenje"
+
+#~ msgid "_Read"
+#~ msgstr "_Čitanje"
+
+#~ msgid "_Write"
+#~ msgstr "_Upis"
+
+#~ msgid "Harddisk"
+#~ msgstr "Tvrdi disk"

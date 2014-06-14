@@ -1,32 +1,47 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# ko.po -- Korean messages for gnome-applets
+# This file is distributed under the same license as the package.
 #
-#, fuzzy
+# update by Young-Ho, Cha <ganadist@chollian.net>, 2001
+# update by ChiDeok, Hwang <hwang@mizi.co.kr>, 2001
+# GwanSun Back <backiss@kornet.net>, 2001
+# Changwoo Ryu <cwryu@debian.org>, 1998, 2002-2006, 2007, 2008, 2009, 2010.
+#
+# 새로 번역하신 분은 아래 "translator-credits"에 추가하세요.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
+"Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
+"Language: Korean\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
+"시스템 사용량 모니터는 CPU, 램, 스왑 공간 사용량 및 네트워크 사용량을 그래프"
+"로 보여줍니다."
 
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
 msgstr ""
+"류창우 <cwryu@debian.org>\n"
+"차영호 <ganadist@chollian.net>\n"
+"황치덕 <hwang@mizi.co.kr>\n"
+"백관선 <backiss@kornet.net>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Changwoo Ryu https://launchpad.net/~cwryu"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -58,7 +73,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:10
 msgid "pixels"
-msgstr ""
+msgstr "픽셀"
 
 #: ../data/preferences.ui.in.h:11
 msgid "Trace"
@@ -69,8 +84,9 @@ msgid "Expression:"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:13
+#, fuzzy
 msgid "Color:"
-msgstr ""
+msgstr "색"
 
 #: ../data/preferences.ui.in.h:14
 msgid "Variable"
@@ -87,15 +103,15 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
-msgstr ""
+msgstr "시스템 정보 열기(_O)"
 
 #: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
-msgstr ""
+msgstr "기본 설정(_P)"
 
 #: ../data/preferences.ui.in.h:20
 msgid "_About"
-msgstr ""
+msgstr "정보(_A)"
 
 #: ../data/preferences.ui.in.h:21
 msgid "_Quit"
@@ -103,47 +119,47 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:22
 msgid "Monitored Resources"
-msgstr ""
+msgstr "살펴 볼 자원"
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Processor"
-msgstr ""
+msgstr "프로세서(_P)"
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Memory"
-msgstr ""
+msgstr "메모리(_M)"
 
 #: ../data/preferences.ui.in.h:25
 msgid "_Network"
-msgstr ""
+msgstr "네트워크(_N)"
 
 #: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
-msgstr ""
+msgstr "스왑 공간(_W)"
 
 #: ../data/preferences.ui.in.h:27
 msgid "_Load"
-msgstr ""
+msgstr "사용량(_L)"
 
 #: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
-msgstr ""
+msgstr "하드 디스크(_H)"
 
 #: ../data/preferences.ui.in.h:29
 msgid "Options"
-msgstr ""
+msgstr "옵션"
 
 #: ../data/preferences.ui.in.h:30
 msgid "System m_onitor width: "
-msgstr ""
+msgstr "시스템 정보 너비(_O): "
 
 #: ../data/preferences.ui.in.h:31
 msgid "Sys_tem monitor update interval: "
-msgstr ""
+msgstr "시스템 정보 업데이트 주기(_T): "
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
-msgstr ""
+msgstr "밀리초"
 
 #: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
@@ -151,7 +167,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:34
 msgid "Colors"
-msgstr ""
+msgstr "색"
 
 #: ../data/preferences.ui.in.h:35
 msgid "Built-in schemes:"
@@ -243,7 +259,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
-msgstr ""
+msgstr "애플릿의 갱신 단위 (천분의 일초)"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:3
 msgid "Width of the graphs in pixels."
@@ -263,7 +279,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:7
 msgid "The desktop description file to execute as the system monitor"
-msgstr ""
+msgstr "시스템 정보 보기 프로그램으로 실행할 데스크톱 파일"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:8
 msgid "Automatically start on session startup"
@@ -476,4 +492,75 @@ msgstr ""
 msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
-msgstr[1] ""
+
+#~ msgid "_User"
+#~ msgstr "사용자(_U)"
+
+#~ msgid "S_ystem"
+#~ msgstr "시스템(_Y)"
+
+#~ msgid "N_ice"
+#~ msgstr "우선순위(_I)"
+
+#~ msgid "I_OWait"
+#~ msgstr "I_OWait"
+
+#~ msgid "I_dle"
+#~ msgstr "유휴(_D)"
+
+#~ msgid "Processor"
+#~ msgstr "프로세서"
+
+#~ msgid "Sh_ared"
+#~ msgstr "공유(_A)"
+
+#~ msgid "_Buffers"
+#~ msgstr "버퍼(_B)"
+
+#~ msgid "Cach_ed"
+#~ msgstr "캐쉬(_E)"
+
+#~ msgid "F_ree"
+#~ msgstr "여유(_R)"
+
+#~ msgid "Memory"
+#~ msgstr "메모리"
+
+#~ msgid "_In"
+#~ msgstr "입력(_I)"
+
+#~ msgid "_Out"
+#~ msgstr "출력(_O)"
+
+#~ msgid "_Local"
+#~ msgstr "로컬(_L)"
+
+#~ msgid "_Background"
+#~ msgstr "배경색(_B)"
+
+#~ msgid "Network"
+#~ msgstr "네트워크"
+
+#~ msgid "_Used"
+#~ msgstr "사용중(_U)"
+
+#~ msgid "_Free"
+#~ msgstr "여유(_F)"
+
+#~ msgid "Swap Space"
+#~ msgstr "스왑 공간"
+
+#~ msgid "_Average"
+#~ msgstr "평균 사용량(_A)"
+
+#~ msgid "Load"
+#~ msgstr "사용량"
+
+#~ msgid "_Read"
+#~ msgstr "읽기(_R)"
+
+#~ msgid "_Write"
+#~ msgstr "쓰기(_W)"
+
+#~ msgid "Harddisk"
+#~ msgstr "하드 디스크"

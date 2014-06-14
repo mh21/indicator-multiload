@@ -1,32 +1,58 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# translation of gnome-applets-master-po-gl-18973.po to Galician
+# Galician translation of gnome-applets.
+# Copyright (C) 1999-2002 Jesús Bravo Álvarez
 #
-#, fuzzy
+# Proxecto Trasno - Adaptación do software libre á lingua galega:  Se desexas
+# colaborar connosco, podes atopar máis información en http://www.trasno.net
+#
+# First Version: 1999-10-07 15:15+0200
+#
+# Jesús Bravo Álvarez <suso@trasno.net>, 1999-2002.
+# Ignacio Casal Quinteiro <nacho.resa@gmail.com>, 2005, 2006.
+# Ignacio Casal Quinteiro <icq@svn.gnome.org>, 2008.
+# Mancomún - Centro de Referencia e Servizos de Software Libre <g11n@mancomun.org>, 2009.
+# Suso Baleato <suso.baleato@xunta.es>, 2009.
+# Fran Dieguez <fran.dieguez@glug.es>, 2009.
+# Antón Méixome <meixome@mancomun.org>, 2009.
+# Fran Diéguez <frandieguez@ubuntu.com>, 2010.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: gnome-applets-master-po-gl-18973\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"Last-Translator: Fran Diéguez <frandieguez@ubuntu.com>\n"
+"Language-Team: Galician <gnome-gl-list@gnome.org>\n"
+"Language: gl\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
+"Un monitor de carga do sistema capaz de mostrar as gráficas para o uso da "
+"CPU, da RAM e do espazo de swap, ademais do tráfico da rede."
 
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
 msgstr ""
+"Fran Diéguez <frandieguez@ubuntu.com>, 2009-2010.\n"
+"Antón Méixome <meixome@mancomun.org>, 2009.\n"
+"Mancomún - Centro de Referencia e Servizos de Software Libre <g11n@mancomun."
+"org>, 2009.\n"
+"Suso Baleato <suso.baleato@xunta.es>, 2009.\n"
+"Ignacio Casal Quinteiro <icq@gnome.org>, 2005-2008.\n"
+"Jesús Bravo Álvarez <suso@trasno.net>, 1999-2002.\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Fran Diéguez https://launchpad.net/~frandieguez"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -58,7 +84,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:10
 msgid "pixels"
-msgstr ""
+msgstr "píxeles"
 
 #: ../data/preferences.ui.in.h:11
 msgid "Trace"
@@ -69,8 +95,9 @@ msgid "Expression:"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:13
+#, fuzzy
 msgid "Color:"
-msgstr ""
+msgstr "Cores"
 
 #: ../data/preferences.ui.in.h:14
 msgid "Variable"
@@ -87,15 +114,15 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
-msgstr ""
+msgstr "_Abrir o monitor do sistema"
 
 #: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
-msgstr ""
+msgstr "_Preferencias"
 
 #: ../data/preferences.ui.in.h:20
 msgid "_About"
-msgstr ""
+msgstr "_Sobre"
 
 #: ../data/preferences.ui.in.h:21
 msgid "_Quit"
@@ -103,47 +130,47 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:22
 msgid "Monitored Resources"
-msgstr ""
+msgstr "Recursos monitorizados"
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Processor"
-msgstr ""
+msgstr "_Procesador"
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Memory"
-msgstr ""
+msgstr "_Memoria"
 
 #: ../data/preferences.ui.in.h:25
 msgid "_Network"
-msgstr ""
+msgstr "_Rede"
 
 #: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
-msgstr ""
+msgstr "Espazo de s_wap"
 
 #: ../data/preferences.ui.in.h:27
 msgid "_Load"
-msgstr ""
+msgstr "_Carga"
 
 #: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
-msgstr ""
+msgstr "_Disco ríxido"
 
 #: ../data/preferences.ui.in.h:29
 msgid "Options"
-msgstr ""
+msgstr "Opcións"
 
 #: ../data/preferences.ui.in.h:30
 msgid "System m_onitor width: "
-msgstr ""
+msgstr "Largura do m_onitor do sistema: "
 
 #: ../data/preferences.ui.in.h:31
 msgid "Sys_tem monitor update interval: "
-msgstr ""
+msgstr "Intervalo de actualización do monitor do sis_tema: "
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
-msgstr ""
+msgstr "milisegundos"
 
 #: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
@@ -151,7 +178,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:34
 msgid "Colors"
-msgstr ""
+msgstr "Cores"
 
 #: ../data/preferences.ui.in.h:35
 msgid "Built-in schemes:"
@@ -243,7 +270,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
-msgstr ""
+msgstr "Taxa de actualización do miniaplicativo en milisegundos"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:3
 msgid "Width of the graphs in pixels."
@@ -264,6 +291,8 @@ msgstr ""
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:7
 msgid "The desktop description file to execute as the system monitor"
 msgstr ""
+"O ficheiro de descrición do escritorio para executar como o monitor do "
+"sistema"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:8
 msgid "Automatically start on session startup"
@@ -477,3 +506,76 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
+
+#~ msgid "_User"
+#~ msgstr "_Usuario"
+
+#~ msgid "S_ystem"
+#~ msgstr "_Sistema"
+
+#~ msgid "N_ice"
+#~ msgstr "N_ice"
+
+#~ msgid "I_OWait"
+#~ msgstr "Espera _E/S"
+
+#~ msgid "I_dle"
+#~ msgstr "Ina_ctivo"
+
+#~ msgid "Processor"
+#~ msgstr "Procesador"
+
+#~ msgid "Sh_ared"
+#~ msgstr "_Compartida"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Búfers"
+
+#~ msgid "Cach_ed"
+#~ msgstr "Na cac_hé"
+
+#~ msgid "F_ree"
+#~ msgstr "Lib_re"
+
+#~ msgid "Memory"
+#~ msgstr "Memoria"
+
+#~ msgid "_In"
+#~ msgstr "_Entrada"
+
+#~ msgid "_Out"
+#~ msgstr "_Saída"
+
+#~ msgid "_Local"
+#~ msgstr "_Local"
+
+#~ msgid "_Background"
+#~ msgstr "_Fondo"
+
+#~ msgid "Network"
+#~ msgstr "Rede"
+
+#~ msgid "_Used"
+#~ msgstr "_Usado"
+
+#~ msgid "_Free"
+#~ msgstr "_Libre"
+
+#~ msgid "Swap Space"
+#~ msgstr "Espazo de swap"
+
+#~ msgid "_Average"
+#~ msgstr "_Media"
+
+#~ msgid "Load"
+#~ msgstr "Carga"
+
+#~ msgid "_Read"
+#~ msgstr "_Lectura"
+
+#~ msgid "_Write"
+#~ msgstr "_Escritura"
+
+# (pofilter) accelerators: accelerator _ does not occur in original and should not be in translation
+#~ msgid "Harddisk"
+#~ msgstr "Disco"

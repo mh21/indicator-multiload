@@ -1,32 +1,43 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# translation of mr.po to Marathi
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 #
-#, fuzzy
+# Rahul Bhalerao <b.rahul.pm@gmail.com>, 2006.
+# Rahul Bhalerao <rbhalera@redhat.com>, 2006.
+# Sandeep Shedmake <sandeep.shedmake@gmail.com>, 2008, 2009.
+# Sandeep Shedmake <sshedmak@redhat.com>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: mr\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"Last-Translator: Sandeep Shedmake <sshedmak@redhat.com>\n"
+"Language-Team: Marathi <fedora-trans-mr@redhat.com>\n"
+"Language: mr\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
+"CPU, ram, आणि स्वॅप जागा वापर, तसेच संजाळ रहदारी यांचे आलेख दर्शवण्यास समर्थ प्रणाली "
+"भार मॉनिटर."
 
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
 msgstr ""
+"राहुल भालेराव <b.rahul.pm@gmail.com>, 2006; संदिप शेडमाके <sandeep.shedmake@gmail."
+"com>, 2008, 2009; संदिप शेडमाके <sshedmak@redhat.com>, 2009.\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Sandeep Shedmake https://launchpad.net/~sshedmak"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -58,7 +69,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:10
 msgid "pixels"
-msgstr ""
+msgstr "बिंदू"
 
 #: ../data/preferences.ui.in.h:11
 msgid "Trace"
@@ -69,8 +80,9 @@ msgid "Expression:"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:13
+#, fuzzy
 msgid "Color:"
-msgstr ""
+msgstr "रंग"
 
 #: ../data/preferences.ui.in.h:14
 msgid "Variable"
@@ -87,15 +99,15 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
-msgstr ""
+msgstr "प्रणाली मॉनिटर उघडा(_O)"
 
 #: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
-msgstr ""
+msgstr "आवड निवड(_P)"
 
 #: ../data/preferences.ui.in.h:20
 msgid "_About"
-msgstr ""
+msgstr "विषयी (_A)"
 
 #: ../data/preferences.ui.in.h:21
 msgid "_Quit"
@@ -103,47 +115,47 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:22
 msgid "Monitored Resources"
-msgstr ""
+msgstr "पर्यवेक्षित साधने"
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Processor"
-msgstr ""
+msgstr "प्रोसेसर (_P)"
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Memory"
-msgstr ""
+msgstr "स्मृती(_M)"
 
 #: ../data/preferences.ui.in.h:25
 msgid "_Network"
-msgstr ""
+msgstr "संजाळ(_N)"
 
 #: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
-msgstr ""
+msgstr "स्वॅप जागा(_w)"
 
 #: ../data/preferences.ui.in.h:27
 msgid "_Load"
-msgstr ""
+msgstr "भार(_L)"
 
 #: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
-msgstr ""
+msgstr "हार्डडिस्क(_H)"
 
 #: ../data/preferences.ui.in.h:29
 msgid "Options"
-msgstr ""
+msgstr "पर्याय"
 
 #: ../data/preferences.ui.in.h:30
 msgid "System m_onitor width: "
-msgstr ""
+msgstr "प्रणाली मॉनिटर रुंदी(_o): "
 
 #: ../data/preferences.ui.in.h:31
 msgid "Sys_tem monitor update interval: "
-msgstr ""
+msgstr "प्रणाली मॉनीटर अद्ययावत अवधी (_t): "
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
-msgstr ""
+msgstr "मिलीसेकंद"
 
 #: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
@@ -151,7 +163,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:34
 msgid "Colors"
-msgstr ""
+msgstr "रंग"
 
 #: ../data/preferences.ui.in.h:35
 msgid "Built-in schemes:"
@@ -243,7 +255,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
-msgstr ""
+msgstr "एप्लेट रिफ्रेश(पुनःताजे) दर मिलीसेकंदात"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:3
 msgid "Width of the graphs in pixels."
@@ -263,7 +275,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:7
 msgid "The desktop description file to execute as the system monitor"
-msgstr ""
+msgstr "प्रणाली मॉनीटर नुरूप कार्यान्वीत करण्याजोगी डेस्कटॉप व्याख्या फाइल"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:8
 msgid "Automatically start on session startup"
@@ -477,3 +489,75 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
+
+#~ msgid "_User"
+#~ msgstr "वापरकर्ता (_U)"
+
+#~ msgid "S_ystem"
+#~ msgstr "प्रणाली (_y)"
+
+#~ msgid "N_ice"
+#~ msgstr "चांगले (_i)"
+
+#~ msgid "I_OWait"
+#~ msgstr "IOWait (_O)"
+
+#~ msgid "I_dle"
+#~ msgstr "रिकामे (_d)"
+
+#~ msgid "Processor"
+#~ msgstr "प्रोसेसर"
+
+#~ msgid "Sh_ared"
+#~ msgstr "सहभागीय (_a)"
+
+#~ msgid "_Buffers"
+#~ msgstr "बफर (_B)"
+
+#~ msgid "Cach_ed"
+#~ msgstr "कॅश्ड् (_e)"
+
+#~ msgid "F_ree"
+#~ msgstr "मुक्त (_r)"
+
+#~ msgid "Memory"
+#~ msgstr "स्मृती"
+
+#~ msgid "_In"
+#~ msgstr "आत (_I)"
+
+#~ msgid "_Out"
+#~ msgstr "बाहेर (_O)"
+
+#~ msgid "_Local"
+#~ msgstr "स्थानीय (_L)"
+
+#~ msgid "_Background"
+#~ msgstr "पार्श्वभूमी(_B)"
+
+#~ msgid "Network"
+#~ msgstr "संजाळ"
+
+#~ msgid "_Used"
+#~ msgstr "वापरलेले(_U)"
+
+#~ msgid "_Free"
+#~ msgstr "मुक्त(_F)"
+
+#~ msgid "Swap Space"
+#~ msgstr "स्वॅप जागा"
+
+#~ msgid "_Average"
+#~ msgstr "सरासरी(_A)"
+
+#~ msgid "Load"
+#~ msgstr "भार"
+
+#~ msgid "_Read"
+#~ msgstr "वाचन(_R)"
+
+#~ msgid "_Write"
+#~ msgstr "लेखन(_W)"
+
+#~ msgid "Harddisk"
+#~ msgstr "हार्डडिस्क"

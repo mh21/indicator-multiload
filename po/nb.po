@@ -1,32 +1,39 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Norwegian translation of gnome-applets (bokmål dialect).
+# Copyright (C) 1998-2004, 2005 Free Software Foundation, Inc.
+# Kjartan Maraas <kmaraas@gnome.org>, 1998-2010.
+# Terance Edward Sola <terance@lyse.net>, 2005.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: gnome-applets 2.31.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
+"Language-Team: Norwegian Bokmal <i18n-nb@lister.ping.uio.no>\n"
+"Language: nb\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
+"Systemmonitor som kan vise grafer for bruk av CPU, RAM og bruk av swap i "
+"tillegg til nettverkstrafikk."
 
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
 msgstr ""
+"Kjartan Maraas <kmaraas@gnome.org>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Kjartan Maraas https://launchpad.net/~kmaraas"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -58,7 +65,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:10
 msgid "pixels"
-msgstr ""
+msgstr "piksler"
 
 #: ../data/preferences.ui.in.h:11
 msgid "Trace"
@@ -69,8 +76,9 @@ msgid "Expression:"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:13
+#, fuzzy
 msgid "Color:"
-msgstr ""
+msgstr "Farger"
 
 #: ../data/preferences.ui.in.h:14
 msgid "Variable"
@@ -87,15 +95,15 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
-msgstr ""
+msgstr "_Åpne systemmonitor"
 
 #: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
-msgstr ""
+msgstr "_Brukervalg"
 
 #: ../data/preferences.ui.in.h:20
 msgid "_About"
-msgstr ""
+msgstr "_Om"
 
 #: ../data/preferences.ui.in.h:21
 msgid "_Quit"
@@ -103,47 +111,47 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:22
 msgid "Monitored Resources"
-msgstr ""
+msgstr "Overvåkede ressurser"
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Processor"
-msgstr ""
+msgstr "_Prosessor"
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Memory"
-msgstr ""
+msgstr "_Minne"
 
 #: ../data/preferences.ui.in.h:25
 msgid "_Network"
-msgstr ""
+msgstr "_Nettverk"
 
 #: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
-msgstr ""
+msgstr "S_wap-område"
 
 #: ../data/preferences.ui.in.h:27
 msgid "_Load"
-msgstr ""
+msgstr "Bel_astning"
 
 #: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
-msgstr ""
+msgstr "_Harddisk"
 
 #: ../data/preferences.ui.in.h:29
 msgid "Options"
-msgstr ""
+msgstr "Alternativer"
 
 #: ../data/preferences.ui.in.h:30
 msgid "System m_onitor width: "
-msgstr ""
+msgstr "Bredde for systemm_onitor: "
 
 #: ../data/preferences.ui.in.h:31
 msgid "Sys_tem monitor update interval: "
-msgstr ""
+msgstr "Oppdateringsintervall for sys_temmonitor: "
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
-msgstr ""
+msgstr "millisekunder"
 
 #: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
@@ -151,7 +159,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:34
 msgid "Colors"
-msgstr ""
+msgstr "Farger"
 
 #: ../data/preferences.ui.in.h:35
 msgid "Built-in schemes:"
@@ -243,7 +251,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
-msgstr ""
+msgstr "Oppdateringsintervall i millisekunder"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:3
 msgid "Width of the graphs in pixels."
@@ -263,7 +271,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:7
 msgid "The desktop description file to execute as the system monitor"
-msgstr ""
+msgstr "Skrivebordsfil som skal kjøres som systemmonitor"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:8
 msgid "Automatically start on session startup"
@@ -477,3 +485,75 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
+
+#~ msgid "_User"
+#~ msgstr "Br_uker"
+
+#~ msgid "S_ystem"
+#~ msgstr "S_ystem"
+
+#~ msgid "N_ice"
+#~ msgstr "Sn_ill"
+
+#~ msgid "I_OWait"
+#~ msgstr "I_OWait"
+
+#~ msgid "I_dle"
+#~ msgstr "Tom_gang"
+
+#~ msgid "Processor"
+#~ msgstr "Prosessor"
+
+#~ msgid "Sh_ared"
+#~ msgstr "D_elt"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Buffere"
+
+#~ msgid "Cach_ed"
+#~ msgstr "M_ellomlagret"
+
+#~ msgid "F_ree"
+#~ msgstr "Le_dig"
+
+#~ msgid "Memory"
+#~ msgstr "Minne"
+
+#~ msgid "_In"
+#~ msgstr "_Inn"
+
+#~ msgid "_Out"
+#~ msgstr "_Ut"
+
+#~ msgid "_Local"
+#~ msgstr "_Lokal"
+
+#~ msgid "_Background"
+#~ msgstr "_Bakgrunn"
+
+#~ msgid "Network"
+#~ msgstr "Nettverk"
+
+#~ msgid "_Used"
+#~ msgstr "Br_ukt"
+
+#~ msgid "_Free"
+#~ msgstr "L_edig"
+
+#~ msgid "Swap Space"
+#~ msgstr "Swap-område"
+
+#~ msgid "_Average"
+#~ msgstr "_Gjennomsnitt"
+
+#~ msgid "Load"
+#~ msgstr "Belastning"
+
+#~ msgid "_Read"
+#~ msgstr "_Les"
+
+#~ msgid "_Write"
+#~ msgstr "_Skriv"
+
+#~ msgid "Harddisk"
+#~ msgstr "Harddisk"

@@ -1,32 +1,44 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# translation of ku.po to Kurdish
+# English translation of PACKAGE.
+# Copyright (C) 2006 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Erdal Ronahi <erdal.ronahi@gmail.com>, 2006.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: ku\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2012-09-26 06:46+0000\n"
+"Last-Translator: Erdem AYALP <erdemayalp@gmail.com>\n"
+"Language-Team: Kurdish <ku@li.org>\n"
+"Language: ku\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
+"Temaşekereke barê pergalê ye ku kirar, bîr, bikaranîna qada pevguhartinê û "
+"xanxanka tîrbûna torê dikare bide nîşandan."
 
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
 msgstr ""
+"Rizoyê Xerzî <rizoxerzi@gmail.com> Erdal Ronahî <erdal.ronahi@gmail.com> \\n "
+"Elîxan Loran <elixanloranj@hotmail.com> \\n Rêzan Tovjîn <rezan@bername."
+"net>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Erdal Ronahi https://launchpad.net/~erdalronahi\n"
+"  Erdem AYALP https://launchpad.net/~erdemayalp\n"
+"  Rêzan Tovjîn https://launchpad.net/~retovjin"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -58,7 +70,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:10
 msgid "pixels"
-msgstr ""
+msgstr "pîksel"
 
 #: ../data/preferences.ui.in.h:11
 msgid "Trace"
@@ -69,8 +81,9 @@ msgid "Expression:"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:13
+#, fuzzy
 msgid "Color:"
-msgstr ""
+msgstr "Reng"
 
 #: ../data/preferences.ui.in.h:14
 msgid "Variable"
@@ -87,15 +100,15 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
-msgstr ""
+msgstr "_Temaşekerê Pergalê Veke"
 
 #: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
-msgstr ""
+msgstr "_Vebijêrk"
 
 #: ../data/preferences.ui.in.h:20
 msgid "_About"
-msgstr ""
+msgstr "_Der barê de"
 
 #: ../data/preferences.ui.in.h:21
 msgid "_Quit"
@@ -103,47 +116,47 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:22
 msgid "Monitored Resources"
-msgstr ""
+msgstr "Çavkaniyên Xwerû yên Têne Şopandin."
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Processor"
-msgstr ""
+msgstr "_Kirar"
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Memory"
-msgstr ""
+msgstr "_Bîr"
 
 #: ../data/preferences.ui.in.h:25
 msgid "_Network"
-msgstr ""
+msgstr "_Tor"
 
 #: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
-msgstr ""
+msgstr "Cihê _Swap"
 
 #: ../data/preferences.ui.in.h:27
 msgid "_Load"
-msgstr ""
+msgstr "_Bar bike"
 
 #: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
-msgstr ""
+msgstr "_Dîska sabît"
 
 #: ../data/preferences.ui.in.h:29
 msgid "Options"
-msgstr ""
+msgstr "Vebijêrk"
 
 #: ../data/preferences.ui.in.h:30
 msgid "System m_onitor width: "
-msgstr ""
+msgstr "Firehbûna_temaşekerê pergalê: "
 
 #: ../data/preferences.ui.in.h:31
 msgid "Sys_tem monitor update interval: "
-msgstr ""
+msgstr "Timîkiya rojanekirina_ temaşekerê pergalê: "
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
-msgstr ""
+msgstr "mîlîçirk"
 
 #: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
@@ -151,7 +164,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:34
 msgid "Colors"
-msgstr ""
+msgstr "Reng"
 
 #: ../data/preferences.ui.in.h:35
 msgid "Built-in schemes:"
@@ -243,7 +256,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
-msgstr ""
+msgstr "Leza tezekirinê sepanokê ya ji cureyê mîlîçirkan"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:3
 msgid "Width of the graphs in pixels."
@@ -477,3 +490,66 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
+
+#~ msgid "_User"
+#~ msgstr "_Bikarhêner"
+
+#~ msgid "S_ystem"
+#~ msgstr "_Sîstem"
+
+#~ msgid "N_ice"
+#~ msgstr "Pêş_ikî"
+
+#~ msgid "I_OWait"
+#~ msgstr "I_OWait"
+
+#~ msgid "I_dle"
+#~ msgstr "Ra_westiyayî"
+
+#~ msgid "Processor"
+#~ msgstr "Kirar"
+
+#~ msgid "Sh_ared"
+#~ msgstr "Di_parvekirinê de ye"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Tampon"
+
+#~ msgid "Cach_ed"
+#~ msgstr "Bipêş_bîr"
+
+#~ msgid "F_ree"
+#~ msgstr "_Vala"
+
+#~ msgid "Memory"
+#~ msgstr "Bîr"
+
+#~ msgid "_Background"
+#~ msgstr "_Rûerd"
+
+#~ msgid "Network"
+#~ msgstr "Tor"
+
+#~ msgid "_Used"
+#~ msgstr "_Tê bikaranîn"
+
+#~ msgid "_Free"
+#~ msgstr "_Vala"
+
+#~ msgid "Swap Space"
+#~ msgstr "Qada pevguhertinê"
+
+#~ msgid "_Average"
+#~ msgstr "_Nîvekî"
+
+#~ msgid "Load"
+#~ msgstr "Lê bar bike"
+
+#~ msgid "_Read"
+#~ msgstr "Bi_xwîne"
+
+#~ msgid "_Write"
+#~ msgstr "Bi_nivîse"
+
+#~ msgid "Harddisk"
+#~ msgstr "Dîska Sabît"

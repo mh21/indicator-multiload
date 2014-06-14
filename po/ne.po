@@ -1,32 +1,49 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# translation of gnome-applets.gnome-2-20.ne.po to Nepali
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 #
-#, fuzzy
+# Kapil Timilsina <lipak21@gmail.com>, 2005.
+# Jyotshna Shrestha <shresthajyo@hotmail.com>, 2005.
+# Bishnu Adhikari <bsn_adk@hotmail.com>, 2005.
+# Jaydeep Bhusal <zaydeep@hotmail.com>, 2005.
+# Shiva  Pokharel <pokharelshiva@hotmail.com>, 2005.
+# Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>, 2006.
+# Mahesh Subedi <submanesh@hotmail.com>, 2006.
+# Mahesh subedi <submanesh@hotmail.com>, 2006.
+# Narayan Kumar Magar <narayan@mpp.org.np>, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: gnome-applets.gnome-2-20.ne\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"Last-Translator: Narayan Kumar Magar <narayan@mpp.org.np>\n"
+"Language-Team: Nepali <info@mpp.org.np>\n"
+"Language: ne\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
+"CPU, र्याम, र स्वाप खाली स्थान प्रयोग जोड सञ्जाल ट्राफिकको लागि ग्राफहरूको प्रदर्शनको "
+"सक्षम एउटा प्रणाली लोड मनिटर ।"
 
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
 msgstr ""
+"Mahesh Subedi <submanesh@hotmail.com> Shiva Pokharel <pokharelshiva@hotmail."
+"com> Shyam Krishna Bal <shyamkrishna_bal@yahoo.com> Narayan Kumar Magar "
+"<narayan@mpp.org.np>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Narayan Kumar Magar https://launchpad.net/~narayan-mpp"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -58,7 +75,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:10
 msgid "pixels"
-msgstr ""
+msgstr "पिक्सेलहरू"
 
 #: ../data/preferences.ui.in.h:11
 msgid "Trace"
@@ -69,8 +86,9 @@ msgid "Expression:"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:13
+#, fuzzy
 msgid "Color:"
-msgstr ""
+msgstr "रङ्गहरू"
 
 #: ../data/preferences.ui.in.h:14
 msgid "Variable"
@@ -87,15 +105,15 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
-msgstr ""
+msgstr "प्रणाली मनिटर खोल्नुहोस्"
 
 #: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
-msgstr ""
+msgstr "प्राथमिकताहरू"
 
 #: ../data/preferences.ui.in.h:20
 msgid "_About"
-msgstr ""
+msgstr "बारेमा"
 
 #: ../data/preferences.ui.in.h:21
 msgid "_Quit"
@@ -103,47 +121,47 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:22
 msgid "Monitored Resources"
-msgstr ""
+msgstr "अनगमन गरिएको संसाधनहरू"
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Processor"
-msgstr ""
+msgstr "प्रक्रियाकर्ता"
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Memory"
-msgstr ""
+msgstr "स्मृति"
 
 #: ../data/preferences.ui.in.h:25
 msgid "_Network"
-msgstr ""
+msgstr "सञ्जाल"
 
 #: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
-msgstr ""
+msgstr "खालीस्थान साटासाट गर्नुहोस्"
 
 #: ../data/preferences.ui.in.h:27
 msgid "_Load"
-msgstr ""
+msgstr "लोड गर्नुहोस्"
 
 #: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
-msgstr ""
+msgstr "हार्डडिस्क"
 
 #: ../data/preferences.ui.in.h:29
 msgid "Options"
-msgstr ""
+msgstr "विकल्पहरू"
 
 #: ../data/preferences.ui.in.h:30
 msgid "System m_onitor width: "
-msgstr ""
+msgstr "प्रणाली मनिटर चौडाई: "
 
 #: ../data/preferences.ui.in.h:31
 msgid "Sys_tem monitor update interval: "
-msgstr ""
+msgstr "प्रणाली मनिटर अद्यावधिक अन्तराल: "
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
-msgstr ""
+msgstr "मिलिसेकेन्डहरू"
 
 #: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
@@ -151,7 +169,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:34
 msgid "Colors"
-msgstr ""
+msgstr "रङ्गहरू"
 
 #: ../data/preferences.ui.in.h:35
 msgid "Built-in schemes:"
@@ -243,7 +261,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
-msgstr ""
+msgstr "एप्लेट ताजा गर्ने दर मिलिसेकेन्डमा"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:3
 msgid "Width of the graphs in pixels."
@@ -477,3 +495,66 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
+
+#~ msgid "_User"
+#~ msgstr "प्रयोगकर्ता"
+
+#~ msgid "S_ystem"
+#~ msgstr "प्रणाली"
+
+#~ msgid "N_ice"
+#~ msgstr "राम्रो"
+
+#~ msgid "I_OWait"
+#~ msgstr "आइओवेट"
+
+#~ msgid "I_dle"
+#~ msgstr "निष्प्रयोजन"
+
+#~ msgid "Processor"
+#~ msgstr "प्रक्रियाकर्ता"
+
+#~ msgid "Sh_ared"
+#~ msgstr "बाँडफाँड गरिएको"
+
+#~ msgid "_Buffers"
+#~ msgstr "बफरहरू"
+
+#~ msgid "Cach_ed"
+#~ msgstr "क्यास गरिएको"
+
+#~ msgid "F_ree"
+#~ msgstr "स्वतन्त्र"
+
+#~ msgid "Memory"
+#~ msgstr "स्मृति"
+
+#~ msgid "_Background"
+#~ msgstr "पृष्ठभूमि"
+
+#~ msgid "Network"
+#~ msgstr "सञ्जाल"
+
+#~ msgid "_Used"
+#~ msgstr "प्रयोग गरिएको"
+
+#~ msgid "_Free"
+#~ msgstr "स्वतन्त्र"
+
+#~ msgid "Swap Space"
+#~ msgstr "खाली ठाँउ साटासाट गर्नुहोस्"
+
+#~ msgid "_Average"
+#~ msgstr "औसत"
+
+#~ msgid "Load"
+#~ msgstr "लोड गर्नुहोस्"
+
+#~ msgid "_Read"
+#~ msgstr "पढनुहोस्"
+
+#~ msgid "_Write"
+#~ msgstr "लेख्नुहोस्"
+
+#~ msgid "Harddisk"
+#~ msgstr "हार्डडिस्क"

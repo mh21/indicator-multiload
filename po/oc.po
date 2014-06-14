@@ -1,32 +1,41 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Translation of oc.po to Occitan
+# Occitan translation of gnome-applets.
+# Copyright (C) 2007 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-applets package.
 #
-#, fuzzy
+# Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>, 2007, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: oc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
+"Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
+"Language: oc\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
+"Un monitor (ecran) de gestion de sistèma, capable d'afichar de grafics "
+"d'utilizacion del processor (CPU), de la RAM, del fichièr d'escambi (memòria "
+"SWAP) e del trafic ret."
 
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
 msgstr ""
+"Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Yannig MARCHEGAY (Kokoyaya) https://launchpad.net/~yannick-marchegay"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -58,7 +67,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:10
 msgid "pixels"
-msgstr ""
+msgstr "pixels"
 
 #: ../data/preferences.ui.in.h:11
 msgid "Trace"
@@ -69,8 +78,9 @@ msgid "Expression:"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:13
+#, fuzzy
 msgid "Color:"
-msgstr ""
+msgstr "Colors"
 
 #: ../data/preferences.ui.in.h:14
 msgid "Variable"
@@ -87,15 +97,15 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
-msgstr ""
+msgstr "_Dobrir lo monitor sistèma"
 
 #: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
-msgstr ""
+msgstr "_Preferéncias"
 
 #: ../data/preferences.ui.in.h:20
 msgid "_About"
-msgstr ""
+msgstr "_A prepaus"
 
 #: ../data/preferences.ui.in.h:21
 msgid "_Quit"
@@ -103,47 +113,47 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:22
 msgid "Monitored Resources"
-msgstr ""
+msgstr "Ressorsas susvelhadas"
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Processor"
-msgstr ""
+msgstr "_Processor"
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Memory"
-msgstr ""
+msgstr "_Memòria"
 
 #: ../data/preferences.ui.in.h:25
 msgid "_Network"
-msgstr ""
+msgstr "_Ret"
 
 #: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
-msgstr ""
+msgstr "Espaci d'escambi"
 
 #: ../data/preferences.ui.in.h:27
 msgid "_Load"
-msgstr ""
+msgstr "_Carga"
 
 #: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
-msgstr ""
+msgstr "_Disc dur"
 
 #: ../data/preferences.ui.in.h:29
 msgid "Options"
-msgstr ""
+msgstr "Opcions"
 
 #: ../data/preferences.ui.in.h:30
 msgid "System m_onitor width: "
-msgstr ""
+msgstr "Larg_or de l'ecran sistèma (\"terminal\") "
 
 #: ../data/preferences.ui.in.h:31
 msgid "Sys_tem monitor update interval: "
-msgstr ""
+msgstr "Frequéncia de la mesa a jorn de l'ecran sistèma "
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
-msgstr ""
+msgstr "milisegondas"
 
 #: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
@@ -151,7 +161,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:34
 msgid "Colors"
-msgstr ""
+msgstr "Colors"
 
 #: ../data/preferences.ui.in.h:35
 msgid "Built-in schemes:"
@@ -243,7 +253,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
-msgstr ""
+msgstr "Frequéncia d'actualizacion de l'ajuston en milisegondas"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:3
 msgid "Width of the graphs in pixels."
@@ -263,7 +273,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:7
 msgid "The desktop description file to execute as the system monitor"
-msgstr ""
+msgstr "Lo fichièr de descripcion .desktop d'utilizar pel monitor sistèma"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:8
 msgid "Automatically start on session startup"
@@ -477,3 +487,75 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
+
+#~ msgid "_User"
+#~ msgstr "_Utilizaire"
+
+#~ msgid "S_ystem"
+#~ msgstr "S_istèma"
+
+#~ msgid "N_ice"
+#~ msgstr "N_ice"
+
+#~ msgid "I_OWait"
+#~ msgstr "Laténcia I/S (Intradas/Sortidas)"
+
+#~ msgid "I_dle"
+#~ msgstr "I_nactiu"
+
+#~ msgid "Processor"
+#~ msgstr "Processor"
+
+#~ msgid "Sh_ared"
+#~ msgstr "P_artejat"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Tampons"
+
+#~ msgid "Cach_ed"
+#~ msgstr "Escond_ut"
+
+#~ msgid "F_ree"
+#~ msgstr "_Liure"
+
+#~ msgid "Memory"
+#~ msgstr "Memòria"
+
+#~ msgid "_In"
+#~ msgstr "_Dintrant"
+
+#~ msgid "_Out"
+#~ msgstr "_Sortissant"
+
+#~ msgid "_Local"
+#~ msgstr "_Local"
+
+#~ msgid "_Background"
+#~ msgstr "_Fons"
+
+#~ msgid "Network"
+#~ msgstr "Ret"
+
+#~ msgid "_Used"
+#~ msgstr "_Utilisat"
+
+#~ msgid "_Free"
+#~ msgstr "_Liure"
+
+#~ msgid "Swap Space"
+#~ msgstr "Espaci swap"
+
+#~ msgid "_Average"
+#~ msgstr "_Mejana"
+
+#~ msgid "Load"
+#~ msgstr "Carga"
+
+#~ msgid "_Read"
+#~ msgstr "_Lectura"
+
+#~ msgid "_Write"
+#~ msgstr "_Escritura"
+
+#~ msgid "Harddisk"
+#~ msgstr "Disc dur"

@@ -1,22 +1,22 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# gnome-applets Kirghiz translation.
+# This file is distributed under the same license as the gnome-applets package.
+# Timur Jamakeev <ztimur@gmail.com>, 2005.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: gnome-applets HEAD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"Last-Translator: Timur Jamakeev <ztimur@gmail.com>\n"
+"Language-Team: \n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -27,6 +27,10 @@ msgstr ""
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
 msgstr ""
+"Тимур Жамакеев <ztimur@gmail.com>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Timur Jamakeev https://launchpad.net/~ztimur-gmail"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -91,11 +95,11 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
-msgstr ""
+msgstr "_Ырастоолор"
 
 #: ../data/preferences.ui.in.h:20
 msgid "_About"
-msgstr ""
+msgstr "_Апплет жөнүндө"
 
 #: ../data/preferences.ui.in.h:21
 msgid "_Quit"
@@ -476,4 +480,3 @@ msgstr ""
 msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
-msgstr[1] ""

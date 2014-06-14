@@ -1,32 +1,49 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# translation of gnome-applets.HEAD.cy.po to Cymraeg
+# gnome-applets yn Gymraeg.
+# Copyright (C) 2003, 2004 Free Software Foundation, Inc.
+# Largely Chris and Dafydd H.
+# Also lots of stuff merged from Kyfieithu later on. Owain?
+# www.gyfieithu.co.uk <kyfieithu@dotmon.com>, 2003.
+# Dafydd Harries <daf@muse.19inch.net>, 2003, 2004.
+# Dafydd Tomos <l10n@da.fydd.org>, 2004.
+# Rhys Jones <rhys@sucs.org>, 2005.
 #
-#, fuzzy
+# rhysj: Wedi diweddaru a gwirio hwn erbyn GNOME 2.12.
+# rhysj: Ac hefyd 2.14 a 2.16.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"Last-Translator: Rhys Jones <rhys@sucs.org>\n"
+"Language-Team: Cymraeg <gnome-cy@lists.linux.org.uk>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n==2 ? 1 : (n != 8 && n != 11) ? "
+"2 : 3;\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
+"Monitor llwyth system sy'n gallu dangos graffiau defnydd CPU, cof a gofod "
+"cyfnewid, a thraffig rhwydwaith."
 
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
 msgstr ""
+"Dafydd Harries <daf@parnassus.ath.cx>\n"
+"Rhys Jones <rhys@sucs.org>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Rhys Jones https://launchpad.net/~rhys-sucs"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -58,7 +75,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:10
 msgid "pixels"
-msgstr ""
+msgstr "picsel"
 
 #: ../data/preferences.ui.in.h:11
 msgid "Trace"
@@ -69,8 +86,9 @@ msgid "Expression:"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:13
+#, fuzzy
 msgid "Color:"
-msgstr ""
+msgstr "Lliwiau"
 
 #: ../data/preferences.ui.in.h:14
 msgid "Variable"
@@ -87,15 +105,15 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
-msgstr ""
+msgstr "_Agor y Monitor System"
 
 #: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
-msgstr ""
+msgstr "_Hoffterau"
 
 #: ../data/preferences.ui.in.h:20
 msgid "_About"
-msgstr ""
+msgstr "_Ynghylch"
 
 #: ../data/preferences.ui.in.h:21
 msgid "_Quit"
@@ -103,47 +121,47 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:22
 msgid "Monitored Resources"
-msgstr ""
+msgstr "Adnoddau a Monitrwyd"
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Processor"
-msgstr ""
+msgstr "_Prosesydd"
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Memory"
-msgstr ""
+msgstr "_Cof"
 
 #: ../data/preferences.ui.in.h:25
 msgid "_Network"
-msgstr ""
+msgstr "_Rhwydwaith"
 
 #: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
-msgstr ""
+msgstr "_Gofod Cyfnewid"
 
 #: ../data/preferences.ui.in.h:27
 msgid "_Load"
-msgstr ""
+msgstr "_Llwyth"
 
 #: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
-msgstr ""
+msgstr "_Disgen Galed"
 
 #: ../data/preferences.ui.in.h:29
 msgid "Options"
-msgstr ""
+msgstr "Hoffterau"
 
 #: ../data/preferences.ui.in.h:30
 msgid "System m_onitor width: "
-msgstr ""
+msgstr "_Lled y monitor system: "
 
 #: ../data/preferences.ui.in.h:31
 msgid "Sys_tem monitor update interval: "
-msgstr ""
+msgstr "_Ysbaid diweddaru'r monitor system: "
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
-msgstr ""
+msgstr "milfedau o eiliadau"
 
 #: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
@@ -151,7 +169,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:34
 msgid "Colors"
-msgstr ""
+msgstr "Lliwiau"
 
 #: ../data/preferences.ui.in.h:35
 msgid "Built-in schemes:"
@@ -243,7 +261,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
-msgstr ""
+msgstr "Cyfradd diweddaru'r rhaglennig mewn milfedau eiliad"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:3
 msgid "Width of the graphs in pixels."
@@ -477,3 +495,68 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#~ msgid "_User"
+#~ msgstr "_Defnyddiwr"
+
+#~ msgid "S_ystem"
+#~ msgstr "_System"
+
+#~ msgid "N_ice"
+#~ msgstr "_Neis"
+
+#~ msgid "I_OWait"
+#~ msgstr "I_OWait"
+
+#~ msgid "I_dle"
+#~ msgstr "_Seibio"
+
+#~ msgid "Processor"
+#~ msgstr "Prosesydd"
+
+#~ msgid "Sh_ared"
+#~ msgstr "Wedi _Rhannu"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Byfferau"
+
+#~ msgid "Cach_ed"
+#~ msgstr "_Storfa"
+
+#~ msgid "F_ree"
+#~ msgstr "_Rhydd"
+
+#~ msgid "Memory"
+#~ msgstr "Cof"
+
+#~ msgid "_Background"
+#~ msgstr "_Cefndir"
+
+#~ msgid "Network"
+#~ msgstr "Rhwydwaith"
+
+#~ msgid "_Used"
+#~ msgstr "_Wedi Defnyddio"
+
+#~ msgid "_Free"
+#~ msgstr "_Rhydd"
+
+#~ msgid "Swap Space"
+#~ msgstr "Gofod Cyfnewid"
+
+#~ msgid "_Average"
+#~ msgstr "_Cyfartaledd"
+
+#~ msgid "Load"
+#~ msgstr "Llwyth"
+
+#~ msgid "_Read"
+#~ msgstr "_Darllen"
+
+#~ msgid "_Write"
+#~ msgstr "_Ysgrifennu"
+
+#~ msgid "Harddisk"
+#~ msgstr "Disgen Galed"

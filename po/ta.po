@@ -1,32 +1,50 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# translation of gnome-applets.master.ta.po to Tamil
+# translation of gnome-applets.gnome-2-26.ta.po to
+# translation of ta.po to
+# Translation of gnome-applets.
+# Copyright (C) 2002, 2004, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
 #
-#, fuzzy
+# B Muthukumar <kulirnila@yahoo.com>, 2002.
+# Jayaradha N <njayaradha@yahoo.com>, 2004, 2006.
+# Felix <ifelix@redhat.com>, 2006.
+# drtvasudevan <agnihot3@gmail.com>, 2006.
+# I felix <ifelix@redhat.com>, 2007.
+# Dr.T.Vasudevan <agnihot3@gmail.com>, 2007, 2009, 2010.
+# I. Felix <ifelix@redhat.com>, 2008, 2009.
+# Dr,T,Vasudevan <agnihot3@gmail.com>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: gnome-applets.master.ta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"Last-Translator: Dr.T.Vasudevan <agnihot3@gmail.com>\n"
+"Language-Team: Tamil <<Ubuntu-l10n-tam@lists.ubuntu.com>>\n"
+"Language: ta\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
+"ஒரு 'ஏற்றுதலைக் கண்காணித்தல்' அமைப்பு ஸிபியு, ரேம் மற்றும் ஸ்வாப் ஆகியவற்றின் "
+"வரைபடங்களையும் கோப்பை பயன்படுத்துதலையும், வலையமைப்பின் போக்குவரத்தையும் காட்ட வல்லது"
 
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
 msgstr ""
+"மொழிபெயர்ப்பாளர்-சன்மானம் /nB Muthukumar <kulirnila@yahoo.com>, 2002./nJayaradha "
+"N <njayaradha@yahoo.com>, 2004, 2006./nFelix <ifelix@redhat.com>, 2006./"
+"ndrtvasudevan <agnihot3@gmail.com>, 2006./n\n"
+"\n"
+"Launchpad Contributions:\n"
+"  drtvasudevan https://launchpad.net/~agnihot3"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -58,7 +76,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:10
 msgid "pixels"
-msgstr ""
+msgstr "படத் துணுக்குகள்"
 
 #: ../data/preferences.ui.in.h:11
 msgid "Trace"
@@ -69,8 +87,9 @@ msgid "Expression:"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:13
+#, fuzzy
 msgid "Color:"
-msgstr ""
+msgstr "வண்ணங்கள்"
 
 #: ../data/preferences.ui.in.h:14
 msgid "Variable"
@@ -87,15 +106,15 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
-msgstr ""
+msgstr "_த அமைப்புக் கண்காணியை திற"
 
 #: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
-msgstr ""
+msgstr "_வ விருப்பங்கள்..."
 
 #: ../data/preferences.ui.in.h:20
 msgid "_About"
-msgstr ""
+msgstr "பற்றி (_A)"
 
 #: ../data/preferences.ui.in.h:21
 msgid "_Quit"
@@ -103,47 +122,47 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:22
 msgid "Monitored Resources"
-msgstr ""
+msgstr "கண்காணிக்கப்பட்ட வளம்"
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Processor"
-msgstr ""
+msgstr "_ச செயலகம்"
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Memory"
-msgstr ""
+msgstr "_ந நினைவகம்"
 
 #: ../data/preferences.ui.in.h:25
 msgid "_Network"
-msgstr ""
+msgstr "_வலையமைப்பு"
 
 #: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
-msgstr ""
+msgstr "_இட மாற்று நினைவகம்"
 
 #: ../data/preferences.ui.in.h:27
 msgid "_Load"
-msgstr ""
+msgstr "_பளு"
 
 #: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
-msgstr ""
+msgstr "_வ நிலைவட்டு"
 
 #: ../data/preferences.ui.in.h:29
 msgid "Options"
-msgstr ""
+msgstr "விருப்பத்தேர்வுகள்"
 
 #: ../data/preferences.ui.in.h:30
 msgid "System m_onitor width: "
-msgstr ""
+msgstr "_அமைப்புக்கண்காணியின் அகலம்: "
 
 #: ../data/preferences.ui.in.h:31
 msgid "Sys_tem monitor update interval: "
-msgstr ""
+msgstr "_இ அமைப்புக்கண்காணியை புதுப்பித்தல் இடைவேளை நேரம்: "
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
-msgstr ""
+msgstr "மில்லி வினாடிகள்"
 
 #: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
@@ -151,7 +170,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:34
 msgid "Colors"
-msgstr ""
+msgstr "வண்ணங்கள்"
 
 #: ../data/preferences.ui.in.h:35
 msgid "Built-in schemes:"
@@ -243,7 +262,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
-msgstr ""
+msgstr "சிறுநிரல்களைப் புதுப்பிக்கும் வகையை மில்லி நொடிகளில் அமை"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:3
 msgid "Width of the graphs in pixels."
@@ -263,7 +282,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:7
 msgid "The desktop description file to execute as the system monitor"
-msgstr ""
+msgstr "பணிமேடை விவர கோப்பு கணினி கண்காணிப்பாக செயல்படுத்தப்படுகிறது"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:8
 msgid "Automatically start on session startup"
@@ -477,3 +496,75 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
+
+#~ msgid "_User"
+#~ msgstr "_பயனர்"
+
+#~ msgid "S_ystem"
+#~ msgstr "_கணினி"
+
+#~ msgid "N_ice"
+#~ msgstr "_ந நைஸ்"
+
+#~ msgid "I_OWait"
+#~ msgstr "_ஐஓவெயிட்"
+
+#~ msgid "I_dle"
+#~ msgstr "_ச சும்மாயிருத்தல்"
+
+#~ msgid "Processor"
+#~ msgstr "செயலகம்"
+
+#~ msgid "Sh_ared"
+#~ msgstr "ப_ங்கிடப்பட்டது"
+
+#~ msgid "_Buffers"
+#~ msgstr "_ட இடையகங்கள்"
+
+#~ msgid "Cach_ed"
+#~ msgstr "_க கேச்ட்"
+
+#~ msgid "F_ree"
+#~ msgstr "_எஞ்சியது"
+
+#~ msgid "Memory"
+#~ msgstr "நினைவகம்"
+
+#~ msgid "_In"
+#~ msgstr "_In"
+
+#~ msgid "_Out"
+#~ msgstr "வெளியே (_O)"
+
+#~ msgid "_Local"
+#~ msgstr "இடம் (_L)"
+
+#~ msgid "_Background"
+#~ msgstr "_ப பின்னணி"
+
+#~ msgid "Network"
+#~ msgstr "வலையமைப்பு"
+
+#~ msgid "_Used"
+#~ msgstr "_பயன்படுத்தப்பட்டது"
+
+#~ msgid "_Free"
+#~ msgstr "_எஞ்சியது"
+
+#~ msgid "Swap Space"
+#~ msgstr "இட மாற்று நினைவக வெளி"
+
+#~ msgid "_Average"
+#~ msgstr "_சராசரி"
+
+#~ msgid "Load"
+#~ msgstr "பளு்றி"
+
+#~ msgid "_Read"
+#~ msgstr "_படி"
+
+#~ msgid "_Write"
+#~ msgstr "_எழுது"
+
+#~ msgid "Harddisk"
+#~ msgstr "நிலைவட்டு"

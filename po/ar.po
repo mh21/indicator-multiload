@@ -1,32 +1,52 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# translation of gnome-applets.HEAD.po to Arabic
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
+# Sayed Jaffer Al-Mosawi <mosawi@arabeyes.org>, 2002.
+# Isam Bayazidi <bayazidi@arabeyes.org>, 2002.
+# Arafat Medini <lumina@silverpen.de>, 2003.
+# Abdulaziz Al-Arfaj <alarfaj0@yahoo.com>, 2004.
+# Ayman Hourieh <aymanh@gmail.com>, 2004.
+# Khaled Hosny <khaledhosny@eglug.org>, 2006, 2007, 2008, 2009, 2010.
+# Djihed Afifi <djihed@gmail.com>, 2007, 2008.
+# Abou Manal <aboumanal@gmail.com>, 2008.
+# Anas Afif Emad <anas.e87@gmail.com, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: gnome-applets.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
+"Language-Team: Arabic <doc@arabeyes.org>\n"
+"Language: ar\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n % 100 >= "
+"3 && n % 100 <= 10 ? 3 : n % 100 >= 11 && n % 100 <= 99 ? 4 : 5;\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
+"مراقب لحالة النظام يستطيع عرض رسوم بيانية للمعالج و الذاكرة و مستوى استخدام "
+"ملف التبديل بالإضافة إلى حالة الشبكة."
 
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
 msgstr ""
+"فريق عربآيز للترجمة http://www.arabeyes.org :\n"
+"يوسف رفه\t<yousef@raffah.com>\n"
+"جهاد عفيفي\t<djihed@gmail.com>\n"
+"خالد حسني\t<khaledhosny@eglug.org>\n"
+"أنس عفيف عماد\t<anas.e87@gmail.com>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Khaled Hosny https://launchpad.net/~khaledhosny\n"
+"  slmb https://launchpad.net/~fqa101"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -58,7 +78,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:10
 msgid "pixels"
-msgstr ""
+msgstr "بكسل"
 
 #: ../data/preferences.ui.in.h:11
 msgid "Trace"
@@ -69,8 +89,9 @@ msgid "Expression:"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:13
+#, fuzzy
 msgid "Color:"
-msgstr ""
+msgstr "الألوان"
 
 #: ../data/preferences.ui.in.h:14
 msgid "Variable"
@@ -87,15 +108,15 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
-msgstr ""
+msgstr "ا_فتح مراقب النظام"
 
 #: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
-msgstr ""
+msgstr "ال_تفضيلات"
 
 #: ../data/preferences.ui.in.h:20
 msgid "_About"
-msgstr ""
+msgstr "_عنْ"
 
 #: ../data/preferences.ui.in.h:21
 msgid "_Quit"
@@ -103,47 +124,47 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:22
 msgid "Monitored Resources"
-msgstr ""
+msgstr "الموارد المراقَبة"
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Processor"
-msgstr ""
+msgstr "الم_عالج"
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Memory"
-msgstr ""
+msgstr "ال_ذاكرة"
 
 #: ../data/preferences.ui.in.h:25
 msgid "_Network"
-msgstr ""
+msgstr "ال_شبكة"
 
 #: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
-msgstr ""
+msgstr "مساحة الت_بديل"
 
 #: ../data/preferences.ui.in.h:27
 msgid "_Load"
-msgstr ""
+msgstr "ال_حِمْل"
 
 #: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
-msgstr ""
+msgstr "القرص ال_صلب"
 
 #: ../data/preferences.ui.in.h:29
 msgid "Options"
-msgstr ""
+msgstr "الخيارات"
 
 #: ../data/preferences.ui.in.h:30
 msgid "System m_onitor width: "
-msgstr ""
+msgstr "عرض مرا_قب النظام: "
 
 #: ../data/preferences.ui.in.h:31
 msgid "Sys_tem monitor update interval: "
-msgstr ""
+msgstr "مدة تحديث مراقب ال_نظام: "
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
-msgstr ""
+msgstr "ملي ثانية"
 
 #: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
@@ -151,7 +172,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:34
 msgid "Colors"
-msgstr ""
+msgstr "الألوان"
 
 #: ../data/preferences.ui.in.h:35
 msgid "Built-in schemes:"
@@ -243,7 +264,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
-msgstr ""
+msgstr "تردد تحديث البريمج بالملي ثانية"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:3
 msgid "Width of the graphs in pixels."
@@ -263,7 +284,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:7
 msgid "The desktop description file to execute as the system monitor"
-msgstr ""
+msgstr "ملف وصف سطح المكتب الذي سيتم تنفيذه كمراقب النظام"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:8
 msgid "Automatically start on session startup"
@@ -350,7 +371,7 @@ msgstr ""
 
 #: ../data/indicator-multiload.desktop.in.h:1
 msgid "System Load Indicator"
-msgstr ""
+msgstr "نظام تحميل المؤشر"
 
 #. TRANSLATORS: Color theme name
 #: ../src/colormapper.vala:77
@@ -383,8 +404,9 @@ msgid "Output version information and exit"
 msgstr ""
 
 #: ../src/main.vala:46
+#, fuzzy
 msgid "System tray icon instead of app indicator"
-msgstr ""
+msgstr "نظام تحميل المؤشر"
 
 #: ../src/main.vala:48
 msgid "Evaluate an expression"
@@ -477,3 +499,79 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#~ msgid "_User"
+#~ msgstr "الم_ستخدِم"
+
+#~ msgid "S_ystem"
+#~ msgstr "الن_ظام"
+
+#~ msgid "N_ice"
+#~ msgstr "_تحسين"
+
+#~ msgid "I_OWait"
+#~ msgstr "I_OWait"
+
+#~ msgid "I_dle"
+#~ msgstr "_خامل"
+
+#~ msgid "Processor"
+#~ msgstr "المعالج"
+
+#~ msgid "Sh_ared"
+#~ msgstr "مش_ترك"
+
+#~ msgid "_Buffers"
+#~ msgstr "الذاكرة ال_وسيطة"
+
+#~ msgid "Cach_ed"
+#~ msgstr "_مختزن"
+
+#~ msgid "F_ree"
+#~ msgstr "_خالي"
+
+#~ msgid "Memory"
+#~ msgstr "الذاكرة"
+
+#~ msgid "_In"
+#~ msgstr "_داخل"
+
+#~ msgid "_Out"
+#~ msgstr "_خارج"
+
+#~ msgid "_Local"
+#~ msgstr "_محلي"
+
+#~ msgid "_Background"
+#~ msgstr "ال_خلفية"
+
+#~ msgid "Network"
+#~ msgstr "الشبكة"
+
+#~ msgid "_Used"
+#~ msgstr "مُ_ستخدَم"
+
+#~ msgid "_Free"
+#~ msgstr "_خالي"
+
+#~ msgid "Swap Space"
+#~ msgstr "مساحة التبديل"
+
+#~ msgid "_Average"
+#~ msgstr "ال_متوسط"
+
+#~ msgid "Load"
+#~ msgstr "الحِمْل"
+
+#~ msgid "_Read"
+#~ msgstr "_قراءة"
+
+#~ msgid "_Write"
+#~ msgstr "_كتابة"
+
+#~ msgid "Harddisk"
+#~ msgstr "القرص الصلب"

@@ -1,32 +1,52 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# GNOME rakendite eesti keele tõlge.
+# Estonian translation of GNOME applets.
 #
-#, fuzzy
+# Copyright (C) 1999, 2001, 2002, 2005, 2006 Free Software Foundation, Inc.
+# Copyright (C) 2007-2010 The GNOME Project
+# This file is distributed under the same license as the gnome-applets package.
+#
+# Lauris Kaplinski <lauris ariman ee>, 1999.
+# Ilmar Kerm <ikerm hot ee>, 2001, 2002.
+# Tõivo Leedjärv <toivo linux ee>, 2002.
+# Priit Laes <amd store20 com>, 2004-2006.
+# Ivar Smolin <okul linux ee>, 2005-2010.
+# Mattias Põldaru <mahfiaz gmail com>, 2010.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: gnome-applets 2.32\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"Last-Translator: Mattias Põldaru <mahfiaz gmail com>\n"
+"Language-Team: Estonian <gnome-et@linux.ee>\n"
+"Language: et\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
+"Süsteemi koormusmonitor on suuteline kuvama graafikuid protsessori koormuse, "
+"mälu- ja saaleruumi kasutuse ning võrguliikluse kohta."
 
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
 msgstr ""
+"Lauris Kaplinski <lauris ariman ee>, 1999.\n"
+"Ilmar Kerm <ikerm hot ee>, 2001, 2002.\n"
+"Tõivo Leedjärv <toivo linux ee>, 2002.\n"
+"Priit Laes <amd tt ee>, 2004-2006.\n"
+"Ivar Smolin <okul linux ee>, 2005-2010.\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Michael Hofmann https://launchpad.net/~mh21"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -58,7 +78,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:10
 msgid "pixels"
-msgstr ""
+msgstr "pikslit"
 
 #: ../data/preferences.ui.in.h:11
 msgid "Trace"
@@ -69,8 +89,9 @@ msgid "Expression:"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:13
+#, fuzzy
 msgid "Color:"
-msgstr ""
+msgstr "Värvid"
 
 #: ../data/preferences.ui.in.h:14
 msgid "Variable"
@@ -87,15 +108,15 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
-msgstr ""
+msgstr "Ava _süsteemi jälgija"
 
 #: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
-msgstr ""
+msgstr "_Eelistused"
 
 #: ../data/preferences.ui.in.h:20
 msgid "_About"
-msgstr ""
+msgstr "_Rakendist lähemalt"
 
 #: ../data/preferences.ui.in.h:21
 msgid "_Quit"
@@ -103,47 +124,47 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:22
 msgid "Monitored Resources"
-msgstr ""
+msgstr "Jälgitavad ressursid"
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Processor"
-msgstr ""
+msgstr "_Protsessor"
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Memory"
-msgstr ""
+msgstr "_Mälu"
 
 #: ../data/preferences.ui.in.h:25
 msgid "_Network"
-msgstr ""
+msgstr "_Võrk"
 
 #: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
-msgstr ""
+msgstr "_Saaleruum"
 
 #: ../data/preferences.ui.in.h:27
 msgid "_Load"
-msgstr ""
+msgstr "_Koormus"
 
 #: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
-msgstr ""
+msgstr "_Kõvaketas"
 
 #: ../data/preferences.ui.in.h:29
 msgid "Options"
-msgstr ""
+msgstr "Valikud"
 
 #: ../data/preferences.ui.in.h:30
 msgid "System m_onitor width: "
-msgstr ""
+msgstr "Süsteemi _jälgija laius: "
 
 #: ../data/preferences.ui.in.h:31
 msgid "Sys_tem monitor update interval: "
-msgstr ""
+msgstr "Süs_teemijälgija uuendamise vahemik: "
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
-msgstr ""
+msgstr "millisekundit"
 
 #: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
@@ -151,7 +172,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:34
 msgid "Colors"
-msgstr ""
+msgstr "Värvid"
 
 #: ../data/preferences.ui.in.h:35
 msgid "Built-in schemes:"
@@ -243,7 +264,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
-msgstr ""
+msgstr "Rakendi värskendamissagedus millisekundites"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:3
 msgid "Width of the graphs in pixels."
@@ -263,7 +284,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:7
 msgid "The desktop description file to execute as the system monitor"
-msgstr ""
+msgstr "Töölaua kirjeldusfail süsteemijälgija käivitamiseks"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:8
 msgid "Automatically start on session startup"
@@ -477,3 +498,75 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
+
+#~ msgid "_User"
+#~ msgstr "_Kasutaja"
+
+#~ msgid "S_ystem"
+#~ msgstr "_Süsteem"
+
+#~ msgid "N_ice"
+#~ msgstr "_Tähtsus (nice)"
+
+#~ msgid "I_OWait"
+#~ msgstr "I_OWait"
+
+#~ msgid "I_dle"
+#~ msgstr "_Jõude"
+
+#~ msgid "Processor"
+#~ msgstr "Protsessor"
+
+#~ msgid "Sh_ared"
+#~ msgstr "_Jagatud"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Puhvrid"
+
+#~ msgid "Cach_ed"
+#~ msgstr "_Puhverdatud"
+
+#~ msgid "F_ree"
+#~ msgstr "_Vaba"
+
+#~ msgid "Memory"
+#~ msgstr "Mälu"
+
+#~ msgid "_In"
+#~ msgstr "_Sisse"
+
+#~ msgid "_Out"
+#~ msgstr "_Välja"
+
+#~ msgid "_Local"
+#~ msgstr "_Kohalik"
+
+#~ msgid "_Background"
+#~ msgstr "_Taust"
+
+#~ msgid "Network"
+#~ msgstr "Võrk"
+
+#~ msgid "_Used"
+#~ msgstr "_Kasutatud"
+
+#~ msgid "_Free"
+#~ msgstr "_Vaba"
+
+#~ msgid "Swap Space"
+#~ msgstr "Saaleruum"
+
+#~ msgid "_Average"
+#~ msgstr "_Keskmine"
+
+#~ msgid "Load"
+#~ msgstr "Koormus"
+
+#~ msgid "_Read"
+#~ msgstr "_Lugemine"
+
+#~ msgid "_Write"
+#~ msgstr "_Kirjutamine"
+
+#~ msgid "Harddisk"
+#~ msgstr "Kõvaketas"

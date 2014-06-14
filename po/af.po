@@ -1,32 +1,47 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# Johan Mynhardt <johanmynhardt@gmail.com>, 2009
+# F Wolff <friedel@translate.org.za>, 2009
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"Last-Translator: F Wolff <friedel@translate.org.za>\n"
+"Language-Team: translate-discuss-af@lists.sourceforge.net\n"
+"Language: af\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
+"'n Stelsellading-monitor wat in staat is om grafieke van die SVE, geheue, "
+"gebruik van uitruilspasie en netwerkverkeer te wys."
 
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
 msgstr ""
+"Bydraes vanaf Contributions:\n"
+"  Eduard Grebe https://launchpad.net/~eduardgrebe\n"
+"  Hendrik Boshoff https://launchpad.net/~hfvb\n"
+"  Hex https://launchpad.net/~jaco-niel\n"
+"  Johan Mynhardt https://launchpad.net/~johanmynhardt\n"
+"  Laurens https://launchpad.net/~jcloete-csir\n"
+"  Theuns Smuts https://launchpad.net/~theunssmuts\n"
+"  jlr https://launchpad.net/~j-l-r\n"
+"Friedel Wolff\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Friedel Wolff https://launchpad.net/~friedel-translate"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -58,7 +73,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:10
 msgid "pixels"
-msgstr ""
+msgstr "beeldpunte"
 
 #: ../data/preferences.ui.in.h:11
 msgid "Trace"
@@ -69,8 +84,9 @@ msgid "Expression:"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:13
+#, fuzzy
 msgid "Color:"
-msgstr ""
+msgstr "Kleure"
 
 #: ../data/preferences.ui.in.h:14
 msgid "Variable"
@@ -87,15 +103,15 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
-msgstr ""
+msgstr "_Open Stelselmonitor"
 
 #: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
-msgstr ""
+msgstr "_Voorkeure"
 
 #: ../data/preferences.ui.in.h:20
 msgid "_About"
-msgstr ""
+msgstr "_Aangaande"
 
 #: ../data/preferences.ui.in.h:21
 msgid "_Quit"
@@ -103,35 +119,35 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:22
 msgid "Monitored Resources"
-msgstr ""
+msgstr "Gemoniteerde hulpbronne"
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Processor"
-msgstr ""
+msgstr "_Verwerker"
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Memory"
-msgstr ""
+msgstr "_Geheue"
 
 #: ../data/preferences.ui.in.h:25
 msgid "_Network"
-msgstr ""
+msgstr "_Netwerk"
 
 #: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
-msgstr ""
+msgstr "Uitruilspasie"
 
 #: ../data/preferences.ui.in.h:27
 msgid "_Load"
-msgstr ""
+msgstr "_Lading"
 
 #: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
-msgstr ""
+msgstr "_Hardeskyf"
 
 #: ../data/preferences.ui.in.h:29
 msgid "Options"
-msgstr ""
+msgstr "Keuses"
 
 #: ../data/preferences.ui.in.h:30
 msgid "System m_onitor width: "
@@ -143,7 +159,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
-msgstr ""
+msgstr "millisekondes"
 
 #: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
@@ -151,7 +167,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:34
 msgid "Colors"
-msgstr ""
+msgstr "Kleure"
 
 #: ../data/preferences.ui.in.h:35
 msgid "Built-in schemes:"
@@ -477,3 +493,42 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
+
+#~ msgid "_User"
+#~ msgstr "Gebr_uiker"
+
+#~ msgid "S_ystem"
+#~ msgstr "_Stelsel"
+
+#~ msgid "Processor"
+#~ msgstr "Verwerker"
+
+#~ msgid "Sh_ared"
+#~ msgstr "Gedeel"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Buffers"
+
+#~ msgid "Memory"
+#~ msgstr "Geheue"
+
+#~ msgid "Network"
+#~ msgstr "Netwerk"
+
+#~ msgid "_Used"
+#~ msgstr "Gebr_uik"
+
+#~ msgid "Swap Space"
+#~ msgstr "Uitruilspasie"
+
+#~ msgid "_Average"
+#~ msgstr "_Gemiddeld"
+
+#~ msgid "_Read"
+#~ msgstr "_Lees"
+
+#~ msgid "_Write"
+#~ msgstr "_Skryf"
+
+#~ msgid "Harddisk"
+#~ msgstr "Hardeskyf"

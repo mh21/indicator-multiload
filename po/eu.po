@@ -1,32 +1,42 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# translation of eu_to_be_translate.po to Basque
+# Copyright (C) 1999, 2004, 2006, 2007, 2008, 2009, 2010 Free Software Foundation, Inc.
 #
-#, fuzzy
+# euskara <linux-eu@chanae.alphanet.ch>, 1999.
+# Hizkuntza Politikarako Sailburuordetza <hizpol@ej-gv.es>, 2004, 2005.
+# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2004, 2006, 2007, 2008, 2009, 2010.
+# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: eu_to_be_translate\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
+"Language-Team: Basque <itzulpena@euskalgnu.org>\n"
+"Language: eu\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
+"PUZaren, ram memoriaren, swap lekuaren erabileraren eta sare-trafikoaren "
+"grafikoak bistaratzeko gai den sistema-kargaren monitorea."
 
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
 msgstr ""
+"Hizkuntza Politikarako Sailburuordetza <hizkpol@ej-gv.es>\n"
+"Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Iñaki Larrañaga Murgoitio https://launchpad.net/~dooteo"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -58,7 +68,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:10
 msgid "pixels"
-msgstr ""
+msgstr "pixel"
 
 #: ../data/preferences.ui.in.h:11
 msgid "Trace"
@@ -69,8 +79,9 @@ msgid "Expression:"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:13
+#, fuzzy
 msgid "Color:"
-msgstr ""
+msgstr "Koloreak"
 
 #: ../data/preferences.ui.in.h:14
 msgid "Variable"
@@ -87,15 +98,15 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
-msgstr ""
+msgstr "_Ireki sistema-monitorea"
 
 #: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
-msgstr ""
+msgstr "_Hobespenak"
 
 #: ../data/preferences.ui.in.h:20
 msgid "_About"
-msgstr ""
+msgstr "Honi _buruz"
 
 #: ../data/preferences.ui.in.h:21
 msgid "_Quit"
@@ -103,47 +114,47 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:22
 msgid "Monitored Resources"
-msgstr ""
+msgstr "Kontrolatutako baliabideak"
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Processor"
-msgstr ""
+msgstr "_Prozesadorea"
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Memory"
-msgstr ""
+msgstr "_Memoria"
 
 #: ../data/preferences.ui.in.h:25
 msgid "_Network"
-msgstr ""
+msgstr "_Sarea"
 
 #: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
-msgstr ""
+msgstr "S_wap lekua"
 
 #: ../data/preferences.ui.in.h:27
 msgid "_Load"
-msgstr ""
+msgstr "_Karga"
 
 #: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
-msgstr ""
+msgstr "_Disko gogorra"
 
 #: ../data/preferences.ui.in.h:29
 msgid "Options"
-msgstr ""
+msgstr "Aukerak"
 
 #: ../data/preferences.ui.in.h:30
 msgid "System m_onitor width: "
-msgstr ""
+msgstr "Sis_tema-monitorearen zabalera: "
 
 #: ../data/preferences.ui.in.h:31
 msgid "Sys_tem monitor update interval: "
-msgstr ""
+msgstr "S_istema-monitorearen eguneratze-bitartea: "
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
-msgstr ""
+msgstr "milisegundo"
 
 #: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
@@ -151,7 +162,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:34
 msgid "Colors"
-msgstr ""
+msgstr "Koloreak"
 
 #: ../data/preferences.ui.in.h:35
 msgid "Built-in schemes:"
@@ -243,7 +254,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
-msgstr ""
+msgstr "Miniaplikazioaren freskatze-maiztasuna (milisegundotan)"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:3
 msgid "Width of the graphs in pixels."
@@ -264,6 +275,7 @@ msgstr ""
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:7
 msgid "The desktop description file to execute as the system monitor"
 msgstr ""
+"Mahaigaineko deskripzio-fitxategia sistemako monitore gisa exekutatzeko"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:8
 msgid "Automatically start on session startup"
@@ -477,3 +489,75 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
+
+#~ msgid "_User"
+#~ msgstr "_Erabiltzailea:"
+
+#~ msgid "S_ystem"
+#~ msgstr "Sistem_a"
+
+#~ msgid "N_ice"
+#~ msgstr "Le_hentasunekoa"
+
+#~ msgid "I_OWait"
+#~ msgstr "SI_Zain"
+
+#~ msgid "I_dle"
+#~ msgstr "I_naktiboa"
+
+#~ msgid "Processor"
+#~ msgstr "Prozesadorea"
+
+#~ msgid "Sh_ared"
+#~ msgstr "_Partekatua"
+
+#~ msgid "_Buffers"
+#~ msgstr "Bu_fferrak"
+
+#~ msgid "Cach_ed"
+#~ msgstr "_Cache-koa"
+
+#~ msgid "F_ree"
+#~ msgstr "L_ibre"
+
+#~ msgid "Memory"
+#~ msgstr "Memoria"
+
+#~ msgid "_In"
+#~ msgstr "_Sarrera"
+
+#~ msgid "_Out"
+#~ msgstr "_Irteera"
+
+#~ msgid "_Local"
+#~ msgstr "_Lokala"
+
+#~ msgid "_Background"
+#~ msgstr "Atzeko _planoa:"
+
+#~ msgid "Network"
+#~ msgstr "Sarea"
+
+#~ msgid "_Used"
+#~ msgstr "_Erabilita"
+
+#~ msgid "_Free"
+#~ msgstr "_Libre"
+
+#~ msgid "Swap Space"
+#~ msgstr "Swap lekua"
+
+#~ msgid "_Average"
+#~ msgstr "_Batez bestekoa"
+
+#~ msgid "Load"
+#~ msgstr "Karga"
+
+#~ msgid "_Read"
+#~ msgstr "_Irakurri"
+
+#~ msgid "_Write"
+#~ msgstr "_Idatzi"
+
+#~ msgid "Harddisk"
+#~ msgstr "Disko gogorra"

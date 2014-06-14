@@ -1,32 +1,45 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# translation of gnome-applets.HEAD.he.po to Hebrew
+# translation of gnome-applets.gnome-2-0.po to Hebrew
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Copyright (C) 2005 THE PACKAGE'S COPYRIGHT HOLDER
+# Gil 'Dolfin' Osher <dolfin@rpg.org.il>, 2002,2003
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: gnome-applets.HEAD.he\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: Hebrew <he@li.org>\n"
+"Language: he\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
+"צג עומס מערכת המאפשר להציג גרפים למעבד, מקום שימוש ב RAM ובקובץ תחלופה, וגם "
+"עומס רשת."
 
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
 msgstr ""
+"גיל אשר <dolfin@rpg.org.il>\n"
+"יאיר הרשקוביץ <yairhr@gmail.com>\n"
+"ירון שהרבני <sh.yaron@gmail.com>\n"
+"\n"
+"פרוייקט תרגום GNOME לעברית:\n"
+"‏http://gnome-il.berlios.de\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Yaron https://launchpad.net/~sh-yaron"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -58,7 +71,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:10
 msgid "pixels"
-msgstr ""
+msgstr "פיקסלים"
 
 #: ../data/preferences.ui.in.h:11
 msgid "Trace"
@@ -69,8 +82,9 @@ msgid "Expression:"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:13
+#, fuzzy
 msgid "Color:"
-msgstr ""
+msgstr "צבעים"
 
 #: ../data/preferences.ui.in.h:14
 msgid "Variable"
@@ -87,15 +101,15 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
-msgstr ""
+msgstr "_פתח צג מערכת"
 
 #: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
-msgstr ""
+msgstr "_העדפות"
 
 #: ../data/preferences.ui.in.h:20
 msgid "_About"
-msgstr ""
+msgstr "על _אודות"
 
 #: ../data/preferences.ui.in.h:21
 msgid "_Quit"
@@ -103,47 +117,47 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:22
 msgid "Monitored Resources"
-msgstr ""
+msgstr "משאבים מוצגים"
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Processor"
-msgstr ""
+msgstr "_מעבד"
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Memory"
-msgstr ""
+msgstr "_זיכרון"
 
 #: ../data/preferences.ui.in.h:25
 msgid "_Network"
-msgstr ""
+msgstr "_רשת"
 
 #: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
-msgstr ""
+msgstr "מקום _תחלופה"
 
 #: ../data/preferences.ui.in.h:27
 msgid "_Load"
-msgstr ""
+msgstr "ה_ספק"
 
 #: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
-msgstr ""
+msgstr "_דיסק קשיח"
 
 #: ../data/preferences.ui.in.h:29
 msgid "Options"
-msgstr ""
+msgstr "אפשרויות"
 
 #: ../data/preferences.ui.in.h:30
 msgid "System m_onitor width: "
-msgstr ""
+msgstr "רוחב צ_ג המערכת: "
 
 #: ../data/preferences.ui.in.h:31
 msgid "Sys_tem monitor update interval: "
-msgstr ""
+msgstr "השהיית עדכוני צג המע_רכת: "
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
-msgstr ""
+msgstr "מילי-שניות"
 
 #: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
@@ -151,7 +165,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:34
 msgid "Colors"
-msgstr ""
+msgstr "צבעים"
 
 #: ../data/preferences.ui.in.h:35
 msgid "Built-in schemes:"
@@ -243,7 +257,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
-msgstr ""
+msgstr "Applet refresh rate in milliseconds"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:3
 msgid "Width of the graphs in pixels."
@@ -263,7 +277,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:7
 msgid "The desktop description file to execute as the system monitor"
-msgstr ""
+msgstr "The desktop description file to execute as the system monitor"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:8
 msgid "Automatically start on session startup"
@@ -477,3 +491,75 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
+
+#~ msgid "_User"
+#~ msgstr "_משתמש"
+
+#~ msgid "S_ystem"
+#~ msgstr "מ_ערכת"
+
+#~ msgid "N_ice"
+#~ msgstr "_עדיפות"
+
+#~ msgid "I_OWait"
+#~ msgstr "הפסקת קלט/פלט"
+
+#~ msgid "I_dle"
+#~ msgstr "_סרק"
+
+#~ msgid "Processor"
+#~ msgstr "מעבד"
+
+#~ msgid "Sh_ared"
+#~ msgstr "מ_שותף"
+
+#~ msgid "_Buffers"
+#~ msgstr "_מאגרים"
+
+#~ msgid "Cach_ed"
+#~ msgstr "מ_טמון"
+
+#~ msgid "F_ree"
+#~ msgstr "פ_נוי"
+
+#~ msgid "Memory"
+#~ msgstr "זיכרון"
+
+#~ msgid "_In"
+#~ msgstr "_נכנס"
+
+#~ msgid "_Out"
+#~ msgstr "י_וצא"
+
+#~ msgid "_Local"
+#~ msgstr "_מקומי"
+
+#~ msgid "_Background"
+#~ msgstr "_רקע"
+
+#~ msgid "Network"
+#~ msgstr "רשת"
+
+#~ msgid "_Used"
+#~ msgstr "_בשימוש"
+
+#~ msgid "_Free"
+#~ msgstr "_פנוי"
+
+#~ msgid "Swap Space"
+#~ msgstr "מקום תחלופה"
+
+#~ msgid "_Average"
+#~ msgstr "_ממוצע"
+
+#~ msgid "Load"
+#~ msgstr "עומס"
+
+#~ msgid "_Read"
+#~ msgstr "_קרא"
+
+#~ msgid "_Write"
+#~ msgstr "_כתוב"
+
+#~ msgid "Harddisk"
+#~ msgstr "דיסק קשיח"

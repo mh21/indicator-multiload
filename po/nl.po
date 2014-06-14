@@ -1,32 +1,53 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Dutch translation for gnome-applets
 #
-#, fuzzy
+# This file is distributed under the same license as the gnome-applets package.
+#
+# Vincent van Adrighem <V.vanAdrighem@dirck.mine.nu>, 2003.
+# Tino Meinen <a.t.meinen@chello.nl>, 2003–2004, 2006–2008.
+# Wouter Bolsterlee <wbolster@gnome.org>, 2006–2010.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2012-05-02 12:26+0000\n"
+"Last-Translator: korst <Unknown>\n"
+"Language-Team: Dutch <vertaling@vrijschrift.org>\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
+"Een systeembelastingmonitor met grafieken om CPU-, geheugen-, swap- en "
+"netwerkgebruik te volgen."
 
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
 msgstr ""
+"Tino Meinen\n"
+"Wouter Bolsterlee\n"
+"Vincent van Adrighem\n"
+"Michiel Sikkes\n"
+"Dirk-Jan Binnema\n"
+"Dennis Smit\n"
+"Huib Kleinhout\n"
+"Ronald Hummelink\n"
+"\n"
+"Kijk voor meer informatie op http://nl.gnome.org/\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Bert Timmerman https://launchpad.net/~bert-timmerman\n"
+"  Wouter Bolsterlee (uws) https://launchpad.net/~uws\n"
+"  korst https://launchpad.net/~jasperkorst"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -58,7 +79,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:10
 msgid "pixels"
-msgstr ""
+msgstr "beeldpunten"
 
 #: ../data/preferences.ui.in.h:11
 msgid "Trace"
@@ -69,8 +90,9 @@ msgid "Expression:"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:13
+#, fuzzy
 msgid "Color:"
-msgstr ""
+msgstr "Kleuren"
 
 #: ../data/preferences.ui.in.h:14
 msgid "Variable"
@@ -87,71 +109,71 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
-msgstr ""
+msgstr "Procesbeheer _openen"
 
 #: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
-msgstr ""
+msgstr "_Voorkeuren"
 
 #: ../data/preferences.ui.in.h:20
 msgid "_About"
-msgstr ""
+msgstr "I_nfo"
 
 #: ../data/preferences.ui.in.h:21
 msgid "_Quit"
-msgstr ""
+msgstr "A_fsluiten"
 
 #: ../data/preferences.ui.in.h:22
 msgid "Monitored Resources"
-msgstr ""
+msgstr "Gemeten bronnen"
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Processor"
-msgstr ""
+msgstr "_Processor"
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Memory"
-msgstr ""
+msgstr "_Geheugen"
 
 #: ../data/preferences.ui.in.h:25
 msgid "_Network"
-msgstr ""
+msgstr "_Netwerk"
 
 #: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
-msgstr ""
+msgstr "_Wisselbestand"
 
 #: ../data/preferences.ui.in.h:27
 msgid "_Load"
-msgstr ""
+msgstr "_Belasting"
 
 #: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
-msgstr ""
+msgstr "_Harde schijf"
 
 #: ../data/preferences.ui.in.h:29
 msgid "Options"
-msgstr ""
+msgstr "Opties"
 
 #: ../data/preferences.ui.in.h:30
 msgid "System m_onitor width: "
-msgstr ""
+msgstr "Systeembelasting _breedte: "
 
 #: ../data/preferences.ui.in.h:31
 msgid "Sys_tem monitor update interval: "
-msgstr ""
+msgstr "Sys_teembelasting verversingsinterval "
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
-msgstr ""
+msgstr "milliseconden"
 
 #: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
-msgstr ""
+msgstr "_Autostart: "
 
 #: ../data/preferences.ui.in.h:34
 msgid "Colors"
-msgstr ""
+msgstr "Kleuren"
 
 #: ../data/preferences.ui.in.h:35
 msgid "Built-in schemes:"
@@ -231,31 +253,32 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:54
 msgid "Menu items..."
-msgstr ""
+msgstr "Menu items..."
 
 #: ../data/preferences.ui.in.h:55
+#, fuzzy
 msgid "Indicator items..."
-msgstr ""
+msgstr "Menu items..."
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:1
 msgid "Available graphs"
-msgstr ""
+msgstr "Beschikbare grafieken"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
-msgstr ""
+msgstr "Verversingsfrequentie van het applet in milliseconden"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:3
 msgid "Width of the graphs in pixels."
-msgstr ""
+msgstr "Breedte van de grafiek in pixels."
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:4
 msgid "Height of the graphs in pixels."
-msgstr ""
+msgstr "Hoogte van de grafiek in pixels."
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:5
 msgid "Graph background color"
-msgstr ""
+msgstr "Achtergrond kleur grafiek"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:6
 msgid "Most recently used color scheme"
@@ -264,10 +287,11 @@ msgstr ""
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:7
 msgid "The desktop description file to execute as the system monitor"
 msgstr ""
+"Het desktop-bestand dat uitgevoerd dient te worden voor de systeemmonitor"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:8
 msgid "Automatically start on session startup"
-msgstr ""
+msgstr "Voeg toe aan opstarttoepassingen"
 
 #. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, and commas.
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:10
@@ -292,7 +316,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:14
 msgid "Information shown in the indicator itself"
-msgstr ""
+msgstr "Informatie weergegeven in de indicator zelf"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:15
 msgid "Index of the current information shown in the indicator itself"
@@ -310,11 +334,11 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:18
 msgid "Information shown as menu entries"
-msgstr ""
+msgstr "Informatie weergegeven als menu-items"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:19
 msgid "Graph visibility"
-msgstr ""
+msgstr "Zichtbaarheid grafiek"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:20
 msgid "Minimum value for upper graph edge"
@@ -350,7 +374,7 @@ msgstr ""
 
 #: ../data/indicator-multiload.desktop.in.h:1
 msgid "System Load Indicator"
-msgstr ""
+msgstr "Systeembelastingindicator"
 
 #. TRANSLATORS: Color theme name
 #: ../src/colormapper.vala:77
@@ -383,8 +407,9 @@ msgid "Output version information and exit"
 msgstr ""
 
 #: ../src/main.vala:46
+#, fuzzy
 msgid "System tray icon instead of app indicator"
-msgstr ""
+msgstr "Systeembelastingindicator"
 
 #: ../src/main.vala:48
 msgid "Evaluate an expression"
@@ -407,17 +432,17 @@ msgstr ""
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:45
 msgid "{} kB"
-msgstr ""
+msgstr "{} Kb"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:47
 msgid "{} MB"
-msgstr ""
+msgstr "{} MB"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:49
 msgid "{} GB"
-msgstr ""
+msgstr "{} GB"
 
 #. TRANSLATORS: Please leave %u as it is, it is replaced by the size
 #: ../src/utils.vala:58
@@ -430,22 +455,22 @@ msgstr[1] ""
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:71
 msgid "{} kB/s"
-msgstr ""
+msgstr "{} kB/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:73
 msgid "{} MB/s"
-msgstr ""
+msgstr "{} MB/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:75
 msgid "{} GB/s"
-msgstr ""
+msgstr "{} GB/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:77
 msgid "{} TB/s"
-msgstr ""
+msgstr "{} TB/s"
 
 #. TRANSLATORS: Please leave %u as it is, it is replaced by the speed
 #: ../src/utils.vala:86
@@ -457,18 +482,21 @@ msgstr[1] ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
 #: ../src/utils.vala:99
+#, fuzzy
 msgid "{} kHz"
-msgstr ""
+msgstr "{} Kb"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
 #: ../src/utils.vala:101
+#, fuzzy
 msgid "{} MHz"
-msgstr ""
+msgstr "{} MB"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
 #: ../src/utils.vala:103
+#, fuzzy
 msgid "{} GHz"
-msgstr ""
+msgstr "{} GB"
 
 #. TRANSLATORS: Please leave %u as it is, it is replaced by the frequency
 #: ../src/utils.vala:112
@@ -477,3 +505,75 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
+
+#~ msgid "_User"
+#~ msgstr "Gebr_uiker"
+
+#~ msgid "S_ystem"
+#~ msgstr "S_ysteem"
+
+#~ msgid "N_ice"
+#~ msgstr "_Achtergrond"
+
+#~ msgid "I_OWait"
+#~ msgstr "I_OWait"
+
+#~ msgid "I_dle"
+#~ msgstr "_Ongebruikt"
+
+#~ msgid "Processor"
+#~ msgstr "Processor"
+
+#~ msgid "Sh_ared"
+#~ msgstr "Ge_deeld"
+
+#~ msgid "_Buffers"
+#~ msgstr "B_uffers"
+
+#~ msgid "Cach_ed"
+#~ msgstr "_Gebufferd"
+
+#~ msgid "F_ree"
+#~ msgstr "V_rij"
+
+#~ msgid "Memory"
+#~ msgstr "Geheugen"
+
+#~ msgid "_In"
+#~ msgstr "_In"
+
+#~ msgid "_Out"
+#~ msgstr "_Uit"
+
+#~ msgid "_Local"
+#~ msgstr "_Lokaal"
+
+#~ msgid "_Background"
+#~ msgstr "_Achtergrond"
+
+#~ msgid "Network"
+#~ msgstr "Netwerk"
+
+#~ msgid "_Used"
+#~ msgstr "Gebr_uikt"
+
+#~ msgid "_Free"
+#~ msgstr "_Vrij"
+
+#~ msgid "Swap Space"
+#~ msgstr "Wisselbestand"
+
+#~ msgid "_Average"
+#~ msgstr "_Gemiddeld"
+
+#~ msgid "Load"
+#~ msgstr "Belasting"
+
+#~ msgid "_Read"
+#~ msgstr "_Lezen"
+
+#~ msgid "_Write"
+#~ msgstr "_Schrijven"
+
+#~ msgid "Harddisk"
+#~ msgstr "Harde schijf"

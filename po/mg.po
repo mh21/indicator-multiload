@@ -1,32 +1,40 @@
-# SOME DESCRIPTIVE TITLE.
+# MALAGASY TRANSLATION OF GNOME-APPLETS.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# Thierry Randrianiriana <randrianiriana@gmail.com>, 2006.
+# Fano Rajaonarisoa <rajfanhar@yahoo.fr>, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: GNOME-APPLETS VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"Last-Translator: Thierry Randrianiriana <randrianiriana@gmail.com>\n"
+"Language-Team: MALAGASY <i18n-malagasy-gnome@gna.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
+"Mpanara-maso ny vesa-drafitra afaka maneho soritra ho an'ny CPU, ny ram, ary "
+"ny fampiasana toerana solo arika miampy ny fifamoivoizana amin'ny rezo."
 
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
 msgstr ""
+"Mpandika teny:\n"
+"Fanomezana H. Rajaonarisoa\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Thierry Randrianiriana https://launchpad.net/~thierry.randrianiriana"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -58,7 +66,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:10
 msgid "pixels"
-msgstr ""
+msgstr "pixel"
 
 #: ../data/preferences.ui.in.h:11
 msgid "Trace"
@@ -69,8 +77,9 @@ msgid "Expression:"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:13
+#, fuzzy
 msgid "Color:"
-msgstr ""
+msgstr "Loko"
 
 #: ../data/preferences.ui.in.h:14
 msgid "Variable"
@@ -87,15 +96,15 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
-msgstr ""
+msgstr "_Hanokatra ny mpanara-maso rafitra"
 
 #: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
-msgstr ""
+msgstr "_Safidy manokana"
 
 #: ../data/preferences.ui.in.h:20
 msgid "_About"
-msgstr ""
+msgstr "_Mombamomba"
 
 #: ../data/preferences.ui.in.h:21
 msgid "_Quit"
@@ -103,47 +112,47 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:22
 msgid "Monitored Resources"
-msgstr ""
+msgstr "Ressource arahi-maso"
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Processor"
-msgstr ""
+msgstr "_Processeur"
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Memory"
-msgstr ""
+msgstr "_Arika"
 
 #: ../data/preferences.ui.in.h:25
 msgid "_Network"
-msgstr ""
+msgstr "_Rezo"
 
 #: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
-msgstr ""
+msgstr "_Toerana solo arika"
 
 #: ../data/preferences.ui.in.h:27
 msgid "_Load"
-msgstr ""
+msgstr "_Vesatra"
 
 #: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
-msgstr ""
+msgstr "_Kapila mahery"
 
 #: ../data/preferences.ui.in.h:29
 msgid "Options"
-msgstr ""
+msgstr "Safidy"
 
 #: ../data/preferences.ui.in.h:30
 msgid "System m_onitor width: "
-msgstr ""
+msgstr "Indran'ny _mpanara-maso rafitra: "
 
 #: ../data/preferences.ui.in.h:31
 msgid "Sys_tem monitor update interval: "
-msgstr ""
+msgstr "Alanelan'ny fanavaozan'ny mpanara-maso _rafitra: "
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
-msgstr ""
+msgstr "milisegaondra"
 
 #: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
@@ -151,7 +160,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:34
 msgid "Colors"
-msgstr ""
+msgstr "Loko"
 
 #: ../data/preferences.ui.in.h:35
 msgid "Built-in schemes:"
@@ -243,7 +252,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
-msgstr ""
+msgstr "Taux de rafraîchissement (milisegaondra) an'ilay applet"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:3
 msgid "Width of the graphs in pixels."
@@ -476,4 +485,66 @@ msgstr ""
 msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
-msgstr[1] ""
+
+#~ msgid "_User"
+#~ msgstr "_Mpampiasa"
+
+#~ msgid "S_ystem"
+#~ msgstr "_Rafitra"
+
+#~ msgid "N_ice"
+#~ msgstr "N_ice"
+
+#~ msgid "I_OWait"
+#~ msgstr "I_OWait"
+
+#~ msgid "I_dle"
+#~ msgstr "Tsy _miasa"
+
+#~ msgid "Processor"
+#~ msgstr "Processeur"
+
+#~ msgid "Sh_ared"
+#~ msgstr "_Iombonana"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Arika hombo"
+
+#~ msgid "Cach_ed"
+#~ msgstr "Cach_ed"
+
+#~ msgid "F_ree"
+#~ msgstr "_Malalaka"
+
+#~ msgid "Memory"
+#~ msgstr "Arika"
+
+#~ msgid "_Background"
+#~ msgstr "_Afara"
+
+#~ msgid "Network"
+#~ msgstr "Rezo"
+
+#~ msgid "_Used"
+#~ msgstr "_Ampiasaina"
+
+#~ msgid "_Free"
+#~ msgstr "_Malalaka"
+
+#~ msgid "Swap Space"
+#~ msgstr "Toerana solo arika"
+
+#~ msgid "_Average"
+#~ msgstr "_Salasalany"
+
+#~ msgid "Load"
+#~ msgstr "Vesatra"
+
+#~ msgid "_Read"
+#~ msgstr "_Mamaky"
+
+#~ msgid "_Write"
+#~ msgstr "_Manoratra"
+
+#~ msgid "Harddisk"
+#~ msgstr "Kapila mahery"

@@ -1,32 +1,38 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# translation of gnome-applets.master.gu.po to Gujarati
+# Ankit Patel <ankit644@yahoo.com>, 2005, 2006.
+# Ankit Patel <ankit@redhat.com>, 2005, 2007, 2008, 2009.
+# Sweta Kothari <swkothar@redhat.com>, 2008, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: gnome-applets.master.gu\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"Last-Translator: Sweta Kothari <swkothar@redhat.com>\n"
+"Language-Team: Gujarati\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
+"સિસ્ટમ લોડ મોનિટર CPU, ram, અને વપરાયેલ સ્વેપ જગ્યા, વત્તા નેટવર્કનો ટ્રાફિક માટે આલેખો "
+"બતાવવા માટે સક્ષમ હોય છે."
 
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
 msgstr ""
+"અંકિત પટેલ <ankit644@yahoo.com>, શ્ર્વેતા કોઠારી <swkothar@redhat.com>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Sweta Kothari https://launchpad.net/~swkothar"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -58,7 +64,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:10
 msgid "pixels"
-msgstr ""
+msgstr "બિંદુઓ"
 
 #: ../data/preferences.ui.in.h:11
 msgid "Trace"
@@ -69,8 +75,9 @@ msgid "Expression:"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:13
+#, fuzzy
 msgid "Color:"
-msgstr ""
+msgstr "રંગો"
 
 #: ../data/preferences.ui.in.h:14
 msgid "Variable"
@@ -87,15 +94,15 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
-msgstr ""
+msgstr "સિસ્ટમ મોનીટર ખોલો (_O)"
 
 #: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
-msgstr ""
+msgstr "પસંદગીઓ (_P)"
 
 #: ../data/preferences.ui.in.h:20
 msgid "_About"
-msgstr ""
+msgstr "વિશે (_A)"
 
 #: ../data/preferences.ui.in.h:21
 msgid "_Quit"
@@ -103,47 +110,48 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:22
 msgid "Monitored Resources"
-msgstr ""
+msgstr "જોવાઈ ગયેલા સ્રોતો"
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Processor"
-msgstr ""
+msgstr "પ્રોસેસર (_P)"
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Memory"
-msgstr ""
+msgstr "મેમરી (_M)"
 
 #: ../data/preferences.ui.in.h:25
 msgid "_Network"
-msgstr ""
+msgstr "નેટવર્ક (_N)"
 
 #: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
-msgstr ""
+msgstr "અદલબદલની જગ્યા (_w)"
 
 #: ../data/preferences.ui.in.h:27
 msgid "_Load"
-msgstr ""
+msgstr "બોજો (_L)"
 
 #: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
-msgstr ""
+msgstr "હાર્ડ ડિસ્ક (_H)"
 
+# gnome-session/session-properties-capplet.c:217
 #: ../data/preferences.ui.in.h:29
 msgid "Options"
-msgstr ""
+msgstr "વિકલ્પો"
 
 #: ../data/preferences.ui.in.h:30
 msgid "System m_onitor width: "
-msgstr ""
+msgstr "સિસ્ટમ મોનીટરની પહોળાઈ: (_o) "
 
 #: ../data/preferences.ui.in.h:31
 msgid "Sys_tem monitor update interval: "
-msgstr ""
+msgstr "સિસ્ટમ મોનીટર બદલવાનો અંતરાલ: (_t) "
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
-msgstr ""
+msgstr "મિલિસેકન્ડો"
 
 #: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
@@ -151,7 +159,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:34
 msgid "Colors"
-msgstr ""
+msgstr "રંગો"
 
 #: ../data/preferences.ui.in.h:35
 msgid "Built-in schemes:"
@@ -243,7 +251,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
-msgstr ""
+msgstr "એપ્લેટનો ફરીથી તાજા થવાનો દર મિલિસેકન્ડમાં"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:3
 msgid "Width of the graphs in pixels."
@@ -263,7 +271,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:7
 msgid "The desktop description file to execute as the system monitor"
-msgstr ""
+msgstr "સિસ્ટમ મોનીટર તરીકે ચલાવવા માટે ડેસ્કટોપ વર્ણન ફાઇલ"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:8
 msgid "Automatically start on session startup"
@@ -477,3 +485,75 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
+
+#~ msgid "_User"
+#~ msgstr "વપરાશકર્તા (_U)"
+
+#~ msgid "S_ystem"
+#~ msgstr "સિસ્ટમ (_y)"
+
+#~ msgid "N_ice"
+#~ msgstr "સરસ (_i)"
+
+#~ msgid "I_OWait"
+#~ msgstr "IOWait (_O)"
+
+#~ msgid "I_dle"
+#~ msgstr "નિષ્ક્રિય (_d)"
+
+#~ msgid "Processor"
+#~ msgstr "પ્રોસેસર"
+
+#~ msgid "Sh_ared"
+#~ msgstr "સહભાગી (_a)"
+
+#~ msgid "_Buffers"
+#~ msgstr "બફરો (_B)"
+
+#~ msgid "Cach_ed"
+#~ msgstr "કેશવાળી (_e)"
+
+#~ msgid "F_ree"
+#~ msgstr "મુક્ત (_r)"
+
+#~ msgid "Memory"
+#~ msgstr "મેમરી"
+
+#~ msgid "_In"
+#~ msgstr "માં (_I)"
+
+#~ msgid "_Out"
+#~ msgstr "બહાર (_O)"
+
+#~ msgid "_Local"
+#~ msgstr "સ્થાનિય (_L)"
+
+#~ msgid "_Background"
+#~ msgstr "પાશ્વ ભાગ (_B)"
+
+#~ msgid "Network"
+#~ msgstr "નેટવર્ક"
+
+#~ msgid "_Used"
+#~ msgstr "વપરાયેલ (_U)"
+
+#~ msgid "_Free"
+#~ msgstr "મુક્ત (_F)"
+
+#~ msgid "Swap Space"
+#~ msgstr "અદલબદલની જગ્યા"
+
+#~ msgid "_Average"
+#~ msgstr "સરેરાશ (_A)"
+
+#~ msgid "Load"
+#~ msgstr "લાવો"
+
+#~ msgid "_Read"
+#~ msgstr "વાંચો (_R)"
+
+#~ msgid "_Write"
+#~ msgstr "લખો (_W)"
+
+#~ msgid "Harddisk"
+#~ msgstr "હાર્ડ ડિસ્ક"

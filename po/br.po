@@ -1,22 +1,24 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Breton translation for gnome-applets
+# Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
+# This file is distributed under the same license as the gnome-applets package.
+# Giulia Fraboulet <djoulia@gmail.com>, 2006-2008"
+# Jamy <jamybzh@free.fr>, 2009
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"Last-Translator: Denis\n"
+"Language-Team: Breton <brenux@free.fr>\n"
+"Language: br\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -27,6 +29,10 @@ msgstr ""
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
 msgstr ""
+"Giulia Fraboulet <djoulia_at_gmail.com>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Michael Hofmann https://launchpad.net/~mh21"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -58,7 +64,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:10
 msgid "pixels"
-msgstr ""
+msgstr "a bikselioù"
 
 #: ../data/preferences.ui.in.h:11
 msgid "Trace"
@@ -69,8 +75,9 @@ msgid "Expression:"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:13
+#, fuzzy
 msgid "Color:"
-msgstr ""
+msgstr "Livioù"
 
 #: ../data/preferences.ui.in.h:14
 msgid "Variable"
@@ -91,11 +98,11 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
-msgstr ""
+msgstr "_Gwellvezioù"
 
 #: ../data/preferences.ui.in.h:20
 msgid "_About"
-msgstr ""
+msgstr "_Diwar-benn"
 
 #: ../data/preferences.ui.in.h:21
 msgid "_Quit"
@@ -107,15 +114,15 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Processor"
-msgstr ""
+msgstr "_Kewerier"
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Memory"
-msgstr ""
+msgstr "_Memor"
 
 #: ../data/preferences.ui.in.h:25
 msgid "_Network"
-msgstr ""
+msgstr "_Rouedad"
 
 #: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
@@ -123,15 +130,15 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:27
 msgid "_Load"
-msgstr ""
+msgstr "_Kargañ"
 
 #: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
-msgstr ""
+msgstr "_Kantenn galet"
 
 #: ../data/preferences.ui.in.h:29
 msgid "Options"
-msgstr ""
+msgstr "Dibarzhioù"
 
 #: ../data/preferences.ui.in.h:30
 msgid "System m_onitor width: "
@@ -143,7 +150,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
-msgstr ""
+msgstr "a vilieilennoù"
 
 #: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
@@ -151,7 +158,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:34
 msgid "Colors"
-msgstr ""
+msgstr "Livioù"
 
 #: ../data/preferences.ui.in.h:35
 msgid "Built-in schemes:"
@@ -477,3 +484,60 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
+
+#~ msgid "_User"
+#~ msgstr "Ar_veriad"
+
+#~ msgid "S_ystem"
+#~ msgstr "R_eizhiad"
+
+#~ msgid "Processor"
+#~ msgstr "Kewerier"
+
+#~ msgid "Sh_ared"
+#~ msgstr "Rannet"
+
+#~ msgid "_Buffers"
+#~ msgstr "S_kurzerioù"
+
+#~ msgid "Cach_ed"
+#~ msgstr "Krubuilh_et"
+
+#~ msgid "F_ree"
+#~ msgstr "D_ieub"
+
+#~ msgid "Memory"
+#~ msgstr "Memor"
+
+#~ msgid "_Local"
+#~ msgstr "_Lec'hel"
+
+#~ msgid "_Background"
+#~ msgstr "_Drekleur"
+
+#~ msgid "Network"
+#~ msgstr "Rouedad"
+
+#~ msgid "_Used"
+#~ msgstr "Ar_veret"
+
+#~ msgid "_Free"
+#~ msgstr "Dieu_b"
+
+#~ msgid "Swap Space"
+#~ msgstr "Memor disloañ"
+
+#~ msgid "_Average"
+#~ msgstr "Kei_tad"
+
+#~ msgid "Load"
+#~ msgstr "Kargañ"
+
+#~ msgid "_Read"
+#~ msgstr "_Lenn"
+
+#~ msgid "_Write"
+#~ msgstr "_Skrivañ"
+
+#~ msgid "Harddisk"
+#~ msgstr "Kantenn galet"

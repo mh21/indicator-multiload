@@ -1,32 +1,46 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# translation of lv.po to Latvian
+# gnome-applets for Latvian.
+# Copyright (C) 2002, 2006, 2009 Free Software Foundation, Inc.
 #
-#, fuzzy
+# Artis Trops <hornet@navigator.lv>, 2002.
+# Peteris Krisjanis <peteris.krisjanis@os.lv>, 2006.
+# Peteris Krisjanis <pecisk@gmail.com>, 2006.
+# Raivis Dejus <orvils@gmail.com>, 2006, 2009.
+# Anita Reitere <nitalynx@gmail.com>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: lv\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"Last-Translator: Anita Reitere <nitalynx@gmail.com>\n"
+"Language-Team: Latviešu <kde-i18n-doc@kde.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2;\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
+"Sistēmas noslodzes pārraugs, kas var attēlot grafikus ar CPU, atmiņas un "
+"maiņvietas lietojumu, kā arī tīkla plūsmas noslodzi."
 
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
 msgstr ""
+"Pēteris Krišjānis <peteris.krisjanis@gmail.com>\n"
+"Artis Trops <hornet@navigator.lv>\n"
+"Raivis Dejus <orvils@gmail.com>\n"
+"Anita Reitere <nitalynx@gmail.com>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Nita https://launchpad.net/~nitalynx"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -58,7 +72,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:10
 msgid "pixels"
-msgstr ""
+msgstr "pikseļi"
 
 #: ../data/preferences.ui.in.h:11
 msgid "Trace"
@@ -69,8 +83,9 @@ msgid "Expression:"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:13
+#, fuzzy
 msgid "Color:"
-msgstr ""
+msgstr "Krāsas"
 
 #: ../data/preferences.ui.in.h:14
 msgid "Variable"
@@ -87,15 +102,15 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
-msgstr ""
+msgstr "_Atvērt sistēmas pārraugu"
 
 #: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
-msgstr ""
+msgstr "_Iestatījumi"
 
 #: ../data/preferences.ui.in.h:20
 msgid "_About"
-msgstr ""
+msgstr "P_ar"
 
 #: ../data/preferences.ui.in.h:21
 msgid "_Quit"
@@ -103,47 +118,47 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:22
 msgid "Monitored Resources"
-msgstr ""
+msgstr "Pārraudzītie resursi"
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Processor"
-msgstr ""
+msgstr "_Procesors"
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Memory"
-msgstr ""
+msgstr "_Atmiņa"
 
 #: ../data/preferences.ui.in.h:25
 msgid "_Network"
-msgstr ""
+msgstr "_Tīkls"
 
 #: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
-msgstr ""
+msgstr "_Maiņvieta"
 
 #: ../data/preferences.ui.in.h:27
 msgid "_Load"
-msgstr ""
+msgstr "_Noslodze"
 
 #: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
-msgstr ""
+msgstr "_Cietais disks"
 
 #: ../data/preferences.ui.in.h:29
 msgid "Options"
-msgstr ""
+msgstr "Iestatījumi"
 
 #: ../data/preferences.ui.in.h:30
 msgid "System m_onitor width: "
-msgstr ""
+msgstr "Sistēmas pār_rauga platums: "
 
 #: ../data/preferences.ui.in.h:31
 msgid "Sys_tem monitor update interval: "
-msgstr ""
+msgstr "Sis_tēmas pārrauga atjaunināšanas intervāls: "
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
-msgstr ""
+msgstr "milisekundes"
 
 #: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
@@ -151,7 +166,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:34
 msgid "Colors"
-msgstr ""
+msgstr "Krāsas"
 
 #: ../data/preferences.ui.in.h:35
 msgid "Built-in schemes:"
@@ -243,7 +258,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
-msgstr ""
+msgstr "Sīkrīka atjaunināšanās biežums milisekundēs"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:3
 msgid "Width of the graphs in pixels."
@@ -263,7 +278,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:7
 msgid "The desktop description file to execute as the system monitor"
-msgstr ""
+msgstr "Darbvirsmas apraksta fails, ko izpildīt kā sistēmas pārraugu"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:8
 msgid "Automatically start on session startup"
@@ -477,3 +492,76 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+
+#~ msgid "_User"
+#~ msgstr "_Lietotājs"
+
+#~ msgid "S_ystem"
+#~ msgstr "S_istēma"
+
+#~ msgid "N_ice"
+#~ msgstr "J_auks"
+
+#~ msgid "I_OWait"
+#~ msgstr "I_O gaidīšana"
+
+#~ msgid "I_dle"
+#~ msgstr "Dī_kstāvē"
+
+#~ msgid "Processor"
+#~ msgstr "Procesors"
+
+#~ msgid "Sh_ared"
+#~ msgstr "_Koplietots"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Buferi"
+
+#~ msgid "Cach_ed"
+#~ msgstr "K_ešots"
+
+#~ msgid "F_ree"
+#~ msgstr "B_rīva"
+
+#~ msgid "Memory"
+#~ msgstr "Atmiņa"
+
+#~ msgid "_In"
+#~ msgstr "_Ienākošā"
+
+#~ msgid "_Out"
+#~ msgstr "I_zejošā"
+
+#~ msgid "_Local"
+#~ msgstr "_Lokālā"
+
+#~ msgid "_Background"
+#~ msgstr "_Fons"
+
+#~ msgid "Network"
+#~ msgstr "Tīkls"
+
+#~ msgid "_Used"
+#~ msgstr "_Izmantoti"
+
+#~ msgid "_Free"
+#~ msgstr "_Brīvi"
+
+#~ msgid "Swap Space"
+#~ msgstr "Maiņvieta"
+
+#~ msgid "_Average"
+#~ msgstr "_Vidēji"
+
+#~ msgid "Load"
+#~ msgstr "Noslodze"
+
+#~ msgid "_Read"
+#~ msgstr "_Lasīt"
+
+#~ msgid "_Write"
+#~ msgstr "_Rakstīt"
+
+#~ msgid "Harddisk"
+#~ msgstr "Cietais disks"

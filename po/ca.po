@@ -1,32 +1,50 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Catalan translation of gnome-applets.
+# Copyright © 1999-2009 Free Software Foundation, Inc.
+# This file is copyrighted under the same license as the gnome-applets package.
+# Ivan Vilata i Balaguer <ivan@selidor.net>, 1999, 2000.
+# Softcatalà <info@softcatala.org>, 2000.
+# Jordi Mallach <jordi@sindominio.net>, 2002, 2003, 2004, 2005.
+# Josep Puigdemont <josep.puigdemont@gmail.com>, 2005, 2006.
+# Xavier Conde Rueda <xavi.conde@gmail.com>, 2006
+# Joan Duran <jodufi@gmail.com>, 2008-2010.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2012-01-27 00:02+0000\n"
+"Last-Translator: Joan Duran <jodufi@gmail.com>\n"
+"Language-Team: Catalan <tradgnome@softcatala.org>\n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
+"Un monitor de la càrrega del sistema que pot mostrar gràfiques d'ús de cada "
+"processador, memòria, i espai d'intercanvi usats, a més del trànsit de xarxa."
 
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
 msgstr ""
+"Ivan Vilata i Balaguer <ivan@selidor.net>\n"
+"Softcatalà <info@softcatala.net>\n"
+"Jordi Mallach <jordi@sindominio.net>\n"
+"Josep Puigdemont <josep.puigdemont@gmail.com>\n"
+"Xavier Conde Rueda <xavi.conde@gmail.com>\n"
+"Joan Duran <jodufi@gmail.com>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Isaace https://launchpad.net/~izotop510\n"
+"  Joan Duran https://launchpad.net/~jodufi"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -58,7 +76,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:10
 msgid "pixels"
-msgstr ""
+msgstr "píxels"
 
 #: ../data/preferences.ui.in.h:11
 msgid "Trace"
@@ -69,8 +87,9 @@ msgid "Expression:"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:13
+#, fuzzy
 msgid "Color:"
-msgstr ""
+msgstr "Colors"
 
 #: ../data/preferences.ui.in.h:14
 msgid "Variable"
@@ -87,63 +106,63 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
-msgstr ""
+msgstr "_Obre el monitor del sistema"
 
 #: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
-msgstr ""
+msgstr "_Preferències"
 
 #: ../data/preferences.ui.in.h:20
 msgid "_About"
-msgstr ""
+msgstr "_Quant a"
 
 #: ../data/preferences.ui.in.h:21
 msgid "_Quit"
-msgstr ""
+msgstr "_Surt"
 
 #: ../data/preferences.ui.in.h:22
 msgid "Monitored Resources"
-msgstr ""
+msgstr "Recursos dels quals es fa el seguiment"
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Processor"
-msgstr ""
+msgstr "_Processador"
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Memory"
-msgstr ""
+msgstr "_Memòria"
 
 #: ../data/preferences.ui.in.h:25
 msgid "_Network"
-msgstr ""
+msgstr "_Xarxa"
 
 #: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
-msgstr ""
+msgstr "Espai d'intercan_vi"
 
 #: ../data/preferences.ui.in.h:27
 msgid "_Load"
-msgstr ""
+msgstr "_Càrrega"
 
 #: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
-msgstr ""
+msgstr "_Disc dur"
 
 #: ../data/preferences.ui.in.h:29
 msgid "Options"
-msgstr ""
+msgstr "Opcions"
 
 #: ../data/preferences.ui.in.h:30
 msgid "System m_onitor width: "
-msgstr ""
+msgstr "Amplada del mo_nitor del sistema: "
 
 #: ../data/preferences.ui.in.h:31
 msgid "Sys_tem monitor update interval: "
-msgstr ""
+msgstr "Interval entre actualitzacions del monitor del _sistema: "
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
-msgstr ""
+msgstr "mil·lisegons"
 
 #: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
@@ -151,7 +170,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:34
 msgid "Colors"
-msgstr ""
+msgstr "Colors"
 
 #: ../data/preferences.ui.in.h:35
 msgid "Built-in schemes:"
@@ -243,7 +262,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
-msgstr ""
+msgstr "Interval de refresc de la miniaplicació en mil·lisegons"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:3
 msgid "Width of the graphs in pixels."
@@ -264,6 +283,7 @@ msgstr ""
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:7
 msgid "The desktop description file to execute as the system monitor"
 msgstr ""
+"El fitxer de descripció de l'escriptori a executar com a monitor del sistema"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:8
 msgid "Automatically start on session startup"
@@ -350,7 +370,7 @@ msgstr ""
 
 #: ../data/indicator-multiload.desktop.in.h:1
 msgid "System Load Indicator"
-msgstr ""
+msgstr "Indicador de la càrrega del sistema"
 
 #. TRANSLATORS: Color theme name
 #: ../src/colormapper.vala:77
@@ -383,8 +403,9 @@ msgid "Output version information and exit"
 msgstr ""
 
 #: ../src/main.vala:46
+#, fuzzy
 msgid "System tray icon instead of app indicator"
-msgstr ""
+msgstr "Indicador de la càrrega del sistema"
 
 #: ../src/main.vala:48
 msgid "Evaluate an expression"
@@ -412,12 +433,12 @@ msgstr ""
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:47
 msgid "{} MB"
-msgstr ""
+msgstr "{} MB"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:49
 msgid "{} GB"
-msgstr ""
+msgstr "{} GB"
 
 #. TRANSLATORS: Please leave %u as it is, it is replaced by the size
 #: ../src/utils.vala:58
@@ -430,22 +451,22 @@ msgstr[1] ""
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:71
 msgid "{} kB/s"
-msgstr ""
+msgstr "{} kB/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:73
 msgid "{} MB/s"
-msgstr ""
+msgstr "{} MB/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:75
 msgid "{} GB/s"
-msgstr ""
+msgstr "{} GB/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:77
 msgid "{} TB/s"
-msgstr ""
+msgstr "{} TB/s"
 
 #. TRANSLATORS: Please leave %u as it is, it is replaced by the speed
 #: ../src/utils.vala:86
@@ -457,18 +478,21 @@ msgstr[1] ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
 #: ../src/utils.vala:99
+#, fuzzy
 msgid "{} kHz"
-msgstr ""
+msgstr "{} kB/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
 #: ../src/utils.vala:101
+#, fuzzy
 msgid "{} MHz"
-msgstr ""
+msgstr "{} MB"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
 #: ../src/utils.vala:103
+#, fuzzy
 msgid "{} GHz"
-msgstr ""
+msgstr "{} GB"
 
 #. TRANSLATORS: Please leave %u as it is, it is replaced by the frequency
 #: ../src/utils.vala:112
@@ -477,3 +501,75 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
+
+#~ msgid "_User"
+#~ msgstr "_Usuari"
+
+#~ msgid "S_ystem"
+#~ msgstr "Sis_tema"
+
+#~ msgid "N_ice"
+#~ msgstr "Pr_ioritat"
+
+#~ msgid "I_OWait"
+#~ msgstr "I_OWait"
+
+#~ msgid "I_dle"
+#~ msgstr "In_actiu"
+
+#~ msgid "Processor"
+#~ msgstr "Processador"
+
+#~ msgid "Sh_ared"
+#~ msgstr "Comp_artida"
+
+#~ msgid "_Buffers"
+#~ msgstr "Memòria intermè_dia"
+
+#~ msgid "Cach_ed"
+#~ msgstr "En m_emòria cau"
+
+#~ msgid "F_ree"
+#~ msgstr "Lliu_re"
+
+#~ msgid "Memory"
+#~ msgstr "Memòria"
+
+#~ msgid "_In"
+#~ msgstr "_Entrada:"
+
+#~ msgid "_Out"
+#~ msgstr "_Sortida"
+
+#~ msgid "_Local"
+#~ msgstr "_Local"
+
+#~ msgid "_Background"
+#~ msgstr "F_ons"
+
+#~ msgid "Network"
+#~ msgstr "Xarxa"
+
+#~ msgid "_Used"
+#~ msgstr "_Utilitzada"
+
+#~ msgid "_Free"
+#~ msgstr "_Lliure"
+
+#~ msgid "Swap Space"
+#~ msgstr "Espai d'intercanvi"
+
+#~ msgid "_Average"
+#~ msgstr "Mitj_ana"
+
+#~ msgid "Load"
+#~ msgstr "Càrrega"
+
+#~ msgid "_Read"
+#~ msgstr "_Lectura"
+
+#~ msgid "_Write"
+#~ msgstr "_Escriptura"
+
+#~ msgid "Harddisk"
+#~ msgstr "Disc dur"

@@ -3,20 +3,23 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: gnome-applets.head.po\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"Last-Translator: Zabeeh Khan <zabeehkhan@gmail.com>\n"
+"Language-Team: Pashto <pathanisation@googlegroups.com>\n"
+"Language: ps\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=2; plural=n!=1;\n"
+"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
+"X-Poedit-Country: AFGHANISTAN\n"
+"X-Poedit-Language: Pashto, Pushto\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -27,6 +30,11 @@ msgstr ""
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
 msgstr ""
+"Zabeeh Khan <zabeehkhan@gmail.com>\n"
+"The Pathanisation Project <pathanisation@googlegroups.com>\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Zabeeh Khan https://launchpad.net/~zabeehkhan"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -58,7 +66,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:10
 msgid "pixels"
-msgstr ""
+msgstr "پېکسلې"
 
 #: ../data/preferences.ui.in.h:11
 msgid "Trace"
@@ -69,8 +77,9 @@ msgid "Expression:"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:13
+#, fuzzy
 msgid "Color:"
-msgstr ""
+msgstr "رنګونه"
 
 #: ../data/preferences.ui.in.h:14
 msgid "Variable"
@@ -87,15 +96,15 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
-msgstr ""
+msgstr "غونډال ليدانی پرانيستل_"
 
 #: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
-msgstr ""
+msgstr "غوراوي_"
 
 #: ../data/preferences.ui.in.h:20
 msgid "_About"
-msgstr ""
+msgstr "په اړه_"
 
 #: ../data/preferences.ui.in.h:21
 msgid "_Quit"
@@ -107,35 +116,35 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:23
 msgid "_Processor"
-msgstr ""
+msgstr "بهیرګر_"
 
 #: ../data/preferences.ui.in.h:24
 msgid "_Memory"
-msgstr ""
+msgstr "یاد_"
 
 #: ../data/preferences.ui.in.h:25
 msgid "_Network"
-msgstr ""
+msgstr "ځال_"
 
 #: ../data/preferences.ui.in.h:26
 msgid "S_wap Space"
-msgstr ""
+msgstr "و_نج تشه"
 
 #: ../data/preferences.ui.in.h:27
 msgid "_Load"
-msgstr ""
+msgstr "لېښل_"
 
 #: ../data/preferences.ui.in.h:28
 msgid "_Harddisk"
-msgstr ""
+msgstr "کلک ټیکلی_"
 
 #: ../data/preferences.ui.in.h:29
 msgid "Options"
-msgstr ""
+msgstr "غوراوي"
 
 #: ../data/preferences.ui.in.h:30
 msgid "System m_onitor width: "
-msgstr ""
+msgstr ":د غونډال ل_يداني پلنوالی "
 
 #: ../data/preferences.ui.in.h:31
 msgid "Sys_tem monitor update interval: "
@@ -143,7 +152,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
-msgstr ""
+msgstr "مېلېسېکېنډه"
 
 #: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
@@ -151,7 +160,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:34
 msgid "Colors"
-msgstr ""
+msgstr "رنګونه"
 
 #: ../data/preferences.ui.in.h:35
 msgid "Built-in schemes:"
@@ -477,3 +486,48 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
+
+#~ msgid "_User"
+#~ msgstr "کارن_"
+
+#~ msgid "S_ystem"
+#~ msgstr "غ_ونډال"
+
+#~ msgid "Processor"
+#~ msgstr "بهيرګر"
+
+#~ msgid "Sh_ared"
+#~ msgstr "ونډول شوی"
+
+#~ msgid "Memory"
+#~ msgstr "یاد"
+
+#~ msgid "_Background"
+#~ msgstr "شاليد_"
+
+#~ msgid "Network"
+#~ msgstr "ځال"
+
+#~ msgid "_Used"
+#~ msgstr "کارېدلی_"
+
+#~ msgid "_Free"
+#~ msgstr "پاتې_"
+
+#~ msgid "Swap Space"
+#~ msgstr "ونج تشه"
+
+#~ msgid "_Average"
+#~ msgstr "منځنی_"
+
+#~ msgid "Load"
+#~ msgstr "لېښل"
+
+#~ msgid "_Read"
+#~ msgstr "لوستل_"
+
+#~ msgid "_Write"
+#~ msgstr "لوستل_"
+
+#~ msgid "Harddisk"
+#~ msgstr "کلک ټیکلی"
