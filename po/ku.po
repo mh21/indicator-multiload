@@ -9,16 +9,16 @@ msgstr ""
 "Project-Id-Version: ku\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:55+0200\n"
-"PO-Revision-Date: 2012-09-26 06:46+0000\n"
-"Last-Translator: Erdem AYALP <erdemayalp@gmail.com>\n"
+"PO-Revision-Date: 2013-02-11 19:38+0000\n"
+"Last-Translator: Rêzan Tovjîn <retovjin@hotmail.com>\n"
 "Language-Team: Kurdish <ku@li.org>\n"
 "Language: ku\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -491,14 +491,14 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "_Bikarhêner"
+#~ msgid "Cach_ed"
+#~ msgstr "Bipêş_bîr"
 
-#~ msgid "S_ystem"
-#~ msgstr "_Sîstem"
+#~ msgid "F_ree"
+#~ msgstr "_Vala"
 
-#~ msgid "N_ice"
-#~ msgstr "Pêş_ikî"
+#~ msgid "Harddisk"
+#~ msgstr "Dîska Sabît"
 
 #~ msgid "I_OWait"
 #~ msgstr "I_OWait"
@@ -506,35 +506,26 @@ msgstr[1] ""
 #~ msgid "I_dle"
 #~ msgstr "Ra_westiyayî"
 
-#~ msgid "Processor"
-#~ msgstr "Kirar"
-
-#~ msgid "Sh_ared"
-#~ msgstr "Di_parvekirinê de ye"
-
-#~ msgid "_Buffers"
-#~ msgstr "_Tampon"
-
-#~ msgid "Cach_ed"
-#~ msgstr "Bipêş_bîr"
-
-#~ msgid "F_ree"
-#~ msgstr "_Vala"
+#~ msgid "Load"
+#~ msgstr "Lê bar bike"
 
 #~ msgid "Memory"
 #~ msgstr "Bîr"
 
-#~ msgid "_Background"
-#~ msgstr "_Rûerd"
+#~ msgid "N_ice"
+#~ msgstr "Pêş_ikî"
 
 #~ msgid "Network"
 #~ msgstr "Tor"
 
-#~ msgid "_Used"
-#~ msgstr "_Tê bikaranîn"
+#~ msgid "Processor"
+#~ msgstr "Kirar"
 
-#~ msgid "_Free"
-#~ msgstr "_Vala"
+#~ msgid "S_ystem"
+#~ msgstr "_Sîstem"
+
+#~ msgid "Sh_ared"
+#~ msgstr "Di_parvekirinê de ye"
 
 #~ msgid "Swap Space"
 #~ msgstr "Qada pevguhertinê"
@@ -542,14 +533,23 @@ msgstr[1] ""
 #~ msgid "_Average"
 #~ msgstr "_Nîvekî"
 
-#~ msgid "Load"
-#~ msgstr "Lê bar bike"
+#~ msgid "_Background"
+#~ msgstr "_Rûerd"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Tampon"
+
+#~ msgid "_Free"
+#~ msgstr "_Vala"
 
 #~ msgid "_Read"
 #~ msgstr "Bi_xwîne"
 
+#~ msgid "_Used"
+#~ msgstr "_Tê bikaranîn"
+
+#~ msgid "_User"
+#~ msgstr "_Bikarhêner"
+
 #~ msgid "_Write"
 #~ msgstr "Bi_nivîse"
-
-#~ msgid "Harddisk"
-#~ msgstr "Dîska Sabît"

@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:55+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
 "Language: ar\n"
@@ -24,16 +24,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n % 100 >= "
 "3 && n % 100 <= 10 ? 3 : n % 100 >= 11 && n % 100 <= 99 ? 4 : 5;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:26+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
-"مراقب لحالة النظام يستطيع عرض رسوم بيانية للمعالج و الذاكرة و مستوى استخدام "
-"ملف التبديل بالإضافة إلى حالة الشبكة."
+"مراقب لحالة النظام يمكنه عرض رسوم بيانية للمعالج و الذاكرة و مستوى استخدام "
+"مساحة التبديل بالإضافة إلى حالة الشبكة."
 
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
@@ -45,6 +45,7 @@ msgstr ""
 "أنس عفيف عماد\t<anas.e87@gmail.com>\n"
 "\n"
 "Launchpad Contributions:\n"
+"  Ibrahim Saed https://launchpad.net/~ibraheem5000\n"
 "  Khaled Hosny https://launchpad.net/~khaledhosny\n"
 "  slmb https://launchpad.net/~fqa101"
 
@@ -108,11 +109,11 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
-msgstr "ا_فتح مراقب النظام"
+msgstr "ا_فتح مرقاب النظام"
 
 #: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
-msgstr "ال_تفضيلات"
+msgstr "الت_فضيلات"
 
 #: ../data/preferences.ui.in.h:20
 msgid "_About"
@@ -120,7 +121,7 @@ msgstr "_عنْ"
 
 #: ../data/preferences.ui.in.h:21
 msgid "_Quit"
-msgstr ""
+msgstr "ا_خرج"
 
 #: ../data/preferences.ui.in.h:22
 msgid "Monitored Resources"
@@ -160,7 +161,7 @@ msgstr "عرض مرا_قب النظام: "
 
 #: ../data/preferences.ui.in.h:31
 msgid "Sys_tem monitor update interval: "
-msgstr "مدة تحديث مراقب ال_نظام: "
+msgstr "مدة تحديث مرقاب ال_نظام: "
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
@@ -168,7 +169,7 @@ msgstr "ملي ثانية"
 
 #: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
-msgstr ""
+msgstr "تشغيل _تلقائي: "
 
 #: ../data/preferences.ui.in.h:34
 msgid "Colors"
@@ -252,7 +253,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:54
 msgid "Menu items..."
-msgstr ""
+msgstr "عناصر القائمة..."
 
 #: ../data/preferences.ui.in.h:55
 msgid "Indicator items..."
@@ -260,7 +261,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:1
 msgid "Available graphs"
-msgstr ""
+msgstr "الرسوم البيانية المتاحة"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
@@ -268,15 +269,15 @@ msgstr "تردد تحديث البريمج بالملي ثانية"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:3
 msgid "Width of the graphs in pixels."
-msgstr ""
+msgstr "عرض الرسم البياني بالبكسل."
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:4
 msgid "Height of the graphs in pixels."
-msgstr ""
+msgstr "ارتفاع الرسم البياني بالبكسل."
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:5
 msgid "Graph background color"
-msgstr ""
+msgstr "لون الخلفية للرسم البياني"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:6
 msgid "Most recently used color scheme"
@@ -284,11 +285,11 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:7
 msgid "The desktop description file to execute as the system monitor"
-msgstr "ملف وصف سطح المكتب الذي سيتم تنفيذه كمراقب النظام"
+msgstr "ملف وصف سطح المكتب الذي سيتم تنفيذه كمرقاب النظام"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:8
 msgid "Automatically start on session startup"
-msgstr ""
+msgstr "تشغيل تلقائي عند بدء الجلسة"
 
 #. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, and commas.
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:10
@@ -297,6 +298,10 @@ msgid ""
 "down)) up $(speed(net.up)) Swap $(size(swap.used)) Load $(decimals(load."
 "avg,2)) Disk read $(speed(disk.read)) write $(speed(disk.write))\" ]"
 msgstr ""
+"[ \"المعالجة $(percent(cpu.inuse)) الذاكرة $(size(mem.user)) الشبكة ينزل "
+"$(speed(net.down)) يرفع $(speed(net.up)) مساحة التبديل $(size(swap.used)) "
+"الحِمل $(decimals(load.avg,2)) القرص الصلب يقرأ $(speed(disk.read)) يكتب "
+"$(speed(disk.write))\" ]"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:11
 msgid "Information in the accessible description of the indicator"
@@ -313,7 +318,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:14
 msgid "Information shown in the indicator itself"
-msgstr ""
+msgstr "المعلومات المعروضة في المؤشر نفسه"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:15
 msgid "Index of the current information shown in the indicator itself"
@@ -328,26 +333,31 @@ msgid ""
 "$(decimals(load.avg,2))\", \"Disk: read $(speed(disk.read)), write "
 "$(speed(disk.write))\" ]"
 msgstr ""
+"[ \"المعالجة: $(percent(cpu.inuse))، iowait $(percent(cpu.io))\", \"الذاكرة: "
+"$(size(mem.user))، الخبيئة $(size(mem.cached))\", \"الشبكة: ينزل $(speed(net."
+"down))، يرفع $(speed(net.up))\", \"مساحة التبديل: $(size(swap.used))\", "
+"\"الحِمل: $(decimals(load.avg,2))\", \"القرص الصلب: يقرأ $(speed(disk.read))، "
+"يكتب $(speed(disk.write))\" ]"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:18
 msgid "Information shown as menu entries"
-msgstr ""
+msgstr "المعلومات المعروضة كمدخلات القائمة"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:19
 msgid "Graph visibility"
-msgstr ""
+msgstr "وضوح رؤية الرسم البياني"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:20
 msgid "Minimum value for upper graph edge"
-msgstr ""
+msgstr "أصغر قيمة لحافة الرسم البياني العلوي"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:21
 msgid "Maximum value for upper graph edge, zero means unlimited"
-msgstr ""
+msgstr "أكبر قيمة لحافة الرسم البياني العلوي (صفر يعني غير محدود)"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:22
 msgid "Number of values used for smooth graph scaling"
-msgstr ""
+msgstr "عدد القيم المستخدمة لتدريج الرسم البياني"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:23
 msgid "Available traces"
@@ -371,7 +381,7 @@ msgstr ""
 
 #: ../data/indicator-multiload.desktop.in.h:1
 msgid "System Load Indicator"
-msgstr "نظام تحميل المؤشر"
+msgstr "مؤشر تحميلات النظام"
 
 #. TRANSLATORS: Color theme name
 #: ../src/colormapper.vala:77
@@ -397,7 +407,7 @@ msgstr ""
 #: ../src/function.vala:103
 #, c-format
 msgid "%u%%"
-msgstr ""
+msgstr "%u%%"
 
 #: ../src/main.vala:44
 msgid "Output version information and exit"
@@ -420,6 +430,7 @@ msgstr ""
 #, c-format
 msgid "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
+"نفّذ \"%s --help\" لرؤية قائمة كاملة من الخيارات المتوفرة لسطر الأوامر.\n"
 
 #. TRANSLATORS: custom color scheme
 #: ../src/preferences.vala:74
@@ -429,53 +440,61 @@ msgstr ""
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:45
 msgid "{} kB"
-msgstr ""
+msgstr "{} ك.ب"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:47
 msgid "{} MB"
-msgstr ""
+msgstr "{} م.ب"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:49
 msgid "{} GB"
-msgstr ""
+msgstr "{} ج.ب"
 
 #. TRANSLATORS: Please leave %u as it is, it is replaced by the size
 #: ../src/utils.vala:58
 #, c-format
 msgid "%u B"
 msgid_plural "%u B"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u بايت"
+msgstr[1] "%u بايت"
+msgstr[2] "%u بايت"
+msgstr[3] "%u بايت"
+msgstr[4] "%u بايت"
+msgstr[5] "%u بايت"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:71
 msgid "{} kB/s"
-msgstr ""
+msgstr "{} ك.ب/ث"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:73
 msgid "{} MB/s"
-msgstr ""
+msgstr "{} م.ب/ث"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:75
 msgid "{} GB/s"
-msgstr ""
+msgstr "{} ج.ب/ث"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:77
 msgid "{} TB/s"
-msgstr ""
+msgstr "{} ت.ب/ث"
 
 #. TRANSLATORS: Please leave %u as it is, it is replaced by the speed
 #: ../src/utils.vala:86
 #, c-format
 msgid "%u B/s"
 msgid_plural "%u B/s"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u ب/ث"
+msgstr[1] "%u ب/ث"
+msgstr[2] "%u ب/ث"
+msgstr[3] "%u ب/ث"
+msgstr[4] "%u ب/ث"
+msgstr[5] "%u ب/ث"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
 #: ../src/utils.vala:99
@@ -499,34 +518,6 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
-msgstr[5] ""
-
-#~ msgid "_User"
-#~ msgstr "الم_ستخدِم"
-
-#~ msgid "S_ystem"
-#~ msgstr "الن_ظام"
-
-#~ msgid "N_ice"
-#~ msgstr "_تحسين"
-
-#~ msgid "I_OWait"
-#~ msgstr "I_OWait"
-
-#~ msgid "I_dle"
-#~ msgstr "_خامل"
-
-#~ msgid "Processor"
-#~ msgstr "المعالج"
-
-#~ msgid "Sh_ared"
-#~ msgstr "مش_ترك"
-
-#~ msgid "_Buffers"
-#~ msgstr "الذاكرة ال_وسيطة"
 
 #~ msgid "Cach_ed"
 #~ msgstr "_مختزن"
@@ -534,29 +525,35 @@ msgstr[5] ""
 #~ msgid "F_ree"
 #~ msgstr "_خالي"
 
+#~ msgid "Harddisk"
+#~ msgstr "القرص الصلب"
+
+#~ msgid "I_OWait"
+#~ msgstr "I_OWait"
+
+#~ msgid "I_dle"
+#~ msgstr "_خامل"
+
+#~ msgid "Load"
+#~ msgstr "الحِمْل"
+
 #~ msgid "Memory"
 #~ msgstr "الذاكرة"
 
-#~ msgid "_In"
-#~ msgstr "_داخل"
-
-#~ msgid "_Out"
-#~ msgstr "_خارج"
-
-#~ msgid "_Local"
-#~ msgstr "_محلي"
-
-#~ msgid "_Background"
-#~ msgstr "ال_خلفية"
+#~ msgid "N_ice"
+#~ msgstr "_تحسين"
 
 #~ msgid "Network"
 #~ msgstr "الشبكة"
 
-#~ msgid "_Used"
-#~ msgstr "مُ_ستخدَم"
+#~ msgid "Processor"
+#~ msgstr "المعالج"
 
-#~ msgid "_Free"
-#~ msgstr "_خالي"
+#~ msgid "S_ystem"
+#~ msgstr "الن_ظام"
+
+#~ msgid "Sh_ared"
+#~ msgstr "مش_ترك"
 
 #~ msgid "Swap Space"
 #~ msgstr "مساحة التبديل"
@@ -564,14 +561,35 @@ msgstr[5] ""
 #~ msgid "_Average"
 #~ msgstr "ال_متوسط"
 
-#~ msgid "Load"
-#~ msgstr "الحِمْل"
+#~ msgid "_Background"
+#~ msgstr "ال_خلفية"
+
+#~ msgid "_Buffers"
+#~ msgstr "الذاكرة ال_وسيطة"
+
+#~ msgid "_Free"
+#~ msgstr "_خالي"
+
+#~ msgid "_In"
+#~ msgstr "_داخل"
+
+#~ msgid "_Local"
+#~ msgstr "_محلي"
+
+#~ msgid "_Out"
+#~ msgstr "_خارج"
 
 #~ msgid "_Read"
 #~ msgstr "_قراءة"
 
+#~ msgid "_Used"
+#~ msgstr "مُ_ستخدَم"
+
+#~ msgid "_User"
+#~ msgstr "الم_ستخدِم"
+
 #~ msgid "_Write"
 #~ msgstr "_كتابة"
 
-#~ msgid "Harddisk"
-#~ msgstr "القرص الصلب"
+#~ msgid "Graph alpha value"
+#~ msgstr "قيمة الرسم البياني ألفا"

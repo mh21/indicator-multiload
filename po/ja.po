@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:55+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "Language: ja\n"
@@ -27,8 +27,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -57,7 +57,8 @@ msgstr ""
 "日本GNOMEユーザー会 <http://www.gnome.gr.jp/>\n"
 "\n"
 "Launchpad Contributions:\n"
-"  Takayuki KUSANO https://launchpad.net/~ae5t-ksn"
+"  Takayuki KUSANO https://launchpad.net/~ae5t-ksn\n"
+"  epii https://launchpad.net/~epii"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -131,7 +132,7 @@ msgstr "情報(_A)"
 
 #: ../data/preferences.ui.in.h:21
 msgid "_Quit"
-msgstr ""
+msgstr "終了 (_Q)"
 
 #: ../data/preferences.ui.in.h:22
 msgid "Monitored Resources"
@@ -179,7 +180,7 @@ msgstr "ミリ秒"
 
 #: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
-msgstr ""
+msgstr "自動スタート (_A): "
 
 #: ../data/preferences.ui.in.h:34
 msgid "Colors"
@@ -263,7 +264,7 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:54
 msgid "Menu items..."
-msgstr ""
+msgstr "メニューアイテム..."
 
 #: ../data/preferences.ui.in.h:55
 msgid "Indicator items..."
@@ -271,7 +272,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:1
 msgid "Available graphs"
-msgstr ""
+msgstr "利用可能なグラフ"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
@@ -279,15 +280,15 @@ msgstr "アプレットのリフレッシュ・レート (ミリ秒単位)"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:3
 msgid "Width of the graphs in pixels."
-msgstr ""
+msgstr "グラフの幅 (ピクセル)。"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:4
 msgid "Height of the graphs in pixels."
-msgstr ""
+msgstr "グラフの高さ (ピクセル)。"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:5
 msgid "Graph background color"
-msgstr ""
+msgstr "グラフの背景色"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:6
 msgid "Most recently used color scheme"
@@ -299,7 +300,7 @@ msgstr "システム・モニタとして実行する .desktop ファイル"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:8
 msgid "Automatically start on session startup"
-msgstr ""
+msgstr "セッション開始時に自動的にスタートする"
 
 #. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, and commas.
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:10
@@ -308,6 +309,10 @@ msgid ""
 "down)) up $(speed(net.up)) Swap $(size(swap.used)) Load $(decimals(load."
 "avg,2)) Disk read $(speed(disk.read)) write $(speed(disk.write))\" ]"
 msgstr ""
+"[ \"CPU $(percent(cpu.inuse)) メモリ $(size(mem.user)) ネット下り "
+"$(speed(net.down)) 上り $(speed(net.up)) スワップ $(size(swap.used)) 負荷 "
+"$(decimals(load.avg,2)) ディスク読込 $(speed(disk.read)) 書込 $(speed(disk."
+"write))\" ]"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:11
 msgid "Information in the accessible description of the indicator"
@@ -339,26 +344,31 @@ msgid ""
 "$(decimals(load.avg,2))\", \"Disk: read $(speed(disk.read)), write "
 "$(speed(disk.write))\" ]"
 msgstr ""
+"[ \"CPU: $(percent(cpu.inuse)), iowait $(percent(cpu.io))\", \"メモリ: "
+"$(size(mem.user)), キャッシュ $(size(mem.cached))\", \"ネット: 下り "
+"$(speed(net.down)), 上り $(speed(net.up))\", \"スワップ: $(size(swap."
+"used))\", \"負荷: $(decimals(load.avg,2))\", \"ディスク: 読込 $(speed(disk."
+"read)), 書込 $(speed(disk.write))\" ]"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:18
 msgid "Information shown as menu entries"
-msgstr ""
+msgstr "メニューエントリとして表示する情報"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:19
 msgid "Graph visibility"
-msgstr ""
+msgstr "グラフを表示するかどうか"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:20
 msgid "Minimum value for upper graph edge"
-msgstr ""
+msgstr "グラフ上辺の最小値"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:21
 msgid "Maximum value for upper graph edge, zero means unlimited"
-msgstr ""
+msgstr "グラフ上辺の最大値。0 の場合は無制限"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:22
 msgid "Number of values used for smooth graph scaling"
-msgstr ""
+msgstr "グラフを平滑化するために利用する値の個数"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:23
 msgid "Available traces"
@@ -382,7 +392,7 @@ msgstr ""
 
 #: ../data/indicator-multiload.desktop.in.h:1
 msgid "System Load Indicator"
-msgstr ""
+msgstr "システム負荷インジケーター"
 
 #. TRANSLATORS: Color theme name
 #: ../src/colormapper.vala:77
@@ -408,7 +418,7 @@ msgstr ""
 #: ../src/function.vala:103
 #, c-format
 msgid "%u%%"
-msgstr ""
+msgstr "%u%%"
 
 #: ../src/main.vala:44
 msgid "Output version information and exit"
@@ -420,7 +430,7 @@ msgstr ""
 
 #: ../src/main.vala:48
 msgid "Evaluate an expression"
-msgstr ""
+msgstr "式を評価する"
 
 #: ../src/main.vala:351
 msgid "- System load application indicator"
@@ -430,6 +440,8 @@ msgstr ""
 #, c-format
 msgid "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
+"利用可能なコマンドラインのオプション一覧を表示する場合は '%s --help' を実行し"
+"てください\n"
 
 #. TRANSLATORS: custom color scheme
 #: ../src/preferences.vala:74
@@ -439,53 +451,51 @@ msgstr ""
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:45
 msgid "{} kB"
-msgstr ""
+msgstr "{} kB"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:47
 msgid "{} MB"
-msgstr ""
+msgstr "{} MB"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:49
 msgid "{} GB"
-msgstr ""
+msgstr "{} GB"
 
 #. TRANSLATORS: Please leave %u as it is, it is replaced by the size
 #: ../src/utils.vala:58
 #, c-format
 msgid "%u B"
 msgid_plural "%u B"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u B"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:71
 msgid "{} kB/s"
-msgstr ""
+msgstr "{} kB/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:73
 msgid "{} MB/s"
-msgstr ""
+msgstr "{} MB/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:75
 msgid "{} GB/s"
-msgstr ""
+msgstr "{} GB/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:77
 msgid "{} TB/s"
-msgstr ""
+msgstr "{} TB/s"
 
 #. TRANSLATORS: Please leave %u as it is, it is replaced by the speed
 #: ../src/utils.vala:86
 #, c-format
 msgid "%u B/s"
 msgid_plural "%u B/s"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u B/s"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
 #: ../src/utils.vala:99
@@ -508,30 +518,7 @@ msgstr ""
 msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
-
-#~ msgid "_User"
-#~ msgstr "ユーザ(_U)"
-
-#~ msgid "S_ystem"
-#~ msgstr "システム(_Y)"
-
-#~ msgid "N_ice"
-#~ msgstr "Nice値(_I)"
-
-#~ msgid "I_OWait"
-#~ msgstr "IOWait(_O)"
-
-#~ msgid "I_dle"
-#~ msgstr "待機(_D)"
-
-#~ msgid "Processor"
-#~ msgstr "プロセッサ"
-
-#~ msgid "Sh_ared"
-#~ msgstr "共有(_A)"
-
-#~ msgid "_Buffers"
-#~ msgstr "バッファ(_B)"
+msgstr[1] ""
 
 #~ msgid "Cach_ed"
 #~ msgstr "キャッシュ(_E)"
@@ -539,29 +526,35 @@ msgstr[0] ""
 #~ msgid "F_ree"
 #~ msgstr "未使用(_R)"
 
+#~ msgid "Harddisk"
+#~ msgstr "ハードディスク"
+
+#~ msgid "I_OWait"
+#~ msgstr "IOWait(_O)"
+
+#~ msgid "I_dle"
+#~ msgstr "待機(_D)"
+
+#~ msgid "Load"
+#~ msgstr "負荷"
+
 #~ msgid "Memory"
 #~ msgstr "メモリ"
 
-#~ msgid "_In"
-#~ msgstr "受信(_I)"
-
-#~ msgid "_Out"
-#~ msgstr "送信(_O)"
-
-#~ msgid "_Local"
-#~ msgstr "ローカル(_L)"
-
-#~ msgid "_Background"
-#~ msgstr "背景色(_B)"
+#~ msgid "N_ice"
+#~ msgstr "Nice値(_I)"
 
 #~ msgid "Network"
 #~ msgstr "ネットワーク"
 
-#~ msgid "_Used"
-#~ msgstr "使用中(_U)"
+#~ msgid "Processor"
+#~ msgstr "プロセッサ"
 
-#~ msgid "_Free"
-#~ msgstr "未使用(_F)"
+#~ msgid "S_ystem"
+#~ msgstr "システム(_Y)"
+
+#~ msgid "Sh_ared"
+#~ msgstr "共有(_A)"
 
 #~ msgid "Swap Space"
 #~ msgstr "スワップ"
@@ -569,14 +562,35 @@ msgstr[0] ""
 #~ msgid "_Average"
 #~ msgstr "平均(_A)"
 
-#~ msgid "Load"
-#~ msgstr "負荷"
+#~ msgid "_Background"
+#~ msgstr "背景色(_B)"
+
+#~ msgid "_Buffers"
+#~ msgstr "バッファ(_B)"
+
+#~ msgid "_Free"
+#~ msgstr "未使用(_F)"
+
+#~ msgid "_In"
+#~ msgstr "受信(_I)"
+
+#~ msgid "_Local"
+#~ msgstr "ローカル(_L)"
+
+#~ msgid "_Out"
+#~ msgstr "送信(_O)"
 
 #~ msgid "_Read"
 #~ msgstr "読み込み(_R)"
 
+#~ msgid "_Used"
+#~ msgstr "使用中(_U)"
+
+#~ msgid "_User"
+#~ msgstr "ユーザ(_U)"
+
 #~ msgid "_Write"
 #~ msgstr "書き込み(_W)"
 
-#~ msgid "Harddisk"
-#~ msgstr "ハードディスク"
+#~ msgid "Graph alpha value"
+#~ msgstr "グラフのアルファ値"

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets HEAD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:55+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Laurent Dhima <laurenti@alblinux.net>\n"
 "Language-Team: albanian <gnome-albanian-perkthyesit@lists.sourceforge.net>\n"
 "Language: \n"
@@ -17,8 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:26+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -488,14 +488,14 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "_Përdoruesi"
+#~ msgid "Cach_ed"
+#~ msgstr "Në Cach_e"
 
-#~ msgid "S_ystem"
-#~ msgstr "S_istemi"
+#~ msgid "F_ree"
+#~ msgstr "E Li_rë"
 
-#~ msgid "N_ice"
-#~ msgstr "N_ice"
+#~ msgid "Harddisk"
+#~ msgstr "Harddisk"
 
 #~ msgid "I_OWait"
 #~ msgstr "I_OWait"
@@ -503,35 +503,26 @@ msgstr[1] ""
 #~ msgid "I_dle"
 #~ msgstr "I Pa_përdorur"
 
-#~ msgid "Processor"
-#~ msgstr "Proçesori"
-
-#~ msgid "Sh_ared"
-#~ msgstr "N_darë"
-
-#~ msgid "_Buffers"
-#~ msgstr "_Buffer-a"
-
-#~ msgid "Cach_ed"
-#~ msgstr "Në Cach_e"
-
-#~ msgid "F_ree"
-#~ msgstr "E Li_rë"
+#~ msgid "Load"
+#~ msgstr "Ngarko"
 
 #~ msgid "Memory"
 #~ msgstr "Kujtesa"
 
-#~ msgid "_Background"
-#~ msgstr "_Sfondi"
+#~ msgid "N_ice"
+#~ msgstr "N_ice"
 
 #~ msgid "Network"
 #~ msgstr "Rrjeti"
 
-#~ msgid "_Used"
-#~ msgstr "_Përdorur"
+#~ msgid "Processor"
+#~ msgstr "Proçesori"
 
-#~ msgid "_Free"
-#~ msgstr "_E Lirë"
+#~ msgid "S_ystem"
+#~ msgstr "S_istemi"
+
+#~ msgid "Sh_ared"
+#~ msgstr "N_darë"
 
 #~ msgid "Swap Space"
 #~ msgstr "Hapësira Swap"
@@ -539,14 +530,23 @@ msgstr[1] ""
 #~ msgid "_Average"
 #~ msgstr "_Mesatare"
 
-#~ msgid "Load"
-#~ msgstr "Ngarko"
+#~ msgid "_Background"
+#~ msgstr "_Sfondi"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Buffer-a"
+
+#~ msgid "_Free"
+#~ msgstr "_E Lirë"
 
 #~ msgid "_Read"
 #~ msgstr "_Leximi"
 
+#~ msgid "_Used"
+#~ msgstr "_Përdorur"
+
+#~ msgid "_User"
+#~ msgstr "_Përdoruesi"
+
 #~ msgid "_Write"
 #~ msgstr "_Shkrimi"
-
-#~ msgid "Harddisk"
-#~ msgstr "Harddisk"

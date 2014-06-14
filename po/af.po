@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:55+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: F Wolff <friedel@translate.org.za>\n"
 "Language-Team: translate-discuss-af@lists.sourceforge.net\n"
 "Language: af\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:26+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -494,20 +494,8 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "Gebr_uiker"
-
-#~ msgid "S_ystem"
-#~ msgstr "_Stelsel"
-
-#~ msgid "Processor"
-#~ msgstr "Verwerker"
-
-#~ msgid "Sh_ared"
-#~ msgstr "Gedeel"
-
-#~ msgid "_Buffers"
-#~ msgstr "_Buffers"
+#~ msgid "Harddisk"
+#~ msgstr "Hardeskyf"
 
 #~ msgid "Memory"
 #~ msgstr "Geheue"
@@ -515,8 +503,14 @@ msgstr[1] ""
 #~ msgid "Network"
 #~ msgstr "Netwerk"
 
-#~ msgid "_Used"
-#~ msgstr "Gebr_uik"
+#~ msgid "Processor"
+#~ msgstr "Verwerker"
+
+#~ msgid "S_ystem"
+#~ msgstr "_Stelsel"
+
+#~ msgid "Sh_ared"
+#~ msgstr "Gedeel"
 
 #~ msgid "Swap Space"
 #~ msgstr "Uitruilspasie"
@@ -524,11 +518,17 @@ msgstr[1] ""
 #~ msgid "_Average"
 #~ msgstr "_Gemiddeld"
 
+#~ msgid "_Buffers"
+#~ msgstr "_Buffers"
+
 #~ msgid "_Read"
 #~ msgstr "_Lees"
 
+#~ msgid "_Used"
+#~ msgstr "Gebr_uik"
+
+#~ msgid "_User"
+#~ msgstr "Gebr_uiker"
+
 #~ msgid "_Write"
 #~ msgstr "_Skryf"
-
-#~ msgid "Harddisk"
-#~ msgstr "Hardeskyf"

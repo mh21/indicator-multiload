@@ -11,16 +11,16 @@ msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:55+0200\n"
-"PO-Revision-Date: 2012-05-02 12:26+0000\n"
-"Last-Translator: korst <Unknown>\n"
+"PO-Revision-Date: 2013-02-11 19:38+0000\n"
+"Last-Translator: Wouter Bolsterlee <uws+launchpad@xs4all.nl>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -28,7 +28,7 @@ msgid ""
 "space use, plus network traffic."
 msgstr ""
 "Een systeembelastingmonitor met grafieken om CPU-, geheugen-, swap- en "
-"netwerkgebruik te volgen."
+"netwerkgebruik te tonen."
 
 #: ../data/preferences.ui.in.h:2
 msgid "translator-credits"
@@ -46,7 +46,9 @@ msgstr ""
 "\n"
 "Launchpad Contributions:\n"
 "  Bert Timmerman https://launchpad.net/~bert-timmerman\n"
-"  Wouter Bolsterlee (uws) https://launchpad.net/~uws\n"
+"  Michael Hofmann https://launchpad.net/~mh21\n"
+"  Pjotr12345 https://launchpad.net/~computertip\n"
+"  Wouter Bolsterlee https://launchpad.net/~uws\n"
 "  korst https://launchpad.net/~jasperkorst"
 
 #: ../data/preferences.ui.in.h:3
@@ -303,7 +305,7 @@ msgstr ""
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:11
 msgid "Information in the accessible description of the indicator"
-msgstr ""
+msgstr "Informatie in de toegankelijke beschrijving van de indicator"
 
 #. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, and commas.
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:13
@@ -320,7 +322,7 @@ msgstr "Informatie weergegeven in de indicator zelf"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:15
 msgid "Index of the current information shown in the indicator itself"
-msgstr ""
+msgstr "Index van de huidige informatie getoond in de indicator zelf"
 
 #. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, and commas.
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:17
@@ -400,7 +402,7 @@ msgstr ""
 #: ../src/function.vala:103
 #, c-format
 msgid "%u%%"
-msgstr ""
+msgstr "%u%%"
 
 #: ../src/main.vala:44
 msgid "Output version information and exit"
@@ -413,7 +415,7 @@ msgstr "Systeembelastingindicator"
 
 #: ../src/main.vala:48
 msgid "Evaluate an expression"
-msgstr ""
+msgstr "Evalueer een uitdrukking"
 
 #: ../src/main.vala:351
 msgid "- System load application indicator"
@@ -423,6 +425,8 @@ msgstr ""
 #, c-format
 msgid "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
+"Voer ‘%s --help’ uit voor een volledige lijst met beschikbare "
+"opdrachtregelopties.\n"
 
 #. TRANSLATORS: custom color scheme
 #: ../src/preferences.vala:74
@@ -449,8 +453,8 @@ msgstr "{} GB"
 #, c-format
 msgid "%u B"
 msgid_plural "%u B"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u B"
+msgstr[1] "%u B"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
 #: ../src/utils.vala:71
@@ -506,14 +510,14 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "Gebr_uiker"
+#~ msgid "Cach_ed"
+#~ msgstr "_Gebufferd"
 
-#~ msgid "S_ystem"
-#~ msgstr "S_ysteem"
+#~ msgid "F_ree"
+#~ msgstr "V_rij"
 
-#~ msgid "N_ice"
-#~ msgstr "_Achtergrond"
+#~ msgid "Harddisk"
+#~ msgstr "Harde schijf"
 
 #~ msgid "I_OWait"
 #~ msgstr "I_OWait"
@@ -521,44 +525,26 @@ msgstr[1] ""
 #~ msgid "I_dle"
 #~ msgstr "_Ongebruikt"
 
-#~ msgid "Processor"
-#~ msgstr "Processor"
-
-#~ msgid "Sh_ared"
-#~ msgstr "Ge_deeld"
-
-#~ msgid "_Buffers"
-#~ msgstr "B_uffers"
-
-#~ msgid "Cach_ed"
-#~ msgstr "_Gebufferd"
-
-#~ msgid "F_ree"
-#~ msgstr "V_rij"
+#~ msgid "Load"
+#~ msgstr "Belasting"
 
 #~ msgid "Memory"
 #~ msgstr "Geheugen"
 
-#~ msgid "_In"
-#~ msgstr "_In"
-
-#~ msgid "_Out"
-#~ msgstr "_Uit"
-
-#~ msgid "_Local"
-#~ msgstr "_Lokaal"
-
-#~ msgid "_Background"
+#~ msgid "N_ice"
 #~ msgstr "_Achtergrond"
 
 #~ msgid "Network"
 #~ msgstr "Netwerk"
 
-#~ msgid "_Used"
-#~ msgstr "Gebr_uikt"
+#~ msgid "Processor"
+#~ msgstr "Processor"
 
-#~ msgid "_Free"
-#~ msgstr "_Vrij"
+#~ msgid "S_ystem"
+#~ msgstr "S_ysteem"
+
+#~ msgid "Sh_ared"
+#~ msgstr "Ge_deeld"
 
 #~ msgid "Swap Space"
 #~ msgstr "Wisselbestand"
@@ -566,14 +552,32 @@ msgstr[1] ""
 #~ msgid "_Average"
 #~ msgstr "_Gemiddeld"
 
-#~ msgid "Load"
-#~ msgstr "Belasting"
+#~ msgid "_Background"
+#~ msgstr "_Achtergrond"
+
+#~ msgid "_Buffers"
+#~ msgstr "B_uffers"
+
+#~ msgid "_Free"
+#~ msgstr "_Vrij"
+
+#~ msgid "_In"
+#~ msgstr "_In"
+
+#~ msgid "_Local"
+#~ msgstr "_Lokaal"
+
+#~ msgid "_Out"
+#~ msgstr "_Uit"
 
 #~ msgid "_Read"
 #~ msgstr "_Lezen"
 
+#~ msgid "_Used"
+#~ msgstr "Gebr_uikt"
+
+#~ msgid "_User"
+#~ msgstr "Gebr_uiker"
+
 #~ msgid "_Write"
 #~ msgstr "_Schrijven"
-
-#~ msgid "Harddisk"
-#~ msgstr "Harde schijf"

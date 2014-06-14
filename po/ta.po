@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets.master.ta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:55+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Dr.T.Vasudevan <agnihot3@gmail.com>\n"
 "Language-Team: Tamil <<Ubuntu-l10n-tam@lists.ubuntu.com>>\n"
 "Language: ta\n"
@@ -25,8 +25,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -497,14 +497,14 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "_பயனர்"
+#~ msgid "Cach_ed"
+#~ msgstr "_க கேச்ட்"
 
-#~ msgid "S_ystem"
-#~ msgstr "_கணினி"
+#~ msgid "F_ree"
+#~ msgstr "_எஞ்சியது"
 
-#~ msgid "N_ice"
-#~ msgstr "_ந நைஸ்"
+#~ msgid "Harddisk"
+#~ msgstr "நிலைவட்டு"
 
 #~ msgid "I_OWait"
 #~ msgstr "_ஐஓவெயிட்"
@@ -512,44 +512,26 @@ msgstr[1] ""
 #~ msgid "I_dle"
 #~ msgstr "_ச சும்மாயிருத்தல்"
 
-#~ msgid "Processor"
-#~ msgstr "செயலகம்"
-
-#~ msgid "Sh_ared"
-#~ msgstr "ப_ங்கிடப்பட்டது"
-
-#~ msgid "_Buffers"
-#~ msgstr "_ட இடையகங்கள்"
-
-#~ msgid "Cach_ed"
-#~ msgstr "_க கேச்ட்"
-
-#~ msgid "F_ree"
-#~ msgstr "_எஞ்சியது"
+#~ msgid "Load"
+#~ msgstr "பளு்றி"
 
 #~ msgid "Memory"
 #~ msgstr "நினைவகம்"
 
-#~ msgid "_In"
-#~ msgstr "_In"
-
-#~ msgid "_Out"
-#~ msgstr "வெளியே (_O)"
-
-#~ msgid "_Local"
-#~ msgstr "இடம் (_L)"
-
-#~ msgid "_Background"
-#~ msgstr "_ப பின்னணி"
+#~ msgid "N_ice"
+#~ msgstr "_ந நைஸ்"
 
 #~ msgid "Network"
 #~ msgstr "வலையமைப்பு"
 
-#~ msgid "_Used"
-#~ msgstr "_பயன்படுத்தப்பட்டது"
+#~ msgid "Processor"
+#~ msgstr "செயலகம்"
 
-#~ msgid "_Free"
-#~ msgstr "_எஞ்சியது"
+#~ msgid "S_ystem"
+#~ msgstr "_கணினி"
+
+#~ msgid "Sh_ared"
+#~ msgstr "ப_ங்கிடப்பட்டது"
 
 #~ msgid "Swap Space"
 #~ msgstr "இட மாற்று நினைவக வெளி"
@@ -557,14 +539,32 @@ msgstr[1] ""
 #~ msgid "_Average"
 #~ msgstr "_சராசரி"
 
-#~ msgid "Load"
-#~ msgstr "பளு்றி"
+#~ msgid "_Background"
+#~ msgstr "_ப பின்னணி"
+
+#~ msgid "_Buffers"
+#~ msgstr "_ட இடையகங்கள்"
+
+#~ msgid "_Free"
+#~ msgstr "_எஞ்சியது"
+
+#~ msgid "_In"
+#~ msgstr "_In"
+
+#~ msgid "_Local"
+#~ msgstr "இடம் (_L)"
+
+#~ msgid "_Out"
+#~ msgstr "வெளியே (_O)"
 
 #~ msgid "_Read"
 #~ msgstr "_படி"
 
+#~ msgid "_Used"
+#~ msgstr "_பயன்படுத்தப்பட்டது"
+
+#~ msgid "_User"
+#~ msgstr "_பயனர்"
+
 #~ msgid "_Write"
 #~ msgstr "_எழுது"
-
-#~ msgid "Harddisk"
-#~ msgstr "நிலைவட்டு"

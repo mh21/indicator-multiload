@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:55+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Narine Martirosyan <training@instigate.am>\n"
 "Language-Team: <norayr@arnet.am>\n"
 "Language: \n"
@@ -15,8 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:26+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -484,30 +484,7 @@ msgstr ""
 msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
-
-#~ msgid "_User"
-#~ msgstr "Գործարկող"
-
-#~ msgid "S_ystem"
-#~ msgstr "Համակարգ"
-
-#~ msgid "N_ice"
-#~ msgstr "Առաջնայնություն"
-
-#~ msgid "I_OWait"
-#~ msgstr "I_OWait"
-
-#~ msgid "I_dle"
-#~ msgstr "Պարապուրդ"
-
-#~ msgid "Processor"
-#~ msgstr "Պրոցեսոր"
-
-#~ msgid "Sh_ared"
-#~ msgstr "Տարանջատված"
-
-#~ msgid "_Buffers"
-#~ msgstr "Բուֆերներ"
+msgstr[1] ""
 
 #~ msgid "Cach_ed"
 #~ msgstr "Հիշողություն"
@@ -515,29 +492,35 @@ msgstr[0] ""
 #~ msgid "F_ree"
 #~ msgstr "Ազատ"
 
+#~ msgid "Harddisk"
+#~ msgstr "Ամուր դիսկ"
+
+#~ msgid "I_OWait"
+#~ msgstr "I_OWait"
+
+#~ msgid "I_dle"
+#~ msgstr "Պարապուրդ"
+
+#~ msgid "Load"
+#~ msgstr "Բեռնում"
+
 #~ msgid "Memory"
 #~ msgstr "Հիշողություն"
 
-#~ msgid "_In"
-#~ msgstr "_Մեջ"
-
-#~ msgid "_Out"
-#~ msgstr "_Դուրս"
-
-#~ msgid "_Local"
-#~ msgstr "_Տեղային"
-
-#~ msgid "_Background"
-#~ msgstr "Ֆոն"
+#~ msgid "N_ice"
+#~ msgstr "Առաջնայնություն"
 
 #~ msgid "Network"
 #~ msgstr "Ցանց"
 
-#~ msgid "_Used"
-#~ msgstr "Օգտագործված"
+#~ msgid "Processor"
+#~ msgstr "Պրոցեսոր"
 
-#~ msgid "_Free"
-#~ msgstr "Ազատ"
+#~ msgid "S_ystem"
+#~ msgstr "Համակարգ"
+
+#~ msgid "Sh_ared"
+#~ msgstr "Տարանջատված"
 
 #~ msgid "Swap Space"
 #~ msgstr "Փոխանակման տարածք"
@@ -545,14 +528,32 @@ msgstr[0] ""
 #~ msgid "_Average"
 #~ msgstr "Միջին"
 
-#~ msgid "Load"
-#~ msgstr "Բեռնում"
+#~ msgid "_Background"
+#~ msgstr "Ֆոն"
+
+#~ msgid "_Buffers"
+#~ msgstr "Բուֆերներ"
+
+#~ msgid "_Free"
+#~ msgstr "Ազատ"
+
+#~ msgid "_In"
+#~ msgstr "_Մեջ"
+
+#~ msgid "_Local"
+#~ msgstr "_Տեղային"
+
+#~ msgid "_Out"
+#~ msgstr "_Դուրս"
 
 #~ msgid "_Read"
 #~ msgstr "Ընթերցում"
 
+#~ msgid "_Used"
+#~ msgstr "Օգտագործված"
+
+#~ msgid "_User"
+#~ msgstr "Գործարկող"
+
 #~ msgid "_Write"
 #~ msgstr "Գրել"
-
-#~ msgid "Harddisk"
-#~ msgstr "Ամուր դիսկ"

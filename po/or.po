@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets.master.or\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:55+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Manoj Kumar Giri <mgiri@redhat.com>\n"
 "Language-Team: Oriya <Translation-team-or@lists.sourceforge.net>\n"
 "Language: or\n"
@@ -18,8 +18,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n!=1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -488,14 +488,14 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "ଚାଳକ (_U)"
+#~ msgid "Cach_ed"
+#~ msgstr "କେସ_ହୋଇଥିବା"
 
-#~ msgid "S_ystem"
-#~ msgstr "ସି_ଷ୍ଟମ"
+#~ msgid "F_ree"
+#~ msgstr "ମୁକ୍ତ_"
 
-#~ msgid "N_ice"
-#~ msgstr "ସୁ_ନ୍ଦର"
+#~ msgid "Harddisk"
+#~ msgstr "ହାର୍ଡଡିସ୍କ"
 
 #~ msgid "I_OWait"
 #~ msgstr "ଆଇଓ_ଅପେକ୍ଷା"
@@ -503,44 +503,26 @@ msgstr[1] ""
 #~ msgid "I_dle"
 #~ msgstr "ନିଷ୍କ୍ରି_ ଯ"
 
-#~ msgid "Processor"
-#~ msgstr "ପ୍ରୋସେସର"
-
-#~ msgid "Sh_ared"
-#~ msgstr "ବିତରିତ_"
-
-#~ msgid "_Buffers"
-#~ msgstr "_ବଫର"
-
-#~ msgid "Cach_ed"
-#~ msgstr "କେସ_ହୋଇଥିବା"
-
-#~ msgid "F_ree"
-#~ msgstr "ମୁକ୍ତ_"
+#~ msgid "Load"
+#~ msgstr "ଲୋଡ କର"
 
 #~ msgid "Memory"
 #~ msgstr "ସ୍ମ୍ରୁତି"
 
-#~ msgid "_In"
-#~ msgstr "ଭିତର (_I)"
-
-#~ msgid "_Out"
-#~ msgstr "ବାହାର (_O)"
-
-#~ msgid "_Local"
-#~ msgstr "ସ୍ଥାନୀୟ (_L)"
-
-#~ msgid "_Background"
-#~ msgstr "_ପୃଷ୍ଠଭୂମି"
+#~ msgid "N_ice"
+#~ msgstr "ସୁ_ନ୍ଦର"
 
 #~ msgid "Network"
 #~ msgstr "ନେଟୱାର୍କ"
 
-#~ msgid "_Used"
-#~ msgstr "_ଉପୟୋଗହୋଇଥିବା"
+#~ msgid "Processor"
+#~ msgstr "ପ୍ରୋସେସର"
 
-#~ msgid "_Free"
-#~ msgstr "_ମୁକ୍ତ"
+#~ msgid "S_ystem"
+#~ msgstr "ସି_ଷ୍ଟମ"
+
+#~ msgid "Sh_ared"
+#~ msgstr "ବିତରିତ_"
 
 #~ msgid "Swap Space"
 #~ msgstr "ସ୍ବାପ ସ୍ଥାନ"
@@ -548,14 +530,32 @@ msgstr[1] ""
 #~ msgid "_Average"
 #~ msgstr "_ହାରାହାରି"
 
-#~ msgid "Load"
-#~ msgstr "ଲୋଡ କର"
+#~ msgid "_Background"
+#~ msgstr "_ପୃଷ୍ଠଭୂମି"
+
+#~ msgid "_Buffers"
+#~ msgstr "_ବଫର"
+
+#~ msgid "_Free"
+#~ msgstr "_ମୁକ୍ତ"
+
+#~ msgid "_In"
+#~ msgstr "ଭିତର (_I)"
+
+#~ msgid "_Local"
+#~ msgstr "ସ୍ଥାନୀୟ (_L)"
+
+#~ msgid "_Out"
+#~ msgstr "ବାହାର (_O)"
 
 #~ msgid "_Read"
 #~ msgstr "ପଢନ୍ତୁ (_R)"
 
+#~ msgid "_Used"
+#~ msgstr "_ଉପୟୋଗହୋଇଥିବା"
+
+#~ msgid "_User"
+#~ msgstr "ଚାଳକ (_U)"
+
 #~ msgid "_Write"
 #~ msgstr "ଲେଖନ୍ତୁ (_W)"
-
-#~ msgid "Harddisk"
-#~ msgstr "ହାର୍ଡଡିସ୍କ"

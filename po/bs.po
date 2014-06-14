@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets.HEAD.bs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:55+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Kenan Hadžiavdić <kenanh@gmail.com>\n"
 "Language-Team: Bosnian <lokal@linux.org.ba>\n"
 "Language: bs\n"
@@ -22,8 +22,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:26+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -487,28 +487,6 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-
-#~ msgid "_User"
-#~ msgstr "_Korisnik"
-
-#~ msgid "S_ystem"
-#~ msgstr "S_istem"
-
-#~ msgid "N_ice"
-#~ msgstr "S_lobodno"
-
-#~ msgid "I_dle"
-#~ msgstr "_Neiskorišteno"
-
-#~ msgid "Processor"
-#~ msgstr "Procesor"
-
-#~ msgid "Sh_ared"
-#~ msgstr "_Dijeljeno"
-
-#~ msgid "_Buffers"
-#~ msgstr "_Bufferi"
 
 #~ msgid "Cach_ed"
 #~ msgstr "Cach_e"
@@ -516,20 +494,29 @@ msgstr[2] ""
 #~ msgid "F_ree"
 #~ msgstr "Slo_bodno"
 
+#~ msgid "I_dle"
+#~ msgstr "_Neiskorišteno"
+
+#~ msgid "Load"
+#~ msgstr "Opterećenje"
+
 #~ msgid "Memory"
 #~ msgstr "Memorija"
 
-#~ msgid "_Background"
-#~ msgstr "_Pozadina"
+#~ msgid "N_ice"
+#~ msgstr "S_lobodno"
 
 #~ msgid "Network"
 #~ msgstr "Mreža"
 
-#~ msgid "_Used"
-#~ msgstr "_Korišteno"
+#~ msgid "Processor"
+#~ msgstr "Procesor"
 
-#~ msgid "_Free"
-#~ msgstr "_Slobodno"
+#~ msgid "S_ystem"
+#~ msgstr "S_istem"
+
+#~ msgid "Sh_ared"
+#~ msgstr "_Dijeljeno"
 
 #~ msgid "Swap Space"
 #~ msgstr "Swap memorija"
@@ -537,5 +524,17 @@ msgstr[2] ""
 #~ msgid "_Average"
 #~ msgstr "_Prosječno"
 
-#~ msgid "Load"
-#~ msgstr "Opterećenje"
+#~ msgid "_Background"
+#~ msgstr "_Pozadina"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Bufferi"
+
+#~ msgid "_Free"
+#~ msgstr "_Slobodno"
+
+#~ msgid "_Used"
+#~ msgstr "_Korišteno"
+
+#~ msgid "_User"
+#~ msgstr "_Korisnik"

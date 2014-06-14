@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: eu_to_be_translate\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:55+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
 "Language-Team: Basque <itzulpena@euskalgnu.org>\n"
 "Language: eu\n"
@@ -18,8 +18,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:26+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -490,14 +490,14 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "_Erabiltzailea:"
+#~ msgid "Cach_ed"
+#~ msgstr "_Cache-koa"
 
-#~ msgid "S_ystem"
-#~ msgstr "Sistem_a"
+#~ msgid "F_ree"
+#~ msgstr "L_ibre"
 
-#~ msgid "N_ice"
-#~ msgstr "Le_hentasunekoa"
+#~ msgid "Harddisk"
+#~ msgstr "Disko gogorra"
 
 #~ msgid "I_OWait"
 #~ msgstr "SI_Zain"
@@ -505,44 +505,26 @@ msgstr[1] ""
 #~ msgid "I_dle"
 #~ msgstr "I_naktiboa"
 
-#~ msgid "Processor"
-#~ msgstr "Prozesadorea"
-
-#~ msgid "Sh_ared"
-#~ msgstr "_Partekatua"
-
-#~ msgid "_Buffers"
-#~ msgstr "Bu_fferrak"
-
-#~ msgid "Cach_ed"
-#~ msgstr "_Cache-koa"
-
-#~ msgid "F_ree"
-#~ msgstr "L_ibre"
+#~ msgid "Load"
+#~ msgstr "Karga"
 
 #~ msgid "Memory"
 #~ msgstr "Memoria"
 
-#~ msgid "_In"
-#~ msgstr "_Sarrera"
-
-#~ msgid "_Out"
-#~ msgstr "_Irteera"
-
-#~ msgid "_Local"
-#~ msgstr "_Lokala"
-
-#~ msgid "_Background"
-#~ msgstr "Atzeko _planoa:"
+#~ msgid "N_ice"
+#~ msgstr "Le_hentasunekoa"
 
 #~ msgid "Network"
 #~ msgstr "Sarea"
 
-#~ msgid "_Used"
-#~ msgstr "_Erabilita"
+#~ msgid "Processor"
+#~ msgstr "Prozesadorea"
 
-#~ msgid "_Free"
-#~ msgstr "_Libre"
+#~ msgid "S_ystem"
+#~ msgstr "Sistem_a"
+
+#~ msgid "Sh_ared"
+#~ msgstr "_Partekatua"
 
 #~ msgid "Swap Space"
 #~ msgstr "Swap lekua"
@@ -550,14 +532,32 @@ msgstr[1] ""
 #~ msgid "_Average"
 #~ msgstr "_Batez bestekoa"
 
-#~ msgid "Load"
-#~ msgstr "Karga"
+#~ msgid "_Background"
+#~ msgstr "Atzeko _planoa:"
+
+#~ msgid "_Buffers"
+#~ msgstr "Bu_fferrak"
+
+#~ msgid "_Free"
+#~ msgstr "_Libre"
+
+#~ msgid "_In"
+#~ msgstr "_Sarrera"
+
+#~ msgid "_Local"
+#~ msgstr "_Lokala"
+
+#~ msgid "_Out"
+#~ msgstr "_Irteera"
 
 #~ msgid "_Read"
 #~ msgstr "_Irakurri"
 
+#~ msgid "_Used"
+#~ msgstr "_Erabilita"
+
+#~ msgid "_User"
+#~ msgstr "_Erabiltzailea:"
+
 #~ msgid "_Write"
 #~ msgstr "_Idatzi"
-
-#~ msgid "Harddisk"
-#~ msgstr "Disko gogorra"

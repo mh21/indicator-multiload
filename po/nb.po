@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets 2.31.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:55+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian Bokmal <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -486,14 +486,14 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "Br_uker"
+#~ msgid "Cach_ed"
+#~ msgstr "M_ellomlagret"
 
-#~ msgid "S_ystem"
-#~ msgstr "S_ystem"
+#~ msgid "F_ree"
+#~ msgstr "Le_dig"
 
-#~ msgid "N_ice"
-#~ msgstr "Sn_ill"
+#~ msgid "Harddisk"
+#~ msgstr "Harddisk"
 
 #~ msgid "I_OWait"
 #~ msgstr "I_OWait"
@@ -501,44 +501,26 @@ msgstr[1] ""
 #~ msgid "I_dle"
 #~ msgstr "Tom_gang"
 
-#~ msgid "Processor"
-#~ msgstr "Prosessor"
-
-#~ msgid "Sh_ared"
-#~ msgstr "D_elt"
-
-#~ msgid "_Buffers"
-#~ msgstr "_Buffere"
-
-#~ msgid "Cach_ed"
-#~ msgstr "M_ellomlagret"
-
-#~ msgid "F_ree"
-#~ msgstr "Le_dig"
+#~ msgid "Load"
+#~ msgstr "Belastning"
 
 #~ msgid "Memory"
 #~ msgstr "Minne"
 
-#~ msgid "_In"
-#~ msgstr "_Inn"
-
-#~ msgid "_Out"
-#~ msgstr "_Ut"
-
-#~ msgid "_Local"
-#~ msgstr "_Lokal"
-
-#~ msgid "_Background"
-#~ msgstr "_Bakgrunn"
+#~ msgid "N_ice"
+#~ msgstr "Sn_ill"
 
 #~ msgid "Network"
 #~ msgstr "Nettverk"
 
-#~ msgid "_Used"
-#~ msgstr "Br_ukt"
+#~ msgid "Processor"
+#~ msgstr "Prosessor"
 
-#~ msgid "_Free"
-#~ msgstr "L_edig"
+#~ msgid "S_ystem"
+#~ msgstr "S_ystem"
+
+#~ msgid "Sh_ared"
+#~ msgstr "D_elt"
 
 #~ msgid "Swap Space"
 #~ msgstr "Swap-område"
@@ -546,14 +528,32 @@ msgstr[1] ""
 #~ msgid "_Average"
 #~ msgstr "_Gjennomsnitt"
 
-#~ msgid "Load"
-#~ msgstr "Belastning"
+#~ msgid "_Background"
+#~ msgstr "_Bakgrunn"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Buffere"
+
+#~ msgid "_Free"
+#~ msgstr "L_edig"
+
+#~ msgid "_In"
+#~ msgstr "_Inn"
+
+#~ msgid "_Local"
+#~ msgstr "_Lokal"
+
+#~ msgid "_Out"
+#~ msgstr "_Ut"
 
 #~ msgid "_Read"
 #~ msgstr "_Les"
 
+#~ msgid "_Used"
+#~ msgstr "Br_ukt"
+
+#~ msgid "_User"
+#~ msgstr "Br_uker"
+
 #~ msgid "_Write"
 #~ msgstr "_Skriv"
-
-#~ msgid "Harddisk"
-#~ msgstr "Harddisk"

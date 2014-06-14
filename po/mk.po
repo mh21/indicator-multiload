@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:55+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Arangel Angov <ufo@linux.net.mk>\n"
 "Language-Team: Macedonian <ossm-members@hedona.on.net.mk>\n"
 "Language: mk\n"
@@ -25,8 +25,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -497,14 +497,14 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "_Корисник"
+#~ msgid "Cach_ed"
+#~ msgstr "Кеширано"
 
-#~ msgid "S_ystem"
-#~ msgstr "Систе_м"
+#~ msgid "F_ree"
+#~ msgstr "На располагање"
 
-#~ msgid "N_ice"
-#~ msgstr "П_риоритет"
+#~ msgid "Harddisk"
+#~ msgstr "Тврд диск"
 
 #~ msgid "I_OWait"
 #~ msgstr "I_OWait"
@@ -512,35 +512,26 @@ msgstr[1] ""
 #~ msgid "I_dle"
 #~ msgstr "Мрзливо"
 
-#~ msgid "Processor"
-#~ msgstr "Процесор"
-
-#~ msgid "Sh_ared"
-#~ msgstr "Споделено"
-
-#~ msgid "_Buffers"
-#~ msgstr "_Бафери"
-
-#~ msgid "Cach_ed"
-#~ msgstr "Кеширано"
-
-#~ msgid "F_ree"
-#~ msgstr "На располагање"
+#~ msgid "Load"
+#~ msgstr "Искористување"
 
 #~ msgid "Memory"
 #~ msgstr "Меморија"
 
-#~ msgid "_Background"
-#~ msgstr "_Позадина"
+#~ msgid "N_ice"
+#~ msgstr "П_риоритет"
 
 #~ msgid "Network"
 #~ msgstr "Мрежа"
 
-#~ msgid "_Used"
-#~ msgstr "_Користено"
+#~ msgid "Processor"
+#~ msgstr "Процесор"
 
-#~ msgid "_Free"
-#~ msgstr "_На располагање"
+#~ msgid "S_ystem"
+#~ msgstr "Систе_м"
+
+#~ msgid "Sh_ared"
+#~ msgstr "Споделено"
 
 #~ msgid "Swap Space"
 #~ msgstr "Виртуелен простор"
@@ -548,14 +539,23 @@ msgstr[1] ""
 #~ msgid "_Average"
 #~ msgstr "_Просек"
 
-#~ msgid "Load"
-#~ msgstr "Искористување"
+#~ msgid "_Background"
+#~ msgstr "_Позадина"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Бафери"
+
+#~ msgid "_Free"
+#~ msgstr "_На располагање"
 
 #~ msgid "_Read"
 #~ msgstr "_Читај"
 
+#~ msgid "_Used"
+#~ msgstr "_Користено"
+
+#~ msgid "_User"
+#~ msgstr "_Корисник"
+
 #~ msgid "_Write"
 #~ msgstr "_Запиши"
-
-#~ msgid "Harddisk"
-#~ msgstr "Тврд диск"

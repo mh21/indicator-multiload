@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:55+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Pablo Saratxaga <pablo@mandrakesoft.com>\n"
 "Language-Team: Walon <linux-wa@chanae.alphanet.ch>\n"
 "Language: \n"
@@ -20,8 +20,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n!=1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:28+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -486,35 +486,35 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "_Uzeu"
-
-#~ msgid "S_ystem"
-#~ msgstr "_Sistinme"
-
-#~ msgid "Processor"
-#~ msgstr "Processeu"
-
-#~ msgid "Sh_ared"
-#~ msgstr "_Pårti"
-
-#~ msgid "_Buffers"
-#~ msgstr "_Tampons"
-
 #~ msgid "F_ree"
 #~ msgstr "_Libe"
 
 #~ msgid "Memory"
 #~ msgstr "Memwere"
 
+#~ msgid "Network"
+#~ msgstr "Rantoele"
+
+#~ msgid "Processor"
+#~ msgstr "Processeu"
+
+#~ msgid "S_ystem"
+#~ msgstr "_Sistinme"
+
+#~ msgid "Sh_ared"
+#~ msgstr "_Pårti"
+
 #~ msgid "_Background"
 #~ msgstr "_Fond"
 
-#~ msgid "Network"
-#~ msgstr "Rantoele"
+#~ msgid "_Buffers"
+#~ msgstr "_Tampons"
+
+#~ msgid "_Free"
+#~ msgstr "_Libe"
 
 #~ msgid "_Used"
 #~ msgstr "_Eployî"
 
-#~ msgid "_Free"
-#~ msgstr "_Libe"
+#~ msgid "_User"
+#~ msgstr "_Uzeu"

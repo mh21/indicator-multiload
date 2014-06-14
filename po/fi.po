@@ -14,16 +14,16 @@ msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:55+0200\n"
-"PO-Revision-Date: 2012-02-11 07:51+0000\n"
-"Last-Translator: Timo Jyrinki <timo.jyrinki@canonical.com>\n"
+"PO-Revision-Date: 2013-02-11 19:37+0000\n"
+"Last-Translator: Tommi Vainikainen <Unknown>\n"
 "Language-Team: Finnish <gnome-fi-laatu@lists.sourceforge.net>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -505,14 +505,14 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "Käy_ttäjä"
+#~ msgid "Cach_ed"
+#~ msgstr "_Välimuistissa"
 
-#~ msgid "S_ystem"
-#~ msgstr "_Järjestelmä"
+#~ msgid "F_ree"
+#~ msgstr "_Vapaana"
 
-#~ msgid "N_ice"
-#~ msgstr "N_ice"
+#~ msgid "Harddisk"
+#~ msgstr "Kiintolevy"
 
 #~ msgid "I_OWait"
 #~ msgstr "I_OWait"
@@ -520,44 +520,26 @@ msgstr[1] ""
 #~ msgid "I_dle"
 #~ msgstr "Va_paa"
 
-#~ msgid "Processor"
-#~ msgstr "Suoritin"
-
-#~ msgid "Sh_ared"
-#~ msgstr "_Jaettu"
-
-#~ msgid "_Buffers"
-#~ msgstr "Pu_skurit"
-
-#~ msgid "Cach_ed"
-#~ msgstr "_Välimuistissa"
-
-#~ msgid "F_ree"
-#~ msgstr "_Vapaana"
+#~ msgid "Load"
+#~ msgstr "Verkkokuorma"
 
 #~ msgid "Memory"
 #~ msgstr "Muisti"
 
-#~ msgid "_In"
-#~ msgstr "_Saapuva"
-
-#~ msgid "_Out"
-#~ msgstr "_Lähtevä"
-
-#~ msgid "_Local"
-#~ msgstr "_Paikallinen"
-
-#~ msgid "_Background"
-#~ msgstr "_Tausta"
+#~ msgid "N_ice"
+#~ msgstr "N_ice"
 
 #~ msgid "Network"
 #~ msgstr "Verkko"
 
-#~ msgid "_Used"
-#~ msgstr "_Käytetty"
+#~ msgid "Processor"
+#~ msgstr "Suoritin"
 
-#~ msgid "_Free"
-#~ msgstr "_Vapaana"
+#~ msgid "S_ystem"
+#~ msgstr "_Järjestelmä"
+
+#~ msgid "Sh_ared"
+#~ msgstr "_Jaettu"
 
 #~ msgid "Swap Space"
 #~ msgstr "Sivutustila"
@@ -565,14 +547,32 @@ msgstr[1] ""
 #~ msgid "_Average"
 #~ msgstr "_Keskimääräinen"
 
-#~ msgid "Load"
-#~ msgstr "Verkkokuorma"
+#~ msgid "_Background"
+#~ msgstr "_Tausta"
+
+#~ msgid "_Buffers"
+#~ msgstr "Pu_skurit"
+
+#~ msgid "_Free"
+#~ msgstr "_Vapaana"
+
+#~ msgid "_In"
+#~ msgstr "_Saapuva"
+
+#~ msgid "_Local"
+#~ msgstr "_Paikallinen"
+
+#~ msgid "_Out"
+#~ msgstr "_Lähtevä"
 
 #~ msgid "_Read"
 #~ msgstr "_Luku"
 
+#~ msgid "_Used"
+#~ msgstr "_Käytetty"
+
+#~ msgid "_User"
+#~ msgstr "Käy_ttäjä"
+
 #~ msgid "_Write"
 #~ msgstr "_Kirjoitus"
-
-#~ msgid "Harddisk"
-#~ msgstr "Kiintolevy"

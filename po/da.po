@@ -26,7 +26,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:55+0200\n"
-"PO-Revision-Date: 2012-05-30 16:44+0000\n"
+"PO-Revision-Date: 2013-02-11 19:35+0000\n"
 "Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
@@ -34,8 +34,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:26+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -179,7 +179,7 @@ msgstr "Grafbredde: "
 
 #: ../data/preferences.ui.in.h:31
 msgid "Sys_tem monitor update interval: "
-msgstr "Sys_temovervågningsinterval: "
+msgstr "Opdateringsinterval for sys_temovervågning: "
 
 #: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
@@ -525,60 +525,38 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "_Bruger"
-
-#~ msgid "S_ystem"
-#~ msgstr "S_ystem"
-
-#~ msgid "N_ice"
-#~ msgstr "_Nedprioriteret"
-
-#~ msgid "I_OWait"
-#~ msgstr "I_O-ventetid"
-
-#~ msgid "I_dle"
-#~ msgstr "_Inaktiv"
-
-#~ msgid "Processor"
-#~ msgstr "Processor"
-
-#~ msgid "Sh_ared"
-#~ msgstr "_Delt"
-
-#~ msgid "_Buffers"
-#~ msgstr "_Buffere"
-
 #~ msgid "Cach_ed"
 #~ msgstr "_Cache"
 
 #~ msgid "F_ree"
 #~ msgstr "L_edig"
 
+#~ msgid "Harddisk"
+#~ msgstr "Harddisk"
+
+#~ msgid "I_dle"
+#~ msgstr "_Inaktiv"
+
+#~ msgid "Load"
+#~ msgstr "Belastning"
+
 #~ msgid "Memory"
 #~ msgstr "Hukommelse"
 
-#~ msgid "_In"
-#~ msgstr "_Ind"
-
-#~ msgid "_Out"
-#~ msgstr "_Ud"
-
-# Fejlrapport
-#~ msgid "_Local"
-#~ msgstr "_Lokal"
-
-#~ msgid "_Background"
-#~ msgstr "_Baggrund"
+#~ msgid "N_ice"
+#~ msgstr "_Nedprioriteret"
 
 #~ msgid "Network"
 #~ msgstr "Netværk"
 
-#~ msgid "_Used"
-#~ msgstr "_Brugt"
+#~ msgid "Processor"
+#~ msgstr "Processor"
 
-#~ msgid "_Free"
-#~ msgstr "_Ledig"
+#~ msgid "S_ystem"
+#~ msgstr "S_ystem"
+
+#~ msgid "Sh_ared"
+#~ msgstr "_Delt"
 
 #~ msgid "Swap Space"
 #~ msgstr "Swapplads"
@@ -586,23 +564,42 @@ msgstr[1] ""
 #~ msgid "_Average"
 #~ msgstr "_Gennemsnit"
 
-#~ msgid "Load"
-#~ msgstr "Belastning"
+#~ msgid "_Background"
+#~ msgstr "_Baggrund"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Buffere"
+
+#~ msgid "_Free"
+#~ msgstr "_Ledig"
+
+#~ msgid "_In"
+#~ msgstr "_Ind"
+
+# Fejlrapport
+#~ msgid "_Local"
+#~ msgstr "_Lokal"
+
+#~ msgid "_Out"
+#~ msgstr "_Ud"
 
 #~ msgid "_Read"
 #~ msgstr "_Læse"
 
+#~ msgid "_Used"
+#~ msgstr "_Brugt"
+
+#~ msgid "_User"
+#~ msgstr "_Bruger"
+
 #~ msgid "_Write"
 #~ msgstr "_Skrive"
 
-#~ msgid "Harddisk"
-#~ msgstr "Harddisk"
+#~ msgid "I_OWait"
+#~ msgstr "I_O-ventetid"
 
 #~ msgid "Graph alpha value"
 #~ msgstr "Alfaværdi for grafer"
 
 #~ msgid "List available expression identifiers"
 #~ msgstr "Opstil tilgængelige udtrykssymboler"
-
-#~ msgid "Show debug messages"
-#~ msgstr "Vis fejlretningsbeskeder"

@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets 2.25.90\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:55+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
 "Language: vi\n"
@@ -18,8 +18,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:28+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -487,30 +487,7 @@ msgstr ""
 msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
-
-#~ msgid "_User"
-#~ msgstr "N_gười dùng"
-
-#~ msgid "S_ystem"
-#~ msgstr "_Hệ thống"
-
-#~ msgid "N_ice"
-#~ msgstr "Cấp N_ice"
-
-#~ msgid "I_OWait"
-#~ msgstr "Chờ _V/R"
-
-#~ msgid "I_dle"
-#~ msgstr "N_ghỉ"
-
-#~ msgid "Processor"
-#~ msgstr "Bộ xử lý"
-
-#~ msgid "Sh_ared"
-#~ msgstr "Chi_a sẻ"
-
-#~ msgid "_Buffers"
-#~ msgstr "_Bộ nhớ đệm"
+msgstr[1] ""
 
 #~ msgid "Cach_ed"
 #~ msgstr "Nhớ tạ_m"
@@ -518,29 +495,35 @@ msgstr[0] ""
 #~ msgid "F_ree"
 #~ msgstr "Còn _rảnh"
 
+#~ msgid "Harddisk"
+#~ msgstr "Đĩa cứng"
+
+#~ msgid "I_OWait"
+#~ msgstr "Chờ _V/R"
+
+#~ msgid "I_dle"
+#~ msgstr "N_ghỉ"
+
+#~ msgid "Load"
+#~ msgstr "Trọng tải"
+
 #~ msgid "Memory"
 #~ msgstr "Bộ nhớ"
 
-#~ msgid "_In"
-#~ msgstr "_Vào"
-
-#~ msgid "_Out"
-#~ msgstr "_Ra"
-
-#~ msgid "_Local"
-#~ msgstr "_Cục bộ"
-
-#~ msgid "_Background"
-#~ msgstr "_Nền"
+#~ msgid "N_ice"
+#~ msgstr "Cấp N_ice"
 
 #~ msgid "Network"
 #~ msgstr "Mạng"
 
-#~ msgid "_Used"
-#~ msgstr "Đã _dùng"
+#~ msgid "Processor"
+#~ msgstr "Bộ xử lý"
 
-#~ msgid "_Free"
-#~ msgstr "_Còn rảnh"
+#~ msgid "S_ystem"
+#~ msgstr "_Hệ thống"
+
+#~ msgid "Sh_ared"
+#~ msgstr "Chi_a sẻ"
 
 #~ msgid "Swap Space"
 #~ msgstr "Bộ nhớ trao đổi"
@@ -548,14 +531,32 @@ msgstr[0] ""
 #~ msgid "_Average"
 #~ msgstr "Trung _bình"
 
-#~ msgid "Load"
-#~ msgstr "Trọng tải"
+#~ msgid "_Background"
+#~ msgstr "_Nền"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Bộ nhớ đệm"
+
+#~ msgid "_Free"
+#~ msgstr "_Còn rảnh"
+
+#~ msgid "_In"
+#~ msgstr "_Vào"
+
+#~ msgid "_Local"
+#~ msgstr "_Cục bộ"
+
+#~ msgid "_Out"
+#~ msgstr "_Ra"
 
 #~ msgid "_Read"
 #~ msgstr "Đọ_c"
 
+#~ msgid "_Used"
+#~ msgstr "Đã _dùng"
+
+#~ msgid "_User"
+#~ msgstr "N_gười dùng"
+
 #~ msgid "_Write"
 #~ msgstr "_Ghi"
-
-#~ msgid "Harddisk"
-#~ msgstr "Đĩa cứng"

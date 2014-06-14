@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets.head.po\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:55+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Zabeeh Khan <zabeehkhan@gmail.com>\n"
 "Language-Team: Pashto <pathanisation@googlegroups.com>\n"
 "Language: ps\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n!=1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 "X-Poedit-Country: AFGHANISTAN\n"
 "X-Poedit-Language: Pashto, Pushto\n"
 
@@ -487,32 +487,26 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "کارن_"
+#~ msgid "Harddisk"
+#~ msgstr "کلک ټیکلی"
 
-#~ msgid "S_ystem"
-#~ msgstr "غ_ونډال"
-
-#~ msgid "Processor"
-#~ msgstr "بهيرګر"
-
-#~ msgid "Sh_ared"
-#~ msgstr "ونډول شوی"
+#~ msgid "Load"
+#~ msgstr "لېښل"
 
 #~ msgid "Memory"
 #~ msgstr "یاد"
 
-#~ msgid "_Background"
-#~ msgstr "شاليد_"
-
 #~ msgid "Network"
 #~ msgstr "ځال"
 
-#~ msgid "_Used"
-#~ msgstr "کارېدلی_"
+#~ msgid "Processor"
+#~ msgstr "بهيرګر"
 
-#~ msgid "_Free"
-#~ msgstr "پاتې_"
+#~ msgid "S_ystem"
+#~ msgstr "غ_ونډال"
+
+#~ msgid "Sh_ared"
+#~ msgstr "ونډول شوی"
 
 #~ msgid "Swap Space"
 #~ msgstr "ونج تشه"
@@ -520,14 +514,20 @@ msgstr[1] ""
 #~ msgid "_Average"
 #~ msgstr "منځنی_"
 
-#~ msgid "Load"
-#~ msgstr "لېښل"
+#~ msgid "_Background"
+#~ msgstr "شاليد_"
+
+#~ msgid "_Free"
+#~ msgstr "پاتې_"
 
 #~ msgid "_Read"
 #~ msgstr "لوستل_"
 
+#~ msgid "_Used"
+#~ msgstr "کارېدلی_"
+
+#~ msgid "_User"
+#~ msgstr "کارن_"
+
 #~ msgid "_Write"
 #~ msgstr "لوستل_"
-
-#~ msgid "Harddisk"
-#~ msgstr "کلک ټیکلی"

@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:55+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Joan Duran <jodufi@gmail.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "Language: ca\n"
@@ -21,8 +21,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:28+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -497,14 +497,14 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "_Usuari"
+#~ msgid "Cach_ed"
+#~ msgstr "En m_emòria cau"
 
-#~ msgid "S_ystem"
-#~ msgstr "Sis_tema"
+#~ msgid "F_ree"
+#~ msgstr "Lliu_re"
 
-#~ msgid "N_ice"
-#~ msgstr "Pr_ioritat"
+#~ msgid "Harddisk"
+#~ msgstr "Disc dur"
 
 #~ msgid "I_OWait"
 #~ msgstr "I_OWait"
@@ -512,44 +512,26 @@ msgstr[1] ""
 #~ msgid "I_dle"
 #~ msgstr "In_actiu"
 
-#~ msgid "Processor"
-#~ msgstr "Processador"
-
-#~ msgid "Sh_ared"
-#~ msgstr "Comp_artida"
-
-#~ msgid "_Buffers"
-#~ msgstr "Memòria intermè_dia"
-
-#~ msgid "Cach_ed"
-#~ msgstr "En m_emòria cau"
-
-#~ msgid "F_ree"
-#~ msgstr "Lliu_re"
+#~ msgid "Load"
+#~ msgstr "Càrrega"
 
 #~ msgid "Memory"
 #~ msgstr "Memòria"
 
-#~ msgid "_In"
-#~ msgstr "_Entrada:"
-
-#~ msgid "_Out"
-#~ msgstr "_Sortida"
-
-#~ msgid "_Local"
-#~ msgstr "_Local"
-
-#~ msgid "_Background"
-#~ msgstr "F_ons"
+#~ msgid "N_ice"
+#~ msgstr "Pr_ioritat"
 
 #~ msgid "Network"
 #~ msgstr "Xarxa"
 
-#~ msgid "_Used"
-#~ msgstr "_Utilitzada"
+#~ msgid "Processor"
+#~ msgstr "Processador"
 
-#~ msgid "_Free"
-#~ msgstr "_Lliure"
+#~ msgid "S_ystem"
+#~ msgstr "Sis_tema"
+
+#~ msgid "Sh_ared"
+#~ msgstr "Comp_artida"
 
 #~ msgid "Swap Space"
 #~ msgstr "Espai d'intercanvi"
@@ -557,14 +539,32 @@ msgstr[1] ""
 #~ msgid "_Average"
 #~ msgstr "Mitj_ana"
 
-#~ msgid "Load"
-#~ msgstr "Càrrega"
+#~ msgid "_Background"
+#~ msgstr "F_ons"
+
+#~ msgid "_Buffers"
+#~ msgstr "Memòria intermè_dia"
+
+#~ msgid "_Free"
+#~ msgstr "_Lliure"
+
+#~ msgid "_In"
+#~ msgstr "_Entrada:"
+
+#~ msgid "_Local"
+#~ msgstr "_Local"
+
+#~ msgid "_Out"
+#~ msgstr "_Sortida"
 
 #~ msgid "_Read"
 #~ msgstr "_Lectura"
 
+#~ msgid "_Used"
+#~ msgstr "_Utilitzada"
+
+#~ msgid "_User"
+#~ msgstr "_Usuari"
+
 #~ msgid "_Write"
 #~ msgstr "_Escriptura"
-
-#~ msgid "Harddisk"
-#~ msgstr "Disc dur"

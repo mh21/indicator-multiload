@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:55+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
 "Language: \n"
@@ -18,8 +18,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -490,14 +490,14 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "ਯੂਜ਼ਰ(_U)"
+#~ msgid "Cach_ed"
+#~ msgstr "ਕੈਂਚੇ(_e)"
 
-#~ msgid "S_ystem"
-#~ msgstr "ਸਿਸਟਮ(_y)"
+#~ msgid "F_ree"
+#~ msgstr "ਖਾਲੀ(_r)"
 
-#~ msgid "N_ice"
-#~ msgstr "ਨਾਈਸ(_i)"
+#~ msgid "Harddisk"
+#~ msgstr "ਹਾਰਡ-ਡਿਸਕ"
 
 #~ msgid "I_OWait"
 #~ msgstr "I_O ਉਡੀਕ"
@@ -505,44 +505,26 @@ msgstr[1] ""
 #~ msgid "I_dle"
 #~ msgstr "ਵੇਹਲ(_d)"
 
-#~ msgid "Processor"
-#~ msgstr "ਪਰੋਸੈਸਰ"
-
-#~ msgid "Sh_ared"
-#~ msgstr "ਸਾਂਝੀ(_a)"
-
-#~ msgid "_Buffers"
-#~ msgstr "ਬਫ਼ਰ(_B)"
-
-#~ msgid "Cach_ed"
-#~ msgstr "ਕੈਂਚੇ(_e)"
-
-#~ msgid "F_ree"
-#~ msgstr "ਖਾਲੀ(_r)"
+#~ msgid "Load"
+#~ msgstr "ਲੋਡ"
 
 #~ msgid "Memory"
 #~ msgstr "ਮੈਮੋਰੀ"
 
-#~ msgid "_In"
-#~ msgstr "ਇਨ(_I)"
-
-#~ msgid "_Out"
-#~ msgstr "ਬਾਹਰ(_O)"
-
-#~ msgid "_Local"
-#~ msgstr "ਲੋਕਲ(_L)"
-
-#~ msgid "_Background"
-#~ msgstr "ਬੈਕਗਰਾਊਂਡ(_B)"
+#~ msgid "N_ice"
+#~ msgstr "ਨਾਈਸ(_i)"
 
 #~ msgid "Network"
 #~ msgstr "ਨੈੱਟਵਰਕ"
 
-#~ msgid "_Used"
-#~ msgstr "ਵਰਤੀ(_U)"
+#~ msgid "Processor"
+#~ msgstr "ਪਰੋਸੈਸਰ"
 
-#~ msgid "_Free"
-#~ msgstr "ਖਾਲੀ(_F)"
+#~ msgid "S_ystem"
+#~ msgstr "ਸਿਸਟਮ(_y)"
+
+#~ msgid "Sh_ared"
+#~ msgstr "ਸਾਂਝੀ(_a)"
 
 #~ msgid "Swap Space"
 #~ msgstr "ਸਵੈਪ ਥਾਂ"
@@ -550,14 +532,32 @@ msgstr[1] ""
 #~ msgid "_Average"
 #~ msgstr "ਔਸਤ(_A)"
 
-#~ msgid "Load"
-#~ msgstr "ਲੋਡ"
+#~ msgid "_Background"
+#~ msgstr "ਬੈਕਗਰਾਊਂਡ(_B)"
+
+#~ msgid "_Buffers"
+#~ msgstr "ਬਫ਼ਰ(_B)"
+
+#~ msgid "_Free"
+#~ msgstr "ਖਾਲੀ(_F)"
+
+#~ msgid "_In"
+#~ msgstr "ਇਨ(_I)"
+
+#~ msgid "_Local"
+#~ msgstr "ਲੋਕਲ(_L)"
+
+#~ msgid "_Out"
+#~ msgstr "ਬਾਹਰ(_O)"
 
 #~ msgid "_Read"
 #~ msgstr "ਪੜ੍ਹਨ(_R)"
 
+#~ msgid "_Used"
+#~ msgstr "ਵਰਤੀ(_U)"
+
+#~ msgid "_User"
+#~ msgstr "ਯੂਜ਼ਰ(_U)"
+
 #~ msgid "_Write"
 #~ msgstr "ਲਿਖਣ(_W)"
-
-#~ msgid "Harddisk"
-#~ msgstr "ਹਾਰਡ-ਡਿਸਕ"

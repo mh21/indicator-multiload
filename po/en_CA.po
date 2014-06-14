@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:55+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Adam Weinberger <adamw@gnome.org>\n"
 "Language-Team: Canadian English <adamw@gnome.org>\n"
 "Language: \n"
@@ -17,8 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:28+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -487,14 +487,14 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "_User"
+#~ msgid "Cach_ed"
+#~ msgstr "Cach_ed"
 
-#~ msgid "S_ystem"
-#~ msgstr "S_ystem"
+#~ msgid "F_ree"
+#~ msgstr "F_ree"
 
-#~ msgid "N_ice"
-#~ msgstr "N_ice"
+#~ msgid "Harddisk"
+#~ msgstr "Hard disk"
 
 #~ msgid "I_OWait"
 #~ msgstr "I_OWait"
@@ -502,35 +502,26 @@ msgstr[1] ""
 #~ msgid "I_dle"
 #~ msgstr "I_dle"
 
-#~ msgid "Processor"
-#~ msgstr "Processor"
-
-#~ msgid "Sh_ared"
-#~ msgstr "Sh_ared"
-
-#~ msgid "_Buffers"
-#~ msgstr "_Buffers"
-
-#~ msgid "Cach_ed"
-#~ msgstr "Cach_ed"
-
-#~ msgid "F_ree"
-#~ msgstr "F_ree"
+#~ msgid "Load"
+#~ msgstr "Load"
 
 #~ msgid "Memory"
 #~ msgstr "Memory"
 
-#~ msgid "_Background"
-#~ msgstr "_Background"
+#~ msgid "N_ice"
+#~ msgstr "N_ice"
 
 #~ msgid "Network"
 #~ msgstr "Network"
 
-#~ msgid "_Used"
-#~ msgstr "_Used"
+#~ msgid "Processor"
+#~ msgstr "Processor"
 
-#~ msgid "_Free"
-#~ msgstr "_Free"
+#~ msgid "S_ystem"
+#~ msgstr "S_ystem"
+
+#~ msgid "Sh_ared"
+#~ msgstr "Sh_ared"
 
 #~ msgid "Swap Space"
 #~ msgstr "Swap Space"
@@ -538,14 +529,23 @@ msgstr[1] ""
 #~ msgid "_Average"
 #~ msgstr "_Average"
 
-#~ msgid "Load"
-#~ msgstr "Load"
+#~ msgid "_Background"
+#~ msgstr "_Background"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Buffers"
+
+#~ msgid "_Free"
+#~ msgstr "_Free"
 
 #~ msgid "_Read"
 #~ msgstr "_Read"
 
+#~ msgid "_Used"
+#~ msgstr "_Used"
+
+#~ msgid "_User"
+#~ msgstr "_User"
+
 #~ msgid "_Write"
 #~ msgstr "_Write"
-
-#~ msgid "Harddisk"
-#~ msgstr "Hard disk"

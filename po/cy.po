@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:55+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Rhys Jones <rhys@sucs.org>\n"
 "Language-Team: Cymraeg <gnome-cy@lists.linux.org.uk>\n"
 "Language: \n"
@@ -25,8 +25,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n==1 ? 0 : n==2 ? 1 : (n != 8 && n != 11) ? "
 "2 : 3;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:28+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -495,32 +495,6 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-
-#~ msgid "_User"
-#~ msgstr "_Defnyddiwr"
-
-#~ msgid "S_ystem"
-#~ msgstr "_System"
-
-#~ msgid "N_ice"
-#~ msgstr "_Neis"
-
-#~ msgid "I_OWait"
-#~ msgstr "I_OWait"
-
-#~ msgid "I_dle"
-#~ msgstr "_Seibio"
-
-#~ msgid "Processor"
-#~ msgstr "Prosesydd"
-
-#~ msgid "Sh_ared"
-#~ msgstr "Wedi _Rhannu"
-
-#~ msgid "_Buffers"
-#~ msgstr "_Byfferau"
 
 #~ msgid "Cach_ed"
 #~ msgstr "_Storfa"
@@ -528,20 +502,35 @@ msgstr[3] ""
 #~ msgid "F_ree"
 #~ msgstr "_Rhydd"
 
+#~ msgid "Harddisk"
+#~ msgstr "Disgen Galed"
+
+#~ msgid "I_OWait"
+#~ msgstr "I_OWait"
+
+#~ msgid "I_dle"
+#~ msgstr "_Seibio"
+
+#~ msgid "Load"
+#~ msgstr "Llwyth"
+
 #~ msgid "Memory"
 #~ msgstr "Cof"
 
-#~ msgid "_Background"
-#~ msgstr "_Cefndir"
+#~ msgid "N_ice"
+#~ msgstr "_Neis"
 
 #~ msgid "Network"
 #~ msgstr "Rhwydwaith"
 
-#~ msgid "_Used"
-#~ msgstr "_Wedi Defnyddio"
+#~ msgid "Processor"
+#~ msgstr "Prosesydd"
 
-#~ msgid "_Free"
-#~ msgstr "_Rhydd"
+#~ msgid "S_ystem"
+#~ msgstr "_System"
+
+#~ msgid "Sh_ared"
+#~ msgstr "Wedi _Rhannu"
 
 #~ msgid "Swap Space"
 #~ msgstr "Gofod Cyfnewid"
@@ -549,14 +538,23 @@ msgstr[3] ""
 #~ msgid "_Average"
 #~ msgstr "_Cyfartaledd"
 
-#~ msgid "Load"
-#~ msgstr "Llwyth"
+#~ msgid "_Background"
+#~ msgstr "_Cefndir"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Byfferau"
+
+#~ msgid "_Free"
+#~ msgstr "_Rhydd"
 
 #~ msgid "_Read"
 #~ msgstr "_Darllen"
 
+#~ msgid "_Used"
+#~ msgstr "_Wedi Defnyddio"
+
+#~ msgid "_User"
+#~ msgstr "_Defnyddiwr"
+
 #~ msgid "_Write"
 #~ msgstr "_Ysgrifennu"
-
-#~ msgid "Harddisk"
-#~ msgstr "Disgen Galed"

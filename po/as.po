@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: as\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:55+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: \n"
 "Language-Team: Assamese <>\n"
 "Language: as\n"
@@ -18,8 +18,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n!=1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:26+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -488,14 +488,14 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "ব্যৱহাৰকৰোঁতা (_U)"
+#~ msgid "Cach_ed"
+#~ msgstr "ক্যাশে কৰা (_e)"
 
-#~ msgid "S_ystem"
-#~ msgstr "ব্যৱস্থাপ্ৰণালী (_y)"
+#~ msgid "F_ree"
+#~ msgstr "মুক্ত (_r)"
 
-#~ msgid "N_ice"
-#~ msgstr "N_ice"
+#~ msgid "Harddisk"
+#~ msgstr "হাৰ্ড-ডিস্ক"
 
 #~ msgid "I_OWait"
 #~ msgstr "I_OWait"
@@ -503,44 +503,26 @@ msgstr[1] ""
 #~ msgid "I_dle"
 #~ msgstr "কৰ্মবিহীন (_d)"
 
-#~ msgid "Processor"
-#~ msgstr "প্ৰসেসৰ"
-
-#~ msgid "Sh_ared"
-#~ msgstr "যৌথৰূপে ব্যৱহৃত (_a)"
-
-#~ msgid "_Buffers"
-#~ msgstr "বাফাৰ (_B)"
-
-#~ msgid "Cach_ed"
-#~ msgstr "ক্যাশে কৰা (_e)"
-
-#~ msgid "F_ree"
-#~ msgstr "মুক্ত (_r)"
+#~ msgid "Load"
+#~ msgstr "তুলি লওক"
 
 #~ msgid "Memory"
 #~ msgstr "মেমৰি"
 
-#~ msgid "_In"
-#~ msgstr "ইন (_I)"
-
-#~ msgid "_Out"
-#~ msgstr "আউট (_O)"
-
-#~ msgid "_Local"
-#~ msgstr "স্থানীয় (_L)"
-
-#~ msgid "_Background"
-#~ msgstr "পটভূমি (_B)"
+#~ msgid "N_ice"
+#~ msgstr "N_ice"
 
 #~ msgid "Network"
 #~ msgstr "নেটৱৰ্ক"
 
-#~ msgid "_Used"
-#~ msgstr "ব্যৱহৃত (_U)"
+#~ msgid "Processor"
+#~ msgstr "প্ৰসেসৰ"
 
-#~ msgid "_Free"
-#~ msgstr "মুক্ত (_F)"
+#~ msgid "S_ystem"
+#~ msgstr "ব্যৱস্থাপ্ৰণালী (_y)"
+
+#~ msgid "Sh_ared"
+#~ msgstr "যৌথৰূপে ব্যৱহৃত (_a)"
 
 #~ msgid "Swap Space"
 #~ msgstr "Swap স্থান"
@@ -548,14 +530,32 @@ msgstr[1] ""
 #~ msgid "_Average"
 #~ msgstr "গড় (_A)"
 
-#~ msgid "Load"
-#~ msgstr "তুলি লওক"
+#~ msgid "_Background"
+#~ msgstr "পটভূমি (_B)"
+
+#~ msgid "_Buffers"
+#~ msgstr "বাফাৰ (_B)"
+
+#~ msgid "_Free"
+#~ msgstr "মুক্ত (_F)"
+
+#~ msgid "_In"
+#~ msgstr "ইন (_I)"
+
+#~ msgid "_Local"
+#~ msgstr "স্থানীয় (_L)"
+
+#~ msgid "_Out"
+#~ msgstr "আউট (_O)"
 
 #~ msgid "_Read"
 #~ msgstr "পড়া (_R)"
 
+#~ msgid "_Used"
+#~ msgstr "ব্যৱহৃত (_U)"
+
+#~ msgid "_User"
+#~ msgstr "ব্যৱহাৰকৰোঁতা (_U)"
+
 #~ msgid "_Write"
 #~ msgstr "লিখা (_W)"
-
-#~ msgid "Harddisk"
-#~ msgstr "হাৰ্ড-ডিস্ক"

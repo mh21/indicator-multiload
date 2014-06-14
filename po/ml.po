@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets.master.ml\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:55+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: \n"
 "Language-Team: <en@li.org>\n"
 "Language: \n"
@@ -18,8 +18,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -490,14 +490,14 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "_ഉപയോക്താവു്"
+#~ msgid "Cach_ed"
+#~ msgstr "Cach_ed"
 
-#~ msgid "S_ystem"
-#~ msgstr "_സിസ്റ്റം"
+#~ msgid "F_ree"
+#~ msgstr "_സ്വതന്ത്ര"
 
-#~ msgid "N_ice"
-#~ msgstr "_നൈസ്"
+#~ msgid "Harddisk"
+#~ msgstr "ഹാര്‍ഡ് ഡിസ്ക്ക്"
 
 #~ msgid "I_OWait"
 #~ msgstr "I_OWait"
@@ -505,45 +505,26 @@ msgstr[1] ""
 #~ msgid "I_dle"
 #~ msgstr "അ_ലസം"
 
-#~ msgid "Processor"
-#~ msgstr "പ്രൊസസ്സര്‍"
-
-#~ msgid "Sh_ared"
-#~ msgstr "_പങ്കുവെച്ച"
-
-#~ msgid "_Buffers"
-#~ msgstr "ബഫറുകള്‍"
-
-#~ msgid "Cach_ed"
-#~ msgstr "Cach_ed"
-
-#~ msgid "F_ree"
-#~ msgstr "_സ്വതന്ത്ര"
+#~ msgid "Load"
+#~ msgstr "ലോഡ്"
 
 #~ msgid "Memory"
 #~ msgstr "മെമ്മറി"
 
-#~ msgid "_In"
-#~ msgstr "_അകത്തു്"
-
-# "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-#~ msgid "_Out"
-#~ msgstr "_പുറത്തു്"
-
-#~ msgid "_Local"
-#~ msgstr "_പ്രാദേശികം"
-
-#~ msgid "_Background"
-#~ msgstr "_പശ്ചാത്തലം"
+#~ msgid "N_ice"
+#~ msgstr "_നൈസ്"
 
 #~ msgid "Network"
 #~ msgstr "ശൃംഖല"
 
-#~ msgid "_Used"
-#~ msgstr "_ഉപയോഗിച്ച"
+#~ msgid "Processor"
+#~ msgstr "പ്രൊസസ്സര്‍"
 
-#~ msgid "_Free"
-#~ msgstr "_സ്വതന്ത്രം"
+#~ msgid "S_ystem"
+#~ msgstr "_സിസ്റ്റം"
+
+#~ msgid "Sh_ared"
+#~ msgstr "_പങ്കുവെച്ച"
 
 #~ msgid "Swap Space"
 #~ msgstr "Swap-നുളള സ്ഥലം"
@@ -551,14 +532,33 @@ msgstr[1] ""
 #~ msgid "_Average"
 #~ msgstr "_ശരാശരി"
 
-#~ msgid "Load"
-#~ msgstr "ലോഡ്"
+#~ msgid "_Background"
+#~ msgstr "_പശ്ചാത്തലം"
+
+#~ msgid "_Buffers"
+#~ msgstr "ബഫറുകള്‍"
+
+#~ msgid "_Free"
+#~ msgstr "_സ്വതന്ത്രം"
+
+#~ msgid "_In"
+#~ msgstr "_അകത്തു്"
+
+#~ msgid "_Local"
+#~ msgstr "_പ്രാദേശികം"
+
+# "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+#~ msgid "_Out"
+#~ msgstr "_പുറത്തു്"
 
 #~ msgid "_Read"
 #~ msgstr "_വായന"
 
+#~ msgid "_Used"
+#~ msgstr "_ഉപയോഗിച്ച"
+
+#~ msgid "_User"
+#~ msgstr "_ഉപയോക്താവു്"
+
 #~ msgid "_Write"
 #~ msgstr "_എഴുത്തു്"
-
-#~ msgid "Harddisk"
-#~ msgstr "ഹാര്‍ഡ് ഡിസ്ക്ക്"

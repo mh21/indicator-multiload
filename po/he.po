@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets.HEAD.he\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:55+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <he@li.org>\n"
 "Language: he\n"
@@ -17,8 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -492,14 +492,14 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "_משתמש"
+#~ msgid "Cach_ed"
+#~ msgstr "מ_טמון"
 
-#~ msgid "S_ystem"
-#~ msgstr "מ_ערכת"
+#~ msgid "F_ree"
+#~ msgstr "פ_נוי"
 
-#~ msgid "N_ice"
-#~ msgstr "_עדיפות"
+#~ msgid "Harddisk"
+#~ msgstr "דיסק קשיח"
 
 #~ msgid "I_OWait"
 #~ msgstr "הפסקת קלט/פלט"
@@ -507,44 +507,26 @@ msgstr[1] ""
 #~ msgid "I_dle"
 #~ msgstr "_סרק"
 
-#~ msgid "Processor"
-#~ msgstr "מעבד"
-
-#~ msgid "Sh_ared"
-#~ msgstr "מ_שותף"
-
-#~ msgid "_Buffers"
-#~ msgstr "_מאגרים"
-
-#~ msgid "Cach_ed"
-#~ msgstr "מ_טמון"
-
-#~ msgid "F_ree"
-#~ msgstr "פ_נוי"
+#~ msgid "Load"
+#~ msgstr "עומס"
 
 #~ msgid "Memory"
 #~ msgstr "זיכרון"
 
-#~ msgid "_In"
-#~ msgstr "_נכנס"
-
-#~ msgid "_Out"
-#~ msgstr "י_וצא"
-
-#~ msgid "_Local"
-#~ msgstr "_מקומי"
-
-#~ msgid "_Background"
-#~ msgstr "_רקע"
+#~ msgid "N_ice"
+#~ msgstr "_עדיפות"
 
 #~ msgid "Network"
 #~ msgstr "רשת"
 
-#~ msgid "_Used"
-#~ msgstr "_בשימוש"
+#~ msgid "Processor"
+#~ msgstr "מעבד"
 
-#~ msgid "_Free"
-#~ msgstr "_פנוי"
+#~ msgid "S_ystem"
+#~ msgstr "מ_ערכת"
+
+#~ msgid "Sh_ared"
+#~ msgstr "מ_שותף"
 
 #~ msgid "Swap Space"
 #~ msgstr "מקום תחלופה"
@@ -552,14 +534,32 @@ msgstr[1] ""
 #~ msgid "_Average"
 #~ msgstr "_ממוצע"
 
-#~ msgid "Load"
-#~ msgstr "עומס"
+#~ msgid "_Background"
+#~ msgstr "_רקע"
+
+#~ msgid "_Buffers"
+#~ msgstr "_מאגרים"
+
+#~ msgid "_Free"
+#~ msgstr "_פנוי"
+
+#~ msgid "_In"
+#~ msgstr "_נכנס"
+
+#~ msgid "_Local"
+#~ msgstr "_מקומי"
+
+#~ msgid "_Out"
+#~ msgstr "י_וצא"
 
 #~ msgid "_Read"
 #~ msgstr "_קרא"
 
+#~ msgid "_Used"
+#~ msgstr "_בשימוש"
+
+#~ msgid "_User"
+#~ msgstr "_משתמש"
+
 #~ msgid "_Write"
 #~ msgstr "_כתוב"
-
-#~ msgid "Harddisk"
-#~ msgstr "דיסק קשיח"

@@ -7,16 +7,16 @@ msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:55+0200\n"
-"PO-Revision-Date: 2012-05-27 11:56+0000\n"
-"Last-Translator: abuyop <Unknown>\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
+"Last-Translator: Hasbullah Bin Pit <sebol@my-penguin.org>\n"
 "Language-Team: Projek Gabai <gabai-penyumbang@lists.sourceforge.net>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -31,6 +31,7 @@ msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
 "  Hasbullah Bin Pit https://launchpad.net/~sebol\n"
+"  Michael Hofmann https://launchpad.net/~mh21\n"
 "  abuyop https://launchpad.net/~abuyop"
 
 #: ../data/preferences.ui.in.h:3
@@ -495,59 +496,35 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "_Pengguna"
-
-#~ msgid "S_ystem"
-#~ msgstr "S_istem"
-
-#~ msgid "N_ice"
-#~ msgstr "E_lok"
-
-#~ msgid "I_OWait"
-#~ msgstr "I_OWait"
-
-#~ msgid "I_dle"
-#~ msgstr "L_eka"
-
-#~ msgid "Processor"
-#~ msgstr "Pemproses"
-
-#~ msgid "Sh_ared"
-#~ msgstr "Ter_kongsi"
-
-#~ msgid "_Buffers"
-#~ msgstr "_Penimbal"
-
 #~ msgid "Cach_ed"
 #~ msgstr "Cach_ed"
 
 #~ msgid "F_ree"
 #~ msgstr "B_ebas"
 
+#~ msgid "I_dle"
+#~ msgstr "L_eka"
+
+#~ msgid "Load"
+#~ msgstr "Muatan"
+
 #~ msgid "Memory"
 #~ msgstr "Memori"
 
-#~ msgid "_In"
-#~ msgstr "_Masuk"
-
-#~ msgid "_Out"
-#~ msgstr "_Keluar"
-
-#~ msgid "_Local"
-#~ msgstr "_Tempatan"
-
-#~ msgid "_Background"
-#~ msgstr "Latar_Belakang"
+#~ msgid "N_ice"
+#~ msgstr "E_lok"
 
 #~ msgid "Network"
 #~ msgstr "Rangkaian"
 
-#~ msgid "_Used"
-#~ msgstr "_Digunakan"
+#~ msgid "Processor"
+#~ msgstr "Pemproses"
 
-#~ msgid "_Free"
-#~ msgstr "_Bebas"
+#~ msgid "S_ystem"
+#~ msgstr "S_istem"
+
+#~ msgid "Sh_ared"
+#~ msgstr "Ter_kongsi"
 
 #~ msgid "Swap Space"
 #~ msgstr "Ruang Swap"
@@ -555,23 +532,44 @@ msgstr[1] ""
 #~ msgid "_Average"
 #~ msgstr "_Purata"
 
-#~ msgid "Load"
-#~ msgstr "Muatan"
+#~ msgid "_Background"
+#~ msgstr "Latar_Belakang"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Penimbal"
+
+#~ msgid "_Free"
+#~ msgstr "_Bebas"
+
+#~ msgid "_Used"
+#~ msgstr "_Digunakan"
+
+#~ msgid "_User"
+#~ msgstr "_Pengguna"
+
+#~ msgid "_Local"
+#~ msgstr "_Tempatan"
+
+#~ msgid "_In"
+#~ msgstr "_Masuk"
+
+#~ msgid "_Out"
+#~ msgstr "_Keluar"
 
 #~ msgid "_Read"
 #~ msgstr "_Baca"
 
-#~ msgid "_Write"
-#~ msgstr "_Tulis"
-
 #~ msgid "Harddisk"
 #~ msgstr "Cakera keras"
+
+#~ msgid "I_OWait"
+#~ msgstr "I_OWait"
+
+#~ msgid "_Write"
+#~ msgstr "_Tulis"
 
 #~ msgid "Graph alpha value"
 #~ msgstr "Nilai alfa graf"
 
 #~ msgid "List available expression identifiers"
 #~ msgstr "Senarai tersedia pengecam ungkapan"
-
-#~ msgid "Show debug messages"
-#~ msgstr "Papar mesej nyahpepijat"

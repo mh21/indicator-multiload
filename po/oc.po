@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: oc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:55+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
 "Language: oc\n"
@@ -17,8 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -488,14 +488,14 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "_Utilizaire"
+#~ msgid "Cach_ed"
+#~ msgstr "Escond_ut"
 
-#~ msgid "S_ystem"
-#~ msgstr "S_istèma"
+#~ msgid "F_ree"
+#~ msgstr "_Liure"
 
-#~ msgid "N_ice"
-#~ msgstr "N_ice"
+#~ msgid "Harddisk"
+#~ msgstr "Disc dur"
 
 #~ msgid "I_OWait"
 #~ msgstr "Laténcia I/S (Intradas/Sortidas)"
@@ -503,44 +503,26 @@ msgstr[1] ""
 #~ msgid "I_dle"
 #~ msgstr "I_nactiu"
 
-#~ msgid "Processor"
-#~ msgstr "Processor"
-
-#~ msgid "Sh_ared"
-#~ msgstr "P_artejat"
-
-#~ msgid "_Buffers"
-#~ msgstr "_Tampons"
-
-#~ msgid "Cach_ed"
-#~ msgstr "Escond_ut"
-
-#~ msgid "F_ree"
-#~ msgstr "_Liure"
+#~ msgid "Load"
+#~ msgstr "Carga"
 
 #~ msgid "Memory"
 #~ msgstr "Memòria"
 
-#~ msgid "_In"
-#~ msgstr "_Dintrant"
-
-#~ msgid "_Out"
-#~ msgstr "_Sortissant"
-
-#~ msgid "_Local"
-#~ msgstr "_Local"
-
-#~ msgid "_Background"
-#~ msgstr "_Fons"
+#~ msgid "N_ice"
+#~ msgstr "N_ice"
 
 #~ msgid "Network"
 #~ msgstr "Ret"
 
-#~ msgid "_Used"
-#~ msgstr "_Utilisat"
+#~ msgid "Processor"
+#~ msgstr "Processor"
 
-#~ msgid "_Free"
-#~ msgstr "_Liure"
+#~ msgid "S_ystem"
+#~ msgstr "S_istèma"
+
+#~ msgid "Sh_ared"
+#~ msgstr "P_artejat"
 
 #~ msgid "Swap Space"
 #~ msgstr "Espaci swap"
@@ -548,14 +530,32 @@ msgstr[1] ""
 #~ msgid "_Average"
 #~ msgstr "_Mejana"
 
-#~ msgid "Load"
-#~ msgstr "Carga"
+#~ msgid "_Background"
+#~ msgstr "_Fons"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Tampons"
+
+#~ msgid "_Free"
+#~ msgstr "_Liure"
+
+#~ msgid "_In"
+#~ msgstr "_Dintrant"
+
+#~ msgid "_Local"
+#~ msgstr "_Local"
+
+#~ msgid "_Out"
+#~ msgstr "_Sortissant"
 
 #~ msgid "_Read"
 #~ msgstr "_Lectura"
 
+#~ msgid "_Used"
+#~ msgstr "_Utilisat"
+
+#~ msgid "_User"
+#~ msgstr "_Utilizaire"
+
 #~ msgid "_Write"
 #~ msgstr "_Escritura"
-
-#~ msgid "Harddisk"
-#~ msgstr "Disc dur"

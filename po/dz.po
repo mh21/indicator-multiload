@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:55+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Dawa pemo <daws_403@hotmail.com>\n"
 "Language-Team: DZONGKHA <pgeyleg@dit.gov.bt>\n"
 "Language: \n"
@@ -15,8 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 "X-Poedit-Country: BHUTAN\n"
 "X-Poedit-Language: Dzongkha\n"
 "X-Poedit-SourceCharset: utf-8\n"
@@ -487,30 +487,7 @@ msgstr ""
 msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
-
-#~ msgid "_User"
-#~ msgstr "ལག་ལེན་པ།(_U)"
-
-#~ msgid "S_ystem"
-#~ msgstr "རིམ་ལུགས།(_y)"
-
-#~ msgid "N_ice"
-#~ msgstr "ཆུང་ཀུ།(_i)"
-
-#~ msgid "I_OWait"
-#~ msgstr "ཨའི་ཨོ་ཝེཊི།(_O)"
-
-#~ msgid "I_dle"
-#~ msgstr "ལས་མེད།(_d)"
-
-#~ msgid "Processor"
-#~ msgstr "ལས་སྦྱོར་་འཕྲུལ་ཆས།"
-
-#~ msgid "Sh_ared"
-#~ msgstr "རུབ་སྤྱོད་འབད་ཡོདཔ།(_a)"
-
-#~ msgid "_Buffers"
-#~ msgstr "གནད་ཁོངས་ཚུ།(_B)"
+msgstr[1] ""
 
 #~ msgid "Cach_ed"
 #~ msgstr "འདྲ་མཛོད་ནང་བཞག་ཡོདཔ།(_e)"
@@ -518,20 +495,35 @@ msgstr[0] ""
 #~ msgid "F_ree"
 #~ msgstr "དལཝ།(_r)"
 
+#~ msgid "Harddisk"
+#~ msgstr "ཧརཌི་ཌིཀསི།"
+
+#~ msgid "I_OWait"
+#~ msgstr "ཨའི་ཨོ་ཝེཊི།(_O)"
+
+#~ msgid "I_dle"
+#~ msgstr "ལས་མེད།(_d)"
+
+#~ msgid "Load"
+#~ msgstr "ལྗིད་ཚད།"
+
 #~ msgid "Memory"
 #~ msgstr "དྲན་ཚད།"
 
-#~ msgid "_Background"
-#~ msgstr "རྒྱབ་གཞི།(_B)"
+#~ msgid "N_ice"
+#~ msgstr "ཆུང་ཀུ།(_i)"
 
 #~ msgid "Network"
 #~ msgstr "ཡོངས་འབྲེལ།"
 
-#~ msgid "_Used"
-#~ msgstr "ལག་ལེན་འཐབ་ཡོདཔ།(_U)"
+#~ msgid "Processor"
+#~ msgstr "ལས་སྦྱོར་་འཕྲུལ་ཆས།"
 
-#~ msgid "_Free"
-#~ msgstr "དལཝ།(_F)"
+#~ msgid "S_ystem"
+#~ msgstr "རིམ་ལུགས།(_y)"
+
+#~ msgid "Sh_ared"
+#~ msgstr "རུབ་སྤྱོད་འབད་ཡོདཔ།(_a)"
 
 #~ msgid "Swap Space"
 #~ msgstr "བརྗེ་སོར་བར་སྟོང་།"
@@ -539,14 +531,23 @@ msgstr[0] ""
 #~ msgid "_Average"
 #~ msgstr "ཆ་སྙོམས།(_A)"
 
-#~ msgid "Load"
-#~ msgstr "ལྗིད་ཚད།"
+#~ msgid "_Background"
+#~ msgstr "རྒྱབ་གཞི།(_B)"
+
+#~ msgid "_Buffers"
+#~ msgstr "གནད་ཁོངས་ཚུ།(_B)"
+
+#~ msgid "_Free"
+#~ msgstr "དལཝ།(_F)"
 
 #~ msgid "_Read"
 #~ msgstr "ལྷག(_R)"
 
+#~ msgid "_Used"
+#~ msgstr "ལག་ལེན་འཐབ་ཡོདཔ།(_U)"
+
+#~ msgid "_User"
+#~ msgstr "ལག་ལེན་པ།(_U)"
+
 #~ msgid "_Write"
 #~ msgstr "བྲིས།(_W)"
-
-#~ msgid "Harddisk"
-#~ msgstr "ཧརཌི་ཌིཀསི།"
