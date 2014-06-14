@@ -29,7 +29,7 @@ public class Providers : Object {
         this.update();
         this.functions = {
             new DecimalsFunction(), new SizeFunction(), new SpeedFunction(),
-            new PercentFunction(), new FrequencyFunction()
+            new PercentFunction(), new FrequencyFunction(), new BitrateFunction()
         };
     }
 

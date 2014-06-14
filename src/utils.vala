@@ -93,6 +93,34 @@ namespace Utils {
         return pattern.printf(val);
     }
 
+    public string format_bitrate(double val) {
+        const string[] units = {
+            // TRANSLATORS: Please leave {} as it is, it is replaced by the bitrate
+            N_("{} kbit/s"),
+            // TRANSLATORS: Please leave {} as it is, it is replaced by the bitrate
+            N_("{} Mbit/s"),
+            // TRANSLATORS: Please leave {} as it is, it is replaced by the bitrate
+            N_("{} Gbit/s"),
+            // TRANSLATORS: Please leave {} as it is, it is replaced by the bitrate
+            N_("{} Tbit/s")
+        };
+        int index = -1;
+        while (index + 1 < units.length && (val >= 1000 || index < 0)) {
+            val /= 1000;
+            ++index;
+        }
+        if (index < 0)
+            // TRANSLATORS: Please leave %u as it is, it is replaced by the bit rate
+            return ngettext("%u bit/s", "%u bit/s",
+                    (ulong)val).printf((uint)val);
+        // 4 significant digits
+        var pattern = _(units[index]).replace("{}",
+            val <   9.95 ? "%.1f" :
+            val <  99.5  ? "%.0f" :
+            val < 999.5  ? "%.0f" : "%.0f");
+        return pattern.printf(val);
+    }
+
     public string format_frequency(double val) {
         const string[] units = {
             // TRANSLATORS: Please leave {} as it is, it is replaced by the frequency

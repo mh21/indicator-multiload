@@ -55,7 +55,6 @@ public class SizeFunction : Function {
             throw error("one parameter expected");
         if (widest)
             parameters[0] = "999000000"; // MB
-        // TODO inline
         return Utils.format_size(double.parse(parameters[0]));
     }
 }
@@ -70,8 +69,21 @@ public class SpeedFunction : Function {
             throw error("one parameter expected");
         if (widest)
             parameters[0] = "999000000"; // MB
-        // TODO inline
         return Utils.format_speed(double.parse(parameters[0]));
+    }
+}
+
+public class BitrateFunction : Function {
+    public BitrateFunction() {
+        base("bitrate", {"value"});
+    }
+
+    public override string call(string[] parameters, bool widest) throws Error {
+        if (parameters.length != 1)
+            throw error("one parameter expected");
+        if (widest)
+            parameters[0] = "999000000"; // MBit
+        return Utils.format_bitrate(8 * double.parse(parameters[0]));
     }
 }
 
@@ -85,7 +97,6 @@ public class FrequencyFunction : Function {
             throw error("one parameter expected");
         if (widest)
             parameters[0] = "999000000"; // MHz
-        // TODO inline
         return Utils.format_frequency(double.parse(parameters[0]));
     }
 }

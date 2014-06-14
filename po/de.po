@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-applets master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-14 15:39+0200\n"
+"POT-Creation-Date: 2014-06-14 20:41+0200\n"
 "PO-Revision-Date: 2013-10-31 03:16+0000\n"
 "Last-Translator: Tobias Bannert <Unknown>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
@@ -421,7 +421,7 @@ msgstr "Radiance"
 msgid "XOSView"
 msgstr "XOSView"
 
-#: ../src/function.vala:103
+#: ../src/function.vala:114
 #, c-format
 msgid "%u%%"
 msgstr "%u%%"
@@ -438,11 +438,11 @@ msgstr "Symbol im Systemabschnitt anstelle des Anwendungsindikators"
 msgid "Evaluate an expression"
 msgstr "Berechne einen Ausdruck"
 
-#: ../src/main.vala:351
+#: ../src/main.vala:353
 msgid "- System load application indicator"
 msgstr "– Systemlastanwendungsanzeige"
 
-#: ../src/main.vala:359
+#: ../src/main.vala:361
 #, c-format
 msgid "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
@@ -505,23 +505,55 @@ msgid_plural "%u B/s"
 msgstr[0] "%u B/s"
 msgstr[1] "%u B/s"
 
-#. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the bitrate
 #: ../src/utils.vala:99
+#, fuzzy
+msgid "{} kbit/s"
+msgstr "{} kB/s"
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the bitrate
+#: ../src/utils.vala:101
+#, fuzzy
+msgid "{} Mbit/s"
+msgstr "{} MB/s"
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the bitrate
+#: ../src/utils.vala:103
+#, fuzzy
+msgid "{} Gbit/s"
+msgstr "{} GB/s"
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the bitrate
+#: ../src/utils.vala:105
+#, fuzzy
+msgid "{} Tbit/s"
+msgstr "{} TB/s"
+
+#. TRANSLATORS: Please leave %u as it is, it is replaced by the bit rate
+#: ../src/utils.vala:114
+#, c-format
+msgid "%u bit/s"
+msgid_plural "%u bit/s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
+#: ../src/utils.vala:127
 msgid "{} kHz"
 msgstr "{} kHz"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
-#: ../src/utils.vala:101
+#: ../src/utils.vala:129
 msgid "{} MHz"
 msgstr "{} MHz"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
-#: ../src/utils.vala:103
+#: ../src/utils.vala:131
 msgid "{} GHz"
 msgstr "{} GHz"
 
 #. TRANSLATORS: Please leave %u as it is, it is replaced by the frequency
-#: ../src/utils.vala:112
+#: ../src/utils.vala:140
 #, c-format
 msgid "%u Hz"
 msgid_plural "%u Hz"

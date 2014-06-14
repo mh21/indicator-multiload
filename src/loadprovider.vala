@@ -18,7 +18,7 @@
 
 public class LoadProvider : Provider {
     public LoadProvider() {
-        base("load", {"avg", "avg5", "avg15", "cpus"}, 'd');
+        base("load", {"avg", "avg5", "avg15", "cpus"}, "d");
     }
 
     public override void update() {

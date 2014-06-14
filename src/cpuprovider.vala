@@ -34,7 +34,7 @@ public class CpuProvider : Provider {
     }
 
     public CpuProvider() {
-        base("cpu", fields(), 'p');
+        base("cpu", fields(), "p");
     }
 
     private void updatecpu(uint index, uint64 user, uint64 sys, uint64 nice,

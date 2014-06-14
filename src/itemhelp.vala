@@ -56,32 +56,37 @@ public class ItemHelp : Object {
             string[] keys = provider.keys;
             for (uint i = 0, isize = keys.length; i < isize; ++i) {
                 var variable = @"$(provider.id).$(keys[i])";
-                var expression = "";
-                switch (provider.displaytype) {
-                case 'd':
-                    expression = @"$$(decimals($variable,2))";
-                    break;
-                case 'p':
-                    expression = @"$$(percent($variable))";
-                    break;
-                case 's':
-                    expression = @"$$(speed($variable))";
-                    break;
-                case 'i':
-                    expression = @"$$(size($variable))";
-                    break;
-                case 'f':
-                    expression = @"$$(frequency($variable))";
-                    break;
-                default:
-                    expression = @"$$($variable)";
-                    break;
+                for (uint j = 0, jsize = provider.displaytypes.length; j < jsize; ++j) {
+                    var expression = "";
+                    switch (provider.displaytypes[j]) {
+                    case 'b':
+                        expression = @"$$(bitrate($variable))";
+                        break;
+                    case 'd':
+                        expression = @"$$(decimals($variable,2))";
+                        break;
+                    case 'p':
+                        expression = @"$$(percent($variable))";
+                        break;
+                    case 's':
+                        expression = @"$$(speed($variable))";
+                        break;
+                    case 'i':
+                        expression = @"$$(size($variable))";
+                        break;
+                    case 'f':
+                        expression = @"$$(frequency($variable))";
+                        break;
+                    default:
+                        expression = @"$$($variable)";
+                        break;
+                    }
+                    expressions += expression;
+                    this.itemstore.insert_with_values(null, parent, -1,
+                            0, keys[i],
+                            1, expression,
+                            3, expressions.length - 1);
                 }
-                expressions += expression;
-                this.itemstore.insert_with_values(null, parent, -1,
-                        0, keys[i],
-                        1, expression,
-                        3, expressions.length - 1);
             }
         }
         this.menumodel.expressions = expressions;

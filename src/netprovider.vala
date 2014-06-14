@@ -41,7 +41,7 @@ public class NetProvider : Provider {
 
     public NetProvider() {
         string[] devices;
-        base("net", fields(out devices), 's');
+        base("net", fields(out devices), "sb");
         this.devicefields = devices;
     }
 

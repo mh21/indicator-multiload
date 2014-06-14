@@ -42,7 +42,7 @@ public class CpuFreqProvider : Provider {
     }
 
     public CpuFreqProvider() {
-        base("cpufreq", fields(), 'f');
+        base("cpufreq", fields(), "f");
     }
 
     construct {
