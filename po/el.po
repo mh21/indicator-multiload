@@ -44,16 +44,16 @@ msgstr ""
 "Project-Id-Version: gnome-applets.HEAD.el\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: 2012-05-24 07:34+0000\n"
-"Last-Translator: Simos Tsimperis <simos.medical@gmail.com>\n"
+"PO-Revision-Date: 2013-02-11 19:36+0000\n"
+"Last-Translator: Michael Kotsarinis <mk73628@gmail.com>\n"
 "Language-Team: Greek <team@gnome.gr>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -534,14 +534,14 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "_Χρήστης"
+#~ msgid "Cach_ed"
+#~ msgstr "Cach_ed"
 
-#~ msgid "S_ystem"
-#~ msgstr "Σ_ύστημα"
+#~ msgid "F_ree"
+#~ msgstr "Ελ_εύθερο"
 
-#~ msgid "N_ice"
-#~ msgstr "Ωραιο_ποίηση"
+#~ msgid "Harddisk"
+#~ msgstr "Σκληρός δίσκος"
 
 #~ msgid "I_OWait"
 #~ msgstr "I_OWait"
@@ -549,62 +549,59 @@ msgstr[1] ""
 #~ msgid "I_dle"
 #~ msgstr "Αδ_ρανής"
 
-#~ msgid "Processor"
-#~ msgstr "Επεξεργαστής"
-
-#~ msgid "Sh_ared"
-#~ msgstr "Διαμοιρα_ζόμενο"
-
-#~ msgid "_Buffers"
-#~ msgstr "_Ενταμιευτές"
-
-#~ msgid "Cach_ed"
-#~ msgstr "Cach_ed"
-
-#~ msgid "F_ree"
-#~ msgstr "Ελ_εύθερο"
+#~ msgid "Load"
+#~ msgstr "Φόρτος"
 
 #~ msgid "Memory"
 #~ msgstr "Μνήμη"
 
-#~ msgid "_In"
-#~ msgstr "_In"
-
-#~ msgid "_Out"
-#~ msgstr "_Out"
-
-#~ msgid "_Local"
-#~ msgstr "_Τοπικό"
-
-#~ msgid "_Background"
-#~ msgstr "_Παρασκήνιο"
+#~ msgid "N_ice"
+#~ msgstr "Ωραιο_ποίηση"
 
 #~ msgid "Network"
 #~ msgstr "Δίκτυο"
 
-#~ msgid "_Used"
-#~ msgstr "_Κατειλημμένο"
+#~ msgid "Processor"
+#~ msgstr "Επεξεργαστής"
 
-#~ msgid "_Free"
-#~ msgstr "_Ελεύθερο"
+#~ msgid "S_ystem"
+#~ msgstr "Σ_ύστημα"
 
-#~ msgid "Swap Space"
-#~ msgstr "Χώρος αντιμετάθεσης"
+#~ msgid "Sh_ared"
+#~ msgstr "Διαμοιρα_ζόμενο"
 
 #~ msgid "_Average"
 #~ msgstr "Μέ_σος Φόρτος"
 
-#~ msgid "Load"
-#~ msgstr "Φόρτος"
+#~ msgid "_Background"
+#~ msgstr "_Παρασκήνιο"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Ενταμιευτές"
+
+#~ msgid "_Free"
+#~ msgstr "_Ελεύθερο"
+
+#~ msgid "_In"
+#~ msgstr "_In"
+
+#~ msgid "_Local"
+#~ msgstr "_Τοπικό"
+
+#~ msgid "_Out"
+#~ msgstr "_Out"
 
 #~ msgid "_Read"
 #~ msgstr "Α_νάγνωση"
 
+#~ msgid "_Used"
+#~ msgstr "_Κατειλημμένο"
+
+#~ msgid "_User"
+#~ msgstr "_Χρήστης"
+
 #~ msgid "_Write"
 #~ msgstr "Ε_γγραφή"
 
-#~ msgid "Harddisk"
-#~ msgstr "Σκληρός δίσκος"
-
-#~ msgid "Show debug messages"
-#~ msgstr "Εμφάνιση μηνυμάτων αποσφαλμάτωσης"
+#~ msgid "Swap Space"
+#~ msgstr "Χώρος αντιμετάθεσης"

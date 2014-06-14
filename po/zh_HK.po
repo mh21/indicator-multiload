@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets 2.32.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>\n"
 "Language-Team: Chinese (Hong Kong) <community@linuxhall.org>\n"
 "Language: zh_HK\n"
@@ -23,8 +23,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:28+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -496,30 +496,7 @@ msgstr ""
 msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
-
-#~ msgid "_User"
-#~ msgstr "使用者(_U)"
-
-#~ msgid "S_ystem"
-#~ msgstr "系統(_Y)"
-
-#~ msgid "N_ice"
-#~ msgstr "N_ice"
-
-#~ msgid "I_OWait"
-#~ msgstr "I_OWait"
-
-#~ msgid "I_dle"
-#~ msgstr "閒置(_D)"
-
-#~ msgid "Processor"
-#~ msgstr "處理器"
-
-#~ msgid "Sh_ared"
-#~ msgstr "分享(_A)"
-
-#~ msgid "_Buffers"
-#~ msgstr "緩衝區(_B)"
+msgstr[1] ""
 
 #~ msgid "Cach_ed"
 #~ msgstr "快取記憶(_E)"
@@ -527,29 +504,35 @@ msgstr[0] ""
 #~ msgid "F_ree"
 #~ msgstr "未用(_R)"
 
+#~ msgid "Harddisk"
+#~ msgstr "硬碟"
+
+#~ msgid "I_OWait"
+#~ msgstr "I_OWait"
+
+#~ msgid "I_dle"
+#~ msgstr "閒置(_D)"
+
+#~ msgid "Load"
+#~ msgstr "負載"
+
 #~ msgid "Memory"
 #~ msgstr "記憶體"
 
-#~ msgid "_In"
-#~ msgstr "進(_I)"
-
-#~ msgid "_Out"
-#~ msgstr "出(_O)"
-
-#~ msgid "_Local"
-#~ msgstr "本地端(_L)"
-
-#~ msgid "_Background"
-#~ msgstr "背景顏色(_B)"
+#~ msgid "N_ice"
+#~ msgstr "N_ice"
 
 #~ msgid "Network"
 #~ msgstr "網絡"
 
-#~ msgid "_Used"
-#~ msgstr "使用中(_U)"
+#~ msgid "Processor"
+#~ msgstr "處理器"
 
-#~ msgid "_Free"
-#~ msgstr "可用(_F)"
+#~ msgid "S_ystem"
+#~ msgstr "系統(_Y)"
+
+#~ msgid "Sh_ared"
+#~ msgstr "分享(_A)"
 
 #~ msgid "Swap Space"
 #~ msgstr "交換記憶"
@@ -557,14 +540,32 @@ msgstr[0] ""
 #~ msgid "_Average"
 #~ msgstr "平均(_A)"
 
-#~ msgid "Load"
-#~ msgstr "負載"
+#~ msgid "_Background"
+#~ msgstr "背景顏色(_B)"
+
+#~ msgid "_Buffers"
+#~ msgstr "緩衝區(_B)"
+
+#~ msgid "_Free"
+#~ msgstr "可用(_F)"
+
+#~ msgid "_In"
+#~ msgstr "進(_I)"
+
+#~ msgid "_Local"
+#~ msgstr "本地端(_L)"
+
+#~ msgid "_Out"
+#~ msgstr "出(_O)"
 
 #~ msgid "_Read"
 #~ msgstr "讀(_R)"
 
+#~ msgid "_Used"
+#~ msgstr "使用中(_U)"
+
+#~ msgid "_User"
+#~ msgstr "使用者(_U)"
+
 #~ msgid "_Write"
 #~ msgstr "寫(_W)"
-
-#~ msgid "Harddisk"
-#~ msgstr "硬碟"

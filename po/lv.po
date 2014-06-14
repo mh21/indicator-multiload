@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: lv\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Anita Reitere <nitalynx@gmail.com>\n"
 "Language-Team: Latviešu <kde-i18n-doc@kde.org>\n"
 "Language: \n"
@@ -20,8 +20,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -492,31 +492,6 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-
-#~ msgid "_User"
-#~ msgstr "_Lietotājs"
-
-#~ msgid "S_ystem"
-#~ msgstr "S_istēma"
-
-#~ msgid "N_ice"
-#~ msgstr "J_auks"
-
-#~ msgid "I_OWait"
-#~ msgstr "I_O gaidīšana"
-
-#~ msgid "I_dle"
-#~ msgstr "Dī_kstāvē"
-
-#~ msgid "Processor"
-#~ msgstr "Procesors"
-
-#~ msgid "Sh_ared"
-#~ msgstr "_Koplietots"
-
-#~ msgid "_Buffers"
-#~ msgstr "_Buferi"
 
 #~ msgid "Cach_ed"
 #~ msgstr "K_ešots"
@@ -524,29 +499,35 @@ msgstr[2] ""
 #~ msgid "F_ree"
 #~ msgstr "B_rīva"
 
+#~ msgid "Harddisk"
+#~ msgstr "Cietais disks"
+
+#~ msgid "I_OWait"
+#~ msgstr "I_O gaidīšana"
+
+#~ msgid "I_dle"
+#~ msgstr "Dī_kstāvē"
+
+#~ msgid "Load"
+#~ msgstr "Noslodze"
+
 #~ msgid "Memory"
 #~ msgstr "Atmiņa"
 
-#~ msgid "_In"
-#~ msgstr "_Ienākošā"
-
-#~ msgid "_Out"
-#~ msgstr "I_zejošā"
-
-#~ msgid "_Local"
-#~ msgstr "_Lokālā"
-
-#~ msgid "_Background"
-#~ msgstr "_Fons"
+#~ msgid "N_ice"
+#~ msgstr "J_auks"
 
 #~ msgid "Network"
 #~ msgstr "Tīkls"
 
-#~ msgid "_Used"
-#~ msgstr "_Izmantoti"
+#~ msgid "Processor"
+#~ msgstr "Procesors"
 
-#~ msgid "_Free"
-#~ msgstr "_Brīvi"
+#~ msgid "S_ystem"
+#~ msgstr "S_istēma"
+
+#~ msgid "Sh_ared"
+#~ msgstr "_Koplietots"
 
 #~ msgid "Swap Space"
 #~ msgstr "Maiņvieta"
@@ -554,14 +535,32 @@ msgstr[2] ""
 #~ msgid "_Average"
 #~ msgstr "_Vidēji"
 
-#~ msgid "Load"
-#~ msgstr "Noslodze"
+#~ msgid "_Background"
+#~ msgstr "_Fons"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Buferi"
+
+#~ msgid "_Free"
+#~ msgstr "_Brīvi"
+
+#~ msgid "_In"
+#~ msgstr "_Ienākošā"
+
+#~ msgid "_Local"
+#~ msgstr "_Lokālā"
+
+#~ msgid "_Out"
+#~ msgstr "I_zejošā"
 
 #~ msgid "_Read"
 #~ msgstr "_Lasīt"
 
+#~ msgid "_Used"
+#~ msgstr "_Izmantoti"
+
+#~ msgid "_User"
+#~ msgstr "_Lietotājs"
+
 #~ msgid "_Write"
 #~ msgstr "_Rakstīt"
-
-#~ msgid "Harddisk"
-#~ msgstr "Cietais disks"

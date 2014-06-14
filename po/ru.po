@@ -17,8 +17,8 @@ msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: 2012-04-18 07:37+0000\n"
-"Last-Translator: Vassili Platonov <Unknown>\n"
+"PO-Revision-Date: 2013-08-09 18:42+0000\n"
+"Last-Translator: Alexander Gorishnyak <kefir500@gmail.com>\n"
 "Language-Team: Russian <gnome-cyr@gnome.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -26,8 +26,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -49,7 +49,9 @@ msgstr ""
 "Леонид Кантер <leon@asplinux.ru>\n"
 "\n"
 "Launchpad Contributions:\n"
+"  Alexander Gorishnyak https://launchpad.net/~kefir500\n"
 "  Eugene Marshal https://launchpad.net/~lowrider\n"
+"  Michael Hofmann https://launchpad.net/~mh21\n"
 "  Vassili Platonov https://launchpad.net/~vassilip\n"
 "  Yuri Myasoedov https://launchpad.net/~ymyasoedov\n"
 "  zmicier https://launchpad.net/~zmicier"
@@ -72,15 +74,15 @@ msgstr ""
 
 #: ../data/preferences.ui.in.h:7
 msgid "Minimum:"
-msgstr ""
+msgstr "Минимум:"
 
 #: ../data/preferences.ui.in.h:8
 msgid "Maximum:"
-msgstr ""
+msgstr "Максимум:"
 
 #: ../data/preferences.ui.in.h:9
 msgid "Smoothing:"
-msgstr ""
+msgstr "Сглаживание:"
 
 #: ../data/preferences.ui.in.h:10
 msgid "pixels"
@@ -92,14 +94,12 @@ msgid "Trace"
 msgstr "Цвет кривой"
 
 #: ../data/preferences.ui.in.h:12
-#, fuzzy
 msgid "Expression:"
-msgstr "Выражение кривой"
+msgstr "Выражение:"
 
 #: ../data/preferences.ui.in.h:13
-#, fuzzy
 msgid "Color:"
-msgstr "Цвета"
+msgstr "Цвет:"
 
 #: ../data/preferences.ui.in.h:14
 msgid "Variable"
@@ -308,10 +308,14 @@ msgid ""
 "down)) up $(speed(net.up)) Swap $(size(swap.used)) Load $(decimals(load."
 "avg,2)) Disk read $(speed(disk.read)) write $(speed(disk.write))\" ]"
 msgstr ""
+"[ \"ЦПУ $(percent(cpu.inuse)) ОЗУ $(size(mem.user)) Сеть вход. $(speed(net."
+"down)) исход. $(speed(net.up)) Подкачка $(size(swap.used)) Нагрузка "
+"$(decimals(load.avg,2)) Чтение диска $(speed(disk.read)) запись $(speed(disk."
+"write))\" ]"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:11
 msgid "Information in the accessible description of the indicator"
-msgstr ""
+msgstr "Сведения с доступным описанием в индикаторе"
 
 #. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, and commas.
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:13
@@ -339,6 +343,11 @@ msgid ""
 "$(decimals(load.avg,2))\", \"Disk: read $(speed(disk.read)), write "
 "$(speed(disk.write))\" ]"
 msgstr ""
+"[ \"ЦПУ: $(percent(cpu.inuse)), Ожидание вв./выв. $(percent(cpu.io))\", "
+"\"ОЗУ: $(size(mem.user)), Врем. файлы $(size(mem.cached))\", \"Сеть: вход. "
+"$(speed(net.down)), исх. $(speed(net.up))\", \"Подкачка: $(size(swap."
+"used))\", \"Нагрузка: $(decimals(load.avg,2))\", \"Диск: чтение $(speed(disk."
+"read)), запись $(speed(disk.write))\" ]"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:18
 msgid "Information shown as menu entries"
@@ -520,31 +529,6 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-
-#~ msgid "_User"
-#~ msgstr "По_льзователь"
-
-#~ msgid "S_ystem"
-#~ msgstr "С_истема"
-
-#~ msgid "N_ice"
-#~ msgstr "При_оритет"
-
-#~ msgid "I_OWait"
-#~ msgstr "I_OWait"
-
-#~ msgid "I_dle"
-#~ msgstr "Просто_й"
-
-#~ msgid "Processor"
-#~ msgstr "Процессор"
-
-#~ msgid "Sh_ared"
-#~ msgstr "Раз_деляемая"
-
-#~ msgid "_Buffers"
-#~ msgstr "Б_уфера"
 
 #~ msgid "Cach_ed"
 #~ msgstr "К_эшированная"
@@ -552,29 +536,35 @@ msgstr[2] ""
 #~ msgid "F_ree"
 #~ msgstr "Сво_бодная"
 
+#~ msgid "Harddisk"
+#~ msgstr "Жесткий диск"
+
+#~ msgid "I_OWait"
+#~ msgstr "I_OWait"
+
+#~ msgid "I_dle"
+#~ msgstr "Просто_й"
+
+#~ msgid "Load"
+#~ msgstr "Загрузка"
+
 #~ msgid "Memory"
 #~ msgstr "Память"
 
-#~ msgid "_In"
-#~ msgstr "_Исходящий"
-
-#~ msgid "_Out"
-#~ msgstr "_Входящий"
-
-#~ msgid "_Local"
-#~ msgstr "_Внутренний"
-
-#~ msgid "_Background"
-#~ msgstr "_Фон"
+#~ msgid "N_ice"
+#~ msgstr "При_оритет"
 
 #~ msgid "Network"
 #~ msgstr "Сеть"
 
-#~ msgid "_Used"
-#~ msgstr "Ис_пользуется"
+#~ msgid "Processor"
+#~ msgstr "Процессор"
 
-#~ msgid "_Free"
-#~ msgstr "Сво_бодно"
+#~ msgid "S_ystem"
+#~ msgstr "С_истема"
+
+#~ msgid "Sh_ared"
+#~ msgstr "Раз_деляемая"
 
 #~ msgid "Swap Space"
 #~ msgstr "Подкачка"
@@ -582,17 +572,26 @@ msgstr[2] ""
 #~ msgid "_Average"
 #~ msgstr "С_редняя"
 
-#~ msgid "Load"
-#~ msgstr "Загрузка"
+#~ msgid "_Background"
+#~ msgstr "_Фон"
+
+#~ msgid "_Buffers"
+#~ msgstr "Б_уфера"
+
+#~ msgid "_Free"
+#~ msgstr "Сво_бодно"
+
+#~ msgid "_Local"
+#~ msgstr "_Внутренний"
 
 #~ msgid "_Read"
 #~ msgstr "_Чтение"
 
-#~ msgid "_Write"
-#~ msgstr "Запис_ь"
+#~ msgid "_Used"
+#~ msgstr "Ис_пользуется"
 
-#~ msgid "Harddisk"
-#~ msgstr "Жесткий диск"
+#~ msgid "_User"
+#~ msgstr "По_льзователь"
 
 #~ msgid "Graph alpha value"
 #~ msgstr "Прозрачность диаграммы"
@@ -600,5 +599,11 @@ msgstr[2] ""
 #~ msgid "List available expression identifiers"
 #~ msgstr "Список доступных идентификаторов выражения"
 
-#~ msgid "Show debug messages"
-#~ msgstr "Показывать отладочные сообщения"
+#~ msgid "_Write"
+#~ msgstr "Запис_ь"
+
+#~ msgid "_Out"
+#~ msgstr "_Исходящий"
+
+#~ msgid "_In"
+#~ msgstr "_Входящий"

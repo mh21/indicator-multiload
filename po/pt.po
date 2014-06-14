@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 2.32\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Duarte Loreto <happyguy_pt@hotmail.com>\n"
 "Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
 "Language: pt\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -488,14 +488,14 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "_Utilizador"
+#~ msgid "Cach_ed"
+#~ msgstr "Em Cac_he"
 
-#~ msgid "S_ystem"
-#~ msgstr "S_istema"
+#~ msgid "F_ree"
+#~ msgstr "Li_vre"
 
-#~ msgid "N_ice"
-#~ msgstr "P_rioridade (nice)"
+#~ msgid "Harddisk"
+#~ msgstr "Disco rígido"
 
 #~ msgid "I_OWait"
 #~ msgstr "Espera I_O"
@@ -503,44 +503,26 @@ msgstr[1] ""
 #~ msgid "I_dle"
 #~ msgstr "I_nactivo"
 
-#~ msgid "Processor"
-#~ msgstr "Processador"
-
-#~ msgid "Sh_ared"
-#~ msgstr "P_artilhada"
-
-#~ msgid "_Buffers"
-#~ msgstr "_Buffers"
-
-#~ msgid "Cach_ed"
-#~ msgstr "Em Cac_he"
-
-#~ msgid "F_ree"
-#~ msgstr "Li_vre"
+#~ msgid "Load"
+#~ msgstr "Carga"
 
 #~ msgid "Memory"
 #~ msgstr "Memória"
 
-#~ msgid "_In"
-#~ msgstr "_Entrada"
-
-#~ msgid "_Out"
-#~ msgstr "_Saída"
-
-#~ msgid "_Local"
-#~ msgstr "_Local"
-
-#~ msgid "_Background"
-#~ msgstr "Cor de _fundo"
+#~ msgid "N_ice"
+#~ msgstr "P_rioridade (nice)"
 
 #~ msgid "Network"
 #~ msgstr "Rede"
 
-#~ msgid "_Used"
-#~ msgstr "_Utilizado"
+#~ msgid "Processor"
+#~ msgstr "Processador"
 
-#~ msgid "_Free"
-#~ msgstr "Li_vre"
+#~ msgid "S_ystem"
+#~ msgstr "S_istema"
+
+#~ msgid "Sh_ared"
+#~ msgstr "P_artilhada"
 
 #~ msgid "Swap Space"
 #~ msgstr "Espaço de Swap"
@@ -548,14 +530,32 @@ msgstr[1] ""
 #~ msgid "_Average"
 #~ msgstr "_Média"
 
-#~ msgid "Load"
-#~ msgstr "Carga"
+#~ msgid "_Background"
+#~ msgstr "Cor de _fundo"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Buffers"
+
+#~ msgid "_Free"
+#~ msgstr "Li_vre"
+
+#~ msgid "_In"
+#~ msgstr "_Entrada"
+
+#~ msgid "_Local"
+#~ msgstr "_Local"
+
+#~ msgid "_Out"
+#~ msgstr "_Saída"
 
 #~ msgid "_Read"
 #~ msgstr "_Leitura"
 
+#~ msgid "_Used"
+#~ msgstr "_Utilizado"
+
+#~ msgid "_User"
+#~ msgstr "_Utilizador"
+
 #~ msgid "_Write"
 #~ msgstr "_Escrita"
-
-#~ msgid "Harddisk"
-#~ msgstr "Disco rígido"

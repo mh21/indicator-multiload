@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets.HEAD.ro\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Lucian Adrian Grijincu <lucian.grijincu@gmail.com>\n"
 "Language-Team: Romanian Gnome Team <gnomero-list@lists.sourceforge.net>\n"
 "Language: ro\n"
@@ -21,8 +21,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n == 1 ? 0: (((n % 100 > 19) || ((n % 100 "
 "== 0) && (n != 0))) ? 2: 1));\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -495,31 +495,6 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-
-#~ msgid "_User"
-#~ msgstr "_Utilizator"
-
-#~ msgid "S_ystem"
-#~ msgstr "S_istem"
-
-#~ msgid "N_ice"
-#~ msgstr "N_ice"
-
-#~ msgid "I_OWait"
-#~ msgstr "I_OWait"
-
-#~ msgid "I_dle"
-#~ msgstr "Ne_folosit"
-
-#~ msgid "Processor"
-#~ msgstr "Procesor"
-
-#~ msgid "Sh_ared"
-#~ msgstr "P_artajat"
-
-#~ msgid "_Buffers"
-#~ msgstr "_Buffere"
 
 #~ msgid "Cach_ed"
 #~ msgstr "Ca_che"
@@ -527,29 +502,35 @@ msgstr[2] ""
 #~ msgid "F_ree"
 #~ msgstr "Libe_r"
 
+#~ msgid "Harddisk"
+#~ msgstr "Disc"
+
+#~ msgid "I_OWait"
+#~ msgstr "I_OWait"
+
+#~ msgid "I_dle"
+#~ msgstr "Ne_folosit"
+
+#~ msgid "Load"
+#~ msgstr "Încărcare"
+
 #~ msgid "Memory"
 #~ msgstr "Memorie"
 
-#~ msgid "_In"
-#~ msgstr "_Intrare"
-
-#~ msgid "_Out"
-#~ msgstr "I_eșire"
-
-#~ msgid "_Local"
-#~ msgstr "_Local"
-
-#~ msgid "_Background"
-#~ msgstr "_Fundal"
+#~ msgid "N_ice"
+#~ msgstr "N_ice"
 
 #~ msgid "Network"
 #~ msgstr "Rețea"
 
-#~ msgid "_Used"
-#~ msgstr "F_olosit"
+#~ msgid "Processor"
+#~ msgstr "Procesor"
 
-#~ msgid "_Free"
-#~ msgstr "_Liber"
+#~ msgid "S_ystem"
+#~ msgstr "S_istem"
+
+#~ msgid "Sh_ared"
+#~ msgstr "P_artajat"
 
 #~ msgid "Swap Space"
 #~ msgstr "Swap"
@@ -557,14 +538,32 @@ msgstr[2] ""
 #~ msgid "_Average"
 #~ msgstr "Încărc_are medie"
 
-#~ msgid "Load"
-#~ msgstr "Încărcare"
+#~ msgid "_Background"
+#~ msgstr "_Fundal"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Buffere"
+
+#~ msgid "_Free"
+#~ msgstr "_Liber"
+
+#~ msgid "_In"
+#~ msgstr "_Intrare"
+
+#~ msgid "_Local"
+#~ msgstr "_Local"
+
+#~ msgid "_Out"
+#~ msgstr "I_eșire"
 
 #~ msgid "_Read"
 #~ msgstr "Citi_re"
 
+#~ msgid "_Used"
+#~ msgstr "F_olosit"
+
+#~ msgid "_User"
+#~ msgstr "_Utilizator"
+
 #~ msgid "_Write"
 #~ msgstr "_Scriere"
-
-#~ msgid "Harddisk"
-#~ msgstr "Disc"

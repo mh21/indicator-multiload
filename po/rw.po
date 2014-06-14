@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets 2.12\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Steve Murphy <murf@e-tools.com>\n"
 "Language-Team: Kinyarwanda <translation-team-rw@lists.sourceforge.net>\n"
 "Language: rw\n"
@@ -24,8 +24,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n!=1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -493,6 +493,10 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
+# basctl/source\basicide\basidesh.src:RID_STR_OPEN.text
+#~ msgid "Load"
+#~ msgstr "Ibirimo"
+
 # offmgr/source\offapp\dialog\treeopt.src:RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.4.text
 #~ msgid "Memory"
 #~ msgstr "Ububiko"
@@ -500,7 +504,3 @@ msgstr[1] ""
 # 4032
 #~ msgid "Network"
 #~ msgstr "urusobe"
-
-# basctl/source\basicide\basidesh.src:RID_STR_OPEN.text
-#~ msgid "Load"
-#~ msgstr "Ibirimo"

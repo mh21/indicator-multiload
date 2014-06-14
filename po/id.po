@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Dirgita <dirgitadevina@yahoo.co.id>\n"
 "Language-Team: Indonesian <gnome-l10n-id@googlegroups.com>\n"
 "Language: id\n"
@@ -20,8 +20,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 "X-Poedit-Country: Indonesia\n"
 "X-Poedit-Language: Indonesian\n"
 
@@ -491,30 +491,7 @@ msgstr ""
 msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
-
-#~ msgid "_User"
-#~ msgstr "Pengg_una"
-
-#~ msgid "S_ystem"
-#~ msgstr "S_istem"
-
-#~ msgid "N_ice"
-#~ msgstr "Angka_tan"
-
-#~ msgid "I_OWait"
-#~ msgstr "_MK Tunggu"
-
-#~ msgid "I_dle"
-#~ msgstr "Men_ganggur"
-
-#~ msgid "Processor"
-#~ msgstr "Prosesor"
-
-#~ msgid "Sh_ared"
-#~ msgstr "Berb_agi"
-
-#~ msgid "_Buffers"
-#~ msgstr "_Penyangga"
+msgstr[1] ""
 
 #~ msgid "Cach_ed"
 #~ msgstr "T_embolok"
@@ -522,29 +499,35 @@ msgstr[0] ""
 #~ msgid "F_ree"
 #~ msgstr "_Bebas"
 
+#~ msgid "Harddisk"
+#~ msgstr "Hard Disk"
+
+#~ msgid "I_OWait"
+#~ msgstr "_MK Tunggu"
+
+#~ msgid "I_dle"
+#~ msgstr "Men_ganggur"
+
+#~ msgid "Load"
+#~ msgstr "Beban"
+
 #~ msgid "Memory"
 #~ msgstr "Memori"
 
-#~ msgid "_In"
-#~ msgstr "_Masuk"
-
-#~ msgid "_Out"
-#~ msgstr "_Keluar"
-
-#~ msgid "_Local"
-#~ msgstr "_Lokal"
-
-#~ msgid "_Background"
-#~ msgstr "Latar _Belakang"
+#~ msgid "N_ice"
+#~ msgstr "Angka_tan"
 
 #~ msgid "Network"
 #~ msgstr "Jaringan"
 
-#~ msgid "_Used"
-#~ msgstr "_Dipakai"
+#~ msgid "Processor"
+#~ msgstr "Prosesor"
 
-#~ msgid "_Free"
-#~ msgstr "_Bebas"
+#~ msgid "S_ystem"
+#~ msgstr "S_istem"
+
+#~ msgid "Sh_ared"
+#~ msgstr "Berb_agi"
 
 #~ msgid "Swap Space"
 #~ msgstr "Ruang Swap"
@@ -552,14 +535,32 @@ msgstr[0] ""
 #~ msgid "_Average"
 #~ msgstr "R_ata-rata"
 
-#~ msgid "Load"
-#~ msgstr "Beban"
+#~ msgid "_Background"
+#~ msgstr "Latar _Belakang"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Penyangga"
+
+#~ msgid "_Free"
+#~ msgstr "_Bebas"
+
+#~ msgid "_In"
+#~ msgstr "_Masuk"
+
+#~ msgid "_Local"
+#~ msgstr "_Lokal"
+
+#~ msgid "_Out"
+#~ msgstr "_Keluar"
 
 #~ msgid "_Read"
 #~ msgstr "_Baca"
 
+#~ msgid "_Used"
+#~ msgstr "_Dipakai"
+
+#~ msgid "_User"
+#~ msgstr "Pengg_una"
+
 #~ msgid "_Write"
 #~ msgstr "_Tulis"
-
-#~ msgid "Harddisk"
-#~ msgstr "Hard Disk"

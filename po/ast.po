@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets-2.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Mikel González <dangerous_piper@softastur.org>\n"
 "Language-Team: Asturian <gnome@softastur.org>\n"
 "Language: ast\n"
@@ -18,8 +18,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:26+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -33,6 +33,7 @@ msgstr ""
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
+"  Mikel González https://launchpad.net/~dangerous-piper\n"
 "  Mikel González https://launchpad.net/~mikelglez"
 
 #: ../data/preferences.ui.in.h:3
@@ -492,14 +493,14 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "_Usuariu"
+#~ msgid "Cach_ed"
+#~ msgstr "Cach_eada"
 
-#~ msgid "S_ystem"
-#~ msgstr "Si_stema"
+#~ msgid "F_ree"
+#~ msgstr "Llib_re"
 
-#~ msgid "N_ice"
-#~ msgstr "Pr_ioridá"
+#~ msgid "Harddisk"
+#~ msgstr "Discu duru"
 
 #~ msgid "I_OWait"
 #~ msgstr "Espera _E/S"
@@ -507,44 +508,26 @@ msgstr[1] ""
 #~ msgid "I_dle"
 #~ msgstr "I_nactivu"
 
-#~ msgid "Processor"
-#~ msgstr "Procesador"
-
-#~ msgid "Sh_ared"
-#~ msgstr "Compartía"
-
-#~ msgid "_Buffers"
-#~ msgstr "_Buffers"
-
-#~ msgid "Cach_ed"
-#~ msgstr "Cach_eada"
-
-#~ msgid "F_ree"
-#~ msgstr "Llib_re"
+#~ msgid "Load"
+#~ msgstr "Cargar"
 
 #~ msgid "Memory"
 #~ msgstr "Memoria"
 
-#~ msgid "_In"
-#~ msgstr "_Entrada"
-
-#~ msgid "_Out"
-#~ msgstr "_Salida"
-
-#~ msgid "_Local"
-#~ msgstr "_Local"
-
-#~ msgid "_Background"
-#~ msgstr "_Fondu"
+#~ msgid "N_ice"
+#~ msgstr "Pr_ioridá"
 
 #~ msgid "Network"
 #~ msgstr "Rede"
 
-#~ msgid "_Used"
-#~ msgstr "_Usáu"
+#~ msgid "Processor"
+#~ msgstr "Procesador"
 
-#~ msgid "_Free"
-#~ msgstr "_Llibre"
+#~ msgid "S_ystem"
+#~ msgstr "Si_stema"
+
+#~ msgid "Sh_ared"
+#~ msgstr "Compartía"
 
 #~ msgid "Swap Space"
 #~ msgstr "Espaciu Swap"
@@ -552,14 +535,32 @@ msgstr[1] ""
 #~ msgid "_Average"
 #~ msgstr "_Media"
 
-#~ msgid "Load"
-#~ msgstr "Cargar"
+#~ msgid "_Background"
+#~ msgstr "_Fondu"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Buffers"
+
+#~ msgid "_Free"
+#~ msgstr "_Llibre"
+
+#~ msgid "_In"
+#~ msgstr "_Entrada"
+
+#~ msgid "_Local"
+#~ msgstr "_Local"
+
+#~ msgid "_Out"
+#~ msgstr "_Salida"
 
 #~ msgid "_Read"
 #~ msgstr "_Llectura"
 
+#~ msgid "_Used"
+#~ msgstr "_Usáu"
+
+#~ msgid "_User"
+#~ msgstr "_Usuariu"
+
 #~ msgid "_Write"
 #~ msgstr "_Escritura"
-
-#~ msgid "Harddisk"
-#~ msgstr "Discu duru"

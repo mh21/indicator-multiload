@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: si\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Danishka Navin <danishka@gmail.com>\n"
 "Language-Team: Sinhala <en@li.org>\n"
 "Language: si\n"
@@ -17,8 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -485,38 +485,38 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "පරිශීලක (_U)"
-
-#~ msgid "S_ystem"
-#~ msgstr "පද්ධතිය (_y)"
-
 #~ msgid "F_ree"
 #~ msgstr "භාවිතා නොකළ (_r)"
 
-#~ msgid "Memory"
-#~ msgstr "මතකය"
-
-#~ msgid "_Background"
-#~ msgstr "පසුබිම (_B)"
-
-#~ msgid "Network"
-#~ msgstr "ජාලය"
-
-#~ msgid "_Used"
-#~ msgstr "භාවිතා කළ (_U)"
-
-#~ msgid "_Free"
-#~ msgstr "භාවිතා නොකළ (_F)"
+#~ msgid "Harddisk"
+#~ msgstr "දෘඩ තැටිය"
 
 #~ msgid "Load"
 #~ msgstr "පූරණය"
 
+#~ msgid "Memory"
+#~ msgstr "මතකය"
+
+#~ msgid "Network"
+#~ msgstr "ජාලය"
+
+#~ msgid "S_ystem"
+#~ msgstr "පද්ධතිය (_y)"
+
+#~ msgid "_Background"
+#~ msgstr "පසුබිම (_B)"
+
+#~ msgid "_Free"
+#~ msgstr "භාවිතා නොකළ (_F)"
+
 #~ msgid "_Read"
 #~ msgstr "කියවීම (_R)"
 
+#~ msgid "_Used"
+#~ msgstr "භාවිතා කළ (_U)"
+
+#~ msgid "_User"
+#~ msgstr "පරිශීලක (_U)"
+
 #~ msgid "_Write"
 #~ msgstr "ලිවීම (_W)"
-
-#~ msgid "Harddisk"
-#~ msgstr "දෘඩ තැටිය"

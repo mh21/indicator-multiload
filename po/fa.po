@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets gnome-2-12\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Roozbeh Pournader <roozbeh@farsiweb.info>\n"
 "Language-Team: \n"
 "Language: \n"
@@ -19,8 +19,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -491,30 +491,7 @@ msgstr ""
 msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
-
-#~ msgid "_User"
-#~ msgstr "_کاربر"
-
-#~ msgid "S_ystem"
-#~ msgstr "_سیستم"
-
-#~ msgid "N_ice"
-#~ msgstr "Nice"
-
-#~ msgid "I_OWait"
-#~ msgstr "IOWait"
-
-#~ msgid "I_dle"
-#~ msgstr "_بی‌کار"
-
-#~ msgid "Processor"
-#~ msgstr "پردازنده"
-
-#~ msgid "Sh_ared"
-#~ msgstr "_اشتراکی"
-
-#~ msgid "_Buffers"
-#~ msgstr "_میانگیرها"
+msgstr[1] ""
 
 #~ msgid "Cach_ed"
 #~ msgstr "_نهان‌شده"
@@ -522,20 +499,35 @@ msgstr[0] ""
 #~ msgid "F_ree"
 #~ msgstr "آ_زاد"
 
+#~ msgid "Harddisk"
+#~ msgstr "دیسک سخت"
+
+#~ msgid "I_OWait"
+#~ msgstr "IOWait"
+
+#~ msgid "I_dle"
+#~ msgstr "_بی‌کار"
+
+#~ msgid "Load"
+#~ msgstr "بار"
+
 #~ msgid "Memory"
 #~ msgstr "حافظه"
 
-#~ msgid "_Background"
-#~ msgstr "پ_س‌زمینه"
+#~ msgid "N_ice"
+#~ msgstr "Nice"
 
 #~ msgid "Network"
 #~ msgstr "شبکه"
 
-#~ msgid "_Used"
-#~ msgstr "است_فاده شده"
+#~ msgid "Processor"
+#~ msgstr "پردازنده"
 
-#~ msgid "_Free"
-#~ msgstr "آ_زاد"
+#~ msgid "S_ystem"
+#~ msgstr "_سیستم"
+
+#~ msgid "Sh_ared"
+#~ msgstr "_اشتراکی"
 
 #~ msgid "Swap Space"
 #~ msgstr "فضای مبادله"
@@ -543,14 +535,23 @@ msgstr[0] ""
 #~ msgid "_Average"
 #~ msgstr "_متوسط"
 
-#~ msgid "Load"
-#~ msgstr "بار"
+#~ msgid "_Background"
+#~ msgstr "پ_س‌زمینه"
+
+#~ msgid "_Buffers"
+#~ msgstr "_میانگیرها"
+
+#~ msgid "_Free"
+#~ msgstr "آ_زاد"
 
 #~ msgid "_Read"
 #~ msgstr "_خواندن"
 
+#~ msgid "_Used"
+#~ msgstr "است_فاده شده"
+
+#~ msgid "_User"
+#~ msgstr "_کاربر"
+
 #~ msgid "_Write"
 #~ msgstr "_نوشتن"
-
-#~ msgid "Harddisk"
-#~ msgstr "دیسک سخت"

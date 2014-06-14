@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: 2012-03-07 08:23+0000\n"
-"Last-Translator: Sigurpáll Sigurðsson <Icekhaos@hotmail.com>\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
+"Last-Translator: Anna Jonna Ármannsdóttir <annajonna@gmail.com>\n"
 "Language-Team: Icelandic\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -492,14 +492,14 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "_Notandi"
+#~ msgid "Cach_ed"
+#~ msgstr "_Flýtiminni"
 
-#~ msgid "S_ystem"
-#~ msgstr "K_erfi"
+#~ msgid "F_ree"
+#~ msgstr "_Laust"
 
-#~ msgid "N_ice"
-#~ msgstr "_Nice (kurteisi)"
+#~ msgid "Harddisk"
+#~ msgstr "Harður diskur"
 
 #~ msgid "I_OWait"
 #~ msgstr "inntak/úttak_bið"
@@ -507,41 +507,26 @@ msgstr[1] ""
 #~ msgid "I_dle"
 #~ msgstr "I_ðjuleysi"
 
-#~ msgid "Processor"
-#~ msgstr "Örgjörvi"
-
-#~ msgid "Sh_ared"
-#~ msgstr "Sa_mnýtt"
-
-#~ msgid "_Buffers"
-#~ msgstr "_Biðminni"
-
-#~ msgid "Cach_ed"
-#~ msgstr "_Flýtiminni"
-
-#~ msgid "F_ree"
-#~ msgstr "_Laust"
+#~ msgid "Load"
+#~ msgstr "Hlaða"
 
 #~ msgid "Memory"
 #~ msgstr "Minni"
 
-#~ msgid "_In"
-#~ msgstr "_Inn"
-
-#~ msgid "_Out"
-#~ msgstr "_Út"
-
-#~ msgid "_Background"
-#~ msgstr "_Bakgrunnur"
+#~ msgid "N_ice"
+#~ msgstr "_Nice (kurteisi)"
 
 #~ msgid "Network"
 #~ msgstr "Netkerfi"
 
-#~ msgid "_Used"
-#~ msgstr "_Notað"
+#~ msgid "Processor"
+#~ msgstr "Örgjörvi"
 
-#~ msgid "_Free"
-#~ msgstr "_Laust"
+#~ msgid "S_ystem"
+#~ msgstr "K_erfi"
+
+#~ msgid "Sh_ared"
+#~ msgstr "Sa_mnýtt"
 
 #~ msgid "Swap Space"
 #~ msgstr "Síðuskrá"
@@ -549,17 +534,29 @@ msgstr[1] ""
 #~ msgid "_Average"
 #~ msgstr "Með_altal"
 
-#~ msgid "Load"
-#~ msgstr "Hlaða"
+#~ msgid "_Background"
+#~ msgstr "_Bakgrunnur"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Biðminni"
+
+#~ msgid "_Free"
+#~ msgstr "_Laust"
 
 #~ msgid "_Read"
 #~ msgstr "_Lestur"
 
+#~ msgid "_Used"
+#~ msgstr "_Notað"
+
+#~ msgid "_User"
+#~ msgstr "_Notandi"
+
 #~ msgid "_Write"
 #~ msgstr "_Skrift"
 
-#~ msgid "Harddisk"
-#~ msgstr "Harður diskur"
+#~ msgid "_In"
+#~ msgstr "_Inn"
 
-#~ msgid "Show debug messages"
-#~ msgstr "Sýna viðgerðarskilaboð"
+#~ msgid "_Out"
+#~ msgstr "_Út"

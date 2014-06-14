@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Canonical Ltd <translations@canonical.com>\n"
 "Language-Team: Xhosa <xh-translate@ubuntu.com>\n"
 "Language: xh\n"
@@ -17,8 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:28+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -487,14 +487,14 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "_Umsebenzisi"
+#~ msgid "Cach_ed"
+#~ msgstr "iFakwe kuVi_mba wethutyana"
 
-#~ msgid "S_ystem"
-#~ msgstr "iN_kqubo"
+#~ msgid "F_ree"
+#~ msgstr "S_imahla"
 
-#~ msgid "N_ice"
-#~ msgstr "i-N_ice"
+#~ msgid "Harddisk"
+#~ msgstr "Idiski eyakhelwe ngaphakathi"
 
 #~ msgid "I_OWait"
 #~ msgstr "i-I_OWait"
@@ -502,35 +502,26 @@ msgstr[1] ""
 #~ msgid "I_dle"
 #~ msgstr "iL_alele"
 
-#~ msgid "Processor"
-#~ msgstr "Isixhobo sokusebenza"
-
-#~ msgid "Sh_ared"
-#~ msgstr "Kw_abelana"
-
-#~ msgid "_Buffers"
-#~ msgstr "_Izigcini zethutyana"
-
-#~ msgid "Cach_ed"
-#~ msgstr "iFakwe kuVi_mba wethutyana"
-
-#~ msgid "F_ree"
-#~ msgstr "S_imahla"
+#~ msgid "Load"
+#~ msgstr "Faka"
 
 #~ msgid "Memory"
 #~ msgstr "Uvimba weefayili"
 
-#~ msgid "_Background"
-#~ msgstr "_Okungasemva"
+#~ msgid "N_ice"
+#~ msgstr "i-N_ice"
 
 #~ msgid "Network"
 #~ msgstr "Uthungelwano"
 
-#~ msgid "_Used"
-#~ msgstr "_Isetyenzisiwe"
+#~ msgid "Processor"
+#~ msgstr "Isixhobo sokusebenza"
 
-#~ msgid "_Free"
-#~ msgstr "_Ngahlawulelwa"
+#~ msgid "S_ystem"
+#~ msgstr "iN_kqubo"
+
+#~ msgid "Sh_ared"
+#~ msgstr "Kw_abelana"
 
 #~ msgid "Swap Space"
 #~ msgstr "Isithuba soTshintshisano"
@@ -538,14 +529,23 @@ msgstr[1] ""
 #~ msgid "_Average"
 #~ msgstr "u_Mndilili"
 
-#~ msgid "Load"
-#~ msgstr "Faka"
+#~ msgid "_Background"
+#~ msgstr "_Okungasemva"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Izigcini zethutyana"
+
+#~ msgid "_Free"
+#~ msgstr "_Ngahlawulelwa"
 
 #~ msgid "_Read"
 #~ msgstr "_Funda"
 
+#~ msgid "_Used"
+#~ msgstr "_Isetyenzisiwe"
+
+#~ msgid "_User"
+#~ msgstr "_Umsebenzisi"
+
 #~ msgid "_Write"
 #~ msgstr "_Bhala"
-
-#~ msgid "Harddisk"
-#~ msgstr "Idiski eyakhelwe ngaphakathi"

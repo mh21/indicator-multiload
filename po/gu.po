@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets.master.gu\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Sweta Kothari <swkothar@redhat.com>\n"
 "Language-Team: Gujarati\n"
 "Language: \n"
@@ -15,8 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -486,14 +486,14 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "વપરાશકર્તા (_U)"
+#~ msgid "Cach_ed"
+#~ msgstr "કેશવાળી (_e)"
 
-#~ msgid "S_ystem"
-#~ msgstr "સિસ્ટમ (_y)"
+#~ msgid "F_ree"
+#~ msgstr "મુક્ત (_r)"
 
-#~ msgid "N_ice"
-#~ msgstr "સરસ (_i)"
+#~ msgid "Harddisk"
+#~ msgstr "હાર્ડ ડિસ્ક"
 
 #~ msgid "I_OWait"
 #~ msgstr "IOWait (_O)"
@@ -501,44 +501,26 @@ msgstr[1] ""
 #~ msgid "I_dle"
 #~ msgstr "નિષ્ક્રિય (_d)"
 
-#~ msgid "Processor"
-#~ msgstr "પ્રોસેસર"
-
-#~ msgid "Sh_ared"
-#~ msgstr "સહભાગી (_a)"
-
-#~ msgid "_Buffers"
-#~ msgstr "બફરો (_B)"
-
-#~ msgid "Cach_ed"
-#~ msgstr "કેશવાળી (_e)"
-
-#~ msgid "F_ree"
-#~ msgstr "મુક્ત (_r)"
+#~ msgid "Load"
+#~ msgstr "લાવો"
 
 #~ msgid "Memory"
 #~ msgstr "મેમરી"
 
-#~ msgid "_In"
-#~ msgstr "માં (_I)"
-
-#~ msgid "_Out"
-#~ msgstr "બહાર (_O)"
-
-#~ msgid "_Local"
-#~ msgstr "સ્થાનિય (_L)"
-
-#~ msgid "_Background"
-#~ msgstr "પાશ્વ ભાગ (_B)"
+#~ msgid "N_ice"
+#~ msgstr "સરસ (_i)"
 
 #~ msgid "Network"
 #~ msgstr "નેટવર્ક"
 
-#~ msgid "_Used"
-#~ msgstr "વપરાયેલ (_U)"
+#~ msgid "Processor"
+#~ msgstr "પ્રોસેસર"
 
-#~ msgid "_Free"
-#~ msgstr "મુક્ત (_F)"
+#~ msgid "S_ystem"
+#~ msgstr "સિસ્ટમ (_y)"
+
+#~ msgid "Sh_ared"
+#~ msgstr "સહભાગી (_a)"
 
 #~ msgid "Swap Space"
 #~ msgstr "અદલબદલની જગ્યા"
@@ -546,14 +528,32 @@ msgstr[1] ""
 #~ msgid "_Average"
 #~ msgstr "સરેરાશ (_A)"
 
-#~ msgid "Load"
-#~ msgstr "લાવો"
+#~ msgid "_Background"
+#~ msgstr "પાશ્વ ભાગ (_B)"
+
+#~ msgid "_Buffers"
+#~ msgstr "બફરો (_B)"
+
+#~ msgid "_Free"
+#~ msgstr "મુક્ત (_F)"
+
+#~ msgid "_In"
+#~ msgstr "માં (_I)"
+
+#~ msgid "_Local"
+#~ msgstr "સ્થાનિય (_L)"
+
+#~ msgid "_Out"
+#~ msgstr "બહાર (_O)"
 
 #~ msgid "_Read"
 #~ msgstr "વાંચો (_R)"
 
+#~ msgid "_Used"
+#~ msgstr "વપરાયેલ (_U)"
+
+#~ msgid "_User"
+#~ msgstr "વપરાશકર્તા (_U)"
+
 #~ msgid "_Write"
 #~ msgstr "લખો (_W)"
-
-#~ msgid "Harddisk"
-#~ msgstr "હાર્ડ ડિસ્ક"

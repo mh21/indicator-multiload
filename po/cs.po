@@ -16,16 +16,16 @@ msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: 2012-04-26 13:21+0000\n"
-"Last-Translator: Martin Volf <Unknown>\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
+"Last-Translator: Petr Kovar <pknbe@volny.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:26+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -50,6 +50,7 @@ msgstr ""
 "\n"
 "Launchpad Contributions:\n"
 "  Martin Volf https://launchpad.net/~volf-cz\n"
+"  Michael Hofmann https://launchpad.net/~mh21\n"
 "  Petr Kovar https://launchpad.net/~pknbe\n"
 "  Vojtěch Trefný https://launchpad.net/~vojtech.trefny\n"
 "  geniv https://launchpad.net/~geniv"
@@ -515,31 +516,6 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-
-#~ msgid "_User"
-#~ msgstr "_Uživatel"
-
-#~ msgid "S_ystem"
-#~ msgstr "S_ystém"
-
-#~ msgid "N_ice"
-#~ msgstr "Ni_ce"
-
-#~ msgid "I_OWait"
-#~ msgstr "I_OWait"
-
-#~ msgid "I_dle"
-#~ msgstr "Neč_innost"
-
-#~ msgid "Processor"
-#~ msgstr "Procesor"
-
-#~ msgid "Sh_ared"
-#~ msgstr "Sdíl_eno"
-
-#~ msgid "_Buffers"
-#~ msgstr "Bu_ffery"
 
 #~ msgid "Cach_ed"
 #~ msgstr "Ve vyrovnáva_cí paměti"
@@ -547,29 +523,35 @@ msgstr[2] ""
 #~ msgid "F_ree"
 #~ msgstr "Vo_lné"
 
+#~ msgid "Harddisk"
+#~ msgstr "Pevný disk"
+
+#~ msgid "I_OWait"
+#~ msgstr "I_OWait"
+
+#~ msgid "I_dle"
+#~ msgstr "Neč_innost"
+
+#~ msgid "Load"
+#~ msgstr "Zátěž"
+
 #~ msgid "Memory"
 #~ msgstr "Paměť"
 
-#~ msgid "_In"
-#~ msgstr "Vst_up"
-
-#~ msgid "_Out"
-#~ msgstr "Výs_tup"
-
-#~ msgid "_Local"
-#~ msgstr "_Místní"
-
-#~ msgid "_Background"
-#~ msgstr "Poza_dí"
+#~ msgid "N_ice"
+#~ msgstr "Ni_ce"
 
 #~ msgid "Network"
 #~ msgstr "Síť"
 
-#~ msgid "_Used"
-#~ msgstr "Po_užito"
+#~ msgid "Processor"
+#~ msgstr "Procesor"
 
-#~ msgid "_Free"
-#~ msgstr "Vo_lné"
+#~ msgid "S_ystem"
+#~ msgstr "S_ystém"
+
+#~ msgid "Sh_ared"
+#~ msgstr "Sdíl_eno"
 
 #~ msgid "Swap Space"
 #~ msgstr "Odkládací prostor"
@@ -577,23 +559,38 @@ msgstr[2] ""
 #~ msgid "_Average"
 #~ msgstr "_Průměr"
 
-#~ msgid "Load"
-#~ msgstr "Zátěž"
+#~ msgid "_Background"
+#~ msgstr "Poza_dí"
+
+#~ msgid "_Buffers"
+#~ msgstr "Bu_ffery"
+
+#~ msgid "_Free"
+#~ msgstr "Vo_lné"
+
+#~ msgid "_In"
+#~ msgstr "Vst_up"
+
+#~ msgid "_Local"
+#~ msgstr "_Místní"
+
+#~ msgid "_Out"
+#~ msgstr "Výs_tup"
 
 #~ msgid "_Read"
 #~ msgstr "Čt_ení"
 
+#~ msgid "_Used"
+#~ msgstr "Po_užito"
+
+#~ msgid "_User"
+#~ msgstr "_Uživatel"
+
 #~ msgid "_Write"
 #~ msgstr "Záp_is"
-
-#~ msgid "Harddisk"
-#~ msgstr "Pevný disk"
 
 #~ msgid "Graph alpha value"
 #~ msgstr "Alfa hodnota grafu"
 
 #~ msgid "List available expression identifiers"
 #~ msgstr "Seznam dostupných identifikátorů vzhledu"
-
-#~ msgid "Show debug messages"
-#~ msgstr "Zobrazit ladící informace"

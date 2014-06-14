@@ -9,16 +9,16 @@ msgstr ""
 "Project-Id-Version: gnome-applets HEAD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: 2012-07-10 09:09+0000\n"
-"Last-Translator: Fpfilko <Unknown>\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
+"Last-Translator: Peter Tuhársky <tuharsky@misbb.sk>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 "X-Poedit-Country: SLOVAKIA\n"
 "X-Poedit-Language: Slovak\n"
 
@@ -39,6 +39,7 @@ msgstr ""
 "\n"
 "Launchpad Contributions:\n"
 "  Fpfilko https://launchpad.net/~fpfilko\n"
+"  Michael Hofmann https://launchpad.net/~mh21\n"
 "  tuharsky https://launchpad.net/~tuharsky"
 
 #: ../data/preferences.ui.in.h:3
@@ -503,31 +504,6 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-
-#~ msgid "_User"
-#~ msgstr "Po_užívateľ"
-
-#~ msgid "S_ystem"
-#~ msgstr "_Systém"
-
-#~ msgid "N_ice"
-#~ msgstr "_Nice"
-
-#~ msgid "I_OWait"
-#~ msgstr "Čakanie na I_O"
-
-#~ msgid "I_dle"
-#~ msgstr "N_ečinný"
-
-#~ msgid "Processor"
-#~ msgstr "Procesor"
-
-#~ msgid "Sh_ared"
-#~ msgstr "_Zdieľaná"
-
-#~ msgid "_Buffers"
-#~ msgstr "_Buffery"
 
 #~ msgid "Cach_ed"
 #~ msgstr "_Vo vyrovnávacej pamäti"
@@ -535,29 +511,35 @@ msgstr[2] ""
 #~ msgid "F_ree"
 #~ msgstr "V_oľná"
 
+#~ msgid "Harddisk"
+#~ msgstr "Pevný disk"
+
+#~ msgid "I_OWait"
+#~ msgstr "Čakanie na I_O"
+
+#~ msgid "I_dle"
+#~ msgstr "N_ečinný"
+
+#~ msgid "Load"
+#~ msgstr "Zaťaženie"
+
 #~ msgid "Memory"
 #~ msgstr "Pamäť"
 
-#~ msgid "_In"
-#~ msgstr "_Vstup"
-
-#~ msgid "_Out"
-#~ msgstr "Vý_stup"
-
-#~ msgid "_Local"
-#~ msgstr "_Lokálne"
-
-#~ msgid "_Background"
-#~ msgstr "Po_zadie"
+#~ msgid "N_ice"
+#~ msgstr "_Nice"
 
 #~ msgid "Network"
 #~ msgstr "Sieť"
 
-#~ msgid "_Used"
-#~ msgstr "_Použitá"
+#~ msgid "Processor"
+#~ msgstr "Procesor"
 
-#~ msgid "_Free"
-#~ msgstr "_Voľná"
+#~ msgid "S_ystem"
+#~ msgstr "_Systém"
+
+#~ msgid "Sh_ared"
+#~ msgstr "_Zdieľaná"
 
 #~ msgid "Swap Space"
 #~ msgstr "Odkladací súbor"
@@ -565,23 +547,38 @@ msgstr[2] ""
 #~ msgid "_Average"
 #~ msgstr "_Priemer"
 
-#~ msgid "Load"
-#~ msgstr "Zaťaženie"
+#~ msgid "_Background"
+#~ msgstr "Po_zadie"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Buffery"
+
+#~ msgid "_Free"
+#~ msgstr "_Voľná"
 
 #~ msgid "_Read"
 #~ msgstr "Čí_tanie"
 
+#~ msgid "_Used"
+#~ msgstr "_Použitá"
+
+#~ msgid "_User"
+#~ msgstr "Po_užívateľ"
+
 #~ msgid "_Write"
 #~ msgstr "_Zápis"
-
-#~ msgid "Harddisk"
-#~ msgstr "Pevný disk"
-
-#~ msgid "Graph alpha value"
-#~ msgstr "Hodnota alfa kanála grafu"
 
 #~ msgid "List available expression identifiers"
 #~ msgstr "Zoznam dostupných mien výrazov"
 
-#~ msgid "Show debug messages"
-#~ msgstr "Zobraziť ladiace správy"
+#~ msgid "_In"
+#~ msgstr "_Vstup"
+
+#~ msgid "_Local"
+#~ msgstr "_Lokálne"
+
+#~ msgid "_Out"
+#~ msgstr "Vý_stup"
+
+#~ msgid "Graph alpha value"
+#~ msgstr "Hodnota alfa kanála grafu"

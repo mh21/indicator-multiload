@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Vladimer Sichinava <vlsichinava@gmail.com>\n"
 "Language-Team: Georgian <www.gia.ge>\n"
 "Language: ka\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -485,30 +485,7 @@ msgstr ""
 msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
-
-#~ msgid "_User"
-#~ msgstr "_მომხმარებელი"
-
-#~ msgid "S_ystem"
-#~ msgstr "ს_ისტემა"
-
-#~ msgid "N_ice"
-#~ msgstr "პრ_იორიტეტი"
-
-#~ msgid "I_OWait"
-#~ msgstr "I_OWait"
-
-#~ msgid "I_dle"
-#~ msgstr "უმოქმედო"
-
-#~ msgid "Processor"
-#~ msgstr "პროცესორი"
-
-#~ msgid "Sh_ared"
-#~ msgstr "გ_აზიარებული"
-
-#~ msgid "_Buffers"
-#~ msgstr "_ბუფერები"
+msgstr[1] ""
 
 #~ msgid "Cach_ed"
 #~ msgstr "კ_ეშირებული"
@@ -516,20 +493,35 @@ msgstr[0] ""
 #~ msgid "F_ree"
 #~ msgstr "თავის_უფალი"
 
+#~ msgid "Harddisk"
+#~ msgstr "მყარი დისკი"
+
+#~ msgid "I_OWait"
+#~ msgstr "I_OWait"
+
+#~ msgid "I_dle"
+#~ msgstr "უმოქმედო"
+
+#~ msgid "Load"
+#~ msgstr "ჩატვირთვა"
+
 #~ msgid "Memory"
 #~ msgstr "მეხსიერება"
 
-#~ msgid "_Background"
-#~ msgstr "_ფონი"
+#~ msgid "N_ice"
+#~ msgstr "პრ_იორიტეტი"
 
 #~ msgid "Network"
 #~ msgstr "ქსელი"
 
-#~ msgid "_Used"
-#~ msgstr "_გამოყენებულია"
+#~ msgid "Processor"
+#~ msgstr "პროცესორი"
 
-#~ msgid "_Free"
-#~ msgstr "_თავისუფალი"
+#~ msgid "S_ystem"
+#~ msgstr "ს_ისტემა"
+
+#~ msgid "Sh_ared"
+#~ msgstr "გ_აზიარებული"
 
 #~ msgid "Swap Space"
 #~ msgstr "Swap სივრცე"
@@ -537,14 +529,23 @@ msgstr[0] ""
 #~ msgid "_Average"
 #~ msgstr "ს_აშუალო"
 
-#~ msgid "Load"
-#~ msgstr "ჩატვირთვა"
+#~ msgid "_Background"
+#~ msgstr "_ფონი"
+
+#~ msgid "_Buffers"
+#~ msgstr "_ბუფერები"
+
+#~ msgid "_Free"
+#~ msgstr "_თავისუფალი"
 
 #~ msgid "_Read"
 #~ msgstr "_კითხვა"
 
+#~ msgid "_Used"
+#~ msgstr "_გამოყენებულია"
+
+#~ msgid "_User"
+#~ msgstr "_მომხმარებელი"
+
 #~ msgid "_Write"
 #~ msgstr "_ჩაწერა"
-
-#~ msgid "Harddisk"
-#~ msgstr "მყარი დისკი"

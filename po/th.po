@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
 "Language-Team: Thai <thai-10n@googlegroups.com>\n"
 "Language: th\n"
@@ -17,8 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -490,30 +490,7 @@ msgstr ""
 msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
-
-#~ msgid "_User"
-#~ msgstr "ผู้ใ_ช้"
-
-#~ msgid "S_ystem"
-#~ msgstr "_ระบบ"
-
-#~ msgid "N_ice"
-#~ msgstr "N_ice"
-
-#~ msgid "I_OWait"
-#~ msgstr "รอ I/_O"
-
-#~ msgid "I_dle"
-#~ msgstr "_ว่าง"
-
-#~ msgid "Processor"
-#~ msgstr "ตัวประมวลผล"
-
-#~ msgid "Sh_ared"
-#~ msgstr "ใช้_ร่วม"
-
-#~ msgid "_Buffers"
-#~ msgstr "_บัฟเฟอร์"
+msgstr[1] ""
 
 #~ msgid "Cach_ed"
 #~ msgstr "แ_คช"
@@ -522,29 +499,35 @@ msgstr[0] ""
 #~ msgid "F_ree"
 #~ msgstr "เ_หลือ"
 
+#~ msgid "Harddisk"
+#~ msgstr "ฮาร์ดดิสก์"
+
+#~ msgid "I_OWait"
+#~ msgstr "รอ I/_O"
+
+#~ msgid "I_dle"
+#~ msgstr "_ว่าง"
+
+#~ msgid "Load"
+#~ msgstr "โหลด"
+
 #~ msgid "Memory"
 #~ msgstr "หน่วยความจำ"
 
-#~ msgid "_In"
-#~ msgstr "เ_ข้า:"
-
-#~ msgid "_Out"
-#~ msgstr "_ออก"
-
-#~ msgid "_Local"
-#~ msgstr "_วนกลับ"
-
-#~ msgid "_Background"
-#~ msgstr "_พื้นหลัง"
+#~ msgid "N_ice"
+#~ msgstr "N_ice"
 
 #~ msgid "Network"
 #~ msgstr "เครือข่าย"
 
-#~ msgid "_Used"
-#~ msgstr "ใ_ช้อยู่"
+#~ msgid "Processor"
+#~ msgstr "ตัวประมวลผล"
 
-#~ msgid "_Free"
-#~ msgstr "เ_หลือ"
+#~ msgid "S_ystem"
+#~ msgstr "_ระบบ"
+
+#~ msgid "Sh_ared"
+#~ msgstr "ใช้_ร่วม"
 
 #~ msgid "Swap Space"
 #~ msgstr "พื้นที่สลับ"
@@ -552,14 +535,32 @@ msgstr[0] ""
 #~ msgid "_Average"
 #~ msgstr "เฉ_ลี่ย"
 
-#~ msgid "Load"
-#~ msgstr "โหลด"
+#~ msgid "_Background"
+#~ msgstr "_พื้นหลัง"
+
+#~ msgid "_Buffers"
+#~ msgstr "_บัฟเฟอร์"
+
+#~ msgid "_Free"
+#~ msgstr "เ_หลือ"
+
+#~ msgid "_In"
+#~ msgstr "เ_ข้า:"
+
+#~ msgid "_Local"
+#~ msgstr "_วนกลับ"
+
+#~ msgid "_Out"
+#~ msgstr "_ออก"
 
 #~ msgid "_Read"
 #~ msgstr "_อ่าน:"
 
+#~ msgid "_Used"
+#~ msgstr "ใ_ช้อยู่"
+
+#~ msgid "_User"
+#~ msgstr "ผู้ใ_ช้"
+
 #~ msgid "_Write"
 #~ msgstr "เ_ขียน:"
-
-#~ msgid "Harddisk"
-#~ msgstr "ฮาร์ดดิสก์"

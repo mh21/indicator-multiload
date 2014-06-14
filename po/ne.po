@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets.gnome-2-20.ne\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Narayan Kumar Magar <narayan@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
 "Language: ne\n"
@@ -24,8 +24,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -496,14 +496,14 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "प्रयोगकर्ता"
+#~ msgid "Cach_ed"
+#~ msgstr "क्यास गरिएको"
 
-#~ msgid "S_ystem"
-#~ msgstr "प्रणाली"
+#~ msgid "F_ree"
+#~ msgstr "स्वतन्त्र"
 
-#~ msgid "N_ice"
-#~ msgstr "राम्रो"
+#~ msgid "Harddisk"
+#~ msgstr "हार्डडिस्क"
 
 #~ msgid "I_OWait"
 #~ msgstr "आइओवेट"
@@ -511,35 +511,26 @@ msgstr[1] ""
 #~ msgid "I_dle"
 #~ msgstr "निष्प्रयोजन"
 
-#~ msgid "Processor"
-#~ msgstr "प्रक्रियाकर्ता"
-
-#~ msgid "Sh_ared"
-#~ msgstr "बाँडफाँड गरिएको"
-
-#~ msgid "_Buffers"
-#~ msgstr "बफरहरू"
-
-#~ msgid "Cach_ed"
-#~ msgstr "क्यास गरिएको"
-
-#~ msgid "F_ree"
-#~ msgstr "स्वतन्त्र"
+#~ msgid "Load"
+#~ msgstr "लोड गर्नुहोस्"
 
 #~ msgid "Memory"
 #~ msgstr "स्मृति"
 
-#~ msgid "_Background"
-#~ msgstr "पृष्ठभूमि"
+#~ msgid "N_ice"
+#~ msgstr "राम्रो"
 
 #~ msgid "Network"
 #~ msgstr "सञ्जाल"
 
-#~ msgid "_Used"
-#~ msgstr "प्रयोग गरिएको"
+#~ msgid "Processor"
+#~ msgstr "प्रक्रियाकर्ता"
 
-#~ msgid "_Free"
-#~ msgstr "स्वतन्त्र"
+#~ msgid "S_ystem"
+#~ msgstr "प्रणाली"
+
+#~ msgid "Sh_ared"
+#~ msgstr "बाँडफाँड गरिएको"
 
 #~ msgid "Swap Space"
 #~ msgstr "खाली ठाँउ साटासाट गर्नुहोस्"
@@ -547,14 +538,23 @@ msgstr[1] ""
 #~ msgid "_Average"
 #~ msgstr "औसत"
 
-#~ msgid "Load"
-#~ msgstr "लोड गर्नुहोस्"
+#~ msgid "_Background"
+#~ msgstr "पृष्ठभूमि"
+
+#~ msgid "_Buffers"
+#~ msgstr "बफरहरू"
+
+#~ msgid "_Free"
+#~ msgstr "स्वतन्त्र"
 
 #~ msgid "_Read"
 #~ msgstr "पढनुहोस्"
 
+#~ msgid "_Used"
+#~ msgstr "प्रयोग गरिएको"
+
+#~ msgid "_User"
+#~ msgstr "प्रयोगकर्ता"
+
 #~ msgid "_Write"
 #~ msgstr "लेख्नुहोस्"
-
-#~ msgid "Harddisk"
-#~ msgstr "हार्डडिस्क"

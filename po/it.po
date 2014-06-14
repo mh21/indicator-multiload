@@ -11,16 +11,16 @@ msgstr ""
 "Project-Id-Version: gnome-applets 2.29.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: 2012-07-06 08:32+0000\n"
-"Last-Translator: Gianfranco Frisani <gfrisani@libero.it>\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
+"Last-Translator: Luca Ferretti <lferrett@gnome.org>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -511,14 +511,14 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "_Utente"
+#~ msgid "Cach_ed"
+#~ msgstr "In cach_e"
 
-#~ msgid "S_ystem"
-#~ msgstr "_Sistema"
+#~ msgid "F_ree"
+#~ msgstr "Libe_ra"
 
-#~ msgid "N_ice"
-#~ msgstr "Nic_e"
+#~ msgid "Harddisk"
+#~ msgstr "Hard disk"
 
 #~ msgid "I_OWait"
 #~ msgstr "I_OWait"
@@ -526,44 +526,26 @@ msgstr[1] ""
 #~ msgid "I_dle"
 #~ msgstr "I_nattività"
 
-#~ msgid "Processor"
-#~ msgstr "Processore"
-
-#~ msgid "Sh_ared"
-#~ msgstr "Condivis_a"
-
-#~ msgid "_Buffers"
-#~ msgstr "_Buffer"
-
-#~ msgid "Cach_ed"
-#~ msgstr "In cach_e"
-
-#~ msgid "F_ree"
-#~ msgstr "Libe_ra"
+#~ msgid "Load"
+#~ msgstr "Carico"
 
 #~ msgid "Memory"
 #~ msgstr "Memoria"
 
-#~ msgid "_In"
-#~ msgstr "I_ngresso"
-
-#~ msgid "_Out"
-#~ msgstr "_Uscita"
-
-#~ msgid "_Local"
-#~ msgstr "L_ocale"
-
-#~ msgid "_Background"
-#~ msgstr "_Sfondo"
+#~ msgid "N_ice"
+#~ msgstr "Nic_e"
 
 #~ msgid "Network"
 #~ msgstr "Rete"
 
-#~ msgid "_Used"
-#~ msgstr "_Usata"
+#~ msgid "Processor"
+#~ msgstr "Processore"
 
-#~ msgid "_Free"
-#~ msgstr "Li_bera"
+#~ msgid "S_ystem"
+#~ msgstr "_Sistema"
+
+#~ msgid "Sh_ared"
+#~ msgstr "Condivis_a"
 
 #~ msgid "Swap Space"
 #~ msgstr "Spazio di swap"
@@ -571,23 +553,38 @@ msgstr[1] ""
 #~ msgid "_Average"
 #~ msgstr "Medi_a"
 
-#~ msgid "Load"
-#~ msgstr "Carico"
+#~ msgid "_Background"
+#~ msgstr "_Sfondo"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Buffer"
+
+#~ msgid "_Free"
+#~ msgstr "Li_bera"
+
+#~ msgid "_In"
+#~ msgstr "I_ngresso"
+
+#~ msgid "_Local"
+#~ msgstr "L_ocale"
+
+#~ msgid "_Out"
+#~ msgstr "_Uscita"
 
 #~ msgid "_Read"
 #~ msgstr "_Lettura"
 
+#~ msgid "_Used"
+#~ msgstr "_Usata"
+
+#~ msgid "_User"
+#~ msgstr "_Utente"
+
 #~ msgid "_Write"
 #~ msgstr "_Scrittura"
-
-#~ msgid "Harddisk"
-#~ msgstr "Hard disk"
-
-#~ msgid "Graph alpha value"
-#~ msgstr "Valore alfa del grafico"
 
 #~ msgid "List available expression identifiers"
 #~ msgstr "Elenco dell'identificativo delle espressioni disponibili"
 
-#~ msgid "Show debug messages"
-#~ msgstr "Mostra i messaggi di debug"
+#~ msgid "Graph alpha value"
+#~ msgstr "Valore alfa del grafico"

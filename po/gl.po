@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets-master-po-gl-18973\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Fran Diéguez <frandieguez@ubuntu.com>\n"
 "Language-Team: Galician <gnome-gl-list@gnome.org>\n"
 "Language: gl\n"
@@ -29,8 +29,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -507,14 +507,15 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "_Usuario"
+#~ msgid "Cach_ed"
+#~ msgstr "Na cac_hé"
 
-#~ msgid "S_ystem"
-#~ msgstr "_Sistema"
+#~ msgid "F_ree"
+#~ msgstr "Lib_re"
 
-#~ msgid "N_ice"
-#~ msgstr "N_ice"
+# (pofilter) accelerators: accelerator _ does not occur in original and should not be in translation
+#~ msgid "Harddisk"
+#~ msgstr "Disco"
 
 #~ msgid "I_OWait"
 #~ msgstr "Espera _E/S"
@@ -522,44 +523,26 @@ msgstr[1] ""
 #~ msgid "I_dle"
 #~ msgstr "Ina_ctivo"
 
-#~ msgid "Processor"
-#~ msgstr "Procesador"
-
-#~ msgid "Sh_ared"
-#~ msgstr "_Compartida"
-
-#~ msgid "_Buffers"
-#~ msgstr "_Búfers"
-
-#~ msgid "Cach_ed"
-#~ msgstr "Na cac_hé"
-
-#~ msgid "F_ree"
-#~ msgstr "Lib_re"
+#~ msgid "Load"
+#~ msgstr "Carga"
 
 #~ msgid "Memory"
 #~ msgstr "Memoria"
 
-#~ msgid "_In"
-#~ msgstr "_Entrada"
-
-#~ msgid "_Out"
-#~ msgstr "_Saída"
-
-#~ msgid "_Local"
-#~ msgstr "_Local"
-
-#~ msgid "_Background"
-#~ msgstr "_Fondo"
+#~ msgid "N_ice"
+#~ msgstr "N_ice"
 
 #~ msgid "Network"
 #~ msgstr "Rede"
 
-#~ msgid "_Used"
-#~ msgstr "_Usado"
+#~ msgid "Processor"
+#~ msgstr "Procesador"
 
-#~ msgid "_Free"
-#~ msgstr "_Libre"
+#~ msgid "S_ystem"
+#~ msgstr "_Sistema"
+
+#~ msgid "Sh_ared"
+#~ msgstr "_Compartida"
 
 #~ msgid "Swap Space"
 #~ msgstr "Espazo de swap"
@@ -567,15 +550,32 @@ msgstr[1] ""
 #~ msgid "_Average"
 #~ msgstr "_Media"
 
-#~ msgid "Load"
-#~ msgstr "Carga"
+#~ msgid "_Background"
+#~ msgstr "_Fondo"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Búfers"
+
+#~ msgid "_Free"
+#~ msgstr "_Libre"
+
+#~ msgid "_In"
+#~ msgstr "_Entrada"
+
+#~ msgid "_Local"
+#~ msgstr "_Local"
+
+#~ msgid "_Out"
+#~ msgstr "_Saída"
 
 #~ msgid "_Read"
 #~ msgstr "_Lectura"
 
+#~ msgid "_Used"
+#~ msgstr "_Usado"
+
+#~ msgid "_User"
+#~ msgstr "_Usuario"
+
 #~ msgid "_Write"
 #~ msgstr "_Escritura"
-
-# (pofilter) accelerators: accelerator _ does not occur in original and should not be in translation
-#~ msgid "Harddisk"
-#~ msgstr "Disco"

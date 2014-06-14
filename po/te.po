@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets.master.te\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Arjuna Rao Chavala <arjunaraoc@gmail.com>\n"
 "Language-Team: Telugu <en@li.org>\n"
 "Language: te\n"
@@ -18,8 +18,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -35,7 +35,7 @@ msgstr ""
 "KrishnaBabu K <kkrothap@redhat.com> 2008.\n"
 "\n"
 "Launchpad Contributions:\n"
-"  Arjuna Rao Chavala https://launchpad.net/~arjunaraoc-gmail"
+"  arjuna rao chavala https://launchpad.net/~arjunaraoc"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -488,14 +488,14 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "వినియోగదారి (_U)"
+#~ msgid "Cach_ed"
+#~ msgstr "పట్టుకొన్న (_e)"
 
-#~ msgid "S_ystem"
-#~ msgstr "వ్యవస్థ (_y)"
+#~ msgid "F_ree"
+#~ msgstr "ఖాళీ (_r)"
 
-#~ msgid "N_ice"
-#~ msgstr "బాగుంది  (_i)"
+#~ msgid "Harddisk"
+#~ msgstr "ప్రధానఖని"
 
 #~ msgid "I_OWait"
 #~ msgstr "I_OWait"
@@ -503,44 +503,26 @@ msgstr[1] ""
 #~ msgid "I_dle"
 #~ msgstr "తీరిగ్గా (_d)"
 
-#~ msgid "Processor"
-#~ msgstr "ప్రోసెసర్"
-
-#~ msgid "Sh_ared"
-#~ msgstr "పంచుకున్న (_a)"
-
-#~ msgid "_Buffers"
-#~ msgstr "బఫర్ (_B)"
-
-#~ msgid "Cach_ed"
-#~ msgstr "పట్టుకొన్న (_e)"
-
-#~ msgid "F_ree"
-#~ msgstr "ఖాళీ (_r)"
+#~ msgid "Load"
+#~ msgstr "భారం"
 
 #~ msgid "Memory"
 #~ msgstr "జ్ఞాపకశక్తి"
 
-#~ msgid "_In"
-#~ msgstr "లోపల (_I)"
-
-#~ msgid "_Out"
-#~ msgstr "బయట (_O)"
-
-#~ msgid "_Local"
-#~ msgstr "స్థానిక (_L)"
-
-#~ msgid "_Background"
-#~ msgstr "పూర్వరంగం (_B)"
+#~ msgid "N_ice"
+#~ msgstr "బాగుంది  (_i)"
 
 #~ msgid "Network"
 #~ msgstr "నెట్వర్కు"
 
-#~ msgid "_Used"
-#~ msgstr "ఉపయోగంలోవున్న (_U)"
+#~ msgid "Processor"
+#~ msgstr "ప్రోసెసర్"
 
-#~ msgid "_Free"
-#~ msgstr "ఖాళీ (_F)"
+#~ msgid "S_ystem"
+#~ msgstr "వ్యవస్థ (_y)"
+
+#~ msgid "Sh_ared"
+#~ msgstr "పంచుకున్న (_a)"
 
 #~ msgid "Swap Space"
 #~ msgstr "బదలాయింపు స్థలం"
@@ -548,14 +530,32 @@ msgstr[1] ""
 #~ msgid "_Average"
 #~ msgstr "సగటు  (_A)"
 
-#~ msgid "Load"
-#~ msgstr "భారం"
+#~ msgid "_Background"
+#~ msgstr "పూర్వరంగం (_B)"
+
+#~ msgid "_Buffers"
+#~ msgstr "బఫర్ (_B)"
+
+#~ msgid "_Free"
+#~ msgstr "ఖాళీ (_F)"
+
+#~ msgid "_In"
+#~ msgstr "లోపల (_I)"
+
+#~ msgid "_Local"
+#~ msgstr "స్థానిక (_L)"
+
+#~ msgid "_Out"
+#~ msgstr "బయట (_O)"
 
 #~ msgid "_Read"
 #~ msgstr "చదువు (_R)"
 
+#~ msgid "_Used"
+#~ msgstr "ఉపయోగంలోవున్న (_U)"
+
+#~ msgid "_User"
+#~ msgstr "వినియోగదారి (_U)"
+
 #~ msgid "_Write"
 #~ msgstr "రాత(_W)"
-
-#~ msgid "Harddisk"
-#~ msgstr "ప్రధానఖని"

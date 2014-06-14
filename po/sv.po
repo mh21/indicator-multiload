@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -21,8 +21,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -498,14 +498,14 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "_Användare"
+#~ msgid "Cach_ed"
+#~ msgstr "_Cachat"
 
-#~ msgid "S_ystem"
-#~ msgstr "S_ystem"
+#~ msgid "F_ree"
+#~ msgstr "Ledi_gt"
 
-#~ msgid "N_ice"
-#~ msgstr "\"N_ice\""
+#~ msgid "Harddisk"
+#~ msgstr "Hårddisk"
 
 #~ msgid "I_OWait"
 #~ msgstr "\"I_OWait\""
@@ -513,44 +513,26 @@ msgstr[1] ""
 #~ msgid "I_dle"
 #~ msgstr "_Tomgång (idle)"
 
-#~ msgid "Processor"
-#~ msgstr "Processor"
-
-#~ msgid "Sh_ared"
-#~ msgstr "_Delat"
-
-#~ msgid "_Buffers"
-#~ msgstr "_Buffertar"
-
-#~ msgid "Cach_ed"
-#~ msgstr "_Cachat"
-
-#~ msgid "F_ree"
-#~ msgstr "Ledi_gt"
+#~ msgid "Load"
+#~ msgstr "Belastning"
 
 #~ msgid "Memory"
 #~ msgstr "Minne"
 
-#~ msgid "_In"
-#~ msgstr "_In"
-
-#~ msgid "_Out"
-#~ msgstr "_Ut"
-
-#~ msgid "_Local"
-#~ msgstr "_Lokal"
-
-#~ msgid "_Background"
-#~ msgstr "_Bakgrund"
+#~ msgid "N_ice"
+#~ msgstr "\"N_ice\""
 
 #~ msgid "Network"
 #~ msgstr "Nätverk"
 
-#~ msgid "_Used"
-#~ msgstr "Anv_änt"
+#~ msgid "Processor"
+#~ msgstr "Processor"
 
-#~ msgid "_Free"
-#~ msgstr "_Ledigt"
+#~ msgid "S_ystem"
+#~ msgstr "S_ystem"
+
+#~ msgid "Sh_ared"
+#~ msgstr "_Delat"
 
 #~ msgid "Swap Space"
 #~ msgstr "Växlingsutrymme"
@@ -558,14 +540,32 @@ msgstr[1] ""
 #~ msgid "_Average"
 #~ msgstr "_Medel"
 
-#~ msgid "Load"
-#~ msgstr "Belastning"
+#~ msgid "_Background"
+#~ msgstr "_Bakgrund"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Buffertar"
+
+#~ msgid "_Free"
+#~ msgstr "_Ledigt"
+
+#~ msgid "_In"
+#~ msgstr "_In"
+
+#~ msgid "_Local"
+#~ msgstr "_Lokal"
+
+#~ msgid "_Out"
+#~ msgstr "_Ut"
 
 #~ msgid "_Read"
 #~ msgstr "_Läs"
 
+#~ msgid "_Used"
+#~ msgstr "Anv_änt"
+
+#~ msgid "_User"
+#~ msgstr "_Användare"
+
 #~ msgid "_Write"
 #~ msgstr "_Skriv"
-
-#~ msgid "Harddisk"
-#~ msgstr "Hårddisk"

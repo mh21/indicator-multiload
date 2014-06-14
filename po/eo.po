@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>\n"
 "Language-Team: Esperanto <ubuntu-l10n-eo@lists.launchpad.net>\n"
 "Language: eo\n"
@@ -17,8 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -486,14 +486,14 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "_Uzanto"
+#~ msgid "Cach_ed"
+#~ msgstr "Kaŝm_emora"
 
-#~ msgid "S_ystem"
-#~ msgstr "S_istemo"
+#~ msgid "F_ree"
+#~ msgstr "Libe_ra"
 
-#~ msgid "N_ice"
-#~ msgstr "A_fableco"
+#~ msgid "Harddisk"
+#~ msgstr "Fiksita disko"
 
 #~ msgid "I_OWait"
 #~ msgstr "Eneliga _atendo"
@@ -501,44 +501,26 @@ msgstr[1] ""
 #~ msgid "I_dle"
 #~ msgstr "_Senlabora"
 
-#~ msgid "Processor"
-#~ msgstr "Procesoro"
-
-#~ msgid "Sh_ared"
-#~ msgstr "Komun_a"
-
-#~ msgid "_Buffers"
-#~ msgstr "_Bufroj"
-
-#~ msgid "Cach_ed"
-#~ msgstr "Kaŝm_emora"
-
-#~ msgid "F_ree"
-#~ msgstr "Libe_ra"
+#~ msgid "Load"
+#~ msgstr "Ŝargo"
 
 #~ msgid "Memory"
 #~ msgstr "Memoro"
 
-#~ msgid "_In"
-#~ msgstr "_En"
-
-#~ msgid "_Out"
-#~ msgstr "_El"
-
-#~ msgid "_Local"
-#~ msgstr "_Loka"
-
-#~ msgid "_Background"
-#~ msgstr "_Fono"
+#~ msgid "N_ice"
+#~ msgstr "A_fableco"
 
 #~ msgid "Network"
 #~ msgstr "Reto"
 
-#~ msgid "_Used"
-#~ msgstr "_Uzata"
+#~ msgid "Processor"
+#~ msgstr "Procesoro"
 
-#~ msgid "_Free"
-#~ msgstr "_Libera"
+#~ msgid "S_ystem"
+#~ msgstr "S_istemo"
+
+#~ msgid "Sh_ared"
+#~ msgstr "Komun_a"
 
 #~ msgid "Swap Space"
 #~ msgstr "Virtuala memoro"
@@ -546,14 +528,32 @@ msgstr[1] ""
 #~ msgid "_Average"
 #~ msgstr "_Meznombro"
 
-#~ msgid "Load"
-#~ msgstr "Ŝargo"
+#~ msgid "_Background"
+#~ msgstr "_Fono"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Bufroj"
+
+#~ msgid "_Free"
+#~ msgstr "_Libera"
+
+#~ msgid "_In"
+#~ msgstr "_En"
+
+#~ msgid "_Local"
+#~ msgstr "_Loka"
+
+#~ msgid "_Out"
+#~ msgstr "_El"
 
 #~ msgid "_Read"
 #~ msgstr "_Lego"
 
+#~ msgid "_Used"
+#~ msgstr "_Uzata"
+
+#~ msgid "_User"
+#~ msgstr "_Uzanto"
+
 #~ msgid "_Write"
 #~ msgstr "_Skribo"
-
-#~ msgid "Harddisk"
-#~ msgstr "Fiksita disko"

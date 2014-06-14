@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Gheyret T.Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
 "Language: \n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 "X-Poedit-Language: Uighur\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
@@ -486,30 +486,7 @@ msgstr ""
 msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
-
-#~ msgid "_User"
-#~ msgstr "ئىشلەتكۈچى(_U)"
-
-#~ msgid "S_ystem"
-#~ msgstr "سىستېما(_Y)"
-
-#~ msgid "N_ice"
-#~ msgstr "ئالدىنلىق دەرىجىسى(_I)"
-
-#~ msgid "I_OWait"
-#~ msgstr "IO كۈتۈۋاتىدۇ(_O)"
-
-#~ msgid "I_dle"
-#~ msgstr "بوش(_D)"
-
-#~ msgid "Processor"
-#~ msgstr "بىر تەرەپ قىلغۇچ"
-
-#~ msgid "Sh_ared"
-#~ msgstr "ھەمبەھىر(_A)"
-
-#~ msgid "_Buffers"
-#~ msgstr "بۇففېر(_B)"
+msgstr[1] ""
 
 #~ msgid "Cach_ed"
 #~ msgstr "غەملەك(_E)"
@@ -517,29 +494,35 @@ msgstr[0] ""
 #~ msgid "F_ree"
 #~ msgstr "ئەركىن(_R)"
 
+#~ msgid "Harddisk"
+#~ msgstr "قاتتىق دىسكا"
+
+#~ msgid "I_OWait"
+#~ msgstr "IO كۈتۈۋاتىدۇ(_O)"
+
+#~ msgid "I_dle"
+#~ msgstr "بوش(_D)"
+
+#~ msgid "Load"
+#~ msgstr "يۈك"
+
 #~ msgid "Memory"
 #~ msgstr "ئىچكى ساقلىغۇچ"
 
-#~ msgid "_In"
-#~ msgstr "كىر(_I)"
-
-#~ msgid "_Out"
-#~ msgstr "چىق(_O)"
-
-#~ msgid "_Local"
-#~ msgstr "يەرلىك(_L)"
-
-#~ msgid "_Background"
-#~ msgstr "تەگلىك(_B)"
+#~ msgid "N_ice"
+#~ msgstr "ئالدىنلىق دەرىجىسى(_I)"
 
 #~ msgid "Network"
 #~ msgstr "تور"
 
-#~ msgid "_Used"
-#~ msgstr "ئىشلىتىلگەن(_U)"
+#~ msgid "Processor"
+#~ msgstr "بىر تەرەپ قىلغۇچ"
 
-#~ msgid "_Free"
-#~ msgstr "ئەركىن(_F)"
+#~ msgid "S_ystem"
+#~ msgstr "سىستېما(_Y)"
+
+#~ msgid "Sh_ared"
+#~ msgstr "ھەمبەھىر(_A)"
 
 #~ msgid "Swap Space"
 #~ msgstr "ئالماشتۇرۇش بوشلۇقى"
@@ -547,14 +530,32 @@ msgstr[0] ""
 #~ msgid "_Average"
 #~ msgstr "ئوتتۇرىچە قىممىتى(_A)"
 
-#~ msgid "Load"
-#~ msgstr "يۈك"
+#~ msgid "_Background"
+#~ msgstr "تەگلىك(_B)"
+
+#~ msgid "_Buffers"
+#~ msgstr "بۇففېر(_B)"
+
+#~ msgid "_Free"
+#~ msgstr "ئەركىن(_F)"
+
+#~ msgid "_In"
+#~ msgstr "كىر(_I)"
+
+#~ msgid "_Local"
+#~ msgstr "يەرلىك(_L)"
+
+#~ msgid "_Out"
+#~ msgstr "چىق(_O)"
 
 #~ msgid "_Read"
 #~ msgstr "ئوقۇ(_R)"
 
+#~ msgid "_Used"
+#~ msgstr "ئىشلىتىلگەن(_U)"
+
+#~ msgid "_User"
+#~ msgstr "ئىشلەتكۈچى(_U)"
+
 #~ msgid "_Write"
 #~ msgstr "ياز(_W)"
-
-#~ msgid "Harddisk"
-#~ msgstr "قاتتىق دىسكا"

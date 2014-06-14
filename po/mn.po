@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets.gnome-2-4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Sanlig Badral <badral@openmn.org>\n"
 "Language-Team: Mongolian <openmn-core@lists.sf.net>\n"
 "Language: mn\n"
@@ -20,8 +20,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -485,27 +485,7 @@ msgstr ""
 msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
-
-#~ msgid "_User"
-#~ msgstr "Хэрэглэгч"
-
-#~ msgid "S_ystem"
-#~ msgstr "Систем"
-
-#~ msgid "N_ice"
-#~ msgstr "Хандалт"
-
-#~ msgid "I_dle"
-#~ msgstr "Энгийн"
-
-#~ msgid "Processor"
-#~ msgstr "Процессор"
-
-#~ msgid "Sh_ared"
-#~ msgstr "Нийтийн"
-
-#~ msgid "_Buffers"
-#~ msgstr "Буфер"
+msgstr[1] ""
 
 #~ msgid "Cach_ed"
 #~ msgstr "_Кешлэгдсэн"
@@ -513,20 +493,29 @@ msgstr[0] ""
 #~ msgid "F_ree"
 #~ msgstr "Чөлөөт"
 
+#~ msgid "I_dle"
+#~ msgstr "Энгийн"
+
+#~ msgid "Load"
+#~ msgstr "Процессор ачаалж байна"
+
 #~ msgid "Memory"
 #~ msgstr "Санах ой"
 
-#~ msgid "_Background"
-#~ msgstr "Ар"
+#~ msgid "N_ice"
+#~ msgstr "Хандалт"
 
 #~ msgid "Network"
 #~ msgstr "Сүлжээ"
 
-#~ msgid "_Used"
-#~ msgstr "Ашиглагдсан"
+#~ msgid "Processor"
+#~ msgstr "Процессор"
 
-#~ msgid "_Free"
-#~ msgstr "Чөлөөт"
+#~ msgid "S_ystem"
+#~ msgstr "Систем"
+
+#~ msgid "Sh_ared"
+#~ msgstr "Нийтийн"
 
 #~ msgid "Swap Space"
 #~ msgstr "Суап хийх зай"
@@ -534,5 +523,17 @@ msgstr[0] ""
 #~ msgid "_Average"
 #~ msgstr "Дундаж ачаала_х"
 
-#~ msgid "Load"
-#~ msgstr "Процессор ачаалж байна"
+#~ msgid "_Background"
+#~ msgstr "Ар"
+
+#~ msgid "_Buffers"
+#~ msgstr "Буфер"
+
+#~ msgid "_Free"
+#~ msgstr "Чөлөөт"
+
+#~ msgid "_Used"
+#~ msgstr "Ашиглагдсан"
+
+#~ msgid "_User"
+#~ msgstr "Хэрэглэгч"

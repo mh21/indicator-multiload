@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Miloš Popović <gpopac@gmail.com>\n"
 "Language-Team: Serbian <gnom@prevod.org>\n"
 "Language: sr\n"
@@ -21,8 +21,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:28+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -494,31 +494,6 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-
-#~ msgid "_User"
-#~ msgstr "_Korisnik"
-
-#~ msgid "S_ystem"
-#~ msgstr "_Sistem"
-
-#~ msgid "N_ice"
-#~ msgstr "_Manje prioritetno"
-
-#~ msgid "I_OWait"
-#~ msgstr "U_Ičekanje"
-
-#~ msgid "I_dle"
-#~ msgstr "_Neuposlen"
-
-#~ msgid "Processor"
-#~ msgstr "Procesor"
-
-#~ msgid "Sh_ared"
-#~ msgstr "_Deljena"
-
-#~ msgid "_Buffers"
-#~ msgstr "_Baferi"
 
 #~ msgid "Cach_ed"
 #~ msgstr "Keš_irana"
@@ -526,29 +501,35 @@ msgstr[2] ""
 #~ msgid "F_ree"
 #~ msgstr "_Slobodna"
 
+#~ msgid "Harddisk"
+#~ msgstr "Tvrdi disk"
+
+#~ msgid "I_OWait"
+#~ msgstr "U_Ičekanje"
+
+#~ msgid "I_dle"
+#~ msgstr "_Neuposlen"
+
+#~ msgid "Load"
+#~ msgstr "Opterećenje"
+
 #~ msgid "Memory"
 #~ msgstr "Memorija"
 
-#~ msgid "_In"
-#~ msgstr "_Primljeno"
-
-#~ msgid "_Out"
-#~ msgstr "P_oslato"
-
-#~ msgid "_Local"
-#~ msgstr "_Lokalno"
-
-#~ msgid "_Background"
-#~ msgstr "_Pozadina"
+#~ msgid "N_ice"
+#~ msgstr "_Manje prioritetno"
 
 #~ msgid "Network"
 #~ msgstr "Mreža"
 
-#~ msgid "_Used"
-#~ msgstr "Is_korišćeno"
+#~ msgid "Processor"
+#~ msgstr "Procesor"
 
-#~ msgid "_Free"
-#~ msgstr "_Slobodno"
+#~ msgid "S_ystem"
+#~ msgstr "_Sistem"
+
+#~ msgid "Sh_ared"
+#~ msgstr "_Deljena"
 
 #~ msgid "Swap Space"
 #~ msgstr "Zamena za memoriju (swap)"
@@ -556,14 +537,32 @@ msgstr[2] ""
 #~ msgid "_Average"
 #~ msgstr "Pro_sečno"
 
-#~ msgid "Load"
-#~ msgstr "Opterećenje"
+#~ msgid "_Background"
+#~ msgstr "_Pozadina"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Baferi"
+
+#~ msgid "_Free"
+#~ msgstr "_Slobodno"
+
+#~ msgid "_In"
+#~ msgstr "_Primljeno"
+
+#~ msgid "_Local"
+#~ msgstr "_Lokalno"
+
+#~ msgid "_Out"
+#~ msgstr "P_oslato"
 
 #~ msgid "_Read"
 #~ msgstr "_Čitanje"
 
+#~ msgid "_Used"
+#~ msgstr "Is_korišćeno"
+
+#~ msgid "_User"
+#~ msgstr "_Korisnik"
+
 #~ msgid "_Write"
 #~ msgstr "_Upis"
-
-#~ msgid "Harddisk"
-#~ msgstr "Tvrdi disk"

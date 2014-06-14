@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Denis\n"
 "Language-Team: Breton <brenux@free.fr>\n"
 "Language: br\n"
@@ -17,8 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:26+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -485,44 +485,32 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "Ar_veriad"
-
-#~ msgid "S_ystem"
-#~ msgstr "R_eizhiad"
-
-#~ msgid "Processor"
-#~ msgstr "Kewerier"
-
-#~ msgid "Sh_ared"
-#~ msgstr "Rannet"
-
-#~ msgid "_Buffers"
-#~ msgstr "S_kurzerioù"
-
 #~ msgid "Cach_ed"
 #~ msgstr "Krubuilh_et"
 
 #~ msgid "F_ree"
 #~ msgstr "D_ieub"
 
+#~ msgid "Harddisk"
+#~ msgstr "Kantenn galet"
+
+#~ msgid "Load"
+#~ msgstr "Kargañ"
+
 #~ msgid "Memory"
 #~ msgstr "Memor"
-
-#~ msgid "_Local"
-#~ msgstr "_Lec'hel"
-
-#~ msgid "_Background"
-#~ msgstr "_Drekleur"
 
 #~ msgid "Network"
 #~ msgstr "Rouedad"
 
-#~ msgid "_Used"
-#~ msgstr "Ar_veret"
+#~ msgid "Processor"
+#~ msgstr "Kewerier"
 
-#~ msgid "_Free"
-#~ msgstr "Dieu_b"
+#~ msgid "S_ystem"
+#~ msgstr "R_eizhiad"
+
+#~ msgid "Sh_ared"
+#~ msgstr "Rannet"
 
 #~ msgid "Swap Space"
 #~ msgstr "Memor disloañ"
@@ -530,14 +518,26 @@ msgstr[1] ""
 #~ msgid "_Average"
 #~ msgstr "Kei_tad"
 
-#~ msgid "Load"
-#~ msgstr "Kargañ"
+#~ msgid "_Background"
+#~ msgstr "_Drekleur"
+
+#~ msgid "_Buffers"
+#~ msgstr "S_kurzerioù"
+
+#~ msgid "_Free"
+#~ msgstr "Dieu_b"
+
+#~ msgid "_Local"
+#~ msgstr "_Lec'hel"
 
 #~ msgid "_Read"
 #~ msgstr "_Lenn"
 
+#~ msgid "_Used"
+#~ msgstr "Ar_veret"
+
+#~ msgid "_User"
+#~ msgstr "Ar_veriad"
+
 #~ msgid "_Write"
 #~ msgstr "_Skrivañ"
-
-#~ msgid "Harddisk"
-#~ msgstr "Kantenn galet"

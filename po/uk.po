@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: 2012-09-09 18:55+0000\n"
-"Last-Translator: Власов Александр <cvetliy_e@mail.ru>\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
+"Last-Translator: Maxim Dziumanenko <dziumanenko@gmail.com>\n"
 "Language-Team: ukrainian <Ukrainian <uk@li.org>>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -17,8 +17,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -37,8 +37,8 @@ msgstr ""
 "\n"
 "Launchpad Contributions:\n"
 "  Maxim Dziumanenko https://launchpad.net/~dziumanenko\n"
-"  Власов Александр https://launchpad.net/~cvetliy-e\n"
-"  Сергій Матрунчик https://launchpad.net/~sergiy.matrunchyk"
+"  Sergiy Matrunchyk https://launchpad.net/~sergiy.matrunchyk\n"
+"  Власов Александр https://launchpad.net/~cvetliy-e"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -504,31 +504,6 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-
-#~ msgid "_User"
-#~ msgstr "_Користувач"
-
-#~ msgid "S_ystem"
-#~ msgstr "_Система"
-
-#~ msgid "N_ice"
-#~ msgstr "Пр_іоритеті"
-
-#~ msgid "I_OWait"
-#~ msgstr "I_OWait"
-
-#~ msgid "I_dle"
-#~ msgstr "О_чікування"
-
-#~ msgid "Processor"
-#~ msgstr "Процесор"
-
-#~ msgid "Sh_ared"
-#~ msgstr "_Спільна"
-
-#~ msgid "_Buffers"
-#~ msgstr "_Буфери"
 
 #~ msgid "Cach_ed"
 #~ msgstr "Ке_ш"
@@ -536,29 +511,35 @@ msgstr[2] ""
 #~ msgid "F_ree"
 #~ msgstr "_Вільна"
 
+#~ msgid "Harddisk"
+#~ msgstr "Жорсткий диск"
+
+#~ msgid "I_OWait"
+#~ msgstr "I_OWait"
+
+#~ msgid "I_dle"
+#~ msgstr "О_чікування"
+
+#~ msgid "Load"
+#~ msgstr "Завантаження"
+
 #~ msgid "Memory"
 #~ msgstr "Пам'ять"
 
-#~ msgid "_In"
-#~ msgstr "В_хідний"
-
-#~ msgid "_Out"
-#~ msgstr "В_ихідний"
-
-#~ msgid "_Local"
-#~ msgstr "_Локальний"
-
-#~ msgid "_Background"
-#~ msgstr "_Тло"
+#~ msgid "N_ice"
+#~ msgstr "Пр_іоритеті"
 
 #~ msgid "Network"
 #~ msgstr "Мережа"
 
-#~ msgid "_Used"
-#~ msgstr "В_икористано"
+#~ msgid "Processor"
+#~ msgstr "Процесор"
 
-#~ msgid "_Free"
-#~ msgstr "_Вільно"
+#~ msgid "S_ystem"
+#~ msgstr "_Система"
+
+#~ msgid "Sh_ared"
+#~ msgstr "_Спільна"
 
 #~ msgid "Swap Space"
 #~ msgstr "Підкачка"
@@ -566,23 +547,38 @@ msgstr[2] ""
 #~ msgid "_Average"
 #~ msgstr "_Середнє"
 
-#~ msgid "Load"
-#~ msgstr "Завантаження"
+#~ msgid "_Background"
+#~ msgstr "_Тло"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Буфери"
+
+#~ msgid "_Free"
+#~ msgstr "_Вільно"
+
+#~ msgid "_In"
+#~ msgstr "В_хідний"
+
+#~ msgid "_Local"
+#~ msgstr "_Локальний"
+
+#~ msgid "_Out"
+#~ msgstr "В_ихідний"
 
 #~ msgid "_Read"
 #~ msgstr "_Читання"
 
+#~ msgid "_Used"
+#~ msgstr "В_икористано"
+
+#~ msgid "_User"
+#~ msgstr "_Користувач"
+
 #~ msgid "_Write"
 #~ msgstr "_Запис"
-
-#~ msgid "Harddisk"
-#~ msgstr "Жорсткий диск"
 
 #~ msgid "Graph alpha value"
 #~ msgstr "Прозорість діаграми"
 
 #~ msgid "List available expression identifiers"
 #~ msgstr "Список доступних ідентифікаторів виразу"
-
-#~ msgid "Show debug messages"
-#~ msgstr "Показувати відлагоджувальні повідомлення"

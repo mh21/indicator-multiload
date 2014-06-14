@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Seán de Búrca <leftmostcat@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
 "Language: ga\n"
@@ -18,8 +18,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n==2 ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -487,31 +487,6 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-
-#~ msgid "_User"
-#~ msgstr "Úsáideoi_r"
-
-#~ msgid "S_ystem"
-#~ msgstr "C_orás"
-
-#~ msgid "N_ice"
-#~ msgstr "De_as"
-
-#~ msgid "I_OWait"
-#~ msgstr "IAFei_theamh"
-
-#~ msgid "I_dle"
-#~ msgstr "Dío_mhaoin"
-
-#~ msgid "Processor"
-#~ msgstr "Próiseálaí"
-
-#~ msgid "Sh_ared"
-#~ msgstr "Com_hroinnte"
-
-#~ msgid "_Buffers"
-#~ msgstr "_Maoláin"
 
 #~ msgid "Cach_ed"
 #~ msgstr "I d_Taisce"
@@ -519,29 +494,35 @@ msgstr[2] ""
 #~ msgid "F_ree"
 #~ msgstr "S_aor"
 
+#~ msgid "Harddisk"
+#~ msgstr "Diosca Crua"
+
+#~ msgid "I_OWait"
+#~ msgstr "IAFei_theamh"
+
+#~ msgid "I_dle"
+#~ msgstr "Dío_mhaoin"
+
+#~ msgid "Load"
+#~ msgstr "Lód"
+
 #~ msgid "Memory"
 #~ msgstr "Cuimhne"
 
-#~ msgid "_In"
-#~ msgstr "Is_teach"
-
-#~ msgid "_Out"
-#~ msgstr "_Amach"
-
-#~ msgid "_Local"
-#~ msgstr "L_ogánta"
-
-#~ msgid "_Background"
-#~ msgstr "Cúl_ra"
+#~ msgid "N_ice"
+#~ msgstr "De_as"
 
 #~ msgid "Network"
 #~ msgstr "Líonra"
 
-#~ msgid "_Used"
-#~ msgstr "Úsáid_te"
+#~ msgid "Processor"
+#~ msgstr "Próiseálaí"
 
-#~ msgid "_Free"
-#~ msgstr "Sao_r"
+#~ msgid "S_ystem"
+#~ msgstr "C_orás"
+
+#~ msgid "Sh_ared"
+#~ msgstr "Com_hroinnte"
 
 #~ msgid "Swap Space"
 #~ msgstr "Spás Babhtála"
@@ -549,14 +530,32 @@ msgstr[2] ""
 #~ msgid "_Average"
 #~ msgstr "_Meán"
 
-#~ msgid "Load"
-#~ msgstr "Lód"
+#~ msgid "_Background"
+#~ msgstr "Cúl_ra"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Maoláin"
+
+#~ msgid "_Free"
+#~ msgstr "Sao_r"
+
+#~ msgid "_In"
+#~ msgstr "Is_teach"
+
+#~ msgid "_Local"
+#~ msgstr "L_ogánta"
+
+#~ msgid "_Out"
+#~ msgstr "_Amach"
 
 #~ msgid "_Read"
 #~ msgstr "Léi_gh"
 
+#~ msgid "_Used"
+#~ msgstr "Úsáid_te"
+
+#~ msgid "_User"
+#~ msgstr "Úsáideoi_r"
+
 #~ msgid "_Write"
 #~ msgstr "Scrío_bh"
-
-#~ msgid "Harddisk"
-#~ msgstr "Diosca Crua"

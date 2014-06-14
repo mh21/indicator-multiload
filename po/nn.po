@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: nn\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: 2012-01-26 22:20+0000\n"
+"PO-Revision-Date: 2013-02-11 11:20+0000\n"
 "Last-Translator: Torstein Adolf Winterseth <kvikende@fsfe.org>\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
 "Language: nn\n"
@@ -18,8 +18,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -491,14 +491,14 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "Br_ukar"
+#~ msgid "Cach_ed"
+#~ msgstr "M_ellomlagra"
 
-#~ msgid "S_ystem"
-#~ msgstr "S_ystem"
+#~ msgid "F_ree"
+#~ msgstr "_Ledig"
 
-#~ msgid "N_ice"
-#~ msgstr "n_ice"
+#~ msgid "Harddisk"
+#~ msgstr "Harddisk"
 
 #~ msgid "I_OWait"
 #~ msgstr "I_OWait"
@@ -506,44 +506,26 @@ msgstr[1] ""
 #~ msgid "I_dle"
 #~ msgstr "T_omgang"
 
-#~ msgid "Processor"
-#~ msgstr "Prosessor"
-
-#~ msgid "Sh_ared"
-#~ msgstr "D_elt"
-
-#~ msgid "_Buffers"
-#~ msgstr "_Buffer"
-
-#~ msgid "Cach_ed"
-#~ msgstr "M_ellomlagra"
-
-#~ msgid "F_ree"
-#~ msgstr "_Ledig"
+#~ msgid "Load"
+#~ msgstr "Last"
 
 #~ msgid "Memory"
 #~ msgstr "Minne"
 
-#~ msgid "_In"
-#~ msgstr "_Inn"
-
-#~ msgid "_Out"
-#~ msgstr "_Ut"
-
-#~ msgid "_Local"
-#~ msgstr "_Lokal"
-
-#~ msgid "_Background"
-#~ msgstr "_Bakgrunn"
+#~ msgid "N_ice"
+#~ msgstr "n_ice"
 
 #~ msgid "Network"
 #~ msgstr "Nettverk"
 
-#~ msgid "_Used"
-#~ msgstr "Br_ukt"
+#~ msgid "Processor"
+#~ msgstr "Prosessor"
 
-#~ msgid "_Free"
-#~ msgstr "_Ledig"
+#~ msgid "S_ystem"
+#~ msgstr "S_ystem"
+
+#~ msgid "Sh_ared"
+#~ msgstr "D_elt"
 
 #~ msgid "Swap Space"
 #~ msgstr "Veksleminne"
@@ -551,14 +533,32 @@ msgstr[1] ""
 #~ msgid "_Average"
 #~ msgstr "_Snitt"
 
-#~ msgid "Load"
-#~ msgstr "Last"
+#~ msgid "_Background"
+#~ msgstr "_Bakgrunn"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Buffer"
+
+#~ msgid "_Free"
+#~ msgstr "_Ledig"
+
+#~ msgid "_In"
+#~ msgstr "_Inn"
+
+#~ msgid "_Local"
+#~ msgstr "_Lokal"
+
+#~ msgid "_Out"
+#~ msgstr "_Ut"
 
 #~ msgid "_Read"
 #~ msgstr "_Les:"
 
+#~ msgid "_Used"
+#~ msgstr "Br_ukt"
+
+#~ msgid "_User"
+#~ msgstr "Br_ukar"
+
 #~ msgid "_Write"
 #~ msgstr "_Skriv:"
-
-#~ msgid "Harddisk"
-#~ msgstr "Harddisk"

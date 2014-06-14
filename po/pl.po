@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: 2013-01-10 23:34+0000\n"
-"Last-Translator: Kamil Warguła <Unknown>\n"
+"PO-Revision-Date: 2013-02-11 19:38+0000\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
@@ -18,8 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 "X-Poedit-Country: Poland\n"
 "X-Poedit-Language: Polish\n"
 
@@ -38,6 +38,7 @@ msgstr ""
 "\n"
 "Launchpad Contributions:\n"
 "  Kamil Warguła https://launchpad.net/~quamilek\n"
+"  Michael Hofmann https://launchpad.net/~mh21\n"
 "  Piotr Drąg https://launchpad.net/~raven46\n"
 "  Stanisław Gackowski https://launchpad.net/~soeb"
 
@@ -501,31 +502,6 @@ msgid "%u Hz"
 msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-
-#~ msgid "_User"
-#~ msgstr "_Użytkownik"
-
-#~ msgid "S_ystem"
-#~ msgstr "_System"
-
-#~ msgid "N_ice"
-#~ msgstr "_Nice"
-
-#~ msgid "I_OWait"
-#~ msgstr "I_OWait"
-
-#~ msgid "I_dle"
-#~ msgstr "Bezczynny"
-
-#~ msgid "Processor"
-#~ msgstr "Procesor"
-
-#~ msgid "Sh_ared"
-#~ msgstr "_Dzielona"
-
-#~ msgid "_Buffers"
-#~ msgstr "_Bufory"
 
 #~ msgid "Cach_ed"
 #~ msgstr "Strony w _cache"
@@ -533,41 +509,47 @@ msgstr[2] ""
 #~ msgid "F_ree"
 #~ msgstr "W_olna"
 
-#~ msgid "Memory"
-#~ msgstr "Pamięć"
-
-#~ msgid "_In"
-#~ msgstr "_Wchodzący"
-
-#~ msgid "_Out"
-#~ msgstr "_Wychodzący"
-
-#~ msgid "_Local"
-#~ msgstr "_Lokalny"
-
-#~ msgid "_Background"
-#~ msgstr "Tło"
-
-#~ msgid "Network"
-#~ msgstr "Sieć"
-
-#~ msgid "_Used"
-#~ msgstr "_Używany"
-
-#~ msgid "_Free"
-#~ msgstr "Wolny"
-
-#~ msgid "Swap Space"
-#~ msgstr "Przestrzeń wymiany"
-
-#~ msgid "_Average"
-#~ msgstr "_Średnia"
+#~ msgid "I_OWait"
+#~ msgstr "I_OWait"
 
 #~ msgid "Load"
 #~ msgstr "Obciążenie"
 
+#~ msgid "Memory"
+#~ msgstr "Pamięć"
+
+#~ msgid "N_ice"
+#~ msgstr "_Nice"
+
+#~ msgid "Network"
+#~ msgstr "Sieć"
+
+#~ msgid "Processor"
+#~ msgstr "Procesor"
+
+#~ msgid "S_ystem"
+#~ msgstr "_System"
+
+#~ msgid "Sh_ared"
+#~ msgstr "_Dzielona"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Bufory"
+
+#~ msgid "_In"
+#~ msgstr "_Wchodzący"
+
+#~ msgid "_Local"
+#~ msgstr "_Lokalny"
+
 #~ msgid "_Read"
 #~ msgstr "_Odczyt"
+
+#~ msgid "_Used"
+#~ msgstr "_Używany"
+
+#~ msgid "_User"
+#~ msgstr "_Użytkownik"
 
 #~ msgid "_Write"
 #~ msgstr "_Zapis"
@@ -575,11 +557,26 @@ msgstr[2] ""
 #~ msgid "Harddisk"
 #~ msgstr "Dysk twardy."
 
+#~ msgid "I_dle"
+#~ msgstr "Bezczynny"
+
+#~ msgid "Swap Space"
+#~ msgstr "Przestrzeń wymiany"
+
+#~ msgid "_Average"
+#~ msgstr "_Średnia"
+
+#~ msgid "_Background"
+#~ msgstr "Tło"
+
+#~ msgid "_Free"
+#~ msgstr "Wolny"
+
+#~ msgid "_Out"
+#~ msgstr "_Wychodzący"
+
 #~ msgid "Graph alpha value"
 #~ msgstr "Wykres wartości alfa"
 
 #~ msgid "List available expression identifiers"
 #~ msgstr "Lista dostępnych wyrażeń"
-
-#~ msgid "Show debug messages"
-#~ msgstr "Wyświetlaj komunikaty debugujące"

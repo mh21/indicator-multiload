@@ -15,16 +15,16 @@ msgstr ""
 "Project-Id-Version: bn\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 15:39+0200\n"
-"PO-Revision-Date: 2012-05-12 00:59+0000\n"
-"Last-Translator: Shahnoor Ashraf <kaziweb1@gmail.com>\n"
+"PO-Revision-Date: 2013-02-11 19:32+0000\n"
+"Last-Translator: Israt Jahan <Unknown>\n"
 "Language-Team: Bengali <ankur-bd-l10n@googlegroups.com>\n"
 "Language: bn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-02-11 05:20+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:26+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 # msgstr "চাপ গড়"
 # msgstr "গড় ভার"
@@ -51,7 +51,7 @@ msgstr ""
 "  Ishak Herock https://launchpad.net/~ourherock\n"
 "  Israt Jahan https://launchpad.net/~israt\n"
 "  Istiaque Ahamed https://launchpad.net/~istiaque\n"
-"  Shahnoor Ashraf https://launchpad.net/~kaziweb"
+"  Kazi Shahnoor Ashraf https://launchpad.net/~kaziweb"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
@@ -512,14 +512,14 @@ msgid_plural "%u Hz"
 msgstr[0] ""
 msgstr[1] ""
 
-#~ msgid "_User"
-#~ msgstr "ব্যবহারকারী (_U)"
+#~ msgid "Cach_ed"
+#~ msgstr "ক্যাশে করা (_e)"
 
-#~ msgid "S_ystem"
-#~ msgstr "সিস্টেম (_y)"
+#~ msgid "F_ree"
+#~ msgstr "মুক্ত (_r)"
 
-#~ msgid "N_ice"
-#~ msgstr "সুন্দর (_i)"
+#~ msgid "Harddisk"
+#~ msgstr "হার্ড-ডিস্ক"
 
 #~ msgid "I_OWait"
 #~ msgstr "I_OWait"
@@ -527,27 +527,49 @@ msgstr[1] ""
 #~ msgid "I_dle"
 #~ msgstr "কর্মবিহীন (_d)"
 
-#~ msgid "Processor"
-#~ msgstr "প্রসেসর"
-
-#~ msgid "Sh_ared"
-#~ msgstr "যৌথরূপে ব্যবহৃত (_a)"
-
-#~ msgid "_Buffers"
-#~ msgstr "বাফার (_B)"
-
-#~ msgid "Cach_ed"
-#~ msgstr "ক্যাশে করা (_e)"
-
-#~ msgid "F_ree"
-#~ msgstr "মুক্ত (_r)"
+#~ msgid "Load"
+#~ msgstr "লোড"
 
 #~ msgid "Memory"
 #~ msgstr "মেমরি"
 
+#~ msgid "N_ice"
+#~ msgstr "সুন্দর (_i)"
+
+#~ msgid "Network"
+#~ msgstr "নেটওয়ার্ক"
+
+#~ msgid "Processor"
+#~ msgstr "প্রসেসর"
+
+#~ msgid "S_ystem"
+#~ msgstr "সিস্টেম (_y)"
+
+#~ msgid "Sh_ared"
+#~ msgstr "যৌথরূপে ব্যবহৃত (_a)"
+
+#~ msgid "Swap Space"
+#~ msgstr "Swap স্থান"
+
+#~ msgid "_Average"
+#~ msgstr "গড় (_A)"
+
+#~ msgid "_Background"
+#~ msgstr "পটভূমি (_B)"
+
+#~ msgid "_Buffers"
+#~ msgstr "বাফার (_B)"
+
+#~ msgid "_Free"
+#~ msgstr "মুক্ত (_F)"
+
 # Translated by sadia
 #~ msgid "_In"
 #~ msgstr "ভিতরে (_I)"
+
+# Translated by sadia
+#~ msgid "_Local"
+#~ msgstr "স্থানীয় (_L)"
 
 # msgstr "উপযোগিতা"
 # উহুঁ - হবে না
@@ -556,36 +578,14 @@ msgstr[1] ""
 #~ msgid "_Out"
 #~ msgstr "বাইরে (_O)"
 
-# Translated by sadia
-#~ msgid "_Local"
-#~ msgstr "স্থানীয় (_L)"
-
-#~ msgid "_Background"
-#~ msgstr "পটভূমি (_B)"
-
-#~ msgid "Network"
-#~ msgstr "নেটওয়ার্ক"
+#~ msgid "_Read"
+#~ msgstr "পড়া (_R)"
 
 #~ msgid "_Used"
 #~ msgstr "ব্যবহৃত (_U)"
 
-#~ msgid "_Free"
-#~ msgstr "মুক্ত (_F)"
-
-#~ msgid "Swap Space"
-#~ msgstr "Swap স্থান"
-
-#~ msgid "_Average"
-#~ msgstr "গড় (_A)"
-
-#~ msgid "Load"
-#~ msgstr "লোড"
-
-#~ msgid "_Read"
-#~ msgstr "পড়া (_R)"
+#~ msgid "_User"
+#~ msgstr "ব্যবহারকারী (_U)"
 
 #~ msgid "_Write"
 #~ msgstr "লেখা (_W)"
-
-#~ msgid "Harddisk"
-#~ msgstr "হার্ড-ডিস্ক"
