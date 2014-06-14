@@ -1,3 +1,9 @@
+indicator-multiload (0.4) unstable; urgency=low
+
+  * Initial release.
+
+ -- Michael Hofmann <mh21@mh21.de>  Mon, 14 Jun 2014 16:15:38 +0200
+
 indicator-multiload (0.3) unstable; urgency=low
 
   * Initial release.
