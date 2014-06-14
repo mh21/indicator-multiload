@@ -112,6 +112,8 @@ public class Main : Application {
             } else if (Environment.get_variable("XDG_CURRENT_DESKTOP") == "LXDE" ||
                 Environment.get_variable("DESKTOP_SESSION") == "Lubuntu") {
                 sysmon = "lxtask.desktop";
+            } else if (Environment.get_variable("DESKTOP_SESSION") == "mate") {
+                sysmon = "mate-system-monitor.desktop";
             } else {
                 sysmon = "gnome-system-monitor.desktop";
             }
