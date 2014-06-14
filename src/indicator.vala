@@ -1,5 +1,5 @@
 /******************************************************************************
- * Copyright (C) 2011  Michael Hofmann <mh21@piware.de>                       *
+ * Copyright (C) 2011-2013  Michael Hofmann <mh21@mh21.de>                    *
  *                                                                            *
  * This program is free software; you can redistribute it and/or modify       *
  * it under the terms of the GNU General Public License as published by       *
@@ -16,16 +16,17 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.                *
  ******************************************************************************/
 
-public class MultiLoadIndicator : Object {
+public class Indicator : Object {
     private uint currenticonindex;
     private uint lasticonwidth;
     private TimeoutSource timeout;
-    private AppIndicator.Indicator indicator;
     private Gtk.MenuItem[] menuitems;
-    private bool menuset;
+    private IndicatorView indicatorview;
 
-    public string icondirectory {get; construct; }
-    public Providers providers {get; construct; }
+    // TODO some of these don't need to be properties
+    public string icondirectory { get; construct; }
+    public Providers providers { get; construct; }
+    public Gtk.Menu menu { get; construct; }
     public MenuModel menumodel { get; construct; }
     public MenuModel labelmodel { get; construct; }
     public MenuModel descriptionmodel { get; construct; }
@@ -33,50 +34,27 @@ public class MultiLoadIndicator : Object {
     public uint height { get; set; }
     public uint width { get; set; }
     public uint speed { get; set; }
-    public Gtk.Menu menu { get; set; }
+    public Gdk.RGBA background_rgba { get; set; }
     public GraphModels graphmodels { get; set; }
 
-    public MultiLoadIndicator(string icondirectory, Providers providers) {
+    public signal void providers_updated();
+
+    public Indicator(string icondirectory, Providers providers, Gtk.Menu menu,
+            bool trayicon) {
         Object(icondirectory: icondirectory,
                 providers: providers,
+                menu: menu,
                 menumodel: new MenuModel(providers),
                 labelmodel: new MenuModel(providers),
                 descriptionmodel: new MenuModel(providers));
-    }
 
-    // Needs to be called before destruction to break the reference cycle from the timeout source
-    public void destroy() {
-        if (this.timeout == null)
-            return;
-        this.timeout.destroy();
-        this.timeout = null;
-    }
-
-    construct {
         DirUtils.create(this.icondirectory, 0777);
 
         this.iconwritedummy();
-        this.indicator = new AppIndicator.Indicator.with_path("multiload", "",
-                AppIndicator.IndicatorCategory.SYSTEM_SERVICES, this.icondirectory);
-
-        this.indicator.scroll_event.connect((delta, direction) => {
-                var index = this.indicator_index;
-                if (direction == Gdk.ScrollDirection.DOWN)
-                    index += delta;
-                else if (direction == Gdk.ScrollDirection.UP)
-                    index -= delta;
-                if (index >= this.labelmodel.expressions.length)
-                    index = this.labelmodel.expressions.length - 1;
-                if (index < 0)
-                    index = 0;
-                this.indicator_index = index;
-            });
 
         this.notify["indicator-index"].connect(() => {
-                // update directly so scrolling works as expected
-                if (this.indicator.get_status() == AppIndicator.IndicatorStatus.ACTIVE)
-                    this.updateviews();
-            });
+            this.updateviews();
+        });
         this.notify["speed"].connect(() => {
                 if (this.timeout != null)
                     this.timeout.destroy();
@@ -94,6 +72,13 @@ public class MultiLoadIndicator : Object {
                         return true;
                     });
             });
+
+        if (trayicon)
+            this.indicatorview = new TrayIndicatorView(this.icondirectory, this.menu);
+        else
+            this.indicatorview = new AppIndicatorView(this.icondirectory, this.menu);
+
+        this.indicatorview.scroll_event.connect(this.scrollhandler);
     }
 
     ~MultiLoadIndicator() {
@@ -102,44 +87,49 @@ public class MultiLoadIndicator : Object {
         DirUtils.remove(this.icondirectory);
     }
 
+    // Needs to be called before destruction to break the reference cycle from the timeout source
+    public void destroy() {
+        if (this.timeout == null)
+            return;
+        this.timeout.destroy();
+        this.timeout = null;
+    }
+
     public void updateall() {
-        this.updateproviders();
+        this.providers.update();
+        this.providers_updated();
         this.updatemodels();
         this.updateviews();
     }
 
-    private void updateproviders() {
-        this.providers.update();
+    private void scrollhandler(int delta, uint direction) {
+        var index = this.indicator_index;
+        if (direction == Gdk.ScrollDirection.DOWN)
+            index += delta;
+        else if (direction == Gdk.ScrollDirection.UP)
+            index -= delta;
+        if (index >= this.labelmodel.expressions.length)
+            index = this.labelmodel.expressions.length - 1;
+        if (index < 0)
+            index = 0;
+        this.indicator_index = index;
     }
 
     private void updatemodels() {
         this.menumodel.update();
-        this.labelmodel.update();
-        this.descriptionmodel.update();
         this.graphmodels.update(this.width);
+        this.descriptionmodel.update();
+        this.labelmodel.update();
     }
 
     private void updateviews() {
         this.updatemenuview();
-        this.updatelabelview();
         this.updategraphsview();
-
-        // ready if a menu is available
-        if (this.menu != null) {
-            // prevent an indicator without icon and text
-            if ((this.indicator.get_icon().length == 0) &&
-                (this.indicator.label == null || this.indicator.label.length == 0))
-                this.indicator.set_label("indicator-multiload", "indicator-multiload");
-            this.indicator.set_status(AppIndicator.IndicatorStatus.ACTIVE);
-        } else {
-            this.indicator.set_status(AppIndicator.IndicatorStatus.PASSIVE);
-        }
+        // needs to after updategraphsview
+        this.updatelabelview();
     }
 
     private void updatemenuview() {
-        if (this.menu == null)
-            return;
-
         // start after system monitor and separator
         uint menu_position = 2;
         var length = this.menumodel.expressions.length;
@@ -148,7 +138,7 @@ public class MultiLoadIndicator : Object {
             if (j < this.menuitems.length) {
                 item = this.menuitems[j];
             } else {
-                item = new Gtk.MenuItem();
+                item = new Gtk.MenuItem.with_label("");
                 item.visible = true;
                 this.menu.insert(item, (int)menu_position);
                 this.menuitems += item;
@@ -161,29 +151,12 @@ public class MultiLoadIndicator : Object {
                 menuitems[j].destroy();
             this.menuitems = this.menuitems[0:length];
         }
-        if (!this.menuset) {
-            this.indicator.set_menu(this.menu);
-            // first entry is system monitor, activate it on middle click
-            this.indicator.set_secondary_activate_target(this.menu.get_children().data);
-            this.menuset = true;
-        }
-    }
-
-    private void updatelabelview() {
-        var indicatorcount = this.labelmodel.expressions.length;
-        var indicatorlabel = 0 <= this.indicator_index &&
-            this.indicator_index < indicatorcount ?
-            this.labelmodel.expression(this.indicator_index).label() : "";
-        var indicatorguide = 0 <= this.indicator_index &&
-            this.indicator_index < indicatorcount ?
-            this.labelmodel.expression(this.indicator_index).guide() : "";
-        this.indicator.set_label(indicatorlabel, indicatorguide);
     }
 
     private void updategraphsview() {
         this.iconwrite();
         var found = false;
-        // fix icon size if using the fallback GtkStatusIcon
+        // fix icon size if using a GtkStatusIcon
         foreach (var toplevel in Gtk.Window.list_toplevels()) {
             if (toplevel.get_type().name() != "GtkTrayIcon" || !(toplevel is Gtk.Container))
                 continue;
@@ -196,9 +169,24 @@ public class MultiLoadIndicator : Object {
             });
         }
         if (!found) {
-            this.indicator.set_icon_full(this.iconname(this.currenticonindex),
-                this.descriptionmodel.expression(0).label());
+            this.indicatorview.icon = this.lasticonwidth > 0 ?
+                    this.iconname(this.currenticonindex) : "";
         }
+        this.indicatorview.description = this.descriptionmodel.expression(0).label();
+    }
+
+    private void updatelabelview() {
+        var indicatorcount = this.labelmodel.expressions.length;
+        var label = 0 <= this.indicator_index &&
+            this.indicator_index < indicatorcount ?
+            this.labelmodel.expression(this.indicator_index).label() : "";
+        var guide = 0 <= this.indicator_index &&
+            this.indicator_index < indicatorcount ?
+            this.labelmodel.expression(this.indicator_index).guide() : "";
+        this.indicatorview.label = this.lasticonwidth == 0 && label == "" ?
+            "im" : label;
+        this.indicatorview.guide = this.lasticonwidth == 0 && guide == "" ?
+            "im" : guide;
     }
 
     private string iconname(uint index) {
@@ -237,7 +225,7 @@ public class MultiLoadIndicator : Object {
         foreach (var graphmodel in this.graphmodels.graphmodels) {
             if (!graphmodel.enabled)
                 continue;
-            graphmodel.set_source_color(ctx);
+            Gdk.cairo_set_source_rgba(ctx, this.background_rgba);
             ctx.rectangle(offset, 0, this._width, this.height);
             ctx.fill();
             var tracemodels = graphmodel.tracemodels;
@@ -251,7 +239,7 @@ public class MultiLoadIndicator : Object {
             }
 
             for (int j = values.length[0] - 1; j >= 0; --j) {
-                Gdk.cairo_set_source_color(ctx, graphmodel.tracemodels[j].color);
+                Gdk.cairo_set_source_rgba(ctx, graphmodel.tracemodels[j].rgba);
                 for (uint i = 0, isize = values.length[1]; i < isize; ++i) {
                     // the baseline is outside the canvas
                     ctx.move_to(0.5 + offset + i, this.height + 0.5);
@@ -266,3 +254,4 @@ public class MultiLoadIndicator : Object {
         surface.write_to_png(this.iconpath(this.currenticonindex));
     }
 }
+

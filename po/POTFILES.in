@@ -1,0 +1,24 @@
+[type: gettext/glade]data/preferences.ui.in
+data/de.mh21.indicator-multiload.gschema.xml.in.in
+data/indicator-multiload.desktop.in
+src/colormapper.vala
+src/cpuprovider.vala
+src/diskprovider.vala
+src/expressionparser.vala
+src/function.vala
+src/graphmodel.vala
+src/graphmodels.vala
+src/itempreferences.vala
+src/loadprovider.vala
+src/main.vala
+src/memprovider.vala
+src/menumodel.vala
+src/netprovider.vala
+src/preferences.vala
+src/provider.vala
+src/providers.vala
+src/settingscache.vala
+src/settingsconversion.vala
+src/swapprovider.vala
+src/tracemodel.vala
+src/utils.vala

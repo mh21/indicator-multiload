@@ -1,5 +1,5 @@
 /******************************************************************************
- * Copyright (C) 2011  Michael Hofmann <mh21@piware.de>                       *
+ * Copyright (C) 2011-2013  Michael Hofmann <mh21@mh21.de>                    *
  *                                                                            *
  * This program is free software; you can redistribute it and/or modify       *
  * it under the terms of the GNU General Public License as published by       *
@@ -19,11 +19,12 @@
 public abstract class Provider : GLib.Object {
     public string id { get; construct; }
     public string[] keys { get; construct; }
+    public char displaytype { get; construct; }
 
     public double[] values { get; private set; }
 
-    public Provider(string id, string[] keys) {
-        Object(id: id, keys: keys);
+    public Provider(string id, string[] keys, char displaytype) {
+        Object(id: id, keys: keys, displaytype: displaytype);
     }
 
     construct {

@@ -1,5 +1,5 @@
 /******************************************************************************
- * Copyright (C) 2011  Michael Hofmann <mh21@piware.de>                       *
+ * Copyright (C) 2011-2013  Michael Hofmann <mh21@mh21.de>                    *
  *                                                                            *
  * This program is free software; you can redistribute it and/or modify       *
  * it under the terms of the GNU General Public License as published by       *
@@ -17,22 +17,34 @@
  ******************************************************************************/
 
 public class ItemPreferences : Object {
+    // always allocated
+    private Settings itemsettings;
+
+    // only when dialog is visible
     private Gtk.Dialog items;
-    private Gtk.ListStore itemstore;
-    private Gtk.TreeView itemview;
-    private Gtk.TreeSelection itemselection;
-    private Gtk.Button itemadd;
-    private Gtk.Button itemremove;
-    private Gtk.Button itemedit;
-    private Gtk.Button itemup;
-    private Gtk.Button itemdown;
-    private FixedGSettings.Settings itemsettings;
+
+    // helper
+    private unowned Gtk.ListStore itemstore;
+    private unowned Gtk.TreeView itemview;
+    private unowned Gtk.TreeSelection itemselection;
+    private unowned Gtk.Button itemadd;
+    private unowned Gtk.Button itemremove;
+    private unowned Gtk.Button itemedit;
+    private unowned Gtk.Button itemup;
+    private unowned Gtk.Button itemdown;
     private bool itemsignoresignals;
 
     public string settingskey { get; construct; }
 
+    public signal void itemhelp_show();
+
     public ItemPreferences(string settingskey) {
         Object(settingskey: settingskey);
+    }
+
+    construct {
+        this.itemsettings = new SettingsCache().generalsettings();
+        this.itemsettings.changed[this.settingskey].connect(reset_itemstore);
     }
 
     public void show() {
@@ -47,8 +59,6 @@ public class ItemPreferences : Object {
 
         this.itemstore = builder.get_object("itemstore") as Gtk.ListStore;
         this.itemview = builder.get_object("itemview") as Gtk.TreeView;
-        this.itemsettings = new SettingsCache().generalsettings();
-        this.itemsettings.changed["menu-expressions"].connect(on_itemsettings_changed);
 
         this.itemadd = builder.get_object("itemadd") as Gtk.Button;
         this.itemremove = builder.get_object("itemremove") as Gtk.Button;
@@ -57,7 +67,6 @@ public class ItemPreferences : Object {
         this.itemdown = builder.get_object("itemdown") as Gtk.Button;
 
         this.itemselection = (builder.get_object("itemview") as Gtk.TreeView).get_selection();
-        this.itemselection.changed.connect(on_itemselection_changed);
 
         this.itemsgsettingstostore();
         // will invoke updatebuttons()
@@ -67,22 +76,31 @@ public class ItemPreferences : Object {
         // TODO: F2 does not work
     }
 
+    public void reset_itemstore() {
+        if (this.items != null && !this.itemsignoresignals)
+            this.itemsgsettingstostore();
+    }
+
+
     [CCode (instance_pos = -1)]
     public void on_itemdialog_destroy(Gtk.Widget source) {
         this.items = null;
-        this.itemstore = null;
-        this.itemsettings = null;
     }
 
     [CCode (instance_pos = -1)]
     public void on_itemdialog_response(Gtk.Dialog source, int response) {
-        if (response != 1) {
+        switch (response) {
+        case 0: // close
             source.destroy();
             return;
+        case 1: // revert
+            this.itemsettings.reset(this.settingskey);
+            this.itemselection.select_path(new Gtk.TreePath.from_indices(0));
+            return;
+        case 2: // help
+            this.itemhelp_show();
+            return;
         }
-
-        this.itemsettings.reset(this.settingskey);
-        this.itemselection.select_path(new Gtk.TreePath.from_indices(0));
     }
 
     [CCode (instance_pos = -1)]
@@ -94,14 +112,8 @@ public class ItemPreferences : Object {
     }
 
     [CCode (instance_pos = -1)]
-    public void on_itemselection_changed() {
+    public void on_itemselection_changed(Gtk.TreeSelection selection) {
         this.updatebuttons();
-    }
-
-    [CCode (instance_pos = -1)]
-    public void on_itemsettings_changed() {
-        if (!this.itemsignoresignals)
-            this.itemsgsettingstostore();
     }
 
     [CCode (instance_pos = -1)]
@@ -131,9 +143,7 @@ public class ItemPreferences : Object {
         Gtk.TreeIter iter;
         if (this.itemselection.get_selected(null, out iter)) {
             var path = this.itemstore.get_path(iter);
-	    // TODO: needs to be unowned for gtk2 as the bindings do not return
-	    // a length for the array, so the duplication of the array fails
-            unowned int[] indices = path.get_indices();
+            var indices = path.get_indices();
             pos = indices[0] + 1;
         }
         this.itemstore.insert(out iter, (int) pos);
@@ -179,7 +189,7 @@ public class ItemPreferences : Object {
         if (!this.itemstore.get_iter(out previter, prevpath))
             return;
 
-        GLib.Value value, prevvalue;
+        Value value, prevvalue;
         this.itemstore.get_value(iter, 0, out value);
         this.itemstore.get_value(previter, 0, out prevvalue);
         this.itemstore.set_value(iter, 0, prevvalue);
@@ -200,7 +210,7 @@ public class ItemPreferences : Object {
         if (!this.itemstore.get_iter(out nextiter, nextpath))
             return;
 
-        GLib.Value value, nextvalue;
+        Value value, nextvalue;
         this.itemstore.get_value(iter, 0, out value);
         this.itemstore.get_value(nextiter, 0, out nextvalue);
         this.itemstore.set_value(iter, 0, nextvalue);
@@ -217,9 +227,7 @@ public class ItemPreferences : Object {
             remove = true;
 
             var path = this.itemstore.get_path(iter);
-	    // TODO: needs to be unowned for gtk2 as the bindings do not return
-	    // a length for the array, so the duplication of the array fails
-            unowned int[] indices = path.get_indices();
+            var indices = path.get_indices();
             up = indices[0] > 0;
             down = indices[0] + 1 < this.itemstore.iter_n_children(null);
         }
@@ -245,7 +253,7 @@ public class ItemPreferences : Object {
         Gtk.TreeIter iter;
         for (uint i = 0, isize = result.length; i < isize; ++i) {
             this.itemstore.iter_nth_child(out iter, null, (int)i);
-            GLib.Value value;
+            Value value;
             this.itemstore.get_value(iter, 0, out value);
             result[i] = value as string;
         }

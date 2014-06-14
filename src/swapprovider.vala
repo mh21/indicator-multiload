@@ -1,5 +1,5 @@
 /******************************************************************************
- * Copyright (C) 2011  Michael Hofmann <mh21@piware.de>                       *
+ * Copyright (C) 2011-2013  Michael Hofmann <mh21@mh21.de>                    *
  *                                                                            *
  * This program is free software; you can redistribute it and/or modify       *
  * it under the terms of the GNU General Public License as published by       *
@@ -18,7 +18,7 @@
 
 public class SwapProvider : Provider {
     public SwapProvider() {
-        base("swap", {"used", "total"});
+        base("swap", {"used", "total"}, 'i');
     }
 
     public override void update() {

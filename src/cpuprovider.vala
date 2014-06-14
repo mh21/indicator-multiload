@@ -1,5 +1,5 @@
 /******************************************************************************
- * Copyright (C) 2011  Michael Hofmann <mh21@piware.de>                       *
+ * Copyright (C) 2011-2013  Michael Hofmann <mh21@mh21.de>                    *
  *                                                                            *
  * This program is free software; you can redistribute it and/or modify       *
  * it under the terms of the GNU General Public License as published by       *
@@ -18,32 +18,57 @@
 
 public class CpuProvider : Provider {
     private uint64[] lastdata;
+    private uint64[] newdata;
+
+    private static string[] fields() {
+        GTop.init();
+        string[] templates = {"user", "sys", "nice", "idle", "io", "inuse"};
+        string[] result = new string[(GTop.global_server->ncpu + 2) * 6];
+        for (uint j = 0; j < 6; ++j) {
+            var template = templates[j];
+            result[j] = template;
+            for (uint i = 0, isize = GTop.global_server->ncpu + 1; i < isize; ++i)
+                result[(i + 1) * 6 + j] = @"cpu$i.$template";
+        }
+        return result;
+    }
 
     public CpuProvider() {
-	base("cpu", {"user", "sys", "nice", "idle", "io", "inuse"});
+        base("cpu", fields(), 'p');
+    }
+
+    private void updatecpu(uint index, uint64 user, uint64 sys, uint64 nice,
+            uint64 idle, uint64 io) {
+        this.newdata[index + 0] = user;
+        this.newdata[index + 1] = sys;
+        this.newdata[index + 2] = nice;
+        this.newdata[index + 3] = idle;
+        this.newdata[index + 4] = io;
+        this.newdata[index + 5] = user + nice + sys;
+
+        double total = 0;
+
+        if (this.lastdata.length != 0) {
+            for (uint i = index; i < index + 5; ++i)
+                total += this.newdata[i] - this.lastdata[i];
+            for (uint i = index; i < index + 6; ++i)
+                this.values[i] = (this.newdata[i] - this.lastdata[i]) / total;
+        }
     }
 
     public override void update() {
         GTop.Cpu cpu;
         GTop.get_cpu(out cpu);
 
-        uint64[] newdata = new uint64[6];
-        newdata[0] = cpu.user;
-        newdata[1] = cpu.sys;
-        newdata[2] = cpu.nice;
-        newdata[3] = cpu.idle;
-        newdata[4] = cpu.iowait + cpu.irq + cpu.softirq;
-        newdata[5] = cpu.user + cpu.nice + cpu.sys;
-
-        double total = 0;
-
-        if (this.lastdata.length != 0) {
-            for (uint i = 0; i < 5; ++i)
-                total += newdata[i] - this.lastdata[i];
-            for (uint i = 0, isize = newdata.length; i < isize; ++i)
-                this.values[i] = (newdata[i] - this.lastdata[i]) / total;
+        this.newdata = new uint64[(GTop.global_server->ncpu + 2) * 6];
+        updatecpu(0, cpu.user, cpu.sys, cpu.nice, cpu.idle, cpu.iowait + cpu.irq + cpu.softirq);
+        for (uint i = 0, isize = GTop.global_server->ncpu + 1; i < isize; ++i) {
+            updatecpu((i + 1) * 6, cpu.xcpu_user[i], cpu.xcpu_sys[i], cpu.xcpu_nice[i],
+                    cpu.xcpu_idle[i], cpu.xcpu_iowait[i] + cpu.xcpu_irq[i] + cpu.xcpu_softirq[i]);
         }
-        this.lastdata = newdata;
+
+        this.lastdata = this.newdata;
+        this.newdata = null;
     }
 }
 

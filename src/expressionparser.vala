@@ -1,5 +1,5 @@
 /******************************************************************************
- * Copyright (C) 2011  Michael Hofmann <mh21@piware.de>                       *
+ * Copyright (C) 2011-2013  Michael Hofmann <mh21@mh21.de>                    *
  *                                                                            *
  * This program is free software; you can redistribute it and/or modify       *
  * it under the terms of the GNU General Public License as published by       *
@@ -28,7 +28,7 @@ internal class ExpressionTokenizer {
         bool inexpression = false;
         bool instringsingle = false;
         bool instringdouble = false;
-        for (this.current = expression; *this.current != '\0';
+        for (this.current = (char*)expression; *this.current != '\0';
                 this.current = this.current + 1) {
             if (!inexpression) {
                 if (*this.current == '$') {
@@ -319,7 +319,7 @@ internal class ExpressionEvaluator {
                 return "-" + token;
             return token;
         }
-        var varparts = token.split(".");
+        var varparts = token.split(".", 2);
         var nameindex = this.index;
         ++this.index;
         switch (varparts.length) {
@@ -344,6 +344,7 @@ internal class ExpressionEvaluator {
                 throw error(nameindex, "unknown variable");
             return result;
         default:
+            // not reached
             throw error(nameindex, "too many identifier parts");
         }
     }

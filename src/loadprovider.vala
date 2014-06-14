@@ -1,5 +1,5 @@
 /******************************************************************************
- * Copyright (C) 2011  Michael Hofmann <mh21@piware.de>                       *
+ * Copyright (C) 2011-2013  Michael Hofmann <mh21@mh21.de>                    *
  *                                                                            *
  * This program is free software; you can redistribute it and/or modify       *
  * it under the terms of the GNU General Public License as published by       *
@@ -18,7 +18,7 @@
 
 public class LoadProvider : Provider {
     public LoadProvider() {
-        base("load", {"avg", "cpus"});
+        base("load", {"avg", "avg5", "avg15", "cpus"}, 'd');
     }
 
     public override void update() {
@@ -26,7 +26,9 @@ public class LoadProvider : Provider {
         GTop.get_loadavg(out loadavg);
 
         this.values[0] = loadavg.loadavg[0];
-        this.values[1] = GTop.global_server->ncpu + 1;
+        this.values[1] = loadavg.loadavg[1];
+        this.values[2] = loadavg.loadavg[2];
+        this.values[3] = GTop.global_server->ncpu + 1;
     }
 }
 

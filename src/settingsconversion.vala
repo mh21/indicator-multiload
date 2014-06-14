@@ -1,5 +1,5 @@
 /******************************************************************************
- * Copyright (C) 2011  Michael Hofmann <mh21@piware.de>                       *
+ * Copyright (C) 2011-2013  Michael Hofmann <mh21@mh21.de>                    *
  *                                                                            *
  * This program is free software; you can redistribute it and/or modify       *
  * it under the terms of the GNU General Public License as published by       *
@@ -19,57 +19,31 @@
 public class SettingsConversion : Object {
     SettingsCache settingscache = new SettingsCache();
 
-    public uint oldversion() {
-        var settings = this.settingscache.generalsettings();
-        return settings.get_value("settings-version").get_uint32();
-    }
-
-    public bool is_current() {
-        return this.oldversion() == 2;
-    }
-
     public void convert() {
         var settings = this.settingscache.generalsettings();
-
-        while (!this.is_current()) {
-            switch (this.oldversion()) {
-            case 1:
-                this.convert_version1();
-                break;
-            }
-            settings.set_value("settings-version", this.oldversion() + 1);
+        if (settings.get_value("settings-version").get_uint32() == 3) {
+            return;
         }
+        if (new Settings.with_path("de.mh21.indicator-multiload.version2.general",
+                    "/apps/indicators/multiload/general/")
+                .get_value("settings-version").get_uint32() == 2) {
+            this.convert_version2();
+        } else {
+            this.convert_version1();
+        }
+        settings.set_value("settings-version", 3u);
     }
 
     private void convert_version1() {
-        var oldsettings = new FixedGSettings.Settings.with_path
-            ("de.mh21.indicator.multiload.version1", "/apps/indicators/multiload/");
+        var oldsettings = new Settings.with_path
+            ("de.mh21.indicator-multiload.version1", "/apps/indicators/multiload/");
         foreach (var key in oldsettings.list_keys()) {
             var value = oldsettings.get_value(key);
             oldsettings.reset(key);
             var defaultvalue = oldsettings.get_value(key);
             if (!value.equal(defaultvalue)) {
-                // TODO: this is not converting between 1 and 2, but between 1 and current
-                // no problem yet as we are only at settings version 2
                 switch (key) {
-                case "cpuload-alpha4":
-                    this.settingscache.graphsettings("cpu").set_value("alpha", value);
-                    break;
-                case "memload-alpha4":
-                    this.settingscache.graphsettings("mem").set_value("alpha", value);
-                    break;
-                case "netload-alpha3":
-                    this.settingscache.graphsettings("net").set_value("alpha", value);
-                    break;
-                case "swapload-alpha1":
-                    this.settingscache.graphsettings("swap").set_value("alpha", value);
-                    break;
-                case "loadavg-alpha1":
-                    this.settingscache.graphsettings("load").set_value("alpha", value);
-                    break;
-                case "diskload-alpha2":
-                    this.settingscache.graphsettings("disk").set_value("alpha", value);
-                    break;
+                // alpha and background values are not converted
                 case "view-cpuload":
                     this.settingscache.graphsettings("cpu").set_value("enabled", value);
                     break;
@@ -100,9 +74,6 @@ public class SettingsConversion : Object {
                 case "cpuload-color3":
                     this.settingscache.tracesettings("cpu", "cpu4").set_value("color", value);
                     break;
-                case "cpuload-color4":
-                    this.settingscache.graphsettings("cpu").set_value("background-color", value);
-                    break;
                 case "memload-color0":
                     this.settingscache.tracesettings("mem", "mem1").set_value("color", value);
                     break;
@@ -115,9 +86,6 @@ public class SettingsConversion : Object {
                 case "memload-color3":
                     this.settingscache.tracesettings("mem", "mem4").set_value("color", value);
                     break;
-                case "memload-color4":
-                    this.settingscache.graphsettings("mem").set_value("background-color", value);
-                    break;
                 case "netload-color0":
                     this.settingscache.tracesettings("net", "net1").set_value("color", value);
                     break;
@@ -127,29 +95,17 @@ public class SettingsConversion : Object {
                 case "netload-color2":
                     this.settingscache.tracesettings("net", "net3").set_value("color", value);
                     break;
-                case "netload-color3":
-                    this.settingscache.graphsettings("net").set_value("background-color", value);
-                    break;
                 case "swapload-color0":
                     this.settingscache.tracesettings("swap", "swap1").set_value("color", value);
                     break;
-                case "swapload-color1":
-                    this.settingscache.graphsettings("swap").set_value("background-color", value);
-                    break;
                 case "loadavg-color0":
                     this.settingscache.tracesettings("load", "load1").set_value("color", value);
-                    break;
-                case "loadavg-color1":
-                    this.settingscache.graphsettings("load").set_value("background-color", value);
                     break;
                 case "diskload-color0":
                     this.settingscache.tracesettings("disk", "disk1").set_value("color", value);
                     break;
                 case "diskload-color1":
                     this.settingscache.tracesettings("disk", "disk2").set_value("color", value);
-                    break;
-                case "diskload-color2":
-                    this.settingscache.graphsettings("disk").set_value("background-color", value);
                     break;
                 case "speed":
                     this.settingscache.generalsettings().set_value("speed", value);
@@ -167,6 +123,49 @@ public class SettingsConversion : Object {
                     this.settingscache.generalsettings().set_value("autostart", value);
                     break;
                 }
+            }
+        }
+    }
+
+    private static const string[] version2graphs = {
+        "cpu", "mem", "net", "swap", "load", "disk"
+    };
+
+    private static const uint[] version2traces = {
+        4, 4, 3, 1, 1, 2
+    };
+
+    private void copysettings(Settings oldsettings, Settings newsettings, string[] ignore) {
+        foreach (var key in oldsettings.list_keys()) {
+            var value = oldsettings.get_value(key);
+            oldsettings.reset(key);
+            if (key in ignore)
+                continue;
+            var defaultvalue = oldsettings.get_value(key);
+            if (!value.equal(defaultvalue))
+                newsettings.set_value(key, value);
+        }
+    }
+
+    private void convert_version2() {
+        copysettings(new Settings.with_path
+                (@"de.mh21.indicator-multiload.version2.general",
+                    @"/apps/indicators/multiload/general/"),
+                this.settingscache.generalsettings(),
+                {"settings-version"});
+        for (uint j = 0, jsize = version2graphs.length; j < jsize; ++j) {
+            var graph = version2graphs[j];
+            copysettings(new Settings.with_path
+                    (@"de.mh21.indicator-multiload.version2.graphs.$graph",
+                     @"/apps/indicators/multiload/graphs/$graph/"),
+                    this.settingscache.graphsettings(graph),
+                    {"alpha", "background-color"});
+            for (uint i = 1, isize = version2traces[j]; i <= isize; ++i) {
+                copysettings(new Settings.with_path
+                        (@"de.mh21.indicator-multiload.version2.traces.$graph$i",
+                         @"/apps/indicators/multiload/graphs/$graph/$graph$i/"),
+                        this.settingscache.tracesettings(graph, @"$graph$i"),
+                        {});
             }
         }
     }

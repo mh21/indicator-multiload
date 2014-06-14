@@ -1,5 +1,5 @@
 /******************************************************************************
- * Copyright (C) 2011  Michael Hofmann <mh21@piware.de>                       *
+ * Copyright (C) 2011-2013  Michael Hofmann <mh21@mh21.de>                    *
  *                                                                            *
  * This program is free software; you can redistribute it and/or modify       *
  * it under the terms of the GNU General Public License as published by       *
@@ -72,6 +72,21 @@ public class SpeedFunction : Function {
             parameters[0] = "999000000"; // MB
         // TODO inline
         return Utils.format_speed(double.parse(parameters[0]));
+    }
+}
+
+public class FrequencyFunction : Function {
+    public FrequencyFunction() {
+        base("frequency", {"value"});
+    }
+
+    public override string call(string[] parameters, bool widest) throws Error {
+        if (parameters.length != 1)
+            throw error("one parameter expected");
+        if (widest)
+            parameters[0] = "999000000"; // MHz
+        // TODO inline
+        return Utils.format_frequency(double.parse(parameters[0]));
     }
 }
 

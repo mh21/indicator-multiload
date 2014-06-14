@@ -1,5 +1,5 @@
 /******************************************************************************
- * Copyright (C) 2011  Michael Hofmann <mh21@piware.de>                       *
+ * Copyright (C) 2011-2013  Michael Hofmann <mh21@mh21.de>                    *
  *                                                                            *
  * This program is free software; you can redistribute it and/or modify       *
  * it under the terms of the GNU General Public License as published by       *
@@ -18,18 +18,6 @@
 
 namespace Utils {
     public string uifile;
-    public bool enabledebugmessages;
-
-    public void initdebug() {
-        Log.set_handler(null, LogLevelFlags.LEVEL_DEBUG, debugloghandler);
-    }
-
-
-    private void debugloghandler(string? log_domain,
-            LogLevelFlags log_levels, string message) {
-        if (enabledebugmessages)
-            Log.default_handler(log_domain, log_levels, message);
-    }
 
     public double max(double[] data) {
         if (data.length == 0)
@@ -66,6 +54,7 @@ namespace Utils {
             ++index;
         }
         if (index < 0)
+            // TRANSLATORS: Please leave %u as it is, it is replaced by the size
             return ngettext("%u B", "%u B",
                     (ulong)val).printf((uint)val);
         // 4 significant digits
@@ -93,7 +82,34 @@ namespace Utils {
             ++index;
         }
         if (index < 0)
+            // TRANSLATORS: Please leave %u as it is, it is replaced by the speed
             return ngettext("%u B/s", "%u B/s",
+                    (ulong)val).printf((uint)val);
+        // 4 significant digits
+        var pattern = _(units[index]).replace("{}",
+            val <   9.95 ? "%.1f" :
+            val <  99.5  ? "%.0f" :
+            val < 999.5  ? "%.0f" : "%.0f");
+        return pattern.printf(val);
+    }
+
+    public string format_frequency(double val) {
+        const string[] units = {
+            // TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
+            N_("{} kHz"),
+            // TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
+            N_("{} MHz"),
+            // TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
+            N_("{} GHz")
+        };
+        int index = -1;
+        while (index + 1 < units.length && (val >= 1000 || index < 0)) {
+            val /= 1000;
+            ++index;
+        }
+        if (index < 0)
+            // TRANSLATORS: Please leave %u as it is, it is replaced by the frequency
+            return ngettext("%u Hz", "%u Hz",
                     (ulong)val).printf((uint)val);
         // 4 significant digits
         var pattern = _(units[index]).replace("{}",
@@ -118,20 +134,21 @@ namespace Utils {
         return builder.get_object(objectid);
     }
 
-    public bool get_settings_color(Value value, Variant variant, void *user_data)
+    public bool get_settings_rgba(Value value, Variant variant,
+            void *user_data)
     {
-        Gdk.Color color;
-        if (Gdk.Color.parse(variant.get_string(), out color)) {
-            value.set_boxed(&color);
+        Gdk.RGBA rgba = Gdk.RGBA();
+        if (ColorMapper.parse_colorname(variant.get_string(), ref rgba)) {
+            value.set_boxed(&rgba);
             return true;
         }
         return false;
     }
 
-    public Variant set_settings_color(Value value, VariantType expected_type,
+    public Variant set_settings_rgba(Value value, VariantType expected_type,
             void *user_data)
     {
-        Gdk.Color color = *(Gdk.Color*)value.get_boxed();
-        return new Variant.string(color.to_string());
+        Gdk.RGBA rgba = *(Gdk.RGBA*)value.get_boxed();
+        return new Variant.string(rgba.to_string());
     }
 }

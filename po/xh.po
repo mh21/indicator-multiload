@@ -8,17 +8,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-10 18:50+0000\n"
+"POT-Creation-Date: 2014-06-14 15:55+0200\n"
 "PO-Revision-Date: 2012-01-26 22:20+0000\n"
 "Last-Translator: Canonical Ltd <translations@canonical.com>\n"
 "Language-Team: Xhosa <xh-translate@ubuntu.com>\n"
+"Language: xh\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Launchpad-Export-Date: 2013-02-11 05:21+0000\n"
 "X-Generator: Launchpad (build 16482)\n"
-"Language: xh\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -37,258 +37,323 @@ msgstr ""
 "  Canonical Ltd https://launchpad.net/~translations"
 
 #: ../data/preferences.ui.in.h:3
-msgid "_Open System Monitor"
-msgstr "_Vula iNkqubo yeMonitha"
+msgid "Column"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:4
-msgid "_Preferences"
-msgstr "_Okunokukhethwa kuko"
+msgid "Graph"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:5
-msgid "_About"
-msgstr "_Malunga"
+msgid "_Visible:"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:6
-msgid "_Quit"
+msgid "Upper Edge"
 msgstr ""
 
 #: ../data/preferences.ui.in.h:7
-msgid "Monitored Resources"
-msgstr "OoVimba abaHlolwayo"
+msgid "Minimum:"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:8
-msgid "_Processor"
-msgstr "_Isixhobo sokusebenza"
+msgid "Maximum:"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:9
-msgid "_Memory"
-msgstr "_Uvimba wolwazi"
+msgid "Smoothing:"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:10
-msgid "_Network"
-msgstr "u_Thungelwano"
-
-#: ../data/preferences.ui.in.h:11
-msgid "S_wap Space"
-msgstr "T_shintshiselana ngesithuba"
-
-#: ../data/preferences.ui.in.h:12
-msgid "_Load"
-msgstr "_Faka"
-
-#: ../data/preferences.ui.in.h:13
-msgid "_Harddisk"
-msgstr "I_diski eyakhelwe ngaphakathi"
-
-#: ../data/preferences.ui.in.h:14
-msgid "Options"
-msgstr "Okunokukhethwa kuko"
-
-#: ../data/preferences.ui.in.h:15
-msgid "System m_onitor width: "
-msgstr "Ububanzi bem_onitha yenkqubo: "
-
-#: ../data/preferences.ui.in.h:16
-msgid "Sys_tem monitor update interval: "
-msgstr "Ikhefu lohlaziyo lwemonitha yenkq_ubo: "
-
-#: ../data/preferences.ui.in.h:17
 msgid "pixels"
 msgstr "ii-pixel"
 
+#: ../data/preferences.ui.in.h:11
+msgid "Trace"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:12
+msgid "Expression:"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:13
+#, fuzzy
+msgid "Color:"
+msgstr "Imibala"
+
+#: ../data/preferences.ui.in.h:14
+msgid "Variable"
+msgstr ""
+
+#. TRANSLATORS: This refers to an expression in the domain of programming, see https://en.wikipedia.org/wiki/Expression_%28programming%29
+#: ../data/preferences.ui.in.h:16
+msgid "Expression"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:17
+msgid "Value"
+msgstr ""
+
 #: ../data/preferences.ui.in.h:18
+msgid "_Open System Monitor"
+msgstr "_Vula iNkqubo yeMonitha"
+
+#: ../data/preferences.ui.in.h:19
+msgid "_Preferences"
+msgstr "_Okunokukhethwa kuko"
+
+#: ../data/preferences.ui.in.h:20
+msgid "_About"
+msgstr "_Malunga"
+
+#: ../data/preferences.ui.in.h:21
+msgid "_Quit"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:22
+msgid "Monitored Resources"
+msgstr "OoVimba abaHlolwayo"
+
+#: ../data/preferences.ui.in.h:23
+msgid "_Processor"
+msgstr "_Isixhobo sokusebenza"
+
+#: ../data/preferences.ui.in.h:24
+msgid "_Memory"
+msgstr "_Uvimba wolwazi"
+
+#: ../data/preferences.ui.in.h:25
+msgid "_Network"
+msgstr "u_Thungelwano"
+
+#: ../data/preferences.ui.in.h:26
+msgid "S_wap Space"
+msgstr "T_shintshiselana ngesithuba"
+
+#: ../data/preferences.ui.in.h:27
+msgid "_Load"
+msgstr "_Faka"
+
+#: ../data/preferences.ui.in.h:28
+msgid "_Harddisk"
+msgstr "I_diski eyakhelwe ngaphakathi"
+
+#: ../data/preferences.ui.in.h:29
+msgid "Options"
+msgstr "Okunokukhethwa kuko"
+
+#: ../data/preferences.ui.in.h:30
+msgid "System m_onitor width: "
+msgstr "Ububanzi bem_onitha yenkqubo: "
+
+#: ../data/preferences.ui.in.h:31
+msgid "Sys_tem monitor update interval: "
+msgstr "Ikhefu lohlaziyo lwemonitha yenkq_ubo: "
+
+#: ../data/preferences.ui.in.h:32
 msgid "milliseconds"
 msgstr "ii-milliseconds"
 
-#: ../data/preferences.ui.in.h:19
+#: ../data/preferences.ui.in.h:33
 msgid "_Autostart: "
 msgstr ""
 
-#: ../data/preferences.ui.in.h:20
+#: ../data/preferences.ui.in.h:34
 msgid "Colors"
 msgstr "Imibala"
 
-#: ../data/preferences.ui.in.h:21
-msgid "_User"
-msgstr "_Umsebenzisi"
-
-#: ../data/preferences.ui.in.h:22
-msgid "S_ystem"
-msgstr "iN_kqubo"
-
-#: ../data/preferences.ui.in.h:23
-msgid "N_ice"
-msgstr "i-N_ice"
-
-#: ../data/preferences.ui.in.h:24
-msgid "I_OWait"
-msgstr "i-I_OWait"
-
-#: ../data/preferences.ui.in.h:25
-msgid "I_dle"
-msgstr "iL_alele"
-
-#: ../data/preferences.ui.in.h:26
-msgid "Processor"
-msgstr "Isixhobo sokusebenza"
-
-#: ../data/preferences.ui.in.h:27
-msgid "Sh_ared"
-msgstr "Kw_abelana"
-
-#: ../data/preferences.ui.in.h:28
-msgid "_Buffers"
-msgstr "_Izigcini zethutyana"
-
-#: ../data/preferences.ui.in.h:29
-msgid "Cach_ed"
-msgstr "iFakwe kuVi_mba wethutyana"
-
-#: ../data/preferences.ui.in.h:30
-msgid "F_ree"
-msgstr "S_imahla"
-
-#: ../data/preferences.ui.in.h:31
-msgid "Memory"
-msgstr "Uvimba weefayili"
-
-#: ../data/preferences.ui.in.h:32
-msgid "_In"
-msgstr ""
-
-#: ../data/preferences.ui.in.h:33
-msgid "_Out"
-msgstr ""
-
-#: ../data/preferences.ui.in.h:34
-msgid "_Local"
-msgstr ""
-
 #: ../data/preferences.ui.in.h:35
-msgid "_Background"
-msgstr "_Okungasemva"
+msgid "Built-in schemes:"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:36
-msgid "Network"
-msgstr "Uthungelwano"
+msgid "Color palette:"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:37
-msgid "_Used"
-msgstr "_Isetyenzisiwe"
+msgid "<small>Busy</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:38
-msgid "_Free"
-msgstr "_Ngahlawulelwa"
+msgid "<small>System</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:39
-msgid "Swap Space"
-msgstr "Isithuba soTshintshisano"
+msgid "<small>Nice</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:40
-msgid "_Average"
-msgstr "u_Mndilili"
+msgid "<small>IOWait</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:41
-msgid "Load"
-msgstr "Faka"
+msgid "<small>Background</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:42
-msgid "_Read"
-msgstr "_Funda"
+msgid "<small>Memory</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:43
-msgid "_Write"
-msgstr "_Bhala"
+msgid "<small>Shared</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:44
-msgid "Harddisk"
-msgstr "Idiski eyakhelwe ngaphakathi"
+msgid "<small>Buffers</small>"
+msgstr ""
 
 #: ../data/preferences.ui.in.h:45
+msgid "<small>Cached</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:46
+msgid "<small>Download</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:47
+msgid "<small>Upload</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:48
+msgid "<small>Localhost</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:49
+msgid "<small>Swap</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:50
+msgid "<small>Load</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:51
+msgid "<small>Read</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:52
+msgid "<small>Write</small>"
+msgstr ""
+
+#: ../data/preferences.ui.in.h:53
+msgid "Advanced..."
+msgstr ""
+
+#: ../data/preferences.ui.in.h:54
 msgid "Menu items..."
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:1
+#: ../data/preferences.ui.in.h:55
+msgid "Indicator items..."
+msgstr ""
+
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:1
 msgid "Available graphs"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:2
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:2
 msgid "Applet refresh rate in milliseconds"
 msgstr "Izinga lokuhlaziya inkqutyana yekhompyutha ngee-milliseconds"
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:3
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:3
 msgid "Width of the graphs in pixels."
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:4
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:4
 msgid "Height of the graphs in pixels."
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:5
-msgid "The desktop description file to execute as the system monitor"
-msgstr ""
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:6
-msgid "Automatically start on session startup"
-msgstr ""
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:7
-msgid "Information in the accessible description of the indicator"
-msgstr ""
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:8
-msgid "Information shown in the indicator itself"
-msgstr ""
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:9
-msgid "Index of the current information shown in the indicator itself"
-msgstr ""
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:10
-msgid "Information shown as menu entries"
-msgstr ""
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:11
-msgid "Graph alpha value"
-msgstr ""
-
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:12
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:5
 msgid "Graph background color"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:13
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:6
+msgid "Most recently used color scheme"
+msgstr ""
+
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:7
+msgid "The desktop description file to execute as the system monitor"
+msgstr ""
+
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:8
+msgid "Automatically start on session startup"
+msgstr ""
+
+#. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, and commas.
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:10
+msgid ""
+"[ \"CPU $(percent(cpu.inuse)) Mem $(size(mem.user)) Net down $(speed(net."
+"down)) up $(speed(net.up)) Swap $(size(swap.used)) Load $(decimals(load."
+"avg,2)) Disk read $(speed(disk.read)) write $(speed(disk.write))\" ]"
+msgstr ""
+
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:11
+msgid "Information in the accessible description of the indicator"
+msgstr ""
+
+#. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, and commas.
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:13
+msgid ""
+"[ \"\", \"CPU $(percent(cpu.inuse))\", \"Mem $(size(mem.user))\", \"Net "
+"$(speed(net.down))/$(speed(net.up))\", \"Swap $(size(swap.used))\", \"Load "
+"$(decimals(load.avg,2))\", \"Disk $(speed(disk.read))/$(speed(disk."
+"write))\" ]"
+msgstr ""
+
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:14
+msgid "Information shown in the indicator itself"
+msgstr ""
+
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:15
+msgid "Index of the current information shown in the indicator itself"
+msgstr ""
+
+#. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, and commas.
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:17
+msgid ""
+"[ \"CPU: $(percent(cpu.inuse)), iowait $(percent(cpu.io))\", \"Mem: "
+"$(size(mem.user)), cache $(size(mem.cached))\", \"Net: down $(speed(net."
+"down)), up $(speed(net.up))\", \"Swap: $(size(swap.used))\", \"Load: "
+"$(decimals(load.avg,2))\", \"Disk: read $(speed(disk.read)), write "
+"$(speed(disk.write))\" ]"
+msgstr ""
+
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:18
+msgid "Information shown as menu entries"
+msgstr ""
+
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:19
 msgid "Graph visibility"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:14
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:20
 msgid "Minimum value for upper graph edge"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:15
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:21
 msgid "Maximum value for upper graph edge, zero means unlimited"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:16
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:22
 msgid "Number of values used for smooth graph scaling"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:17
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:23
 msgid "Available traces"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:18
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:24
 msgid "Trace color"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:19
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:25
 msgid "Trace expression"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:20
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:26
 msgid "Trace visibility"
 msgstr ""
 
-#: ../data/de.mh21.indicator.multiload.gschema.xml.in.in.h:21
+#: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:27
 msgid "Traces shown"
 msgstr ""
 
@@ -296,49 +361,75 @@ msgstr ""
 msgid "System Load Indicator"
 msgstr ""
 
-#: ../src/function.vala:88
+#. TRANSLATORS: Color theme name
+#: ../src/colormapper.vala:77
+msgid "Traditional"
+msgstr ""
+
+#. TRANSLATORS: Color theme name for the Ubuntu Ambiance (light on dark) theme
+#: ../src/colormapper.vala:85
+msgid "Ambiance"
+msgstr ""
+
+#. TRANSLATORS: Color theme name for the Ubuntu Radiance (dark on light) theme
+#: ../src/colormapper.vala:93
+msgid "Radiance"
+msgstr ""
+
+#. additional mem colors: slab 0000ff, map 836fff
+#. TRANSLATORS: Color theme name for the XOSView theme
+#: ../src/colormapper.vala:102
+msgid "XOSView"
+msgstr ""
+
+#: ../src/function.vala:103
 #, c-format
 msgid "%u%%"
 msgstr ""
 
-#: ../src/main.vala:37
+#: ../src/main.vala:44
+msgid "Output version information and exit"
+msgstr ""
+
+#: ../src/main.vala:46
+msgid "System tray icon instead of app indicator"
+msgstr ""
+
+#: ../src/main.vala:48
 msgid "Evaluate an expression"
 msgstr ""
 
-#: ../src/main.vala:39
-msgid "List available expression identifiers"
-msgstr ""
-
-#: ../src/main.vala:41
-msgid "Show debug messages"
-msgstr ""
-
-#: ../src/main.vala:322
+#: ../src/main.vala:351
 msgid "- System load application indicator"
 msgstr ""
 
-#: ../src/main.vala:330
+#: ../src/main.vala:359
 #, c-format
-msgid ""
-"Run '%s --help' to see a full list of available command line options.\n"
+msgid "Run '%s --help' to see a full list of available command line options.\n"
+msgstr ""
+
+#. TRANSLATORS: custom color scheme
+#: ../src/preferences.vala:74
+msgid "Custom"
 msgstr ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
-#: ../src/utils.vala:57
+#: ../src/utils.vala:45
 msgid "{} kB"
 msgstr ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
-#: ../src/utils.vala:59
+#: ../src/utils.vala:47
 msgid "{} MB"
 msgstr ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
-#: ../src/utils.vala:61
+#: ../src/utils.vala:49
 msgid "{} GB"
 msgstr ""
 
-#: ../src/utils.vala:69
+#. TRANSLATORS: Please leave %u as it is, it is replaced by the size
+#: ../src/utils.vala:58
 #, c-format
 msgid "%u B"
 msgid_plural "%u B"
@@ -346,28 +437,115 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:82
+#: ../src/utils.vala:71
 msgid "{} kB/s"
 msgstr ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:84
+#: ../src/utils.vala:73
 msgid "{} MB/s"
 msgstr ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:86
+#: ../src/utils.vala:75
 msgid "{} GB/s"
 msgstr ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the speed
-#: ../src/utils.vala:88
+#: ../src/utils.vala:77
 msgid "{} TB/s"
 msgstr ""
 
-#: ../src/utils.vala:96
+#. TRANSLATORS: Please leave %u as it is, it is replaced by the speed
+#: ../src/utils.vala:86
 #, c-format
 msgid "%u B/s"
 msgid_plural "%u B/s"
 msgstr[0] ""
 msgstr[1] ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
+#: ../src/utils.vala:99
+msgid "{} kHz"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
+#: ../src/utils.vala:101
+msgid "{} MHz"
+msgstr ""
+
+#. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
+#: ../src/utils.vala:103
+msgid "{} GHz"
+msgstr ""
+
+#. TRANSLATORS: Please leave %u as it is, it is replaced by the frequency
+#: ../src/utils.vala:112
+#, c-format
+msgid "%u Hz"
+msgid_plural "%u Hz"
+msgstr[0] ""
+msgstr[1] ""
+
+#~ msgid "_User"
+#~ msgstr "_Umsebenzisi"
+
+#~ msgid "S_ystem"
+#~ msgstr "iN_kqubo"
+
+#~ msgid "N_ice"
+#~ msgstr "i-N_ice"
+
+#~ msgid "I_OWait"
+#~ msgstr "i-I_OWait"
+
+#~ msgid "I_dle"
+#~ msgstr "iL_alele"
+
+#~ msgid "Processor"
+#~ msgstr "Isixhobo sokusebenza"
+
+#~ msgid "Sh_ared"
+#~ msgstr "Kw_abelana"
+
+#~ msgid "_Buffers"
+#~ msgstr "_Izigcini zethutyana"
+
+#~ msgid "Cach_ed"
+#~ msgstr "iFakwe kuVi_mba wethutyana"
+
+#~ msgid "F_ree"
+#~ msgstr "S_imahla"
+
+#~ msgid "Memory"
+#~ msgstr "Uvimba weefayili"
+
+#~ msgid "_Background"
+#~ msgstr "_Okungasemva"
+
+#~ msgid "Network"
+#~ msgstr "Uthungelwano"
+
+#~ msgid "_Used"
+#~ msgstr "_Isetyenzisiwe"
+
+#~ msgid "_Free"
+#~ msgstr "_Ngahlawulelwa"
+
+#~ msgid "Swap Space"
+#~ msgstr "Isithuba soTshintshisano"
+
+#~ msgid "_Average"
+#~ msgstr "u_Mndilili"
+
+#~ msgid "Load"
+#~ msgstr "Faka"
+
+#~ msgid "_Read"
+#~ msgstr "_Funda"
+
+#~ msgid "_Write"
+#~ msgstr "_Bhala"
+
+#~ msgid "Harddisk"
+#~ msgstr "Idiski eyakhelwe ngaphakathi"

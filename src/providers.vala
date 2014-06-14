@@ -1,5 +1,5 @@
 /******************************************************************************
- * Copyright (C) 2011  Michael Hofmann <mh21@piware.de>                       *
+ * Copyright (C) 2011-2013  Michael Hofmann <mh21@mh21.de>                    *
  *                                                                            *
  * This program is free software; you can redistribute it and/or modify       *
  * it under the terms of the GNU General Public License as published by       *
@@ -22,20 +22,21 @@ public class Providers : Object {
 
     construct {
         this.providers = {
-            new CpuProvider(), new MemProvider(), new NetProvider(),
-            new SwapProvider(), new LoadProvider(), new DiskProvider()
+            new CpuProvider(), new CpuFreqProvider(), new MemProvider(),
+            new NetProvider(), new SwapProvider(), new LoadProvider(),
+            new DiskProvider()
         };
         this.update();
         this.functions = {
-            new DecimalsFunction(), new SizeFunction(),
-            new SpeedFunction(), new PercentFunction()
+            new DecimalsFunction(), new SizeFunction(), new SpeedFunction(),
+            new PercentFunction(), new FrequencyFunction()
         };
     }
 
     // TODO: use exceptions
     public double value(string name, out bool found)
     {
-        var varparts = name.split(".");
+        var varparts = name.split(".", 2);
         return_val_if_fail(varparts.length == 2, 0);
 
         found = true;

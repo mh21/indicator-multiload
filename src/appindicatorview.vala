@@ -1,5 +1,5 @@
 /******************************************************************************
- * Copyright (C) 2013  Michael Hofmann <mh21@piware.de>                       *
+ * Copyright (C) 2011-2013  Michael Hofmann <mh21@mh21.de>                    *
  *                                                                            *
  * This program is free software; you can redistribute it and/or modify       *
  * it under the terms of the GNU General Public License as published by       *
@@ -16,31 +16,41 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.                *
  ******************************************************************************/
 
-public class Reaper : Object {
-    public string[] args { get; construct; }
-    public TimeoutSource timeout { get; construct; }
+public class AppIndicatorView : IndicatorView, Object {
+    private AppIndicator.Indicator indicator;
 
-    public Reaper(string[] args) {
-        Object(args: args, timeout: new TimeoutSource(60 * 1000));
+    public string label {
+        set {
+            this.indicator.label = value;
+        }
     }
 
-    construct {
-        this.timeout.attach(null);
-        this.timeout.set_callback(() => {
-            try {
-                string status;
-                FileUtils.get_contents("/proc/self/statm", out status);
-                var pages = long.parse(status.split(" ")[1]);
-                var pagesize = Posix.sysconf(Posix._SC_PAGESIZE);
-                // restart on RSS > 50 MB to contain memory leaks
-                if (pagesize * pages > 50 * 1000 * 1000) {
-                    execvp(args[0], args);
-                }
-            } catch (Error e) {
-                stderr.printf("Could not determine memory use: %s\n",
-                        e.message);
-            }
-            return true;
+    public string guide {
+        set {
+            this.indicator.label_guide = value;
+        }
+    }
+
+    public string icon {
+        set {
+            this.indicator.icon_name = value;
+        }
+    }
+
+    public string description {
+        set {
+            this.indicator.icon_desc = value;
+        }
+    }
+
+    public AppIndicatorView(string icondirectory, Gtk.Menu menu) {
+        this.indicator = new AppIndicator.Indicator.with_path("multiload", "",
+                AppIndicator.IndicatorCategory.SYSTEM_SERVICES, icondirectory);
+        this.indicator.set_status(AppIndicator.IndicatorStatus.ACTIVE);
+        this.indicator.set_menu(menu);
+        this.indicator.scroll_event.connect((delta, direction) => {
+            this.scroll_event(delta, direction);
         });
+        this.indicator.set_secondary_activate_target(menu.get_children().data);
     }
 }

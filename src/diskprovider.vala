@@ -1,5 +1,5 @@
 /******************************************************************************
- * Copyright (C) 2011  Michael Hofmann <mh21@piware.de>                       *
+ * Copyright (C) 2011-2013  Michael Hofmann <mh21@mh21.de>                    *
  *                                                                            *
  * This program is free software; you can redistribute it and/or modify       *
  * it under the terms of the GNU General Public License as published by       *
@@ -19,16 +19,16 @@
 public class DiskProvider : Provider {
     private uint64[] lastdata;
     private uint64 lasttime;
-    private const string[] networkfs = { "smbfs", "nfs", "cifs", "fuse.sshfs" };
+    private static const string[] networkfs = { "smbfs", "nfs", "cifs", "fuse.sshfs" };
 
     public DiskProvider() {
-        base("disk", {"read", "write"});
+        base("disk", {"read", "write"}, 's');
     }
 
     private string[] split(string val) {
         string[] result = null;
         char *last = null;
-        char *current = val;
+        char *current = (char*)val;
         for (; *current != '\0'; current = current + 1) {
             if (*current == ' ' || *current == '\n') {
                 if (last != null) {
@@ -77,7 +77,7 @@ public class DiskProvider : Provider {
             for (uint i = 0; i < mountlist.number; ++i) {
                 // Skip network mounts to prevent hangs if not available and to
                 // allow suspend (gnome bug #579888)
-                if (mountentries[i].type in this.networkfs)
+                if (mountentries[i].type in networkfs)
                     continue;
                 GTop.FSUsage fsusage;
                 GTop.get_fsusage(out fsusage, mountentries[i].mountdir);

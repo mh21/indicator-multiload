@@ -1,5 +1,5 @@
 /******************************************************************************
- * Copyright (C) 2011  Michael Hofmann <mh21@piware.de>                       *
+ * Copyright (C) 2011-2013  Michael Hofmann <mh21@mh21.de>                    *
  *                                                                            *
  * This program is free software; you can redistribute it and/or modify       *
  * it under the terms of the GNU General Public License as published by       *
@@ -18,14 +18,21 @@
 
 public class Main : Application {
     private static string datadirectory;
-    [CCode (array_null_terminated = true)]
+    [CCode (array_length=false, array_null_terminated = true)]
     private static string[] expressionoptions;
-    private static bool identifiersoption = false;
+    private static bool versionoption;
+    private static bool trayiconoption;
+    private static Reaper reaper;
 
-    private MultiLoadIndicator multi;
+    private Indicator multi;
     private Gtk.Dialog about;
     private Preferences preferences;
+    private AdvancedPreferences advancedpreferences;
+    private ItemPreferences menupreferences;
+    private ItemPreferences indicatorpreferences;
+    private ItemHelp itemhelp;
     private SettingsCache settingscache;
+    private ColorMapper colormapper;
     private string autostartkey;
     private string desktopfilename;
     private string autostartfile;
@@ -33,12 +40,12 @@ public class Main : Application {
     private string graphsetups;
 
     const OptionEntry[] options = {
+        { "version", 0, 0, OptionArg.NONE,
+            ref versionoption, N_("Output version information and exit"), null },
+        { "trayicon", 0, 0, OptionArg.NONE,
+            ref trayiconoption, N_("System tray icon instead of app indicator"), null },
         { "evaluate-expression", 'e', 0, OptionArg.STRING_ARRAY,
             ref expressionoptions, N_("Evaluate an expression"), null },
-        { "list-identifiers", 'l', 0, OptionArg.NONE,
-            ref identifiersoption, N_("List available expression identifiers"), null },
-        { "verbose", 'v', OptionFlags.NO_ARG, OptionArg.CALLBACK,
-            (void*) debug, N_("Show debug messages"), null },
         { null }
     };
 
@@ -98,6 +105,13 @@ public class Main : Application {
             if (Environment.get_variable("XDG_CURRENT_DESKTOP") == "KDE" ||
                 Environment.get_variable("DESKTOP_SESSION") == "kde-plasma") {
                 sysmon = "kde4-ksysguard.desktop";
+            } else if (Environment.get_variable("XDG_CURRENT_DESKTOP") == "XFCE" ||
+                Environment.get_variable("DESKTOP_SESSION") == "xfce" ||
+                Environment.get_variable("DESKTOP_SESSION") == "xubuntu") {
+                sysmon = "xfce4-taskmanager.desktop";
+            } else if (Environment.get_variable("XDG_CURRENT_DESKTOP") == "LXDE" ||
+                Environment.get_variable("DESKTOP_SESSION") == "Lubuntu") {
+                sysmon = "lxtask.desktop";
             } else {
                 sysmon = "gnome-system-monitor.desktop";
             }
@@ -171,7 +185,7 @@ public class Main : Application {
         }
     }
 
-    private void creategraphs(FixedGSettings.Settings? settings, string key) {
+    private void creategraphs(Settings? settings, string key) {
         // For some reason, directly after converting settings v1->v2, this is
         // called a lot. Recreating the graphs is expensive, so check whether
         // it is really necessary.
@@ -205,12 +219,6 @@ public class Main : Application {
     private void addgraphbinds(GraphModel graphmodel) {
         var graphid = graphmodel.id;
         var graphsettings = this.settingscache.graphsettings(graphid);
-        graphsettings.bind_with_mapping("background-color",
-                graphmodel, "background_color",
-                SettingsBindFlags.DEFAULT,
-                Utils.get_settings_color,
-                Utils.set_settings_color,
-                null, () => {});
         graphsettings.bind("minimum", graphmodel.minimum, "expression",
                 SettingsBindFlags.DEFAULT);
         graphsettings.bind("maximum", graphmodel.maximum, "expression",
@@ -218,7 +226,6 @@ public class Main : Application {
         string[] graphproperties = {
             "enabled",
             "smooth",
-            "alpha",
             "traces" };
         foreach (var property in graphproperties)
             graphsettings.bind(property, graphmodel, property,
@@ -233,11 +240,11 @@ public class Main : Application {
     private void addtracebinds(TraceModel tracemodel,
             string graphid, string traceid) {
         var tracesettings = this.settingscache.tracesettings(graphid, traceid);
-        tracesettings.bind_with_mapping("color",
-                tracemodel, "color",
+        PGLib.settings_bind_with_mapping(tracesettings, "color",
+                tracemodel, "rgba",
                 SettingsBindFlags.DEFAULT,
-                Utils.get_settings_color,
-                Utils.set_settings_color,
+                Utils.get_settings_rgba,
+                (PGLib.SettingsBindSetMapping)Utils.set_settings_rgba,
                 null, () => {});
         tracesettings.bind("enabled", tracemodel, "enabled",
                 SettingsBindFlags.DEFAULT);
@@ -245,19 +252,17 @@ public class Main : Application {
                 SettingsBindFlags.DEFAULT);
     }
 
-    [CCode (instance_pos = 3)]
-    private bool debug(string optionname, string? optionvalue) throws Error {
-        Utils.enabledebugmessages = true;
-        return true;
-    }
-
     public override void activate() {
         // all the work is done in startup
     }
 
     public override void startup() {
-        this.multi = new MultiLoadIndicator(Path.build_filename(datadirectory, "icons"), new Providers());
+        var icondirectory = Path.build_filename(datadirectory, "icons");
+        var menu = Utils.get_ui("menu", this) as Gtk.Menu;
+        this.multi = new Indicator(icondirectory, new Providers(), menu,
+                trayiconoption);
 
+        this.colormapper = new ColorMapper();
         this.settingscache = new SettingsCache();
 
         new SettingsConversion().convert();
@@ -265,9 +270,6 @@ public class Main : Application {
         // initialize indicator, won't update before speed is set; order is
         // important here
         this.creategraphs(null, "");
-        var menu = Utils.get_ui("menu", this) as Gtk.Menu;
-        return_if_fail(menu != null);
-        this.multi.menu = menu;
 
         var datasettings = this.settingscache.generalsettings();
         datasettings.bind("menu-expressions",
@@ -288,8 +290,17 @@ public class Main : Application {
         datasettings.bind("height",
                 this.multi, "height",
                 SettingsBindFlags.DEFAULT);
+        PGLib.settings_bind_with_mapping(datasettings, "background-color",
+                this.multi, "background-rgba",
+                SettingsBindFlags.DEFAULT,
+                Utils.get_settings_rgba,
+                (PGLib.SettingsBindSetMapping)Utils.set_settings_rgba,
+                null, () => {});
         datasettings.bind("autostart",
                 this, "autostart",
+                SettingsBindFlags.DEFAULT);
+        datasettings.bind("color-scheme",
+                this.colormapper, "color-scheme",
                 SettingsBindFlags.DEFAULT);
         // should be the last one as it initializes the timer
         datasettings.bind("speed",
@@ -298,7 +309,25 @@ public class Main : Application {
 
         this.multi.updateall();
 
-        this.preferences = new Preferences();
+        this.itemhelp = new ItemHelp(this.multi);
+
+        this.advancedpreferences = new AdvancedPreferences(this.colormapper);
+        this.advancedpreferences.itemhelp_show.connect(this.itemhelp.show);
+
+        this.menupreferences = new ItemPreferences("menu-expressions");
+        this.menupreferences.itemhelp_show.connect(this.itemhelp.show);
+
+        this.indicatorpreferences = new ItemPreferences("indicator-expressions");
+        this.indicatorpreferences.itemhelp_show.connect(this.itemhelp.show);
+
+        this.preferences = new Preferences(this.colormapper);
+        this.preferences.advancedpreferences_show.connect(this.advancedpreferences.show);
+        this.preferences.menupreferences_show.connect(this.menupreferences.show);
+        this.preferences.indicatorpreferences_show.connect(this.indicatorpreferences.show);
+
+        this.advancedpreferences.colorscheme_restore.connect(this.preferences.restore_colorscheme);
+
+        this.multi.providers_updated.connect(this.itemhelp.update);
 
         this.hold();
 
@@ -332,23 +361,20 @@ public class Main : Application {
             return true;
         }
 
+        exit_status = 0;
         bool result = false;
 
-        if (identifiersoption) {
-            var providers = new Providers();
-            Thread.usleep(100000);
-            providers.update();
-            foreach (var provider in providers.providers) {
-                stdout.printf("%s:\n", provider.id);
-                string[] keys = provider.keys;
-                double[] values = provider.values;
-                for (uint i = 0, isize = keys.length; i < isize; ++i)
-                    stdout.printf("  %s: %f\n", keys[i], values[i]);
-            }
-            stdout.printf("functions:\n");
-            foreach (var function in providers.functions) {
-                stdout.printf("  %s(%s)\n", function.id,
-                        string.joinv(", ", function.parameterdescs));
+        if (versionoption) {
+            var about = Utils.get_ui("aboutdialog", this) as Gtk.AboutDialog;
+            try {
+            stdout.printf("%s %s\n%s\n%s\n\n%s\n",
+                    about.get_program_name(),
+                    about.get_version(),
+                    about.get_copyright(),
+                    new Regex("</?a[^>]*>").replace(about.get_license(), -1, 0, ""),
+                    about.get_website());
+            } catch (RegexError e) {
+                // ignored
             }
             result = true;
         }
@@ -375,26 +401,18 @@ public class Main : Application {
         Intl.bind_textdomain_codeset(Config.GETTEXT_PACKAGE, "UTF-8");
         Intl.textdomain(Config.GETTEXT_PACKAGE);
 
-        // needs to happen before get_system_data_dirs is called the first time
         var directory = Environment.get_variable("XDG_RUNTIME_DIR");
         if (directory == null || directory.length == 0) {
             directory = "/var/lock";
         }
         Main.datadirectory = DirUtils.mkdtemp(directory + "/multiload-icons-XXXXXX");
-        var xdgdatadirs = Environment.get_variable("XDG_DATA_DIRS");
-        if (xdgdatadirs.length > 0)
-            xdgdatadirs += ":";
-        Environment.set_variable("XDG_DATA_DIRS",
-                xdgdatadirs + Main.datadirectory, true);
-
-        Utils.initdebug();
 
         Gtk.init(ref args);
         Gtk.Window.set_default_icon_name("utilities-system-monitor");
 
-        var reaper = new Reaper(args);
+        Main.reaper = new Reaper(args);
 
-        var result = new Main("de.mh21.indicator.multiload",
+        var result = new Main("de.mh21.indicator-multiload",
                 ApplicationFlags.FLAGS_NONE).run(args);
 
         DirUtils.remove(Main.datadirectory);

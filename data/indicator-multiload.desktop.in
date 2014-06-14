@@ -4,6 +4,5 @@ _Comment=A system load monitor capable of displaying graphs for CPU, ram, and sw
 Exec=indicator-multiload
 Terminal=false
 Type=Application
-StartupNotify=true
 Icon=utilities-system-monitor
 Categories=GNOME;System;

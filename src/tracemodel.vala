@@ -1,5 +1,5 @@
 /******************************************************************************
- * Copyright (C) 2011  Michael Hofmann <mh21@piware.de>                       *
+ * Copyright (C) 2011-2013  Michael Hofmann <mh21@mh21.de>                    *
  *                                                                            *
  * This program is free software; you can redistribute it and/or modify       *
  * it under the terms of the GNU General Public License as published by       *
@@ -18,7 +18,7 @@
 
 public class TraceModel : Object {
     public ExpressionCache expression { get; construct; }
-    public Gdk.Color color { get; set; }
+    public Gdk.RGBA rgba { get; set; }
     public bool enabled { get; set; }
     public double[] values { get; private set; }
 
