@@ -9,16 +9,16 @@ msgstr ""
 "Project-Id-Version: gnome-applets HEAD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 20:41+0200\n"
-"PO-Revision-Date: 2013-02-11 11:20+0000\n"
-"Last-Translator: Peter Tuhársky <tuharsky@misbb.sk>\n"
+"PO-Revision-Date: 2014-06-14 23:57+0000\n"
+"Last-Translator: tuharsky <Unknown>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
-"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
-"X-Generator: Launchpad (build 16985)\n"
+"X-Launchpad-Export-Date: 2014-06-16 05:57+0000\n"
+"X-Generator: Launchpad (build 17045)\n"
 "X-Poedit-Country: SLOVAKIA\n"
 "X-Poedit-Language: Slovak\n"
 
@@ -510,7 +510,6 @@ msgid "%u bit/s"
 msgid_plural "%u bit/s"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
 #: ../src/utils.vala:127
@@ -601,9 +600,6 @@ msgstr[1] ""
 #~ msgid "_Write"
 #~ msgstr "_Zápis"
 
-#~ msgid "List available expression identifiers"
-#~ msgstr "Zoznam dostupných mien výrazov"
-
 #~ msgid "_In"
 #~ msgstr "_Vstup"
 
@@ -612,6 +608,3 @@ msgstr[1] ""
 
 #~ msgid "_Out"
 #~ msgstr "Vý_stup"
-
-#~ msgid "Graph alpha value"
-#~ msgstr "Hodnota alfa kanála grafu"

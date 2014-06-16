@@ -21,8 +21,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n == 1 ? 0: (((n % 100 > 19) || ((n % 100 "
 "== 0) && (n != 0))) ? 2: 1));\n"
-"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
-"X-Generator: Launchpad (build 16985)\n"
+"X-Launchpad-Export-Date: 2014-06-16 05:57+0000\n"
+"X-Generator: Launchpad (build 17045)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -500,7 +500,6 @@ msgid "%u bit/s"
 msgid_plural "%u bit/s"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
 #: ../src/utils.vala:127

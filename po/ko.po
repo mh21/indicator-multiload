@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-14 20:41+0200\n"
-"PO-Revision-Date: 2013-02-11 11:20+0000\n"
+"PO-Revision-Date: 2014-06-14 23:58+0000\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
 "Language: Korean\n"
@@ -21,8 +21,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2014-04-17 06:27+0000\n"
-"X-Generator: Launchpad (build 16985)\n"
+"X-Launchpad-Export-Date: 2014-06-16 05:57+0000\n"
+"X-Generator: Launchpad (build 17045)\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
 msgid ""
@@ -498,6 +498,7 @@ msgstr ""
 msgid "%u bit/s"
 msgid_plural "%u bit/s"
 msgstr[0] ""
+msgstr[1] ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
 #: ../src/utils.vala:127
@@ -593,6 +594,3 @@ msgstr[1] ""
 
 #~ msgid "_Write"
 #~ msgstr "쓰기(_W)"
-
-#~ msgid "Graph alpha value"
-#~ msgstr "그래프 알파값"
