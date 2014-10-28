@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-applets master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-16 09:20+0000\n"
+"POT-Creation-Date: 2014-10-27 21:06+0000\n"
 "PO-Revision-Date: 2014-06-14 23:58+0000\n"
 "Last-Translator: Michael Hofmann <mh21@mh21.de>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
@@ -19,8 +19,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2014-06-17 06:22+0000\n"
-"X-Generator: Launchpad (build 17045)\n"
+"X-Launchpad-Export-Date: 2014-10-28 06:23+0000\n"
+"X-Generator: Launchpad (build 17203)\n"
 "Language: zh_CN\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
@@ -395,7 +395,7 @@ msgstr ""
 msgid "XOSView"
 msgstr ""
 
-#: ../src/function.vala:103
+#: ../src/function.vala:114
 #, c-format
 msgid "%u%%"
 msgstr "%u%%"
@@ -412,11 +412,11 @@ msgstr ""
 msgid "Evaluate an expression"
 msgstr "评估表达式"
 
-#: ../src/main.vala:351
+#: ../src/main.vala:353
 msgid "- System load application indicator"
 msgstr "-系统负载应用提示器"
 
-#: ../src/main.vala:359
+#: ../src/main.vala:361
 #, c-format
 msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"
@@ -505,22 +505,22 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
-#: ../src/utils.vala:99
+#: ../src/utils.vala:127
 msgid "{} kHz"
 msgstr ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
-#: ../src/utils.vala:101
+#: ../src/utils.vala:129
 msgid "{} MHz"
 msgstr ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
-#: ../src/utils.vala:103
+#: ../src/utils.vala:131
 msgid "{} GHz"
 msgstr ""
 
 #. TRANSLATORS: Please leave %u as it is, it is replaced by the frequency
-#: ../src/utils.vala:112
+#: ../src/utils.vala:140
 #, c-format
 msgid "%u Hz"
 msgid_plural "%u Hz"

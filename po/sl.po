@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-applets master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-16 09:20+0000\n"
+"POT-Creation-Date: 2014-10-27 21:06+0000\n"
 "PO-Revision-Date: 2014-06-14 23:58+0000\n"
 "Last-Translator: Andrej Znidarsic <andrej.znidarsic@gmail.com>\n"
 "Language-Team: Slovenščina <gnome-si@googlegroups.com>\n"
@@ -22,8 +22,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || "
 "n%100==4 ? 3 : 0);\n"
-"X-Launchpad-Export-Date: 2014-06-17 06:22+0000\n"
-"X-Generator: Launchpad (build 17045)\n"
+"X-Launchpad-Export-Date: 2014-10-28 06:22+0000\n"
+"X-Generator: Launchpad (build 17203)\n"
 "X-Poedit-Country: SLOVENIA\n"
 "Language: \n"
 "X-Poedit-Language: Slovenian\n"
@@ -397,7 +397,7 @@ msgstr ""
 msgid "XOSView"
 msgstr ""
 
-#: ../src/function.vala:103
+#: ../src/function.vala:114
 #, c-format
 msgid "%u%%"
 msgstr "%u%%"
@@ -414,11 +414,11 @@ msgstr ""
 msgid "Evaluate an expression"
 msgstr ""
 
-#: ../src/main.vala:351
+#: ../src/main.vala:353
 msgid "- System load application indicator"
 msgstr ""
 
-#: ../src/main.vala:359
+#: ../src/main.vala:361
 #, c-format
 msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"
@@ -510,22 +510,22 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
-#: ../src/utils.vala:99
+#: ../src/utils.vala:127
 msgid "{} kHz"
 msgstr ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
-#: ../src/utils.vala:101
+#: ../src/utils.vala:129
 msgid "{} MHz"
 msgstr ""
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
-#: ../src/utils.vala:103
+#: ../src/utils.vala:131
 msgid "{} GHz"
 msgstr ""
 
 #. TRANSLATORS: Please leave %u as it is, it is replaced by the frequency
-#: ../src/utils.vala:112
+#: ../src/utils.vala:140
 #, c-format
 msgid "%u Hz"
 msgid_plural "%u Hz"
