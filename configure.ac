@@ -4,12 +4,13 @@ AC_INIT([indicator-multiload],
 	[indicator-multiload],
 	[http://mh21.de/])
 
+AM_INIT_AUTOMAKE([foreign dist-xz no-dist-gzip subdir-objects tar-pax])
+
 AC_CONFIG_SRCDIR([src/main.vala])
 AC_CONFIG_HEADERS([config.h])
 AC_PROG_CC
 
 AM_SILENT_RULES([yes])
-AM_INIT_AUTOMAKE([foreign dist-xz no-dist-gzip subdir-objects tar-pax])
 AM_PROG_VALAC([0.14.0])
 AM_PROG_CC_C_O
 
