@@ -17,15 +17,15 @@ msgstr ""
 "Project-Id-Version: gnome-applets.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-01 01:11+0000\n"
-"PO-Revision-Date: 2014-12-31 23:45+0000\n"
-"Last-Translator: Eduardo Gómez Catalan <eduardo@egoz.cl>\n"
+"PO-Revision-Date: 2015-01-20 12:21+0000\n"
+"Last-Translator: Taliesin <taliesinlp@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2015-01-01 05:59+0000\n"
-"X-Generator: Launchpad (build 17286)\n"
+"X-Launchpad-Export-Date: 2015-01-21 06:24+0000\n"
+"X-Generator: Launchpad (build 17306)\n"
 "Language: \n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
@@ -47,6 +47,7 @@ msgstr ""
 "  Eduardo Gómez Catalan https://launchpad.net/~egozcl\n"
 "  Jorge González https://launchpad.net/~jorgegonz\n"
 "  Manuel https://launchpad.net/~loloh\n"
+"  Taliesin https://launchpad.net/~taliesinlp\n"
 "  antonimous https://launchpad.net/~antonimous"
 
 #: ../data/preferences.ui.in.h:3
@@ -79,11 +80,11 @@ msgstr "Suavizado:"
 
 #: ../data/preferences.ui.in.h:10
 msgid "pixels"
-msgstr "pixeles"
+msgstr "píxeles"
 
 #: ../data/preferences.ui.in.h:11
 msgid "Trace"
-msgstr ""
+msgstr "Traza"
 
 #: ../data/preferences.ui.in.h:12
 msgid "Expression:"
@@ -112,11 +113,11 @@ msgstr "Abrir el m_onitor del sistema"
 
 #: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
-msgstr "Prefere_ncias"
+msgstr "_Preferencias"
 
 #: ../data/preferences.ui.in.h:20
 msgid "_About"
-msgstr "Acerca _de"
+msgstr "_Acerca de"
 
 #: ../data/preferences.ui.in.h:21
 msgid "_Quit"
@@ -177,7 +178,7 @@ msgstr "Colores"
 
 #: ../data/preferences.ui.in.h:35
 msgid "Built-in schemes:"
-msgstr ""
+msgstr "Esquemas Incorporados"
 
 #: ../data/preferences.ui.in.h:36
 msgid "Color palette:"
@@ -185,23 +186,23 @@ msgstr "Paleta de Colores"
 
 #: ../data/preferences.ui.in.h:37
 msgid "<small>Busy</small>"
-msgstr ""
+msgstr "<small>Ocupado</small>"
 
 #: ../data/preferences.ui.in.h:38
 msgid "<small>System</small>"
-msgstr ""
+msgstr "<small>Sistema</small>"
 
 #: ../data/preferences.ui.in.h:39
 msgid "<small>Nice</small>"
-msgstr ""
+msgstr "<small>Desocupado</small>"
 
 #: ../data/preferences.ui.in.h:40
 msgid "<small>IOWait</small>"
-msgstr ""
+msgstr "<small>E/S Espera</small>"
 
 #: ../data/preferences.ui.in.h:41
 msgid "<small>Background</small>"
-msgstr ""
+msgstr "<small>Fondo</small>"
 
 #: ../data/preferences.ui.in.h:42
 msgid "<small>Memory</small>"
@@ -209,39 +210,39 @@ msgstr "<small>Memoria</small>"
 
 #: ../data/preferences.ui.in.h:43
 msgid "<small>Shared</small>"
-msgstr ""
+msgstr "<small>Compatido</small>"
 
 #: ../data/preferences.ui.in.h:44
 msgid "<small>Buffers</small>"
-msgstr ""
+msgstr "<small>Buffers</small>"
 
 #: ../data/preferences.ui.in.h:45
 msgid "<small>Cached</small>"
-msgstr ""
+msgstr "small>Cached</small>"
 
 #: ../data/preferences.ui.in.h:46
 msgid "<small>Download</small>"
-msgstr ""
+msgstr "<small>Bajada</small>"
 
 #: ../data/preferences.ui.in.h:47
 msgid "<small>Upload</small>"
-msgstr ""
+msgstr "<small>Subida</small>"
 
 #: ../data/preferences.ui.in.h:48
 msgid "<small>Localhost</small>"
-msgstr ""
+msgstr "<small>Localhost</small>"
 
 #: ../data/preferences.ui.in.h:49
 msgid "<small>Swap</small>"
-msgstr ""
+msgstr "<small>Intercambio</small>"
 
 #: ../data/preferences.ui.in.h:50
 msgid "<small>Load</small>"
-msgstr ""
+msgstr "<small>Carga</small>"
 
 #: ../data/preferences.ui.in.h:51
 msgid "<small>Read</small>"
-msgstr ""
+msgstr "<small>Lectura</small>"
 
 #: ../data/preferences.ui.in.h:52
 msgid "<small>Write</small>"
@@ -249,7 +250,7 @@ msgstr "<small>Escritura</small>"
 
 #: ../data/preferences.ui.in.h:53
 msgid "Advanced..."
-msgstr "Configuración avanzada"
+msgstr "Avanzado…"
 
 #: ../data/preferences.ui.in.h:54
 msgid "Menu items..."
@@ -285,9 +286,7 @@ msgstr "Esquema de color usado recientemente"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:7
 msgid "The desktop description file to execute as the system monitor"
-msgstr ""
-"El archivo de descripción del escritorio que ejecutar como el monitor del "
-"sistema"
+msgstr "El lanzador para ejecutar como el monitor del sistema"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:8
 msgid "Automatically start on session startup"
@@ -301,6 +300,10 @@ msgid ""
 "$(decimals(load.avg,2)) Disk read $(speed(disk.read)) write "
 "$(speed(disk.write))\" ]"
 msgstr ""
+"[ \"CPU $(percent(cpu.inuse)) Memoria $(size(mem.user)) Bajada "
+"$(speed(net.down)) Subida $(speed(net.up)) Intercambio $(size(swap.used)) "
+"Carga $(decimals(load.avg,2)) Lectura Disco $(speed(disk.read)) Escritura "
+"Disco $(speed(disk.write))\" ]"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:11
 msgid "Information in the accessible description of the indicator"
@@ -314,14 +317,18 @@ msgid ""
 "$(decimals(load.avg,2))\", \"Disk $(speed(disk.read))/$(speed(disk.write))\" "
 "]"
 msgstr ""
+"[ \"\", \"CPU $(percent(cpu.inuse))\", \"Memoria $(size(mem.user))\", \"Red "
+"$(speed(net.down))/$(speed(net.up))\", \"Intercambio $(size(swap.used))\", "
+"\"Carga $(decimals(load.avg,2))\", \"Disco "
+"$(speed(disk.read))/$(speed(disk.write))\" ]"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:14
 msgid "Information shown in the indicator itself"
-msgstr "Información mostrada en el indicador en sí"
+msgstr "Información mostrada en el propio indicador"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:15
 msgid "Index of the current information shown in the indicator itself"
-msgstr ""
+msgstr "Índice de la información actual se muestra en el propio indicador"
 
 #. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, and commas.
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:17
@@ -332,6 +339,11 @@ msgid ""
 "\"Load: $(decimals(load.avg,2))\", \"Disk: read $(speed(disk.read)), write "
 "$(speed(disk.write))\" ]"
 msgstr ""
+"[ \"CPU: $(percent(cpu.inuse)), ESespera $(percent(cpu.io))\", \"Memoria: "
+"$(size(mem.user)), cache $(size(mem.cached))\", \"Red: bajada "
+"$(speed(net.down)), subida $(speed(net.up))\", \"Intercambio: "
+"$(size(swap.used))\", \"Carga: $(decimals(load.avg,2))\", \"Disco: lectura "
+"$(speed(disk.read)), escritura $(speed(disk.write))\" ]"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:18
 msgid "Information shown as menu entries"
