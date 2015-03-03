@@ -1,5 +1,7 @@
 You need at least vala 0.14 and devel packages for glib, gtk+ 3.0, cairo, appindicator and libgtop 2.0.
 
+If you got the source from bzr, you need to merge the translations from lp:~indicator-multiload/indicator-multiload/trunk-translations before compiling.
+
 To compile, run
     ./autogen.sh && make
 
