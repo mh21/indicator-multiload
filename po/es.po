@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-applets.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-01 01:12+0000\n"
+"POT-Creation-Date: 2015-03-03 13:22+0000\n"
 "PO-Revision-Date: 2014-06-14 23:58+0000\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
@@ -24,8 +24,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2014-11-02 05:59+0000\n"
-"X-Generator: Launchpad (build 17211)\n"
+"X-Launchpad-Export-Date: 2015-03-04 05:22+0000\n"
+"X-Generator: Launchpad (build 17361)\n"
 "Language: \n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
@@ -44,36 +44,39 @@ msgstr ""
 "\n"
 "Launchpad Contributions:\n"
 "  Adolfo Jayme https://launchpad.net/~fitojb\n"
+"  Eduardo Gómez Catalan https://launchpad.net/~egozcl\n"
 "  Jorge González https://launchpad.net/~jorgegonz\n"
+"  Manuel https://launchpad.net/~loloh\n"
+"  Taliesin https://launchpad.net/~taliesinlp\n"
 "  antonimous https://launchpad.net/~antonimous"
 
 #: ../data/preferences.ui.in.h:3
 msgid "Column"
-msgstr ""
+msgstr "Columna"
 
 #: ../data/preferences.ui.in.h:4
 msgid "Graph"
-msgstr ""
+msgstr "Gráfico"
 
 #: ../data/preferences.ui.in.h:5
 msgid "_Visible:"
-msgstr ""
+msgstr "_Visible:"
 
 #: ../data/preferences.ui.in.h:6
 msgid "Upper Edge"
-msgstr ""
+msgstr "Borde Superior"
 
 #: ../data/preferences.ui.in.h:7
 msgid "Minimum:"
-msgstr ""
+msgstr "Mínimo:"
 
 #: ../data/preferences.ui.in.h:8
 msgid "Maximum:"
-msgstr ""
+msgstr "Máximo:"
 
 #: ../data/preferences.ui.in.h:9
 msgid "Smoothing:"
-msgstr ""
+msgstr "Suavizado:"
 
 #: ../data/preferences.ui.in.h:10
 msgid "pixels"
@@ -81,28 +84,28 @@ msgstr "píxeles"
 
 #: ../data/preferences.ui.in.h:11
 msgid "Trace"
-msgstr ""
+msgstr "Traza"
 
 #: ../data/preferences.ui.in.h:12
 msgid "Expression:"
-msgstr ""
+msgstr "Expresión:"
 
 #: ../data/preferences.ui.in.h:13
 msgid "Color:"
-msgstr ""
+msgstr "Color:"
 
 #: ../data/preferences.ui.in.h:14
 msgid "Variable"
-msgstr ""
+msgstr "Variable"
 
 #. TRANSLATORS: This refers to an expression in the domain of programming, see https://en.wikipedia.org/wiki/Expression_%28programming%29
 #: ../data/preferences.ui.in.h:16
 msgid "Expression"
-msgstr ""
+msgstr "Expresión"
 
 #: ../data/preferences.ui.in.h:17
 msgid "Value"
-msgstr ""
+msgstr "Valor"
 
 #: ../data/preferences.ui.in.h:18
 msgid "_Open System Monitor"
@@ -110,11 +113,11 @@ msgstr "Abrir el m_onitor del sistema"
 
 #: ../data/preferences.ui.in.h:19
 msgid "_Preferences"
-msgstr "Prefere_ncias"
+msgstr "_Preferencias"
 
 #: ../data/preferences.ui.in.h:20
 msgid "_About"
-msgstr "Acerca _de"
+msgstr "_Acerca de"
 
 #: ../data/preferences.ui.in.h:21
 msgid "_Quit"
@@ -175,79 +178,79 @@ msgstr "Colores"
 
 #: ../data/preferences.ui.in.h:35
 msgid "Built-in schemes:"
-msgstr ""
+msgstr "Esquemas Incorporados"
 
 #: ../data/preferences.ui.in.h:36
 msgid "Color palette:"
-msgstr ""
+msgstr "Paleta de Colores"
 
 #: ../data/preferences.ui.in.h:37
 msgid "<small>Busy</small>"
-msgstr ""
+msgstr "<small>Ocupado</small>"
 
 #: ../data/preferences.ui.in.h:38
 msgid "<small>System</small>"
-msgstr ""
+msgstr "<small>Sistema</small>"
 
 #: ../data/preferences.ui.in.h:39
 msgid "<small>Nice</small>"
-msgstr ""
+msgstr "<small>Desocupado</small>"
 
 #: ../data/preferences.ui.in.h:40
 msgid "<small>IOWait</small>"
-msgstr ""
+msgstr "<small>E/S Espera</small>"
 
 #: ../data/preferences.ui.in.h:41
 msgid "<small>Background</small>"
-msgstr ""
+msgstr "<small>Fondo</small>"
 
 #: ../data/preferences.ui.in.h:42
 msgid "<small>Memory</small>"
-msgstr ""
+msgstr "<small>Memoria</small>"
 
 #: ../data/preferences.ui.in.h:43
 msgid "<small>Shared</small>"
-msgstr ""
+msgstr "<small>Compatido</small>"
 
 #: ../data/preferences.ui.in.h:44
 msgid "<small>Buffers</small>"
-msgstr ""
+msgstr "<small>Buffers</small>"
 
 #: ../data/preferences.ui.in.h:45
 msgid "<small>Cached</small>"
-msgstr ""
+msgstr "small>Cached</small>"
 
 #: ../data/preferences.ui.in.h:46
 msgid "<small>Download</small>"
-msgstr ""
+msgstr "<small>Bajada</small>"
 
 #: ../data/preferences.ui.in.h:47
 msgid "<small>Upload</small>"
-msgstr ""
+msgstr "<small>Subida</small>"
 
 #: ../data/preferences.ui.in.h:48
 msgid "<small>Localhost</small>"
-msgstr ""
+msgstr "<small>Localhost</small>"
 
 #: ../data/preferences.ui.in.h:49
 msgid "<small>Swap</small>"
-msgstr ""
+msgstr "<small>Intercambio</small>"
 
 #: ../data/preferences.ui.in.h:50
 msgid "<small>Load</small>"
-msgstr ""
+msgstr "<small>Carga</small>"
 
 #: ../data/preferences.ui.in.h:51
 msgid "<small>Read</small>"
-msgstr ""
+msgstr "<small>Lectura</small>"
 
 #: ../data/preferences.ui.in.h:52
 msgid "<small>Write</small>"
-msgstr ""
+msgstr "<small>Escritura</small>"
 
 #: ../data/preferences.ui.in.h:53
 msgid "Advanced..."
-msgstr ""
+msgstr "Avanzado…"
 
 #: ../data/preferences.ui.in.h:54
 msgid "Menu items..."
@@ -255,7 +258,7 @@ msgstr "Elementos del menú…"
 
 #: ../data/preferences.ui.in.h:55
 msgid "Indicator items..."
-msgstr ""
+msgstr "Elementos del Indicador..."
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:1
 msgid "Available graphs"
@@ -279,13 +282,11 @@ msgstr "Color de fondo del gráfico"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:6
 msgid "Most recently used color scheme"
-msgstr ""
+msgstr "Esquema de color usado recientemente"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:7
 msgid "The desktop description file to execute as the system monitor"
-msgstr ""
-"El archivo de descripción del escritorio que ejecutar como el monitor del "
-"sistema"
+msgstr "El lanzador para ejecutar como el monitor del sistema"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:8
 msgid "Automatically start on session startup"
@@ -299,6 +300,10 @@ msgid ""
 "$(decimals(load.avg,2)) Disk read $(speed(disk.read)) write "
 "$(speed(disk.write))\" ]"
 msgstr ""
+"[ \"CPU $(percent(cpu.inuse)) Memoria $(size(mem.user)) Bajada "
+"$(speed(net.down)) Subida $(speed(net.up)) Intercambio $(size(swap.used)) "
+"Carga $(decimals(load.avg,2)) Lectura Disco $(speed(disk.read)) Escritura "
+"Disco $(speed(disk.write))\" ]"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:11
 msgid "Information in the accessible description of the indicator"
@@ -312,14 +317,18 @@ msgid ""
 "$(decimals(load.avg,2))\", \"Disk $(speed(disk.read))/$(speed(disk.write))\" "
 "]"
 msgstr ""
+"[ \"\", \"CPU $(percent(cpu.inuse))\", \"Memoria $(size(mem.user))\", \"Red "
+"$(speed(net.down))/$(speed(net.up))\", \"Intercambio $(size(swap.used))\", "
+"\"Carga $(decimals(load.avg,2))\", \"Disco "
+"$(speed(disk.read))/$(speed(disk.write))\" ]"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:14
 msgid "Information shown in the indicator itself"
-msgstr "Información mostrada en el indicador en sí"
+msgstr "Información mostrada en el propio indicador"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:15
 msgid "Index of the current information shown in the indicator itself"
-msgstr ""
+msgstr "Índice de la información actual se muestra en el propio indicador"
 
 #. TRANSLATORS: This is a list of translatable strings. Do not translate anything inside of $(...), and make sure to keep any brackets, quotes, and commas.
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:17
@@ -330,6 +339,11 @@ msgid ""
 "\"Load: $(decimals(load.avg,2))\", \"Disk: read $(speed(disk.read)), write "
 "$(speed(disk.write))\" ]"
 msgstr ""
+"[ \"CPU: $(percent(cpu.inuse)), ESespera $(percent(cpu.io))\", \"Memoria: "
+"$(size(mem.user)), cache $(size(mem.cached))\", \"Red: bajada "
+"$(speed(net.down)), subida $(speed(net.up))\", \"Intercambio: "
+"$(size(swap.used))\", \"Carga: $(decimals(load.avg,2))\", \"Disco: lectura "
+"$(speed(disk.read)), escritura $(speed(disk.write))\" ]"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:18
 msgid "Information shown as menu entries"
@@ -341,11 +355,12 @@ msgstr "Visibilidad del gráfico"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:20
 msgid "Minimum value for upper graph edge"
-msgstr ""
+msgstr "Valor mínimo para el borde superior del gráfico"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:21
 msgid "Maximum value for upper graph edge, zero means unlimited"
 msgstr ""
+"Valor máximo para el borde superior del gráfico, cero para sin límite"
 
 #: ../data/de.mh21.indicator-multiload.gschema.xml.in.in.h:22
 msgid "Number of values used for smooth graph scaling"
@@ -383,18 +398,18 @@ msgstr ""
 #. TRANSLATORS: Color theme name for the Ubuntu Ambiance (light on dark) theme
 #: ../src/colormapper.vala:85
 msgid "Ambiance"
-msgstr ""
+msgstr "Ambiance"
 
 #. TRANSLATORS: Color theme name for the Ubuntu Radiance (dark on light) theme
 #: ../src/colormapper.vala:93
 msgid "Radiance"
-msgstr ""
+msgstr "Radiance"
 
 #. additional mem colors: slab 0000ff, map 836fff
 #. TRANSLATORS: Color theme name for the XOSView theme
 #: ../src/colormapper.vala:102
 msgid "XOSView"
-msgstr ""
+msgstr "XOSView"
 
 #: ../src/function.vala:114
 #, c-format
@@ -403,11 +418,11 @@ msgstr "%u%%"
 
 #: ../src/main.vala:44
 msgid "Output version information and exit"
-msgstr ""
+msgstr "Mostrar información de la versión y salir"
 
 #: ../src/main.vala:46
 msgid "System tray icon instead of app indicator"
-msgstr ""
+msgstr "Icono en la barra de tareas, en lugar del indicador de la aplicación"
 
 #: ../src/main.vala:48
 msgid "Evaluate an expression"
@@ -428,7 +443,7 @@ msgstr ""
 #. TRANSLATORS: custom color scheme
 #: ../src/preferences.vala:74
 msgid "Custom"
-msgstr ""
+msgstr "Personalizado"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the size
 #: ../src/utils.vala:45
@@ -512,25 +527,25 @@ msgstr[1] ""
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
 #: ../src/utils.vala:127
 msgid "{} kHz"
-msgstr ""
+msgstr "Copy text \t {} kHz"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
 #: ../src/utils.vala:129
 msgid "{} MHz"
-msgstr ""
+msgstr "{} MHz"
 
 #. TRANSLATORS: Please leave {} as it is, it is replaced by the frequency
 #: ../src/utils.vala:131
 msgid "{} GHz"
-msgstr ""
+msgstr "{} GHz"
 
 #. TRANSLATORS: Please leave %u as it is, it is replaced by the frequency
 #: ../src/utils.vala:140
 #, c-format
 msgid "%u Hz"
 msgid_plural "%u Hz"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u Hz"
+msgstr[1] "%u Hz"
 
 #~ msgid "Cach_ed"
 #~ msgstr "C_acheada"

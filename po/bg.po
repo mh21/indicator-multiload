@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-applets master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-01 01:12+0000\n"
+"POT-Creation-Date: 2015-03-03 13:22+0000\n"
 "PO-Revision-Date: 2014-06-16 23:14+0000\n"
 "Last-Translator: Michael Hofmann <mh21@mh21.de>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
@@ -20,8 +20,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2014-11-02 05:58+0000\n"
-"X-Generator: Launchpad (build 17211)\n"
+"X-Launchpad-Export-Date: 2015-03-04 05:21+0000\n"
+"X-Generator: Launchpad (build 17361)\n"
 "Language: bg\n"
 
 #: ../data/preferences.ui.in.h:1 ../data/indicator-multiload.desktop.in.h:2
@@ -46,6 +46,7 @@ msgstr ""
 "\n"
 "Launchpad Contributions:\n"
 "  Alexander Shopov https://launchpad.net/~ash-kambanaria\n"
+"  Asen Hadjiiski https://launchpad.net/~asen-dh\n"
 "  Atanas Kovachki https://launchpad.net/~zdar\n"
 "  Michael Hofmann https://launchpad.net/~mh21\n"
 "  Svetoslav Stefanov https://launchpad.net/~svetlisashkov"
@@ -419,7 +420,7 @@ msgstr ""
 
 #: ../src/main.vala:353
 msgid "- System load application indicator"
-msgstr "- Индикатор за зареждане на системата"
+msgstr "Индикатор за натоварване на системата"
 
 #: ../src/main.vala:361
 #, c-format
